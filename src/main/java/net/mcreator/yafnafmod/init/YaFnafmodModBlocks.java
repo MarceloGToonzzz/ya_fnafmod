@@ -1540,13 +1540,20 @@ import net.mcreator.yafnafmod.block.CutoutTreeOakBlock;
 import net.mcreator.yafnafmod.block.CutoutSpringbonnieRottenBlock;
 import net.mcreator.yafnafmod.block.CutoutSpringbonnieBlock;
 import net.mcreator.yafnafmod.block.CutoutHelpyBlock;
+import net.mcreator.yafnafmod.block.CutoutFreddyToyBlock;
 import net.mcreator.yafnafmod.block.CutoutFreddyRetroBlock;
+import net.mcreator.yafnafmod.block.CutoutFreddyFuntimeBlock;
 import net.mcreator.yafnafmod.block.CutoutFredbearIcecreamBlock;
 import net.mcreator.yafnafmod.block.CutoutFredbearBlock;
 import net.mcreator.yafnafmod.block.CutoutFredbearBittenBlock;
 import net.mcreator.yafnafmod.block.CutoutFoxyRetroBlock;
+import net.mcreator.yafnafmod.block.CutoutFoxyFuntimeBlock;
+import net.mcreator.yafnafmod.block.CutoutChicaToyBlock;
 import net.mcreator.yafnafmod.block.CutoutChicaRetroBlock;
+import net.mcreator.yafnafmod.block.CutoutBonnieToyBlock;
 import net.mcreator.yafnafmod.block.CutoutBonnieRetroBlock;
+import net.mcreator.yafnafmod.block.CutoutBalloraBlock;
+import net.mcreator.yafnafmod.block.CutoutBabyBlock;
 import net.mcreator.yafnafmod.block.CurtainYellowThinBlock;
 import net.mcreator.yafnafmod.block.CurtainYellowStarlessThinBlock;
 import net.mcreator.yafnafmod.block.CurtainYellowStarlessBlock;
@@ -4624,6 +4631,13 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> ROCKSTAR_CHICA_BLOCK = REGISTRY.register("rockstar_chica_block", () -> new RockstarChicaBlockBlock());
 	public static final RegistryObject<Block> ROCKSTAR_FOXY_BLOCK = REGISTRY.register("rockstar_foxy_block", () -> new RockstarFoxyBlockBlock());
 	public static final RegistryObject<Block> LEFTY_BLOCK = REGISTRY.register("lefty_block", () -> new LeftyBlockBlock());
+	public static final RegistryObject<Block> CUTOUT_FREDDY_TOY = REGISTRY.register("cutout_freddy_toy", () -> new CutoutFreddyToyBlock());
+	public static final RegistryObject<Block> CUTOUT_BONNIE_TOY = REGISTRY.register("cutout_bonnie_toy", () -> new CutoutBonnieToyBlock());
+	public static final RegistryObject<Block> CUTOUT_CHICA_TOY = REGISTRY.register("cutout_chica_toy", () -> new CutoutChicaToyBlock());
+	public static final RegistryObject<Block> CUTOUT_FOXY_FUNTIME = REGISTRY.register("cutout_foxy_funtime", () -> new CutoutFoxyFuntimeBlock());
+	public static final RegistryObject<Block> CUTOUT_FREDDY_FUNTIME = REGISTRY.register("cutout_freddy_funtime", () -> new CutoutFreddyFuntimeBlock());
+	public static final RegistryObject<Block> CUTOUT_BABY = REGISTRY.register("cutout_baby", () -> new CutoutBabyBlock());
+	public static final RegistryObject<Block> CUTOUT_BALLORA = REGISTRY.register("cutout_ballora", () -> new CutoutBalloraBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

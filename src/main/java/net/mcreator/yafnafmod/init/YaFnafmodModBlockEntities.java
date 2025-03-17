@@ -196,13 +196,20 @@ import net.mcreator.yafnafmod.block.entity.CutoutTreeOakTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutSpringbonnieTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutSpringbonnieRottenTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutHelpyTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutFreddyToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFreddyRetroTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutFreddyFuntimeTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFredbearTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFredbearIcecreamTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFredbearBittenTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFoxyRetroTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutFoxyFuntimeTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutChicaToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutChicaRetroTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutBonnieToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBonnieRetroTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutBalloraTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutBabyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CreativeGeneratorBlockBlockEntity;
 import net.mcreator.yafnafmod.block.entity.ControlPanelTileEntity;
 import net.mcreator.yafnafmod.block.entity.ConcertSpeakerTileEntity;
@@ -766,6 +773,19 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<RockstarFoxyBlockTileEntity>> ROCKSTAR_FOXY_BLOCK = REGISTRY.register("rockstar_foxy_block",
 			() -> BlockEntityType.Builder.of(RockstarFoxyBlockTileEntity::new, YaFnafmodModBlocks.ROCKSTAR_FOXY_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<LeftyBlockTileEntity>> LEFTY_BLOCK = REGISTRY.register("lefty_block", () -> BlockEntityType.Builder.of(LeftyBlockTileEntity::new, YaFnafmodModBlocks.LEFTY_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutFreddyToyTileEntity>> CUTOUT_FREDDY_TOY = REGISTRY.register("cutout_freddy_toy",
+			() -> BlockEntityType.Builder.of(CutoutFreddyToyTileEntity::new, YaFnafmodModBlocks.CUTOUT_FREDDY_TOY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutBonnieToyTileEntity>> CUTOUT_BONNIE_TOY = REGISTRY.register("cutout_bonnie_toy",
+			() -> BlockEntityType.Builder.of(CutoutBonnieToyTileEntity::new, YaFnafmodModBlocks.CUTOUT_BONNIE_TOY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutChicaToyTileEntity>> CUTOUT_CHICA_TOY = REGISTRY.register("cutout_chica_toy",
+			() -> BlockEntityType.Builder.of(CutoutChicaToyTileEntity::new, YaFnafmodModBlocks.CUTOUT_CHICA_TOY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutFoxyFuntimeTileEntity>> CUTOUT_FOXY_FUNTIME = REGISTRY.register("cutout_foxy_funtime",
+			() -> BlockEntityType.Builder.of(CutoutFoxyFuntimeTileEntity::new, YaFnafmodModBlocks.CUTOUT_FOXY_FUNTIME.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutFreddyFuntimeTileEntity>> CUTOUT_FREDDY_FUNTIME = REGISTRY.register("cutout_freddy_funtime",
+			() -> BlockEntityType.Builder.of(CutoutFreddyFuntimeTileEntity::new, YaFnafmodModBlocks.CUTOUT_FREDDY_FUNTIME.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutBabyTileEntity>> CUTOUT_BABY = REGISTRY.register("cutout_baby", () -> BlockEntityType.Builder.of(CutoutBabyTileEntity::new, YaFnafmodModBlocks.CUTOUT_BABY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutBalloraTileEntity>> CUTOUT_BALLORA = REGISTRY.register("cutout_ballora",
+			() -> BlockEntityType.Builder.of(CutoutBalloraTileEntity::new, YaFnafmodModBlocks.CUTOUT_BALLORA.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

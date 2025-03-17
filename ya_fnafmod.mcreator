@@ -59412,6 +59412,167 @@
         ]
       },
       "path": "~/Advancement"
+    },
+    {
+      "name": "CutoutFreddyToy",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutout_freddy_toy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutFreddyToyDisplayModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutFreddyToyBlockModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutFreddyToyDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutFreddyToyTileRenderer.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/cutout_freddy_toy_blockstate_0.json",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CutoutFreddyToyTileEntity.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/cutout_freddy_toy.json",
+          "src/main/java/net/mcreator/yafnafmod/block/CutoutFreddyToyBlock.java",
+          "src/main/resources/assets/ya_fnafmod/blockstates/cutout_freddy_toy.json",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CutoutFreddyToyDisplayItem.java",
+          "src/main/resources/assets/ya_fnafmod/models/custom/cutout_freddy_toy_particle.json"
+        ]
+      },
+      "path": "~/Blocks/Props/Decorations/Cutouts"
+    },
+    {
+      "name": "CutoutBonnieToy",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutout_bonnie_toy",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/models/item/cutout_bonnie_toy.json",
+          "src/main/resources/assets/ya_fnafmod/blockstates/cutout_bonnie_toy.json",
+          "src/main/java/net/mcreator/yafnafmod/block/CutoutBonnieToyBlock.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutBonnieToyTileRenderer.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/cutout_bonnie_toy_blockstate_0.json",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutBonnieToyDisplayModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CutoutBonnieToyTileEntity.java",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CutoutBonnieToyDisplayItem.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutBonnieToyDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutBonnieToyBlockModel.java",
+          "src/main/resources/assets/ya_fnafmod/models/custom/cutout_bonnie_toy_particle.json"
+        ]
+      },
+      "path": "~/Blocks/Props/Decorations/Cutouts"
+    },
+    {
+      "name": "CutoutChicaToy",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutout_chica_toy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutChicaToyTileRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutChicaToyDisplayItemRenderer.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/cutout_chica_toy_blockstate_0.json",
+          "src/main/java/net/mcreator/yafnafmod/block/CutoutChicaToyBlock.java",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutChicaToyDisplayModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CutoutChicaToyTileEntity.java",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CutoutChicaToyDisplayItem.java",
+          "src/main/resources/assets/ya_fnafmod/blockstates/cutout_chica_toy.json",
+          "src/main/resources/assets/ya_fnafmod/models/item/cutout_chica_toy.json",
+          "src/main/resources/assets/ya_fnafmod/models/custom/cutout_chica_toy_particle.json",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutChicaToyBlockModel.java"
+        ]
+      },
+      "path": "~/Blocks/Props/Decorations/Cutouts"
+    },
+    {
+      "name": "CutoutFoxyFuntime",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutout_foxy_funtime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/CutoutFoxyFuntimeBlock.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/cutout_foxy_funtime_blockstate_0.json",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutFoxyFuntimeDisplayModel.java",
+          "src/main/resources/assets/ya_fnafmod/models/custom/cutout_foxy_funtime_particle.json",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutFoxyFuntimeTileRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CutoutFoxyFuntimeTileEntity.java",
+          "src/main/resources/assets/ya_fnafmod/blockstates/cutout_foxy_funtime.json",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutFoxyFuntimeDisplayItemRenderer.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/cutout_foxy_funtime.json",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutFoxyFuntimeBlockModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CutoutFoxyFuntimeDisplayItem.java"
+        ]
+      },
+      "path": "~/Blocks/Props/Decorations/Cutouts"
+    },
+    {
+      "name": "CutoutFreddyFuntime",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutout_freddy_funtime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutFreddyFuntimeBlockModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CutoutFreddyFuntimeDisplayItem.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutFreddyFuntimeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutFreddyFuntimeDisplayModel.java",
+          "src/main/resources/assets/ya_fnafmod/models/custom/cutout_freddy_funtime_particle.json",
+          "src/main/java/net/mcreator/yafnafmod/block/CutoutFreddyFuntimeBlock.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/cutout_freddy_funtime.json",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutFreddyFuntimeTileRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CutoutFreddyFuntimeTileEntity.java",
+          "src/main/resources/assets/ya_fnafmod/blockstates/cutout_freddy_funtime.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/cutout_freddy_funtime_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/Props/Decorations/Cutouts"
+    },
+    {
+      "name": "CutoutBaby",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutout_baby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutBabyBlockModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CutoutBabyTileEntity.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutBabyDisplayItemRenderer.java",
+          "src/main/resources/assets/ya_fnafmod/models/custom/cutout_baby_particle.json",
+          "src/main/resources/assets/ya_fnafmod/blockstates/cutout_baby.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/cutout_baby_blockstate_0.json",
+          "src/main/java/net/mcreator/yafnafmod/block/CutoutBabyBlock.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutBabyTileRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CutoutBabyDisplayItem.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/cutout_baby.json",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutBabyDisplayModel.java"
+        ]
+      },
+      "path": "~/Blocks/Props/Decorations/Cutouts"
+    },
+    {
+      "name": "CutoutBallora",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cutout_ballora",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutBalloraTileRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutBalloraDisplayModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/CutoutBalloraBlock.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CutoutBalloraDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CutoutBalloraTileEntity.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/cutout_ballora_blockstate_0.json",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CutoutBalloraDisplayItem.java",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CutoutBalloraBlockModel.java",
+          "src/main/resources/assets/ya_fnafmod/blockstates/cutout_ballora.json",
+          "src/main/resources/assets/ya_fnafmod/models/item/cutout_ballora.json",
+          "src/main/resources/assets/ya_fnafmod/models/custom/cutout_ballora_particle.json"
+        ]
+      },
+      "path": "~/Blocks/Props/Decorations/Cutouts"
     }
   ],
   "variable_elements": [
@@ -64801,7 +64962,14 @@
       "PlushStaticbear",
       "CreativeGeneratorBlock",
       "BoothTableWhite",
-      "BoothTableBlack"
+      "BoothTableBlack",
+      "CutoutFreddyToy",
+      "CutoutBonnieToy",
+      "CutoutChicaToy",
+      "CutoutFoxyFuntime",
+      "CutoutFreddyFuntime",
+      "CutoutBaby",
+      "CutoutBallora"
     ],
     "CUSTOM:AnimatronicBlocks": [
       "Fat",
@@ -67415,6 +67583,7 @@
       "block.ya_fnafmod.purple_white_checkered_tiles": "Purple White Checkered Tiles",
       "item_group.ya_fnafmod.yafnaf_fms_skins": "YAFNAF (FMS Skins)",
       "item.ya_fnafmod.bucket_bob_spawn_egg": "Bucket Bob Spawn Egg",
+      "block.ya_fnafmod.cutout_freddy_toy": "Cutout (Toy Freddy)",
       "block.ya_fnafmod.pink_stage_bricks_red_extra_tiles": "Pink Stage Brick Extra Tiles (Red Stripe)",
       "block.ya_fnafmod.fancy_light_wall_black_sns_extra_tiles_big_alternate": "Fancy Light Wall Extra Tiles (Big Alternate Black Stripe, SNS Tiles)",
       "entity.ya_fnafmod.blob_circus_baby": "Blob (Circus Baby)",
@@ -67544,6 +67713,7 @@
       "item.ya_fnafmod.fnaf_3_song_watp.desc": "We are the Phantoms",
       "block.ya_fnafmod.black_beige_tiles": "Black Beige Tiles",
       "block.ya_fnafmod.pizza_box_stack_1979": "Pizza Box Stack (1979)",
+      "block.ya_fnafmod.cutout_foxy_funtime": "Cutout (Funtime Foxy)",
       "block.ya_fnafmod.party_table": "Party Table",
       "block.ya_fnafmod.sns_big_checkered_tiles": "SNS Big Checkered Tiles",
       "block.ya_fnafmod.pink_stage_bricks": "Pink Stage Bricks",
@@ -68120,6 +68290,7 @@
       "item.ya_fnafmod.gas_mask_chestplate": "Gas Mask Chestplate",
       "block.ya_fnafmod.carpeted_floor_fredbear_clean_slab": "Carpeted Floor Slab (Fredbear, Clean)",
       "block.ya_fnafmod.light_blue_stage_bricks_black_extra_tiles": "Light Blue Stage Brick Extra Tiles (Black Stripe)",
+      "block.ya_fnafmod.cutout_bonnie_toy": "Cutout (Toy Bonnie)",
       "gamerule.generatorNight.description": "If turned on, the generator only runs out at night.",
       "item.ya_fnafmod.icecream_strawberry": "Icecream (Strawberry)",
       "block.ya_fnafmod.lime_wall": "Lime Wall",
@@ -68733,6 +68904,8 @@
       "block.ya_fnafmod.beige_wall_black_tiles_big_alternate": "Beige Wall Tiles (Big Alternate Black Stripe)",
       "block.ya_fnafmod.light_blue_stage_brick_stairs": "Light Blue Stage Brick Stairs",
       "block.ya_fnafmod.black_stage_bricks_black_tiles_big": "Black Stage Brick Tiles (Big Black Stripe)",
+      "block.ya_fnafmod.cutout_ballora": "Cutout (Ballora)",
+      "block.ya_fnafmod.cutout_chica_toy": "Cutout (Toy Chica)",
       "entity.ya_fnafmod.ghost_child": "Ghost Child",
       "block.ya_fnafmod.intercom": "Intercom",
       "block.ya_fnafmod.black_hot_pink_big_checkered_tile_stairs": "Black Hot Pink Big Checkered Tile Stairs",
@@ -68782,6 +68955,7 @@
       "block.ya_fnafmod.green_light_blue_big_checkered_tile_slab": "Green Light Blue Big Checkered Tile Slab",
       "block.ya_fnafmod.breaker_room_wall_stairs": "Breaker Room Wall Stairs",
       "block.ya_fnafmod.lime_tile_block_slab": "Lime Tile Block Slab",
+      "block.ya_fnafmod.cutout_freddy_funtime": "Cutout (Funtime Freddy)",
       "block.ya_fnafmod.stage_light_red": "Stage Light",
       "block.ya_fnafmod.stool_purple": "Stool (Purple)",
       "item.ya_fnafmod.fredbear_suit_spawn_item": "Empty Fredbear Suit",
@@ -68793,6 +68967,7 @@
       "block.ya_fnafmod.hot_pink_wall_black_tiles": "Hot Pink Wall Tiles (Black Stripe)",
       "block.ya_fnafmod.light_blue_wall_black_top": "Light Blue Wall Top (Black Stripe)",
       "block.ya_fnafmod.phone_1979": "Phone (1979)",
+      "block.ya_fnafmod.cutout_baby": "Cutout (Baby)",
       "block.ya_fnafmod.orange_stage_brick_stairs": "Orange Stage Bricks Stairs",
       "block.ya_fnafmod.red_blue_big_checkered_tile_stairs": "Red Blue Big Checkered Tile Stairs",
       "item.ya_fnafmod.waiter_outfit_leggings": "Waiter Pants",

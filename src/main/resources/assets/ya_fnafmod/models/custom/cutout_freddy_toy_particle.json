@@ -1,0 +1,7 @@
+
+{
+  "parent": "ya_fnafmod:displaysettings/bobbleheads",
+  "textures": {
+    "particle": "ya_fnafmod:block/cutout_toyfreddy"
+  }
+}

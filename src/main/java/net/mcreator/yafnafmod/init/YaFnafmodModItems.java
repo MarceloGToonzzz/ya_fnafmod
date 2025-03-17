@@ -503,13 +503,20 @@ import net.mcreator.yafnafmod.block.display.CutoutTreeOakDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutSpringbonnieRottenDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutSpringbonnieDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutHelpyDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutFreddyToyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutFreddyRetroDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutFreddyFuntimeDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutFredbearIcecreamDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutFredbearDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutFredbearBittenDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutFoxyRetroDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutFoxyFuntimeDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutChicaToyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutChicaRetroDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutBonnieToyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBonnieRetroDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutBalloraDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutBabyDisplayItem;
 import net.mcreator.yafnafmod.block.display.ControlPanelDisplayItem;
 import net.mcreator.yafnafmod.block.display.ConcertSpeakerDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClownLemonadeDisplayItem;
@@ -3500,6 +3507,15 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> HAMBURGER = REGISTRY.register("hamburger", () -> new HamburgerItem());
 	public static final RegistryObject<Item> CHEESEBURGER = REGISTRY.register("cheeseburger", () -> new CheeseburgerItem());
 	public static final RegistryObject<Item> VEGGIEBURGER = REGISTRY.register("veggieburger", () -> new VeggieburgerItem());
+	public static final RegistryObject<Item> CUTOUT_FREDDY_TOY = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_FREDDY_TOY.getId().getPath(), () -> new CutoutFreddyToyDisplayItem(YaFnafmodModBlocks.CUTOUT_FREDDY_TOY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_BONNIE_TOY = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_BONNIE_TOY.getId().getPath(), () -> new CutoutBonnieToyDisplayItem(YaFnafmodModBlocks.CUTOUT_BONNIE_TOY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_CHICA_TOY = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_CHICA_TOY.getId().getPath(), () -> new CutoutChicaToyDisplayItem(YaFnafmodModBlocks.CUTOUT_CHICA_TOY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_FOXY_FUNTIME = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_FOXY_FUNTIME.getId().getPath(),
+			() -> new CutoutFoxyFuntimeDisplayItem(YaFnafmodModBlocks.CUTOUT_FOXY_FUNTIME.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_FREDDY_FUNTIME = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_FREDDY_FUNTIME.getId().getPath(),
+			() -> new CutoutFreddyFuntimeDisplayItem(YaFnafmodModBlocks.CUTOUT_FREDDY_FUNTIME.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_BABY = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_BABY.getId().getPath(), () -> new CutoutBabyDisplayItem(YaFnafmodModBlocks.CUTOUT_BABY.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_BALLORA = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_BALLORA.getId().getPath(), () -> new CutoutBalloraDisplayItem(YaFnafmodModBlocks.CUTOUT_BALLORA.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

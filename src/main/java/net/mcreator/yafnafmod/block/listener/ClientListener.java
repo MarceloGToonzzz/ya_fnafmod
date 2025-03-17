@@ -178,13 +178,20 @@ import net.mcreator.yafnafmod.block.renderer.CutoutTreeOakTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutSpringbonnieTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutSpringbonnieRottenTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutHelpyTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutFreddyToyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutFreddyRetroTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutFreddyFuntimeTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutFredbearTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutFredbearIcecreamTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutFredbearBittenTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutFoxyRetroTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutFoxyFuntimeTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutChicaToyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutChicaRetroTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutBonnieToyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBonnieRetroTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutBalloraTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutBabyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ControlPanelTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ConcertSpeakerTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ClownLemonadeTileRenderer;
@@ -542,5 +549,12 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ROCKSTAR_CHICA_BLOCK.get(), context -> new RockstarChicaBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ROCKSTAR_FOXY_BLOCK.get(), context -> new RockstarFoxyBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.LEFTY_BLOCK.get(), context -> new LeftyBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FREDDY_TOY.get(), context -> new CutoutFreddyToyTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_BONNIE_TOY.get(), context -> new CutoutBonnieToyTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_CHICA_TOY.get(), context -> new CutoutChicaToyTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FOXY_FUNTIME.get(), context -> new CutoutFoxyFuntimeTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FREDDY_FUNTIME.get(), context -> new CutoutFreddyFuntimeTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_BABY.get(), context -> new CutoutBabyTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_BALLORA.get(), context -> new CutoutBalloraTileRenderer());
 	}
 }

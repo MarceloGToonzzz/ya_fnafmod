@@ -1643,6 +1643,13 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOOTH_TABLE_WHITE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOOTH_TABLE_BLACK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUTOUT_FREDDY_TOY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUTOUT_BONNIE_TOY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUTOUT_CHICA_TOY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUTOUT_FOXY_FUNTIME.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUTOUT_FREDDY_FUNTIME.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUTOUT_BABY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUTOUT_BALLORA.get().asItem());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> ANIMATRONIC_BLOCKS = REGISTRY.register("animatronic_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.animatronic_blocks")).icon(() -> new ItemStack(YaFnafmodModBlocks.FREDDY_FAZBEAR_BLOCK.get())).displayItems((parameters, tabData) -> {
