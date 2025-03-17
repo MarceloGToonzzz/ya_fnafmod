@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stage_bricks",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:stage_bricks"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:stage_brick_stairs",
+    "count": 1
+  }
+}

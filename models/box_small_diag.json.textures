@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "box_small"
+      },
+      "name": "default"
+    },
+    "logo": {
+      "map": {
+        "0": "box_small_logo"
+      },
+      "name": "logo"
+    }
+  }
+}

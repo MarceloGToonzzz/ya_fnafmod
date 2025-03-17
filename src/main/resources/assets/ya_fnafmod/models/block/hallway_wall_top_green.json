@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/afthou_hallwall3",
+    "particle": "ya_fnafmod:block/afthou_hallwall3"
+  },
+  "render_type": "solid"
+}

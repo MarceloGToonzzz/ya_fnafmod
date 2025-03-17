@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left_open",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_kitchen_bottom",
+    "bottom": "ya_fnafmod:block/door_kitchen_bottom",
+    "top": "ya_fnafmod:block/door_kitchen_top"
+  },
+  "render_type": "cutout_mipped"
+}

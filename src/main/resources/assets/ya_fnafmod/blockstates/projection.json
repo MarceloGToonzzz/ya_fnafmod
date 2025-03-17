@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/projection"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/projection",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/projection",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/projection",
+      "y": 270
+    }
+  }
+}

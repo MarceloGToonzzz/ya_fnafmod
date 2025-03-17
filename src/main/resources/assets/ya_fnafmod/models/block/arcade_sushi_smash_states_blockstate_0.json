@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade2",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade2_sushismash_off",
+    "particle": "ya_fnafmod:block/arcade2_sushismash",
+    "1": "ya_fnafmod:block/arcade2_sushismash"
+  },
+  "render_type": "translucent"
+}

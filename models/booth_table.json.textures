@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "booth_table_white"
+      },
+      "name": "default"
+    },
+    "black": {
+      "map": {
+        "0": "booth_table_black"
+      },
+      "name": "black"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "ya_fnafmod:custom/neon_letter",
+  "textures": {
+    "all": "ya_fnafmod:block/neonletter_purple_q",
+    "particle": "ya_fnafmod:block/neonletter_purple_q",
+    "1": "ya_fnafmod:block/neonsignback",
+    "2": "ya_fnafmod:block/neonletter_purple_q"
+  },
+  "render_type": "translucent"
+}

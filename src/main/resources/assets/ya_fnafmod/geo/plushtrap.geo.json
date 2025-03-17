@@ -1,0 +1,77 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.plush",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-4, 2, -4], "size": [8, 4, 8], "uv": [0, 12]},
+						{"origin": [-3.5, 5.5, -3.5], "size": [7, 1, 7], "uv": [0, 36]},
+						{"origin": [-4, 2, -4], "size": [8, 4, 8], "inflate": 0.25, "uv": [32, 0]}
+					]
+				},
+				{
+					"name": "top",
+					"parent": "head",
+					"pivot": [0, 6, 3.5],
+					"cubes": [
+						{"origin": [-4.25, 5.75, -4.25], "size": [8.5, 4.5, 8.5], "uv": [0, 0]},
+						{"origin": [-4, 6, -4], "size": [8, 4, 8], "uv": [0, 24]},
+						{"origin": [-3.5, 5.5, -3.5], "size": [7, 1, 7], "uv": [0, 36]}
+					]
+				},
+				{
+					"name": "bunny_ears",
+					"parent": "top",
+					"pivot": [0, 10.25261, 0],
+					"cubes": [
+						{"origin": [1.5, 9.75261, -0.5], "size": [2, 5, 1], "uv": [32, 12]},
+						{"origin": [-3.5, 9.75261, -0.5], "size": [2, 5, 1], "uv": [32, 12]}
+					]
+				},
+				{
+					"name": "l_arm",
+					"parent": "head",
+					"pivot": [4.5, 5, 0],
+					"cubes": [
+						{"origin": [4, 3, -1], "size": [1, 2, 2], "uv": [32, 18]}
+					]
+				},
+				{
+					"name": "r_arm",
+					"parent": "head",
+					"pivot": [-4.5, 5, 0],
+					"cubes": [
+						{"origin": [-5, 3, -1], "size": [1, 2, 2], "uv": [32, 18]}
+					]
+				},
+				{
+					"name": "l_leg",
+					"parent": "head",
+					"pivot": [1.5, 2, 0],
+					"cubes": [
+						{"origin": [1, 0, -1], "size": [2, 2, 2], "uv": [32, 22]}
+					]
+				},
+				{
+					"name": "r_leg",
+					"parent": "head",
+					"pivot": [-2.5, 2, 0],
+					"cubes": [
+						{"origin": [-3, 0, -1], "size": [2, 2, 2], "uv": [32, 22]}
+					]
+				}
+			]
+		}
+	]
+}

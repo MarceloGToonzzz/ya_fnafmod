@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left_open",
+  "textures": {
+    "particle": "ya_fnafmod:block/secretdoor_lightwall_wallextra_black_greenlime",
+    "bottom": "ya_fnafmod:block/secretdoor_lightwall_wallextra_black_greenlime",
+    "top": "ya_fnafmod:block/secretdoor_lightwall"
+  },
+  "render_type": "solid"
+}

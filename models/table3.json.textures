@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tablecloth_2",
+        "1": "table3_1"
+      },
+      "name": "default"
+    },
+    "bluestripe": {
+      "map": {
+        "0": "tablecloth_3",
+        "1": "table3_1"
+      },
+      "name": "bluestripe"
+    },
+    "bluestripe_noleg": {
+      "map": {
+        "0": "tablecloth_3",
+        "1": "table3_0"
+      },
+      "name": "bluestripe_noleg"
+    },
+    "redtile": {
+      "map": {
+        "0": "tablecloth_4",
+        "1": "table3_1"
+      },
+      "name": "redtile"
+    },
+    "pinkstripe_noleg": {
+      "map": {
+        "0": "tablecloth_2",
+        "1": "table3_0"
+      },
+      "name": "pinkstripe_noleg"
+    },
+    "redtile_noleg": {
+      "map": {
+        "0": "tablecloth_4",
+        "1": "table3_0"
+      },
+      "name": "redtile_noleg"
+    }
+  }
+}

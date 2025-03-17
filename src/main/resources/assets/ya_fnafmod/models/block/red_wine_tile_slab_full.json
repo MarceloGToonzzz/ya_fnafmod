@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortile_reddarkred",
+    "bottom": "ya_fnafmod:block/floortile_reddarkred",
+    "top": "ya_fnafmod:block/floortile_reddarkred",
+    "side": "ya_fnafmod:block/floortile_reddarkred"
+  },
+  "render_type": "solid"
+}

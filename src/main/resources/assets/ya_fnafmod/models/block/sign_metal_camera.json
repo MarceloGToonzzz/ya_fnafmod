@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/signmetal",
+  "textures": {
+    "all": "ya_fnafmod:block/metalsign_cameraposted",
+    "particle": "ya_fnafmod:block/metalsign_cameraposted",
+    "1": "ya_fnafmod:block/metalsign_cameraposted"
+  },
+  "render_type": "cutout_mipped"
+}

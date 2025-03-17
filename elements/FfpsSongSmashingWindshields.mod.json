@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "COMMON",
+    "texture": "record_fnaf6",
+    "description": "Smashing Windshields",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": [
+        "Original by Leon Riskin, This cover done by me."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:bg_fnaf6song_smashingwindshields"
+    },
+    "lengthInTicks": 3280,
+    "analogOutput": 0
+  }
+}

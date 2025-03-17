@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "ya_fnafmod:block/elevator_door_glass",
+    "edge": "ya_fnafmod:block/elevator_door_glass",
+    "pane": "ya_fnafmod:block/elevator_door_glass"
+  },
+  "render_type": "translucent"
+}

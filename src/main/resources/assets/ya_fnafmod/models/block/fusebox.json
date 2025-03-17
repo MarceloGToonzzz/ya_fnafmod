@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/fusebox",
+    "up": "ya_fnafmod:block/fusebox",
+    "north": "ya_fnafmod:block/fusebox_front",
+    "east": "ya_fnafmod:block/fusebox",
+    "south": "ya_fnafmod:block/fusebox",
+    "west": "ya_fnafmod:block/fusebox",
+    "particle": "ya_fnafmod:block/fusebox"
+  },
+  "render_type": "solid"
+}

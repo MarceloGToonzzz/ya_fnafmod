@@ -1,0 +1,17 @@
+{
+  "parent": "ya_fnafmod:custom/office_window_modular",
+  "textures": {
+    "all": "ya_fnafmod:block/officewindow_block",
+    "particle": "ya_fnafmod:block/officewindow_block",
+    "top_corner_l": "ya_fnafmod:block/empty",
+    "glass": "ya_fnafmod:block/officewindow_block",
+    "top": "ya_fnafmod:block/empty",
+    "left": "ya_fnafmod:block/empty",
+    "bottom": "ya_fnafmod:block/empty",
+    "bottom_cornerr": "ya_fnafmod:block/empty",
+    "right": "ya_fnafmod:block/empty",
+    "bottom_cornerl": "ya_fnafmod:block/empty",
+    "top_corner_r": "ya_fnafmod:block/empty"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "COMMON",
+    "texture": "record_fnaf6",
+    "description": "Labyrinth",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": [
+        "Original by CG5, This cover done by me."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:bg_fnaf6song_cg5"
+    },
+    "lengthInTicks": 4400,
+    "analogOutput": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "ya_fnafmod:custom/f.a.t",
+  "textures": {
+    "0": "ya_fnafmod:block/fat",
+    "particle": "minecraft:item/amethyst_shard"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "ya_fnafmod:fat_state": 0
+      },
+      "model": "ya_fnafmod:item/fat_0"
+    },
+    {
+      "predicate": {
+        "ya_fnafmod:fat_state": 1
+      },
+      "model": "ya_fnafmod:item/fat_1"
+    },
+    {
+      "predicate": {
+        "ya_fnafmod:fat_state": 2
+      },
+      "model": "ya_fnafmod:item/fat_2"
+    }
+  ]
+}

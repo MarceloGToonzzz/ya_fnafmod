@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "tab",
+  "definition": {
+    "name": "YAFNAF (Extra Walls)",
+    "icon": {
+      "value": "CUSTOM:RedWall"
+    },
+    "showSearch": false
+  }
+}

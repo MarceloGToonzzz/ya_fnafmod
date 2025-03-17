@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/drawer_medium",
+  "textures": {
+    "all": "ya_fnafmod:block/drawermedium_brown",
+    "particle": "ya_fnafmod:block/drawermedium_brown",
+    "1": "ya_fnafmod:block/drawermedium_brown"
+  },
+  "render_type": "solid"
+}

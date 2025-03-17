@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/bigdoorwide",
+  "textures": {
+    "particle": "ya_fnafmod:block/bigdoor_entrance_wide"
+  }
+}

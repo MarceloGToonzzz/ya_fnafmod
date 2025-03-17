@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/curtain_lightblue_starless",
+    "particle": "ya_fnafmod:block/curtain_lightblue_starless"
+  },
+  "render_type": "solid"
+}

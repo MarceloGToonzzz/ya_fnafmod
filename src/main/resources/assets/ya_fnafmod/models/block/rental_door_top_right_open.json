@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right_open",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_rentaldoor_bottom",
+    "bottom": "ya_fnafmod:block/door_rentaldoor_bottom",
+    "top": "ya_fnafmod:block/door_rentaldoor_top"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/office_wall_diamondplate",
+    "particle": "ya_fnafmod:block/office_wall_diamondplate"
+  },
+  "render_type": "solid"
+}

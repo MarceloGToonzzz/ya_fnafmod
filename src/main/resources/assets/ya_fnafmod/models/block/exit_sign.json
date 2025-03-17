@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/exit_sign",
+  "textures": {
+    "all": "ya_fnafmod:block/exit_sign",
+    "particle": "ya_fnafmod:block/exit_sign",
+    "0": "ya_fnafmod:block/exit_sign"
+  },
+  "render_type": "cutout"
+}

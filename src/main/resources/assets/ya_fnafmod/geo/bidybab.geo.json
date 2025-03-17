@@ -1,0 +1,85 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.model",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "pivot",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "pivot",
+					"pivot": [0, 6, 0],
+					"cubes": [
+						{"origin": [-2, 6, -1], "size": [4, 6, 2], "uv": [0, 24]}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "body",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{"origin": [-3, 12, -3], "size": [6, 6, 6], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "faceplate_r",
+					"parent": "Head",
+					"pivot": [0, 15, 3],
+					"cubes": [
+						{"origin": [-3, 12, -3], "size": [3, 6, 6], "inflate": 0.12, "uv": [0, 12]}
+					]
+				},
+				{
+					"name": "faceplate_l",
+					"parent": "Head",
+					"pivot": [0, 15, 3],
+					"cubes": [
+						{"origin": [0, 12, -3], "size": [3, 6, 6], "inflate": 0.12, "uv": [18, 12]}
+					]
+				},
+				{
+					"name": "larm",
+					"parent": "body",
+					"pivot": [3, 11.5, 0],
+					"cubes": [
+						{"origin": [2, 6, -1], "size": [2, 6, 2], "uv": [20, 24]}
+					]
+				},
+				{
+					"name": "rarm",
+					"parent": "body",
+					"pivot": [-3, 11.5, 0],
+					"cubes": [
+						{"origin": [-4, 6, -1], "size": [2, 6, 2], "uv": [28, 24]}
+					]
+				},
+				{
+					"name": "rleg",
+					"parent": "pivot",
+					"pivot": [-1, 6, 0],
+					"cubes": [
+						{"origin": [-2, 0, -1], "size": [2, 6, 2], "uv": [12, 24]}
+					]
+				},
+				{
+					"name": "lleg",
+					"parent": "pivot",
+					"pivot": [1, 6, 0],
+					"cubes": [
+						{"origin": [0, 0, -1], "size": [2, 6, 2], "uv": [24, 0]}
+					]
+				}
+			]
+		}
+	]
+}

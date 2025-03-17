@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/musicbox",
+  "textures": {
+    "all": "ya_fnafmod:block/musicbox",
+    "particle": "ya_fnafmod:block/musicbox",
+    "1": "ya_fnafmod:block/musicbox"
+  },
+  "render_type": "solid"
+}

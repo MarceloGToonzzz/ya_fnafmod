@@ -1,0 +1,132 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Monitor",
+    "blockstateList": [
+      {
+        "texture": "monitor2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "monitor2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 9.0,
+            "my": 0.0,
+            "mz": 2.5,
+            "Mx": 21.0,
+            "My": 11.0,
+            "Mz": 13.5,
+            "subtract": false
+          },
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": 1.5,
+            "Mx": 6.0,
+            "My": 11.0,
+            "Mz": 12.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "monitor3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "monitor3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 9.0,
+            "my": 0.0,
+            "mz": 2.5,
+            "Mx": 21.0,
+            "My": 11.0,
+            "Mz": 13.5,
+            "subtract": false
+          },
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": 1.5,
+            "Mx": 6.0,
+            "My": 11.0,
+            "Mz": 12.5,
+            "subtract": false
+          },
+          {
+            "mx": 1.0,
+            "my": 11.0,
+            "mz": 2.5,
+            "Mx": 13.0,
+            "My": 22.0,
+            "Mz": 13.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "monitor4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "monitor4:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 10.0,
+            "my": 0.0,
+            "mz": 1.5,
+            "Mx": 22.0,
+            "My": 11.0,
+            "Mz": 12.5,
+            "subtract": false
+          },
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": 1.5,
+            "Mx": 6.0,
+            "My": 11.0,
+            "Mz": 12.5,
+            "subtract": false
+          },
+          {
+            "mx": -5.0,
+            "my": 11.0,
+            "mz": 2.5,
+            "Mx": 7.0,
+            "My": 22.0,
+            "Mz": 13.5,
+            "subtract": false
+          },
+          {
+            "mx": 10.0,
+            "my": 11.0,
+            "mz": 2.5,
+            "Mx": 22.0,
+            "My": 22.0,
+            "Mz": 13.5,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

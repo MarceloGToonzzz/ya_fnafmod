@@ -1,0 +1,41 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ToyCupcake",
+    "blockstateList": [
+      {
+        "texture": "cupcake_toy",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cupcake_diag:toycupcake",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.5,
+            "my": 0.0,
+            "mz": 4.5,
+            "Mx": 11.5,
+            "My": 4.0,
+            "Mz": 11.5,
+            "subtract": false
+          },
+          {
+            "mx": 7.0,
+            "my": 4.0,
+            "mz": 7.0,
+            "Mx": 9.0,
+            "My": 10.0,
+            "Mz": 9.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

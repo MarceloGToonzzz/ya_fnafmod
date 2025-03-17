@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_right",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_bathroomdoor_blue_bottom",
+    "bottom": "ya_fnafmod:block/door_bathroomdoor_blue_bottom",
+    "top": "ya_fnafmod:block/door_bathroomdoor_blue_top"
+  },
+  "render_type": "translucent"
+}

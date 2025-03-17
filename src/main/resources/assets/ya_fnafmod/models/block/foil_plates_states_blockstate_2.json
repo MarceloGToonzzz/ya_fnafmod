@@ -1,0 +1,11 @@
+{
+  "parent": "ya_fnafmod:custom/cups_and_plates",
+  "textures": {
+    "all": "ya_fnafmod:block/cup_blue",
+    "particle": "ya_fnafmod:block/cup_redfoil",
+    "2": "ya_fnafmod:block/cup_bluefoil",
+    "3": "ya_fnafmod:block/coaster_greenfoil",
+    "4": "ya_fnafmod:block/plate_purplefoil"
+  },
+  "render_type": "cutout_mipped"
+}

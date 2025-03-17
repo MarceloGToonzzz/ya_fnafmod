@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "particle": "ya_fnafmod:block/streamer1",
+    "pane": "ya_fnafmod:block/streamer1"
+  },
+  "render_type": "translucent"
+}

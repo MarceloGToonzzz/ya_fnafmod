@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Child Emotion Timer",
+    "description": "This is how much, in seconds, it takes for a child mob to switch emotions.",
+    "category": "PLAYER",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 5
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tablecloth_1"
+      },
+      "name": "default"
+    },
+    "cloth2": {
+      "map": {
+        "0": "tablecloth_2"
+      },
+      "name": "cloth2"
+    },
+    "bluestripes": {
+      "map": {
+        "0": "tablecloth_3"
+      },
+      "name": "bluestripes"
+    },
+    "redtiles": {
+      "map": {
+        "0": "tablecloth_4"
+      },
+      "name": "redtiles"
+    }
+  }
+}

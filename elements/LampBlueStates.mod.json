@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LampBlue",
+    "blockstateList": [
+      {
+        "texture": "lamp_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "lamp:default",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

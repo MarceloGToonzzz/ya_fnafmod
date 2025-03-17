@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/toy_caterpillar_diag",
+  "textures": {
+    "all": "ya_fnafmod:block/toy_caterpillar",
+    "particle": "ya_fnafmod:block/toy_caterpillar",
+    "2": "ya_fnafmod:block/toy_caterpillar"
+  },
+  "render_type": "cutout"
+}

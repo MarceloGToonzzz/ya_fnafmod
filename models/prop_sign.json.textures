@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "propsign_outoforder"
+      },
+      "name": "default"
+    },
+    "flos": {
+      "map": {
+        "0": "propsign_flosglossyfloss"
+      },
+      "name": "flos"
+    },
+    "martys": {
+      "map": {
+        "0": "propsign_martysplungers"
+      },
+      "name": "martys"
+    }
+  }
+}

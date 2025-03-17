@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/flashlight",
+  "textures": {
+    "0": "ya_fnafmod:block/flashlight1_on",
+    "particle": "ya_fnafmod:item/icon_foxypirate"
+  }
+}

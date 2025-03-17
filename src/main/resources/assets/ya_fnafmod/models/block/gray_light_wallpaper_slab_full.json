@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/wall_graylight",
+    "bottom": "ya_fnafmod:block/wall_graylight",
+    "top": "ya_fnafmod:block/wall_graylight",
+    "side": "ya_fnafmod:block/wall_graylight"
+  },
+  "render_type": "solid"
+}

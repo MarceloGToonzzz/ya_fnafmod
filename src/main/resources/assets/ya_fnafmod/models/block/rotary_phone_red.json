@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/phonerotary",
+  "textures": {
+    "all": "ya_fnafmod:block/phonerotary_red",
+    "particle": "ya_fnafmod:block/phonerotary_red",
+    "2": "ya_fnafmod:block/phonerotary_red"
+  },
+  "render_type": "cutout_mipped"
+}

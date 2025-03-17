@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "cagedlight_dual"
+      },
+      "name": "default"
+    },
+    "off": {
+      "map": {
+        "1": "cagedlight_dualoff"
+      },
+      "name": "off"
+    }
+  }
+}

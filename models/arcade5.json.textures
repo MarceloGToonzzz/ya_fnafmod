@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "arcade5_bomber"
+      },
+      "name": "default"
+    },
+    "bomb_off": {
+      "map": {
+        "1": "arcade5_bomber_off"
+      },
+      "name": "bomb_off"
+    }
+  }
+}

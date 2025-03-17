@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/neon_sign_stripes",
+  "textures": {
+    "all": "ya_fnafmod:block/neonsign_stripes_blue_r",
+    "particle": "ya_fnafmod:block/neonsign_stripes_yellow_m",
+    "15": "ya_fnafmod:block/neonsign_stripes_yellow_r"
+  },
+  "render_type": "cutout"
+}

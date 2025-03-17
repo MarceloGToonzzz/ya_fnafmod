@@ -1,0 +1,74 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bonbon",
+					"pivot": [0, 0, 0.5],
+					"rotation": [-90, 0, 0],
+					"cubes": [
+						{"origin": [-3, -3, -9.5], "size": [6, 5, 10], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head2",
+					"parent": "bonbon",
+					"pivot": [0, -0.5, -9.5],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, -0.5, -14.5], "size": [5, 4, 5], "uv": [0, 15]},
+						{"origin": [-0.5, 1, -15], "size": [1, 1, 1], "uv": [20, 24]}
+					]
+				},
+				{
+					"name": "right_ear",
+					"parent": "head2",
+					"pivot": [-1.5, 3.5, -10],
+					"cubes": [
+						{"origin": [-2.5, 3.5, -10.5], "size": [2, 5, 1], "uv": [8, 24]}
+					]
+				},
+				{
+					"name": "left_ear",
+					"parent": "head2",
+					"pivot": [1.5, 3.5, -10],
+					"cubes": [
+						{"origin": [0.5, 3.5, -10.5], "size": [2, 5, 1], "uv": [14, 24]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "bonbon",
+					"pivot": [3.5, 0, -7.25],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [2.5, -6.5, -8.75], "size": [2, 7, 2], "uv": [20, 15]}
+					]
+				},
+				{
+					"name": "right_arm",
+					"parent": "bonbon",
+					"pivot": [-3.5, 0, -7.25],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-4.5, -6.5, -8.75], "size": [2, 7, 2], "uv": [0, 24]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "bonbon",
+					"pivot": [0, -1.25, 1]
+				}
+			]
+		}
+	]
+}

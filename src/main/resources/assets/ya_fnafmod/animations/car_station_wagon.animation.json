@@ -1,0 +1,142 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"Car": {
+					"rotation": {
+						"vector": [0, -45, 0]
+					}
+				}
+			}
+		},
+		"2": {
+			"loop": true,
+			"bones": {
+				"Car": {
+					"position": {
+						"vector": [0, -8, 0]
+					}
+				}
+			}
+		},
+		"3": {
+			"loop": true,
+			"bones": {
+				"Car": {
+					"rotation": {
+						"vector": [0, -45, 0]
+					},
+					"position": {
+						"vector": [0, -8, 0]
+					}
+				}
+			}
+		},
+		"animation.sw.drive": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"tire4": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"tire3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"tire2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"tire1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 0.5, 0],
+							"easing": "easeInOutSine"
+						},
+						"0.25": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"0.375": {
+							"vector": [0, 0.5, 0],
+							"easing": "easeInOutSine"
+						},
+						"0.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"0.625": {
+							"vector": [0, 0.5, 0],
+							"easing": "easeInOutSine"
+						},
+						"0.75": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"0.875": {
+							"vector": [0, 0.5, 0],
+							"easing": "easeInOutSine"
+						},
+						"1.0": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						}
+					}
+				},
+				"Car": {
+					"position": {
+						"vector": [-8, 0, 10]
+					}
+				}
+			}
+		},
+		"animation.sw.idle": {
+			"loop": true,
+			"bones": {
+				"Car": {
+					"position": {
+						"vector": [-8, 0, 10]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

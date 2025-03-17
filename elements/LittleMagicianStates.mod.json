@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LittleMagician",
+    "blockstateList": [
+      {
+        "texture": "little_magician",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "little_magician_diag:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

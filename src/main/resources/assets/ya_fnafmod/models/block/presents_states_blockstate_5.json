@@ -1,0 +1,11 @@
+{
+  "parent": "ya_fnafmod:custom/presents3",
+  "textures": {
+    "all": "ya_fnafmod:block/present_red",
+    "particle": "ya_fnafmod:block/present_red",
+    "1": "ya_fnafmod:block/present_red",
+    "2": "ya_fnafmod:block/present_yellow",
+    "3": "ya_fnafmod:block/present_blue"
+  },
+  "render_type": "cutout"
+}

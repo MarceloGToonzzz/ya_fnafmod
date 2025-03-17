@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PartyChair",
+    "blockstateList": [
+      {
+        "texture": "partychair1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "partychair1_diag:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

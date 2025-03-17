@@ -1,0 +1,34 @@
+{
+  "mappings": {
+    "open_top": {
+      "map": {
+        "0": "securitydoor_open"
+      },
+      "name": "open_top"
+    },
+    "default": {
+      "map": {
+        "0": "securitydoor_bottom"
+      },
+      "name": "default"
+    },
+    "top": {
+      "map": {
+        "0": "securitydoor_top"
+      },
+      "name": "top"
+    },
+    "empty": {
+      "map": {
+        "0": "empty"
+      },
+      "name": "empty"
+    },
+    "top_window": {
+      "map": {
+        "0": "securitydoor_top_window"
+      },
+      "name": "top_window"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ya_fnafmod:blocks/vending_machine_premium_coffee",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ya_fnafmod:vending_machine_premium_coffee"
+        }
+      ]
+    }
+  ]
+}

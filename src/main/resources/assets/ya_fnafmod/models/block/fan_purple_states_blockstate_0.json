@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/fan",
+  "textures": {
+    "all": "ya_fnafmod:block/fan_gray_on",
+    "particle": "ya_fnafmod:block/fan_purple_off",
+    "1": "ya_fnafmod:block/fan_purple_on"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "present_red",
+        "2": "present_yellow",
+        "3": "present_blue"
+      },
+      "name": "default"
+    },
+    "bgy": {
+      "map": {
+        "1": "present_blue",
+        "2": "present_green",
+        "3": "present_yellow"
+      },
+      "name": "bgy"
+    },
+    "rgb": {
+      "map": {
+        "1": "present_red",
+        "2": "present_green",
+        "3": "present_blue"
+      },
+      "name": "rgb"
+    }
+  }
+}

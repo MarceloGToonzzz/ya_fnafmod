@@ -1,0 +1,11 @@
+{
+  "parent": "ya_fnafmod:custom/gas_tank",
+  "textures": {
+    "all": "ya_fnafmod:block/gas_tank_gray",
+    "particle": "ya_fnafmod:block/gas_tank_gray",
+    "0": "ya_fnafmod:block/gas_tank_gray",
+    "1": "ya_fnafmod:block/gas_tank_gray",
+    "2": "ya_fnafmod:block/empty"
+  },
+  "render_type": "cutout_mipped"
+}

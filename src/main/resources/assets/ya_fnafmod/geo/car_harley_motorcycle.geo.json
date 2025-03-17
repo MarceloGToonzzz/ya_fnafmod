@@ -1,0 +1,53 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone3",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 3, -18], "size": [5, 5, 5], "uv": [0, 94]},
+						{"origin": [-2, 10, -10], "size": [5, 7, 11], "uv": [60, 73]},
+						{"origin": [-4, 15, -9], "size": [2, 2, 2], "uv": [20, 94]},
+						{"origin": [3, 15, -9], "size": [2, 2, 2], "uv": [20, 94]},
+						{"origin": [-4, 1, 0], "size": [9, 10, 17], "uv": [60, 27]},
+						{"origin": [-4, 1, -8], "size": [9, 9, 18], "uv": [54, 0]},
+						{"origin": [-4, 11, 1], "size": [9, 3, 21], "uv": [0, 48]},
+						{"origin": [3.25, 0, -21], "size": [0, 21, 27], "uv": [0, 0]},
+						{"origin": [-3, 14, 10], "size": [7, 2, 7], "uv": [92, 73]},
+						{"origin": [-3, 16, 15], "size": [7, 4, 2], "uv": [92, 82]},
+						{"origin": [-4, 10, 1], "size": [9, 1, 9], "uv": [60, 91]},
+						{"origin": [-5, 2, 4], "size": [2, 2, 17], "uv": [60, 54], "mirror": true},
+						{"origin": [4, 2, 4], "size": [2, 2, 17], "uv": [60, 54]},
+						{"origin": [-2.25, 0, -21], "size": [0, 21, 27], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone3",
+					"pivot": [0.5, 5.5, -15.5],
+					"cubes": [
+						{"origin": [-1, 0, -21], "size": [3, 11, 11], "uv": [32, 72]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "bone3",
+					"pivot": [0.5, 5.5, 15.75],
+					"cubes": [
+						{"origin": [-2, 0, 10.25], "size": [5, 11, 11], "uv": [0, 72]}
+					]
+				}
+			]
+		}
+	]
+}

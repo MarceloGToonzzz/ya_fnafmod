@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/stool",
+  "textures": {
+    "all": "ya_fnafmod:block/stool_orange",
+    "particle": "ya_fnafmod:block/stool_orange",
+    "0": "ya_fnafmod:block/stool_orange"
+  },
+  "render_type": "cutout_mipped"
+}

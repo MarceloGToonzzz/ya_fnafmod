@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "paintingbig_fredbear"
+      },
+      "name": "default"
+    },
+    "flower": {
+      "map": {
+        "1": "paintingbig_flower"
+      },
+      "name": "flower"
+    },
+    "springbonnie": {
+      "map": {
+        "1": "paintingbig_springbonnie"
+      },
+      "name": "springbonnie"
+    }
+  }
+}

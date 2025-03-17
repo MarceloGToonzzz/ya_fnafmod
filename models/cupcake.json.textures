@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cupcake"
+      },
+      "name": "default"
+    },
+    "toycupcake": {
+      "map": {
+        "0": "cupcake_toy"
+      },
+      "name": "toycupcake"
+    },
+    "phantomcupcake": {
+      "map": {
+        "0": "cupcake_phantom"
+      },
+      "name": "phantomcupcake"
+    }
+  }
+}

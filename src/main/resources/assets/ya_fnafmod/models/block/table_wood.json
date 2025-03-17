@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/table1",
+  "textures": {
+    "all": "ya_fnafmod:block/table2_1",
+    "particle": "ya_fnafmod:block/table2_1",
+    "7": "ya_fnafmod:block/table2_1"
+  },
+  "render_type": "cutout"
+}

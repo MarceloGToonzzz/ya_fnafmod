@@ -1,0 +1,469 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "MetalPipes",
+    "blockstateList": [
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:lpipe_xz",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 2.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 14.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:lpipe_yp",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 2.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:lpipe_ym",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 14.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tpipe_xz",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 2.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 14.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tpipe_ym",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 14.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tpipe_yp",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:xpipe_vertical",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:xpipe_horizontal",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 2.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 14.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:trpipe_yp",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 2.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:trpipe_ym",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 14.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:center",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.0,
+            "my": 3.0,
+            "mz": 0.0,
+            "Mx": 13.0,
+            "My": 13.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:end",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.0,
+            "my": 3.0,
+            "mz": 0.0,
+            "Mx": 13.0,
+            "My": 13.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tpipe_ypm",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.0,
+            "my": 0.0,
+            "mz": 3.0,
+            "Mx": 13.0,
+            "My": 16.0,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tbranchyp",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 2.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tbranchym",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 14.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:xbranch",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 14.0,
+            "My": 16.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:pipe_way5vertical",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tribranch_yp",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 2.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pipes:tribranch_ym",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 14.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

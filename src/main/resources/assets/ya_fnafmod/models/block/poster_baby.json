@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_cbaby",
+    "particle": "ya_fnafmod:block/poster_cbaby",
+    "0": "ya_fnafmod:block/poster_cbaby"
+  },
+  "render_type": "cutout"
+}

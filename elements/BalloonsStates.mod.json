@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Balloons",
+    "blockstateList": [
+      {
+        "texture": "balloons_2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloons:balloon2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloons_3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloons:balloon3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloons_4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloons:balloon4",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ShockInfuser",
+    "blockstateList": [
+      {
+        "texture": "generator_up",
+        "textureTop": "generator_up",
+        "textureLeft": "shock_infuser_on",
+        "textureFront": "shock_infuser_on",
+        "textureRight": "shock_infuser_on",
+        "textureBack": "shock_infuser_on",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 2,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

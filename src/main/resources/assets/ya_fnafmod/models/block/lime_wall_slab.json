@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/wall_lime",
+    "bottom": "ya_fnafmod:block/wall_lime",
+    "top": "ya_fnafmod:block/wall_lime",
+    "side": "ya_fnafmod:block/wall_lime"
+  },
+  "render_type": "solid"
+}

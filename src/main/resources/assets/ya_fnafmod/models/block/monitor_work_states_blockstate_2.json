@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bigmonitor",
+  "textures": {
+    "all": "ya_fnafmod:block/bigmonitor_off",
+    "particle": "ya_fnafmod:block/bigmonitor_off",
+    "1": "ya_fnafmod:block/bigmonitor_flosglossyfloss"
+  },
+  "render_type": "cutout_mipped"
+}

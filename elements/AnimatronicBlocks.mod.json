@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "tab",
+  "definition": {
+    "name": "YAFNAF (Animatronic Blocks)",
+    "icon": {
+      "value": "CUSTOM:FreddyFazbearBlock"
+    },
+    "showSearch": true
+  }
+}

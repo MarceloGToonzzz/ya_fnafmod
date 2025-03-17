@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "item_wires1"
+      },
+      "name": "default"
+    },
+    "stars": {
+      "map": {
+        "1": "item_stars"
+      },
+      "name": "stars"
+    },
+    "stars_old": {
+      "map": {
+        "1": "item_stars_old"
+      },
+      "name": "stars_old"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "BigSpeaker",
+    "blockstateList": [
+      {
+        "texture": "bigspeaker",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigspeaker_floor_diag1:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.0,
+            "my": 0.0,
+            "mz": 3.0,
+            "Mx": 13.0,
+            "My": 15.0,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "bigspeaker",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigspeaker_floor_diag2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.0,
+            "my": 0.0,
+            "mz": 3.0,
+            "Mx": 13.0,
+            "My": 15.0,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "bigspeaker",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigspeaker_wall:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 3.0,
+            "my": 0.5,
+            "mz": 3.0,
+            "Mx": 13.0,
+            "My": 15.5,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.5,
+            "my": 8.0,
+            "mz": 13.0,
+            "Mx": 9.5,
+            "My": 9.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

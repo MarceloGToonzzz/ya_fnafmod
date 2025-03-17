@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "drawertall_blue"
+      },
+      "name": "default"
+    },
+    "brown": {
+      "map": {
+        "0": "drawertall_brown"
+      },
+      "name": "brown"
+    }
+  }
+}

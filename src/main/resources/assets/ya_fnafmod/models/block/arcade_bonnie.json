@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade6",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade6_bonniearcade",
+    "particle": "ya_fnafmod:block/arcade6_bonniearcade",
+    "1": "ya_fnafmod:block/arcade6_bonniearcade"
+  },
+  "render_type": "cutout"
+}

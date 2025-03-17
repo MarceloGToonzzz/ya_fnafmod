@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " a ",
+    "bcd",
+    "bbd"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:lightning_rod"
+    },
+    "b": {
+      "item": "minecraft:copper_ingot"
+    },
+    "c": {
+      "item": "minecraft:black_stained_glass_pane"
+    },
+    "d": {
+      "item": "minecraft:stone_button"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:fazwrench",
+    "count": 1
+  }
+}

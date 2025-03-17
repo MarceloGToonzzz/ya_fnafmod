@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade1",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade1_burgerbungle_off",
+    "particle": "ya_fnafmod:block/arcade1_burgerbungle",
+    "1": "ya_fnafmod:block/arcade1_burgerbungle"
+  },
+  "render_type": "cutout"
+}

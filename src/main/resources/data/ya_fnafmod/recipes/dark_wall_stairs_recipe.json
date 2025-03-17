@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_wall",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:dark_wall"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:dark_wall_stairs",
+    "count": 4
+  }
+}

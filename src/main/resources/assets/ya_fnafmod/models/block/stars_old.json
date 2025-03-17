@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wires_ceiling",
+  "textures": {
+    "all": "ya_fnafmod:block/item_stars_old",
+    "particle": "ya_fnafmod:block/item_stars_old",
+    "1": "ya_fnafmod:block/item_stars_old"
+  },
+  "render_type": "cutout_mipped"
+}

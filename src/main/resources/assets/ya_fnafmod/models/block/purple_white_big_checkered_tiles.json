@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/checktile_purplewhite_big",
+    "particle": "ya_fnafmod:block/checktile_purplewhite_big"
+  },
+  "render_type": "solid"
+}

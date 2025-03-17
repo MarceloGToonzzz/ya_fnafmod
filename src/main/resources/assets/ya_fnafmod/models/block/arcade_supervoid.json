@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade4",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade4_supervoid",
+    "particle": "ya_fnafmod:block/arcade4_supervoid",
+    "1": "ya_fnafmod:block/arcade4_supervoid_off"
+  },
+  "render_type": "cutout"
+}

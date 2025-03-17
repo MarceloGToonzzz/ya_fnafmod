@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "balloons_1"
+      },
+      "name": "default"
+    },
+    "balloon2": {
+      "map": {
+        "3": "balloons_2"
+      },
+      "name": "balloon2"
+    },
+    "balloon3": {
+      "map": {
+        "3": "balloons_3"
+      },
+      "name": "balloon3"
+    },
+    "balloon4": {
+      "map": {
+        "3": "balloons_4"
+      },
+      "name": "balloon4"
+    }
+  }
+}

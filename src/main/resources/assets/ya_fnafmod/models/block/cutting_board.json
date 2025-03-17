@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cutting_board",
+  "textures": {
+    "all": "ya_fnafmod:block/cutting_board",
+    "particle": "ya_fnafmod:block/cutting_board",
+    "1": "ya_fnafmod:block/cutting_board"
+  },
+  "render_type": "cutout_mipped"
+}

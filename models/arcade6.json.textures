@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "arcade6_freddyarcade"
+      },
+      "name": "default"
+    },
+    "chi": {
+      "map": {
+        "1": "arcade6_chicaarcade"
+      },
+      "name": "chi"
+    },
+    "bun": {
+      "map": {
+        "1": "arcade6_bonniearcade"
+      },
+      "name": "bun"
+    },
+    "fox": {
+      "map": {
+        "1": "arcade6_foxyarcade"
+      },
+      "name": "fox"
+    }
+  }
+}

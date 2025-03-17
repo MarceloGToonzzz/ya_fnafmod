@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/checktile_blackmagenta",
+    "bottom": "ya_fnafmod:block/checktile_blackmagenta",
+    "top": "ya_fnafmod:block/checktile_blackmagenta",
+    "side": "ya_fnafmod:block/checktile_blackmagenta"
+  },
+  "render_type": "solid"
+}

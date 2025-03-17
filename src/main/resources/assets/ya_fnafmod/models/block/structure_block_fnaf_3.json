@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/floortile_blackpink",
+    "top": "ya_fnafmod:block/floortile_blackpink",
+    "side": "ya_fnafmod:block/floortile_blackpink",
+    "overlay": "ya_fnafmod:block/icon_springtrap",
+    "particle": "ya_fnafmod:block/floortile_blackpink"
+  },
+  "render_type": "cutout_mipped"
+}

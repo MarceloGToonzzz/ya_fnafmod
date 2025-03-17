@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/metaltable",
+  "textures": {
+    "all": "ya_fnafmod:block/metaltable",
+    "particle": "ya_fnafmod:block/metaltable",
+    "0": "ya_fnafmod:block/metaltable"
+  },
+  "render_type": "cutout_mipped"
+}

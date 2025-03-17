@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/posterh",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_prizecorner",
+    "particle": "ya_fnafmod:block/poster_prizecorner",
+    "0": "ya_fnafmod:block/poster_prizecorner"
+  },
+  "render_type": "solid"
+}

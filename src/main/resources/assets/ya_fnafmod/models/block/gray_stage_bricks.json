@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/stagebricks_gray",
+    "particle": "ya_fnafmod:block/stagebricks_gray"
+  },
+  "render_type": "solid"
+}

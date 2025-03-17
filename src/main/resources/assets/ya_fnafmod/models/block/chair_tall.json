@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/chair_tall",
+  "textures": {
+    "all": "ya_fnafmod:block/chair_tall",
+    "particle": "ya_fnafmod:block/chair_tall",
+    "1": "ya_fnafmod:block/chair_tall"
+  },
+  "render_type": "cutout"
+}

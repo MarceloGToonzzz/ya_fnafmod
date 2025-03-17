@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/stage_moon"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/stage_moon",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/stage_moon",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/stage_moon",
+      "y": 270
+    }
+  }
+}

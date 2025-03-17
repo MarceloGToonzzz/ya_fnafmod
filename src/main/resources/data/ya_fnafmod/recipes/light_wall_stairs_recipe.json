@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "light_wall",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:light_wall"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:light_wall_stairs",
+    "count": 4
+  }
+}

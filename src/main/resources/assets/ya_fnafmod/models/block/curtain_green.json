@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/curtain_green",
+    "particle": "ya_fnafmod:block/curtain_green"
+  },
+  "render_type": "solid"
+}

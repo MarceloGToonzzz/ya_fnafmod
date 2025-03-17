@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "COMMON",
+    "texture": "record_fnaf2",
+    "description": "It's Been So Long",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": [
+        "Original by TLT, This cover done by me."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:bg_fnaf2song_tlt"
+    },
+    "lengthInTicks": 3500,
+    "analogOutput": 0
+  }
+}

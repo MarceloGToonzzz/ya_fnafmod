@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/handunit",
+  "textures": {
+    "2": "ya_fnafmod:block/handunit",
+    "particle": "ya_fnafmod:item/icon_ftfreddy"
+  }
+}

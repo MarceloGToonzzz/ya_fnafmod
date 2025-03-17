@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "ya_fnafmod:springbonnie_suit_spawn_item",
+    "ya_fnafmod:fredbear_suit_spawn_item",
+    "ya_fnafmod:fredbear_suit_headless_spawn_item"
+  ]
+}

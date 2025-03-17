@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/sign_wetfloor",
+  "textures": {
+    "all": "ya_fnafmod:block/sign_wetfloor",
+    "particle": "ya_fnafmod:block/sign_wetfloor",
+    "2": "ya_fnafmod:block/sign_wetfloor"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/toy_robot",
+  "textures": {
+    "all": "ya_fnafmod:block/toy_robot",
+    "particle": "ya_fnafmod:block/toy_robot",
+    "1": "ya_fnafmod:block/toy_robot"
+  },
+  "render_type": "cutout"
+}

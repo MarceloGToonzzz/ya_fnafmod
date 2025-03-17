@@ -1,0 +1,100 @@
+{
+  "_fv": 69,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "outfiticon_navyguardhat",
+    "enableBody": true,
+    "textureBody": "outfiticon_navyguardtop",
+    "enableLeggings": true,
+    "textureLeggings": "outfiticon_navyguardlower",
+    "enableBoots": true,
+    "textureBoots": "outfiticon_navyguardshoes",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "armorTextureFile": "empty_",
+    "helmetName": "Navy Guard Cap",
+    "bodyName": "Navy Guard Jacket",
+    "leggingsName": "Navy Guard Pants",
+    "bootsName": "Navy Guard Shoes",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelbasic_clothes",
+    "helmetModelPart": "head",
+    "helmetModelTexture": "nightguardnavy_outfit.png",
+    "bodyModelName": "Modelbasic_clothes",
+    "bodyModelPart": "body",
+    "armsModelPartL": "left_arm",
+    "armsModelPartR": "right_arm",
+    "bodyModelTexture": "nightguardnavy_outfit.png",
+    "leggingsModelName": "Modelbasic_clothes",
+    "leggingsModelPartL": "left_leg",
+    "leggingsModelPartR": "right_leg",
+    "leggingsModelTexture": "nightguardnavy_outfit.png",
+    "bootsModelName": "Modelbasic_clothes",
+    "bootsModelPartL": "left_boot",
+    "bootsModelPartR": "right_boot",
+    "bootsModelTexture": "nightguardnavy_outfit.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 15,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_leather"
+    },
+    "repairItems": []
+  }
+}

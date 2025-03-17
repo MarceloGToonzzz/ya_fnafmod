@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "fan_gray_off"
+      },
+      "name": "default"
+    },
+    "on": {
+      "map": {
+        "1": "fan_gray_on"
+      },
+      "name": "on"
+    },
+    "purple": {
+      "map": {
+        "1": "fan_purple_off"
+      },
+      "name": "purple"
+    },
+    "purple_on": {
+      "map": {
+        "1": "fan_purple_on"
+      },
+      "name": "purple_on"
+    }
+  }
+}

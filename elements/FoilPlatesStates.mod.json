@@ -1,0 +1,113 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "FoilPlates",
+    "blockstateList": [
+      {
+        "texture": "cup_orange",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:foil2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "cup_green",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:foil3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "cup_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:foil4",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "cup_purple",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:foil5",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "set_foilpartyhatblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set1.geo:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "set_foilpartyhatgreen",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set1.geo:foil_2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "set_foilpartyhatpurple",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set1.geo:foil_3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "set_foilpartyhatred",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set1.geo:foil_4",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

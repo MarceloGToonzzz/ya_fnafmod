@@ -1,0 +1,76 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "boothseat_red"
+      },
+      "name": "default"
+    },
+    "green": {
+      "map": {
+        "2": "boothseat_green"
+      },
+      "name": "green"
+    },
+    "lightblue": {
+      "map": {
+        "2": "boothseat_lightblue"
+      },
+      "name": "lightblue"
+    },
+    "blue": {
+      "map": {
+        "2": "boothseat_blue"
+      },
+      "name": "blue"
+    },
+    "yellow": {
+      "map": {
+        "2": "boothseat_yellow"
+      },
+      "name": "yellow"
+    },
+    "purple": {
+      "map": {
+        "2": "boothseat_purple"
+      },
+      "name": "purple"
+    },
+    "redclean": {
+      "map": {
+        "2": "boothseat_redclean"
+      },
+      "name": "redclean"
+    },
+    "greenclean": {
+      "map": {
+        "2": "boothseat_greenclean"
+      },
+      "name": "greenclean"
+    },
+    "lightblueclean": {
+      "map": {
+        "2": "boothseat_lightblueclean"
+      },
+      "name": "lightblueclean"
+    },
+    "blueclean": {
+      "map": {
+        "2": "boothseat_blueclean"
+      },
+      "name": "blueclean"
+    },
+    "yellowclean": {
+      "map": {
+        "2": "boothseat_yellowclean"
+      },
+      "name": "yellowclean"
+    },
+    "purpleclean": {
+      "map": {
+        "2": "boothseat_purpleclean"
+      },
+      "name": "purpleclean"
+    }
+  }
+}

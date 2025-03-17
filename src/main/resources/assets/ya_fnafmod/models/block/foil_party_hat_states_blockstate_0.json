@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/partyhat2",
+  "textures": {
+    "all": "ya_fnafmod:block/partyhat2",
+    "particle": "ya_fnafmod:block/partyhat1",
+    "0": "ya_fnafmod:block/foilpartyhat2"
+  },
+  "render_type": "cutout"
+}

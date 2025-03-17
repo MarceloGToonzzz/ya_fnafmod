@@ -1,0 +1,100 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "WallPaperWritten",
+    "blockstateList": [
+      {
+        "texture": "paper_random1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper2:paper_random1",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper_random2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper1:paper_random2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper_random2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper2:paper_random2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper_random3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper1:paper_random3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper_random3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper2:paper_random3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper_random4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper1:paper_random4",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper_random4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper2:paper_random4",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

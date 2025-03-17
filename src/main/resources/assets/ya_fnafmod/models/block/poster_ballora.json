@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_ballora",
+    "particle": "ya_fnafmod:block/poster_ballora",
+    "0": "ya_fnafmod:block/poster_ballora"
+  },
+  "render_type": "cutout"
+}

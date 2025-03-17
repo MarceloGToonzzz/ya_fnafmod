@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/floortile_sns",
+    "particle": "ya_fnafmod:block/floortile_sns"
+  },
+  "render_type": "solid"
+}

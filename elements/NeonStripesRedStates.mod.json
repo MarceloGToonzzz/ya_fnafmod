@@ -1,0 +1,35 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "NeonStripesRed",
+    "blockstateList": [
+      {
+        "texture": "neonsign_stripes_blue_l",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "neon_sign_stripes:redl",
+        "luminance": 1,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "neonsign_stripes_blue_r",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "neon_sign_stripes:redr",
+        "luminance": 1,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

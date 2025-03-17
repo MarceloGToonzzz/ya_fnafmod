@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/ductcover",
+  "textures": {
+    "all": "ya_fnafmod:block/ductcover",
+    "particle": "ya_fnafmod:block/ductcover",
+    "1": "ya_fnafmod:block/ductcover"
+  },
+  "render_type": "cutout_mipped"
+}

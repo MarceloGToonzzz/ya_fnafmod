@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "orange": {
+      "map": {
+        "2": "cc_light_o"
+      },
+      "name": "orange"
+    },
+    "default": {
+      "map": {
+        "2": "cc_light_b"
+      },
+      "name": "default"
+    },
+    "pink": {
+      "map": {
+        "2": "cc_light_p"
+      },
+      "name": "pink"
+    },
+    "green": {
+      "map": {
+        "2": "cc_light_g"
+      },
+      "name": "green"
+    }
+  }
+}

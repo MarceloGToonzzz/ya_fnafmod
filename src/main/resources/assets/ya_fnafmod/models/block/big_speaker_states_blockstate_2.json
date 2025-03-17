@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bigspeaker_wall",
+  "textures": {
+    "all": "ya_fnafmod:block/bigspeaker",
+    "particle": "ya_fnafmod:block/bigspeaker",
+    "1": "ya_fnafmod:block/bigspeaker"
+  },
+  "render_type": "cutout"
+}

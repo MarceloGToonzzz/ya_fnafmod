@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/vent_shaft_fan",
+  "textures": {
+    "all": "ya_fnafmod:block/vent_fan",
+    "particle": "ya_fnafmod:block/vent_fan",
+    "1": "ya_fnafmod:block/vent_fan"
+  },
+  "render_type": "cutout_mipped"
+}

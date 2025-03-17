@@ -1,0 +1,12 @@
+{
+  "parent": "ya_fnafmod:custom/party_set_neon.geo",
+  "textures": {
+    "all": "ya_fnafmod:block/coaster_neonblue",
+    "particle": "ya_fnafmod:block/coaster_neonblue",
+    "0": "ya_fnafmod:block/coaster_neonblue",
+    "1": "ya_fnafmod:block/plate_neongreen",
+    "2": "ya_fnafmod:block/set_neonpartyhatpink",
+    "3": "ya_fnafmod:block/stars_neon1"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "COMMON",
+    "texture": "record_fnaf3",
+    "description": "Die in a Fire",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": [
+        "Original by TLT, This cover done by me."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:bg_fnaf3song_tlt"
+    },
+    "lengthInTicks": 2880,
+    "analogOutput": 0
+  }
+}

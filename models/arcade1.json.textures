@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "arcade1_burgerbungle"
+      },
+      "name": "default"
+    },
+    "bb_off": {
+      "map": {
+        "1": "arcade1_burgerbungle_off"
+      },
+      "name": "bb_off"
+    }
+  }
+}

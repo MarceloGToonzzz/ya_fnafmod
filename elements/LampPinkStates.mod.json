@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LampPink",
+    "blockstateList": [
+      {
+        "texture": "lamp_pink",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "lamp:pink",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

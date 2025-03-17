@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/soda_cup",
+  "textures": {
+    "4": "ya_fnafmod:block/sodacup_fiztime2",
+    "particle": "minecraft:item/glass_bottle"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/menu",
+  "textures": {
+    "all": "ya_fnafmod:block/menu_vintage",
+    "particle": "ya_fnafmod:block/menu_vintage",
+    "2": "ya_fnafmod:block/menu_vintage"
+  },
+  "render_type": "cutout_mipped"
+}

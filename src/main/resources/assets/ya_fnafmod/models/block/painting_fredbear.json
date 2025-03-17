@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/big_painting",
+  "textures": {
+    "all": "ya_fnafmod:block/paintingbig_fredbear",
+    "particle": "ya_fnafmod:block/paintingbig_fredbear",
+    "1": "ya_fnafmod:block/paintingbig_fredbear"
+  },
+  "render_type": "cutout_mipped"
+}

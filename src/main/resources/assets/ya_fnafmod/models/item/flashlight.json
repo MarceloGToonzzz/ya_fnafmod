@@ -1,0 +1,15 @@
+{
+  "parent": "ya_fnafmod:custom/flashlight",
+  "textures": {
+    "0": "ya_fnafmod:block/flashlight1_off",
+    "particle": "minecraft:item/lantern"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "ya_fnafmod:flashlight_powered": 1
+      },
+      "model": "ya_fnafmod:item/flashlight_0"
+    }
+  ]
+}

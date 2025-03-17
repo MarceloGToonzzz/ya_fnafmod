@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/fazwrench",
+  "textures": {
+    "2": "ya_fnafmod:block/fazwrench",
+    "particle": "ya_fnafmod:item/icon_freddyfazbear"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/speaker",
+  "textures": {
+    "all": "ya_fnafmod:block/speaker",
+    "particle": "ya_fnafmod:block/speaker",
+    "0": "ya_fnafmod:block/speaker"
+  },
+  "render_type": "cutout"
+}

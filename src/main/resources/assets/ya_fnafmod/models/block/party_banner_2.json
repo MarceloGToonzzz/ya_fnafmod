@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/party_banner",
+  "textures": {
+    "all": "ya_fnafmod:block/partybanner_happybirthday",
+    "particle": "ya_fnafmod:block/partybanner_happybirthday",
+    "0": "ya_fnafmod:block/partybanner_letsparty"
+  },
+  "render_type": "cutout_mipped"
+}

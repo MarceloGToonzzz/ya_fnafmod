@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/big_painting",
+  "textures": {
+    "all": "ya_fnafmod:block/paintingbig_flower",
+    "particle": "ya_fnafmod:block/paintingbig_flower",
+    "1": "ya_fnafmod:block/paintingbig_flower"
+  },
+  "render_type": "cutout_mipped"
+}

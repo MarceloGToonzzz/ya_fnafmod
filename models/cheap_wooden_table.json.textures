@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cheap_woodentable"
+      },
+      "name": "default"
+    }
+  }
+}

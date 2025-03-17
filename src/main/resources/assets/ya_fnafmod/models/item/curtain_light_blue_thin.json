@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:block/curtain_lightblue"
+  },
+  "render_type": "solid"
+}

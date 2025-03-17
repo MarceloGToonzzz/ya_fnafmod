@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/office_window",
+  "textures": {
+    "all": "ya_fnafmod:block/officewindow_single",
+    "particle": "ya_fnafmod:block/officewindow_single",
+    "2": "ya_fnafmod:block/officewindow_single"
+  },
+  "render_type": "translucent"
+}

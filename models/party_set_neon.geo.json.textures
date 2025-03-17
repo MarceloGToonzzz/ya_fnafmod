@@ -1,0 +1,58 @@
+{
+  "mappings": {
+    "red": {
+      "map": {
+        "0": "coaster_neonred",
+        "1": "plate_neonyellow",
+        "2": "set_neonpartyhatblue",
+        "3": "stars_neon1"
+      },
+      "name": "red"
+    },
+    "default": {
+      "map": {
+        "0": "coaster_neonblue",
+        "1": "plate_neongreen",
+        "2": "set_neonpartyhatpink",
+        "3": "stars_neon1"
+      },
+      "name": "default"
+    },
+    "pink": {
+      "map": {
+        "0": "coaster_neonpink",
+        "1": "plate_neonpurple",
+        "2": "set_neonpartyhatred",
+        "3": "stars_neon1"
+      },
+      "name": "pink"
+    },
+    "green": {
+      "map": {
+        "0": "coaster_neongreen",
+        "1": "plate_neonpink",
+        "2": "set_neonpartyhatpurple",
+        "3": "stars_neon2"
+      },
+      "name": "green"
+    },
+    "yellow": {
+      "map": {
+        "0": "coaster_neonyellow",
+        "1": "plate_neonblue",
+        "2": "set_neonpartyhatgreen",
+        "3": "stars_neon2"
+      },
+      "name": "yellow"
+    },
+    "purple": {
+      "map": {
+        "0": "coaster_neonpurple",
+        "1": "plate_neonred",
+        "2": "set_neonpartyhatyellow",
+        "3": "stars_neon2"
+      },
+      "name": "purple"
+    }
+  }
+}

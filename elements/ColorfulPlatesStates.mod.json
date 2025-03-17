@@ -1,0 +1,61 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ColorfulPlates",
+    "blockstateList": [
+      {
+        "texture": "cup_orange",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:color2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "cup_green",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:color3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "cup_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:color4",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "cup_purple",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cups_and_plates:color5",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

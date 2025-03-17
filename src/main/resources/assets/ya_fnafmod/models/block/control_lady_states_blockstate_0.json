@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/control_lady_diag",
+  "textures": {
+    "all": "ya_fnafmod:block/control_lady",
+    "particle": "ya_fnafmod:block/control_lady",
+    "1": "ya_fnafmod:block/control_lady"
+  },
+  "render_type": "cutout_mipped"
+}

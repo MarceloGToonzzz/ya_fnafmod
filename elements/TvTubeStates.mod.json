@@ -1,0 +1,126 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "TvTube",
+    "blockstateList": [
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_dougdimmadome",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_freddyandfriends",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_garfieldshow",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_heman",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_iatr",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_jaws",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_killerklowns",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_marcelogtoonz",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitortv_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:tv_news",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

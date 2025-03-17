@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "floor_tiles",
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:GreenBlueTiles"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CrackedGreenBlueTiles"
+    },
+    "name": "cracked_green_blue_tile_recipe",
+    "namespace": "mod"
+  }
+}

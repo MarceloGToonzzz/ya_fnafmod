@@ -1,0 +1,68 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "SecurityVent",
+    "blockstateList": [
+      {
+        "texture": "securityvent",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_security:closed",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.0,
+            "my": 1.0,
+            "mz": 7.5,
+            "Mx": 15.0,
+            "My": 15.0,
+            "Mz": 8.5,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

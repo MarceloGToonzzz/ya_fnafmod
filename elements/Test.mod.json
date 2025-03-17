@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "APOSTROPHE",
+    "keyBindingName": "Test",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "TestOnKeyPressed"
+    }
+  }
+}

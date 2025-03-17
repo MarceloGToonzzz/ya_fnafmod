@@ -1,0 +1,105 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PartyTable",
+    "blockstateList": [
+      {
+        "texture": "partytable1_1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "partytable1:leg2",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 14.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.0,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 3.0,
+            "My": 14.0,
+            "Mz": 3.0,
+            "subtract": false
+          },
+          {
+            "mx": 13.0,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 15.0,
+            "My": 16.0,
+            "Mz": 3.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "partytable1_1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "partytable1:leg0",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 14.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "partytable1_4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "partytable1:leg1",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 14.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 13.0,
+            "my": 0.0,
+            "mz": 1.0,
+            "Mx": 15.0,
+            "My": 14.0,
+            "Mz": 3.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

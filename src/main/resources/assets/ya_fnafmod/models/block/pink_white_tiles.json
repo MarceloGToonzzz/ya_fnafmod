@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/floortile_pinkwhite",
+    "particle": "ya_fnafmod:block/floortile_pinkwhite"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/control_heads",
+  "textures": {
+    "all": "ya_fnafmod:block/control_heads",
+    "particle": "ya_fnafmod:block/control_heads",
+    "1": "ya_fnafmod:block/control_heads"
+  },
+  "render_type": "cutout_mipped"
+}

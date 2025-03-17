@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "floor_tile",
+  "count": 1,
+  "ingredient": {
+    "item": "ya_fnafmod:red_blue_tiles"
+  },
+  "result": "ya_fnafmod:red_blue_checkered_tiles"
+}

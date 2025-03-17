@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wall_art",
+  "textures": {
+    "all": "ya_fnafmod:block/wallart_springbonnie",
+    "particle": "ya_fnafmod:block/wallart_springbonnie",
+    "1": "ya_fnafmod:block/wallart_springbonnie"
+  },
+  "render_type": "cutout_mipped"
+}

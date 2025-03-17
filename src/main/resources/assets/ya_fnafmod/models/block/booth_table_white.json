@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/booth_table",
+  "textures": {
+    "all": "ya_fnafmod:block/booth_table_white",
+    "particle": "ya_fnafmod:block/booth_table_white",
+    "0": "ya_fnafmod:block/booth_table_white"
+  },
+  "render_type": "cutout_mipped"
+}

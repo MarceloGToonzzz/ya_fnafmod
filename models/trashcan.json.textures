@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "trashcan"
+      },
+      "name": "default"
+    },
+    "green": {
+      "map": {
+        "3": "trashcan_green"
+      },
+      "name": "green"
+    }
+  }
+}

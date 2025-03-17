@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade6",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade6_foxyarcade",
+    "particle": "ya_fnafmod:block/arcade6_foxyarcade",
+    "1": "ya_fnafmod:block/arcade6_foxyarcade"
+  },
+  "render_type": "cutout"
+}

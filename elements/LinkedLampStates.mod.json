@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LinkedLamp",
+    "blockstateList": [
+      {
+        "texture": "linked_lamp_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 12,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

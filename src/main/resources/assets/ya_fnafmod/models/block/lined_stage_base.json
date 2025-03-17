@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/wall_graydark",
+    "top": "ya_fnafmod:block/cheap_stagebase",
+    "side": "ya_fnafmod:block/wall_graydark",
+    "overlay": "ya_fnafmod:block/darkstripe_stagebase",
+    "particle": "ya_fnafmod:block/wall_graydark"
+  },
+  "render_type": "solid"
+}

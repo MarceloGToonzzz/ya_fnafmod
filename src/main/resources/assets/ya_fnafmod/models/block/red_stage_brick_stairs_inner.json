@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/stagebricks_red",
+    "bottom": "ya_fnafmod:block/stagebricks_red",
+    "top": "ya_fnafmod:block/stagebricks_red",
+    "side": "ya_fnafmod:block/stagebricks_red"
+  },
+  "render_type": "solid"
+}

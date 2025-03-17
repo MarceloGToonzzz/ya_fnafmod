@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bigcake",
+  "textures": {
+    "all": "ya_fnafmod:block/bigcake_cakebear",
+    "particle": "ya_fnafmod:block/bigcake_cakebear",
+    "1": "ya_fnafmod:block/bigcake_cakebear"
+  },
+  "render_type": "cutout_mipped"
+}

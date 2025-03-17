@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "stage_cloud"
+      },
+      "name": "default"
+    }
+  }
+}

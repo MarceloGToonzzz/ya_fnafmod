@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/checktile_blackcyan",
+    "bottom": "ya_fnafmod:block/checktile_blackcyan",
+    "top": "ya_fnafmod:block/checktile_blackcyan",
+    "side": "ya_fnafmod:block/checktile_blackcyan"
+  },
+  "render_type": "solid"
+}

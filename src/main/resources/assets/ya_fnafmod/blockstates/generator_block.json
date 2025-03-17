@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "ya_fnafmod:block/generator_block"
+    },
+    "blockstate=1": {
+      "model": "ya_fnafmod:block/generator_states_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "ya_fnafmod:block/generator_states_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "ya_fnafmod:block/generator_states_blockstate_2"
+    },
+    "blockstate=4": {
+      "model": "ya_fnafmod:block/generator_states_blockstate_3"
+    },
+    "blockstate=5": {
+      "model": "ya_fnafmod:block/generator_states_blockstate_4"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "OfficeWindow",
+    "blockstateList": [
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:middle_collumn",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:bottom_collumn",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:top_collumn",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:middle_row",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:right_row",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:bottom_middle",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:bottom_left",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:middle_left",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:middle_middle",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:top_middle",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "officewindow_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "office_window_modular:top_left",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "pictures1"
+      },
+      "name": "default"
+    },
+    "picture2": {
+      "map": {
+        "0": "pictures2"
+      },
+      "name": "picture2"
+    }
+  }
+}

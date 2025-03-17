@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/flashbeacon",
+  "textures": {
+    "all": "ya_fnafmod:block/flashbeacon_off",
+    "particle": "ya_fnafmod:block/ceiling_block",
+    "2": "ya_fnafmod:block/flashbeacon_off"
+  },
+  "render_type": "cutout"
+}

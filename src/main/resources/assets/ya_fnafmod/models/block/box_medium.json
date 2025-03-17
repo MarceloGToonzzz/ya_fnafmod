@@ -1,0 +1,12 @@
+{
+  "parent": "ya_fnafmod:custom/box_medium",
+  "textures": {
+    "all": "ya_fnafmod:block/box_medium",
+    "particle": "ya_fnafmod:block/box_medium",
+    "double_box": "ya_fnafmod:block/empty",
+    "third_box": "ya_fnafmod:block/empty",
+    "top_boxes": "ya_fnafmod:block/empty",
+    "single_box": "ya_fnafmod:block/box_medium"
+  },
+  "render_type": "cutout_mipped"
+}

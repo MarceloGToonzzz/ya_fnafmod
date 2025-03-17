@@ -1,0 +1,172 @@
+{
+  "mappings": {
+    "top_collumn": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "officewindow_side",
+        "left": "officewindow_side",
+        "bottom": "empty",
+        "bottom_cornerr": "officewindow_side",
+        "right": "officewindow_side",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "top_collumn"
+    },
+    "default": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "officewindow_side",
+        "left": "officewindow_side",
+        "bottom": "officewindow_side",
+        "bottom_cornerr": "officewindow_side",
+        "right": "officewindow_side",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "default"
+    },
+    "middle_row": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "officewindow_side",
+        "left": "empty",
+        "bottom": "officewindow_side",
+        "bottom_cornerr": "officewindow_side",
+        "right": "empty",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "middle_row"
+    },
+    "bottom_middle": {
+      "map": {
+        "top_corner_l": "empty",
+        "glass": "officewindow_block",
+        "top": "empty",
+        "left": "empty",
+        "bottom": "officewindow_side",
+        "bottom_cornerr": "officewindow_side",
+        "right": "empty",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "empty"
+      },
+      "name": "bottom_middle"
+    },
+    "middle_middle": {
+      "map": {
+        "top_corner_l": "empty",
+        "glass": "officewindow_block",
+        "top": "empty",
+        "left": "empty",
+        "bottom": "empty",
+        "bottom_cornerr": "empty",
+        "right": "empty",
+        "bottom_cornerl": "empty",
+        "top_corner_r": "empty"
+      },
+      "name": "middle_middle"
+    },
+    "middle_collumn": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "empty",
+        "left": "officewindow_side",
+        "bottom": "empty",
+        "bottom_cornerr": "officewindow_side",
+        "right": "officewindow_side",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "middle_collumn"
+    },
+    "right_row": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "officewindow_side",
+        "left": "officewindow_side",
+        "bottom": "officewindow_side",
+        "bottom_cornerr": "officewindow_side",
+        "right": "empty",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "right_row"
+    },
+    "middle_left": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "empty",
+        "left": "officewindow_side",
+        "bottom": "empty",
+        "bottom_cornerr": "empty",
+        "right": "empty",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "empty"
+      },
+      "name": "middle_left"
+    },
+    "top_left": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "officewindow_side",
+        "left": "officewindow_side",
+        "bottom": "empty",
+        "bottom_cornerr": "empty",
+        "right": "empty",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "top_left"
+    },
+    "bottom_left": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "empty",
+        "left": "officewindow_side",
+        "bottom": "officewindow_side",
+        "bottom_cornerr": "officewindow_side",
+        "right": "empty",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "empty"
+      },
+      "name": "bottom_left"
+    },
+    "bottom_collumn": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "empty",
+        "left": "officewindow_side",
+        "bottom": "officewindow_side",
+        "bottom_cornerr": "officewindow_side",
+        "right": "officewindow_side",
+        "bottom_cornerl": "officewindow_side",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "bottom_collumn"
+    },
+    "top_middle": {
+      "map": {
+        "top_corner_l": "officewindow_side",
+        "glass": "officewindow_block",
+        "top": "officewindow_side",
+        "left": "empty",
+        "bottom": "empty",
+        "bottom_cornerr": "empty",
+        "right": "empty",
+        "bottom_cornerl": "empty",
+        "top_corner_r": "officewindow_side"
+      },
+      "name": "top_middle"
+    }
+  }
+}

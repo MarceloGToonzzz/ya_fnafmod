@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/checktile_bluewhite",
+    "bottom": "ya_fnafmod:block/checktile_bluewhite",
+    "top": "ya_fnafmod:block/checktile_bluewhite",
+    "side": "ya_fnafmod:block/checktile_bluewhite"
+  },
+  "render_type": "solid"
+}

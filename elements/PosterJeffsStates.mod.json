@@ -1,0 +1,61 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PosterJeffs",
+    "blockstateList": [
+      {
+        "texture": "poster_ff2_past",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:itp2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff3_past",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:itp3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff4_past",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:itp4",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff5_past",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:itp5",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

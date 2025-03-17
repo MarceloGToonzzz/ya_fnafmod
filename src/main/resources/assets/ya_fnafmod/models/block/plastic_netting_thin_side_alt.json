@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "particle": "ya_fnafmod:block/plastic_netting",
+    "edge": "ya_fnafmod:block/plastic_netting",
+    "pane": "ya_fnafmod:block/plastic_netting"
+  },
+  "render_type": "cutout_mipped"
+}

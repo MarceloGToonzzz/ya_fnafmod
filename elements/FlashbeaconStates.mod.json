@@ -1,0 +1,50 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Flashbeacon",
+    "blockstateList": [
+      {
+        "texture": "flashbeacon_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "ceiling_block",
+        "renderType": 2,
+        "customModelName": "flashbeacon:on",
+        "luminance": 15,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 4.0,
+            "mz": 6.0,
+            "Mx": 12.0,
+            "My": 12.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": 4.0,
+            "my": 4.0,
+            "mz": 15.0,
+            "Mx": 12.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 3.5,
+            "my": 3.5,
+            "mz": 8.0,
+            "Mx": 12.5,
+            "My": 12.5,
+            "Mz": 8.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

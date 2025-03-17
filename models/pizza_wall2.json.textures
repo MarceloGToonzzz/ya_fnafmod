@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "wall_pizza1_2",
+        "3": "wall_pizza2_1"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/drawing_big_rockstars"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/drawing_big_rockstars",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/drawing_big_rockstars",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/drawing_big_rockstars",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "group": "stage_bricks",
+  "count": 1,
+  "ingredient": {
+    "item": "ya_fnafmod:stage_bricks"
+  },
+  "result": "ya_fnafmod:stage_brick_stairs"
+}

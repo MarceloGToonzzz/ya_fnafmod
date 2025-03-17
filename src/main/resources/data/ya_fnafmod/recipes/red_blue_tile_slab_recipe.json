@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "floor_tile",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:red_blue_tiles"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:red_blue_tile_slab",
+    "count": 6
+  }
+}

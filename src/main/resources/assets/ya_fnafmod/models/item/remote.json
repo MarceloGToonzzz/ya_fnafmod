@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/remote",
+  "textures": {
+    "2": "ya_fnafmod:block/remote",
+    "particle": "minecraft:item/echo_shard"
+  }
+}

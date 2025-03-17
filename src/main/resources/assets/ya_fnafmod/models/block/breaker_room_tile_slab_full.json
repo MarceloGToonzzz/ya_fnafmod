@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/breakerroom_tile",
+    "bottom": "ya_fnafmod:block/breakerroom_tile",
+    "top": "ya_fnafmod:block/breakerroom_tile",
+    "side": "ya_fnafmod:block/breakerroom_tile"
+  },
+  "render_type": "solid"
+}

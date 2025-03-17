@@ -1,0 +1,118 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "bigmonitor_off"
+      },
+      "name": "default"
+    },
+    "monitor_work": {
+      "map": {
+        "1": "bigmonitor_work"
+      },
+      "name": "monitor_work"
+    },
+    "monitor_fiztime": {
+      "map": {
+        "1": "bigmonitor_fiztimepopsoda"
+      },
+      "name": "monitor_fiztime"
+    },
+    "monitor_flos": {
+      "map": {
+        "1": "bigmonitor_flosglossyfloss"
+      },
+      "name": "monitor_flos"
+    },
+    "monitor_lallies": {
+      "map": {
+        "1": "bigmonitor_lallyslollies"
+      },
+      "name": "monitor_lallies"
+    },
+    "monitor_martys": {
+      "map": {
+        "1": "bigmonitor_martysplungers"
+      },
+      "name": "monitor_martys"
+    },
+    "monitor_peppers": {
+      "map": {
+        "1": "bigmonitor_pepperspickledpopcorn"
+      },
+      "name": "monitor_peppers"
+    },
+    "monitor_wacky": {
+      "map": {
+        "1": "bigmonitor_wackywartpaste"
+      },
+      "name": "monitor_wacky"
+    },
+    "monitor_elchip": {
+      "map": {
+        "1": "bigmonitor_elchip"
+      },
+      "name": "monitor_elchip"
+    },
+    "tv_off": {
+      "map": {
+        "1": "bigmonitortv_off"
+      },
+      "name": "tv_off"
+    },
+    "tv_dougdimmadome": {
+      "map": {
+        "1": "bigmonitortv_dougdimmadome"
+      },
+      "name": "tv_dougdimmadome"
+    },
+    "tv_freddyandfriends": {
+      "map": {
+        "1": "bigmonitortv_freddyandfriends"
+      },
+      "name": "tv_freddyandfriends"
+    },
+    "tv_garfieldshow": {
+      "map": {
+        "1": "bigmonitortv_garfieldshow"
+      },
+      "name": "tv_garfieldshow"
+    },
+    "tv_heman": {
+      "map": {
+        "1": "bigmonitortv_heman"
+      },
+      "name": "tv_heman"
+    },
+    "tv_iatr": {
+      "map": {
+        "1": "bigmonitortv_iatr"
+      },
+      "name": "tv_iatr"
+    },
+    "tv_jaws": {
+      "map": {
+        "1": "bigmonitortv_jaws"
+      },
+      "name": "tv_jaws"
+    },
+    "tv_killerklowns": {
+      "map": {
+        "1": "bigmonitortv_killerklowns"
+      },
+      "name": "tv_killerklowns"
+    },
+    "tv_marcelogtoonz": {
+      "map": {
+        "1": "bigmonitortv_marcelogtoonz"
+      },
+      "name": "tv_marcelogtoonz"
+    },
+    "tv_news": {
+      "map": {
+        "1": "bigmonitortv_news"
+      },
+      "name": "tv_news"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ya_fnafmod:block/carpeted_floor_fredbear_slab"
+    },
+    "type=top": {
+      "model": "ya_fnafmod:block/carpeted_floor_fredbear_slab_top"
+    },
+    "type=double": {
+      "model": "ya_fnafmod:block/carpeted_floor_fredbear_slab_full"
+    }
+  }
+}

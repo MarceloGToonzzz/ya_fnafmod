@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade3",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade3_raze_off",
+    "particle": "ya_fnafmod:block/arcade3_raze",
+    "2": "ya_fnafmod:block/arcade3_raze"
+  },
+  "render_type": "cutout"
+}

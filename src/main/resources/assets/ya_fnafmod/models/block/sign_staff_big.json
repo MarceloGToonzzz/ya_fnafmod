@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/staffsign_big",
+  "textures": {
+    "all": "ya_fnafmod:block/staffsign_big",
+    "particle": "ya_fnafmod:block/staffsign_big",
+    "1": "ya_fnafmod:block/staffsign_big"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,blockstate=0": {
+      "model": "ya_fnafmod:block/table_wood"
+    },
+    "facing=east,blockstate=0": {
+      "model": "ya_fnafmod:block/table_wood",
+      "y": 90
+    },
+    "facing=south,blockstate=0": {
+      "model": "ya_fnafmod:block/table_wood",
+      "y": 180
+    },
+    "facing=west,blockstate=0": {
+      "model": "ya_fnafmod:block/table_wood",
+      "y": 270
+    },
+    "facing=north,blockstate=1": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_0"
+    },
+    "facing=east,blockstate=1": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_0",
+      "y": 90
+    },
+    "facing=south,blockstate=1": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_0",
+      "y": 180
+    },
+    "facing=west,blockstate=1": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_0",
+      "y": 270
+    },
+    "facing=north,blockstate=2": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_1"
+    },
+    "facing=east,blockstate=2": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_1",
+      "y": 90
+    },
+    "facing=south,blockstate=2": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_1",
+      "y": 180
+    },
+    "facing=west,blockstate=2": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_1",
+      "y": 270
+    },
+    "facing=north,blockstate=3": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_2"
+    },
+    "facing=east,blockstate=3": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_2",
+      "y": 90
+    },
+    "facing=south,blockstate=3": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_2",
+      "y": 180
+    },
+    "facing=west,blockstate=3": {
+      "model": "ya_fnafmod:block/table_wood_states_blockstate_2",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/circusgallery_tile",
+    "bottom": "ya_fnafmod:block/circusgallery_tile",
+    "top": "ya_fnafmod:block/circusgallery_tile",
+    "side": "ya_fnafmod:block/circusgallery_tile"
+  },
+  "render_type": "solid"
+}

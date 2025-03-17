@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/pickles",
+  "textures": {
+    "all": "ya_fnafmod:block/pickles",
+    "particle": "ya_fnafmod:block/pickles",
+    "1": "ya_fnafmod:block/pickles"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_rockchica",
+    "particle": "ya_fnafmod:block/poster_rockchica",
+    "0": "ya_fnafmod:block/poster_rockchica"
+  },
+  "render_type": "cutout"
+}

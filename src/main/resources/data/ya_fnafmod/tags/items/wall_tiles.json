@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "ya_fnafmod:wall_tile_red_black_white_item",
+    "ya_fnafmod:wall_tile_red_big_black_white_item",
+    "ya_fnafmod:wall_extra_tile_red_black_white_item",
+    "ya_fnafmod:wall_extra_tile_red_big_black_white_item",
+    "ya_fnafmod:wall_tile_black_black_white_item",
+    "ya_fnafmod:wall_tile_black_big_black_white_item",
+    "ya_fnafmod:wall_extra_tile_black_black_white_item",
+    "ya_fnafmod:wall_extra_tile_black_big_black_white_item",
+    "ya_fnafmod:wall_tile_black_green_blue_item",
+    "ya_fnafmod:wall_tile_black_big_green_blue",
+    "ya_fnafmod:wall_extra_tile_black_green_blue",
+    "ya_fnafmod:wall_extra_tile_black_big_green_blue",
+    "ya_fnafmod:wall_tile_black_green_lime_item",
+    "ya_fnafmod:wall_tile_black_big_green_lime_item",
+    "ya_fnafmod:wall_extra_tile_black_green_lime_item",
+    "ya_fnafmod:wall_extra_tile_black_big_green_lime_item",
+    "ya_fnafmod:wall_tile_purple_black_white_item",
+    "ya_fnafmod:wall_tile_big_purple_black_white_item",
+    "ya_fnafmod:wall_extra_tile_purple_black_white_item",
+    "ya_fnafmod:wall_extra_tile_purple_big_black_white_item"
+  ]
+}

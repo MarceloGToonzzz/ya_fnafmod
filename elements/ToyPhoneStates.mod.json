@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ToyPhone",
+    "blockstateList": [
+      {
+        "texture": "toy_phone",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "toy_phone_diag:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

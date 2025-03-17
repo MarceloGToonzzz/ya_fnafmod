@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "particle": "ya_fnafmod:block/curtain_pink_starless",
+    "edge": "ya_fnafmod:block/curtain_pink_starless",
+    "pane": "ya_fnafmod:block/curtain_pink_starless"
+  },
+  "render_type": "solid"
+}

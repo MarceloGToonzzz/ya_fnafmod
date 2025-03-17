@@ -1,0 +1,140 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true,
+			"animation_length": 14.4167,
+			"bones": {
+				"balloons": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"3.25": {
+							"vector": [0, 0, 2.5],
+							"easing": "easeInOutSine"
+						},
+						"6.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"9.75": {
+							"vector": [0, 0, -2.5],
+							"easing": "easeInOutSine"
+						},
+						"14.4167": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						}
+					}
+				},
+				"red_balloon": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"2.6667": {
+							"vector": [0, 0, 5],
+							"easing": "easeInOutSine"
+						},
+						"5.75": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"7.25": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"10.3333": {
+							"vector": [0, 0, -5],
+							"easing": "easeInOutSine"
+						},
+						"14.4167": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						}
+					}
+				},
+				"blue_balloon": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0, 0, -2.5],
+							"easing": "easeInOutSine"
+						},
+						"2.0": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"4.3333": {
+							"vector": [0, 0, 2.5],
+							"easing": "easeInOutSine"
+						},
+						"6.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"8.6667": {
+							"vector": [0, 0, -2.5],
+							"easing": "easeInOutSine"
+						},
+						"11.0": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"12.5": {
+							"vector": [0, 0, 2.5],
+							"easing": "easeInOutSine"
+						},
+						"14.4167": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						}
+					}
+				},
+				"yellow_balloon": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 2.5],
+							"easing": "easeInOutSine"
+						},
+						"2.75": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"4.6667": {
+							"vector": [0, 0, 2.5],
+							"easing": "easeInOutSine"
+						},
+						"6.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"8.3333": {
+							"vector": [0, 0, -2.5],
+							"easing": "easeInOutSine"
+						},
+						"10.25": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						},
+						"12.0": {
+							"vector": [0, 0, -2.5],
+							"easing": "easeInOutSine"
+						},
+						"14.4167": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutSine"
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

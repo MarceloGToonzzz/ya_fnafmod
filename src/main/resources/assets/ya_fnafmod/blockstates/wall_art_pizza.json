@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/wall_art_pizza"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/wall_art_pizza",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/wall_art_pizza",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/wall_art_pizza",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "_fv": 69,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc",
+    "rarity": "COMMON",
+    "texture": "record_fnaf4",
+    "description": "Never Be Alone",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "specialInformation": {
+      "fixedValue": [
+        "Original by Shadrow, This cover done by me."
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "music": {
+      "value": "CUSTOM:bg_fnaf4song_shadrow"
+    },
+    "lengthInTicks": 3600,
+    "analogOutput": 0
+  }
+}

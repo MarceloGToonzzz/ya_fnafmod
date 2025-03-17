@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "plate_bluefoil",
+        "2": "cup_greenfoil",
+        "3": "coaster_purplefoil",
+        "4": "set_foilpartyhatred"
+      },
+      "name": "default"
+    },
+    "foil_2": {
+      "map": {
+        "1": "plate_greenfoil",
+        "2": "cup_purplefoil",
+        "3": "coaster_redfoil",
+        "4": "set_foilpartyhatblue"
+      },
+      "name": "foil_2"
+    },
+    "foil_4": {
+      "map": {
+        "1": "plate_redfoil",
+        "2": "cup_bluefoil",
+        "3": "coaster_greenfoil",
+        "4": "set_foilpartyhatpurple"
+      },
+      "name": "foil_4"
+    },
+    "foil_3": {
+      "map": {
+        "1": "plate_purplefoil",
+        "2": "cup_redfoil",
+        "3": "coaster_bluefoil",
+        "4": "set_foilpartyhatgreen"
+      },
+      "name": "foil_3"
+    }
+  }
+}

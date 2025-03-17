@@ -1,0 +1,46 @@
+{
+  "mappings": {
+    "spring": {
+      "map": {
+        "1": "wallart_springbonnie"
+      },
+      "name": "spring"
+    },
+    "chica": {
+      "map": {
+        "1": "wallart_chica"
+      },
+      "name": "chica"
+    },
+    "default": {
+      "map": {
+        "1": "wallart_freddy"
+      },
+      "name": "default"
+    },
+    "bonnie": {
+      "map": {
+        "1": "wallart_bonnie"
+      },
+      "name": "bonnie"
+    },
+    "music": {
+      "map": {
+        "1": "wallart_music"
+      },
+      "name": "music"
+    },
+    "pizza": {
+      "map": {
+        "1": "wallart_pizza"
+      },
+      "name": "pizza"
+    },
+    "foxy": {
+      "map": {
+        "1": "wallart_foxy"
+      },
+      "name": "foxy"
+    }
+  }
+}

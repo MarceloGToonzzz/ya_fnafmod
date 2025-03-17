@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "7": "dinerchair_red"
+      },
+      "name": "default"
+    },
+    "green": {
+      "map": {
+        "7": "dinerchair_green"
+      },
+      "name": "green"
+    },
+    "lightblue": {
+      "map": {
+        "7": "dinerchair_lightblue"
+      },
+      "name": "lightblue"
+    },
+    "blue": {
+      "map": {
+        "7": "dinerchair_blue"
+      },
+      "name": "blue"
+    },
+    "yellow": {
+      "map": {
+        "7": "dinerchair_yellow"
+      },
+      "name": "yellow"
+    },
+    "purple": {
+      "map": {
+        "7": "dinerchair_purple"
+      },
+      "name": "purple"
+    }
+  }
+}

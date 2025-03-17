@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wall_art",
+  "textures": {
+    "all": "ya_fnafmod:block/wallart_music",
+    "particle": "ya_fnafmod:block/wallart_music",
+    "1": "ya_fnafmod:block/wallart_music"
+  },
+  "render_type": "cutout_mipped"
+}

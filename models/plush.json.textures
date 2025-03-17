@@ -1,0 +1,124 @@
+{
+  "mappings": {
+    "chica": {
+      "map": {
+        "2": "plush_cchica"
+      },
+      "name": "chica"
+    },
+    "default": {
+      "map": {
+        "2": "plush_cfreddy"
+      },
+      "name": "default"
+    },
+    "bonnie": {
+      "map": {
+        "2": "plush_cbonnie"
+      },
+      "name": "bonnie"
+    },
+    "uchica": {
+      "map": {
+        "2": "plush_uwchica"
+      },
+      "name": "uchica"
+    },
+    "ufreddy": {
+      "map": {
+        "2": "plush_uwfreddy"
+      },
+      "name": "ufreddy"
+    },
+    "foxy": {
+      "map": {
+        "2": "plush_cfoxy"
+      },
+      "name": "foxy"
+    },
+    "ubonnie": {
+      "map": {
+        "2": "plush_uwbonnie"
+      },
+      "name": "ubonnie"
+    },
+    "ufoxy": {
+      "map": {
+        "2": "plush_uwfoxy"
+      },
+      "name": "ufoxy"
+    },
+    "fredbear": {
+      "map": {
+        "2": "plush_fredbear"
+      },
+      "name": "fredbear"
+    },
+    "springbonnie": {
+      "map": {
+        "2": "plush_springbonnie"
+      },
+      "name": "springbonnie"
+    },
+    "tfreddy": {
+      "map": {
+        "2": "plush_tfreddy"
+      },
+      "name": "tfreddy"
+    },
+    "tbonnie": {
+      "map": {
+        "2": "plush_tbonnie"
+      },
+      "name": "tbonnie"
+    },
+    "tchica": {
+      "map": {
+        "2": "plush_tchica"
+      },
+      "name": "tchica"
+    },
+    "tfoxy": {
+      "map": {
+        "2": "plush_tfoxy"
+      },
+      "name": "tfoxy"
+    },
+    "bpolar": {
+      "map": {
+        "2": "plush_barryp"
+      },
+      "name": "bpolar"
+    },
+    "indigo": {
+      "map": {
+        "2": "plush_indigo"
+      },
+      "name": "indigo"
+    },
+    "guy_stephan": {
+      "map": {
+        "2": "plush_stephan"
+      },
+      "name": "guy_stephan"
+    },
+    "guy_logan": {
+      "map": {
+        "2": "plush_logan"
+      },
+      "name": "guy_logan"
+    },
+    "guy_staticbear": {
+      "map": {
+        "2": "plush_staticbear"
+      },
+      "name": "guy_staticbear"
+    },
+    "guy_marcelo": {
+      "map": {
+        "2": "plush_marcelo"
+      },
+      "name": "guy_marcelo"
+    }
+  }
+}

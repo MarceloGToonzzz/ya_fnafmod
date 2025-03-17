@@ -1,0 +1,77 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_post"
+      }
+    },
+    {
+      "when": {
+        "north": true
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_side"
+      }
+    },
+    {
+      "when": {
+        "east": true
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_side",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "south": true
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_side_alt"
+      }
+    },
+    {
+      "when": {
+        "west": true
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_side_alt",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "north": false
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_noside"
+      }
+    },
+    {
+      "when": {
+        "east": false
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_noside_alt"
+      }
+    },
+    {
+      "when": {
+        "south": false
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_noside_alt",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "west": false
+      },
+      "apply": {
+        "model": "ya_fnafmod:block/curtain_red_starless_thin_noside",
+        "y": 270
+      }
+    }
+  ]
+}

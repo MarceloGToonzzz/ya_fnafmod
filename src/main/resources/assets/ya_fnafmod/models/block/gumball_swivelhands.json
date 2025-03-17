@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/gumball_swivelhands",
+  "textures": {
+    "all": "ya_fnafmod:block/gumball_swivelhands",
+    "particle": "ya_fnafmod:block/gumball_swivelhands",
+    "2": "ya_fnafmod:block/gumball_swivelhands"
+  },
+  "render_type": "translucent"
+}

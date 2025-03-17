@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/monitor3",
+  "textures": {
+    "all": "ya_fnafmod:block/monitor3",
+    "particle": "ya_fnafmod:block/monitor1",
+    "0": "ya_fnafmod:block/monitor3"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/wallcreator_main",
+    "up": "ya_fnafmod:block/wallcreator_main",
+    "north": "ya_fnafmod:block/wallcreator_front",
+    "east": "ya_fnafmod:block/wallcreator_main",
+    "south": "ya_fnafmod:block/wallcreator_main",
+    "west": "ya_fnafmod:block/wallcreator_main",
+    "particle": "ya_fnafmod:block/wallcreator_main"
+  },
+  "render_type": "solid"
+}

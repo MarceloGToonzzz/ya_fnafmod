@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/stage_sun",
+  "textures": {
+    "all": "ya_fnafmod:block/stage_moon",
+    "particle": "ya_fnafmod:block/stage_moon",
+    "1": "ya_fnafmod:block/stage_moon"
+  },
+  "render_type": "cutout"
+}

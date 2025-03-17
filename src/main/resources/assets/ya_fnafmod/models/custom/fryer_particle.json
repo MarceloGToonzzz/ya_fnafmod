@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/prop2",
+  "textures": {
+    "particle": "ya_fnafmod:block/fryer"
+  }
+}

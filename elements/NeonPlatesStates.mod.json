@@ -1,0 +1,74 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "NeonPlates",
+    "blockstateList": [
+      {
+        "texture": "coaster_neonred",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set_neon.geo:red",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "coaster_neonpink",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set_neon.geo:pink",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "coaster_neongreen",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set_neon.geo:green",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "coaster_neonyellow",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set_neon.geo:yellow",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "coaster_neonpurple",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "party_set_neon.geo:purple",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

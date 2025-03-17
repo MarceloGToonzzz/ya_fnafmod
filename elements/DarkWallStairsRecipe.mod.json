@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "dark_wall",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DarkWall"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkWall"
+      },
+      {
+        "value": "CUSTOM:DarkWall"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DarkWall"
+      },
+      {
+        "value": "CUSTOM:DarkWall"
+      },
+      {
+        "value": "CUSTOM:DarkWall"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkWallStairs"
+    },
+    "name": "dark_wall_stairs_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/menu_vintage_torn"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/menu_vintage_torn",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/menu_vintage_torn",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/menu_vintage_torn",
+      "y": 270
+    }
+  }
+}

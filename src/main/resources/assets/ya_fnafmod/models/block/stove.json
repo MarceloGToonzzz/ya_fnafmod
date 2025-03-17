@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/stove",
+  "textures": {
+    "all": "ya_fnafmod:block/stove",
+    "particle": "ya_fnafmod:block/stove",
+    "0": "ya_fnafmod:block/stove"
+  },
+  "render_type": "cutout"
+}

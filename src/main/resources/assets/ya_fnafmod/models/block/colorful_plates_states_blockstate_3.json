@@ -1,0 +1,11 @@
+{
+  "parent": "ya_fnafmod:custom/cups_and_plates",
+  "textures": {
+    "all": "ya_fnafmod:block/cup_purple",
+    "particle": "ya_fnafmod:block/cup_red",
+    "2": "ya_fnafmod:block/cup_purple",
+    "3": "ya_fnafmod:block/coasters_red",
+    "4": "ya_fnafmod:block/plate_orange"
+  },
+  "render_type": "cutout_mipped"
+}

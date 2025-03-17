@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/pizzabox",
+  "textures": {
+    "particle": "ya_fnafmod:block/pizzabox_1987_empty"
+  }
+}

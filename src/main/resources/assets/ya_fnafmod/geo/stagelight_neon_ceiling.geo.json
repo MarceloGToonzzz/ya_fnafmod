@@ -1,0 +1,39 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "NeonStageLight",
+					"pivot": [0, 8, 0],
+					"rotation": [0, 0, -180],
+					"cubes": [
+						{"origin": [-4, 0, -4], "size": [8, 1, 8], "uv": [0, 0]},
+						{"origin": [-1, 1, -1], "size": [2, 2, 2], "uv": [20, 27]},
+						{"origin": [-3.5, 3, -1], "size": [7, 1, 2], "uv": [17, 9]},
+						{"origin": [2.5, 8, -1], "size": [4, 1, 2], "pivot": [2.5, 8, 0], "rotation": [0, 0, 90], "uv": [20, 21]},
+						{"origin": [-6.5, 8, -1], "size": [4, 1, 2], "pivot": [-2.5, 8, 0], "rotation": [0, 0, -90], "uv": [20, 24]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "NeonStageLight",
+					"pivot": [0, 8.00934, 0.43384],
+					"cubes": [
+						{"origin": [-2.5, 6, -3], "size": [5, 5, 7], "pivot": [-0.5, 9, 0], "rotation": [-22.5, 0, 0], "uv": [0, 9]},
+						{"origin": [-4.5, 4.72, -3.85], "size": [9, 9, 1], "pivot": [-0.5, 9.75, -1.75], "rotation": [-22.5, 0, 0], "uv": [0, 21]},
+						{"origin": [0, 3, 2], "size": [0, 6, 4], "uv": [24, 9]}
+					]
+				}
+			]
+		}
+	]
+}

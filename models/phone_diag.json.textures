@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "phone_1979"
+      },
+      "name": "default"
+    },
+    "f1993": {
+      "map": {
+        "2": "phone_1993"
+      },
+      "name": "f1993"
+    }
+  }
+}

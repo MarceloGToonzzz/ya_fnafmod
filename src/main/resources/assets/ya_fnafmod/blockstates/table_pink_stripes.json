@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "ya_fnafmod:block/table_pink_stripes"
+    },
+    "blockstate=1": {
+      "model": "ya_fnafmod:block/table_pink_stripes_states_blockstate_0"
+    }
+  }
+}

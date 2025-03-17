@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ArcadeRaze",
+    "blockstateList": [
+      {
+        "texture": "arcade3_raze_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "arcade3:default",
+        "luminance": 9,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

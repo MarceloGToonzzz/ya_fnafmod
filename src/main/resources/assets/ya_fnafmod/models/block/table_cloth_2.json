@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/table_cloth",
+  "textures": {
+    "all": "ya_fnafmod:block/tablecloth_2",
+    "particle": "ya_fnafmod:block/tablecloth_2",
+    "0": "ya_fnafmod:block/tablecloth_2"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/neon_sign_stripes",
+  "textures": {
+    "all": "ya_fnafmod:block/neonsign_stripes_green_m",
+    "particle": "ya_fnafmod:block/neonsign_stripes_green_m",
+    "15": "ya_fnafmod:block/neonsign_stripes_green_m"
+  },
+  "render_type": "cutout"
+}

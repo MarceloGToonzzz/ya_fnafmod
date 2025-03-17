@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/toolbox",
+  "textures": {
+    "all": "ya_fnafmod:block/toolbox_red",
+    "particle": "ya_fnafmod:block/toolbox_red",
+    "1": "ya_fnafmod:block/toolbox_red"
+  },
+  "render_type": "cutout_mipped"
+}

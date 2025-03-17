@@ -1,0 +1,59 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "breakercontrol",
+					"pivot": [0, -3, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{"origin": [-10, 14, -4], "size": [10, 7, 1], "inflate": -0.001, "uv": [58, 107]},
+						{"origin": [-10, 14, -3], "size": [0, 7, 6], "inflate": -0.001, "uv": [96, 107]},
+						{"origin": [-10, 14, 3], "size": [10, 7, 1], "inflate": -0.001, "uv": [58, 107]},
+						{"origin": [-2, 0, 2], "size": [11, 12, 22], "pivot": [2.5, 4.5, 16], "rotation": [0, 20, 0], "uv": [0, 46]},
+						{"origin": [-2, 0, -24], "size": [11, 12, 21], "pivot": [2.5, 4.5, -16], "rotation": [0, -20, 0], "uv": [66, 46]},
+						{"origin": [-7, 12, -25], "size": [19, 2, 21], "pivot": [2.5, 13, -14.5], "rotation": [0, -20, 0], "uv": [0, 0]},
+						{"origin": [-7, 14, -25], "size": [9, 4, 21], "pivot": [2.5, 15, -14.5], "rotation": [0, -20, 0], "uv": [80, 18]},
+						{"origin": [-7, 14, 4], "size": [9, 5, 21], "pivot": [2.5, 15, 14.5], "rotation": [0, 20, 0], "uv": [0, 80]},
+						{"origin": [-7, 12, 4], "size": [19, 2, 21], "pivot": [2.5, 13, 14.5], "rotation": [0, 20, 0], "uv": [0, 23]},
+						{"origin": [-10, 12, -8], "size": [18, 2, 16], "inflate": -0.001, "uv": [80, 0]},
+						{"origin": [-7, 0, -8], "size": [15, 12, 16], "uv": [66, 79]}
+					]
+				},
+				{
+					"name": "megaphone",
+					"parent": "breakercontrol",
+					"pivot": [-5, 19, 0],
+					"cubes": [
+						{"origin": [0, 18, -2], "size": [2, 6, 4], "inflate": -0.001, "uv": [108, 107]},
+						{"origin": [-5, 14, -2], "size": [4, 10, 4], "inflate": -0.001, "uv": [80, 107]},
+						{"origin": [-10, 19, -3], "size": [10, 6, 6], "inflate": -0.001, "uv": [0, 106]},
+						{"origin": [-15, 18, -4], "size": [5, 8, 8], "inflate": -0.001, "uv": [32, 106]}
+					]
+				},
+				{
+					"name": "lever",
+					"parent": "breakercontrol",
+					"pivot": [1.74971, 15.625, -15.3605],
+					"rotation": [-30, 70, 0],
+					"cubes": [
+						{"origin": [-6.80029, 15.125, -16.3605], "size": [2, 9, 2], "uv": [58, 115]},
+						{"origin": [8.19971, 15.125, -16.3605], "size": [2, 9, 2], "uv": [58, 115]},
+						{"origin": [4.44971, 15.125, -16.3605], "size": [2, 9, 2], "uv": [58, 115]},
+						{"origin": [0.94971, 15.125, -16.3605], "size": [2, 9, 2], "uv": [58, 115]},
+						{"origin": [-3.05029, 15.125, -16.3605], "size": [2, 9, 2], "uv": [58, 115]}
+					]
+				}
+			]
+		}
+	]
+}

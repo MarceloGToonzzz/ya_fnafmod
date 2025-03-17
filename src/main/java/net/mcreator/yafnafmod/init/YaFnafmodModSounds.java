@@ -1,0 +1,132 @@
+
+/*
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
+package net.mcreator.yafnafmod.init;
+
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.yafnafmod.YaFnafmodMod;
+
+public class YaFnafmodModSounds {
+	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, YaFnafmodMod.MODID);
+	public static final RegistryObject<SoundEvent> SECURITYDOOR_CLOSE = REGISTRY.register("securitydoor_close", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "securitydoor_close")));
+	public static final RegistryObject<SoundEvent> GENERATOR_TURNON = REGISTRY.register("generator_turnon", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "generator_turnon")));
+	public static final RegistryObject<SoundEvent> GENERATOR_TURNOFF = REGISTRY.register("generator_turnoff", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "generator_turnoff")));
+	public static final RegistryObject<SoundEvent> ANIMA_BB_LAUGH = REGISTRY.register("anima_bb_laugh", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_bb_laugh")));
+	public static final RegistryObject<SoundEvent> ANIMA_MANGLE_AMBIENT = REGISTRY.register("anima_mangle_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_mangle_ambient")));
+	public static final RegistryObject<SoundEvent> ANIMA_FNAF2_STEPS = REGISTRY.register("anima_fnaf2_steps", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_fnaf2_steps")));
+	public static final RegistryObject<SoundEvent> ANIMA_BB_AMBIENT = REGISTRY.register("anima_bb_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_bb_ambient")));
+	public static final RegistryObject<SoundEvent> ANIMA_FNAF1_STEPS = REGISTRY.register("anima_fnaf1_steps", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_fnaf1_steps")));
+	public static final RegistryObject<SoundEvent> MUSICBOX_SONG = REGISTRY.register("musicbox_song", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "musicbox_song")));
+	public static final RegistryObject<SoundEvent> MUSICBOX_WIND = REGISTRY.register("musicbox_wind", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "musicbox_wind")));
+	public static final RegistryObject<SoundEvent> FLASHBEACON_ERROR = REGISTRY.register("flashbeacon_error", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "flashbeacon_error")));
+	public static final RegistryObject<SoundEvent> HONK = REGISTRY.register("honk", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "honk")));
+	public static final RegistryObject<SoundEvent> DEVICE_ERROR = REGISTRY.register("device_error", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "device_error")));
+	public static final RegistryObject<SoundEvent> DEVICE_FIX = REGISTRY.register("device_fix", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "device_fix")));
+	public static final RegistryObject<SoundEvent> BG_FNAF1SONG_TLT = REGISTRY.register("bg_fnaf1song_tlt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf1song_tlt")));
+	public static final RegistryObject<SoundEvent> BG_FNAF2SONG_TLT = REGISTRY.register("bg_fnaf2song_tlt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf2song_tlt")));
+	public static final RegistryObject<SoundEvent> BG_FNAF3SONG_TLT = REGISTRY.register("bg_fnaf3song_tlt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf3song_tlt")));
+	public static final RegistryObject<SoundEvent> BG_FNAF4SONG_TLT = REGISTRY.register("bg_fnaf4song_tlt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf4song_tlt")));
+	public static final RegistryObject<SoundEvent> BG_FNAFSLSONG_TLT = REGISTRY.register("bg_fnafslsong_tlt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnafslsong_tlt")));
+	public static final RegistryObject<SoundEvent> BG_FNAF6SONG_CG5 = REGISTRY.register("bg_fnaf6song_cg5", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf6song_cg5")));
+	public static final RegistryObject<SoundEvent> BG_WEWANTOUT_DAGAMES = REGISTRY.register("bg_wewantout_dagames", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_wewantout_dagames")));
+	public static final RegistryObject<SoundEvent> ANIMA_FNAF4_STEPS = REGISTRY.register("anima_fnaf4_steps", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_fnaf4_steps")));
+	public static final RegistryObject<SoundEvent> ANIMA_NFREDBEAR_LAUGH = REGISTRY.register("anima_nfredbear_laugh", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_nfredbear_laugh")));
+	public static final RegistryObject<SoundEvent> ANIMA_FOXY_SINGING = REGISTRY.register("anima_foxy_singing", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_foxy_singing")));
+	public static final RegistryObject<SoundEvent> ANIMA_FOXY_VOICE = REGISTRY.register("anima_foxy_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_foxy_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_TFREDDY_VOICE = REGISTRY.register("anima_tfreddy_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_tfreddy_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_TFREDDY_VOICE_HOSTILE = REGISTRY.register("anima_tfreddy_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_tfreddy_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIM_TOYFREDDY_KILLVOICE = REGISTRY.register("anim_toyfreddy_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_toyfreddy_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIM_WCHICA_VOICE = REGISTRY.register("anim_wchica_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_wchica_voice")));
+	public static final RegistryObject<SoundEvent> ANIM_WCHICA_VOICE_HOSTILE = REGISTRY.register("anim_wchica_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_wchica_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIM_WCHICA_KILLVOICE = REGISTRY.register("anim_wchica_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_wchica_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_FREDDY_LAUGH = REGISTRY.register("anima_freddy_laugh", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_freddy_laugh")));
+	public static final RegistryObject<SoundEvent> ANIMA_SPRINGTRAP_VOICE = REGISTRY.register("anima_springtrap_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_springtrap_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_SPRINGTRAP_VOICE_HOSTILE = REGISTRY.register("anima_springtrap_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_springtrap_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIMA_SPRINGTRAP_KILLVOICE = REGISTRY.register("anima_springtrap_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_springtrap_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_FTFREDDY_VOICE = REGISTRY.register("anima_ftfreddy_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_ftfreddy_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_FTFREDDY_VOICE_HOSTILE = REGISTRY.register("anima_ftfreddy_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_ftfreddy_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIMA_FTFREDDY_KILLVOICE = REGISTRY.register("anima_ftfreddy_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_ftfreddy_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_FTFREDDY_BONBONSHOOTER = REGISTRY.register("anima_ftfreddy_bonbonshooter", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_ftfreddy_bonbonshooter")));
+	public static final RegistryObject<SoundEvent> TOOL_FAT_ANIMAANIMATE = REGISTRY.register("tool_fat_animaanimate", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "tool_fat_animaanimate")));
+	public static final RegistryObject<SoundEvent> ANIMA_NFREDBEAR_VOICE = REGISTRY.register("anima_nfredbear_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_nfredbear_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_NFREDBEAR_VOICE_HOSTILE = REGISTRY.register("anima_nfredbear_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_nfredbear_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIMA_NFREDBEAR_KILLVOICE = REGISTRY.register("anima_nfredbear_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_nfredbear_killvoice")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAF1 = REGISTRY.register("jumpscare_fnaf1", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnaf1")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAF2 = REGISTRY.register("jumpscare_fnaf2", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnaf2")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAF3 = REGISTRY.register("jumpscare_fnaf3", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnaf3")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAF4 = REGISTRY.register("jumpscare_fnaf4", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnaf4")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAFSL_BALLORA = REGISTRY.register("jumpscare_fnafsl_ballora", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnafsl_ballora")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAFSL_ENNARD = REGISTRY.register("jumpscare_fnafsl_ennard", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnafsl_ennard")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAFSL_FFOXY = REGISTRY.register("jumpscare_fnafsl_ffoxy", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnafsl_ffoxy")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAFSL_FFREDDY = REGISTRY.register("jumpscare_fnafsl_ffreddy", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnafsl_ffreddy")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAFSL_MINI = REGISTRY.register("jumpscare_fnafsl_mini", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnafsl_mini")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAF4_NIGHTMARE = REGISTRY.register("jumpscare_fnaf4_nightmare", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnaf4_nightmare")));
+	public static final RegistryObject<SoundEvent> ANIMA_FOXY_KILLVOICE = REGISTRY.register("anima_foxy_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_foxy_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_BONBON_DISTRACTVOICE = REGISTRY.register("anima_bonbon_distractvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_bonbon_distractvoice")));
+	public static final RegistryObject<SoundEvent> CONTROLSHOCK_SHOCK = REGISTRY.register("controlshock_shock", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "controlshock_shock")));
+	public static final RegistryObject<SoundEvent> CONTROLSHOCK_FAIL = REGISTRY.register("controlshock_fail", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "controlshock_fail")));
+	public static final RegistryObject<SoundEvent> BG_FNAF3SONG_DAGAMES = REGISTRY.register("bg_fnaf3song_dagames", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf3song_dagames")));
+	public static final RegistryObject<SoundEvent> BG_FNAF4SONG_DAGAMES = REGISTRY.register("bg_fnaf4song_dagames", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf4song_dagames")));
+	public static final RegistryObject<SoundEvent> BG_FNAFSLSONG_JTMUSIC = REGISTRY.register("bg_fnafslsong_jtmusic", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnafslsong_jtmusic")));
+	public static final RegistryObject<SoundEvent> BG_FNAF2SONG_SMW = REGISTRY.register("bg_fnaf2song_smw", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf2song_smw")));
+	public static final RegistryObject<SoundEvent> BG_FNAFSLSONG_DAGAMES = REGISTRY.register("bg_fnafslsong_dagames", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnafslsong_dagames")));
+	public static final RegistryObject<SoundEvent> BG_FNAF4SONG_SHADROW = REGISTRY.register("bg_fnaf4song_shadrow", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf4song_shadrow")));
+	public static final RegistryObject<SoundEvent> BG_FNAF3SONG_WATP = REGISTRY.register("bg_fnaf3song_watp", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf3song_watp")));
+	public static final RegistryObject<SoundEvent> SCOOPER_ALARM = REGISTRY.register("scooper_alarm", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "scooper_alarm")));
+	public static final RegistryObject<SoundEvent> SCOOPER_SCOOP = REGISTRY.register("scooper_scoop", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "scooper_scoop")));
+	public static final RegistryObject<SoundEvent> ANIMA_GFREDDY_AMBIENT = REGISTRY.register("anima_gfreddy_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_gfreddy_ambient")));
+	public static final RegistryObject<SoundEvent> ANIMA_GFREDDY_MUMBLE = REGISTRY.register("anima_gfreddy_mumble", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_gfreddy_mumble")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAF1_GFREDDY = REGISTRY.register("jumpscare_fnaf1_gfreddy", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnaf1_gfreddy")));
+	public static final RegistryObject<SoundEvent> ANIM_MINIREENA_GIGGLE = REGISTRY.register("anim_minireena_giggle", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_minireena_giggle")));
+	public static final RegistryObject<SoundEvent> ANIM_BALLORA_CRUMBLINGDREAMS = REGISTRY.register("anim_ballora_crumblingdreams", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_ballora_crumblingdreams")));
+	public static final RegistryObject<SoundEvent> ANIMA_BALLORA_VOICE = REGISTRY.register("anima_ballora_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_ballora_voice")));
+	public static final RegistryObject<SoundEvent> ANIM_BALLORA_VOICE_HOSTILE = REGISTRY.register("anim_ballora_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_ballora_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIM_BALLORA_KILLVOICE = REGISTRY.register("anim_ballora_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_ballora_killvoice")));
+	public static final RegistryObject<SoundEvent> BLOCK_CLOCK_CHIME_1 = REGISTRY.register("block_clock_chime_1", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "block_clock_chime_1")));
+	public static final RegistryObject<SoundEvent> BLOCK_CLOCK_CHIME_2 = REGISTRY.register("block_clock_chime_2", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "block_clock_chime_2")));
+	public static final RegistryObject<SoundEvent> BLOCK_CLOCK_CHIME_4 = REGISTRY.register("block_clock_chime_4", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "block_clock_chime_4")));
+	public static final RegistryObject<SoundEvent> BLOCK_CLOCK_CHIME_SL = REGISTRY.register("block_clock_chime_sl", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "block_clock_chime_sl")));
+	public static final RegistryObject<SoundEvent> BLOCK_CLOCK_CHIME_6 = REGISTRY.register("block_clock_chime_6", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "block_clock_chime_6")));
+	public static final RegistryObject<SoundEvent> ANIMA_SPRINGTRAP_MOAN = REGISTRY.register("anima_springtrap_moan", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_springtrap_moan")));
+	public static final RegistryObject<SoundEvent> ANIMA_CANDYCADET_INTRO = REGISTRY.register("anima_candycadet_intro", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_candycadet_intro")));
+	public static final RegistryObject<SoundEvent> ANIMA_CANDYCADET_BYE = REGISTRY.register("anima_candycadet_bye", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_candycadet_bye")));
+	public static final RegistryObject<SoundEvent> ANIMA_RFREDDY_PLSDEPOSIT = REGISTRY.register("anima_rfreddy_plsdeposit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_rfreddy_plsdeposit")));
+	public static final RegistryObject<SoundEvent> ANIMA_RFREDDY_TRICKVOICE = REGISTRY.register("anima_rfreddy_trickvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_rfreddy_trickvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_RFREDDY_THANKYOU = REGISTRY.register("anima_rfreddy_thankyou", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_rfreddy_thankyou")));
+	public static final RegistryObject<SoundEvent> BG_FNAF6SONG_240BITSPERMILE = REGISTRY.register("bg_fnaf6song_240bitspermile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf6song_240bitspermile")));
+	public static final RegistryObject<SoundEvent> JUMPSCARE_FNAF6 = REGISTRY.register("jumpscare_fnaf6", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "jumpscare_fnaf6")));
+	public static final RegistryObject<SoundEvent> ANIMA_MOLTENFREDDY_VOICE = REGISTRY.register("anima_moltenfreddy_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_moltenfreddy_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_MOLTENFREDDY_KILLVOICE = REGISTRY.register("anima_moltenfreddy_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_moltenfreddy_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_SCRAPTRAP_VOICE = REGISTRY.register("anima_scraptrap_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_scraptrap_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_SCRAPTRAP_VOICE_HOSTILE = REGISTRY.register("anima_scraptrap_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_scraptrap_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIMA_SCRAPTRAP_KILLVOICE = REGISTRY.register("anima_scraptrap_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_scraptrap_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_MOLTENFREDDY_VOICE_HOSTILE = REGISTRY.register("anima_moltenfreddy_voice_hostile",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_moltenfreddy_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIMA_SCRAPBABY_VOICE = REGISTRY.register("anima_scrapbaby_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_scrapbaby_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_SCRAPBABY_KILLVOICE = REGISTRY.register("anima_scrapbaby_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_scrapbaby_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_SCRAPBABY_VOICE_HOSTILE = REGISTRY.register("anima_scrapbaby_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_scrapbaby_voice_hostile")));
+	public static final RegistryObject<SoundEvent> BG_WALTZABOUT = REGISTRY.register("bg_waltzabout", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_waltzabout")));
+	public static final RegistryObject<SoundEvent> BG_LULLABYWALTZ = REGISTRY.register("bg_lullabywaltz", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_lullabywaltz")));
+	public static final RegistryObject<SoundEvent> BG_SERENADE = REGISTRY.register("bg_serenade", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_serenade")));
+	public static final RegistryObject<SoundEvent> BG_TOREADORMARCH = REGISTRY.register("bg_toreadormarch", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_toreadormarch")));
+	public static final RegistryObject<SoundEvent> BG_CIRCUSPIPEORGAN = REGISTRY.register("bg_circuspipeorgan", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_circuspipeorgan")));
+	public static final RegistryObject<SoundEvent> BG_TURTLECRUSHER = REGISTRY.register("bg_turtlecrusher", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_turtlecrusher")));
+	public static final RegistryObject<SoundEvent> BG_TALKINGINYOURSLEEP = REGISTRY.register("bg_talkinginyoursleep", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_talkinginyoursleep")));
+	public static final RegistryObject<SoundEvent> ANIMA_CANDYCADET_STORY = REGISTRY.register("anima_candycadet_story", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_candycadet_story")));
+	public static final RegistryObject<SoundEvent> SFX_AIRHORN = REGISTRY.register("sfx_airhorn", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "sfx_airhorn")));
+	public static final RegistryObject<SoundEvent> ANIMA_FTCHICA_DISTRACT = REGISTRY.register("anima_ftchica_distract", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_ftchica_distract")));
+	public static final RegistryObject<SoundEvent> BG_ADSONG = REGISTRY.register("bg_adsong", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_adsong")));
+	public static final RegistryObject<SoundEvent> THATCAT = REGISTRY.register("thatcat", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "thatcat")));
+	public static final RegistryObject<SoundEvent> TATTLETALE_HEHE = REGISTRY.register("tattletale_hehe", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "tattletale_hehe")));
+	public static final RegistryObject<SoundEvent> STATICBEAR_VANISH = REGISTRY.register("staticbear_vanish", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "staticbear_vanish")));
+	public static final RegistryObject<SoundEvent> ANIMA_DRTEETH_AMBIENT = REGISTRY.register("anima_drteeth_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_drteeth_ambient")));
+	public static final RegistryObject<SoundEvent> BG_FNAF6SONG_SMASHINGWINDSHIELDS = REGISTRY.register("bg_fnaf6song_smashingwindshields",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_fnaf6song_smashingwindshields")));
+}

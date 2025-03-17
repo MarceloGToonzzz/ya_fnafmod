@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "particle": "ya_fnafmod:block/streamer2",
+    "edge": "ya_fnafmod:block/empty",
+    "pane": "ya_fnafmod:block/streamer2"
+  },
+  "render_type": "translucent"
+}

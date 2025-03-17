@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "partybanner_happybirthday"
+      },
+      "name": "default"
+    },
+    "letsparty": {
+      "map": {
+        "0": "partybanner_letsparty"
+      },
+      "name": "letsparty"
+    },
+    "fiztime": {
+      "map": {
+        "0": "partybanner_fiztimepopsoda"
+      },
+      "name": "fiztime"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/computer",
+  "textures": {
+    "all": "ya_fnafmod:block/computer",
+    "particle": "ya_fnafmod:block/computer",
+    "2": "ya_fnafmod:block/computer"
+  },
+  "render_type": "cutout"
+}

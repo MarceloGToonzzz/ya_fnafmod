@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/box_blank",
+    "up": "ya_fnafmod:block/box_top",
+    "north": "ya_fnafmod:block/box_stuffed",
+    "east": "ya_fnafmod:block/box_stuffed",
+    "south": "ya_fnafmod:block/box_stuffed",
+    "west": "ya_fnafmod:block/box_stuffed",
+    "particle": "ya_fnafmod:block/box_blank"
+  },
+  "render_type": "solid"
+}

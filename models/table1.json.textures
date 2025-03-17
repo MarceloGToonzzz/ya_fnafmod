@@ -1,0 +1,52 @@
+{
+  "mappings": {
+    "leg0": {
+      "map": {
+        "7": "table1_3"
+      },
+      "name": "leg0"
+    },
+    "leg1": {
+      "map": {
+        "7": "table1_4"
+      },
+      "name": "leg1"
+    },
+    "default": {
+      "map": {
+        "7": "table1_1"
+      },
+      "name": "default"
+    },
+    "leg2": {
+      "map": {
+        "7": "table1_2"
+      },
+      "name": "leg2"
+    },
+    "table2leg0": {
+      "map": {
+        "7": "table2_3"
+      },
+      "name": "table2leg0"
+    },
+    "table2leg1": {
+      "map": {
+        "7": "table2_4"
+      },
+      "name": "table2leg1"
+    },
+    "table2": {
+      "map": {
+        "7": "table2_1"
+      },
+      "name": "table2"
+    },
+    "table2leg2": {
+      "map": {
+        "7": "table2_2"
+      },
+      "name": "table2leg2"
+    }
+  }
+}

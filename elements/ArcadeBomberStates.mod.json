@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ArcadeBomber",
+    "blockstateList": [
+      {
+        "texture": "arcade5_bomber_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "arcade5:default",
+        "luminance": 9,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

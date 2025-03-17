@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "shelf1"
+      },
+      "name": "default"
+    }
+  }
+}

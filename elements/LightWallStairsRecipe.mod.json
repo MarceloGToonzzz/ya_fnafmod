@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "light_wall",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LightWall"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightWall"
+      },
+      {
+        "value": "CUSTOM:LightWall"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LightWall"
+      },
+      {
+        "value": "CUSTOM:LightWall"
+      },
+      {
+        "value": "CUSTOM:LightWall"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LightWallStairs"
+    },
+    "name": "light_wall_stairs_recipe",
+    "namespace": "mod"
+  }
+}

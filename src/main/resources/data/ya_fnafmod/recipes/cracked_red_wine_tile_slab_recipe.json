@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "floor_tile",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:cracked_red_wine_tiles"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:cracked_red_wine_tile_slab",
+    "count": 4
+  }
+}

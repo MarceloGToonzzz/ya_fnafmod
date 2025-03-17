@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "stand_puppet"
+      },
+      "name": "default"
+    }
+  }
+}

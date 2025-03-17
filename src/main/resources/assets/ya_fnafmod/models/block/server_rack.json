@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/serverrack_top",
+    "up": "ya_fnafmod:block/serverrack_top",
+    "north": "ya_fnafmod:block/serverrack_frontbottom",
+    "east": "ya_fnafmod:block/serverrack_lsidebottom",
+    "south": "ya_fnafmod:block/serverrack_backbottom",
+    "west": "ya_fnafmod:block/serverrack_rsidebottom",
+    "particle": "ya_fnafmod:block/serverrack_top"
+  },
+  "render_type": "solid"
+}

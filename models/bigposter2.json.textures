@@ -1,0 +1,34 @@
+{
+  "mappings": {
+    "chica": {
+      "map": {
+        "0": "safetyposter_chica"
+      },
+      "name": "chica"
+    },
+    "default": {
+      "map": {
+        "0": "safetyposter_base"
+      },
+      "name": "default"
+    },
+    "bonnie": {
+      "map": {
+        "0": "safetyposter_bonnie"
+      },
+      "name": "bonnie"
+    },
+    "freddy": {
+      "map": {
+        "0": "safetyposter_freddy"
+      },
+      "name": "freddy"
+    },
+    "foxy": {
+      "map": {
+        "0": "safetyposter_foxy"
+      },
+      "name": "foxy"
+    }
+  }
+}

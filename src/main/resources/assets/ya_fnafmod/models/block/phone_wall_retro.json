@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/phone_wall",
+  "textures": {
+    "all": "ya_fnafmod:block/phone_wall",
+    "particle": "ya_fnafmod:block/phone_wall",
+    "0": "ya_fnafmod:block/phone_wall"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/wall_brown",
+    "bottom": "ya_fnafmod:block/wall_brown",
+    "top": "ya_fnafmod:block/wall_brown",
+    "side": "ya_fnafmod:block/wall_brown"
+  },
+  "render_type": "solid"
+}

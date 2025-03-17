@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bigposter2",
+  "textures": {
+    "all": "ya_fnafmod:block/safetyposter_base",
+    "particle": "ya_fnafmod:block/safetyposter_base",
+    "0": "ya_fnafmod:block/safetyposter_bonnie"
+  },
+  "render_type": "cutout"
+}

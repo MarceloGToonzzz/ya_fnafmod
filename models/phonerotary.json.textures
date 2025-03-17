@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "red": {
+      "map": {
+        "2": "phonerotary_red"
+      },
+      "name": "red"
+    },
+    "default": {
+      "map": {
+        "2": "phonerotary_black"
+      },
+      "name": "default"
+    },
+    "orange": {
+      "map": {
+        "2": "phonerotary_orange"
+      },
+      "name": "orange"
+    },
+    "purple": {
+      "map": {
+        "2": "phonerotary_purple"
+      },
+      "name": "purple"
+    }
+  }
+}

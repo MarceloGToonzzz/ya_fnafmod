@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/prop_sign",
+  "textures": {
+    "all": "ya_fnafmod:block/propsign_outoforder",
+    "particle": "ya_fnafmod:block/propsign_outoforder",
+    "0": "ya_fnafmod:block/propsign_outoforder"
+  },
+  "render_type": "cutout_mipped"
+}

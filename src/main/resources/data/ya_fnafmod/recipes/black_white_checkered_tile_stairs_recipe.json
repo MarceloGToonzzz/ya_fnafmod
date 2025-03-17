@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "floor_tile",
+  "category": "building",
+  "pattern": [
+    "a  ",
+    "aa ",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:black_white_checkered_tiles"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:black_white_checkered_tile_stairs",
+    "count": 4
+  }
+}

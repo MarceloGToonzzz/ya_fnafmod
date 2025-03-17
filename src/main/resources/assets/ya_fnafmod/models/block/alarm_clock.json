@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/alarm_clock",
+  "textures": {
+    "all": "ya_fnafmod:block/alarm_clock",
+    "particle": "ya_fnafmod:block/alarm_clock",
+    "0": "ya_fnafmod:block/alarm_clock"
+  },
+  "render_type": "cutout_mipped"
+}

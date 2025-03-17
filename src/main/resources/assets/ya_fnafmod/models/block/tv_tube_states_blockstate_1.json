@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bigmonitor",
+  "textures": {
+    "all": "ya_fnafmod:block/bigmonitortv_off",
+    "particle": "ya_fnafmod:block/bigmonitortv_off",
+    "1": "ya_fnafmod:block/bigmonitortv_freddyandfriends"
+  },
+  "render_type": "cutout"
+}

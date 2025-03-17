@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "SignOpen",
+    "blockstateList": [
+      {
+        "texture": "signfront_closed",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "signfront:closed",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

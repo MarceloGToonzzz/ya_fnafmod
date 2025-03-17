@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/drawer_tall",
+  "textures": {
+    "all": "ya_fnafmod:block/drawertall_brown",
+    "particle": "ya_fnafmod:block/drawertall_brown",
+    "0": "ya_fnafmod:block/drawertall_brown"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wall_art",
+  "textures": {
+    "all": "ya_fnafmod:block/wallart_foxy",
+    "particle": "ya_fnafmod:block/wallart_foxy",
+    "1": "ya_fnafmod:block/wallart_foxy"
+  },
+  "render_type": "cutout_mipped"
+}

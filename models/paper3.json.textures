@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "paperl_1"
+      },
+      "name": "default"
+    },
+    "paperl2": {
+      "map": {
+        "0": "paperl_2"
+      },
+      "name": "paperl2"
+    }
+  }
+}

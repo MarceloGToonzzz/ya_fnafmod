@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "partyhat2"
+      },
+      "name": "default"
+    },
+    "foil2": {
+      "map": {
+        "0": "foilpartyhat2"
+      },
+      "name": "foil2"
+    }
+  }
+}

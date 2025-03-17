@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/stagelightstiny_dual",
+  "textures": {
+    "all": "ya_fnafmod:block/stagelighttiny",
+    "particle": "ya_fnafmod:block/stagelighttiny",
+    "1": "ya_fnafmod:block/stagelighttiny"
+  },
+  "render_type": "cutout_mipped"
+}

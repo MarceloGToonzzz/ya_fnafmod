@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/little_joe",
+  "textures": {
+    "all": "ya_fnafmod:block/littlejoe",
+    "particle": "ya_fnafmod:block/littlejoe",
+    "1": "ya_fnafmod:block/littlejoe"
+  },
+  "render_type": "translucent"
+}

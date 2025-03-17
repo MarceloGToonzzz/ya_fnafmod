@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ya_fnafmod:fnaf_1_freddy_fazbears_pizzeria",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 20,
+    "salt": 1673159232
+  }
+}

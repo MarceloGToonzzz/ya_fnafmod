@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "gas_tank_gray",
+        "1": "empty",
+        "2": "empty"
+      },
+      "name": "default"
+    },
+    "row3": {
+      "map": {
+        "0": "gas_tank_gray",
+        "1": "gas_tank_gray",
+        "2": "gas_tank_gray"
+      },
+      "name": "row3"
+    },
+    "row2": {
+      "map": {
+        "0": "gas_tank_gray",
+        "1": "gas_tank_gray",
+        "2": "empty"
+      },
+      "name": "row2"
+    }
+  }
+}

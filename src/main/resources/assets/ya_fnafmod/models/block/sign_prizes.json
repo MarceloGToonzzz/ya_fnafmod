@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/sign_prize",
+  "textures": {
+    "all": "ya_fnafmod:block/sign_prizes",
+    "particle": "ya_fnafmod:block/sign_prizes",
+    "0": "ya_fnafmod:block/sign_prizes"
+  },
+  "render_type": "translucent"
+}

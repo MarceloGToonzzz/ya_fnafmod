@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "wall_pizza1_1"
+      },
+      "name": "default"
+    },
+    "cut": {
+      "map": {
+        "1": "wall_pizza1_2"
+      },
+      "name": "cut"
+    },
+    "disco": {
+      "map": {
+        "1": "wall_discopizza1_1"
+      },
+      "name": "disco"
+    }
+  }
+}

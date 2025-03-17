@@ -1,0 +1,433 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Presents",
+    "blockstateList": [
+      {
+        "texture": "present_green",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents1:green",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 12.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents1:blue",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 12.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_yellow",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents1:yellow",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 4.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 12.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_red",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 9.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 17.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": -2.0,
+            "my": 0.0,
+            "mz": 2.0,
+            "Mx": 6.0,
+            "My": 8.0,
+            "Mz": 10.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents2:blueyellow",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 9.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 17.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": -2.0,
+            "my": 0.0,
+            "mz": 2.0,
+            "Mx": 6.0,
+            "My": 8.0,
+            "Mz": 10.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_red",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 8.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 16.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": -3.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 5.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": 2.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 10.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents3:bgy",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 8.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 16.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": -3.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 5.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": 2.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 10.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_red",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents3:rgb",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 8.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 16.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": -3.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 5.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": 2.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 10.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_red",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents4:bgyr",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 8.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 16.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": -3.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 5.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": 8.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": -2.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 6.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_red",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents4:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 8.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 16.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": -3.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 5.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": 8.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": -2.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 6.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "present_red",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "presents4:rygb",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 8.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 16.0,
+            "My": 8.0,
+            "Mz": 13.0,
+            "subtract": false
+          },
+          {
+            "mx": -3.0,
+            "my": 0.0,
+            "mz": 6.0,
+            "Mx": 5.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          },
+          {
+            "mx": 8.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 16.0,
+            "mz": 11.0,
+            "Mx": 15.0,
+            "My": 19.0,
+            "Mz": 11.0,
+            "subtract": false
+          },
+          {
+            "mx": -2.0,
+            "my": 8.0,
+            "mz": 7.0,
+            "Mx": 6.0,
+            "My": 16.0,
+            "Mz": 15.0,
+            "subtract": false
+          },
+          {
+            "mx": -1.0,
+            "my": 16.0,
+            "mz": 11.0,
+            "Mx": 5.0,
+            "My": 19.0,
+            "Mz": 11.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

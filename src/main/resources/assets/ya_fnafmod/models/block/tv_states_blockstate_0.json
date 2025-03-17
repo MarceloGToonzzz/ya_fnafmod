@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/tv",
+  "textures": {
+    "all": "ya_fnafmod:block/tv_faf",
+    "particle": "ya_fnafmod:block/tv",
+    "1": "ya_fnafmod:block/tv_faf"
+  },
+  "render_type": "translucent"
+}

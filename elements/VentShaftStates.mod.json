@@ -1,0 +1,431 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "VentShaft",
+    "blockstateList": [
+      {
+        "texture": "vent_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_lshape1:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 15.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "vent_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_lshape2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "vent_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_lshape3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 15.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 1.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 15.0,
+            "My": 16.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "vent_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_tshape1:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "vent_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_tshape2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "vent_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_tshape3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "vent_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "vent_shaft_xshape:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 1.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 15.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 0.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 15.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 16.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 0.0,
+            "my": 1.0,
+            "mz": 15.0,
+            "Mx": 1.0,
+            "My": 15.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

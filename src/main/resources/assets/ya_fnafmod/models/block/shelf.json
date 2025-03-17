@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/shelf1",
+  "textures": {
+    "all": "ya_fnafmod:block/shelf1",
+    "particle": "ya_fnafmod:block/shelf1",
+    "3": "ya_fnafmod:block/shelf1"
+  },
+  "render_type": "cutout"
+}

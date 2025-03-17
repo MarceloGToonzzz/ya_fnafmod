@@ -1,0 +1,150 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "box",
+					"pivot": [17.5, 0, -17.5],
+					"cubes": [
+						{"origin": [-2.5, 0, -18.5], "size": [21, 15, 21], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "parts",
+					"parent": "box",
+					"pivot": [8, 0, -8],
+					"rotation": [0, -90, 0]
+				},
+				{
+					"name": "wfox_arm",
+					"parent": "parts",
+					"pivot": [-2.499, 16, -11],
+					"rotation": [0, -90, 12.5],
+					"cubes": [
+						{"origin": [-3.499, 10, -12], "size": [2, 7, 2], "uv": [30, 73]},
+						{"origin": [-2.999, 7.5, -11], "size": [3, 3, 0], "uv": [76, 48]}
+					]
+				},
+				{
+					"name": "tfred_hed",
+					"parent": "parts",
+					"pivot": [14, 15, -3.5],
+					"rotation": [0, -32.5, 0],
+					"cubes": [
+						{"origin": [10, 15, -7], "size": [8, 8, 8], "uv": [0, 52]},
+						{"origin": [11, 15, -10.5], "size": [6, 4, 4], "uv": [60, 61]}
+					]
+				},
+				{
+					"name": "hat",
+					"parent": "tfred_hed",
+					"pivot": [14, 23, -3],
+					"cubes": [
+						{"origin": [13, 24, -4], "size": [2, 3, 2], "uv": [64, 74]},
+						{"origin": [12.5, 23, -4.5], "size": [3, 1, 3], "uv": [14, 74]}
+					]
+				},
+				{
+					"name": "bb_head",
+					"parent": "parts",
+					"pivot": [5, 18, -5],
+					"rotation": [-62.5, 0, -80],
+					"cubes": [
+						{"origin": [1, 18, -9], "size": [8, 8, 8], "uv": [0, 36]},
+						{"origin": [1, 18, -9], "size": [8, 8, 8], "inflate": 0.25, "uv": [32, 36]}
+					]
+				},
+				{
+					"name": "fox_head",
+					"parent": "parts",
+					"pivot": [7, 15, -10],
+					"rotation": [-37.5, 45, 0],
+					"cubes": [
+						{"origin": [4, 15, -13], "size": [8, 6, 6], "uv": [32, 52]},
+						{"origin": [5, 15, -16], "size": [4, 2, 3], "uv": [64, 69]}
+					]
+				},
+				{
+					"name": "guitar",
+					"parent": "parts",
+					"pivot": [12, 19, -16.5],
+					"rotation": [90, -22.5, 90],
+					"cubes": [
+						{"origin": [-1.25, 15.75, -16.5], "size": [7, 7, 0], "uv": [50, 69]},
+						{"origin": [8.75, 18, -17], "size": [10, 2, 1], "uv": [64, 45]},
+						{"origin": [18.75, 17.75, -17], "size": [4, 3, 1], "uv": [50, 64]},
+						{"origin": [1.75, 16.75, -17], "size": [7, 5, 1], "uv": [14, 68]}
+					]
+				},
+				{
+					"name": "tbon_hed",
+					"parent": "parts",
+					"pivot": [3, 13.5, -13],
+					"rotation": [10.07337, 65.43184, 21.85546],
+					"cubes": [
+						{"origin": [0.5, 13.5, -18], "size": [5, 4, 5], "uv": [60, 52]},
+						{"origin": [2.5, 15, -18.5], "size": [1, 1, 1], "uv": [26, 74]}
+					]
+				},
+				{
+					"name": "tchi_hed",
+					"parent": "parts",
+					"pivot": [8, 14.5, -15.5],
+					"rotation": [-12.5, 0, 0],
+					"cubes": [
+						{"origin": [6, 13.5, -18], "size": [4, 6, 3], "uv": [0, 68]},
+						{"origin": [6, 15.5, -20], "size": [4, 2, 2], "uv": [64, 48]},
+						{"origin": [7, 13.5, -19], "size": [2, 2, 2], "uv": [72, 74]}
+					]
+				},
+				{
+					"name": "tbon_arm",
+					"parent": "parts",
+					"pivot": [8, 15, 1],
+					"rotation": [170.03729, -0.86717, -4.92442],
+					"cubes": [
+						{"origin": [7, 8, 0], "size": [2, 7, 2], "uv": [38, 73]}
+					]
+				},
+				{
+					"name": "paperpal",
+					"parent": "parts",
+					"pivot": [-3, 13, -5],
+					"rotation": [0, -90, -172.5],
+					"cubes": [
+						{"origin": [-7, 9, -5.1], "size": [8, 8, 1], "uv": [32, 64]},
+						{"origin": [-8, 6.5, -5.2], "size": [2, 10, 0], "pivot": [-7, 16.5, -5.2], "rotation": [0, 0, 142.5], "uv": [46, 73], "mirror": true},
+						{"origin": [0, 6.5, -5.2], "size": [2, 10, 0], "pivot": [1, 16.5, -5.2], "rotation": [0, 0, -150], "uv": [46, 73]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "paperpal",
+					"pivot": [1, 17.5, -6],
+					"cubes": [
+						{"origin": [-7, 17.5, -5.1], "size": [8, 8, 1], "uv": [64, 36]}
+					]
+				},
+				{
+					"name": "l_ear_bun",
+					"parent": "head",
+					"pivot": [-0.5, 30.5, -5]
+				},
+				{
+					"name": "r_ear_bun",
+					"parent": "head",
+					"pivot": [-0.5, 30.5, -5]
+				}
+			]
+		}
+	]
+}

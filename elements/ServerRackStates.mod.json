@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ServerRack",
+    "blockstateList": [
+      {
+        "texture": "serverrack_top",
+        "textureTop": "serverrack_top",
+        "textureLeft": "serverrack_lsidetop",
+        "textureFront": "serverrack_fronttop",
+        "textureRight": "serverrack_rsidetop",
+        "textureBack": "serverrack_backtop",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

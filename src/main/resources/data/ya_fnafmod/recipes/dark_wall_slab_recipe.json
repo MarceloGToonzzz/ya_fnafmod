@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dark_wall",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:dark_wall"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:dark_wall_slab",
+    "count": 6
+  }
+}

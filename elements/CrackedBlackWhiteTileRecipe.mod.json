@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "floor_tiles",
+    "cookingBookCategory": "BLOCKS",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:BlackWhiteTiles"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:CrackedBlackWhiteTiles"
+    },
+    "name": "cracked_black_white_tile_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "floor_tile",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:BlackWhiteBigCheckeredTiles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlackWhiteBigCheckeredTiles"
+      },
+      {
+        "value": "CUSTOM:BlackWhiteBigCheckeredTiles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BlackWhiteBigCheckeredTiles"
+      },
+      {
+        "value": "CUSTOM:BlackWhiteBigCheckeredTiles"
+      },
+      {
+        "value": "CUSTOM:BlackWhiteBigCheckeredTiles"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlackWhiteBigCheckeredTileStairs"
+    },
+    "name": "black_white_big_checkered_tile_stairs_recipe",
+    "namespace": "mod"
+  }
+}

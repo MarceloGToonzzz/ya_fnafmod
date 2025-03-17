@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "drawermedium_blue"
+      },
+      "name": "default"
+    },
+    "brown": {
+      "map": {
+        "1": "drawermedium_brown"
+      },
+      "name": "brown"
+    }
+  }
+}

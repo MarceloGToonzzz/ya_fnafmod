@@ -1,0 +1,78 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "BoxMedium",
+    "blockstateList": [
+      {
+        "texture": "box_medium",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "box_medium:two",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 12.0,
+            "My": 12.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "box_medium",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "box_medium:three",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -6.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 12.0,
+            "My": 24.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "box_medium",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "box_medium:four",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": -7.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 25.0,
+            "My": 24.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

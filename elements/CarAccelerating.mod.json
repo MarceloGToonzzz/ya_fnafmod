@@ -1,0 +1,15 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LCONTROL",
+    "keyBindingName": "Accelerating",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "AcceleratingOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "CarAcceleratingOnKeyReleased"
+    }
+  }
+}

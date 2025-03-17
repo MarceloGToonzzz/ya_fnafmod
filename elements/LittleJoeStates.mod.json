@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LittleJoe",
+    "blockstateList": [
+      {
+        "texture": "littlejoe",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "little_joe_diag:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

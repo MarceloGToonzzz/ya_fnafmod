@@ -1,0 +1,22 @@
+{
+  "parent": "ya_fnafmod:block/fancy_light_wall_black_sns_extra_tiles_big_alternate",
+  "display": {
+    "thirdperson": {
+      "rotation": [
+        10,
+        -45,
+        170
+      ],
+      "translation": [
+        0,
+        1.5,
+        -2.75
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    }
+  }
+}

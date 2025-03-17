@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_left",
+  "textures": {
+    "particle": "ya_fnafmod:block/secretdoor_checkwall_blackwhite",
+    "bottom": "ya_fnafmod:block/secretdoor_checkwall_blackwhite",
+    "top": "ya_fnafmod:block/secretdoor_lightwall"
+  },
+  "render_type": "solid"
+}

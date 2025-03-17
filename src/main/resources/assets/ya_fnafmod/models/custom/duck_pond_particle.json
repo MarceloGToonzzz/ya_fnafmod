@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/duckpond_display",
+  "textures": {
+    "particle": "ya_fnafmod:block/duck_pond"
+  }
+}

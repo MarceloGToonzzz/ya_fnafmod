@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/tileblock_purple",
+    "top": "ya_fnafmod:block/tileblock_purple",
+    "side": "ya_fnafmod:block/tileblock_purple",
+    "overlay": "ya_fnafmod:block/walltile_block_purple_big",
+    "particle": "ya_fnafmod:block/tileblock_purple"
+  },
+  "render_type": "cutout_mipped"
+}

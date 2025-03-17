@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/rotary_phone_orange"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/rotary_phone_orange",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/rotary_phone_orange",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/rotary_phone_orange",
+      "y": 270
+    }
+  }
+}

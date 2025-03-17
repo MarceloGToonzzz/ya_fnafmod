@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/breakerroom_tile",
+    "top": "ya_fnafmod:block/stagebase_wood2",
+    "side": "ya_fnafmod:block/stagebase_rental",
+    "overlay": "ya_fnafmod:block/stagebase_rental",
+    "particle": "ya_fnafmod:block/breakerroom_tile"
+  },
+  "render_type": "cutout_mipped"
+}

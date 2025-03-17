@@ -1,0 +1,78 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PartyHat",
+    "blockstateList": [
+      {
+        "texture": "partyhat2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "partyhat2:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 5.0,
+            "Mx": 14.0,
+            "My": 8.0,
+            "Mz": 14.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "partyhat3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "partyhat3:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 0.0,
+            "mz": 3.0,
+            "Mx": 15.0,
+            "My": 8.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "partyhat4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "partyhat4:default",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 2.0,
+            "Mx": 14.0,
+            "My": 8.0,
+            "Mz": 15.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "FanPurple",
+    "blockstateList": [
+      {
+        "texture": "fan_gray_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "fan:purple_on",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "fan_gray_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "fan_diag:purple",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "fan_gray_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "fan_diag:purple_on",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

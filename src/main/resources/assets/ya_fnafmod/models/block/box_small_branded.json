@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/box_small",
+  "textures": {
+    "all": "ya_fnafmod:block/box_small_logo",
+    "particle": "ya_fnafmod:block/box_small_logo",
+    "0": "ya_fnafmod:block/box_small_logo"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LockerYellow",
+    "blockstateList": [
+      {
+        "texture": "locker_yellow_top",
+        "textureTop": "locker_yellow_top",
+        "textureLeft": "locker_yellow_tside",
+        "textureFront": "locker_yellow_tfront",
+        "textureRight": "locker_yellow_tside",
+        "textureBack": "locker_yellow_tside",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/circusgallery_wall",
+    "bottom": "ya_fnafmod:block/circusgallery_wall",
+    "top": "ya_fnafmod:block/circusgallery_wall",
+    "side": "ya_fnafmod:block/circusgallery_wall"
+  },
+  "render_type": "solid"
+}

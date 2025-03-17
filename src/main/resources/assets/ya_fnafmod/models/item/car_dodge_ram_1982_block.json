@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/car_icon_dodge_ram_1982"
+  }
+}

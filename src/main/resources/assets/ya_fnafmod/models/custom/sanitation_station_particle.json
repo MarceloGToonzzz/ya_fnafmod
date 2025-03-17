@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/sanitationstation_display",
+  "textures": {
+    "particle": "ya_fnafmod:block/sanitation_station"
+  }
+}

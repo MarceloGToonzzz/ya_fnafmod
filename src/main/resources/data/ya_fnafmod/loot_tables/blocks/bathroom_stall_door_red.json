@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ya_fnafmod:blocks/bathroom_stall_door_red",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ya_fnafmod:bathroom_stall_door_red",
+          "conditions": [
+            {
+              "block": "ya_fnafmod:bathroom_stall_door_red",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "orange": {
+      "map": {
+        "0": "lamp_orange"
+      },
+      "name": "orange"
+    },
+    "default": {
+      "map": {
+        "0": "lamp_blue"
+      },
+      "name": "default"
+    },
+    "yellow": {
+      "map": {
+        "0": "lamp_yellow"
+      },
+      "name": "yellow"
+    },
+    "pink": {
+      "map": {
+        "0": "lamp_pink"
+      },
+      "name": "pink"
+    }
+  }
+}

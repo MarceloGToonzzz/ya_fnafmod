@@ -1,0 +1,129 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true,
+			"bones": {
+				"car": {
+					"position": {
+						"vector": [-8, 0, -1.5]
+					}
+				}
+			}
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"car": {
+					"rotation": {
+						"vector": [0, -45, 0]
+					}
+				}
+			}
+		},
+		"2": {
+			"loop": true,
+			"bones": {
+				"car": {
+					"position": {
+						"vector": [0, -8, 0]
+					}
+				}
+			}
+		},
+		"3": {
+			"loop": true,
+			"bones": {
+				"car": {
+					"rotation": {
+						"vector": [0, -45, 0]
+					},
+					"position": {
+						"vector": [0, -8, 0]
+					}
+				}
+			}
+		},
+		"animation.model.idle": {
+			"loop": true,
+			"bones": {
+				"car": {
+					"position": {
+						"vector": [-8, 0, -1.5]
+					}
+				}
+			}
+		},
+		"animation.model.drive": {
+			"loop": true,
+			"animation_length": 0.875,
+			"bones": {
+				"tire1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.875": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"tire2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.875": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"tire3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.875": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"tire4": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.875": {
+							"vector": [360, 0, 0]
+						}
+					}
+				},
+				"body": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [0, 0.2, 0]
+						},
+						"0.4167": {
+							"vector": [0, 0, 0]
+						},
+						"0.625": {
+							"vector": [0, 0.2, 0]
+						},
+						"0.75": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"car": {
+					"position": {
+						"vector": [-8, 0, -1.5]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

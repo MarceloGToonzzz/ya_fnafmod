@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:custom/music_box_decoration_particle",
+  "textures": {
+    "particle": "ya_fnafmod:block/minecraft:blue_wool"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_left",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_redentrance_bottom",
+    "bottom": "ya_fnafmod:block/door_redentrance_bottom",
+    "top": "ya_fnafmod:block/door_redentrance_top"
+  },
+  "render_type": "solid"
+}

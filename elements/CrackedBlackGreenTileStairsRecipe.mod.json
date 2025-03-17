@@ -1,0 +1,48 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "floor_tile",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CrackedBlackGreenTiles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CrackedBlackGreenTiles"
+      },
+      {
+        "value": "CUSTOM:CrackedBlackGreenTiles"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CrackedBlackGreenTiles"
+      },
+      {
+        "value": "CUSTOM:CrackedBlackGreenTiles"
+      },
+      {
+        "value": "CUSTOM:CrackedBlackGreenTiles"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CrackedBlackGreenTileStairs"
+    },
+    "name": "cracked_black_green_tile_stairs_recipe",
+    "namespace": "mod"
+  }
+}

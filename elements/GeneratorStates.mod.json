@@ -1,0 +1,74 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "GeneratorBlock",
+    "blockstateList": [
+      {
+        "texture": "generator_up",
+        "textureTop": "generator_up",
+        "textureLeft": "generator_side_4",
+        "textureFront": "generator_side_4",
+        "textureRight": "generator_side_4",
+        "textureBack": "generator_side_4",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "generator_up",
+        "textureTop": "generator_up",
+        "textureLeft": "generator_side_3",
+        "textureFront": "generator_side_3",
+        "textureRight": "generator_side_3",
+        "textureBack": "generator_side_3",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "generator_up",
+        "textureTop": "generator_up",
+        "textureLeft": "generator_side_2",
+        "textureFront": "generator_side_2",
+        "textureRight": "generator_side_2",
+        "textureBack": "generator_side_2",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "generator_up",
+        "textureTop": "generator_up",
+        "textureLeft": "generator_side_1",
+        "textureFront": "generator_side_1",
+        "textureRight": "generator_side_1",
+        "textureBack": "generator_side_1",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "generator_up",
+        "textureTop": "generator_up",
+        "textureLeft": "generator_side_",
+        "textureFront": "generator_side_",
+        "textureRight": "generator_side_",
+        "textureBack": "generator_side_",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

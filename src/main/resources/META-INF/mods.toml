@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Not specified"
+
+[[mods]]
+modId="ya_fnafmod"
+version="1.0.0"
+displayName="Yet Another FNAF Mod"
+displayURL="https://mcreator.net"
+logoFile="logo.png"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="MarceloGToonz, MCreator"
+description="As the name says, It's Yet Another Five Nights at Freddy's Mod."
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.ya_fnafmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.ya_fnafmod]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

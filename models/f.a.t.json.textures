@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fat"
+      },
+      "name": "default"
+    },
+    "blue": {
+      "map": {
+        "0": "fat_blue"
+      },
+      "name": "blue"
+    },
+    "red": {
+      "map": {
+        "0": "fat_red"
+      },
+      "name": "red"
+    }
+  }
+}

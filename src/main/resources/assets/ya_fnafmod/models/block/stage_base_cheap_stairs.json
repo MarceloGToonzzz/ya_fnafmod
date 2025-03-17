@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/cheap_stagebase",
+    "bottom": "ya_fnafmod:block/cheap_stagebase",
+    "top": "ya_fnafmod:block/cheap_stagebase",
+    "side": "ya_fnafmod:block/cheap_stagebase_side"
+  },
+  "render_type": "solid"
+}

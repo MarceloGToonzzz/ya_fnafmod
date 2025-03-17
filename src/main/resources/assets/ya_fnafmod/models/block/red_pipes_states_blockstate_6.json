@@ -1,0 +1,12 @@
+{
+  "parent": "ya_fnafmod:custom/pipes",
+  "textures": {
+    "all": "ya_fnafmod:block/pipe_center_red",
+    "particle": "ya_fnafmod:block/pipe_red",
+    "1": "ya_fnafmod:block/pipe_center_red",
+    "2": "ya_fnafmod:block/pipe_red",
+    "3": "ya_fnafmod:block/pipe_red",
+    "4": "ya_fnafmod:block/empty"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "toy_phone"
+      },
+      "name": "default"
+    }
+  }
+}

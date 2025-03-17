@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/f.a.t",
+  "textures": {
+    "0": "ya_fnafmod:block/fat_red",
+    "particle": "ya_fnafmod:item/tileitem_red"
+  }
+}

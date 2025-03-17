@@ -1,0 +1,113 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "MonitorWork",
+    "blockstateList": [
+      {
+        "texture": "bigmonitor_work",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_work",
+        "luminance": 2,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitor_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_fiztime",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitor_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_flos",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitor_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_lallies",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitor_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_martys",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitor_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_peppers",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitor_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_wacky",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "bigmonitor_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "bigmonitor:monitor_elchip",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

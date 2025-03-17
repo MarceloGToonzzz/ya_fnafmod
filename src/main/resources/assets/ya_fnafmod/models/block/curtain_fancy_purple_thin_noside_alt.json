@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside_alt",
+  "textures": {
+    "particle": "ya_fnafmod:block/curtain_fancypurple",
+    "pane": "ya_fnafmod:block/curtain_fancypurple"
+  },
+  "render_type": "solid"
+}

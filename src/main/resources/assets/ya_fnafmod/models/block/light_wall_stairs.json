@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/wall_light",
+    "bottom": "ya_fnafmod:block/wall_light",
+    "top": "ya_fnafmod:block/wall_light",
+    "side": "ya_fnafmod:block/wall_light"
+  },
+  "render_type": "solid"
+}

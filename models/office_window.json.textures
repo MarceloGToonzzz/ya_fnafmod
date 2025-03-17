@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "officewindow_single"
+      },
+      "name": "default"
+    },
+    "top": {
+      "map": {
+        "2": "officewindow_top"
+      },
+      "name": "top"
+    },
+    "bottom": {
+      "map": {
+        "2": "officewindow_bottom"
+      },
+      "name": "bottom"
+    }
+  }
+}

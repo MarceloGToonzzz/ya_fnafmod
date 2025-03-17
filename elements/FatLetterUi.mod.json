@@ -1,0 +1,442 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 231,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_a",
+          "text": "A",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterA"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 105,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_b",
+          "text": "B",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterB"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 141,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_c",
+          "text": "C",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterC"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 177,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_d",
+          "text": "D",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterD"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 213,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_e",
+          "text": "E",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterE"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 249,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_f",
+          "text": "F",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterF"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 285,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_g",
+          "text": "G",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterG"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 105,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_h",
+          "text": "H",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterH"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 141,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_i",
+          "text": "I",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterI"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 177,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_j",
+          "text": "J",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterJ"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 213,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_k",
+          "text": "K",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterK"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_l",
+          "text": "L",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterL"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 285,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_m",
+          "text": "M",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterM"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 105,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_n",
+          "text": "N",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterN"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_o",
+          "text": "O",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterO"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 177,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_p",
+          "text": "P",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterP"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 213,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_q",
+          "text": "Q",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterQ"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_r",
+          "text": "R",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterR"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 285,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_s",
+          "text": "S",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterS"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 105,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_t",
+          "text": "T",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterT"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 141,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_u",
+          "text": "U",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterU"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 177,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_v",
+          "text": "V",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterV"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 213,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_w",
+          "text": "W",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterW"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 249,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_x",
+          "text": "X",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterX"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 285,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_y",
+          "text": "Y",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterY"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 105,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_z",
+          "text": "Z",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "FatLetterZ"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_choose_a_letter_then",
+          "text": {
+            "fixedValue": "Choose a letter, then"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_rightclick_a_letter_block",
+          "text": {
+            "fixedValue": "right-click a Letter Block."
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 177,
+          "y": 161
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

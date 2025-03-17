@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/discofloor_off",
+    "particle": "ya_fnafmod:block/discofloor_off"
+  },
+  "render_type": "solid"
+}

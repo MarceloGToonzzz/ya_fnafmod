@@ -1,0 +1,238 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "poster_letsparty1"
+      },
+      "name": "default"
+    },
+    "freddy1": {
+      "map": {
+        "0": "poster_freddy1"
+      },
+      "name": "freddy1"
+    },
+    "bonnie1": {
+      "map": {
+        "0": "poster_bonnie1"
+      },
+      "name": "bonnie1"
+    },
+    "chica1": {
+      "map": {
+        "0": "poster_chica1"
+      },
+      "name": "chica1"
+    },
+    "toyfreddy1": {
+      "map": {
+        "0": "poster_toyfreddy1"
+      },
+      "name": "toyfreddy1"
+    },
+    "toyfreddy2": {
+      "map": {
+        "0": "poster_toyfreddy2"
+      },
+      "name": "toyfreddy2"
+    },
+    "toybonnie": {
+      "map": {
+        "0": "poster_toybonnie1"
+      },
+      "name": "toybonnie"
+    },
+    "toychica": {
+      "map": {
+        "0": "poster_toychica1"
+      },
+      "name": "toychica"
+    },
+    "toyfoxy": {
+      "map": {
+        "0": "poster_toyfoxy"
+      },
+      "name": "toyfoxy"
+    },
+    "ff1": {
+      "map": {
+        "0": "poster_ff1"
+      },
+      "name": "ff1"
+    },
+    "ff2": {
+      "map": {
+        "0": "poster_ff2"
+      },
+      "name": "ff2"
+    },
+    "ff3": {
+      "map": {
+        "0": "poster_ff3"
+      },
+      "name": "ff3"
+    },
+    "ff4": {
+      "map": {
+        "0": "poster_ff4"
+      },
+      "name": "ff4"
+    },
+    "ff5": {
+      "map": {
+        "0": "poster_ff5"
+      },
+      "name": "ff5"
+    },
+    "rules": {
+      "map": {
+        "0": "poster_rules"
+      },
+      "name": "rules"
+    },
+    "fredbear1": {
+      "map": {
+        "0": "poster_fredbear1"
+      },
+      "name": "fredbear1"
+    },
+    "fredbear2": {
+      "map": {
+        "0": "poster_fredbear2"
+      },
+      "name": "fredbear2"
+    },
+    "springbonnie1": {
+      "map": {
+        "0": "poster_springbonnie1"
+      },
+      "name": "springbonnie1"
+    },
+    "ftfreddy": {
+      "map": {
+        "0": "poster_ftfreddy"
+      },
+      "name": "ftfreddy"
+    },
+    "ftfoxy": {
+      "map": {
+        "0": "poster_ftfoxy"
+      },
+      "name": "ftfoxy"
+    },
+    "baby": {
+      "map": {
+        "0": "poster_cbaby"
+      },
+      "name": "baby"
+    },
+    "ballora": {
+      "map": {
+        "0": "poster_ballora"
+      },
+      "name": "ballora"
+    },
+    "bonbon": {
+      "map": {
+        "0": "poster_bonbon"
+      },
+      "name": "bonbon"
+    },
+    "cbaby2": {
+      "map": {
+        "0": "poster_cbaby2"
+      },
+      "name": "cbaby2"
+    },
+    "ff6": {
+      "map": {
+        "0": "poster_ff6"
+      },
+      "name": "ff6"
+    },
+    "ff7": {
+      "map": {
+        "0": "poster_ff7"
+      },
+      "name": "ff7"
+    },
+    "itp1": {
+      "map": {
+        "0": "poster_ff1_past"
+      },
+      "name": "itp1"
+    },
+    "itp2": {
+      "map": {
+        "0": "poster_ff2_past"
+      },
+      "name": "itp2"
+    },
+    "itp3": {
+      "map": {
+        "0": "poster_ff3_past"
+      },
+      "name": "itp3"
+    },
+    "itp4": {
+      "map": {
+        "0": "poster_ff4_past"
+      },
+      "name": "itp4"
+    },
+    "itp5": {
+      "map": {
+        "0": "poster_ff5_past"
+      },
+      "name": "itp5"
+    },
+    "rockstarfreddy": {
+      "map": {
+        "0": "poster_drawing_rockstarfred"
+      },
+      "name": "rockstarfreddy"
+    },
+    "lefty": {
+      "map": {
+        "0": "poster_lefty"
+      },
+      "name": "lefty"
+    },
+    "clown": {
+      "map": {
+        "0": "poster_drawing_clown"
+      },
+      "name": "clown"
+    },
+    "rockfreddy": {
+      "map": {
+        "0": "poster_rockfreddy"
+      },
+      "name": "rockfreddy"
+    },
+    "rockbonnie": {
+      "map": {
+        "0": "poster_rockbonnie"
+      },
+      "name": "rockbonnie"
+    },
+    "rockchica": {
+      "map": {
+        "0": "poster_rockchica"
+      },
+      "name": "rockchica"
+    },
+    "rockfoxy": {
+      "map": {
+        "0": "poster_rockfoxy"
+      },
+      "name": "rockfoxy"
+    },
+    "draw_lefty": {
+      "map": {
+        "0": "poster_drawing_lefty"
+      },
+      "name": "draw_lefty"
+    }
+  }
+}

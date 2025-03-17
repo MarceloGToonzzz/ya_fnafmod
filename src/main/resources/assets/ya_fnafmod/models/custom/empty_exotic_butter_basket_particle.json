@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/butter",
+  "textures": {
+    "particle": "ya_fnafmod:block/exoticbutter_empty"
+  }
+}

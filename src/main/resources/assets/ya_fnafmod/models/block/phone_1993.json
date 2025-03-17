@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/phone",
+  "textures": {
+    "all": "ya_fnafmod:block/phone_1993",
+    "particle": "ya_fnafmod:block/phone_1993",
+    "2": "ya_fnafmod:block/phone_1993"
+  },
+  "render_type": "cutout_mipped"
+}

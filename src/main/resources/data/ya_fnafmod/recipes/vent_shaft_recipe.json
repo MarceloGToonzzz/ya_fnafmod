@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "vent",
+  "category": "building",
+  "pattern": [
+    " a ",
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:vent"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:vent_shaft",
+    "count": 4
+  }
+}

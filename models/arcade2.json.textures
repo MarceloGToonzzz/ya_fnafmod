@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "arcade2_sushismash"
+      },
+      "name": "default"
+    },
+    "ss_off": {
+      "map": {
+        "1": "arcade2_sushismash_off"
+      },
+      "name": "ss_off"
+    }
+  }
+}

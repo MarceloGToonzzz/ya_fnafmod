@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cheap_wooden_table",
+  "textures": {
+    "all": "ya_fnafmod:block/cheap_woodentable",
+    "particle": "ya_fnafmod:block/cheap_woodentable",
+    "0": "ya_fnafmod:block/cheap_woodentable"
+  },
+  "render_type": "solid"
+}

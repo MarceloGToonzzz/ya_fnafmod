@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/vent_shaft_lshape2",
+  "textures": {
+    "all": "ya_fnafmod:block/vent_block",
+    "particle": "ya_fnafmod:block/vent_block",
+    "0": "ya_fnafmod:block/vent_block"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "ya_fnafmod:freddy_fazbear_spawn_item"
+    },
+    "title": {
+      "translate": "advancements.its_just_yet_another_fnaf_mod.title"
+    },
+    "description": {
+      "translate": "advancements.its_just_yet_another_fnaf_mod.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "its_just_yet_another_fnaf_mod_0": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  }
+}

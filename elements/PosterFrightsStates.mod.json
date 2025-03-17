@@ -1,0 +1,87 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PosterFrights",
+    "blockstateList": [
+      {
+        "texture": "poster_ff2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:ff2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:ff3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff4",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:ff4",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff5",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:ff5",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff6",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:ff6",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "poster_ff7",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "poster:ff7",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

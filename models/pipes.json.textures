@@ -1,0 +1,220 @@
+{
+  "mappings": {
+    "xpipe_vertical": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "pipe",
+        "4": "empty"
+      },
+      "name": "xpipe_vertical"
+    },
+    "default": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "pipe",
+        "4": "pipe"
+      },
+      "name": "default"
+    },
+    "lpipe_yp": {
+      "map": {
+        "1": "pipe_center",
+        "2": "empty",
+        "3": "pipe_half1",
+        "4": "pipe_half1"
+      },
+      "name": "lpipe_yp"
+    },
+    "lpipe_ym": {
+      "map": {
+        "1": "pipe_center",
+        "2": "empty",
+        "3": "pipe_half2",
+        "4": "pipe_half1"
+      },
+      "name": "lpipe_ym"
+    },
+    "tpipe_xz": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "empty",
+        "4": "pipe_half1"
+      },
+      "name": "tpipe_xz"
+    },
+    "lpipe_xz": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe_half1",
+        "3": "empty",
+        "4": "pipe_half1"
+      },
+      "name": "lpipe_xz"
+    },
+    "tpipe_ym": {
+      "map": {
+        "1": "pipe_center",
+        "2": "empty",
+        "3": "pipe_half2",
+        "4": "pipe"
+      },
+      "name": "tpipe_ym"
+    },
+    "tpipe_yp": {
+      "map": {
+        "1": "pipe_center",
+        "2": "empty",
+        "3": "pipe_half1",
+        "4": "pipe"
+      },
+      "name": "tpipe_yp"
+    },
+    "pipe_straight": {
+      "map": {
+        "1": "empty",
+        "2": "empty",
+        "3": "empty",
+        "4": "pipe"
+      },
+      "name": "pipe_straight"
+    },
+    "xpipe_horizontal": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "empty",
+        "4": "pipe"
+      },
+      "name": "xpipe_horizontal"
+    },
+    "trpipe_ym": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "pipe_half2",
+        "4": "pipe"
+      },
+      "name": "trpipe_ym"
+    },
+    "trpipe_yp": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "pipe_half1",
+        "4": "pipe"
+      },
+      "name": "trpipe_yp"
+    },
+    "center": {
+      "map": {
+        "1": "empty",
+        "2": "empty",
+        "3": "empty",
+        "4": "pipe_middle"
+      },
+      "name": "center"
+    },
+    "end": {
+      "map": {
+        "1": "empty",
+        "2": "empty",
+        "3": "empty",
+        "4": "pipe_end"
+      },
+      "name": "end"
+    },
+    "tpipe_ypm": {
+      "map": {
+        "1": "pipe_center",
+        "2": "empty",
+        "3": "pipe",
+        "4": "pipe_half1"
+      },
+      "name": "tpipe_ypm"
+    },
+    "tbranchyp": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe_half1",
+        "3": "pipe_half1",
+        "4": "pipe_half1"
+      },
+      "name": "tbranchyp"
+    },
+    "tbranchym": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe_half1",
+        "3": "pipe_half2",
+        "4": "pipe_half1"
+      },
+      "name": "tbranchym"
+    },
+    "xbranch": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe_half1",
+        "3": "pipe",
+        "4": "pipe_half1"
+      },
+      "name": "xbranch"
+    },
+    "pipe_way5vertical": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "pipe",
+        "4": "pipe_half1"
+      },
+      "name": "pipe_way5vertical"
+    },
+    "tribranch_yp": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "pipe_half1",
+        "4": "pipe_half1"
+      },
+      "name": "tribranch_yp"
+    },
+    "tribranch_ym": {
+      "map": {
+        "1": "pipe_center",
+        "2": "pipe",
+        "3": "pipe_half2",
+        "4": "pipe_half1"
+      },
+      "name": "tribranch_ym"
+    },
+    "yellow_pipe": {
+      "map": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": ""
+      },
+      "name": "yellow_pipe"
+    },
+    "pipe_yellow_straight": {
+      "map": {
+        "1": "empty",
+        "2": "empty",
+        "3": "empty",
+        "4": "pipe_yellow"
+      },
+      "name": "pipe_yellow_straight"
+    },
+    "pipe_red_straight": {
+      "map": {
+        "1": "empty",
+        "2": "empty",
+        "3": "empty",
+        "4": "pipe_red"
+      },
+      "name": "pipe_red_straight"
+    }
+  }
+}

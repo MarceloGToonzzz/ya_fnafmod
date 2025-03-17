@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/checktile_greenlime",
+    "top": "ya_fnafmod:block/stagebase_wood",
+    "side": "ya_fnafmod:block/checktile_greenlime",
+    "overlay": "ya_fnafmod:block/checkwall_greenlime",
+    "particle": "ya_fnafmod:block/checktile_greenlime"
+  },
+  "render_type": "solid"
+}

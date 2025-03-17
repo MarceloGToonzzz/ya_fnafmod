@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wall_art",
+  "textures": {
+    "all": "ya_fnafmod:block/wallart_chica",
+    "particle": "ya_fnafmod:block/wallart_chica",
+    "1": "ya_fnafmod:block/wallart_chica"
+  },
+  "render_type": "cutout_mipped"
+}

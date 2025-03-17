@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/hposter",
+  "textures": {
+    "all": "ya_fnafmod:block/hposter_rockstars",
+    "particle": "ya_fnafmod:block/hposter_rockstars",
+    "0": "ya_fnafmod:block/hposter_rockstars"
+  },
+  "render_type": "cutout"
+}

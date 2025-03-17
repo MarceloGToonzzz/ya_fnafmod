@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "tab",
+  "definition": {
+    "name": "YAFNAF (Structure Blocks)",
+    "icon": {
+      "value": "CUSTOM:StructureBlockFnaf1"
+    },
+    "showSearch": true
+  }
+}

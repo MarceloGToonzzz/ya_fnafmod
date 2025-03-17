@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/signmetal",
+  "textures": {
+    "all": "ya_fnafmod:block/metalsign_dangerkeepout",
+    "particle": "ya_fnafmod:block/metalsign_dangerkeepout",
+    "1": "ya_fnafmod:block/metalsign_dangerkeepout"
+  },
+  "render_type": "cutout_mipped"
+}

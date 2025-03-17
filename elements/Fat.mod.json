@@ -1,0 +1,122 @@
+{
+  "_fv": 69,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "minecraft:amethyst_shard",
+    "customModelName": "f.a.t:default",
+    "customProperties": {
+      "state": {
+        "name": "FatPropertyValueProvider"
+      }
+    },
+    "states": [
+      {
+        "renderType": 1,
+        "texture": "tileitem_green",
+        "customModelName": "f.a.t:default",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:state",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 1,
+        "texture": "tileitem_blue",
+        "customModelName": "f.a.t:blue",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:state",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 1,
+        "texture": "tileitem_red",
+        "customModelName": "f.a.t:red",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:state",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      }
+    ],
+    "name": "F.A.T",
+    "rarity": "COMMON",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:AnimatronicBlocks"
+      }
+    ],
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInformation": {
+      "fixedValue": [
+        "§eFAT/Fazbear Assistance Panel (Copyright 1987)",
+        "Sneak + Right Click to change modes.",
+        "§aGreen Mode - Animatronic Block Animator",
+        "§9Blue Mode - Animatronic Block Style Changer",
+        "§cRed Mode - Letter Sign Block Editor"
+      ]
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "FatRightClickedUi"
+    },
+    "onRightClickedOnBlock": {
+      "name": "FatRightclicked"
+    },
+    "enableRanged": false,
+    "shootConstantly": false,
+    "rangedItemChargesPower": false,
+    "projectile": {
+      "value": "Arrow"
+    },
+    "projectileDisableAmmoCheck": false,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none"
+  }
+}

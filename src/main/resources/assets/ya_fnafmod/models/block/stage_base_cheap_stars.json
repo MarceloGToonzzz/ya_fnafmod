@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/cheap_stagebase",
+    "up": "ya_fnafmod:block/cheap_stagebase",
+    "north": "ya_fnafmod:block/cheap_stagebase_side_star",
+    "east": "ya_fnafmod:block/cheap_stagebase_side_star",
+    "south": "ya_fnafmod:block/cheap_stagebase_side_star",
+    "west": "ya_fnafmod:block/cheap_stagebase_side_star",
+    "particle": "ya_fnafmod:block/cheap_stagebase"
+  },
+  "render_type": "solid"
+}

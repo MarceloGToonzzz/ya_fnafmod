@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/ennard_mask",
+  "textures": {
+    "all": "ya_fnafmod:block/ennard_mask",
+    "particle": "ya_fnafmod:block/ennard_mask",
+    "2": "ya_fnafmod:block/ennard_mask"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/signfront",
+  "textures": {
+    "all": "ya_fnafmod:block/signfront_open",
+    "particle": "ya_fnafmod:block/signfront_open",
+    "2": "ya_fnafmod:block/signfront_open"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/checktile_blackwhite_fancy_big",
+    "top": "ya_fnafmod:block/wall_black",
+    "side": "ya_fnafmod:block/checktile_blackwhite_fancy_big",
+    "overlay": "ya_fnafmod:block/checkwall_big_blackwhite_fancy",
+    "particle": "ya_fnafmod:block/checktile_blackwhite_fancy_big"
+  },
+  "render_type": "solid"
+}

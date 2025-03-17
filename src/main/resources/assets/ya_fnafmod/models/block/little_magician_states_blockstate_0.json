@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/little_magician_diag",
+  "textures": {
+    "all": "ya_fnafmod:block/little_magician",
+    "particle": "ya_fnafmod:block/little_magician",
+    "1": "ya_fnafmod:block/little_magician"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "stage_sun"
+      },
+      "name": "default"
+    },
+    "moon": {
+      "map": {
+        "1": "stage_moon"
+      },
+      "name": "moon"
+    }
+  }
+}

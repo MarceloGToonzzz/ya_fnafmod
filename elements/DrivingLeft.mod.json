@@ -1,0 +1,15 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "A",
+    "keyBindingName": "Driving Left",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "DrivingLeftOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "DrivingLeftOnKeyReleased"
+    }
+  }
+}

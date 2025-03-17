@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ya_fnafmod:block/cheap_wooden_wall",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ya_fnafmod:block/cheap_wooden_wall"
+    },
+    "axis=z": {
+      "model": "ya_fnafmod:block/cheap_wooden_wall",
+      "x": 90
+    }
+  }
+}

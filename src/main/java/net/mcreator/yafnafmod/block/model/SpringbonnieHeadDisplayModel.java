@@ -1,0 +1,24 @@
+package net.mcreator.yafnafmod.block.model;
+
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.yafnafmod.block.display.SpringbonnieHeadDisplayItem;
+
+public class SpringbonnieHeadDisplayModel extends GeoModel<SpringbonnieHeadDisplayItem> {
+	@Override
+	public ResourceLocation getAnimationResource(SpringbonnieHeadDisplayItem animatable) {
+		return new ResourceLocation("ya_fnafmod", "animations/bonnie_head.animation.json");
+	}
+
+	@Override
+	public ResourceLocation getModelResource(SpringbonnieHeadDisplayItem animatable) {
+		return new ResourceLocation("ya_fnafmod", "geo/bonnie_head.geo.json");
+	}
+
+	@Override
+	public ResourceLocation getTextureResource(SpringbonnieHeadDisplayItem entity) {
+		return new ResourceLocation("ya_fnafmod", "textures/block/head_springbonnie.png");
+	}
+}

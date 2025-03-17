@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "present_red",
+        "2": "present_green"
+      },
+      "name": "default"
+    },
+    "blueyellow": {
+      "map": {
+        "1": "present_blue",
+        "2": "present_yellow"
+      },
+      "name": "blueyellow"
+    }
+  }
+}

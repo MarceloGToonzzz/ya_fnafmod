@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/booth_seat",
+  "textures": {
+    "all": "ya_fnafmod:block/boothseat_blue",
+    "particle": "ya_fnafmod:block/boothseat_blue",
+    "2": "ya_fnafmod:block/boothseat_blue"
+  },
+  "render_type": "cutout_mipped"
+}

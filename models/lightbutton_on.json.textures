@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "button_light_on"
+      },
+      "name": "default"
+    }
+  }
+}

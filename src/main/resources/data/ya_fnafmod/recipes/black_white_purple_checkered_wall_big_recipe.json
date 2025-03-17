@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:wall_stripe_item_purple"
+    },
+    "b": {
+      "item": "ya_fnafmod:black_white_big_checkered_tiles"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:black_white_purple_checkered_wall_big",
+    "count": 1
+  }
+}

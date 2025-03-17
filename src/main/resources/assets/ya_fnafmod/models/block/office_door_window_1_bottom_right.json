@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_right",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_officedoor_window1_bottom",
+    "bottom": "ya_fnafmod:block/door_officedoor_window1_bottom",
+    "top": "ya_fnafmod:block/door_officedoor_window1_top1"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "ya_fnafmod:custom/party_set1.geo",
+  "textures": {
+    "all": "ya_fnafmod:block/set_foilpartyhatgreen",
+    "particle": "ya_fnafmod:block/cup_redfoil",
+    "1": "ya_fnafmod:block/plate_greenfoil",
+    "2": "ya_fnafmod:block/cup_purplefoil",
+    "3": "ya_fnafmod:block/coaster_redfoil",
+    "4": "ya_fnafmod:block/set_foilpartyhatblue"
+  },
+  "render_type": "cutout_mipped"
+}

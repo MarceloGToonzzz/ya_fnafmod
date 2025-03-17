@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "paperpal_bear"
+      },
+      "name": "default"
+    },
+    "clo": {
+      "map": {
+        "1": "paperpal_clown"
+      },
+      "name": "clo"
+    },
+    "bun": {
+      "map": {
+        "1": "paperpal_bunny"
+      },
+      "name": "bun"
+    },
+    "clo2": {
+      "map": {
+        "1": "paperpal_clown2"
+      },
+      "name": "clo2"
+    },
+    "orv": {
+      "map": {
+        "1": "paperpal_orville"
+      },
+      "name": "orv"
+    },
+    "hip": {
+      "map": {
+        "1": "paperpal_hippo"
+      },
+      "name": "hip"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone6",
+					"pivot": [4.25, 4.825, 4],
+					"cubes": [
+						{"origin": [-8, 0.075, -8], "size": [16, 16, 16], "inflate": -0.001, "uv": [0, 0]},
+						{"origin": [-7.75, 0.325, -7.75], "size": [6, 15, 6], "uv": [32, 32]},
+						{"origin": [1.25, 0.325, -3.75], "size": [6, 15, 6], "uv": [32, 32]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone6",
+					"pivot": [4.25, 4.825, 4],
+					"rotation": [0, -32.5, 60],
+					"cubes": [
+						{"origin": [4.25, 0.325, 0.5], "size": [0, 9, 8], "uv": [0, 48]},
+						{"origin": [4.25, 0.325, 0.5], "size": [0, 9, 8], "pivot": [4.25, 4.825, 4], "rotation": [0, 90, 0], "uv": [0, 48]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "bone6",
+					"pivot": [-1.75, 4.825, -0.25],
+					"rotation": [-1.83897, -24.27593, -1.50021],
+					"cubes": [
+						{"origin": [-1.75, 0.325, -3.75], "size": [0, 9, 8], "uv": [16, 48]},
+						{"origin": [-1.75, 0.325, -3.75], "size": [0, 9, 8], "pivot": [-1.75, 4.825, -0.25], "rotation": [0, 90, 0], "uv": [16, 48]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "bone6",
+					"pivot": [-3.75, 4.825, 4.75],
+					"rotation": [-2.1331, 38.1937, -3.57581],
+					"cubes": [
+						{"origin": [-3.75, 0.325, 1.25], "size": [0, 9, 8], "uv": [0, 57]},
+						{"origin": [-3.75, 0.325, 1.25], "size": [0, 9, 8], "pivot": [-3.75, 4.825, 4.75], "rotation": [0, 90, 0], "uv": [0, 57]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "bone6",
+					"pivot": [-8, 16.075, 0],
+					"rotation": [0, 0, -127.5],
+					"cubes": [
+						{"origin": [-8, 16.075, -8], "size": [0, 8, 16], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone6",
+					"pivot": [8, 16.075, 0],
+					"rotation": [0, 0, 137.5],
+					"cubes": [
+						{"origin": [8, 16.075, -8], "size": [0, 8, 16], "uv": [0, 32], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

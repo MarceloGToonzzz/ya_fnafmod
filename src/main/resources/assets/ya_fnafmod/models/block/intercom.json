@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/intercom",
+  "textures": {
+    "all": "ya_fnafmod:block/intercom",
+    "particle": "ya_fnafmod:block/intercom",
+    "0": "ya_fnafmod:block/intercom"
+  },
+  "render_type": "cutout_mipped"
+}

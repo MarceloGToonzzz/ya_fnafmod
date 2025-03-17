@@ -1,0 +1,97 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    64,
+    64
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0,
+        0.25,
+        1.75
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        0,
+        0.25,
+        1.75
+      ],
+      "scale": [
+        0.625,
+        0.625,
+        0.625
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        25.75,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3.5,
+        0
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        25.75,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3.5,
+        0
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "gui": {
+      "rotation": [
+        90,
+        -45,
+        90
+      ],
+      "translation": [
+        -1,
+        -2,
+        0
+      ],
+      "scale": [
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        -5.75,
+        -13.75
+      ]
+    }
+  },
+  "textures": {
+    "particle": "ya_fnafmod:item/megaphone"
+  }
+}

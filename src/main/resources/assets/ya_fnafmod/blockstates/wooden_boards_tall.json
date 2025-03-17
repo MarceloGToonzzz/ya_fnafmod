@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/wooden_boards_tall"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/wooden_boards_tall",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/wooden_boards_tall",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/wooden_boards_tall",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ya_fnafmod:block/wooden_boards_tall",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ya_fnafmod:block/wooden_boards_tall",
+      "x": 90
+    }
+  }
+}

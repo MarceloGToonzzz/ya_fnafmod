@@ -1,0 +1,144 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_0000",
+          "text": {
+            "fixedValue": "00:00",
+            "name": "GetTextTime"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 184,
+          "y": 42
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lure_1",
+          "text": "Lure 1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LurePress1"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 60,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lure_2",
+          "text": "Lure 2",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LurePress2"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 60,
+          "y": 87
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lure_3",
+          "text": "Lure 3",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LurePress3"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 60,
+          "y": 114
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lure_4",
+          "text": "Lure 4",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LurePress4"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 60,
+          "y": 141
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "<",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LurePageLess"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 51,
+          "y": 168
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": ">",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "LurePageMore"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 96,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_lure_page",
+          "text": {
+            "fixedValue": "Page = 0",
+            "name": "LurePageShow"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 57,
+          "y": 46
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 11,
+      "snapOnGrid": true
+    }
+  }
+}

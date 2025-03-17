@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/projection",
+  "textures": {
+    "all": "ya_fnafmod:block/projection_helpy1",
+    "particle": "ya_fnafmod:block/projection_helpy1",
+    "1": "ya_fnafmod:block/projection_helpy1"
+  },
+  "render_type": "translucent"
+}

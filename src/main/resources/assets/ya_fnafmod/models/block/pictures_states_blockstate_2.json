@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/pictures1",
+  "textures": {
+    "all": "ya_fnafmod:block/pictures2",
+    "particle": "ya_fnafmod:block/pictures1",
+    "0": "ya_fnafmod:block/pictures2"
+  },
+  "render_type": "solid"
+}

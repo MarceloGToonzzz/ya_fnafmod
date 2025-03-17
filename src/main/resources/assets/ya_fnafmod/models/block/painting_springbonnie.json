@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/big_painting",
+  "textures": {
+    "all": "ya_fnafmod:block/paintingbig_springbonnie",
+    "particle": "ya_fnafmod:block/paintingbig_springbonnie",
+    "1": "ya_fnafmod:block/paintingbig_springbonnie"
+  },
+  "render_type": "cutout_mipped"
+}

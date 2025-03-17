@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "menu_vintage"
+      },
+      "name": "default"
+    },
+    "vintagetorn": {
+      "map": {
+        "2": "menu_vintage_torn"
+      },
+      "name": "vintagetorn"
+    }
+  }
+}

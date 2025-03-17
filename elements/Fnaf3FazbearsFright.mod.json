@@ -1,0 +1,39 @@
+{
+  "_fv": 69,
+  "_type": "structure",
+  "definition": {
+    "structure": "fnaf3_fazbearsfright",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 50,
+    "separation": 20,
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "mutated_plains"
+      }
+    ],
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "MOTION_BLOCKING_NO_LEAVES",
+    "useStartHeight": false,
+    "startHeightProviderType": "VERY_BIASED_TO_BOTTOM",
+    "startHeightMin": 58,
+    "startHeightMax": 123,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

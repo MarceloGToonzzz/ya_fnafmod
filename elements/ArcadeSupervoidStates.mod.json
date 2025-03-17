@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "ArcadeSupervoid",
+    "blockstateList": [
+      {
+        "texture": "arcade4_supervoid_off",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "arcade4:default",
+        "luminance": 9,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

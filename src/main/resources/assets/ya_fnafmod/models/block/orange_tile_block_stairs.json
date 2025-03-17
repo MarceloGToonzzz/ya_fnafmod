@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/tileblock_orange",
+    "bottom": "ya_fnafmod:block/tileblock_orange",
+    "top": "ya_fnafmod:block/tileblock_orange",
+    "side": "ya_fnafmod:block/tileblock_orange"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/stool",
+  "textures": {
+    "all": "ya_fnafmod:block/stool_blue",
+    "particle": "ya_fnafmod:block/stool_blue",
+    "0": "ya_fnafmod:block/stool_black"
+  },
+  "render_type": "cutout_mipped"
+}

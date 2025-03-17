@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "vent_block",
+        "2": "securityvent_open"
+      },
+      "name": "default"
+    },
+    "closed": {
+      "map": {
+        "1": "vent_block",
+        "2": "securityvent"
+      },
+      "name": "closed"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "_fv": 69,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:mod:walls"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 142,
+          "y": 66
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "TAG:mod:wall_tiles"
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 178,
+          "y": 66
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wall_input",
+          "text": {
+            "fixedValue": "Wall + Tile Input"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 133,
+          "y": 48
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "AlternateTile",
+          "text": "On bottom?",
+          "x": 133,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_result",
+          "text": {
+            "fixedValue": "Result"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 250,
+          "y": 48
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_create_wall",
+          "text": "Create Wall",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "WallMakerSlotChange"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 214,
+          "y": 93
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 12,
+      "oy": 23,
+      "snapOnGrid": true
+    }
+  }
+}

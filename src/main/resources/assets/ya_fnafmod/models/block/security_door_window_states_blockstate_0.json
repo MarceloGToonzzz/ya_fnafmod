@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/security_door",
+  "textures": {
+    "all": "ya_fnafmod:block/securitydoor_top",
+    "particle": "ya_fnafmod:block/securitydoor_bottom",
+    "0": "ya_fnafmod:block/securitydoor_top_window"
+  },
+  "render_type": "cutout"
+}

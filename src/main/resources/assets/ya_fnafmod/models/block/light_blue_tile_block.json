@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/tileblock_lightblue",
+    "particle": "ya_fnafmod:block/tileblock_lightblue"
+  },
+  "render_type": "solid"
+}

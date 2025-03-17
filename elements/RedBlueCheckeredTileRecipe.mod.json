@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "floor_tile",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:RedBlueTiles"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:RedBlueCheckeredTiles"
+    },
+    "name": "red_blue_checkered_tile_recipe",
+    "namespace": "mod"
+  }
+}

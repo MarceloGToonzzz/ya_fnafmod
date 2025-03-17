@@ -1,0 +1,74 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Pictures",
+    "blockstateList": [
+      {
+        "texture": "pictures1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pictures2:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pictures1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pictures3:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pictures2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pictures1:picture2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pictures2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pictures2:picture2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pictures2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pictures3:picture2",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/controlroom_floor",
+    "bottom": "ya_fnafmod:block/controlroom_floor",
+    "top": "ya_fnafmod:block/controlroom_floor",
+    "side": "ya_fnafmod:block/controlroom_floor"
+  },
+  "render_type": "solid"
+}

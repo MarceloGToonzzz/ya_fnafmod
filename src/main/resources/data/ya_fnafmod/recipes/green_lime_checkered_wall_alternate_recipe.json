@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": {
+      "item": "ya_fnafmod:green_lime_checkered_tiles"
+    },
+    "b": {
+      "item": "ya_fnafmod:wall_stripe_item_black"
+    }
+  },
+  "result": {
+    "item": "ya_fnafmod:green_lime_checkered_wall_alternate",
+    "count": 1
+  }
+}

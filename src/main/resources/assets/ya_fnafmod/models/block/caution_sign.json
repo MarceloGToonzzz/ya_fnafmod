@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/dangersign",
+  "textures": {
+    "all": "ya_fnafmod:block/dangersign",
+    "particle": "ya_fnafmod:block/dangersign",
+    "0": "ya_fnafmod:block/dangersign"
+  },
+  "render_type": "cutout"
+}

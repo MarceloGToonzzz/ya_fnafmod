@@ -1,0 +1,12 @@
+{
+  "_fv": 69,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "generatorCapacity",
+    "description": "How much energy the generator can have. It normally drains 1 energy every 15 ticks. (Max is 10,000.)",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 100
+  }
+}

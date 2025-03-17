@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/trashcan",
+  "textures": {
+    "all": "ya_fnafmod:block/trashcan",
+    "particle": "ya_fnafmod:block/trashcan",
+    "3": "ya_fnafmod:block/trashcan"
+  },
+  "render_type": "cutout_mipped"
+}

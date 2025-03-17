@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/awning",
+  "textures": {
+    "all": "ya_fnafmod:block/awning_yellow",
+    "particle": "ya_fnafmod:block/awning_yellow",
+    "0": "ya_fnafmod:block/awning_yellow"
+  },
+  "render_type": "cutout_mipped"
+}

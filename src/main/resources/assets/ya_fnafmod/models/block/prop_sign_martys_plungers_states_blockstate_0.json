@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/prop_sign_diag",
+  "textures": {
+    "all": "ya_fnafmod:block/propsign_martysplungers",
+    "particle": "ya_fnafmod:block/propsign_martysplungers",
+    "0": "ya_fnafmod:block/propsign_martysplungers"
+  },
+  "render_type": "cutout_mipped"
+}

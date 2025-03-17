@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "ya_fnafmod:block/fancy_bricks",
+    "particle": "ya_fnafmod:block/fancy_bricks"
+  },
+  "render_type": "solid"
+}

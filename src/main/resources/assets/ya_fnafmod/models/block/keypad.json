@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/keypad",
+  "textures": {
+    "all": "ya_fnafmod:block/keypad",
+    "particle": "ya_fnafmod:block/keypad",
+    "1": "ya_fnafmod:block/keypad"
+  },
+  "render_type": "cutout_mipped"
+}

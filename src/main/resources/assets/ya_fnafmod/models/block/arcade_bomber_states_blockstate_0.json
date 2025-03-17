@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade5",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade5_bomber_off",
+    "particle": "ya_fnafmod:block/arcade5_bomber",
+    "1": "ya_fnafmod:block/arcade5_bomber"
+  },
+  "render_type": "translucent"
+}

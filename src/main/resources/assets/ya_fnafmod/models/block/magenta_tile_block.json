@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/tileblock_magenta",
+    "particle": "ya_fnafmod:block/tileblock_magenta"
+  },
+  "render_type": "solid"
+}

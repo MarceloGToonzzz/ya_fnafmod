@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wires_wall",
+  "textures": {
+    "all": "ya_fnafmod:block/confetti_wall",
+    "particle": "ya_fnafmod:block/confetti_wall",
+    "1": "ya_fnafmod:block/confetti_wall"
+  },
+  "render_type": "cutout"
+}

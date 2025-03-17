@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "hposter_rockstars"
+      },
+      "name": "default"
+    }
+  }
+}

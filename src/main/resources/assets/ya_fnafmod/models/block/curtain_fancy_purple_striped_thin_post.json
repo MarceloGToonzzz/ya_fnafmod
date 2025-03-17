@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "ya_fnafmod:block/curtain_fancypurple_striped",
+    "edge": "ya_fnafmod:block/curtain_fancypurple_striped",
+    "pane": "ya_fnafmod:block/curtain_fancypurple_striped"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "BoxSmallBranded",
+    "blockstateList": [
+      {
+        "texture": "box_small_logo",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "box_small_diag:logo",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

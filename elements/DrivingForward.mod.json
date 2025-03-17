@@ -1,0 +1,15 @@
+{
+  "_fv": 69,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "W",
+    "keyBindingName": "Driving Forward",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "DrivingForwardOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "DrivingForwardOnKeyReleased"
+    }
+  }
+}

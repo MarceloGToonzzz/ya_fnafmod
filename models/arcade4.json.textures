@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "arcade4_supervoid"
+      },
+      "name": "default"
+    },
+    "sv_off": {
+      "map": {
+        "1": "arcade4_supervoid_off"
+      },
+      "name": "sv_off"
+    }
+  }
+}

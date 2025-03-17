@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/locker_gray_bottom",
+    "up": "ya_fnafmod:block/locker_gray_top",
+    "north": "ya_fnafmod:block/locker_gray_bfront",
+    "east": "ya_fnafmod:block/locker_gray_bside",
+    "south": "ya_fnafmod:block/locker_gray_bside",
+    "west": "ya_fnafmod:block/locker_gray_bside",
+    "particle": "ya_fnafmod:block/locker_gray_bottom"
+  },
+  "render_type": "solid"
+}

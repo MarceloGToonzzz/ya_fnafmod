@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ya_fnafmod:block/green_stage_brick_slab"
+    },
+    "type=top": {
+      "model": "ya_fnafmod:block/green_stage_brick_slab_top"
+    },
+    "type=double": {
+      "model": "ya_fnafmod:block/green_stage_brick_slab_full"
+    }
+  }
+}

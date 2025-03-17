@@ -1,0 +1,31 @@
+{
+  "mappings": {
+    "bgyr": {
+      "map": {
+        "1": "present_blue",
+        "2": "present_green",
+        "3": "present_yellow",
+        "4": "present_red"
+      },
+      "name": "bgyr"
+    },
+    "default": {
+      "map": {
+        "1": "present_red",
+        "2": "present_green",
+        "3": "present_yellow",
+        "4": "present_blue"
+      },
+      "name": "default"
+    },
+    "rygb": {
+      "map": {
+        "1": "present_red",
+        "2": "present_yellow",
+        "3": "present_green",
+        "4": "present_blue"
+      },
+      "name": "rygb"
+    }
+  }
+}

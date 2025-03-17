@@ -1,0 +1,92 @@
+{
+  "mappings": {
+    "color1": {
+      "map": {
+        "2": "cup_red",
+        "3": "coaster_blue",
+        "4": "plate_green"
+      },
+      "name": "color1"
+    },
+    "color2": {
+      "map": {
+        "2": "cup_orange",
+        "3": "coaster_green",
+        "4": "plate_blue"
+      },
+      "name": "color2"
+    },
+    "default": {
+      "map": {
+        "2": "cup_cup",
+        "3": "coaster_paper",
+        "4": "plate_paper"
+      },
+      "name": "default"
+    },
+    "color5": {
+      "map": {
+        "2": "cup_purple",
+        "3": "coasters_red",
+        "4": "plate_orange"
+      },
+      "name": "color5"
+    },
+    "color3": {
+      "map": {
+        "2": "cup_green",
+        "3": "coaster_purple",
+        "4": "plate_red"
+      },
+      "name": "color3"
+    },
+    "color4": {
+      "map": {
+        "2": "cup_blue",
+        "3": "coasters_orange",
+        "4": "plate_green"
+      },
+      "name": "color4"
+    },
+    "foil1": {
+      "map": {
+        "2": "cup_redfoil",
+        "3": "coaster_greenfoil",
+        "4": "plate_bluefoil"
+      },
+      "name": "foil1"
+    },
+    "foil2": {
+      "map": {
+        "2": "cup_greenfoil",
+        "3": "coaster_bluefoil",
+        "4": "plate_purplefoil"
+      },
+      "name": "foil2"
+    },
+    "foil3": {
+      "map": {
+        "2": "cup_purplefoil",
+        "3": "coaster_redfoil",
+        "4": "plate_bluefoil"
+      },
+      "name": "foil3"
+    },
+    "foil4": {
+      "map": {
+        "2": "cup_bluefoil",
+        "3": "coaster_greenfoil",
+        "4": "plate_purplefoil"
+      },
+      "name": "foil4"
+    },
+    "foil5": {
+      "map": {
+        "2": "cup_bluefoil",
+        "3": "coaster_purplefoil",
+        "4": "plate_redfoil"
+      },
+      "name": "foil5"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "particle": "ya_fnafmod:block/officewindow_block",
+    "edge": "ya_fnafmod:block/officewindow_block",
+    "pane": "ya_fnafmod:block/officewindow_block"
+  },
+  "render_type": "translucent"
+}

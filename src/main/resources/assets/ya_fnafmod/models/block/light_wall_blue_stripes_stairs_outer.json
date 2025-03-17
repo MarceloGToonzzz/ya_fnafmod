@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/wall_light_bluestripes",
+    "bottom": "ya_fnafmod:block/wall_light_bluestripes",
+    "top": "ya_fnafmod:block/wall_light_bluestripes",
+    "side": "ya_fnafmod:block/wall_light_bluestripes"
+  },
+  "render_type": "solid"
+}

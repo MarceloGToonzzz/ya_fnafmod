@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/battery_top",
+    "up": "ya_fnafmod:block/battery_top",
+    "north": "ya_fnafmod:block/battery",
+    "east": "ya_fnafmod:block/battery",
+    "south": "ya_fnafmod:block/battery",
+    "west": "ya_fnafmod:block/battery",
+    "particle": "ya_fnafmod:block/battery_top"
+  },
+  "render_type": "solid"
+}

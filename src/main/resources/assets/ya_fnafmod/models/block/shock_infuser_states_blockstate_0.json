@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/generator_up",
+    "up": "ya_fnafmod:block/generator_up",
+    "north": "ya_fnafmod:block/shock_infuser_on",
+    "east": "ya_fnafmod:block/shock_infuser_on",
+    "south": "ya_fnafmod:block/shock_infuser_on",
+    "west": "ya_fnafmod:block/shock_infuser_on",
+    "particle": "ya_fnafmod:block/generator_up"
+  },
+  "render_type": "solid"
+}

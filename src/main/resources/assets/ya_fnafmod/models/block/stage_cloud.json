@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/stage_cloud",
+  "textures": {
+    "all": "ya_fnafmod:block/stage_cloud",
+    "particle": "ya_fnafmod:block/stage_cloud",
+    "3": "ya_fnafmod:block/stage_cloud"
+  },
+  "render_type": "cutout"
+}

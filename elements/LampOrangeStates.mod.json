@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "LampOrange",
+    "blockstateList": [
+      {
+        "texture": "lamp_orange",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "lamp:orange",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

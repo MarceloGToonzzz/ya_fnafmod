@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/square_poster",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_fallfest",
+    "particle": "ya_fnafmod:block/poster_fallfest",
+    "0": "ya_fnafmod:block/poster_fallfest"
+  },
+  "render_type": "cutout_mipped"
+}

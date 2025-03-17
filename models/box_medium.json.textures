@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "double_box": "empty",
+        "third_box": "empty",
+        "top_boxes": "empty",
+        "single_box": "box_medium"
+      },
+      "name": "default"
+    },
+    "four": {
+      "map": {
+        "double_box": "box_medium",
+        "third_box": "empty",
+        "top_boxes": "box_medium",
+        "single_box": "empty"
+      },
+      "name": "four"
+    },
+    "two": {
+      "map": {
+        "double_box": "box_medium",
+        "third_box": "empty",
+        "top_boxes": "empty",
+        "single_box": "empty"
+      },
+      "name": "two"
+    },
+    "three": {
+      "map": {
+        "double_box": "box_medium",
+        "third_box": "box_medium",
+        "top_boxes": "empty",
+        "single_box": "empty"
+      },
+      "name": "three"
+    }
+  }
+}

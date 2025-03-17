@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/little_joe_sitting",
+  "textures": {
+    "all": "ya_fnafmod:block/littlejoe_sitting",
+    "particle": "ya_fnafmod:block/littlejoe_sitting",
+    "2": "ya_fnafmod:block/littlejoe_sitting"
+  },
+  "render_type": "cutout_mipped"
+}

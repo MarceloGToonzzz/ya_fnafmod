@@ -1,0 +1,124 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "paper1"
+      },
+      "name": "default"
+    },
+    "paper3": {
+      "map": {
+        "0": "paper3"
+      },
+      "name": "paper3"
+    },
+    "paper4": {
+      "map": {
+        "0": "paper4"
+      },
+      "name": "paper4"
+    },
+    "paper5": {
+      "map": {
+        "0": "paper5"
+      },
+      "name": "paper5"
+    },
+    "paper0": {
+      "map": {
+        "0": "paper0"
+      },
+      "name": "paper0"
+    },
+    "paper6": {
+      "map": {
+        "0": "paper6"
+      },
+      "name": "paper6"
+    },
+    "paper7": {
+      "map": {
+        "0": "paper7"
+      },
+      "name": "paper7"
+    },
+    "paper8": {
+      "map": {
+        "0": "paper8"
+      },
+      "name": "paper8"
+    },
+    "paper9": {
+      "map": {
+        "0": "paper9"
+      },
+      "name": "paper9"
+    },
+    "paper10": {
+      "map": {
+        "0": "paper10"
+      },
+      "name": "paper10"
+    },
+    "paper11": {
+      "map": {
+        "0": "paper11"
+      },
+      "name": "paper11"
+    },
+    "paper2": {
+      "map": {
+        "0": "paper2"
+      },
+      "name": "paper2"
+    },
+    "paper12": {
+      "map": {
+        "0": "paper12"
+      },
+      "name": "paper12"
+    },
+    "paper13": {
+      "map": {
+        "0": "paper13"
+      },
+      "name": "paper13"
+    },
+    "paper_random1": {
+      "map": {
+        "0": "paper_random1"
+      },
+      "name": "paper_random1"
+    },
+    "paper_random2": {
+      "map": {
+        "0": "paper_random2"
+      },
+      "name": "paper_random2"
+    },
+    "paper_random3": {
+      "map": {
+        "0": "paper_random3"
+      },
+      "name": "paper_random3"
+    },
+    "paper_random4": {
+      "map": {
+        "0": "paper_random4"
+      },
+      "name": "paper_random4"
+    },
+    "paper14": {
+      "map": {
+        "0": "paper14"
+      },
+      "name": "paper14"
+    },
+    "paper15": {
+      "map": {
+        "0": "paper15"
+      },
+      "name": "paper15"
+    }
+  }
+}

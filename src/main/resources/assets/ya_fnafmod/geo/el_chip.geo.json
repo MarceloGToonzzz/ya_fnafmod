@@ -1,0 +1,99 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pivot",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "pivot",
+					"pivot": [0, 1.5, 0],
+					"cubes": [
+						{"origin": [-7, 1, -7], "size": [14, 15, 14], "uv": [0, 99]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 11, -6],
+					"cubes": [
+						{"origin": [-5, 9, -11], "size": [10, 9, 7], "uv": [96, 99]},
+						{"origin": [-3, 10, -14], "size": [6, 6, 3], "uv": [24, 128]}
+					]
+				},
+				{
+					"name": "hat",
+					"parent": "head",
+					"pivot": [0, 18.625, -7],
+					"cubes": [
+						{"origin": [-24.5, 18, -31], "size": [49, 1, 48], "uv": [0, 50]},
+						{"origin": [-24.5, 19, -31], "size": [49, 2, 48], "uv": [0, 0]},
+						{"origin": [-3.5, 24, -11], "size": [7, 5, 8], "uv": [94, 115]},
+						{"origin": [-5, 19, -12], "size": [10, 5, 10], "uv": [56, 99]}
+					]
+				},
+				{
+					"name": "larm",
+					"parent": "body",
+					"pivot": [4, 8, -8],
+					"cubes": [
+						{"origin": [2, 3, -9], "size": [4, 6, 2], "uv": [42, 128]}
+					]
+				},
+				{
+					"name": "rarm",
+					"parent": "body",
+					"pivot": [-4, 8, -8],
+					"cubes": [
+						{"origin": [-6, 3, -9], "size": [4, 6, 2], "uv": [96, 128]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 1.5, 7],
+					"cubes": [
+						{"origin": [-4, 1, 7], "size": [8, 1, 11], "uv": [56, 114]}
+					]
+				},
+				{
+					"name": "guitar",
+					"parent": "body",
+					"pivot": [0, 6.5, -10],
+					"cubes": [
+						{"origin": [-5, 4.5, -11], "size": [10, 4, 2], "uv": [0, 128]},
+						{"origin": [5, 4, -11], "size": [7, 5, 2], "uv": [78, 128]},
+						{"origin": [-15, 2, -11], "size": [10, 9, 2], "uv": [124, 115]}
+					]
+				},
+				{
+					"name": "lfoot",
+					"parent": "pivot",
+					"pivot": [5.5, 0.5, 3],
+					"cubes": [
+						{"origin": [4, 0, -4], "size": [3, 1, 8], "uv": [56, 126]}
+					]
+				},
+				{
+					"name": "rfoot",
+					"parent": "pivot",
+					"pivot": [-5.5, 0.5, 3],
+					"cubes": [
+						{"origin": [-7, 0, -4], "size": [3, 1, 8], "uv": [124, 126]}
+					]
+				}
+			]
+		}
+	]
+}

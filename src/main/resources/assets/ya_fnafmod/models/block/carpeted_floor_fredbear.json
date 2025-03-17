@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/carpet_fredbearfloor",
+    "particle": "ya_fnafmod:block/carpet_fredbearfloor"
+  },
+  "render_type": "solid"
+}

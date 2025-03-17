@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "bigcake_cakebear"
+      },
+      "name": "default"
+    },
+    "ghost": {
+      "map": {
+        "1": "bigcake_ghost"
+      },
+      "name": "ghost"
+    },
+    "happyday": {
+      "map": {
+        "1": "bigcake_happiestday"
+      },
+      "name": "happyday"
+    }
+  }
+}

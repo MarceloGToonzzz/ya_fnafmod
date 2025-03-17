@@ -1,0 +1,94 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "15": "neonsign_stripes_blue_l"
+      },
+      "name": "default"
+    },
+    "bluem": {
+      "map": {
+        "15": "neonsign_stripes_blue_m"
+      },
+      "name": "bluem"
+    },
+    "bluer": {
+      "map": {
+        "15": "neonsign_stripes_blue_r"
+      },
+      "name": "bluer"
+    },
+    "greenl": {
+      "map": {
+        "15": "neonsign_stripes_green_l"
+      },
+      "name": "greenl"
+    },
+    "greenm": {
+      "map": {
+        "15": "neonsign_stripes_green_m"
+      },
+      "name": "greenm"
+    },
+    "greenr": {
+      "map": {
+        "15": "neonsign_stripes_green_r"
+      },
+      "name": "greenr"
+    },
+    "yellowl": {
+      "map": {
+        "15": "neonsign_stripes_yellow_l"
+      },
+      "name": "yellowl"
+    },
+    "yellowm": {
+      "map": {
+        "15": "neonsign_stripes_yellow_m"
+      },
+      "name": "yellowm"
+    },
+    "yellowr": {
+      "map": {
+        "15": "neonsign_stripes_yellow_r"
+      },
+      "name": "yellowr"
+    },
+    "orangel": {
+      "map": {
+        "15": "neonsign_stripes_orange_l"
+      },
+      "name": "orangel"
+    },
+    "orangem": {
+      "map": {
+        "15": "neonsign_stripes_orange_m"
+      },
+      "name": "orangem"
+    },
+    "oranger": {
+      "map": {
+        "15": "neonsign_stripes_orange_r"
+      },
+      "name": "oranger"
+    },
+    "redl": {
+      "map": {
+        "15": "neonsign_stripes_red_l"
+      },
+      "name": "redl"
+    },
+    "redm": {
+      "map": {
+        "15": "neonsign_stripes_red_m"
+      },
+      "name": "redm"
+    },
+    "redr": {
+      "map": {
+        "15": "neonsign_stripes_red_r"
+      },
+      "name": "redr"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/partytable1",
+  "textures": {
+    "all": "ya_fnafmod:block/partytable1_1",
+    "particle": "ya_fnafmod:block/partytable1_1",
+    "1": "ya_fnafmod:block/partytable1_1"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/stagebricks_orange",
+    "bottom": "ya_fnafmod:block/stagebricks_orange",
+    "top": "ya_fnafmod:block/stagebricks_orange",
+    "side": "ya_fnafmod:block/stagebricks_orange"
+  },
+  "render_type": "solid"
+}

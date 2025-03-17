@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:deepslate"
+  },
+  "result": "ya_fnafmod:dark_wall"
+}

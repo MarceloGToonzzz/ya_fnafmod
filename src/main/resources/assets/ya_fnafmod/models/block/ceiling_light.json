@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/ceiling_light",
+  "textures": {
+    "all": "ya_fnafmod:block/ceiling_light",
+    "particle": "ya_fnafmod:block/ceiling_light",
+    "0": "ya_fnafmod:block/ceiling_light"
+  },
+  "render_type": "solid"
+}

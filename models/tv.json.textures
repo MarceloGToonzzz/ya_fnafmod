@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "tv"
+      },
+      "name": "default"
+    },
+    "faf": {
+      "map": {
+        "1": "tv_faf"
+      },
+      "name": "faf"
+    }
+  }
+}

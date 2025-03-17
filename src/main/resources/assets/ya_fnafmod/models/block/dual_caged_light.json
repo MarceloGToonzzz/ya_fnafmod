@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cagedlight_dual",
+  "textures": {
+    "all": "ya_fnafmod:block/cagedlight_dualoff",
+    "particle": "ya_fnafmod:block/cagedlight_dualoff",
+    "1": "ya_fnafmod:block/cagedlight_dualoff"
+  },
+  "render_type": "cutout_mipped"
+}

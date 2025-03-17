@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/vent_block",
+    "particle": "ya_fnafmod:block/vent_block"
+  },
+  "render_type": "solid"
+}

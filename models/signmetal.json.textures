@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "metalsign_cameraposted"
+      },
+      "name": "default"
+    },
+    "danger": {
+      "map": {
+        "1": "metalsign_dangerkeepout"
+      },
+      "name": "danger"
+    }
+  }
+}

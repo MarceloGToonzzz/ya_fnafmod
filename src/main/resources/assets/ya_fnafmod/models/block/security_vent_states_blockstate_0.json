@@ -1,0 +1,10 @@
+{
+  "parent": "ya_fnafmod:custom/vent_shaft_security",
+  "textures": {
+    "all": "ya_fnafmod:block/securityvent",
+    "particle": "ya_fnafmod:block/vent_block",
+    "1": "ya_fnafmod:block/vent_block",
+    "2": "ya_fnafmod:block/securityvent"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "leg0": {
+      "map": {
+        "1": "partytable1_3"
+      },
+      "name": "leg0"
+    },
+    "default": {
+      "map": {
+        "1": "partytable1_1"
+      },
+      "name": "default"
+    },
+    "leg2": {
+      "map": {
+        "1": "partytable1_2"
+      },
+      "name": "leg2"
+    },
+    "leg1": {
+      "map": {
+        "1": "partytable1_4"
+      },
+      "name": "leg1"
+    }
+  }
+}
