@@ -709,6 +709,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.VENT_PLATED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_WINDOW.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DISCO_FLOOR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CHAIN_LINK_BLOCK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CHAINLINK_FENCE.get().asItem());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_ITEMS = REGISTRY.register("ya_fnaf_mod_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_items")).icon(() -> new ItemStack(YaFnafmodModItems.FAZWRENCH.get())).displayItems((parameters, tabData) -> {
@@ -850,6 +852,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.HAMBURGER.get());
 				tabData.accept(YaFnafmodModItems.CHEESEBURGER.get());
 				tabData.accept(YaFnafmodModItems.VEGGIEBURGER.get());
+				tabData.accept(YaFnafmodModItems.BBQ_BACON_BURGER.get());
 			})
 
 					.build());
@@ -1650,6 +1653,10 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.CUTOUT_FREDDY_FUNTIME.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUTOUT_BABY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUTOUT_BALLORA.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.BREAKER_PANEL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.LARGE_SPEAKER.get().asItem());
+				tabData.accept(YaFnafmodModItems.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_1983_ITEM.get());
+				tabData.accept(YaFnafmodModBlocks.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.get().asItem());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> ANIMATRONIC_BLOCKS = REGISTRY.register("animatronic_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.animatronic_blocks")).icon(() -> new ItemStack(YaFnafmodModBlocks.FREDDY_FAZBEAR_BLOCK.get())).displayItems((parameters, tabData) -> {

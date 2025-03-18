@@ -241,6 +241,7 @@ import net.mcreator.yafnafmod.block.entity.CarouselFredbearTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarnivalHoopsTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarStationWagonBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarPurpleChevroletImpalaBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.CarPoilceCruiserChevroletImpalaBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarHarleyMotorcycleBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarFazvanPropTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarFazvanBlockTileEntity;
@@ -786,6 +787,8 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<CutoutBabyTileEntity>> CUTOUT_BABY = REGISTRY.register("cutout_baby", () -> BlockEntityType.Builder.of(CutoutBabyTileEntity::new, YaFnafmodModBlocks.CUTOUT_BABY.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CutoutBalloraTileEntity>> CUTOUT_BALLORA = REGISTRY.register("cutout_ballora",
 			() -> BlockEntityType.Builder.of(CutoutBalloraTileEntity::new, YaFnafmodModBlocks.CUTOUT_BALLORA.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CarPoilceCruiserChevroletImpalaBlockTileEntity>> CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK = REGISTRY.register("car_poilce_cruiser_chevrolet_impala_block",
+			() -> BlockEntityType.Builder.of(CarPoilceCruiserChevroletImpalaBlockTileEntity::new, YaFnafmodModBlocks.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

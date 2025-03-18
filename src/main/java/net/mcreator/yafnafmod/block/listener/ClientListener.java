@@ -222,6 +222,7 @@ import net.mcreator.yafnafmod.block.renderer.CarouselFredbearTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarnivalHoopsTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarStationWagonBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarPurpleChevroletImpalaBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CarPoilceCruiserChevroletImpalaBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarHarleyMotorcycleBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarFazvanPropTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarFazvanBlockTileRenderer;
@@ -556,5 +557,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FREDDY_FUNTIME.get(), context -> new CutoutFreddyFuntimeTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_BABY.get(), context -> new CutoutBabyTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_BALLORA.get(), context -> new CutoutBalloraTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.get(), context -> new CarPoilceCruiserChevroletImpalaBlockTileRenderer());
 	}
 }

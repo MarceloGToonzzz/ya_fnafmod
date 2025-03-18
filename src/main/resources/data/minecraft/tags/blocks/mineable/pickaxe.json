@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:chainlink_fence",
+    "ya_fnafmod:chain_link_block",
     "ya_fnafmod:beige_tile_block_slab",
     "ya_fnafmod:beige_tile_block_stairs",
     "ya_fnafmod:beige_tile_block",

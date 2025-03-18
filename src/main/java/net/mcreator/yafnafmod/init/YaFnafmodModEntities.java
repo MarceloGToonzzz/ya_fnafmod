@@ -163,6 +163,7 @@ import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
 import net.mcreator.yafnafmod.entity.CarStationWagonEntity;
 import net.mcreator.yafnafmod.entity.CarSeatEntity;
 import net.mcreator.yafnafmod.entity.CarPurpleChevroletImpalaEntity;
+import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
@@ -869,6 +870,11 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<SparkyDogDayEntity>of(SparkyDogDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(SparkyDogDayEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CarPoliceCruiserChevroletImpala1983Entity>> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983 = register("car_police_cruiser_chevrolet_impala_1983",
+			EntityType.Builder.<CarPoliceCruiserChevroletImpala1983Entity>of(CarPoliceCruiserChevroletImpala1983Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(CarPoliceCruiserChevroletImpala1983Entity::new)
+
+					.sized(1.03125f, 2f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1046,6 +1052,7 @@ public class YaFnafmodModEntities {
 			CarHarleyMotorcycleEntity.init();
 			SparkyDogEntity.init();
 			SparkyDogDayEntity.init();
+			CarPoliceCruiserChevroletImpala1983Entity.init();
 		});
 	}
 
@@ -1220,5 +1227,6 @@ public class YaFnafmodModEntities {
 		event.put(CAR_HARLEY_MOTORCYCLE.get(), CarHarleyMotorcycleEntity.createAttributes().build());
 		event.put(SPARKY_DOG.get(), SparkyDogEntity.createAttributes().build());
 		event.put(SPARKY_DOG_DAY.get(), SparkyDogDayEntity.createAttributes().build());
+		event.put(CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983.get(), CarPoliceCruiserChevroletImpala1983Entity.createAttributes().build());
 	}
 }

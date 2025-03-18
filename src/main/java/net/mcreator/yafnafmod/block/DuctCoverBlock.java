@@ -42,6 +42,16 @@ public class DuctCoverBlock extends Block {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> box(1, 1, 0, 15, 11, 1);
+			case NORTH -> box(1, 1, 15, 15, 11, 16);
+			case EAST -> box(0, 1, 1, 1, 11, 15);
+			case WEST -> box(15, 1, 1, 16, 11, 15);
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
 		builder.add(FACING);

@@ -17,6 +17,7 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.yafnafmod.entity.CarStationWagonEntity;
 import net.mcreator.yafnafmod.entity.CarSeatEntity;
 import net.mcreator.yafnafmod.entity.CarPurpleChevroletImpalaEntity;
+import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
@@ -49,7 +50,7 @@ public class CarOnEntityTickUpdateProcedure {
 				}
 			}
 		}
-		if (entity instanceof CarPurpleChevroletImpalaEntity) {
+		if (entity instanceof CarPurpleChevroletImpalaEntity || entity instanceof CarPoliceCruiserChevroletImpala1983Entity) {
 			entity.getPersistentData().putDouble("max_speed", 16);
 			acceleration = 0.002962962965;
 		} else if (entity instanceof CarDodgeRam1982Entity) {

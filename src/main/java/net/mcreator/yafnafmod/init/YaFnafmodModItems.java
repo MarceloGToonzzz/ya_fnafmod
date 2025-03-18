@@ -311,6 +311,7 @@ import net.mcreator.yafnafmod.item.ChicaChickenFmsSpawnItemItem;
 import net.mcreator.yafnafmod.item.CheeseburgerItem;
 import net.mcreator.yafnafmod.item.CarStationWagonSpawnItemItem;
 import net.mcreator.yafnafmod.item.CarPurpleChevroletImpalaSpawnItemItem;
+import net.mcreator.yafnafmod.item.CarPoilceCruiserChevroletImpala1983ItemItem;
 import net.mcreator.yafnafmod.item.CarHarleyMotorcycleSpawnItemItem;
 import net.mcreator.yafnafmod.item.CarFazvanSpawnItemItem;
 import net.mcreator.yafnafmod.item.CarDodgeRam1982SpawnItemItem;
@@ -327,6 +328,7 @@ import net.mcreator.yafnafmod.item.BonnieBunnySpawnItemItem;
 import net.mcreator.yafnafmod.item.BonnieBunnyFmsSpawnItemItem;
 import net.mcreator.yafnafmod.item.BonnetSpawnItemItem;
 import net.mcreator.yafnafmod.item.BidybabSpawnItemItem;
+import net.mcreator.yafnafmod.item.BbqBaconBurgerItem;
 import net.mcreator.yafnafmod.item.BarryPolarSpawnItemItem;
 import net.mcreator.yafnafmod.item.BalloraSpawnItemItem;
 import net.mcreator.yafnafmod.item.BalloonBoySpawnItemItem;
@@ -547,6 +549,7 @@ import net.mcreator.yafnafmod.block.display.CarouselDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarnivalHoopsDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarStationWagonBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarPurpleChevroletImpalaBlockDisplayItem;
+import net.mcreator.yafnafmod.block.display.CarPoilceCruiserChevroletImpalaBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarHarleyMotorcycleBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarFazvanPropDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarFazvanBlockDisplayItem;
@@ -3516,6 +3519,16 @@ public class YaFnafmodModItems {
 			() -> new CutoutFreddyFuntimeDisplayItem(YaFnafmodModBlocks.CUTOUT_FREDDY_FUNTIME.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CUTOUT_BABY = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_BABY.getId().getPath(), () -> new CutoutBabyDisplayItem(YaFnafmodModBlocks.CUTOUT_BABY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CUTOUT_BALLORA = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_BALLORA.getId().getPath(), () -> new CutoutBalloraDisplayItem(YaFnafmodModBlocks.CUTOUT_BALLORA.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CHAIN_LINK_BLOCK = block(YaFnafmodModBlocks.CHAIN_LINK_BLOCK);
+	public static final RegistryObject<Item> CHAINLINK_FENCE = block(YaFnafmodModBlocks.CHAINLINK_FENCE);
+	public static final RegistryObject<Item> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_SPAWN_EGG = REGISTRY.register("car_police_cruiser_chevrolet_impala_1983_spawn_egg",
+			() -> new ForgeSpawnEggItem(YaFnafmodModEntities.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> BBQ_BACON_BURGER = REGISTRY.register("bbq_bacon_burger", () -> new BbqBaconBurgerItem());
+	public static final RegistryObject<Item> BREAKER_PANEL = block(YaFnafmodModBlocks.BREAKER_PANEL);
+	public static final RegistryObject<Item> LARGE_SPEAKER = block(YaFnafmodModBlocks.LARGE_SPEAKER);
+	public static final RegistryObject<Item> CAR_POILCE_CRUISER_CHEVROLET_IMPALA_1983_ITEM = REGISTRY.register("car_poilce_cruiser_chevrolet_impala_1983_item", () -> new CarPoilceCruiserChevroletImpala1983ItemItem());
+	public static final RegistryObject<Item> CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.getId().getPath(),
+			() -> new CarPoilceCruiserChevroletImpalaBlockDisplayItem(YaFnafmodModBlocks.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

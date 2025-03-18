@@ -1,0 +1,21 @@
+package net.mcreator.yafnafmod.block.renderer;
+
+import software.bernie.geckolib.renderer.GeoBlockRenderer;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+
+import net.mcreator.yafnafmod.block.model.CarPoilceCruiserChevroletImpalaBlockBlockModel;
+import net.mcreator.yafnafmod.block.entity.CarPoilceCruiserChevroletImpalaBlockTileEntity;
+
+public class CarPoilceCruiserChevroletImpalaBlockTileRenderer extends GeoBlockRenderer<CarPoilceCruiserChevroletImpalaBlockTileEntity> {
+	public CarPoilceCruiserChevroletImpalaBlockTileRenderer() {
+		super(new CarPoilceCruiserChevroletImpalaBlockBlockModel());
+	}
+
+	@Override
+	public RenderType getRenderType(CarPoilceCruiserChevroletImpalaBlockTileEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+		return RenderType.entityTranslucent(getTextureLocation(animatable));
+	}
+}

@@ -156,6 +156,7 @@ import net.mcreator.yafnafmod.client.renderer.ChicaChickenDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarStationWagonRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarSeatRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarPurpleChevroletImpalaRenderer;
+import net.mcreator.yafnafmod.client.renderer.CarPoliceCruiserChevroletImpala1983Renderer;
 import net.mcreator.yafnafmod.client.renderer.CarHarleyMotorcycleRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarFazvanRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarDodgeRam1982Renderer;
@@ -352,5 +353,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.CAR_HARLEY_MOTORCYCLE.get(), CarHarleyMotorcycleRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SPARKY_DOG.get(), SparkyDogRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SPARKY_DOG_DAY.get(), SparkyDogDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983.get(), CarPoliceCruiserChevroletImpala1983Renderer::new);
 	}
 }

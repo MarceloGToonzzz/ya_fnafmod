@@ -1037,6 +1037,7 @@ import net.mcreator.yafnafmod.block.LightBlueStageBricksBlackExtraTilesAlternate
 import net.mcreator.yafnafmod.block.LightBlueStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.LightBlueStageBrickSlabBlock;
 import net.mcreator.yafnafmod.block.LeftyBlockBlock;
+import net.mcreator.yafnafmod.block.LargeSpeakerBlock;
 import net.mcreator.yafnafmod.block.LargeFanBlock;
 import net.mcreator.yafnafmod.block.LaptopOldBlock;
 import net.mcreator.yafnafmod.block.LaptopBlock;
@@ -1818,6 +1819,8 @@ import net.mcreator.yafnafmod.block.CheapWoodenWallBlock;
 import net.mcreator.yafnafmod.block.CheapWoodenTableBlock;
 import net.mcreator.yafnafmod.block.CheapWoodenFloorBlock;
 import net.mcreator.yafnafmod.block.ChairTallBlock;
+import net.mcreator.yafnafmod.block.ChainlinkFenceBlock;
+import net.mcreator.yafnafmod.block.ChainLinkBlockBlock;
 import net.mcreator.yafnafmod.block.CeilingLightBlock;
 import net.mcreator.yafnafmod.block.CeilingBlockWhiteTileBlock;
 import net.mcreator.yafnafmod.block.CeilingBlockWhiteBlock;
@@ -1855,6 +1858,7 @@ import net.mcreator.yafnafmod.block.CarouselBlock;
 import net.mcreator.yafnafmod.block.CarnivalHoopsBlock;
 import net.mcreator.yafnafmod.block.CarStationWagonBlockBlock;
 import net.mcreator.yafnafmod.block.CarPurpleChevroletImpalaBlockBlock;
+import net.mcreator.yafnafmod.block.CarPoilceCruiserChevroletImpalaBlockBlock;
 import net.mcreator.yafnafmod.block.CarHarleyMotorcycleBlockBlock;
 import net.mcreator.yafnafmod.block.CarFazvanPropBlock;
 import net.mcreator.yafnafmod.block.CarFazvanBlockBlock;
@@ -1924,6 +1928,7 @@ import net.mcreator.yafnafmod.block.BreakerRoomWallBlock;
 import net.mcreator.yafnafmod.block.BreakerRoomTileStairsBlock;
 import net.mcreator.yafnafmod.block.BreakerRoomTileSlabBlock;
 import net.mcreator.yafnafmod.block.BreakerRoomTileBlock;
+import net.mcreator.yafnafmod.block.BreakerPanelBlock;
 import net.mcreator.yafnafmod.block.BreakerControlBlock;
 import net.mcreator.yafnafmod.block.BoxStuffedBlock;
 import net.mcreator.yafnafmod.block.BoxSmallBrandedBlock;
@@ -4638,6 +4643,11 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> CUTOUT_FREDDY_FUNTIME = REGISTRY.register("cutout_freddy_funtime", () -> new CutoutFreddyFuntimeBlock());
 	public static final RegistryObject<Block> CUTOUT_BABY = REGISTRY.register("cutout_baby", () -> new CutoutBabyBlock());
 	public static final RegistryObject<Block> CUTOUT_BALLORA = REGISTRY.register("cutout_ballora", () -> new CutoutBalloraBlock());
+	public static final RegistryObject<Block> CHAIN_LINK_BLOCK = REGISTRY.register("chain_link_block", () -> new ChainLinkBlockBlock());
+	public static final RegistryObject<Block> CHAINLINK_FENCE = REGISTRY.register("chainlink_fence", () -> new ChainlinkFenceBlock());
+	public static final RegistryObject<Block> BREAKER_PANEL = REGISTRY.register("breaker_panel", () -> new BreakerPanelBlock());
+	public static final RegistryObject<Block> LARGE_SPEAKER = REGISTRY.register("large_speaker", () -> new LargeSpeakerBlock());
+	public static final RegistryObject<Block> CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK = REGISTRY.register("car_poilce_cruiser_chevrolet_impala_block", () -> new CarPoilceCruiserChevroletImpalaBlockBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

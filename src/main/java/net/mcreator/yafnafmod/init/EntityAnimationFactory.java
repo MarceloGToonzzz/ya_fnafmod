@@ -149,6 +149,7 @@ import net.mcreator.yafnafmod.entity.ChicaChickenEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
 import net.mcreator.yafnafmod.entity.CarStationWagonEntity;
 import net.mcreator.yafnafmod.entity.CarPurpleChevroletImpalaEntity;
+import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
@@ -1340,6 +1341,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof SparkyDogDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CarPoliceCruiserChevroletImpala1983Entity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

@@ -33279,9 +33279,9 @@
       "registry_name": "car_purple_chevrolet_impala",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/yafnafmod/entity/CarPurpleChevroletImpalaEntity.java",
           "src/main/resources/assets/ya_fnafmod/models/item/car_purple_chevrolet_impala_spawn_egg.json",
           "src/main/java/net/mcreator/yafnafmod/client/renderer/CarPurpleChevroletImpalaRenderer.java",
-          "src/main/java/net/mcreator/yafnafmod/entity/CarPurpleChevroletImpalaEntity.java",
           "src/main/java/net/mcreator/yafnafmod/entity/model/CarPurpleChevroletImpalaModel.java"
         ]
       },
@@ -41779,8 +41779,8 @@
         "files": [
           "src/main/java/net/mcreator/yafnafmod/entity/CarDodgeRam1982Entity.java",
           "src/main/resources/assets/ya_fnafmod/models/item/car_dodge_ram_1982_spawn_egg.json",
-          "src/main/java/net/mcreator/yafnafmod/client/renderer/CarDodgeRam1982Renderer.java",
-          "src/main/java/net/mcreator/yafnafmod/entity/model/CarDodgeRam1982Model.java"
+          "src/main/java/net/mcreator/yafnafmod/entity/model/CarDodgeRam1982Model.java",
+          "src/main/java/net/mcreator/yafnafmod/client/renderer/CarDodgeRam1982Renderer.java"
         ]
       },
       "path": "~/Entities/Cars"
@@ -49660,10 +49660,10 @@
       "registry_name": "car_fazvan",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/yafnafmod/entity/model/CarFazvanModel.java",
+          "src/main/java/net/mcreator/yafnafmod/client/renderer/CarFazvanRenderer.java",
           "src/main/java/net/mcreator/yafnafmod/entity/CarFazvanEntity.java",
           "src/main/resources/assets/ya_fnafmod/models/item/car_fazvan_spawn_egg.json",
-          "src/main/java/net/mcreator/yafnafmod/client/renderer/CarFazvanRenderer.java"
+          "src/main/java/net/mcreator/yafnafmod/entity/model/CarFazvanModel.java"
         ]
       },
       "path": "~/Entities/Cars"
@@ -53086,10 +53086,10 @@
       "registry_name": "car_station_wagon",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ya_fnafmod/models/item/car_station_wagon_spawn_egg.json",
-          "src/main/java/net/mcreator/yafnafmod/client/renderer/CarStationWagonRenderer.java",
           "src/main/java/net/mcreator/yafnafmod/entity/CarStationWagonEntity.java",
-          "src/main/java/net/mcreator/yafnafmod/entity/model/CarStationWagonModel.java"
+          "src/main/java/net/mcreator/yafnafmod/client/renderer/CarStationWagonRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/entity/model/CarStationWagonModel.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/car_station_wagon_spawn_egg.json"
         ]
       },
       "path": "~/Entities/Cars"
@@ -57816,8 +57816,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/yafnafmod/entity/CarHarleyMotorcycleEntity.java",
-          "src/main/resources/assets/ya_fnafmod/models/item/car_harley_motorcycle_spawn_egg.json",
           "src/main/java/net/mcreator/yafnafmod/entity/model/CarHarleyMotorcycleModel.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/car_harley_motorcycle_spawn_egg.json",
           "src/main/java/net/mcreator/yafnafmod/client/renderer/CarHarleyMotorcycleRenderer.java"
         ]
       },
@@ -59148,11 +59148,11 @@
       "registry_name": "duct_cover",
       "metadata": {
         "files": [
-          "src/main/resources/assets/ya_fnafmod/models/item/duct_cover.json",
+          "src/main/java/net/mcreator/yafnafmod/block/DuctCoverBlock.java",
           "src/main/resources/data/ya_fnafmod/loot_tables/blocks/duct_cover.json",
-          "src/main/resources/assets/ya_fnafmod/models/block/duct_cover.json",
           "src/main/resources/assets/ya_fnafmod/blockstates/duct_cover.json",
-          "src/main/java/net/mcreator/yafnafmod/block/DuctCoverBlock.java"
+          "src/main/resources/assets/ya_fnafmod/models/block/duct_cover.json",
+          "src/main/resources/assets/ya_fnafmod/models/item/duct_cover.json"
         ]
       },
       "path": "~/Blocks/Props"
@@ -59573,6 +59573,144 @@
         ]
       },
       "path": "~/Blocks/Props/Decorations/Cutouts"
+    },
+    {
+      "name": "ChainLinkBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chain_link_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ya_fnafmod/loot_tables/blocks/chain_link_block.json",
+          "src/main/java/net/mcreator/yafnafmod/block/ChainLinkBlockBlock.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/chain_link_block.json",
+          "src/main/resources/assets/ya_fnafmod/blockstates/chain_link_block.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/chain_link_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "ChainlinkFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chainlink_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/models/item/chainlink_fence.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/chainlink_fence_side.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/chainlink_fence_noside.json",
+          "src/main/resources/assets/ya_fnafmod/blockstates/chainlink_fence.json",
+          "src/main/resources/data/ya_fnafmod/loot_tables/blocks/chainlink_fence.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/chainlink_fence_post.json",
+          "src/main/java/net/mcreator/yafnafmod/block/ChainlinkFenceBlock.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/chainlink_fence_side_alt.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/chainlink_fence_noside_alt.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "CarPoliceCruiserChevroletImpala1983",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "car_police_cruiser_chevrolet_impala_1983",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/entity/CarPoliceCruiserChevroletImpala1983Entity.java",
+          "src/main/java/net/mcreator/yafnafmod/entity/model/CarPoliceCruiserChevroletImpala1983Model.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/car_police_cruiser_chevrolet_impala_1983_spawn_egg.json",
+          "src/main/java/net/mcreator/yafnafmod/client/renderer/CarPoliceCruiserChevroletImpala1983Renderer.java"
+        ]
+      },
+      "path": "~/Entities/Cars"
+    },
+    {
+      "name": "BbqBaconBurger",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bbq_bacon_burger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/item/BbqBaconBurgerItem.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/bbq_bacon_burger.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "BreakerPanel",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "breaker_panel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/blockstates/breaker_panel.json",
+          "src/main/resources/assets/ya_fnafmod/models/item/breaker_panel.json",
+          "src/main/java/net/mcreator/yafnafmod/block/BreakerPanelBlock.java",
+          "src/main/resources/data/ya_fnafmod/loot_tables/blocks/breaker_panel.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/breaker_panel.json"
+        ]
+      },
+      "path": "~/Blocks/Props"
+    },
+    {
+      "name": "LargeSpeaker",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_speaker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/LargeSpeakerBlock.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/large_speaker.json",
+          "src/main/resources/assets/ya_fnafmod/blockstates/large_speaker.json",
+          "src/main/resources/data/ya_fnafmod/loot_tables/blocks/large_speaker.json",
+          "src/main/resources/assets/ya_fnafmod/models/item/large_speaker.json"
+        ]
+      },
+      "path": "~/Blocks/Props"
+    },
+    {
+      "name": "CarPoilceCruiserChevroletImpala1983Item",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "car_poilce_cruiser_chevrolet_impala_1983_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/models/item/car_poilce_cruiser_chevrolet_impala_1983_item.json",
+          "src/main/java/net/mcreator/yafnafmod/item/CarPoilceCruiserChevroletImpala1983ItemItem.java"
+        ]
+      },
+      "path": "~/Entities/Cars"
+    },
+    {
+      "name": "CarPoilceCruiserChevroletImpalaBlock",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "car_poilce_cruiser_chevrolet_impala_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CarPoilceCruiserChevroletImpalaBlockDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/entity/CarPoilceCruiserChevroletImpalaBlockTileEntity.java",
+          "src/main/resources/assets/ya_fnafmod/models/custom/car_poilce_cruiser_chevrolet_impala_block_particle.json",
+          "src/main/resources/assets/ya_fnafmod/blockstates/car_poilce_cruiser_chevrolet_impala_block.json",
+          "src/main/resources/assets/ya_fnafmod/models/item/car_poilce_cruiser_chevrolet_impala_block.json",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CarPoilceCruiserChevroletImpalaBlockBlockModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/display/CarPoilceCruiserChevroletImpalaBlockDisplayItem.java",
+          "src/main/java/net/mcreator/yafnafmod/block/model/CarPoilceCruiserChevroletImpalaBlockDisplayModel.java",
+          "src/main/java/net/mcreator/yafnafmod/block/renderer/CarPoilceCruiserChevroletImpalaBlockTileRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/block/CarPoilceCruiserChevroletImpalaBlockBlock.java"
+        ]
+      },
+      "path": "~/Entities/Cars"
     }
   ],
   "variable_elements": [
@@ -61731,6 +61869,8 @@
       "CUSTOM:JackOChica"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:ChainlinkFence",
+      "~CUSTOM:ChainLinkBlock",
       "~CUSTOM:BeigeTileBlockSlab",
       "~CUSTOM:BeigeTileBlockStairs",
       "~CUSTOM:BeigeTileBlock",
@@ -64059,7 +64199,9 @@
       "Vent",
       "VentPlated",
       "OfficeWindow",
-      "DiscoFloor"
+      "DiscoFloor",
+      "ChainLinkBlock",
+      "ChainlinkFence"
     ],
     "CUSTOM:YaFNAFModItems": [
       "Quarter",
@@ -64177,7 +64319,8 @@
       "DeathCoin",
       "Hamburger",
       "Cheeseburger",
-      "Veggieburger"
+      "Veggieburger",
+      "BbqBaconBurger"
     ],
     "CUSTOM:YAFNAFFmsSkins": [
       "FreddyFazbearFmsSpawnItem",
@@ -64969,7 +65112,11 @@
       "CutoutFoxyFuntime",
       "CutoutFreddyFuntime",
       "CutoutBaby",
-      "CutoutBallora"
+      "CutoutBallora",
+      "BreakerPanel",
+      "LargeSpeaker",
+      "CarPoilceCruiserChevroletImpala1983Item",
+      "CarPoilceCruiserChevroletImpalaBlock"
     ],
     "CUSTOM:AnimatronicBlocks": [
       "Fat",
@@ -66110,6 +66257,7 @@
       "item.ya_fnafmod.nightmare_fredbear_spawn_item": "§6Nightmare Fredbear",
       "block.ya_fnafmod.tv_tube": "Tube TV",
       "block.ya_fnafmod.drawer_short_brown": "Short Drawer (Brown)",
+      "block.ya_fnafmod.car_poilce_cruiser_chevrolet_impala_block": "Police Cruiser Chevrolet Impala 1983 (block)",
       "block.ya_fnafmod.gallery_tile_slab": "Gallery Tile Slab",
       "block.ya_fnafmod.lamp_blue": "Lamp (Blue)",
       "block.ya_fnafmod.red_white_tiles": "Red White Tiles",
@@ -66203,6 +66351,7 @@
       "block.ya_fnafmod.toy_cupcake": "Toy Cupcake",
       "block.ya_fnafmod.light_wall_stairs_confetti": "Light Wall Stairs (Confetti)",
       "block.ya_fnafmod.disco_floor": "Disco Floor",
+      "item.ya_fnafmod.bbq_bacon_burger": "Barbeque Bacon Burger ",
       "block.ya_fnafmod.lime_white_big_checkered_tile_stairs": "Lime White Big Checkered Tile Stairs",
       "item.ya_fnafmod.indigo_spawn_item": "§bIndigo",
       "block.ya_fnafmod.green_wall_red_tiles_alternate": "Green Wall Tiles (Alternate Red Stripe)",
@@ -66532,6 +66681,7 @@
       "block.ya_fnafmod.light_blue_wall_black_extra_tiles": "Light Blue Wall Extra Tiles (Black Stripe)",
       "block.ya_fnafmod.dark_wall_red_tiles": "Dark Wall Tiles (Red Stripe)",
       "block.ya_fnafmod.pickles": "Pickles",
+      "block.ya_fnafmod.chainlink_fence": "Chainlink Fence",
       "block.ya_fnafmod.lime_stage_bricks_red_tiles": "Lime Stage Brick Tiles (Red Stripe)",
       "entity.ya_fnafmod.mangle": "Mangle",
       "entity.ya_fnafmod.funtime_freddy": "Funtime Freddy",
@@ -66830,6 +66980,7 @@
       "item.ya_fnafmod.fnaf_3_song_watp": "Music Disc",
       "block.ya_fnafmod.dark_wall_confetti": "Dark Wall (Confetti)",
       "block.ya_fnafmod.hot_pink_white_checkered_tile_slab": "Hot Pink White Checkered Tile Slab",
+      "item.ya_fnafmod.car_poilce_cruiser_chevrolet_impala_1983_item": "Purple Chevrolet Impala",
       "block.ya_fnafmod.black_purple_checkered_tile_slab": "Black Purple Checkered Tile Slab",
       "block.ya_fnafmod.brown_wall_red_extra_tiles_big": "Brown Wall Extra Tiles (Big Red Stripe)",
       "block.ya_fnafmod.white_wall_black_tiles_big": "White Wall Tiles (Big Black Stripe)",
@@ -67437,6 +67588,7 @@
       "item.ya_fnafmod.withered_foxy_spawn_egg": "Withered Foxy Spawn Egg",
       "entity.ya_fnafmod.funtime_foxy_day": "Funtime Foxy (Daytime)",
       "block.ya_fnafmod.pizza_box_2023": "Pizza Box (2023)",
+      "block.ya_fnafmod.breaker_panel": "Breaker Panel",
       "block.ya_fnafmod.balloon_cart": "Balloon Cart",
       "block.ya_fnafmod.yellow_wall_black_extra_tiles_alternate": "Yellow Wall Extra Tiles (Alternate Black Stripe)",
       "block.ya_fnafmod.pizza_box_1985_empty": "Pizza Box (1985, Empty)",
@@ -67915,6 +68067,7 @@
       "block.ya_fnafmod.gray_white_checkered_tiles": "Gray White Checkered Tiles",
       "item.ya_fnafmod.toy_foxy_still_spawn_item": "§dToy Foxy (Still)",
       "block.ya_fnafmod.orange_hot_pink_big_checkered_tile_slab": "Orange Hot Pink Big Checkered Tile Slab",
+      "block.ya_fnafmod.chain_link_block": "Chainlink Block",
       "block.ya_fnafmod.car_dodge_ram_1982_block": "Dodge Ram 1982 (Block)",
       "block.ya_fnafmod.pink_wall_red_tiles_alternate": "Pink Wall Tiles (Alternate Red Stripe)",
       "block.ya_fnafmod.dark_wall_purple_extra_tiles_big_alternate": "Dark Wall Extra Tiles (Big Alternate Purple Stripe)",
@@ -68175,6 +68328,7 @@
       "block.ya_fnafmod.orange_hot_pink_big_checkered_tile_stairs": "Orange Hot Pink Big Checkered Tile Stairs",
       "block.ya_fnafmod.security_puppet_prop": "Security Puppet (Prop)",
       "block.ya_fnafmod.fancy_brick_wall": "Fancy Brick Wall",
+      "block.ya_fnafmod.large_speaker": "Speaker (Large)",
       "block.ya_fnafmod.beige_wall": "Beige Wall",
       "block.ya_fnafmod.cracked_gray_white_tile_slab": "Gray White Tile Slab (Cracked)",
       "block.ya_fnafmod.fredbear_block": "Fredbear",
@@ -68994,6 +69148,7 @@
       "block.ya_fnafmod.projector": "Projector",
       "item.ya_fnafmod.bonnie_face_mask_helmet": "Bonnie Face Mask",
       "block.ya_fnafmod.purple_stage_bricks_black_tiles": "Purple Stage Brick Tiles (Black Stripe)",
+      "entity.ya_fnafmod.car_police_cruiser_chevrolet_impala_1983": "Car (Police Cruiser Chevrolet Impala 1983)",
       "block.ya_fnafmod.white_stage_bricks_red_extra_tiles_big": "White Stage Brick Extra Tiles (Big Red Stripe)",
       "block.ya_fnafmod.light_wall_purple_extra_tiles_alternate": "Light Wall Extra Tiles (Alternate Purple Stripe)",
       "item.ya_fnafmod.icecream_blue_moon": "Icecream (Blue Moon)",
@@ -69140,6 +69295,7 @@
       "item.ya_fnafmod.candy_lime": "Lime Candy",
       "block.ya_fnafmod.lime_wall_black_tiles_alternate": "Lime Wall Tiles (Alternate Black Stripe)",
       "block.ya_fnafmod.green_stage_bricks": "Green Stage Bricks",
+      "item.ya_fnafmod.car_police_cruiser_chevrolet_impala_1983_spawn_egg": "Car (Police Cruiser Chevrolet Impala 1983) Spawn Egg",
       "block.ya_fnafmod.cyan_white_big_checkered_tile_stairs": "Cyan White Big Checkered Tile Stairs",
       "block.ya_fnafmod.hot_pink_tile_block": "Hot Pink Tile Block",
       "block.ya_fnafmod.blue_stage_bricks_red_extra_tiles_alternate": "Blue Stage Brick Extra Tiles (Alternate Red Stripe)",

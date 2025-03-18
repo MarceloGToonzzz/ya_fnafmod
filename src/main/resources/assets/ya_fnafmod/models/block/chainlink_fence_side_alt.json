@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "particle": "ya_fnafmod:block/chainlink",
+    "edge": "ya_fnafmod:block/chainlink",
+    "pane": "ya_fnafmod:block/chainlink"
+  },
+  "render_type": "cutout"
+}

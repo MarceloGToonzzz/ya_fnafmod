@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/breaker_fnaf_sl",
+  "textures": {
+    "all": "ya_fnafmod:block/sl_breaaker_texture",
+    "particle": "ya_fnafmod:block/sl_breaaker_texture",
+    "1": "ya_fnafmod:block/sl_breaaker_texture"
+  },
+  "render_type": "cutout_mipped"
+}

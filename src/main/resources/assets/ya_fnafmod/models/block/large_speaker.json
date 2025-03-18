@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/large_speak",
+  "textures": {
+    "all": "ya_fnafmod:block/large_speaker",
+    "particle": "ya_fnafmod:block/large_speaker",
+    "0": "ya_fnafmod:block/large_speaker"
+  },
+  "render_type": "cutout_mipped"
+}
