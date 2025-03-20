@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/circus_control_panel",
+  "textures": {
+    "all": "ya_fnafmod:block/circus_control",
+    "particle": "ya_fnafmod:block/circus_control",
+    "1": "ya_fnafmod:block/circus_control"
+  },
+  "render_type": "cutout_mipped"
+}

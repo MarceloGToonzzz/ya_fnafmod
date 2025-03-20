@@ -25,6 +25,8 @@ import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
+import net.mcreator.yafnafmod.entity.RustyEntity;
+import net.mcreator.yafnafmod.entity.RustyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
@@ -54,10 +56,16 @@ import net.mcreator.yafnafmod.entity.FredbearEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateDayEntity;
+import net.mcreator.yafnafmod.entity.Endo02Entity;
+import net.mcreator.yafnafmod.entity.Endo02DayEntity;
+import net.mcreator.yafnafmod.entity.Endo01Entity;
+import net.mcreator.yafnafmod.entity.Endo01DayEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyDayEntity;
+import net.mcreator.yafnafmod.entity.BarryPolarEntity;
+import net.mcreator.yafnafmod.entity.BarryPolarDayEntity;
 
 public class SkinStyleFMSProcedure {
 	public static void execute(Entity entity) {
@@ -81,6 +89,10 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("foxy_pirate_fms");
 		if (entity instanceof GoldenFreddyEntity animatable)
 			animatable.setTexture("gfreddy_fms");
+		if (entity instanceof Endo01Entity animatable)
+			animatable.setTexture("endo1_fms");
+		if (entity instanceof Endo01DayEntity animatable)
+			animatable.setTexture("endo1_fms");
 		if (entity instanceof ToyFreddyEntity animatable)
 			animatable.setTexture("tfreddy_night_fms");
 		if (entity instanceof ToyFreddyDayEntity animatable)
@@ -147,6 +159,10 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("retro_foxy_fms");
 		if (entity instanceof RetroFoxyDayEntity animatable)
 			animatable.setTexture("retro_foxy_fms");
+		if (entity instanceof Endo02Entity animatable)
+			animatable.setTexture("endo2_fms");
+		if (entity instanceof Endo02DayEntity animatable)
+			animatable.setTexture("endo2_fms");
 		if (entity instanceof FredbearEntity animatable)
 			animatable.setTexture("fredbear_fms");
 		if (entity instanceof FredbearDayEntity animatable)
@@ -190,5 +206,13 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("orville_elephant_fms");
 		if (entity instanceof OrvilleElephantDayEntity animatable)
 			animatable.setTexture("orville_elephant_fms");
+		if (entity instanceof BarryPolarEntity animatable)
+			animatable.setTexture("barrypolar_fms");
+		if (entity instanceof BarryPolarDayEntity animatable)
+			animatable.setTexture("barrypolar_fms");
+		if (entity instanceof RustyEntity animatable)
+			animatable.setTexture("endo1_rusty_fms");
+		if (entity instanceof RustyDayEntity animatable)
+			animatable.setTexture("endo1_rusty_fms");
 	}
 }

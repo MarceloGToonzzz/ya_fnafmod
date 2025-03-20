@@ -16,10 +16,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
+
 public class BigDoorBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? blockstate.getValue(_getip1) : -1) == 0) {
-			if (!(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains("wide")) {
+			if (!(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains("wide") && !(blockstate.getBlock() == YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.get())) {
 				if ((new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");

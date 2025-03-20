@@ -59,6 +59,7 @@ import net.mcreator.yafnafmod.block.entity.SecurityDoorWindowBlockEntity;
 import net.mcreator.yafnafmod.block.entity.SecurityDoorBlockEntity;
 import net.mcreator.yafnafmod.block.entity.ScooperTileEntity;
 import net.mcreator.yafnafmod.block.entity.SanitationStationTileEntity;
+import net.mcreator.yafnafmod.block.entity.RustyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.RosieTileEntity;
 import net.mcreator.yafnafmod.block.entity.RockstarFreddyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.RockstarFoxyBlockTileEntity;
@@ -152,6 +153,8 @@ import net.mcreator.yafnafmod.block.entity.GrandfatherClockTileEntity;
 import net.mcreator.yafnafmod.block.entity.GeneratorBlockBlockEntity;
 import net.mcreator.yafnafmod.block.entity.GarfeldTileEntity;
 import net.mcreator.yafnafmod.block.entity.FuseboxBlockEntity;
+import net.mcreator.yafnafmod.block.entity.FuntimeFreddyBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.FuntimeDelilahBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.FryingPanTileEntity;
 import net.mcreator.yafnafmod.block.entity.FryerTileEntity;
 import net.mcreator.yafnafmod.block.entity.FridgeWhiteTileEntity;
@@ -177,12 +180,19 @@ import net.mcreator.yafnafmod.block.entity.Fazcoins10000TileEntity;
 import net.mcreator.yafnafmod.block.entity.FazOvenTileEntity;
 import net.mcreator.yafnafmod.block.entity.ExoticButterBasketTileEntity;
 import net.mcreator.yafnafmod.block.entity.EnhancedSpeakerTileEntity;
+import net.mcreator.yafnafmod.block.entity.Endo02BlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.Endo01PropTileEntity;
+import net.mcreator.yafnafmod.block.entity.Endo01BlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.EmptyExoticButterBasketTileEntity;
+import net.mcreator.yafnafmod.block.entity.ElevatorButtonBlockEntity;
 import net.mcreator.yafnafmod.block.entity.EggBabyTileEntity;
 import net.mcreator.yafnafmod.block.entity.DumpsterGreenTileEntity;
 import net.mcreator.yafnafmod.block.entity.DumpsterBlueTileEntity;
 import net.mcreator.yafnafmod.block.entity.DuckPondTileEntity;
+import net.mcreator.yafnafmod.block.entity.DittophobiaFreddyBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.DittophobiaFoxyBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.DittophobiaChicaBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.DittophobiaBonnieBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DiscountCoolingUnitTileEntity;
 import net.mcreator.yafnafmod.block.entity.DiscountBallpitTileEntity;
 import net.mcreator.yafnafmod.block.entity.DeluxeSpeakerTileEntity;
@@ -228,8 +238,8 @@ import net.mcreator.yafnafmod.block.entity.ClockWallChicaTileEntity;
 import net.mcreator.yafnafmod.block.entity.ClockWallBonnieTileEntity;
 import net.mcreator.yafnafmod.block.entity.ClawMachinePizzaPartyTileEntity;
 import net.mcreator.yafnafmod.block.entity.ClawMachineCupcakeBonanzaTileEntity;
-import net.mcreator.yafnafmod.block.entity.CircusControlTopTileEntity;
 import net.mcreator.yafnafmod.block.entity.CircusBabyClockTileEntity;
+import net.mcreator.yafnafmod.block.entity.CircusBabyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ChicaStandTileEntity;
 import net.mcreator.yafnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.ChicaChickenBlockTileEntity;
@@ -241,7 +251,7 @@ import net.mcreator.yafnafmod.block.entity.CarouselFredbearTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarnivalHoopsTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarStationWagonBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarPurpleChevroletImpalaBlockTileEntity;
-import net.mcreator.yafnafmod.block.entity.CarPoilceCruiserChevroletImpalaBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.CarPoliceCruiserChevroletImpala1983BlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarHarleyMotorcycleBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarFazvanPropTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarFazvanBlockTileEntity;
@@ -284,6 +294,7 @@ import net.mcreator.yafnafmod.block.entity.BigEntranceRedDoorWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntranceRedDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntranceDoorWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntranceDoorTileEntity;
+import net.mcreator.yafnafmod.block.entity.BigElevatorDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigClosetTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigBedroomDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigBackstageRedDoorWideTileEntity;
@@ -295,6 +306,7 @@ import net.mcreator.yafnafmod.block.entity.BarryPolarBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BallpitVintageTileEntity;
 import net.mcreator.yafnafmod.block.entity.BallpitTowerTileEntity;
 import net.mcreator.yafnafmod.block.entity.BallpitRottenTileEntity;
+import net.mcreator.yafnafmod.block.entity.BalloraBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BalloonCartTileEntity;
 import net.mcreator.yafnafmod.block.entity.BalloonBarrelTileEntity;
 import net.mcreator.yafnafmod.block.entity.ArcadeMidnightMotoristTileEntity;
@@ -386,8 +398,6 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> SHOCK_INFUSER = register("shock_infuser", YaFnafmodModBlocks.SHOCK_INFUSER, ShockInfuserBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<BreakerControlTileEntity>> BREAKER_CONTROL = REGISTRY.register("breaker_control",
 			() -> BlockEntityType.Builder.of(BreakerControlTileEntity::new, YaFnafmodModBlocks.BREAKER_CONTROL.get()).build(null));
-	public static final RegistryObject<BlockEntityType<CircusControlTopTileEntity>> CIRCUS_CONTROL_TOP = REGISTRY.register("circus_control_top",
-			() -> BlockEntityType.Builder.of(CircusControlTopTileEntity::new, YaFnafmodModBlocks.CIRCUS_CONTROL_TOP.get()).build(null));
 	public static final RegistryObject<BlockEntityType<LargeFanTileEntity>> LARGE_FAN = REGISTRY.register("large_fan", () -> BlockEntityType.Builder.of(LargeFanTileEntity::new, YaFnafmodModBlocks.LARGE_FAN.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ScooperTileEntity>> SCOOPER = REGISTRY.register("scooper", () -> BlockEntityType.Builder.of(ScooperTileEntity::new, YaFnafmodModBlocks.SCOOPER.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> SECURITY_VENT = register("security_vent", YaFnafmodModBlocks.SECURITY_VENT, SecurityVentBlockEntity::new);
@@ -787,8 +797,29 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<CutoutBabyTileEntity>> CUTOUT_BABY = REGISTRY.register("cutout_baby", () -> BlockEntityType.Builder.of(CutoutBabyTileEntity::new, YaFnafmodModBlocks.CUTOUT_BABY.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CutoutBalloraTileEntity>> CUTOUT_BALLORA = REGISTRY.register("cutout_ballora",
 			() -> BlockEntityType.Builder.of(CutoutBalloraTileEntity::new, YaFnafmodModBlocks.CUTOUT_BALLORA.get()).build(null));
-	public static final RegistryObject<BlockEntityType<CarPoilceCruiserChevroletImpalaBlockTileEntity>> CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK = REGISTRY.register("car_poilce_cruiser_chevrolet_impala_block",
-			() -> BlockEntityType.Builder.of(CarPoilceCruiserChevroletImpalaBlockTileEntity::new, YaFnafmodModBlocks.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigElevatorDoorTileEntity>> BIG_ELEVATOR_DOOR = REGISTRY.register("big_elevator_door",
+			() -> BlockEntityType.Builder.of(BigElevatorDoorTileEntity::new, YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> ELEVATOR_BUTTON = register("elevator_button", YaFnafmodModBlocks.ELEVATOR_BUTTON, ElevatorButtonBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<DittophobiaFreddyBlockTileEntity>> DITTOPHOBIA_FREDDY_BLOCK = REGISTRY.register("dittophobia_freddy_block",
+			() -> BlockEntityType.Builder.of(DittophobiaFreddyBlockTileEntity::new, YaFnafmodModBlocks.DITTOPHOBIA_FREDDY_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DittophobiaBonnieBlockTileEntity>> DITTOPHOBIA_BONNIE_BLOCK = REGISTRY.register("dittophobia_bonnie_block",
+			() -> BlockEntityType.Builder.of(DittophobiaBonnieBlockTileEntity::new, YaFnafmodModBlocks.DITTOPHOBIA_BONNIE_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DittophobiaChicaBlockTileEntity>> DITTOPHOBIA_CHICA_BLOCK = REGISTRY.register("dittophobia_chica_block",
+			() -> BlockEntityType.Builder.of(DittophobiaChicaBlockTileEntity::new, YaFnafmodModBlocks.DITTOPHOBIA_CHICA_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DittophobiaFoxyBlockTileEntity>> DITTOPHOBIA_FOXY_BLOCK = REGISTRY.register("dittophobia_foxy_block",
+			() -> BlockEntityType.Builder.of(DittophobiaFoxyBlockTileEntity::new, YaFnafmodModBlocks.DITTOPHOBIA_FOXY_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Endo01BlockTileEntity>> ENDO_01_BLOCK = REGISTRY.register("endo_01_block", () -> BlockEntityType.Builder.of(Endo01BlockTileEntity::new, YaFnafmodModBlocks.ENDO_01_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<RustyBlockTileEntity>> RUSTY_BLOCK = REGISTRY.register("rusty_block", () -> BlockEntityType.Builder.of(RustyBlockTileEntity::new, YaFnafmodModBlocks.RUSTY_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Endo02BlockTileEntity>> ENDO_02_BLOCK = REGISTRY.register("endo_02_block", () -> BlockEntityType.Builder.of(Endo02BlockTileEntity::new, YaFnafmodModBlocks.ENDO_02_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CarPoliceCruiserChevroletImpala1983BlockTileEntity>> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK = REGISTRY.register("car_police_cruiser_chevrolet_impala_1983_block",
+			() -> BlockEntityType.Builder.of(CarPoliceCruiserChevroletImpala1983BlockTileEntity::new, YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FuntimeDelilahBlockTileEntity>> FUNTIME_DELILAH_BLOCK = REGISTRY.register("funtime_delilah_block",
+			() -> BlockEntityType.Builder.of(FuntimeDelilahBlockTileEntity::new, YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FuntimeFreddyBlockTileEntity>> FUNTIME_FREDDY_BLOCK = REGISTRY.register("funtime_freddy_block",
+			() -> BlockEntityType.Builder.of(FuntimeFreddyBlockTileEntity::new, YaFnafmodModBlocks.FUNTIME_FREDDY_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CircusBabyBlockTileEntity>> CIRCUS_BABY_BLOCK = REGISTRY.register("circus_baby_block",
+			() -> BlockEntityType.Builder.of(CircusBabyBlockTileEntity::new, YaFnafmodModBlocks.CIRCUS_BABY_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BalloraBlockTileEntity>> BALLORA_BLOCK = REGISTRY.register("ballora_block", () -> BlockEntityType.Builder.of(BalloraBlockTileEntity::new, YaFnafmodModBlocks.BALLORA_BLOCK.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

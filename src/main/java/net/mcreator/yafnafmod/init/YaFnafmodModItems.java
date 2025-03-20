@@ -244,6 +244,7 @@ import net.mcreator.yafnafmod.item.FuntimeFreddyFrightsSpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeFreddyAltSpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeFoxySpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeFoxyAltSpawnItemItem;
+import net.mcreator.yafnafmod.item.FuntimeDelilahSpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeChicaSpawnItemItem;
 import net.mcreator.yafnafmod.item.FriesMoldyItem;
 import net.mcreator.yafnafmod.item.FriesItem;
@@ -311,7 +312,7 @@ import net.mcreator.yafnafmod.item.ChicaChickenFmsSpawnItemItem;
 import net.mcreator.yafnafmod.item.CheeseburgerItem;
 import net.mcreator.yafnafmod.item.CarStationWagonSpawnItemItem;
 import net.mcreator.yafnafmod.item.CarPurpleChevroletImpalaSpawnItemItem;
-import net.mcreator.yafnafmod.item.CarPoilceCruiserChevroletImpala1983ItemItem;
+import net.mcreator.yafnafmod.item.CarPoliceCruiserChevroletImpala1983SpawnItemItem;
 import net.mcreator.yafnafmod.item.CarHarleyMotorcycleSpawnItemItem;
 import net.mcreator.yafnafmod.item.CarFazvanSpawnItemItem;
 import net.mcreator.yafnafmod.item.CarDodgeRam1982SpawnItemItem;
@@ -376,6 +377,7 @@ import net.mcreator.yafnafmod.block.display.ShopSignDumpsterDiverDisplayItem;
 import net.mcreator.yafnafmod.block.display.SecurityPuppetPropDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScooperDisplayItem;
 import net.mcreator.yafnafmod.block.display.SanitationStationDisplayItem;
+import net.mcreator.yafnafmod.block.display.RustyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.RosieDisplayItem;
 import net.mcreator.yafnafmod.block.display.RockstarFreddyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.RockstarFoxyBlockDisplayItem;
@@ -461,6 +463,8 @@ import net.mcreator.yafnafmod.block.display.HappyFrogBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.GravityVortexDisplayItem;
 import net.mcreator.yafnafmod.block.display.GrandfatherClockDisplayItem;
 import net.mcreator.yafnafmod.block.display.GarfeldDisplayItem;
+import net.mcreator.yafnafmod.block.display.FuntimeFreddyBlockDisplayItem;
+import net.mcreator.yafnafmod.block.display.FuntimeDelilahBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.FryingPanDisplayItem;
 import net.mcreator.yafnafmod.block.display.FryerDisplayItem;
 import net.mcreator.yafnafmod.block.display.FridgeWhiteDisplayItem;
@@ -486,12 +490,18 @@ import net.mcreator.yafnafmod.block.display.Fazcoins10000DisplayItem;
 import net.mcreator.yafnafmod.block.display.FazOvenDisplayItem;
 import net.mcreator.yafnafmod.block.display.ExoticButterBasketDisplayItem;
 import net.mcreator.yafnafmod.block.display.EnhancedSpeakerDisplayItem;
+import net.mcreator.yafnafmod.block.display.Endo02BlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo01PropDisplayItem;
+import net.mcreator.yafnafmod.block.display.Endo01BlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.EmptyExoticButterBasketDisplayItem;
 import net.mcreator.yafnafmod.block.display.EggBabyDisplayItem;
 import net.mcreator.yafnafmod.block.display.DumpsterGreenDisplayItem;
 import net.mcreator.yafnafmod.block.display.DumpsterBlueDisplayItem;
 import net.mcreator.yafnafmod.block.display.DuckPondDisplayItem;
+import net.mcreator.yafnafmod.block.display.DittophobiaFreddyBlockDisplayItem;
+import net.mcreator.yafnafmod.block.display.DittophobiaFoxyBlockDisplayItem;
+import net.mcreator.yafnafmod.block.display.DittophobiaChicaBlockDisplayItem;
+import net.mcreator.yafnafmod.block.display.DittophobiaBonnieBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.DiscountCoolingUnitDisplayItem;
 import net.mcreator.yafnafmod.block.display.DiscountBallpitDisplayItem;
 import net.mcreator.yafnafmod.block.display.DeluxeSpeakerDisplayItem;
@@ -536,8 +546,8 @@ import net.mcreator.yafnafmod.block.display.ClockWallChicaDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClockWallBonnieDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClawMachinePizzaPartyDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClawMachineCupcakeBonanzaDisplayItem;
-import net.mcreator.yafnafmod.block.display.CircusControlTopDisplayItem;
 import net.mcreator.yafnafmod.block.display.CircusBabyClockDisplayItem;
+import net.mcreator.yafnafmod.block.display.CircusBabyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ChicaStandDisplayItem;
 import net.mcreator.yafnafmod.block.display.ChicaHeadDisplayItem;
 import net.mcreator.yafnafmod.block.display.ChicaChickenBlockDisplayItem;
@@ -549,7 +559,7 @@ import net.mcreator.yafnafmod.block.display.CarouselDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarnivalHoopsDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarStationWagonBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarPurpleChevroletImpalaBlockDisplayItem;
-import net.mcreator.yafnafmod.block.display.CarPoilceCruiserChevroletImpalaBlockDisplayItem;
+import net.mcreator.yafnafmod.block.display.CarPoliceCruiserChevroletImpala1983BlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarHarleyMotorcycleBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarFazvanPropDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarFazvanBlockDisplayItem;
@@ -591,6 +601,7 @@ import net.mcreator.yafnafmod.block.display.BigEntranceRedDoorWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntranceRedDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntranceDoorWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntranceDoorDisplayItem;
+import net.mcreator.yafnafmod.block.display.BigElevatorDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigClosetDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigBedroomDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigBackstageRedDoorWideDisplayItem;
@@ -602,6 +613,7 @@ import net.mcreator.yafnafmod.block.display.BarryPolarBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.BallpitVintageDisplayItem;
 import net.mcreator.yafnafmod.block.display.BallpitTowerDisplayItem;
 import net.mcreator.yafnafmod.block.display.BallpitRottenDisplayItem;
+import net.mcreator.yafnafmod.block.display.BalloraBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.BalloonCartDisplayItem;
 import net.mcreator.yafnafmod.block.display.BalloonBarrelDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeMidnightMotoristDisplayItem;
@@ -1372,7 +1384,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> FUNTIME_FOXY_SPAWN_EGG = REGISTRY.register("funtime_foxy_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_FOXY, -6860730, -4554884, new Item.Properties()));
 	public static final RegistryObject<Item> FUNTIME_FOXY_DAY_SPAWN_EGG = REGISTRY.register("funtime_foxy_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_FOXY_DAY, -6860730, -4554884, new Item.Properties()));
 	public static final RegistryObject<Item> BREAKER_CONTROL = REGISTRY.register(YaFnafmodModBlocks.BREAKER_CONTROL.getId().getPath(), () -> new BreakerControlDisplayItem(YaFnafmodModBlocks.BREAKER_CONTROL.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CIRCUS_CONTROL_TOP = REGISTRY.register(YaFnafmodModBlocks.CIRCUS_CONTROL_TOP.getId().getPath(), () -> new CircusControlTopDisplayItem(YaFnafmodModBlocks.CIRCUS_CONTROL_TOP.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LARGE_FAN = REGISTRY.register(YaFnafmodModBlocks.LARGE_FAN.getId().getPath(), () -> new LargeFanDisplayItem(YaFnafmodModBlocks.LARGE_FAN.get(), new Item.Properties()));
 	public static final RegistryObject<Item> FNAF_3_SONG_WATP = REGISTRY.register("fnaf_3_song_watp", () -> new FNAF3SongWatpItem());
 	public static final RegistryObject<Item> FNAF_4_SONG_SHADROW = REGISTRY.register("fnaf_4_song_shadrow", () -> new FNAF4SongShadrowItem());
@@ -3526,9 +3537,32 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> BBQ_BACON_BURGER = REGISTRY.register("bbq_bacon_burger", () -> new BbqBaconBurgerItem());
 	public static final RegistryObject<Item> BREAKER_PANEL = block(YaFnafmodModBlocks.BREAKER_PANEL);
 	public static final RegistryObject<Item> LARGE_SPEAKER = block(YaFnafmodModBlocks.LARGE_SPEAKER);
-	public static final RegistryObject<Item> CAR_POILCE_CRUISER_CHEVROLET_IMPALA_1983_ITEM = REGISTRY.register("car_poilce_cruiser_chevrolet_impala_1983_item", () -> new CarPoilceCruiserChevroletImpala1983ItemItem());
-	public static final RegistryObject<Item> CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.getId().getPath(),
-			() -> new CarPoilceCruiserChevroletImpalaBlockDisplayItem(YaFnafmodModBlocks.CAR_POILCE_CRUISER_CHEVROLET_IMPALA_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CIRCUS_CONTROL_PANEL = block(YaFnafmodModBlocks.CIRCUS_CONTROL_PANEL);
+	public static final RegistryObject<Item> BIG_ELEVATOR_DOOR = REGISTRY.register(YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.getId().getPath(), () -> new BigElevatorDoorDisplayItem(YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ELEVATOR_BUTTON = block(YaFnafmodModBlocks.ELEVATOR_BUTTON);
+	public static final RegistryObject<Item> FUNTIME_DELILAH_SPAWN_EGG = REGISTRY.register("funtime_delilah_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_DELILAH, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> FUNTIME_DELILAH_DAY_SPAWN_EGG = REGISTRY.register("funtime_delilah_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_DELILAH_DAY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> FUNTIME_DELILAH_SPAWN_ITEM = REGISTRY.register("funtime_delilah_spawn_item", () -> new FuntimeDelilahSpawnItemItem());
+	public static final RegistryObject<Item> DITTOPHOBIA_FREDDY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DITTOPHOBIA_FREDDY_BLOCK.getId().getPath(),
+			() -> new DittophobiaFreddyBlockDisplayItem(YaFnafmodModBlocks.DITTOPHOBIA_FREDDY_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DITTOPHOBIA_BONNIE_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DITTOPHOBIA_BONNIE_BLOCK.getId().getPath(),
+			() -> new DittophobiaBonnieBlockDisplayItem(YaFnafmodModBlocks.DITTOPHOBIA_BONNIE_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DITTOPHOBIA_CHICA_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DITTOPHOBIA_CHICA_BLOCK.getId().getPath(),
+			() -> new DittophobiaChicaBlockDisplayItem(YaFnafmodModBlocks.DITTOPHOBIA_CHICA_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DITTOPHOBIA_FOXY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DITTOPHOBIA_FOXY_BLOCK.getId().getPath(),
+			() -> new DittophobiaFoxyBlockDisplayItem(YaFnafmodModBlocks.DITTOPHOBIA_FOXY_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ENDO_01_BLOCK = REGISTRY.register(YaFnafmodModBlocks.ENDO_01_BLOCK.getId().getPath(), () -> new Endo01BlockDisplayItem(YaFnafmodModBlocks.ENDO_01_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> RUSTY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.RUSTY_BLOCK.getId().getPath(), () -> new RustyBlockDisplayItem(YaFnafmodModBlocks.RUSTY_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ENDO_02_BLOCK = REGISTRY.register(YaFnafmodModBlocks.ENDO_02_BLOCK.getId().getPath(), () -> new Endo02BlockDisplayItem(YaFnafmodModBlocks.ENDO_02_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.getId().getPath(),
+			() -> new CarPoliceCruiserChevroletImpala1983BlockDisplayItem(YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_SPAWN_ITEM = REGISTRY.register("car_police_cruiser_chevrolet_impala_1983_spawn_item", () -> new CarPoliceCruiserChevroletImpala1983SpawnItemItem());
+	public static final RegistryObject<Item> FUNTIME_DELILAH_BLOCK = REGISTRY.register(YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.getId().getPath(),
+			() -> new FuntimeDelilahBlockDisplayItem(YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> FUNTIME_FREDDY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.FUNTIME_FREDDY_BLOCK.getId().getPath(),
+			() -> new FuntimeFreddyBlockDisplayItem(YaFnafmodModBlocks.FUNTIME_FREDDY_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CIRCUS_BABY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CIRCUS_BABY_BLOCK.getId().getPath(), () -> new CircusBabyBlockDisplayItem(YaFnafmodModBlocks.CIRCUS_BABY_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BALLORA_BLOCK = REGISTRY.register(YaFnafmodModBlocks.BALLORA_BLOCK.getId().getPath(), () -> new BalloraBlockDisplayItem(YaFnafmodModBlocks.BALLORA_BLOCK.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/buttonelevator",
+  "textures": {
+    "all": "ya_fnafmod:block/buttonelevator_off",
+    "particle": "ya_fnafmod:block/buttonelevator_off",
+    "0": "ya_fnafmod:block/buttonelevator_off"
+  },
+  "render_type": "cutout_mipped"
+}

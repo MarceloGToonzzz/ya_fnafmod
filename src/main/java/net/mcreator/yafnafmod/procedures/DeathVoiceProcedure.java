@@ -26,13 +26,17 @@ import net.mcreator.yafnafmod.entity.NightmareEntity;
 import net.mcreator.yafnafmod.entity.MoltenFreddyEntity;
 import net.mcreator.yafnafmod.entity.MinireenaEntity;
 import net.mcreator.yafnafmod.entity.Minireena2Entity;
+import net.mcreator.yafnafmod.entity.IndigoEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
+import net.mcreator.yafnafmod.entity.FuntimeDelilahEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
 import net.mcreator.yafnafmod.entity.ElectrobabEntity;
+import net.mcreator.yafnafmod.entity.DrTeethEntity;
 import net.mcreator.yafnafmod.entity.BidybabEntity;
+import net.mcreator.yafnafmod.entity.BarryPolarEntity;
 import net.mcreator.yafnafmod.entity.BalloraEntity;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
@@ -80,11 +84,11 @@ public class DeathVoiceProcedure {
 				if (world instanceof Level)
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:jumpscare_fnaf4_nightmare")), SoundSource.HOSTILE, 1, 1);
 				delay = 52;
-			} else if (sourceentity instanceof FuntimeFreddyEntity) {
+			} else if (sourceentity instanceof FuntimeFreddyEntity || sourceentity instanceof BarryPolarEntity) {
 				if (world instanceof Level)
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:jumpscare_fnafsl_ffreddy")), SoundSource.HOSTILE, 1, 1);
 				delay = 54;
-			} else if (sourceentity instanceof FuntimeFoxyEntity) {
+			} else if (sourceentity instanceof FuntimeFoxyEntity || sourceentity instanceof IndigoEntity || sourceentity instanceof FuntimeDelilahEntity) {
 				if (world instanceof Level)
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:jumpscare_fnafsl_ffoxy")), SoundSource.HOSTILE, 1, 1);
 				delay = 86;
@@ -96,7 +100,7 @@ public class DeathVoiceProcedure {
 				if (world instanceof Level)
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:jumpscare_fnafsl_ballora")), SoundSource.HOSTILE, 1, 1);
 				delay = 46;
-			} else if (sourceentity instanceof MinireenaEntity || sourceentity instanceof Minireena2Entity || sourceentity instanceof BidybabEntity || sourceentity instanceof ElectrobabEntity) {
+			} else if (sourceentity instanceof MinireenaEntity || sourceentity instanceof Minireena2Entity || sourceentity instanceof BidybabEntity || sourceentity instanceof ElectrobabEntity || sourceentity instanceof DrTeethEntity) {
 				if (world instanceof Level)
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:jumpscare_fnafsl_mini")), SoundSource.HOSTILE, 1, 1);
 				delay = 60;

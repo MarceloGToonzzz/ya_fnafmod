@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "cutout_treepalm",
+    "itemTexture": "cutout_baby",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

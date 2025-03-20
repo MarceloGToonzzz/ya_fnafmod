@@ -143,7 +143,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "cutout_treeoak",
+        "texture": "cutout_treepalm",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "cutout_diag.geo.json",

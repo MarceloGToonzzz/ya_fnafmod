@@ -19,7 +19,7 @@ public class ChainLinkBlockBlock extends Block {
 
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 15;
+		return 4;
 	}
 
 	@Override

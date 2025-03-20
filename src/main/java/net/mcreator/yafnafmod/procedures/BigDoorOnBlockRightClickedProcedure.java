@@ -124,7 +124,7 @@ public class BigDoorOnBlockRightClickedProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-					if (!(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains("wide")) {
+					if (!(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains("wide") && !(blockstate.getBlock() == YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.get())) {
 						if ((new Object() {
 							public Direction getDirection(BlockState _bs) {
 								Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -236,8 +236,8 @@ public class BigDoorOnBlockRightClickedProcedure {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wooden_door.open")), SoundSource.NEUTRAL, 1, 1);
 				}
-			} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip60 ? blockstate.getValue(_getip60) : -1) == 1
-					|| (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip62 ? blockstate.getValue(_getip62) : -1) == 2) {
+			} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip62 ? blockstate.getValue(_getip62) : -1) == 1
+					|| (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip64 ? blockstate.getValue(_getip64) : -1) == 2) {
 				{
 					int _value = 0;
 					BlockPos _pos = BlockPos.containing(x, y, z);
@@ -358,7 +358,7 @@ public class BigDoorOnBlockRightClickedProcedure {
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wooden_door.close")), SoundSource.NEUTRAL, 1, 1);
 			}
 		} else {
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip98 ? blockstate.getValue(_getip98) : -1) == 0) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip100 ? blockstate.getValue(_getip100) : -1) == 0) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.KEY.get()) {
 					if ((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {

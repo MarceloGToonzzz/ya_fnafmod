@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "buttonelevator_off"
+      },
+      "name": "default"
+    },
+    "push": {
+      "map": {
+        "0": "buttonelevator_on"
+      },
+      "name": "push"
+    }
+  }
+}

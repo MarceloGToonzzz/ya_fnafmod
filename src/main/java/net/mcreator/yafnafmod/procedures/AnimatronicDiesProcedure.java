@@ -61,7 +61,7 @@ public class AnimatronicDiesProcedure {
 						"stopsound @a * ya_fnafmod:anim_ballora_crumblingdreams");
 		}
 		if (damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("ya_fnafmod:scooped")))) {
-			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:remnant_agony_havers")))) {
+			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:agony_remnant_havers")))) {
 				if (entity instanceof CircusBabyEntity || entity instanceof CircusBabyDayEntity) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = YaFnafmodModEntities.BLOB_CIRCUS_BABY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);

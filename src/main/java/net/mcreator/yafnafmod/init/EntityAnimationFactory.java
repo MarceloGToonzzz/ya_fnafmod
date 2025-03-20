@@ -121,6 +121,8 @@ import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.FuntimeDelilahEntity;
+import net.mcreator.yafnafmod.entity.FuntimeDelilahDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeChicaEntity;
 import net.mcreator.yafnafmod.entity.FuntimeChicaDayEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearEntity;
@@ -1348,6 +1350,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof CarPoliceCruiserChevroletImpala1983Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FuntimeDelilahEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FuntimeDelilahDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

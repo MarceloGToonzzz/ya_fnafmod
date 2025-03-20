@@ -77,37 +77,49 @@ public class FuntimeFreddyFunctionProcedure {
 				entity.getPersistentData().putDouble("attack_tick", 0);
 			}
 			if (entity.getPersistentData().getBoolean("refresh_skin") == false) {
-				if (!(entity.getPersistentData().getString("skin")).equals("frights") && !(entity.getPersistentData().getString("skin")).equals("novel")) {
-					if ((entity instanceof FuntimeFreddyEntity _datEntL35 && _datEntL35.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy");
-					} else {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy_bonless");
+				if (!(entity.getPersistentData().getString("style")).equals("fms")) {
+					if (!(entity.getPersistentData().getString("skin")).equals("frights") && !(entity.getPersistentData().getString("skin")).equals("novel")) {
+						if ((entity instanceof FuntimeFreddyEntity _datEntL36 && _datEntL36.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy");
+						} else {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_bonless");
+						}
+					} else if ((entity.getPersistentData().getString("skin")).equals("frights")) {
+						if ((entity instanceof FuntimeFreddyEntity _datEntL40 && _datEntL40.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_ctw");
+						} else {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_bonless_ctw");
+						}
+					} else if ((entity.getPersistentData().getString("skin")).equals("novel")) {
+						if ((entity instanceof FuntimeFreddyEntity _datEntL44 && _datEntL44.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_novel");
+						} else {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_bonless_novel");
+						}
+					} else if ((entity.getPersistentData().getString("skin")).equals("alt")) {
+						if ((entity instanceof FuntimeFreddyEntity _datEntL48 && _datEntL48.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_beta");
+						} else {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_bonless_beta");
+						}
 					}
-				} else if ((entity.getPersistentData().getString("skin")).equals("frights")) {
-					if ((entity instanceof FuntimeFreddyEntity _datEntL39 && _datEntL39.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy_ctw");
-					} else {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy_bonless_ctw");
-					}
-				} else if ((entity.getPersistentData().getString("skin")).equals("novel")) {
-					if ((entity instanceof FuntimeFreddyEntity _datEntL43 && _datEntL43.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy_novel");
-					} else {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy_bonless_novel");
-					}
-				} else if ((entity.getPersistentData().getString("skin")).equals("alt")) {
-					if ((entity instanceof FuntimeFreddyEntity _datEntL47 && _datEntL47.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy_beta");
-					} else {
-						if (entity instanceof FuntimeFreddyEntity animatable)
-							animatable.setTexture("ftfreddy_bonless_beta");
+				} else {
+					if (!(entity.getPersistentData().getString("skin")).equals("frights") && !(entity.getPersistentData().getString("skin")).equals("novel")) {
+						if ((entity instanceof FuntimeFreddyEntity _datEntL53 && _datEntL53.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_fms");
+						} else {
+							if (entity instanceof FuntimeFreddyEntity animatable)
+								animatable.setTexture("ftfreddy_fms_bonless");
+						}
 					}
 				}
 				entity.getPersistentData().putBoolean("refresh_skin", true);
@@ -122,7 +134,7 @@ public class FuntimeFreddyFunctionProcedure {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL55 && _datEntL55.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL61 && _datEntL61.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
 							entity.getPersistentData().putString("original", (entityiterator.getStringUUID()));
 							entity.getPersistentData().putString("original_skin", (entityiterator.getPersistentData().getString("skin")));
 							entity.getPersistentData().putString("skin", (entityiterator.getPersistentData().getString("skin")));
@@ -245,7 +257,7 @@ public class FuntimeFreddyFunctionProcedure {
 										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 											return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 										}
-									}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL93 && _datEntL93.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL99 && _datEntL99.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
 								if (entityiterator instanceof FuntimeFreddyEntity _datEntSetL)
 									_datEntSetL.getEntityData().set(FuntimeFreddyEntity.DATA_has_bonbon, true);
 								entityiterator.getPersistentData().putString("skin", (entity.getPersistentData().getString("original_skin")));

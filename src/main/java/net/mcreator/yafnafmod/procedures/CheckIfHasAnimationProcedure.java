@@ -10,7 +10,7 @@ public class CheckIfHasAnimationProcedure {
 	public static boolean execute(BlockState blockstate) {
 		boolean do_sound = false;
 		boolean result = false;
-		if (!(blockstate.getBlock() == YaFnafmodModBlocks.MANGLE_BLOCK.get()) && !(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains("withered")
+		if (!(blockstate.getBlock() == YaFnafmodModBlocks.ENDO_02_BLOCK.get()) && !(blockstate.getBlock() == YaFnafmodModBlocks.MANGLE_BLOCK.get()) && !(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains("withered")
 				&& !(ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString()).contains("broken_")) {
 			result = true;
 		} else {

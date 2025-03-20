@@ -16,6 +16,7 @@ import net.mcreator.yafnafmod.entity.NightmareEntity;
 import net.mcreator.yafnafmod.entity.NeddbearEntity;
 import net.mcreator.yafnafmod.entity.MrHippoEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
+import net.mcreator.yafnafmod.entity.FuntimeDelilahEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
@@ -63,6 +64,9 @@ public class DuckingProcedure {
 				if (entity instanceof NeddbearEntity) {
 					((NeddbearEntity) entity).setAnimation("animation.neddbear.walk_duck");
 				}
+				if (entity instanceof FuntimeDelilahEntity) {
+					((FuntimeDelilahEntity) entity).setAnimation("animation.model.walk_duck");
+				}
 				if (entity instanceof MrHippoEntity) {
 					((MrHippoEntity) entity).setAnimation("animation.hippo.walk_duck");
 				}
@@ -108,6 +112,9 @@ public class DuckingProcedure {
 				}
 				if (entity instanceof NeddbearEntity) {
 					((NeddbearEntity) entity).setAnimation("animation.neddbear.idle_duck");
+				}
+				if (entity instanceof FuntimeDelilahEntity) {
+					((FuntimeDelilahEntity) entity).setAnimation("animation.model.idle_duck");
 				}
 				if (entity instanceof MrHippoEntity) {
 					((MrHippoEntity) entity).setAnimation("animation.hippo.idle_duck");
@@ -155,6 +162,9 @@ public class DuckingProcedure {
 			}
 			if (entity instanceof NeddbearEntity) {
 				((NeddbearEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof FuntimeDelilahEntity) {
+				((FuntimeDelilahEntity) entity).setAnimation("empty");
 			}
 			if (entity instanceof MrHippoEntity) {
 				((MrHippoEntity) entity).setAnimation("empty");

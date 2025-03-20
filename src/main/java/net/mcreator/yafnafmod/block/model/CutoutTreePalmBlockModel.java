@@ -27,7 +27,7 @@ public class CutoutTreePalmBlockModel extends GeoModel<CutoutTreePalmTileEntity>
 	public ResourceLocation getTextureResource(CutoutTreePalmTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/cutout_treeoak.png");
+			return new ResourceLocation("ya_fnafmod", "textures/block/cutout_treepalm.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/cutout_treepalm.png");
 	}
 }

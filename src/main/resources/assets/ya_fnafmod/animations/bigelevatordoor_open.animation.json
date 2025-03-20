@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true,
+			"bones": {
+				"leftdoor": {
+					"position": {
+						"vector": [-16, 0, 0]
+					}
+				},
+				"rightdoor": {
+					"position": {
+						"vector": [16, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
