@@ -1,0 +1,8 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "particle": "ya_fnafmod:block/buttonnostalgic_dooroff",
+    "texture": "ya_fnafmod:block/buttonnostalgic_dooroff"
+  },
+  "render_type": "cutout_mipped"
+}

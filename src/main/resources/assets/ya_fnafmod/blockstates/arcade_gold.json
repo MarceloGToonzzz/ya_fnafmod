@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/arcade_gold"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/arcade_gold",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/arcade_gold",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/arcade_gold",
+      "y": 270
+    }
+  }
+}

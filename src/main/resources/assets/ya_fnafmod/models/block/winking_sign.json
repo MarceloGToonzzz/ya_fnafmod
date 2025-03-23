@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/winking_sign",
+  "textures": {
+    "all": "ya_fnafmod:block/winking_sign",
+    "particle": "ya_fnafmod:block/winking_sign",
+    "1": "ya_fnafmod:block/winking_sign"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade7",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade7_yellow",
+    "particle": "ya_fnafmod:block/arcade7_yellow",
+    "8": "ya_fnafmod:block/arcade7_yellow"
+  },
+  "render_type": "cutout"
+}

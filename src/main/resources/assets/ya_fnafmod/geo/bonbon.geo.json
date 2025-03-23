@@ -4,8 +4,8 @@
 		{
 			"description": {
 				"identifier": "geometry.unknown",
-				"texture_width": 64,
-				"texture_height": 64,
+				"texture_width": 128,
+				"texture_height": 128,
 				"visible_bounds_width": 2,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
@@ -67,6 +67,64 @@
 					"name": "tail",
 					"parent": "bonbon",
 					"pivot": [0, -1.25, 1]
+				},
+				{
+					"name": "fms",
+					"pivot": [0, 0.5, 0],
+					"cubes": [
+						{"origin": [-4, -3, -2], "size": [8, 12, 4], "uv": [0, 65]},
+						{"origin": [-4, -3, -2], "size": [8, 12, 4], "inflate": 0.25, "uv": [32, 33]}
+					]
+				},
+				{
+					"name": "Head4",
+					"parent": "fms",
+					"pivot": [0.5, 9, 0],
+					"cubes": [
+						{"origin": [-4.0364, 8.92685, -4], "size": [8, 8, 8], "uv": [0, 33]},
+						{"origin": [-4.0364, 8.92685, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [0, 49]}
+					]
+				},
+				{
+					"name": "ears",
+					"parent": "Head4",
+					"pivot": [0, 17, 0.5],
+					"cubes": [
+						{"origin": [0.7136, 16.52685, 0], "size": [3, 5, 1], "uv": [38, 65]},
+						{"origin": [-3.7864, 16.52685, 0], "size": [3, 5, 1], "uv": [38, 71]}
+					]
+				},
+				{
+					"name": "bone8",
+					"parent": "ears",
+					"pivot": [-3.25, 24.9, 2.025],
+					"cubes": [
+						{"origin": [-3.92889, 21.90747, -1], "size": [3, 4, 1], "pivot": [-3.25, 23.9, 2.025], "rotation": [22.42287, 1.91134, -4.62111], "uv": [38, 77]}
+					]
+				},
+				{
+					"name": "bone9",
+					"parent": "ears",
+					"pivot": [1.25, 24.9, 1.525],
+					"cubes": [
+						{"origin": [0.80936, 22.96856, -1.5], "size": [3, 4, 1], "pivot": [1.25, 23.9, 1.525], "rotation": [44.75386, -5.29571, 5.31847], "uv": [46, 49]}
+					]
+				},
+				{
+					"name": "RightArm2",
+					"parent": "fms",
+					"pivot": [-3.5, 8.5, 0],
+					"cubes": [
+						{"origin": [-6.30404, -2.89662, -1.98392], "size": [3, 12, 4], "uv": [32, 49]}
+					]
+				},
+				{
+					"name": "LeftArm2",
+					"parent": "fms",
+					"pivot": [4, 7.5, 0],
+					"cubes": [
+						{"origin": [3.32955, -2.87568, -1.9839], "size": [3, 12, 4], "uv": [24, 65]}
+					]
 				}
 			]
 		}

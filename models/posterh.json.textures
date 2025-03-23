@@ -5,6 +5,12 @@
         "0": "poster_prizecorner"
       },
       "name": "default"
+    },
+    "classic": {
+      "map": {
+        "0": "poster_prizecornerclassic"
+      },
+      "name": "classic"
     }
   }
 }

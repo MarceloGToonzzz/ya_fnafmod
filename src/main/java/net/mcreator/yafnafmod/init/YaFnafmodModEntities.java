@@ -17,11 +17,15 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.yafnafmod.entity.YenndoEntity;
+import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
+import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.WitheredDougDogEntity;
+import net.mcreator.yafnafmod.entity.WitheredDougDogDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
@@ -68,13 +72,19 @@ import net.mcreator.yafnafmod.entity.RetroChicaEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.RatEntity;
+import net.mcreator.yafnafmod.entity.RaccoonEntity;
 import net.mcreator.yafnafmod.entity.PurpleGuyEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
+import net.mcreator.yafnafmod.entity.PossumEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PigpatchEntity;
 import net.mcreator.yafnafmod.entity.PigpatchDayEntity;
+import net.mcreator.yafnafmod.entity.PidgeonEntity;
 import net.mcreator.yafnafmod.entity.PhantomPuppetEntity;
 import net.mcreator.yafnafmod.entity.PhantomMangleEntity;
 import net.mcreator.yafnafmod.entity.PhantomFreddyEntity;
@@ -101,6 +111,7 @@ import net.mcreator.yafnafmod.entity.NightmareBbEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbDayEntity;
 import net.mcreator.yafnafmod.entity.NeddbearEntity;
 import net.mcreator.yafnafmod.entity.NeddBearDayEntity;
+import net.mcreator.yafnafmod.entity.MysteriousGiantScuttlerEntity;
 import net.mcreator.yafnafmod.entity.MusicManEntity;
 import net.mcreator.yafnafmod.entity.MusicManDayEntity;
 import net.mcreator.yafnafmod.entity.MrHugsEntity;
@@ -117,17 +128,26 @@ import net.mcreator.yafnafmod.entity.Minireena2DayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
+import net.mcreator.yafnafmod.entity.Lolbit409Entity;
+import net.mcreator.yafnafmod.entity.Lolbit409DayEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
+import net.mcreator.yafnafmod.entity.JollyRatEntity;
+import net.mcreator.yafnafmod.entity.JollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.JjDayEntity;
 import net.mcreator.yafnafmod.entity.JackOChicaEntity;
 import net.mcreator.yafnafmod.entity.JackOBonnieEntity;
 import net.mcreator.yafnafmod.entity.JJEntity;
 import net.mcreator.yafnafmod.entity.IndigoEntity;
 import net.mcreator.yafnafmod.entity.IndigoDayEntity;
+import net.mcreator.yafnafmod.entity.IgnitedChicaEntity;
+import net.mcreator.yafnafmod.entity.IgnitedChicaDayEntity;
 import net.mcreator.yafnafmod.entity.HelpyEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugEntity;
+import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.GhostChildEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
@@ -157,6 +177,9 @@ import net.mcreator.yafnafmod.entity.ElChipEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
 import net.mcreator.yafnafmod.entity.DrTeethEntity;
 import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
+import net.mcreator.yafnafmod.entity.DougDogEntity;
+import net.mcreator.yafnafmod.entity.DougDogDayEntity;
+import net.mcreator.yafnafmod.entity.CrowEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
 import net.mcreator.yafnafmod.entity.ChildEntity;
@@ -188,6 +211,8 @@ import net.mcreator.yafnafmod.entity.BalloraEntity;
 import net.mcreator.yafnafmod.entity.BalloraDayEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
+import net.mcreator.yafnafmod.entity.BaggieMaggieEntity;
+import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -885,6 +910,107 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<FuntimeDelilahDayEntity>of(FuntimeDelilahDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(FuntimeDelilahDayEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RaccoonEntity>> RACCOON = register("raccoon",
+			EntityType.Builder.<RaccoonEntity>of(RaccoonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RaccoonEntity::new)
+
+					.sized(0.6f, 0.6875f));
+	public static final RegistryObject<EntityType<GusThePugEntity>> GUS_THE_PUG = register("gus_the_pug",
+			EntityType.Builder.<GusThePugEntity>of(GusThePugEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(GusThePugEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GusThePugDayEntity>> GUS_THE_PUG_DAY = register("gus_the_pug_day",
+			EntityType.Builder.<GusThePugDayEntity>of(GusThePugDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(GusThePugDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GusThePugStillDayEntity>> GUS_THE_PUG_STILL_DAY = register("gus_the_pug_still_day",
+			EntityType.Builder.<GusThePugStillDayEntity>of(GusThePugStillDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(GusThePugStillDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DougDogEntity>> DOUG_DOG = register("doug_dog",
+			EntityType.Builder.<DougDogEntity>of(DougDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(DougDogEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DougDogDayEntity>> DOUG_DOG_DAY = register("doug_dog_day",
+			EntityType.Builder.<DougDogDayEntity>of(DougDogDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(DougDogDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JollyRatEntity>> JOLLY_RAT = register("jolly_rat",
+			EntityType.Builder.<JollyRatEntity>of(JollyRatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(JollyRatEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JollyRatDayEntity>> JOLLY_RAT_DAY = register("jolly_rat_day",
+			EntityType.Builder.<JollyRatDayEntity>of(JollyRatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(JollyRatDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WitheredJollyRatEntity>> WITHERED_JOLLY_RAT = register("withered_jolly_rat",
+			EntityType.Builder.<WitheredJollyRatEntity>of(WitheredJollyRatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredJollyRatEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WitheredJollyRatDayEntity>> WITHERED_JOLLY_RAT_DAY = register("withered_jolly_rat_day",
+			EntityType.Builder.<WitheredJollyRatDayEntity>of(WitheredJollyRatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredJollyRatDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WitheredDougDogEntity>> WITHERED_DOUG_DOG = register("withered_doug_dog",
+			EntityType.Builder.<WitheredDougDogEntity>of(WitheredDougDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredDougDogEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WitheredDougDogDayEntity>> WITHERED_DOUG_DOG_DAY = register("withered_doug_dog_day",
+			EntityType.Builder.<WitheredDougDogDayEntity>of(WitheredDougDogDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredDougDogDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<IgnitedChicaEntity>> IGNITED_CHICA = register("ignited_chica",
+			EntityType.Builder.<IgnitedChicaEntity>of(IgnitedChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(IgnitedChicaEntity::new)
+
+					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<IgnitedChicaDayEntity>> IGNITED_CHICA_DAY = register("ignited_chica_day",
+			EntityType.Builder.<IgnitedChicaDayEntity>of(IgnitedChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(IgnitedChicaDayEntity::new)
+
+					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<BaggieMaggieEntity>> BAGGIE_MAGGIE = register("baggie_maggie",
+			EntityType.Builder.<BaggieMaggieEntity>of(BaggieMaggieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BaggieMaggieEntity::new)
+
+					.sized(0.6f, 0.875f));
+	public static final RegistryObject<EntityType<BaggieMaggieDayEntity>> BAGGIE_MAGGIE_DAY = register("baggie_maggie_day",
+			EntityType.Builder.<BaggieMaggieDayEntity>of(BaggieMaggieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BaggieMaggieDayEntity::new)
+
+					.sized(0.6f, 0.875f));
+	public static final RegistryObject<EntityType<PidgeonEntity>> PIDGEON = register("pidgeon",
+			EntityType.Builder.<PidgeonEntity>of(PidgeonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PidgeonEntity::new)
+
+					.sized(0.6f, 0.675f));
+	public static final RegistryObject<EntityType<CrowEntity>> CROW = register("crow",
+			EntityType.Builder.<CrowEntity>of(CrowEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrowEntity::new)
+
+					.sized(0.6f, 0.675f));
+	public static final RegistryObject<EntityType<PossumEntity>> POSSUM = register("possum",
+			EntityType.Builder.<PossumEntity>of(PossumEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PossumEntity::new)
+
+					.sized(0.6f, 0.6875f));
+	public static final RegistryObject<EntityType<PitbonnieEntity>> PITBONNIE = register("pitbonnie",
+			EntityType.Builder.<PitbonnieEntity>of(PitbonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PitbonnieEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PitbonnieDayEntity>> PITBONNIE_DAY = register("pitbonnie_day",
+			EntityType.Builder.<PitbonnieDayEntity>of(PitbonnieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PitbonnieDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<Lolbit409Entity>> LOLBIT_409 = register("lolbit_409",
+			EntityType.Builder.<Lolbit409Entity>of(Lolbit409Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(Lolbit409Entity::new)
+
+					.sized(0.6f, 1.4375f));
+	public static final RegistryObject<EntityType<Lolbit409DayEntity>> LOLBIT_409_DAY = register("lolbit_409_day",
+			EntityType.Builder.<Lolbit409DayEntity>of(Lolbit409DayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(Lolbit409DayEntity::new)
+
+					.sized(0.6f, 1.4375f));
+	public static final RegistryObject<EntityType<RatEntity>> RAT = register("rat",
+			EntityType.Builder.<RatEntity>of(RatEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RatEntity::new)
+
+					.sized(0.45f, 0.45f));
+	public static final RegistryObject<EntityType<MysteriousGiantScuttlerEntity>> MYSTERIOUS_GIANT_SCUTTLER = register("mysterious_giant_scuttler",
+			EntityType.Builder.<MysteriousGiantScuttlerEntity>of(MysteriousGiantScuttlerEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(MysteriousGiantScuttlerEntity::new)
+
+					.sized(0.6f, 0.25f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1065,6 +1191,31 @@ public class YaFnafmodModEntities {
 			CarPoliceCruiserChevroletImpala1983Entity.init();
 			FuntimeDelilahEntity.init();
 			FuntimeDelilahDayEntity.init();
+			RaccoonEntity.init();
+			GusThePugEntity.init();
+			GusThePugDayEntity.init();
+			GusThePugStillDayEntity.init();
+			DougDogEntity.init();
+			DougDogDayEntity.init();
+			JollyRatEntity.init();
+			JollyRatDayEntity.init();
+			WitheredJollyRatEntity.init();
+			WitheredJollyRatDayEntity.init();
+			WitheredDougDogEntity.init();
+			WitheredDougDogDayEntity.init();
+			IgnitedChicaEntity.init();
+			IgnitedChicaDayEntity.init();
+			BaggieMaggieEntity.init();
+			BaggieMaggieDayEntity.init();
+			PidgeonEntity.init();
+			CrowEntity.init();
+			PossumEntity.init();
+			PitbonnieEntity.init();
+			PitbonnieDayEntity.init();
+			Lolbit409Entity.init();
+			Lolbit409DayEntity.init();
+			RatEntity.init();
+			MysteriousGiantScuttlerEntity.init();
 		});
 	}
 
@@ -1242,5 +1393,30 @@ public class YaFnafmodModEntities {
 		event.put(CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983.get(), CarPoliceCruiserChevroletImpala1983Entity.createAttributes().build());
 		event.put(FUNTIME_DELILAH.get(), FuntimeDelilahEntity.createAttributes().build());
 		event.put(FUNTIME_DELILAH_DAY.get(), FuntimeDelilahDayEntity.createAttributes().build());
+		event.put(RACCOON.get(), RaccoonEntity.createAttributes().build());
+		event.put(GUS_THE_PUG.get(), GusThePugEntity.createAttributes().build());
+		event.put(GUS_THE_PUG_DAY.get(), GusThePugDayEntity.createAttributes().build());
+		event.put(GUS_THE_PUG_STILL_DAY.get(), GusThePugStillDayEntity.createAttributes().build());
+		event.put(DOUG_DOG.get(), DougDogEntity.createAttributes().build());
+		event.put(DOUG_DOG_DAY.get(), DougDogDayEntity.createAttributes().build());
+		event.put(JOLLY_RAT.get(), JollyRatEntity.createAttributes().build());
+		event.put(JOLLY_RAT_DAY.get(), JollyRatDayEntity.createAttributes().build());
+		event.put(WITHERED_JOLLY_RAT.get(), WitheredJollyRatEntity.createAttributes().build());
+		event.put(WITHERED_JOLLY_RAT_DAY.get(), WitheredJollyRatDayEntity.createAttributes().build());
+		event.put(WITHERED_DOUG_DOG.get(), WitheredDougDogEntity.createAttributes().build());
+		event.put(WITHERED_DOUG_DOG_DAY.get(), WitheredDougDogDayEntity.createAttributes().build());
+		event.put(IGNITED_CHICA.get(), IgnitedChicaEntity.createAttributes().build());
+		event.put(IGNITED_CHICA_DAY.get(), IgnitedChicaDayEntity.createAttributes().build());
+		event.put(BAGGIE_MAGGIE.get(), BaggieMaggieEntity.createAttributes().build());
+		event.put(BAGGIE_MAGGIE_DAY.get(), BaggieMaggieDayEntity.createAttributes().build());
+		event.put(PIDGEON.get(), PidgeonEntity.createAttributes().build());
+		event.put(CROW.get(), CrowEntity.createAttributes().build());
+		event.put(POSSUM.get(), PossumEntity.createAttributes().build());
+		event.put(PITBONNIE.get(), PitbonnieEntity.createAttributes().build());
+		event.put(PITBONNIE_DAY.get(), PitbonnieDayEntity.createAttributes().build());
+		event.put(LOLBIT_409.get(), Lolbit409Entity.createAttributes().build());
+		event.put(LOLBIT_409_DAY.get(), Lolbit409DayEntity.createAttributes().build());
+		event.put(RAT.get(), RatEntity.createAttributes().build());
+		event.put(MYSTERIOUS_GIANT_SCUTTLER.get(), MysteriousGiantScuttlerEntity.createAttributes().build());
 	}
 }

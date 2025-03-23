@@ -5,11 +5,15 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.yafnafmod.entity.YenndoEntity;
+import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
+import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.WitheredDougDogEntity;
+import net.mcreator.yafnafmod.entity.WitheredDougDogDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
@@ -55,13 +59,19 @@ import net.mcreator.yafnafmod.entity.RetroChicaEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.RatEntity;
+import net.mcreator.yafnafmod.entity.RaccoonEntity;
 import net.mcreator.yafnafmod.entity.PurpleGuyEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
+import net.mcreator.yafnafmod.entity.PossumEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PigpatchEntity;
 import net.mcreator.yafnafmod.entity.PigpatchDayEntity;
+import net.mcreator.yafnafmod.entity.PidgeonEntity;
 import net.mcreator.yafnafmod.entity.PhantomPuppetEntity;
 import net.mcreator.yafnafmod.entity.PhantomMangleEntity;
 import net.mcreator.yafnafmod.entity.PhantomFreddyEntity;
@@ -88,6 +98,7 @@ import net.mcreator.yafnafmod.entity.NightmareBbEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbDayEntity;
 import net.mcreator.yafnafmod.entity.NeddbearEntity;
 import net.mcreator.yafnafmod.entity.NeddBearDayEntity;
+import net.mcreator.yafnafmod.entity.MysteriousGiantScuttlerEntity;
 import net.mcreator.yafnafmod.entity.MusicManEntity;
 import net.mcreator.yafnafmod.entity.MusicManDayEntity;
 import net.mcreator.yafnafmod.entity.MrHugsEntity;
@@ -104,17 +115,26 @@ import net.mcreator.yafnafmod.entity.Minireena2DayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
+import net.mcreator.yafnafmod.entity.Lolbit409Entity;
+import net.mcreator.yafnafmod.entity.Lolbit409DayEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
+import net.mcreator.yafnafmod.entity.JollyRatEntity;
+import net.mcreator.yafnafmod.entity.JollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.JjDayEntity;
 import net.mcreator.yafnafmod.entity.JackOChicaEntity;
 import net.mcreator.yafnafmod.entity.JackOBonnieEntity;
 import net.mcreator.yafnafmod.entity.JJEntity;
 import net.mcreator.yafnafmod.entity.IndigoEntity;
 import net.mcreator.yafnafmod.entity.IndigoDayEntity;
+import net.mcreator.yafnafmod.entity.IgnitedChicaEntity;
+import net.mcreator.yafnafmod.entity.IgnitedChicaDayEntity;
 import net.mcreator.yafnafmod.entity.HelpyEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugEntity;
+import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.GhostChildEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
@@ -144,6 +164,9 @@ import net.mcreator.yafnafmod.entity.ElChipEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
 import net.mcreator.yafnafmod.entity.DrTeethEntity;
 import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
+import net.mcreator.yafnafmod.entity.DougDogEntity;
+import net.mcreator.yafnafmod.entity.DougDogDayEntity;
+import net.mcreator.yafnafmod.entity.CrowEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
 import net.mcreator.yafnafmod.entity.ChildEntity;
@@ -174,6 +197,8 @@ import net.mcreator.yafnafmod.entity.BalloraEntity;
 import net.mcreator.yafnafmod.entity.BalloraDayEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
+import net.mcreator.yafnafmod.entity.BaggieMaggieEntity;
+import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -1364,6 +1389,181 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof FuntimeDelilahDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RaccoonEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GusThePugEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GusThePugDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GusThePugStillDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DougDogEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DougDogDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof JollyRatEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof JollyRatDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof WitheredJollyRatEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof WitheredJollyRatDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof WitheredDougDogEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof WitheredDougDogDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof IgnitedChicaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof IgnitedChicaDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BaggieMaggieEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BaggieMaggieDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PidgeonEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CrowEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PossumEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PitbonnieEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PitbonnieDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof Lolbit409Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof Lolbit409DayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RatEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MysteriousGiantScuttlerEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

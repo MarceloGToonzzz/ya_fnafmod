@@ -1,0 +1,19 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "mangrove_swamp",
+    "swamp",
+    "river",
+    "birch_forest",
+    "dark_forest",
+    "flower_forest",
+    "forest",
+    "old_growth_birch_forest"
+  ],
+  "spawners": {
+    "type": "ya_fnafmod:rat",
+    "weight": 20,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

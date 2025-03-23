@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_top_right",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_blackbackstage_bottom",
+    "bottom": "ya_fnafmod:block/door_blackbackstage_bottom",
+    "top": "ya_fnafmod:block/door_blackbackstage_top2"
+  },
+  "render_type": "solid"
+}

@@ -1342,5 +1342,244 @@
         "stream": true
       }
     ]
+  },
+  "anima_pitbonnie_scream": {
+    "subtitle": "subtitles.anima_pitbonnie_scream",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_pitbonnie_scream2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_pitbonnie_scream1",
+        "stream": false
+      }
+    ]
+  },
+  "anima_lefty_voice": {
+    "subtitle": "subtitles.anima_lefty_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_lefty_voice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_lefty_voice1",
+        "stream": false
+      }
+    ]
+  },
+  "anima_lefty_voice_hostile": {
+    "subtitle": "subtitles.anima_lefty_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_lefty_voice1_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_lefty_voice2_hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anima_lefty_killvoice": {
+    "subtitle": "subtitles.anima_lefty_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_lefty_killvoice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_rockbonnie_voice": {
+    "subtitle": "subtitles.anim_rockbonnie_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_rockbonnie_voice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_rockbonnie_voice_hostile": {
+    "subtitle": "subtitles.anim_rockbonnie_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_rockbonnie_voice2_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_rockbonnie_voice1_hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anim_rockbonnie_killvoice": {
+    "subtitle": "subtitles.anim_rockbonnie_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_rockbonnie_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_rockbonnie_killvoice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_neddbear_voice_hostile": {
+    "subtitle": "subtitles.anim_neddbear_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_neddbear_voice2_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_neddbear_voice1_hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anim_neddbear_voice": {
+    "subtitle": "subtitles.anim_neddbear_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_neddbear_voice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_neddbear_killvoice": {
+    "subtitle": "subtitles.anim_neddbear_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_neddbear_killvoice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_ftdelilah_voice": {
+    "subtitle": "subtitles.anim_ftdelilah_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_ftdelilah_voice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_ftdelilah_voice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_ftdelilah_voice_hostile": {
+    "subtitle": "subtitles.anim_ftdelilah_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_ftdelilah_voice2_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_ftdelilah_voice1_hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anim_ftdelilah_killvoice": {
+    "subtitle": "subtitles.anim_ftdelilah_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_ftdelilah_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_ftdelilah_killvoice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_bpolar_voice": {
+    "subtitle": "subtitles.anim_bpolar_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_bpolar_voice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_bpolar_voice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_bpolar_voice_hostile": {
+    "subtitle": "subtitles.anim_bpolar_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_bpolar_voice1_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_bpolar_voice2_hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anim_guspug_voice": {
+    "subtitle": "subtitles.anim_guspug_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_guspug_voice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_guspug_voice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_guspug_voice_hostile": {
+    "subtitle": "subtitles.anim_guspug_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_guspug_voice3_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_guspug_voice2_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_guspug_voice1_hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anim_bpolar_killvoice": {
+    "subtitle": "subtitles.anim_bpolar_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_bpolar_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_bpolar_killvoice1",
+        "stream": false
+      }
+    ]
+  },
+  "anim_guspug_killvoice": {
+    "subtitle": "subtitles.anim_guspug_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_guspug_killvoice3",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_guspug_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_guspug_killvoice1",
+        "stream": false
+      }
+    ]
   }
 }

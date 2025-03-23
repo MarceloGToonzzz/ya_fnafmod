@@ -14,10 +14,13 @@ import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.NightmareFredbearEntity;
 import net.mcreator.yafnafmod.entity.NightmareEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbDayEntity;
+import net.mcreator.yafnafmod.entity.LolbitEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
@@ -96,6 +99,12 @@ public class SettingSkinProcedure {
 					animatable.setTexture("sparky_hoax");
 				if (entity instanceof SparkyDogDayEntity animatable)
 					animatable.setTexture("sparky_hoax");
+				if (entity instanceof PitbonnieEntity animatable)
+					animatable.setTexture("pitbonnie_novel");
+				if (entity instanceof PitbonnieDayEntity animatable)
+					animatable.setTexture("pitbonnie_novel");
+				if (entity instanceof LolbitEntity animatable)
+					animatable.setTexture("lolbit_racer");
 			} else if ((skin).equals("fixed")) {
 				if (entity instanceof FoxyPirateEntity animatable)
 					animatable.setTexture("foxy_pirate_fixed");
@@ -117,7 +126,7 @@ public class SettingSkinProcedure {
 				if (entity instanceof SpringbonnieDayEntity animatable)
 					animatable.setTexture("springbonnie_poster");
 			} else if ((skin).equals("novel")) {
-				if ((entity instanceof FuntimeFreddyEntity _datEntL35 && _datEntL35.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if ((entity instanceof FuntimeFreddyEntity _datEntL38 && _datEntL38.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
 					if (entity instanceof FuntimeFreddyEntity animatable)
 						animatable.setTexture("ftfreddy_novel");
 				} else {
@@ -129,7 +138,7 @@ public class SettingSkinProcedure {
 				if (entity instanceof BonbonEntity animatable)
 					animatable.setTexture("bonbon_novel");
 			} else if ((skin).equals("frights")) {
-				if ((entity instanceof FuntimeFreddyEntity _datEntL40 && _datEntL40.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if ((entity instanceof FuntimeFreddyEntity _datEntL43 && _datEntL43.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
 					if (entity instanceof FuntimeFreddyEntity animatable)
 						animatable.setTexture("ftfreddy_ctw");
 				} else {

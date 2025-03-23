@@ -7,8 +7,8 @@
 				"texture_width": 256,
 				"texture_height": 256,
 				"visible_bounds_width": 5,
-				"visible_bounds_height": 4.5,
-				"visible_bounds_offset": [0, 1.75, 0]
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
 			},
 			"bones": [
 				{
@@ -152,7 +152,7 @@
 					]
 				},
 				{
-					"name": "Right Arm",
+					"name": "RightArm2",
 					"parent": "Body",
 					"pivot": [-5, 22, 0],
 					"cubes": [
@@ -164,7 +164,7 @@
 				},
 				{
 					"name": "Claw2",
-					"parent": "Right Arm",
+					"parent": "RightArm2",
 					"pivot": [-5.5, 12.08333, 0.16667],
 					"cubes": [
 						{"origin": [-7, 9, -1.5], "size": [3, 3, 3], "uv": [62, 170]},
@@ -183,7 +183,7 @@
 					]
 				},
 				{
-					"name": "Left Arm",
+					"name": "LeftArm2",
 					"parent": "Body",
 					"pivot": [5, 22, 0],
 					"cubes": [
@@ -192,7 +192,7 @@
 					]
 				},
 				{
-					"name": "Left Leg",
+					"name": "LeftLeg2",
 					"parent": "fms",
 					"pivot": [1.9, 12, 0],
 					"cubes": [
@@ -201,7 +201,7 @@
 					]
 				},
 				{
-					"name": "Right Leg",
+					"name": "RightLeg2",
 					"parent": "fms",
 					"pivot": [-1.9, 12, 0],
 					"cubes": [

@@ -16,8 +16,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 
-import net.mcreator.yafnafmod.network.YaFnafmodModVariables;
-
 import java.util.Comparator;
 
 public class TeleportProcedure {
@@ -30,7 +28,8 @@ public class TeleportProcedure {
 		double triestillfailure = 0;
 		double Ycord = 0;
 		double Zcord = 0;
-		if (YaFnafmodModVariables.MapVariables.get(world).rare_night == true) {
+		Entity fagas = null;
+		if (!(entity instanceof Mob _mob ? _mob.isNoAi() : false)) {
 			triestillfailure = 100;
 			found = false;
 			while (!(triestillfailure <= 0) || !found) {
@@ -82,8 +81,8 @@ public class TeleportProcedure {
 										((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ())));
 					}
 				} else {
-					if (!(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(Xcord, Ycord, Zcord), 16, 16, 16), e -> true).isEmpty()
-							|| !world.getEntitiesOfClass(Villager.class, AABB.ofSize(new Vec3(Xcord, Ycord, Zcord), 16, 16, 16), e -> true).isEmpty())) {
+					if (!(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(Xcord, Ycord, Zcord), 32, 32, 32), e -> true).isEmpty()
+							|| !world.getEntitiesOfClass(Villager.class, AABB.ofSize(new Vec3(Xcord, Ycord, Zcord), 32, 32, 32), e -> true).isEmpty())) {
 						restart = true;
 						if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(Xcord, Ycord, Zcord), 8, 8, 8), e -> true).isEmpty()) {
 							entity.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 8, 8, 8), e -> true).stream().sorted(new Object() {
@@ -133,8 +132,27 @@ public class TeleportProcedure {
 				if (restart) {
 					continue;
 				}
-				if (world.canSeeSkyFromBelowWater(BlockPos.containing(Xcord, Ycord, Zcord))) {
-					restart = true;
+				if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
+					if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(Xcord, Ycord, Zcord), 32, 32, 32), e -> true).isEmpty()) {
+						fagas = (Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null);
+					} else if (!world.getEntitiesOfClass(Villager.class, AABB.ofSize(new Vec3(Xcord, Ycord, Zcord), 32, 32, 32), e -> true).isEmpty()) {
+						fagas = (Entity) world.getEntitiesOfClass(Villager.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null);
+					}
+					if (fagas instanceof LivingEntity) {
+						if (!world.canSeeSkyFromBelowWater(BlockPos.containing(fagas.getX(), fagas.getY(), fagas.getZ()))) {
+							restart = true;
+						}
+					} else {
+						restart = true;
+					}
 				}
 				if (restart) {
 					continue;

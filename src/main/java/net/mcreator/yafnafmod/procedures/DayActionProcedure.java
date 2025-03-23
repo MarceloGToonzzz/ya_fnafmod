@@ -20,7 +20,6 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.yafnafmod.network.YaFnafmodModVariables;
-import net.mcreator.yafnafmod.entity.YenndoEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
@@ -30,6 +29,14 @@ import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
+import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
+import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
+import net.mcreator.yafnafmod.entity.RockstarFoxyEntity;
+import net.mcreator.yafnafmod.entity.RockstarFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.RockstarChicaEntity;
+import net.mcreator.yafnafmod.entity.RockstarChicaDayEntity;
+import net.mcreator.yafnafmod.entity.RockstarBonnieEntity;
+import net.mcreator.yafnafmod.entity.RockstarBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
@@ -46,8 +53,6 @@ import net.mcreator.yafnafmod.entity.OrvilleElephantEntity;
 import net.mcreator.yafnafmod.entity.OrvilleElephantDayEntity;
 import net.mcreator.yafnafmod.entity.NumberOneCrateEntity;
 import net.mcreator.yafnafmod.entity.NumberOneCrateDayEntity;
-import net.mcreator.yafnafmod.entity.NightmarionneEntity;
-import net.mcreator.yafnafmod.entity.NightmareBbEntity;
 import net.mcreator.yafnafmod.entity.NeddbearEntity;
 import net.mcreator.yafnafmod.entity.NeddBearDayEntity;
 import net.mcreator.yafnafmod.entity.MrHugsEntity;
@@ -56,14 +61,16 @@ import net.mcreator.yafnafmod.entity.MrHippoEntity;
 import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
 import net.mcreator.yafnafmod.entity.MrCanDoEntity;
 import net.mcreator.yafnafmod.entity.MrCanDoDayEntity;
-import net.mcreator.yafnafmod.entity.LolbitEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FredbearEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobEntity;
 import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
+import net.mcreator.yafnafmod.entity.BaggieMaggieEntity;
+import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 
 import java.util.List;
 import java.util.Comparator;
@@ -78,10 +85,8 @@ public class DayActionProcedure {
 		String command = "";
 		String ai = "";
 		String entity_name = "";
-		if (!(entity instanceof ShadowBonnieEntity) && !(entity instanceof ShadowFreddyEntity) && !(entity instanceof GoldenFreddyEntity) && !(entity instanceof WitheredGoldenFreddyEntity)
-				&& !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:phantoms")))
-				&& (!(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("nightmare") || entity instanceof NightmareBbEntity) && !(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("jack_o")
-				&& !(entity instanceof NightmarionneEntity) && !(entity instanceof YenndoEntity) && !(entity instanceof LolbitEntity)) {
+		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible"))) && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nightdisappear")))
+				&& !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:no_daymode")))) {
 			if ((GetWorldTimeProcedure.execute(world)) > (23829) && (GetWorldTimeProcedure.execute(world)) < (24000)) {
 				if (entity instanceof Mob _entity)
 					_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z")), 1);
@@ -111,17 +116,19 @@ public class DayActionProcedure {
 				}
 				yaw = entity.getPersistentData().getDouble("yaw");
 				entity_name = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString() + "_day";
-				if (entity instanceof ToyFreddyEntity && (entity instanceof ToyFreddyEntity _datEntL26 && _datEntL26.getEntityData().get(ToyFreddyEntity.DATA_unmoving)) == false
-						|| entity instanceof ToyBonnieEntity && (entity instanceof ToyBonnieEntity _datEntL28 && _datEntL28.getEntityData().get(ToyBonnieEntity.DATA_unmoving)) == false
-						|| entity instanceof ToyChicaEntity && (entity instanceof ToyChicaEntity _datEntL30 && _datEntL30.getEntityData().get(ToyChicaEntity.DATA_unmoving)) == false
-						|| entity instanceof ToyFoxyEntity && (entity instanceof ToyFoxyEntity _datEntL32 && _datEntL32.getEntityData().get(ToyFoxyEntity.DATA_unmoving)) == false) {
+				if (entity instanceof ToyFreddyEntity && (entity instanceof ToyFreddyEntity _datEntL18 && _datEntL18.getEntityData().get(ToyFreddyEntity.DATA_unmoving)) == false
+						|| entity instanceof ToyBonnieEntity && (entity instanceof ToyBonnieEntity _datEntL20 && _datEntL20.getEntityData().get(ToyBonnieEntity.DATA_unmoving)) == false
+						|| entity instanceof ToyChicaEntity && (entity instanceof ToyChicaEntity _datEntL22 && _datEntL22.getEntityData().get(ToyChicaEntity.DATA_unmoving)) == false
+						|| entity instanceof ToyFoxyEntity && (entity instanceof ToyFoxyEntity _datEntL24 && _datEntL24.getEntityData().get(ToyFoxyEntity.DATA_unmoving)) == false
+						|| entity instanceof GusThePugEntity && (entity instanceof GusThePugEntity _datEntL26 && _datEntL26.getEntityData().get(GusThePugEntity.DATA_unmoving)) == false) {
 					ai = "0";
 				} else {
 					ai = "1";
-					if (entity instanceof ToyFreddyEntity && (entity instanceof ToyFreddyEntity _datEntL34 && _datEntL34.getEntityData().get(ToyFreddyEntity.DATA_unmoving)) == true
-							|| entity instanceof ToyBonnieEntity && (entity instanceof ToyBonnieEntity _datEntL36 && _datEntL36.getEntityData().get(ToyBonnieEntity.DATA_unmoving)) == true
-							|| entity instanceof ToyChicaEntity && (entity instanceof ToyChicaEntity _datEntL38 && _datEntL38.getEntityData().get(ToyChicaEntity.DATA_unmoving)) == true
-							|| entity instanceof ToyFoxyEntity && (entity instanceof ToyFoxyEntity _datEntL40 && _datEntL40.getEntityData().get(ToyFoxyEntity.DATA_unmoving)) == true) {
+					if (entity instanceof ToyFreddyEntity && (entity instanceof ToyFreddyEntity _datEntL28 && _datEntL28.getEntityData().get(ToyFreddyEntity.DATA_unmoving)) == true
+							|| entity instanceof ToyBonnieEntity && (entity instanceof ToyBonnieEntity _datEntL30 && _datEntL30.getEntityData().get(ToyBonnieEntity.DATA_unmoving)) == true
+							|| entity instanceof ToyChicaEntity && (entity instanceof ToyChicaEntity _datEntL32 && _datEntL32.getEntityData().get(ToyChicaEntity.DATA_unmoving)) == true
+							|| entity instanceof ToyFoxyEntity && (entity instanceof ToyFoxyEntity _datEntL34 && _datEntL34.getEntityData().get(ToyFoxyEntity.DATA_unmoving)) == true
+							|| entity instanceof GusThePugEntity && (entity instanceof GusThePugEntity _datEntL36 && _datEntL36.getEntityData().get(GusThePugEntity.DATA_unmoving)) == true) {
 						entity_name = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString() + "_still_day";
 					}
 				}
@@ -148,8 +155,9 @@ public class DayActionProcedure {
 							}
 							if (entity instanceof FredbearEntity || entity instanceof SpringbonnieEntity || entity instanceof RetroFreddyEntity || entity instanceof RetroBonnieEntity || entity instanceof RetroChicaEntity
 									|| entity instanceof RetroFoxyEntity || entity instanceof MrCanDoEntity || entity instanceof MrHugsEntity || entity instanceof BucketBobEntity || entity instanceof PanStanEntity
-									|| entity instanceof NumberOneCrateEntity || entity instanceof NeddbearEntity || entity instanceof HappyFrogEntity || entity instanceof PigpatchEntity || entity instanceof MrHippoEntity
-									|| entity instanceof OrvilleElephantEntity) {
+									|| entity instanceof NumberOneCrateEntity || entity instanceof BaggieMaggieEntity || entity instanceof NeddbearEntity || entity instanceof HappyFrogEntity || entity instanceof PigpatchEntity
+									|| entity instanceof MrHippoEntity || entity instanceof OrvilleElephantEntity || entity instanceof RockstarFreddyEntity || entity instanceof RockstarBonnieEntity || entity instanceof RockstarChicaEntity
+									|| entity instanceof RockstarFoxyEntity) {
 								if (entityiterator instanceof FredbearDayEntity _datEntSetL)
 									_datEntSetL.getEntityData().set(FredbearDayEntity.DATA_walker, true);
 								if (entityiterator instanceof SpringbonnieDayEntity _datEntSetL)
@@ -172,6 +180,8 @@ public class DayActionProcedure {
 									_datEntSetL.getEntityData().set(PanStanDayEntity.DATA_walker, true);
 								if (entityiterator instanceof NumberOneCrateDayEntity _datEntSetL)
 									_datEntSetL.getEntityData().set(NumberOneCrateDayEntity.DATA_walker, true);
+								if (entityiterator instanceof BaggieMaggieDayEntity _datEntSetL)
+									_datEntSetL.getEntityData().set(BaggieMaggieDayEntity.DATA_walker, true);
 								if (entityiterator instanceof NeddBearDayEntity _datEntSetL)
 									_datEntSetL.getEntityData().set(NeddBearDayEntity.DATA_walker, true);
 								if (entityiterator instanceof HappyFrogDayEntity _datEntSetL)
@@ -182,6 +192,14 @@ public class DayActionProcedure {
 									_datEntSetL.getEntityData().set(MrHippoDayEntity.DATA_walker, true);
 								if (entityiterator instanceof OrvilleElephantDayEntity _datEntSetL)
 									_datEntSetL.getEntityData().set(OrvilleElephantDayEntity.DATA_walker, true);
+								if (entityiterator instanceof RockstarFreddyDayEntity _datEntSetL)
+									_datEntSetL.getEntityData().set(RockstarFreddyDayEntity.DATA_walker, true);
+								if (entityiterator instanceof RockstarBonnieDayEntity _datEntSetL)
+									_datEntSetL.getEntityData().set(RockstarBonnieDayEntity.DATA_walker, true);
+								if (entityiterator instanceof RockstarChicaDayEntity _datEntSetL)
+									_datEntSetL.getEntityData().set(RockstarChicaDayEntity.DATA_walker, true);
+								if (entityiterator instanceof RockstarFoxyDayEntity _datEntSetL)
+									_datEntSetL.getEntityData().set(RockstarFoxyDayEntity.DATA_walker, true);
 							}
 						}
 					}
@@ -190,8 +208,7 @@ public class DayActionProcedure {
 					entity.discard();
 			}
 		}
-		if (entity instanceof YenndoEntity || entity instanceof LolbitEntity || entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity
-				|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:phantoms")))) {
+		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible"))) || entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity) {
 			if (IsItNighttimeProcedure.execute(world) == false) {
 				{
 					Entity _ent = entity;
@@ -260,7 +277,7 @@ public class DayActionProcedure {
 					}
 				}
 			}
-		} else if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("nightmare") || (ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("jack_o") || entity instanceof NightmarionneEntity) {
+		} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nightdisappear")))) {
 			if (IsItNighttimeProcedure.execute(world) == false) {
 				if (!entity.level().isClientSide())
 					entity.discard();

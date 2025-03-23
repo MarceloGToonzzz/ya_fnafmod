@@ -21,12 +21,16 @@ import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
+import net.mcreator.yafnafmod.entity.RockstarBonnieEntity;
 import net.mcreator.yafnafmod.entity.NightmareFredbearEntity;
 import net.mcreator.yafnafmod.entity.NightmareEntity;
+import net.mcreator.yafnafmod.entity.NeddbearEntity;
 import net.mcreator.yafnafmod.entity.MoltenFreddyEntity;
 import net.mcreator.yafnafmod.entity.MinireenaEntity;
 import net.mcreator.yafnafmod.entity.Minireena2Entity;
+import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.IndigoEntity;
+import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
@@ -141,6 +145,25 @@ public class DeathVoiceProcedure {
 				} else if (sourceentity instanceof ScrapBabyEntity) {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_scrapbaby_killvoice")), SoundSource.HOSTILE, 1, 1);
+				} else if (sourceentity instanceof LeftyEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_lefty_killvoice")), SoundSource.HOSTILE, 1, 1);
+				} else if (sourceentity instanceof NeddbearEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_neddbear_killvoice")), SoundSource.HOSTILE, 1, 1);
+				} else if (sourceentity instanceof RockstarBonnieEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_rockbonnie_killvoice")), SoundSource.HOSTILE, 1, 1);
+				}
+				if (sourceentity instanceof BarryPolarEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_bpolar_killvoice")), SoundSource.HOSTILE, 1, 1);
+				} else if (sourceentity instanceof GusThePugEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_guspug_killvoice")), SoundSource.HOSTILE, 1, 1);
+				} else if (sourceentity instanceof FuntimeDelilahEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_ftdelilah_killvoice")), SoundSource.HOSTILE, 1, 1);
 				}
 			}
 		});

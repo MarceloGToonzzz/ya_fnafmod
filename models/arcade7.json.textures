@@ -1,0 +1,52 @@
+{
+  "mappings": {
+    "orange": {
+      "map": {
+        "8": "arcade7_orange"
+      },
+      "name": "orange"
+    },
+    "gold": {
+      "map": {
+        "8": "arcade7_gold"
+      },
+      "name": "gold"
+    },
+    "default": {
+      "map": {
+        "8": "arcade7_red"
+      },
+      "name": "default"
+    },
+    "green": {
+      "map": {
+        "8": "arcade7_green"
+      },
+      "name": "green"
+    },
+    "blue": {
+      "map": {
+        "8": "arcade7_blue"
+      },
+      "name": "blue"
+    },
+    "yellow": {
+      "map": {
+        "8": "arcade7_yellow"
+      },
+      "name": "yellow"
+    },
+    "black": {
+      "map": {
+        "8": "arcade7_black"
+      },
+      "name": "black"
+    },
+    "purple": {
+      "map": {
+        "8": "arcade7_purple"
+      },
+      "name": "purple"
+    }
+  }
+}

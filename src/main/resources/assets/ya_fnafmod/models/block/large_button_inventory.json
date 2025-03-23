@@ -1,0 +1,8 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "particle": "ya_fnafmod:block/buttonnostalgic_lightoff",
+    "texture": "ya_fnafmod:block/buttonnostalgic_lightoff"
+  },
+  "render_type": "cutout_mipped"
+}

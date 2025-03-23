@@ -58,7 +58,7 @@
         "armHeld": "LEFT",
         "arm": "LEFT",
         "angle": "X",
-        "rotation": -80.0,
+        "rotation": 80.0,
         "swings": false,
         "followsHead": true
       },
@@ -66,7 +66,7 @@
         "armHeld": "RIGHT",
         "arm": "RIGHT",
         "angle": "X",
-        "rotation": -80.0,
+        "rotation": 80.0,
         "swings": false,
         "followsHead": true
       }

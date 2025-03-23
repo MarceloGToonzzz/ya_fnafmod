@@ -5,6 +5,12 @@
         "0": "posterbigh_1_celebrate2"
       },
       "name": "default"
+    },
+    "classic": {
+      "map": {
+        "0": "posterbigh_1_celebrate1"
+      },
+      "name": "classic"
     }
   }
 }

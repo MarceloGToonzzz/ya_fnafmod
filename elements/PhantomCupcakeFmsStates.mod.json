@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PhantomCupcakeFms",
+    "blockstateList": [
+      {
+        "texture": "cupcake_fms",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cupcakefms_diag:phantom",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left_open",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_graybackstage_bottom",
+    "bottom": "ya_fnafmod:block/door_graybackstage_bottom",
+    "top": "ya_fnafmod:block/door_graybackstage_top"
+  },
+  "render_type": "solid"
+}

@@ -7,6 +7,7 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
@@ -43,6 +44,7 @@ import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
 import net.mcreator.yafnafmod.entity.MrCanDoDayEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeChicaDayEntity;
@@ -79,43 +81,23 @@ public class NightActionProcedure {
 				}
 				yaw = entity.getPersistentData().getDouble("yaw");
 				if (!(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("still_day")) {
-					if (!(entity.getPersistentData().getString("style")).isEmpty() && !(entity.getPersistentData().getString("skin")).isEmpty()
-							|| (entity.getPersistentData().getString("style")).isEmpty() && !(entity.getPersistentData().getString("skin")).isEmpty()
-							|| !(entity.getPersistentData().getString("style")).isEmpty() && (entity.getPersistentData().getString("skin")).isEmpty()) {
-						command = ((((((((((("summon ENTITY_REGISTRY XPOS YPOS ZPOS {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
-								.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
-								.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-								.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
-								.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
-					} else {
-						command = ((((((((("summon ENTITY_REGISTRY XPOS YPOS ZPOS {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {GotCordinates: 1b, x: XPOS, y: YPOS, z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
-								.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
-								.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-								.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y")))
-								.replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
-					}
+					command = (((((((((((("summon ENTITY_REGISTRY XPOS YPOS ZPOS {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: SPEEDd, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+							.replace("SPEED", "" + (entity instanceof LivingEntity _attributeContext ? _attributeContext.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED) : 0.0D)))
+							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
+							.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
+							.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
+							.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands()
 								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))),
 										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);
 				} else {
-					if (!(entity.getPersistentData().getString("style")).isEmpty() && !(entity.getPersistentData().getString("skin")).isEmpty()
-							|| (entity.getPersistentData().getString("style")).isEmpty() && !(entity.getPersistentData().getString("skin")).isEmpty()
-							|| !(entity.getPersistentData().getString("style")).isEmpty() && (entity.getPersistentData().getString("skin")).isEmpty()) {
-						command = (((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, Texture: \"ZETEXTURE\", FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
-								.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
-								.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_still_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-								.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("ZETEXTURE", GetTextureProcedure.execute(entity))).replace("SKINS", entity.getPersistentData().getString("skin")))
-								.replace("STYLISTIC", entity.getPersistentData().getString("style"))).replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y")))
-								.replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
-					} else {
-						command = (((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
-								.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
-								.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_still_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-								.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("ZETEXTURE", GetTextureProcedure.execute(entity))).replace("SKINS", entity.getPersistentData().getString("skin")))
-								.replace("STYLISTIC", entity.getPersistentData().getString("style"))).replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y")))
-								.replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
-					}
+					command = (((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.35d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+							.replace("SPEED", "" + (entity instanceof LivingEntity _attributeContext ? _attributeContext.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED) : 0.0D)))
+							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
+							.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_still_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
+							.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
+							.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands()
 								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))),
@@ -145,6 +127,8 @@ public class NightActionProcedure {
 								_datEntSetL.getEntityData().set(ToyChicaEntity.DATA_unmoving, true);
 							if (entityiterator instanceof ToyFoxyEntity _datEntSetL)
 								_datEntSetL.getEntityData().set(ToyFoxyEntity.DATA_unmoving, true);
+							if (entityiterator instanceof GusThePugEntity _datEntSetL)
+								_datEntSetL.getEntityData().set(GusThePugEntity.DATA_unmoving, true);
 						}
 						if (entityiterator instanceof PlushtrapEntity || entityiterator instanceof NightmareBbEntity) {
 							{
@@ -163,7 +147,7 @@ public class NightActionProcedure {
 					entity.discard();
 			}
 		}
-		if (!(world instanceof Level _lvl98 && _lvl98.isDay())) {
+		if (!(world instanceof Level _lvl73 && _lvl73.isDay())) {
 			if (entity instanceof FreddyFazbearDayEntity) {
 				((FreddyFazbearDayEntity) entity).setAnimation("0");
 			}

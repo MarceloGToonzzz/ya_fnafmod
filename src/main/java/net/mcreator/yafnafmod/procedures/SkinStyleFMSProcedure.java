@@ -2,10 +2,14 @@ package net.mcreator.yafnafmod.procedures;
 
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
+import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.WitheredDougDogEntity;
+import net.mcreator.yafnafmod.entity.WitheredDougDogDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
@@ -24,6 +28,8 @@ import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
+import net.mcreator.yafnafmod.entity.SparkyDogEntity;
+import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.RustyEntity;
 import net.mcreator.yafnafmod.entity.RustyDayEntity;
@@ -37,6 +43,8 @@ import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PigpatchEntity;
 import net.mcreator.yafnafmod.entity.PigpatchDayEntity;
 import net.mcreator.yafnafmod.entity.OrvilleElephantEntity;
@@ -47,8 +55,15 @@ import net.mcreator.yafnafmod.entity.MrHippoEntity;
 import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
+import net.mcreator.yafnafmod.entity.JollyRatEntity;
+import net.mcreator.yafnafmod.entity.JollyRatDayEntity;
+import net.mcreator.yafnafmod.entity.IgnitedChicaEntity;
+import net.mcreator.yafnafmod.entity.IgnitedChicaDayEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugEntity;
+import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearDayEntity;
@@ -60,6 +75,8 @@ import net.mcreator.yafnafmod.entity.Endo02Entity;
 import net.mcreator.yafnafmod.entity.Endo02DayEntity;
 import net.mcreator.yafnafmod.entity.Endo01Entity;
 import net.mcreator.yafnafmod.entity.Endo01DayEntity;
+import net.mcreator.yafnafmod.entity.DougDogEntity;
+import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyEntity;
@@ -93,6 +110,10 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("endo1_fms");
 		if (entity instanceof Endo01DayEntity animatable)
 			animatable.setTexture("endo1_fms");
+		if (entity instanceof SparkyDogEntity animatable)
+			animatable.setTexture("sparky_fms");
+		if (entity instanceof SparkyDogDayEntity animatable)
+			animatable.setTexture("sparky_fms");
 		if (entity instanceof ToyFreddyEntity animatable)
 			animatable.setTexture("tfreddy_night_fms");
 		if (entity instanceof ToyFreddyDayEntity animatable)
@@ -214,5 +235,41 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("endo1_rusty_fms");
 		if (entity instanceof RustyDayEntity animatable)
 			animatable.setTexture("endo1_rusty_fms");
+		if (entity instanceof GusThePugEntity animatable)
+			animatable.setTexture("gus_the_pug_fms");
+		if (entity instanceof GusThePugDayEntity animatable)
+			animatable.setTexture("gus_the_pug_fms");
+		if (entity instanceof GusThePugStillDayEntity animatable)
+			animatable.setTexture("gus_the_pug_fms");
+		if (entity instanceof JollyRatEntity animatable)
+			animatable.setTexture("jollyrat_fms");
+		if (entity instanceof JollyRatDayEntity animatable)
+			animatable.setTexture("jollyrat_fms");
+		if (entity instanceof WitheredJollyRatEntity animatable)
+			animatable.setTexture("withered_jollyrat_fms");
+		if (entity instanceof WitheredJollyRatDayEntity animatable)
+			animatable.setTexture("withered_jollyrat_fms");
+		if (entity instanceof DougDogEntity animatable)
+			animatable.setTexture("doug_fms");
+		if (entity instanceof DougDogDayEntity animatable)
+			animatable.setTexture("doug_fms");
+		if (entity instanceof WitheredDougDogEntity animatable)
+			animatable.setTexture("withered_doug_fms");
+		if (entity instanceof WitheredDougDogDayEntity animatable)
+			animatable.setTexture("withered_doug_fms");
+		if (entity instanceof IgnitedChicaEntity animatable)
+			animatable.setTexture("ignited_chica_fms");
+		if (entity instanceof IgnitedChicaDayEntity animatable)
+			animatable.setTexture("ignited_chica_fms");
+		if (entity instanceof PitbonnieEntity animatable)
+			animatable.setTexture("pitbonnie_fms");
+		if (entity instanceof PitbonnieDayEntity animatable)
+			animatable.setTexture("pitbonnie_fms");
+		if ((entity.getPersistentData().getString("skin")).equals("alt")) {
+			if (entity instanceof PitbonnieEntity animatable)
+				animatable.setTexture("pitbonnie_novel_fms");
+			if (entity instanceof PitbonnieDayEntity animatable)
+				animatable.setTexture("pitbonnie_novel_fms");
+		}
 	}
 }

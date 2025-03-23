@@ -1,0 +1,24 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "forest",
+    "swamp",
+    "plains",
+    "flower_forest",
+    "sunflower_plains",
+    "dark_forest",
+    "old_growth_birch_forest",
+    "old_growth_pine_taiga",
+    "old_growth_spruce_taiga",
+    "cherry_grove",
+    "snowy_plains",
+    "snowy_taiga",
+    "taiga"
+  ],
+  "spawners": {
+    "type": "ya_fnafmod:raccoon",
+    "weight": 20,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

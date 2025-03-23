@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "buttonnostalgic_dooroff"
+      },
+      "name": "default"
+    },
+    "gray": {
+      "map": {
+        "2": "buttonnostalgic_lightoff"
+      },
+      "name": "gray"
+    }
+  }
+}

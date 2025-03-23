@@ -10,6 +10,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
+import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
@@ -29,6 +30,8 @@ import net.mcreator.yafnafmod.entity.MrHugsDayEntity;
 import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
 import net.mcreator.yafnafmod.entity.MrCanDoDayEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
+import net.mcreator.yafnafmod.entity.FredbearSuitHeadlessEntity;
+import net.mcreator.yafnafmod.entity.FredbearSuitEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
 
@@ -137,6 +140,29 @@ public class AnimatronicRotationProcedure {
 					if (sourceentity instanceof Player _player) {
 						ItemStack _stktoremove = itemstack;
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+				}
+			}
+		}
+		if (itemstack.getItem() == YaFnafmodModItems.FAT.get()) {
+			if (entity instanceof FredbearSuitEntity || entity instanceof FredbearSuitHeadlessEntity || entity instanceof SpringbonnieSuitEntity) {
+				if (itemstack.getOrCreateTag().getDouble("state") == 1) {
+					if (entity.getPersistentData().getDouble("style") == 0) {
+						entity.getPersistentData().putDouble("style", 1);
+						if (entity instanceof SpringbonnieSuitEntity animatable)
+							animatable.setTexture("springbonnie_suit_fms");
+						if (entity instanceof FredbearSuitEntity animatable)
+							animatable.setTexture("fredbear_suit_fms");
+						if (entity instanceof FredbearSuitHeadlessEntity animatable)
+							animatable.setTexture("fredbear_suit_fms");
+					} else if (entity.getPersistentData().getDouble("style") == 1) {
+						entity.getPersistentData().putDouble("style", 0);
+						if (entity instanceof SpringbonnieSuitEntity animatable)
+							animatable.setTexture("springbonnie_suit");
+						if (entity instanceof FredbearSuitEntity animatable)
+							animatable.setTexture("fredbear_suit");
+						if (entity instanceof FredbearSuitHeadlessEntity animatable)
+							animatable.setTexture("fredbear_suit");
 					}
 				}
 			}

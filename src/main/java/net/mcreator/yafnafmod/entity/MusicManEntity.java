@@ -19,6 +19,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
@@ -117,7 +118,7 @@ public class MusicManEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, OrvilleElephantEntity.class, false, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Villager.class, false, false));
 		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));

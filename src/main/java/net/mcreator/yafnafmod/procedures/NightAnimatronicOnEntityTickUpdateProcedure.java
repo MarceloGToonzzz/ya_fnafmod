@@ -19,6 +19,7 @@ import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
+import net.mcreator.yafnafmod.entity.PitbonnieEntity;
 import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
 import net.mcreator.yafnafmod.entity.NightmareFoxyEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbEntity;
@@ -58,7 +59,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		RustyFunctionProcedure.execute(world, x, y, z, entity);
 		DuckingProcedure.execute(world, x, y, z, entity);
 		CrawlingProcedure.execute(world, x, y, z, entity);
-		if (entity instanceof FoxyPirateEntity || entity instanceof WitheredFoxyEntity || entity instanceof ToyFoxyEntity || entity instanceof NightmareFoxyEntity || entity instanceof FuntimeFoxyEntity || entity instanceof DrTeethEntity) {
+		if (entity instanceof FoxyPirateEntity || entity instanceof WitheredFoxyEntity || entity instanceof ToyFoxyEntity || entity instanceof NightmareFoxyEntity || entity instanceof FuntimeFoxyEntity || entity instanceof DrTeethEntity
+				|| entity instanceof PitbonnieEntity) {
 			if (entity.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
 				entity.setSprinting(true);
 			} else {
@@ -66,7 +68,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 			}
 		}
 		if (entity instanceof EnnardEntity) {
-			if ((entity instanceof EnnardEntity _datEntL21 && _datEntL21.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
+			if ((entity instanceof EnnardEntity _datEntL22 && _datEntL22.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
 				if (entity instanceof EnnardEntity animatable)
 					animatable.setTexture("ennard_maskless");
 			} else {
@@ -107,8 +109,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		if (entity instanceof NightmareFreddyEntity) {
 			FreddleCodeProcedure.execute(world, x, y, z, entity);
 		} else if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-			if ((entity instanceof PlushtrapEntity _datEntL44 && _datEntL44.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-					|| (entity instanceof NightmareBbEntity _datEntL45 && _datEntL45.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+			if ((entity instanceof PlushtrapEntity _datEntL45 && _datEntL45.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+					|| (entity instanceof NightmareBbEntity _datEntL46 && _datEntL46.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("animation.plush.sit");
 				}
@@ -132,7 +134,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		}
 		if (entity instanceof PuppetEntity) {
 			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).isEmpty()) {
-				if ((entity instanceof PuppetEntity _datEntL54 && _datEntL54.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
+				if ((entity instanceof PuppetEntity _datEntL55 && _datEntL55.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
 					if (entity instanceof Mob _entity && ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));

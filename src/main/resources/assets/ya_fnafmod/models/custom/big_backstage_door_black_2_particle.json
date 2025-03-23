@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/bigdoor",
+  "textures": {
+    "particle": "ya_fnafmod:block/bigdoor_blackbackstagedoor2"
+  }
+}

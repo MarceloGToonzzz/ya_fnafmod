@@ -58,9 +58,9 @@ public class MegaphoneItem extends Item implements GeoItem {
 
 			private static final HumanoidModel.ArmPose MegaphonePose = HumanoidModel.ArmPose.create("Megaphone", false, (model, entity, arm) -> {
 				if (arm == HumanoidArm.LEFT) {
-					model.leftArm.xRot = -80F + model.head.xRot;
+					model.leftArm.xRot = 80F + model.head.xRot;
 				} else {
-					model.rightArm.xRot = -80F + model.head.xRot;
+					model.rightArm.xRot = 80F + model.head.xRot;
 				}
 			});
 

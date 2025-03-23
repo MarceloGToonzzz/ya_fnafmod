@@ -17,6 +17,18 @@
         "0": "cupcake_phantom"
       },
       "name": "phantomcupcake"
+    },
+    "retro": {
+      "map": {
+        "0": "cupcake_retro"
+      },
+      "name": "retro"
+    },
+    "funtime": {
+      "map": {
+        "0": "cupcake_funtime"
+      },
+      "name": "funtime"
     }
   }
 }

@@ -15,7 +15,6 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
-import net.mcreator.yafnafmod.network.TestMessage;
 import net.mcreator.yafnafmod.network.DrivingRightMessage;
 import net.mcreator.yafnafmod.network.DrivingLeftMessage;
 import net.mcreator.yafnafmod.network.DrivingForwardMessage;
@@ -25,19 +24,6 @@ import net.mcreator.yafnafmod.YaFnafmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class YaFnafmodModKeyMappings {
-	public static final KeyMapping TEST = new KeyMapping("key.ya_fnafmod.test", GLFW.GLFW_KEY_APOSTROPHE, "key.categories.misc") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				YaFnafmodMod.PACKET_HANDLER.sendToServer(new TestMessage(0, 0));
-				TestMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
 	public static final KeyMapping DRIVING_FORWARD = new KeyMapping("key.ya_fnafmod.driving_forward", GLFW.GLFW_KEY_W, "key.categories.movement") {
 		private boolean isDownOld = false;
 
@@ -136,7 +122,6 @@ public class YaFnafmodModKeyMappings {
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
-		event.register(TEST);
 		event.register(DRIVING_FORWARD);
 		event.register(DRIVING_LEFT);
 		event.register(DRIVING_RIGHT);
@@ -149,7 +134,6 @@ public class YaFnafmodModKeyMappings {
 		@SubscribeEvent
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
-				TEST.consumeClick();
 				DRIVING_FORWARD.consumeClick();
 				DRIVING_LEFT.consumeClick();
 				DRIVING_RIGHT.consumeClick();

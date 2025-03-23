@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/stagebricks_hotpink",
+    "top": "ya_fnafmod:block/tileblock_black",
+    "side": "ya_fnafmod:block/stagebricks_hotpink",
+    "overlay": "ya_fnafmod:block/walltop_black",
+    "particle": "ya_fnafmod:block/stagebricks_hotpink"
+  },
+  "render_type": "cutout_mipped"
+}

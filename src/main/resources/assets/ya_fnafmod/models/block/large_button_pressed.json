@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/buttonnostalgic_pushed",
+  "textures": {
+    "all": "ya_fnafmod:block/buttonnostalgic_lighton",
+    "particle": "ya_fnafmod:block/buttonnostalgic_lighton",
+    "2": "ya_fnafmod:block/buttonnostalgic_lighton"
+  },
+  "render_type": "cutout_mipped"
+}

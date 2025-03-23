@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cupcake",
+  "textures": {
+    "all": "ya_fnafmod:block/cupcake_retro",
+    "particle": "ya_fnafmod:block/cupcake_retro",
+    "0": "ya_fnafmod:block/cupcake_retro"
+  },
+  "render_type": "cutout"
+}

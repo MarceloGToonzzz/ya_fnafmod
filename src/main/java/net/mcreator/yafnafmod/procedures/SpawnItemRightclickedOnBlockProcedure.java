@@ -38,6 +38,7 @@ import net.mcreator.yafnafmod.entity.MrCanDoDayEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
+import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 
 import java.util.List;
 import java.util.Comparator;
@@ -89,7 +90,8 @@ public class SpawnItemRightclickedOnBlockProcedure {
 					|| (spawned).equals("ya_fnafmod:scraptrap_day") || (spawned).equals("ya_fnafmod:scrap_baby_day")) {
 				spawned = spawned.replace("_day", "");
 				AI = "0";
-			} else if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("toy") && !(ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("still")) {
+			} else if (((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("toy") || (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("gus_the_pug"))
+					&& !(ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("still")) {
 				AI = "0";
 			} else {
 				AI = "1";
@@ -160,6 +162,8 @@ public class SpawnItemRightclickedOnBlockProcedure {
 										_datEntSetL.getEntityData().set(MrCanDoDayEntity.DATA_walker, true);
 									if (entityiterator instanceof NumberOneCrateDayEntity _datEntSetL)
 										_datEntSetL.getEntityData().set(NumberOneCrateDayEntity.DATA_walker, true);
+									if (entityiterator instanceof BaggieMaggieDayEntity _datEntSetL)
+										_datEntSetL.getEntityData().set(BaggieMaggieDayEntity.DATA_walker, true);
 									if (entityiterator instanceof HappyFrogDayEntity _datEntSetL)
 										_datEntSetL.getEntityData().set(HappyFrogDayEntity.DATA_walker, true);
 									if (entityiterator instanceof MrHippoDayEntity _datEntSetL)

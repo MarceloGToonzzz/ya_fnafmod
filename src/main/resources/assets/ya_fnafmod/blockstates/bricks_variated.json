@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      { "model": "ya_fnafmod:block/bricks_variated/bricks_variated1" },
+      { "model": "ya_fnafmod:block/bricks_variated/bricks_variated2" },
+      { "model": "ya_fnafmod:block/bricks_variated/bricks_variated3" },
+      { "model": "ya_fnafmod:block/bricks_variated/bricks_variated4" },
+      { "model": "ya_fnafmod:block/bricks_variated/bricks_variated5" },
+      { "model": "ya_fnafmod:block/bricks_variated/bricks_variated6" }
+    ]
+  }
+}

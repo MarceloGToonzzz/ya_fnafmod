@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "plains",
+    "beach",
+    "birch_forest",
+    "dark_forest",
+    "flower_forest",
+    "forest",
+    "stony_shore"
+  ],
+  "spawners": {
+    "type": "ya_fnafmod:pidgeon",
+    "weight": 20,
+    "minCount": 3,
+    "maxCount": 6
+  }
+}
