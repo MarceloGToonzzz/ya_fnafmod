@@ -366,6 +366,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.LIGHT_WALL_BLUE_STRIPES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LIGHT_WALL_BLUE_STRIPES_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LIGHT_WALL_BLUE_STRIPES_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.BRICKS_VARIATED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_BRICKS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_BRICK_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_BRICK_SLAB.get().asItem());
@@ -716,7 +717,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.DISCO_FLOOR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CHAIN_LINK_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CHAINLINK_FENCE.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.BRICKS_VARIATED.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SHADOW_1.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SHADOW_2.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SHADOW_3.get().asItem());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_ITEMS = REGISTRY.register("ya_fnaf_mod_items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_items")).icon(() -> new ItemStack(YaFnafmodModItems.FAZWRENCH.get())).displayItems((parameters, tabData) -> {
@@ -788,10 +791,13 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.FRIES_MOLDY.get());
 				tabData.accept(YaFnafmodModItems.CHICKEN_LEG.get());
 				tabData.accept(YaFnafmodModItems.CHICKEN_LEG_MOLDY.get());
+				tabData.accept(YaFnafmodModItems.HAMBURGER.get());
+				tabData.accept(YaFnafmodModItems.CHEESEBURGER.get());
+				tabData.accept(YaFnafmodModItems.VEGGIEBURGER.get());
+				tabData.accept(YaFnafmodModItems.BBQ_BACON_BURGER.get());
 				tabData.accept(YaFnafmodModItems.MILKSHAKE_CHOCOLATE.get());
 				tabData.accept(YaFnafmodModItems.MILKSHAKE_CHERRY.get());
 				tabData.accept(YaFnafmodModItems.MILKSHAKE_STRAWBERRY.get());
-				tabData.accept(YaFnafmodModItems.EXOTIC_BUTTER.get());
 				tabData.accept(YaFnafmodModItems.ICECREAM_MILK_CHOCOLATE.get());
 				tabData.accept(YaFnafmodModItems.ICECREAM_DARK_CHOCOLATE.get());
 				tabData.accept(YaFnafmodModItems.ICECREAM_VANILLA.get());
@@ -812,6 +818,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.SODA_CUP_BLUE.get());
 				tabData.accept(YaFnafmodModItems.SODA_CUP_FIZTIME.get());
 				tabData.accept(YaFnafmodModItems.SODA_CUP_FIZTIME_ALT.get());
+				tabData.accept(YaFnafmodModItems.EXOTIC_BUTTER.get());
 				tabData.accept(YaFnafmodModItems.CPU.get());
 				tabData.accept(YaFnafmodModItems.FNAF_SONG_TLT.get());
 				tabData.accept(YaFnafmodModItems.FNAF_SONG_DA_GAMES.get());
@@ -855,10 +862,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.REMNANT.get());
 				tabData.accept(YaFnafmodModItems.AGONY.get());
 				tabData.accept(YaFnafmodModItems.DEATH_COIN.get());
-				tabData.accept(YaFnafmodModItems.HAMBURGER.get());
-				tabData.accept(YaFnafmodModItems.CHEESEBURGER.get());
-				tabData.accept(YaFnafmodModItems.VEGGIEBURGER.get());
-				tabData.accept(YaFnafmodModItems.BBQ_BACON_BURGER.get());
 			})
 
 					.build());
@@ -913,6 +916,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.ORVILLE_ELEPHANT_FMS_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.PITBONNIE_FMS_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.PITBONNIE_ALT_FMS_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.CANDY_CAT_FMS_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.CINDY_CAT_FMS_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.IGNITED_CHICA_FMS_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.DOUG_DOG_FMS_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.WITHERED_DOUG_DOG_FMS_SPAWN_ITEM.get());
@@ -1314,6 +1319,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.FAN_PURPLE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUPCAKE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUPCAKE_FMS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.HANGING_LAMP.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_PIZZA.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_SUN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_MOON.get().asItem());

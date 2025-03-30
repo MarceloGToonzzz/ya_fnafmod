@@ -77,8 +77,12 @@ import net.mcreator.yafnafmod.entity.Endo01Entity;
 import net.mcreator.yafnafmod.entity.Endo01DayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
+import net.mcreator.yafnafmod.entity.CindyCatEntity;
+import net.mcreator.yafnafmod.entity.CindyCatDayEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
+import net.mcreator.yafnafmod.entity.CandyCatEntity;
+import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyDayEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarEntity;
@@ -271,5 +275,13 @@ public class SkinStyleFMSProcedure {
 			if (entity instanceof PitbonnieDayEntity animatable)
 				animatable.setTexture("pitbonnie_novel_fms");
 		}
+		if (entity instanceof CandyCatEntity animatable)
+			animatable.setTexture("candythecat_fms");
+		if (entity instanceof CandyCatDayEntity animatable)
+			animatable.setTexture("candythecat_fms");
+		if (entity instanceof CindyCatEntity animatable)
+			animatable.setTexture("cindythecat_fms");
+		if (entity instanceof CindyCatDayEntity animatable)
+			animatable.setTexture("cindythecat_fms");
 	}
 }

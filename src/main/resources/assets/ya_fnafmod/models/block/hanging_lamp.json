@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/hanging_lamp",
+  "textures": {
+    "all": "ya_fnafmod:block/hanging_lamp_bulb",
+    "particle": "ya_fnafmod:block/hanging_lamp_bulb",
+    "3": "ya_fnafmod:block/hanging_lamp"
+  },
+  "render_type": "cutout_mipped"
+}

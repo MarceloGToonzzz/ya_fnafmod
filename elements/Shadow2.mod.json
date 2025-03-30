@@ -2,7 +2,7 @@
   "_fv": 69,
   "_type": "block",
   "definition": {
-    "texture": "discofloor_off",
+    "texture": "shadow2",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -10,17 +10,17 @@
     "textureBack": "",
     "renderType": 11,
     "customModelName": "Single texture",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
-    "connectedSides": false,
-    "transparencyType": "SOLID",
+    "hasTransparency": true,
+    "connectedSides": true,
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -34,12 +34,12 @@
       }
     ],
     "customProperties": [],
-    "name": "Disco Floor",
+    "name": "Shadow Block (2)",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.0,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
@@ -49,7 +49,7 @@
     ],
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -57,7 +57,7 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 10,
     "material": {
       "value": "NONE"
     },
@@ -81,10 +81,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "EMPTY"
     },
     "breakSound": {
       "value": ""
@@ -122,18 +122,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": {
-      "name": "RedstoneStateCycle"
-    },
-    "onBlockPlayedBy": {
-      "name": "RedstoneStateCycle"
-    },
-    "onRedstoneOn": {
-      "name": "RedstoneStateCycle"
-    },
-    "onRedstoneOff": {
-      "name": "RedstoneStateCycle"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

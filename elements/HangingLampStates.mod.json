@@ -1,0 +1,22 @@
+{
+  "_fv": 69,
+  "_type": "blockstates",
+  "definition": {
+    "block": "HangingLamp",
+    "blockstateList": [
+      {
+        "texture": "hanging_lamp_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "hanging_lamp:on",
+        "luminance": 10,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "hanging_lamp"
+      },
+      "name": "default"
+    },
+    "on": {
+      "map": {
+        "3": "hanging_lamp_on"
+      },
+      "name": "on"
+    }
+  }
+}

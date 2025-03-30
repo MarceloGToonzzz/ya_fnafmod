@@ -308,6 +308,9 @@ import net.mcreator.yafnafmod.block.ShopSignDumpsterDiverBlock;
 import net.mcreator.yafnafmod.block.ShockInfuserBlock;
 import net.mcreator.yafnafmod.block.ShelfIndustrialBlock;
 import net.mcreator.yafnafmod.block.ShelfBlock;
+import net.mcreator.yafnafmod.block.Shadow3Block;
+import net.mcreator.yafnafmod.block.Shadow2Block;
+import net.mcreator.yafnafmod.block.Shadow1Block;
 import net.mcreator.yafnafmod.block.ServerRackBlock;
 import net.mcreator.yafnafmod.block.ServerBlock;
 import net.mcreator.yafnafmod.block.SecurityVentBlock;
@@ -1179,6 +1182,7 @@ import net.mcreator.yafnafmod.block.HotPinkStageBricksBlackExtraTilesAlternateBl
 import net.mcreator.yafnafmod.block.HotPinkStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.HotPinkStageBrickSlabBlock;
 import net.mcreator.yafnafmod.block.HappyFrogBlockBlock;
+import net.mcreator.yafnafmod.block.HangingLampBlock;
 import net.mcreator.yafnafmod.block.HallwayWallTopRedBlock;
 import net.mcreator.yafnafmod.block.HallwayWallTopGreenBlock;
 import net.mcreator.yafnafmod.block.HallwayWallBottomWineBlock;
@@ -4972,6 +4976,10 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> PINK_LIGHT_BLUE_BIG_CHECKERED_TILES = REGISTRY.register("pink_light_blue_big_checkered_tiles", () -> new PinkLightBlueBigCheckeredTilesBlock());
 	public static final RegistryObject<Block> PINK_LIGHT_BLUE_BIG_CHECKERED_TILE_STAIRS = REGISTRY.register("pink_light_blue_big_checkered_tile_stairs", () -> new PinkLightBlueBigCheckeredTileStairsBlock());
 	public static final RegistryObject<Block> PINK_LIGHT_BLUE_BIG_CHECKERED_TILE_SLAB = REGISTRY.register("pink_light_blue_big_checkered_tile_slab", () -> new PinkLightBlueBigCheckeredTileSlabBlock());
+	public static final RegistryObject<Block> SHADOW_1 = REGISTRY.register("shadow_1", () -> new Shadow1Block());
+	public static final RegistryObject<Block> SHADOW_2 = REGISTRY.register("shadow_2", () -> new Shadow2Block());
+	public static final RegistryObject<Block> SHADOW_3 = REGISTRY.register("shadow_3", () -> new Shadow3Block());
+	public static final RegistryObject<Block> HANGING_LAMP = REGISTRY.register("hanging_lamp", () -> new HangingLampBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

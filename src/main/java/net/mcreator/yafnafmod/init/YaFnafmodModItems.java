@@ -326,6 +326,7 @@ import net.mcreator.yafnafmod.item.CpuItem;
 import net.mcreator.yafnafmod.item.ClassicGuardOutfitItem;
 import net.mcreator.yafnafmod.item.CircusBabySpawnItemItem;
 import net.mcreator.yafnafmod.item.CindyCatSpawnItemItem;
+import net.mcreator.yafnafmod.item.CindyCatFmsSpawnItemItem;
 import net.mcreator.yafnafmod.item.ChickenLegMoldyItem;
 import net.mcreator.yafnafmod.item.ChickenLegItem;
 import net.mcreator.yafnafmod.item.ChicaFaceMaskItem;
@@ -344,6 +345,7 @@ import net.mcreator.yafnafmod.item.CandyPurpleItem;
 import net.mcreator.yafnafmod.item.CandyPinkItem;
 import net.mcreator.yafnafmod.item.CandyLimeItem;
 import net.mcreator.yafnafmod.item.CandyCatSpawnItemItem;
+import net.mcreator.yafnafmod.item.CandyCatFmsSpawnItemItem;
 import net.mcreator.yafnafmod.item.CandyCatAltSpawnItemItem;
 import net.mcreator.yafnafmod.item.CandyBlueItem;
 import net.mcreator.yafnafmod.item.BucketBobWalkerSpawnItemItem;
@@ -3836,6 +3838,12 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CANDY_CAT_SPAWN_ITEM = REGISTRY.register("candy_cat_spawn_item", () -> new CandyCatSpawnItemItem());
 	public static final RegistryObject<Item> CINDY_CAT_SPAWN_ITEM = REGISTRY.register("cindy_cat_spawn_item", () -> new CindyCatSpawnItemItem());
 	public static final RegistryObject<Item> CANDY_CAT_ALT_SPAWN_ITEM = REGISTRY.register("candy_cat_alt_spawn_item", () -> new CandyCatAltSpawnItemItem());
+	public static final RegistryObject<Item> CANDY_CAT_FMS_SPAWN_ITEM = REGISTRY.register("candy_cat_fms_spawn_item", () -> new CandyCatFmsSpawnItemItem());
+	public static final RegistryObject<Item> CINDY_CAT_FMS_SPAWN_ITEM = REGISTRY.register("cindy_cat_fms_spawn_item", () -> new CindyCatFmsSpawnItemItem());
+	public static final RegistryObject<Item> SHADOW_1 = block(YaFnafmodModBlocks.SHADOW_1);
+	public static final RegistryObject<Item> SHADOW_2 = block(YaFnafmodModBlocks.SHADOW_2);
+	public static final RegistryObject<Item> SHADOW_3 = block(YaFnafmodModBlocks.SHADOW_3);
+	public static final RegistryObject<Item> HANGING_LAMP = block(YaFnafmodModBlocks.HANGING_LAMP);
 
 	// Start of user code block custom items
 	// End of user code block custom items
