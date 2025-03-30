@@ -182,6 +182,8 @@ import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CrowEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
+import net.mcreator.yafnafmod.entity.CindyCatEntity;
+import net.mcreator.yafnafmod.entity.CindyCatDayEntity;
 import net.mcreator.yafnafmod.entity.ChildEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
@@ -192,6 +194,8 @@ import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
+import net.mcreator.yafnafmod.entity.CandyCatEntity;
+import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobEntity;
 import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyEntity;
@@ -1011,6 +1015,22 @@ public class YaFnafmodModEntities {
 					.setCustomClientFactory(MysteriousGiantScuttlerEntity::new)
 
 					.sized(0.6f, 0.25f));
+	public static final RegistryObject<EntityType<CandyCatEntity>> CANDY_CAT = register("candy_cat",
+			EntityType.Builder.<CandyCatEntity>of(CandyCatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(CandyCatEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CandyCatDayEntity>> CANDY_CAT_DAY = register("candy_cat_day",
+			EntityType.Builder.<CandyCatDayEntity>of(CandyCatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(CandyCatDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CindyCatEntity>> CINDY_CAT = register("cindy_cat",
+			EntityType.Builder.<CindyCatEntity>of(CindyCatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(CindyCatEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CindyCatDayEntity>> CINDY_CAT_DAY = register("cindy_cat_day",
+			EntityType.Builder.<CindyCatDayEntity>of(CindyCatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(CindyCatDayEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1216,6 +1236,10 @@ public class YaFnafmodModEntities {
 			Lolbit409DayEntity.init();
 			RatEntity.init();
 			MysteriousGiantScuttlerEntity.init();
+			CandyCatEntity.init();
+			CandyCatDayEntity.init();
+			CindyCatEntity.init();
+			CindyCatDayEntity.init();
 		});
 	}
 
@@ -1418,5 +1442,9 @@ public class YaFnafmodModEntities {
 		event.put(LOLBIT_409_DAY.get(), Lolbit409DayEntity.createAttributes().build());
 		event.put(RAT.get(), RatEntity.createAttributes().build());
 		event.put(MYSTERIOUS_GIANT_SCUTTLER.get(), MysteriousGiantScuttlerEntity.createAttributes().build());
+		event.put(CANDY_CAT.get(), CandyCatEntity.createAttributes().build());
+		event.put(CANDY_CAT_DAY.get(), CandyCatDayEntity.createAttributes().build());
+		event.put(CINDY_CAT.get(), CindyCatEntity.createAttributes().build());
+		event.put(CINDY_CAT_DAY.get(), CindyCatDayEntity.createAttributes().build());
 	}
 }

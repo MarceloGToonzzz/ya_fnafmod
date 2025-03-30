@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/checktile_orangebrown",
+    "bottom": "ya_fnafmod:block/checktile_orangebrown",
+    "top": "ya_fnafmod:block/checktile_orangebrown",
+    "side": "ya_fnafmod:block/checktile_orangebrown"
+  },
+  "render_type": "solid"
+}

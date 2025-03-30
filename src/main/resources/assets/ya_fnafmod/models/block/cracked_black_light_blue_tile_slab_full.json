@@ -1,10 +1,10 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
-    "particle": "ya_fnafmod:block/floortile_blackcyan_cracked",
-    "bottom": "ya_fnafmod:block/floortile_blackcyan_cracked",
-    "top": "ya_fnafmod:block/floortile_blackcyan_cracked",
-    "side": "ya_fnafmod:block/floortile_blackcyan_cracked"
+    "particle": "ya_fnafmod:block/floortile_blacklightblue_cracked",
+    "bottom": "ya_fnafmod:block/floortile_blacklightblue_cracked",
+    "top": "ya_fnafmod:block/floortile_blacklightblue_cracked",
+    "side": "ya_fnafmod:block/floortile_blacklightblue_cracked"
   },
   "render_type": "solid"
 }

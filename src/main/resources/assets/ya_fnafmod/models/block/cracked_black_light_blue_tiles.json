@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ya_fnafmod:block/floortile_blackcyan_cracked",
-    "particle": "ya_fnafmod:block/floortile_blackcyan_cracked"
+    "all": "ya_fnafmod:block/floortile_blacklightblue_cracked",
+    "particle": "ya_fnafmod:block/floortile_blacklightblue_cracked"
   },
   "render_type": "solid"
 }

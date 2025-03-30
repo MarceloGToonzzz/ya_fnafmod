@@ -33,6 +33,8 @@ import net.mcreator.yafnafmod.entity.FredbearEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateDayEntity;
+import net.mcreator.yafnafmod.entity.CandyCatEntity;
+import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 import net.mcreator.yafnafmod.entity.BonbonEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
@@ -105,6 +107,10 @@ public class SettingSkinProcedure {
 					animatable.setTexture("pitbonnie_novel");
 				if (entity instanceof LolbitEntity animatable)
 					animatable.setTexture("lolbit_racer");
+				if (entity instanceof CandyCatEntity animatable)
+					animatable.setTexture("candythecat_beta");
+				if (entity instanceof CandyCatDayEntity animatable)
+					animatable.setTexture("candythecat_beta");
 			} else if ((skin).equals("fixed")) {
 				if (entity instanceof FoxyPirateEntity animatable)
 					animatable.setTexture("foxy_pirate_fixed");
@@ -126,7 +132,7 @@ public class SettingSkinProcedure {
 				if (entity instanceof SpringbonnieDayEntity animatable)
 					animatable.setTexture("springbonnie_poster");
 			} else if ((skin).equals("novel")) {
-				if ((entity instanceof FuntimeFreddyEntity _datEntL38 && _datEntL38.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if ((entity instanceof FuntimeFreddyEntity _datEntL40 && _datEntL40.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
 					if (entity instanceof FuntimeFreddyEntity animatable)
 						animatable.setTexture("ftfreddy_novel");
 				} else {
@@ -138,7 +144,7 @@ public class SettingSkinProcedure {
 				if (entity instanceof BonbonEntity animatable)
 					animatable.setTexture("bonbon_novel");
 			} else if ((skin).equals("frights")) {
-				if ((entity instanceof FuntimeFreddyEntity _datEntL43 && _datEntL43.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if ((entity instanceof FuntimeFreddyEntity _datEntL45 && _datEntL45.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
 					if (entity instanceof FuntimeFreddyEntity animatable)
 						animatable.setTexture("ftfreddy_ctw");
 				} else {

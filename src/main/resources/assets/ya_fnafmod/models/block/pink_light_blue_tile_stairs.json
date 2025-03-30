@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortile_pinklightblue",
+    "bottom": "ya_fnafmod:block/floortile_pinklightblue",
+    "top": "ya_fnafmod:block/floortile_pinklightblue",
+    "side": "ya_fnafmod:block/floortile_pinklightblue"
+  },
+  "render_type": "solid"
+}

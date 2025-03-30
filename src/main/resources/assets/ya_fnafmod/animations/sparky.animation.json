@@ -57,7 +57,7 @@
 				},
 				"fms": {
 					"position": {
-						"vector": [0, -11, 0]
+						"vector": [0, -12, 6]
 					},
 					"scale": {
 						"vector": [1.1, 1.1, 1.1]
@@ -730,7 +730,7 @@
 				},
 				"fms": {
 					"position": {
-						"vector": [0, -11, 0]
+						"vector": [0, -12, 6]
 					},
 					"scale": {
 						"vector": [1.1, 1.1, 1.1]

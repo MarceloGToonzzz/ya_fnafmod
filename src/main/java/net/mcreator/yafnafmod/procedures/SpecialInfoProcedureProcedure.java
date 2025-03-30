@@ -101,7 +101,8 @@ public class SpecialInfoProcedureProcedure {
 			} else if (itemstack.getItem() == YaFnafmodModItems.FUNTIME_FREDDY_FRIGHTS_SPAWN_ITEM.get()) {
 				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on Count The Ways!)")));
 				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.FUNTIME_FREDDY_ALT_SPAWN_ITEM.get() || itemstack.getItem() == YaFnafmodModItems.FUNTIME_FOXY_ALT_SPAWN_ITEM.get()) {
+			} else if (itemstack.getItem() == YaFnafmodModItems.FUNTIME_FREDDY_ALT_SPAWN_ITEM.get() || itemstack.getItem() == YaFnafmodModItems.FUNTIME_FOXY_ALT_SPAWN_ITEM.get()
+					|| itemstack.getItem() == YaFnafmodModItems.CANDY_CAT_ALT_SPAWN_ITEM.get()) {
 				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the beta design!)")));
 				cur_pos = cur_pos + 1;
 			} else if (itemstack.getItem() == YaFnafmodModItems.LOLBIT_ALT_SPAWN_ITEM.get()) {

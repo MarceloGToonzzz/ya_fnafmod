@@ -2,7 +2,6 @@ package net.mcreator.yafnafmod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -15,7 +14,6 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
-import net.minecraft.commands.arguments.EntityAnchorArgument;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
 import net.mcreator.yafnafmod.init.YaFnafmodModGameRules;
@@ -112,10 +110,6 @@ public class PlayAttackVoiceProcedure {
 					if (entity.getPersistentData().getBoolean("aggro_anim") == true) {
 						if (entity instanceof Mob _entity)
 							_entity.getNavigation().stop();
-						entity.lookAt(EntityAnchorArgument.Anchor.EYES,
-								new Vec3(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX()),
-										((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1 + (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getEyeHeight()),
-										((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ())));
 					}
 					entity.getPersistentData().putBoolean("set_max", false);
 					entity.getPersistentData().putBoolean("said_attack_line", true);

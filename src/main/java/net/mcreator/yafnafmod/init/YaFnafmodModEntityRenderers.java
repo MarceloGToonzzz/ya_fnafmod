@@ -175,6 +175,8 @@ import net.mcreator.yafnafmod.client.renderer.DougDogDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.CrowRenderer;
 import net.mcreator.yafnafmod.client.renderer.CircusBabyRenderer;
 import net.mcreator.yafnafmod.client.renderer.CircusBabyDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.CindyCatRenderer;
+import net.mcreator.yafnafmod.client.renderer.CindyCatDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ChildRenderer;
 import net.mcreator.yafnafmod.client.renderer.ChicaChickenRenderer;
 import net.mcreator.yafnafmod.client.renderer.ChicaChickenDayRenderer;
@@ -185,6 +187,8 @@ import net.mcreator.yafnafmod.client.renderer.CarPoliceCruiserChevroletImpala198
 import net.mcreator.yafnafmod.client.renderer.CarHarleyMotorcycleRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarFazvanRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarDodgeRam1982Renderer;
+import net.mcreator.yafnafmod.client.renderer.CandyCatRenderer;
+import net.mcreator.yafnafmod.client.renderer.CandyCatDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.BucketBobRenderer;
 import net.mcreator.yafnafmod.client.renderer.BucketBobDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.BonnieBunnyRenderer;
@@ -408,5 +412,9 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.LOLBIT_409_DAY.get(), Lolbit409DayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.RAT.get(), RatRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.MYSTERIOUS_GIANT_SCUTTLER.get(), MysteriousGiantScuttlerRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.CANDY_CAT.get(), CandyCatRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.CANDY_CAT_DAY.get(), CandyCatDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.CINDY_CAT.get(), CindyCatRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.CINDY_CAT_DAY.get(), CindyCatDayRenderer::new);
 	}
 }
