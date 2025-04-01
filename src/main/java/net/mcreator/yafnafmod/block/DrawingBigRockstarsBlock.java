@@ -41,7 +41,7 @@ public class DrawingBigRockstarsBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Rockstar Band"));
+		list.add(Component.translatable("block.ya_fnafmod.drawing_big_rockstars.description_0"));
 	}
 
 	@Override

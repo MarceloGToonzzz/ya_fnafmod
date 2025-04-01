@@ -24,7 +24,7 @@ public class BoothTableWhiteBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("White"));
+		list.add(Component.translatable("block.ya_fnafmod.booth_table_white.description_0"));
 	}
 
 	@Override

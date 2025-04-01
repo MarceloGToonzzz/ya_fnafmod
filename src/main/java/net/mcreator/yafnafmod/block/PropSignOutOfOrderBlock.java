@@ -46,7 +46,7 @@ public class PropSignOutOfOrderBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\"Sorry! Out Of Order!\""));
+		list.add(Component.translatable("block.ya_fnafmod.prop_sign_out_of_order.description_0"));
 	}
 
 	@Override

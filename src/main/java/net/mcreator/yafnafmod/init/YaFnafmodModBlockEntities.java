@@ -901,6 +901,8 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(BigBackstageDoorGray2TileEntity::new, YaFnafmodModBlocks.BIG_BACKSTAGE_DOOR_GRAY_2.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CutoutFazvanTileEntity>> CUTOUT_FAZVAN = REGISTRY.register("cutout_fazvan", () -> BlockEntityType.Builder.of(CutoutFazvanTileEntity::new, YaFnafmodModBlocks.CUTOUT_FAZVAN.get()).build(null));
 
+	// Start of user code block custom block entities
+	// End of user code block custom block entities
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}

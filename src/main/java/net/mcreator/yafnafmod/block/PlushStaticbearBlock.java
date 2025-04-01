@@ -41,7 +41,7 @@ public class PlushStaticbearBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("= They say if you boop, it disappears!"));
+		list.add(Component.translatable("block.ya_fnafmod.plush_staticbear.description_0"));
 	}
 
 	@Override

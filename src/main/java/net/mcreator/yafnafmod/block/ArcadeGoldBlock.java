@@ -36,7 +36,7 @@ public class ArcadeGoldBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A76Gold"));
+		list.add(Component.translatable("block.ya_fnafmod.arcade_gold.description_0"));
 	}
 
 	@Override

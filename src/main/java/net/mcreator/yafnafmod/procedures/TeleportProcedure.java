@@ -29,7 +29,7 @@ public class TeleportProcedure {
 		double Ycord = 0;
 		double Zcord = 0;
 		Entity fagas = null;
-		if (!(entity instanceof Mob _mob ? _mob.isNoAi() : false)) {
+		if (!(entity instanceof Mob _mobGetNoAi ? _mobGetNoAi.isNoAi() : false)) {
 			triestillfailure = 100;
 			found = false;
 			while (!(triestillfailure <= 0) || !found) {

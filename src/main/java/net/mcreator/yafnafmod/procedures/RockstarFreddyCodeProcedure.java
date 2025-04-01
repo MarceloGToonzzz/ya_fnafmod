@@ -52,29 +52,29 @@ public class RockstarFreddyCodeProcedure {
 					if (entity instanceof RockstarFreddyEntity) {
 						((RockstarFreddyEntity) entity).setAnimation("animation.freddy.deactivated");
 					}
-					if (entity instanceof Mob _mob) {
-						_mob.setNoAi(true);
+					if (entity instanceof Mob _mobSetNoAi) {
+						_mobSetNoAi.setNoAi(true);
 					}
 				} else if (entity.getPersistentData().getDouble("state") == 1) {
 					if (entity instanceof RockstarFreddyEntity) {
 						((RockstarFreddyEntity) entity).setAnimation("animation.freddy.pls_deposit");
 					}
-					if (entity instanceof Mob _mob) {
-						_mob.setNoAi(true);
+					if (entity instanceof Mob _mobSetNoAi) {
+						_mobSetNoAi.setNoAi(true);
 					}
 				} else if (entity.getPersistentData().getDouble("state") == 2) {
 					if (entity instanceof RockstarFreddyEntity) {
 						((RockstarFreddyEntity) entity).setAnimation("animation.freddy.mad");
 					}
-					if (entity instanceof Mob _mob) {
-						_mob.setNoAi(true);
+					if (entity instanceof Mob _mobSetNoAi) {
+						_mobSetNoAi.setNoAi(true);
 					}
 				} else if (entity.getPersistentData().getDouble("state") == 3) {
 					if (entity instanceof RockstarFreddyEntity) {
 						((RockstarFreddyEntity) entity).setAnimation("empty");
 					}
-					if (entity instanceof Mob _mob) {
-						_mob.setNoAi(false);
+					if (entity instanceof Mob _mobSetNoAi) {
+						_mobSetNoAi.setNoAi(false);
 					}
 				}
 				if (entity.getPersistentData().getDouble("state") == 1 || entity.getPersistentData().getDouble("state") == 2) {

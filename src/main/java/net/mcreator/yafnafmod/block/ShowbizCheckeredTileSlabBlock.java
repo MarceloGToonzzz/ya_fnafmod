@@ -20,7 +20,7 @@ public class ShowbizCheckeredTileSlabBlock extends SlabBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("* Custom Design"));
-		list.add(Component.literal("\u00A76(Showbiz Tiles)"));
+		list.add(Component.translatable("block.ya_fnafmod.showbiz_checkered_tile_slab.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.showbiz_checkered_tile_slab.description_1"));
 	}
 }

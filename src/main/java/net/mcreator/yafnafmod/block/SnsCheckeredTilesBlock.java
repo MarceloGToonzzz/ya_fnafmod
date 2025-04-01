@@ -22,8 +22,8 @@ public class SnsCheckeredTilesBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("* Custom Design"));
-		list.add(Component.literal("\u00A7c(Smiles & Servos Tiles)"));
+		list.add(Component.translatable("block.ya_fnafmod.sns_checkered_tiles.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.sns_checkered_tiles.description_1"));
 	}
 
 	@Override

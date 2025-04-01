@@ -65,7 +65,7 @@ public class VentShaftBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Use the Faz-Wrench to change shape!"));
+		list.add(Component.translatable("block.ya_fnafmod.vent_shaft.description_0"));
 	}
 
 	@Override

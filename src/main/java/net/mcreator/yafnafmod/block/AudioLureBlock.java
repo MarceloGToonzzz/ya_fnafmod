@@ -47,10 +47,10 @@ public class AudioLureBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("= When activated by redstone, this device will play a sound which will lure in certain animatronics."));
-		list.add(Component.literal("= If this device breaks, use the wrech to repair it, the repairing process will take about 2 seconds."));
-		list.add(Component.literal("- Might break near certain critters"));
-		list.add(Component.literal("- Has chance to break after use."));
+		list.add(Component.translatable("block.ya_fnafmod.audio_lure.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.audio_lure.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.audio_lure.description_2"));
+		list.add(Component.translatable("block.ya_fnafmod.audio_lure.description_3"));
 	}
 
 	@Override

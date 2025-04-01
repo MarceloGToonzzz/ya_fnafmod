@@ -15,7 +15,7 @@ public class ChildRightClickedOnEntityProcedure {
 			return;
 		ItemStack item = ItemStack.EMPTY;
 		boolean success = false;
-		item = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
+		item = (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 		if (item.getItem() == YaFnafmodModItems.PIZZA_SLICE.get() || item.getItem() == YaFnafmodModItems.PIZZA_SLICE_FRESH.get() || item.getItem() == Items.CAKE || item.getItem() == YaFnafmodModItems.MILKSHAKE_CHOCOLATE.get()
 				|| item.getItem() == YaFnafmodModItems.MILKSHAKE_CHERRY.get() || item.getItem() == YaFnafmodModItems.MILKSHAKE_STRAWBERRY.get()) {
 			if (!(sourceentity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {

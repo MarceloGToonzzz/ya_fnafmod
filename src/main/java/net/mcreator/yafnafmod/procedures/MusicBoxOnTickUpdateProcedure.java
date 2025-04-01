@@ -163,9 +163,6 @@ public class MusicBoxOnTickUpdateProcedure {
 							if (new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()))) > 2) {
 								if (entityiterator instanceof Mob _entity)
 									_entity.getNavigation().moveTo(x, y, z, 1);
-								if (entityiterator instanceof Mob _entity) {
-									_entity.setTarget(null);
-								}
 							} else {
 								entityiterator.setDeltaMovement(new Vec3(0, 0, 0));
 								if (entityiterator instanceof Mob _entity)

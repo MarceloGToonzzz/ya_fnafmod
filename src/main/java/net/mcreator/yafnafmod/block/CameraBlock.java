@@ -62,7 +62,7 @@ public class CameraBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click with Faz-Wrench to change angles!"));
+		list.add(Component.translatable("block.ya_fnafmod.camera.description_0"));
 	}
 
 	@Override

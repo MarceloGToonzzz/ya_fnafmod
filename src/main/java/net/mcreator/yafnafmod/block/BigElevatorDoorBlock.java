@@ -79,7 +79,7 @@ public class BigElevatorDoorBlock extends BaseEntityBlock implements EntityBlock
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Needs to be linked to a Elevator Button using the Faz-Wrench"));
+		list.add(Component.translatable("block.ya_fnafmod.big_elevator_door.description_0"));
 	}
 
 	@Override

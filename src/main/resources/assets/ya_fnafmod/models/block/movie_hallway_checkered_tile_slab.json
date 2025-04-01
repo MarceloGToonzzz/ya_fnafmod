@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/checktile_moviehall",
+    "bottom": "ya_fnafmod:block/checktile_moviehall",
+    "top": "ya_fnafmod:block/checktile_moviehall",
+    "side": "ya_fnafmod:block/checktile_moviehall"
+  },
+  "render_type": "solid"
+}

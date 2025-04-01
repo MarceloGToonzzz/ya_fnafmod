@@ -117,8 +117,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 				if (entity instanceof NightmareBbEntity) {
 					((NightmareBbEntity) entity).setAnimation("animation.bb.sit");
 				}
-				if (entity instanceof Mob _mob) {
-					_mob.setNoAi(true);
+				if (entity instanceof Mob _mobSetNoAi) {
+					_mobSetNoAi.setNoAi(true);
 				}
 			} else {
 				if (entity instanceof PlushtrapEntity) {
@@ -127,8 +127,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 				if (entity instanceof NightmareBbEntity) {
 					((NightmareBbEntity) entity).setAnimation("empty");
 				}
-				if (entity instanceof Mob _mob) {
-					_mob.setNoAi(false);
+				if (entity instanceof Mob _mobSetNoAi) {
+					_mobSetNoAi.setNoAi(false);
 				}
 			}
 		}

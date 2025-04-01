@@ -25,10 +25,9 @@ import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.BonbonEntity;
 
+import java.util.UUID;
 import java.util.List;
 import java.util.Comparator;
-
-import com.mojang.util.UUIDTypeAdapter;
 
 public class FuntimeFreddyFunctionProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -177,52 +176,52 @@ public class FuntimeFreddyFunctionProcedure {
 				entity.getPersistentData().putDouble("wait_tick", (entity.getPersistentData().getDouble("wait_tick") + 1));
 				if (!world.getEntitiesOfClass(FuntimeFreddyEntity.class, AABB.ofSize(new Vec3(x, y, z), 8, 8, 8), e -> true).isEmpty()) {
 					if (new Object() {
-						Entity getEntity(String uuid) {
+						Entity entityFromStringUUID(String uuid, Level world) {
 							Entity _uuidentity = null;
 							if (world instanceof ServerLevel _server) {
 								try {
-									_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-								} catch (IllegalArgumentException e) {
+									_uuidentity = _server.getEntity(UUID.fromString(uuid));
+								} catch (Exception e) {
 								}
 							}
 							return _uuidentity;
 						}
-					}.getEntity((entity.getPersistentData().getString("original"))) instanceof FuntimeFreddyEntity) {
+					}.entityFromStringUUID((entity.getPersistentData().getString("original")), (Level) world) instanceof FuntimeFreddyEntity) {
 						if (entity instanceof Mob _entity)
 							_entity.getNavigation().moveTo((new Object() {
-								Entity getEntity(String uuid) {
+								Entity entityFromStringUUID(String uuid, Level world) {
 									Entity _uuidentity = null;
 									if (world instanceof ServerLevel _server) {
 										try {
-											_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-										} catch (IllegalArgumentException e) {
+											_uuidentity = _server.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
 										}
 									}
 									return _uuidentity;
 								}
-							}.getEntity((entity.getPersistentData().getString("original"))).getX()), (new Object() {
-								Entity getEntity(String uuid) {
+							}.entityFromStringUUID((entity.getPersistentData().getString("original")), (Level) world).getX()), (new Object() {
+								Entity entityFromStringUUID(String uuid, Level world) {
 									Entity _uuidentity = null;
 									if (world instanceof ServerLevel _server) {
 										try {
-											_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-										} catch (IllegalArgumentException e) {
+											_uuidentity = _server.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
 										}
 									}
 									return _uuidentity;
 								}
-							}.getEntity((entity.getPersistentData().getString("original"))).getY()), (new Object() {
-								Entity getEntity(String uuid) {
+							}.entityFromStringUUID((entity.getPersistentData().getString("original")), (Level) world).getY()), (new Object() {
+								Entity entityFromStringUUID(String uuid, Level world) {
 									Entity _uuidentity = null;
 									if (world instanceof ServerLevel _server) {
 										try {
-											_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-										} catch (IllegalArgumentException e) {
+											_uuidentity = _server.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
 										}
 									}
 									return _uuidentity;
 								}
-							}.getEntity((entity.getPersistentData().getString("original"))).getZ()), 1);
+							}.entityFromStringUUID((entity.getPersistentData().getString("original")), (Level) world).getZ()), 1);
 					}
 				}
 				{
@@ -231,28 +230,28 @@ public class FuntimeFreddyFunctionProcedure {
 					for (Entity entityiterator : _entfound) {
 						if (entity.getPersistentData().getDouble("wait_tick") > 20) {
 							if (entityiterator == new Object() {
-								Entity getEntity(String uuid) {
+								Entity entityFromStringUUID(String uuid, Level world) {
 									Entity _uuidentity = null;
 									if (world instanceof ServerLevel _server) {
 										try {
-											_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-										} catch (IllegalArgumentException e) {
+											_uuidentity = _server.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
 										}
 									}
 									return _uuidentity;
 								}
-							}.getEntity((entity.getPersistentData().getString("original"))) || !(new Object() {
-								Entity getEntity(String uuid) {
+							}.entityFromStringUUID((entity.getPersistentData().getString("original")), (Level) world) || !(new Object() {
+								Entity entityFromStringUUID(String uuid, Level world) {
 									Entity _uuidentity = null;
 									if (world instanceof ServerLevel _server) {
 										try {
-											_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-										} catch (IllegalArgumentException e) {
+											_uuidentity = _server.getEntity(UUID.fromString(uuid));
+										} catch (Exception e) {
 										}
 									}
 									return _uuidentity;
 								}
-							}.getEntity((entity.getPersistentData().getString("original"))) instanceof FuntimeFreddyEntity) && entityiterator instanceof FuntimeFreddyEntity
+							}.entityFromStringUUID((entity.getPersistentData().getString("original")), (Level) world) instanceof FuntimeFreddyEntity) && entityiterator instanceof FuntimeFreddyEntity
 									&& (((Entity) world.getEntitiesOfClass(FuntimeFreddyEntity.class, AABB.ofSize(new Vec3(x, y, z), 8, 8, 8), e -> true).stream().sorted(new Object() {
 										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 											return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));

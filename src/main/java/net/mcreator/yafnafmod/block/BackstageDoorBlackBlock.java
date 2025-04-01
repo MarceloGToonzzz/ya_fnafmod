@@ -23,7 +23,7 @@ public class BackstageDoorBlackBlock extends DoorBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Black"));
+		list.add(Component.translatable("block.ya_fnafmod.backstage_door_black.description_0"));
 	}
 
 	@Override

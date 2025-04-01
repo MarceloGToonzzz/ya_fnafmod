@@ -37,7 +37,7 @@ public class PosterToyFreddy2Block extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\"Party Time, U READY?\""));
+		list.add(Component.translatable("block.ya_fnafmod.poster_toy_freddy_2.description_0"));
 	}
 
 	@Override

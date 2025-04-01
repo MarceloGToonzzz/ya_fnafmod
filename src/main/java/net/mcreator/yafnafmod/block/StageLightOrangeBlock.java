@@ -80,9 +80,9 @@ public class StageLightOrangeBlock extends BaseEntityBlock implements EntityBloc
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A76Orange"));
-		list.add(Component.literal("- Use the F.A.T to change directions and activate with redstone!"));
-		list.add(Component.literal("- Use the Faz-Wrench to change type!"));
+		list.add(Component.translatable("block.ya_fnafmod.stage_light_orange.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.stage_light_orange.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.stage_light_orange.description_2"));
 	}
 
 	@Override

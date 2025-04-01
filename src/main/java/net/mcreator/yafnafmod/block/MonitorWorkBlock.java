@@ -79,9 +79,9 @@ public class MonitorWorkBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Work your life away with this!"));
-		list.add(Component.literal("= Shift right click to power it on or off."));
-		list.add(Component.literal("= If an ad shows up, right click it with a TV remote."));
+		list.add(Component.translatable("block.ya_fnafmod.monitor_work.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.monitor_work.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.monitor_work.description_2"));
 	}
 
 	@Override

@@ -22,6 +22,6 @@ public class FNAF2SongTLTItem extends RecordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Original by TLT, This cover done by me."));
+		list.add(Component.translatable("item.ya_fnafmod.fnaf_2_song_tlt.description_0"));
 	}
 }

@@ -51,7 +51,7 @@ public class SignOpenBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click with Faz-Wrench to switch from Open to Closed!"));
+		list.add(Component.translatable("block.ya_fnafmod.sign_open.description_0"));
 	}
 
 	@Override

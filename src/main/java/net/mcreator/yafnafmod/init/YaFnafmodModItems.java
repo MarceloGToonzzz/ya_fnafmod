@@ -23,6 +23,7 @@ import net.minecraft.client.renderer.item.ItemProperties;
 
 import net.mcreator.yafnafmod.procedures.FlashlightPropertyValueProviderProcedure;
 import net.mcreator.yafnafmod.procedures.FatPropertyValueProviderProcedure;
+import net.mcreator.yafnafmod.procedures.FatLetterPropertyValueProviderProcedure;
 import net.mcreator.yafnafmod.item.YenndoSpawnItemItem;
 import net.mcreator.yafnafmod.item.WitheredJollyRatSpawnItemItem;
 import net.mcreator.yafnafmod.item.WitheredJollyRatFmsSpawnItemItem;
@@ -1147,9 +1148,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_3 = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_3);
 	public static final RegistryObject<Item> PIZZA_SLICE = REGISTRY.register("pizza_slice", () -> new PizzaSliceItem());
 	public static final RegistryObject<Item> PIZZA_BOX_1988 = REGISTRY.register(YaFnafmodModBlocks.PIZZA_BOX_1988.getId().getPath(), () -> new PizzaBox1988DisplayItem(YaFnafmodModBlocks.PIZZA_BOX_1988.get(), new Item.Properties()));
-	public static final RegistryObject<Item> FNAF_SONG_TLT = REGISTRY.register("fnaf_song_tlt", () -> new FNAFSongTLTItem());
-	public static final RegistryObject<Item> FNAF_2_SONG_TLT = REGISTRY.register("fnaf_2_song_tlt", () -> new FNAF2SongTLTItem());
-	public static final RegistryObject<Item> FNAF_3_SONG_TLT = REGISTRY.register("fnaf_3_song_tlt", () -> new FNAF3SongTLTItem());
 	public static final RegistryObject<Item> BEDROOM_WALL_TOP_WHITE = block(YaFnafmodModBlocks.BEDROOM_WALL_TOP_WHITE);
 	public static final RegistryObject<Item> BEDROOM_WALL_TOP_BLUE = block(YaFnafmodModBlocks.BEDROOM_WALL_TOP_BLUE);
 	public static final RegistryObject<Item> BEDROOM_WALL_BOTTOM_GRAY = block(YaFnafmodModBlocks.BEDROOM_WALL_BOTTOM_GRAY);
@@ -1179,7 +1177,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> LAMP_BLUE = block(YaFnafmodModBlocks.LAMP_BLUE);
 	public static final RegistryObject<Item> LAMP_YELLOW = block(YaFnafmodModBlocks.LAMP_YELLOW);
 	public static final RegistryObject<Item> LAMP_ORANGE = block(YaFnafmodModBlocks.LAMP_ORANGE);
-	public static final RegistryObject<Item> FNAF_4_SONG_TLT = REGISTRY.register("fnaf_4_song_tlt", () -> new FNAF4SongTLTItem());
 	public static final RegistryObject<Item> TOY_PHONE = block(YaFnafmodModBlocks.TOY_PHONE);
 	public static final RegistryObject<Item> TOY_ROBOT = block(YaFnafmodModBlocks.TOY_ROBOT);
 	public static final RegistryObject<Item> TOY_CATERPILLAR = block(YaFnafmodModBlocks.TOY_CATERPILLAR);
@@ -1230,7 +1227,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> NIGHTMARE_FOXY_SPAWN_ITEM = REGISTRY.register("nightmare_foxy_spawn_item", () -> new NightmareFoxySpawnItemItem());
 	public static final RegistryObject<Item> PLUSHTRAP_SPAWN_ITEM = REGISTRY.register("plushtrap_spawn_item", () -> new PlushtrapSpawnItemItem());
 	public static final RegistryObject<Item> CHAIR_TALL = block(YaFnafmodModBlocks.CHAIR_TALL);
-	public static final RegistryObject<Item> FNAF_SL_SONG_TLT = REGISTRY.register("fnaf_sl_song_tlt", () -> new FNAFSlSongTLTItem());
 	public static final RegistryObject<Item> SPRINGBONNIE_HEAD = REGISTRY.register(YaFnafmodModBlocks.SPRINGBONNIE_HEAD.getId().getPath(), () -> new SpringbonnieHeadDisplayItem(YaFnafmodModBlocks.SPRINGBONNIE_HEAD.get(), new Item.Properties()));
 	public static final RegistryObject<Item> PLUSH_FREDDY_RETRO = block(YaFnafmodModBlocks.PLUSH_FREDDY_RETRO);
 	public static final RegistryObject<Item> PLUSH_BONNIE_RETRO = block(YaFnafmodModBlocks.PLUSH_BONNIE_RETRO);
@@ -1434,18 +1430,10 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CONTROL_PANEL = REGISTRY.register(YaFnafmodModBlocks.CONTROL_PANEL.getId().getPath(), () -> new ControlPanelDisplayItem(YaFnafmodModBlocks.CONTROL_PANEL.get(), new Item.Properties()));
 	public static final RegistryObject<Item> SHOCK_INFUSER = block(YaFnafmodModBlocks.SHOCK_INFUSER);
 	public static final RegistryObject<Item> SHOCK_CABLES = REGISTRY.register("shock_cables", () -> new ShockCablesItem());
-	public static final RegistryObject<Item> FNAF_3_SONG_DA_GAMES = REGISTRY.register("fnaf_3_song_da_games", () -> new FNAF3SongDaGamesItem());
-	public static final RegistryObject<Item> FNAF_4_SONG_DA_GAMES = REGISTRY.register("fnaf_4_song_da_games", () -> new FNAF4SongDaGamesItem());
-	public static final RegistryObject<Item> FNAF_SL_SONG_JT_MUSIC = REGISTRY.register("fnaf_sl_song_jt_music", () -> new FNAFSlSongJtMusicItem());
-	public static final RegistryObject<Item> FNAF_2_SONG_SMW = REGISTRY.register("fnaf_2_song_smw", () -> new FNAF2SongSMWItem());
-	public static final RegistryObject<Item> FNAF_SONG_DA_GAMES = REGISTRY.register("fnaf_song_da_games", () -> new FNAFSongDaGamesItem());
 	public static final RegistryObject<Item> FUNTIME_FOXY_SPAWN_EGG = REGISTRY.register("funtime_foxy_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_FOXY, -6860730, -4554884, new Item.Properties()));
 	public static final RegistryObject<Item> FUNTIME_FOXY_DAY_SPAWN_EGG = REGISTRY.register("funtime_foxy_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_FOXY_DAY, -6860730, -4554884, new Item.Properties()));
 	public static final RegistryObject<Item> BREAKER_CONTROL = REGISTRY.register(YaFnafmodModBlocks.BREAKER_CONTROL.getId().getPath(), () -> new BreakerControlDisplayItem(YaFnafmodModBlocks.BREAKER_CONTROL.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LARGE_FAN = REGISTRY.register(YaFnafmodModBlocks.LARGE_FAN.getId().getPath(), () -> new LargeFanDisplayItem(YaFnafmodModBlocks.LARGE_FAN.get(), new Item.Properties()));
-	public static final RegistryObject<Item> FNAF_3_SONG_WATP = REGISTRY.register("fnaf_3_song_watp", () -> new FNAF3SongWatpItem());
-	public static final RegistryObject<Item> FNAF_4_SONG_SHADROW = REGISTRY.register("fnaf_4_song_shadrow", () -> new FNAF4SongShadrowItem());
-	public static final RegistryObject<Item> FNAF_SL_SONG_DA_GAMES = REGISTRY.register("fnaf_sl_song_da_games", () -> new FNAFSlSongDaGamesItem());
 	public static final RegistryObject<Item> SCOOPER = REGISTRY.register(YaFnafmodModBlocks.SCOOPER.getId().getPath(), () -> new ScooperDisplayItem(YaFnafmodModBlocks.SCOOPER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> FUNTIME_FOXY_SPAWN_ITEM = REGISTRY.register("funtime_foxy_spawn_item", () -> new FuntimeFoxySpawnItemItem());
 	public static final RegistryObject<Item> ENNARD_MASK = block(YaFnafmodModBlocks.ENNARD_MASK);
@@ -2760,8 +2748,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> ROCKSTAR_FOXY_WALKER_SPAWN_ITEM = REGISTRY.register("rockstar_foxy_walker_spawn_item", () -> new RockstarFoxyWalkerSpawnItemItem());
 	public static final RegistryObject<Item> FAZCOIN = REGISTRY.register("fazcoin", () -> new FazcoinItem());
 	public static final RegistryObject<Item> SCRAP_BABY_SPAWN_EGG = REGISTRY.register("scrap_baby_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.SCRAP_BABY, -6860730, -4554884, new Item.Properties()));
-	public static final RegistryObject<Item> FFPS_SONG_CG_5 = REGISTRY.register("ffps_song_cg_5", () -> new FfpsSongCg5Item());
-	public static final RegistryObject<Item> FFPS_SONG_240_BITS_PER_MILE = REGISTRY.register("ffps_song_240_bits_per_mile", () -> new FfpsSong240BitsPerMileItem());
 	public static final RegistryObject<Item> CANDY_RED = REGISTRY.register("candy_red", () -> new CandyRedItem());
 	public static final RegistryObject<Item> CANDY_YELLOW = REGISTRY.register("candy_yellow", () -> new CandyYellowItem());
 	public static final RegistryObject<Item> CANDY_LIME = REGISTRY.register("candy_lime", () -> new CandyLimeItem());
@@ -3458,7 +3444,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> BIG_CLOSET = REGISTRY.register(YaFnafmodModBlocks.BIG_CLOSET.getId().getPath(), () -> new BigClosetDisplayItem(YaFnafmodModBlocks.BIG_CLOSET.get(), new Item.Properties()));
 	public static final RegistryObject<Item> MATTRESS_EXPERIMENT = block(YaFnafmodModBlocks.MATTRESS_EXPERIMENT);
 	public static final RegistryObject<Item> MATTRESS_TILED = block(YaFnafmodModBlocks.MATTRESS_TILED);
-	public static final RegistryObject<Item> FFPS_SONG_SMASHING_WINDSHIELDS = REGISTRY.register("ffps_song_smashing_windshields", () -> new FfpsSongSmashingWindshieldsItem());
 	public static final RegistryObject<Item> HAPPY_FROG_FMS_SPAWN_ITEM = REGISTRY.register("happy_frog_fms_spawn_item", () -> new HappyFrogFmsSpawnItemItem());
 	public static final RegistryObject<Item> MR_HIPPO_FMS_SPAWN_ITEM = REGISTRY.register("mr_hippo_fms_spawn_item", () -> new MrHippoFmsSpawnItemItem());
 	public static final RegistryObject<Item> PIGPATCH_FMS_SPAWN_ITEM = REGISTRY.register("pigpatch_fms_spawn_item", () -> new PigpatchFmsSpawnItemItem());
@@ -3844,6 +3829,49 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> SHADOW_2 = block(YaFnafmodModBlocks.SHADOW_2);
 	public static final RegistryObject<Item> SHADOW_3 = block(YaFnafmodModBlocks.SHADOW_3);
 	public static final RegistryObject<Item> HANGING_LAMP = block(YaFnafmodModBlocks.HANGING_LAMP);
+	public static final RegistryObject<Item> FNAF_SONG_TLT = REGISTRY.register("fnaf_song_tlt", () -> new FNAFSongTLTItem());
+	public static final RegistryObject<Item> FNAF_2_SONG_TLT = REGISTRY.register("fnaf_2_song_tlt", () -> new FNAF2SongTLTItem());
+	public static final RegistryObject<Item> FNAF_3_SONG_TLT = REGISTRY.register("fnaf_3_song_tlt", () -> new FNAF3SongTLTItem());
+	public static final RegistryObject<Item> FNAF_4_SONG_TLT = REGISTRY.register("fnaf_4_song_tlt", () -> new FNAF4SongTLTItem());
+	public static final RegistryObject<Item> FNAF_SL_SONG_TLT = REGISTRY.register("fnaf_sl_song_tlt", () -> new FNAFSlSongTLTItem());
+	public static final RegistryObject<Item> FNAF_3_SONG_DA_GAMES = REGISTRY.register("fnaf_3_song_da_games", () -> new FNAF3SongDaGamesItem());
+	public static final RegistryObject<Item> FNAF_4_SONG_DA_GAMES = REGISTRY.register("fnaf_4_song_da_games", () -> new FNAF4SongDaGamesItem());
+	public static final RegistryObject<Item> FNAF_SL_SONG_JT_MUSIC = REGISTRY.register("fnaf_sl_song_jt_music", () -> new FNAFSlSongJtMusicItem());
+	public static final RegistryObject<Item> FNAF_2_SONG_SMW = REGISTRY.register("fnaf_2_song_smw", () -> new FNAF2SongSMWItem());
+	public static final RegistryObject<Item> FNAF_SONG_DA_GAMES = REGISTRY.register("fnaf_song_da_games", () -> new FNAFSongDaGamesItem());
+	public static final RegistryObject<Item> FNAF_3_SONG_WATP = REGISTRY.register("fnaf_3_song_watp", () -> new FNAF3SongWatpItem());
+	public static final RegistryObject<Item> FNAF_4_SONG_SHADROW = REGISTRY.register("fnaf_4_song_shadrow", () -> new FNAF4SongShadrowItem());
+	public static final RegistryObject<Item> FNAF_SL_SONG_DA_GAMES = REGISTRY.register("fnaf_sl_song_da_games", () -> new FNAFSlSongDaGamesItem());
+	public static final RegistryObject<Item> FFPS_SONG_CG_5 = REGISTRY.register("ffps_song_cg_5", () -> new FfpsSongCg5Item());
+	public static final RegistryObject<Item> FFPS_SONG_240_BITS_PER_MILE = REGISTRY.register("ffps_song_240_bits_per_mile", () -> new FfpsSong240BitsPerMileItem());
+	public static final RegistryObject<Item> FFPS_SONG_SMASHING_WINDSHIELDS = REGISTRY.register("ffps_song_smashing_windshields", () -> new FfpsSongSmashingWindshieldsItem());
+	public static final RegistryObject<Item> MOVIE_HALLWAY_TILES = block(YaFnafmodModBlocks.MOVIE_HALLWAY_TILES);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_TILE_STAIRS = block(YaFnafmodModBlocks.MOVIE_HALLWAY_TILE_STAIRS);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_TILE_SLAB = block(YaFnafmodModBlocks.MOVIE_HALLWAY_TILE_SLAB);
+	public static final RegistryObject<Item> CRACKED_MOVIE_HALLWAY_TILES = block(YaFnafmodModBlocks.CRACKED_MOVIE_HALLWAY_TILES);
+	public static final RegistryObject<Item> CRACKED_MOVIE_HALLWAY_TILE_STAIRS = block(YaFnafmodModBlocks.CRACKED_MOVIE_HALLWAY_TILE_STAIRS);
+	public static final RegistryObject<Item> CRACKED_MOVIE_HALLWAY_TILE_SLAB = block(YaFnafmodModBlocks.CRACKED_MOVIE_HALLWAY_TILE_SLAB);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_CHECKERED_TILES = block(YaFnafmodModBlocks.MOVIE_HALLWAY_CHECKERED_TILES);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_CHECKERED_TILE_STAIRS = block(YaFnafmodModBlocks.MOVIE_HALLWAY_CHECKERED_TILE_STAIRS);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_CHECKERED_TILE_SLAB = block(YaFnafmodModBlocks.MOVIE_HALLWAY_CHECKERED_TILE_SLAB);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_BIG_CHECKERED_TILES = block(YaFnafmodModBlocks.MOVIE_HALLWAY_BIG_CHECKERED_TILES);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_BIG_CHECKERED_TILE_STAIRS = block(YaFnafmodModBlocks.MOVIE_HALLWAY_BIG_CHECKERED_TILE_STAIRS);
+	public static final RegistryObject<Item> MOVIE_HALLWAY_BIG_CHECKERED_TILE_SLAB = block(YaFnafmodModBlocks.MOVIE_HALLWAY_BIG_CHECKERED_TILE_SLAB);
+	public static final RegistryObject<Item> MOVIE_PURPLE_TILE_BLOCK = block(YaFnafmodModBlocks.MOVIE_PURPLE_TILE_BLOCK);
+	public static final RegistryObject<Item> MOVIE_PURPLE_TILE_BLOCK_STAIRS = block(YaFnafmodModBlocks.MOVIE_PURPLE_TILE_BLOCK_STAIRS);
+	public static final RegistryObject<Item> MOVIE_PURPLE_TILE_BLOCK_SLAB = block(YaFnafmodModBlocks.MOVIE_PURPLE_TILE_BLOCK_SLAB);
+	public static final RegistryObject<Item> MOVIE_CYAN_TILE_BLOCK = block(YaFnafmodModBlocks.MOVIE_CYAN_TILE_BLOCK);
+	public static final RegistryObject<Item> MOVIE_CYAN_TILE_BLOCK_STAIRS = block(YaFnafmodModBlocks.MOVIE_CYAN_TILE_BLOCK_STAIRS);
+	public static final RegistryObject<Item> MOVIE_CYAN_TILE_BLOCK_SLAB = block(YaFnafmodModBlocks.MOVIE_CYAN_TILE_BLOCK_SLAB);
+	public static final RegistryObject<Item> CARPET_BLUE = block(YaFnafmodModBlocks.CARPET_BLUE);
+	public static final RegistryObject<Item> CARPET_CYAN_TILES = block(YaFnafmodModBlocks.CARPET_CYAN_TILES);
+	public static final RegistryObject<Item> CARPET_DARK_BLUE = block(YaFnafmodModBlocks.CARPET_DARK_BLUE);
+	public static final RegistryObject<Item> CARPET_DARK_BLUE_CLEAN = block(YaFnafmodModBlocks.CARPET_DARK_BLUE_CLEAN);
+	public static final RegistryObject<Item> CARPET_FLOOR_FREDBEAR = block(YaFnafmodModBlocks.CARPET_FLOOR_FREDBEAR);
+	public static final RegistryObject<Item> CARPET_FLOOR_FREDBEAR_CLEAN = block(YaFnafmodModBlocks.CARPET_FLOOR_FREDBEAR_CLEAN);
+	public static final RegistryObject<Item> CARPET_FLOOR_ARCADE = block(YaFnafmodModBlocks.CARPET_FLOOR_ARCADE);
+	public static final RegistryObject<Item> CARPET_FLOOR_ARCADE_CLEAN = block(YaFnafmodModBlocks.CARPET_FLOOR_ARCADE_CLEAN);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL);
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -3860,6 +3888,7 @@ public class YaFnafmodModItems {
 		event.enqueueWork(() -> {
 			ItemProperties.register(FLASHLIGHT.get(), new ResourceLocation("ya_fnafmod:flashlight_powered"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FlashlightPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(FAT.get(), new ResourceLocation("ya_fnafmod:fat_state"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FatPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(FAT.get(), new ResourceLocation("ya_fnafmod:fat_letter"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FatLetterPropertyValueProviderProcedure.execute(itemStackToRender));
 		});
 	}
 }

@@ -50,9 +50,9 @@ public class FuseboxBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("= Right click with Wrench to repair"));
-		list.add(Component.literal("- This emits redstone and does not run out of power."));
-		list.add(Component.literal("- Some animatronics like to attack it, so make sure to keep it safe."));
+		list.add(Component.translatable("block.ya_fnafmod.fusebox.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.fusebox.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.fusebox.description_2"));
 	}
 
 	@Override

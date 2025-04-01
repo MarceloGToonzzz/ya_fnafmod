@@ -26,11 +26,11 @@ public class FatItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7eFAT/Fazbear Assistance Panel (Copyright 1987)"));
-		list.add(Component.literal("Sneak + Right Click to change modes."));
-		list.add(Component.literal("\u00A7aGreen Mode - Animatronic Block Animator"));
-		list.add(Component.literal("\u00A79Blue Mode - Animatronic Block Style Changer"));
-		list.add(Component.literal("\u00A7cRed Mode - Letter Sign Block Editor"));
+		list.add(Component.translatable("item.ya_fnafmod.fat.description_0"));
+		list.add(Component.translatable("item.ya_fnafmod.fat.description_1"));
+		list.add(Component.translatable("item.ya_fnafmod.fat.description_2"));
+		list.add(Component.translatable("item.ya_fnafmod.fat.description_3"));
+		list.add(Component.translatable("item.ya_fnafmod.fat.description_4"));
 	}
 
 	@Override

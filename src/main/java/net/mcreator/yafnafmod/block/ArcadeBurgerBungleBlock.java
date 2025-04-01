@@ -46,8 +46,8 @@ public class ArcadeBurgerBungleBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7cBurger Bungle"));
-		list.add(Component.literal("Use the Faz-Wrench to turn on and off!"));
+		list.add(Component.translatable("block.ya_fnafmod.arcade_burger_bungle.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.arcade_burger_bungle.description_1"));
 	}
 
 	@Override

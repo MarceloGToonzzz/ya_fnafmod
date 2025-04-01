@@ -10,7 +10,7 @@ import net.mcreator.yafnafmod.client.model.Modela;
 
 public class CarSeatRenderer extends MobRenderer<CarSeatEntity, Modela<CarSeatEntity>> {
 	public CarSeatRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modela(context.bakeLayer(Modela.LAYER_LOCATION)), 0.5f);
+		super(context, new Modela<CarSeatEntity>(context.bakeLayer(Modela.LAYER_LOCATION)), 0.5f);
 	}
 
 	@Override

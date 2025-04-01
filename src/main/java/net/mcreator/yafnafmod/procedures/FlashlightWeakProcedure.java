@@ -96,8 +96,8 @@ public class FlashlightWeakProcedure {
 									if (entity instanceof NightmareBbEntity) {
 										((NightmareBbEntity) entity).setAnimation("animation.bb.sit");
 									}
-									if (entity instanceof Mob _mob) {
-										_mob.setNoAi(true);
+									if (entity instanceof Mob _mobSetNoAi) {
+										_mobSetNoAi.setNoAi(true);
 									}
 								} else {
 									if (entity instanceof PlushtrapEntity) {
@@ -106,8 +106,8 @@ public class FlashlightWeakProcedure {
 									if (entity instanceof NightmareBbEntity) {
 										((NightmareBbEntity) entity).setAnimation("empty");
 									}
-									if (entity instanceof Mob _mob) {
-										_mob.setNoAi(false);
+									if (entity instanceof Mob _mobSetNoAi) {
+										_mobSetNoAi.setNoAi(false);
 									}
 								}
 							} else if (entity instanceof FuntimeFoxyEntity || entity instanceof LolbitEntity) {

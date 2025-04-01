@@ -64,7 +64,7 @@ public class CarouselFreddyRetroBlock extends BaseEntityBlock implements EntityB
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click with Faz-wrench to animate!"));
+		list.add(Component.translatable("block.ya_fnafmod.carousel_freddy_retro.description_0"));
 	}
 
 	@Override

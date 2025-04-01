@@ -73,7 +73,7 @@ public class ClawMachineCupcakeBonanzaBlock extends BaseEntityBlock implements E
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A74Cupcake Bonanza"));
+		list.add(Component.translatable("block.ya_fnafmod.claw_machine_cupcake_bonanza.description_0"));
 	}
 
 	@Override

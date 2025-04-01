@@ -34,7 +34,7 @@ public class BigCakeCakebearBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- From FNAF 2's Take Cake Minigame!"));
+		list.add(Component.translatable("block.ya_fnafmod.big_cake_cakebear.description_0"));
 	}
 
 	@Override

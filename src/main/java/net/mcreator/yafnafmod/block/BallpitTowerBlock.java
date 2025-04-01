@@ -64,7 +64,7 @@ public class BallpitTowerBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Use Faz-Wrench to make it diagonal!"));
+		list.add(Component.translatable("block.ya_fnafmod.ballpit_tower.description_0"));
 	}
 
 	@Override

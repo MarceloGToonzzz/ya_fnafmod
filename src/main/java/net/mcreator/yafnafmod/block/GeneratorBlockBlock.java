@@ -63,7 +63,7 @@ public class GeneratorBlockBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Emits redstone and can connect to certain devices."));
+		list.add(Component.translatable("block.ya_fnafmod.generator_block.description_0"));
 	}
 
 	@Override

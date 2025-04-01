@@ -44,7 +44,7 @@ public class PartyBanner1Block extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Use the Faz-Wrench to make it diagonal!"));
+		list.add(Component.translatable("block.ya_fnafmod.party_banner_1.description_0"));
 	}
 
 	@Override

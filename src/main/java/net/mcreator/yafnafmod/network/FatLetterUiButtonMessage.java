@@ -89,107 +89,107 @@ public class FatLetterUiButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			FatLetterAProcedure.execute(entity);
+			FatLetterAProcedure.execute(world, entity);
 		}
 		if (buttonID == 1) {
 
-			FatLetterBProcedure.execute(entity);
+			FatLetterBProcedure.execute(world, entity);
 		}
 		if (buttonID == 2) {
 
-			FatLetterCProcedure.execute(entity);
+			FatLetterCProcedure.execute(world, entity);
 		}
 		if (buttonID == 3) {
 
-			FatLetterDProcedure.execute(entity);
+			FatLetterDProcedure.execute(world, entity);
 		}
 		if (buttonID == 4) {
 
-			FatLetterEProcedure.execute(entity);
+			FatLetterEProcedure.execute(world, entity);
 		}
 		if (buttonID == 5) {
 
-			FatLetterFProcedure.execute(entity);
+			FatLetterFProcedure.execute(world, entity);
 		}
 		if (buttonID == 6) {
 
-			FatLetterGProcedure.execute(entity);
+			FatLetterGProcedure.execute(world, entity);
 		}
 		if (buttonID == 7) {
 
-			FatLetterHProcedure.execute(entity);
+			FatLetterHProcedure.execute(world, entity);
 		}
 		if (buttonID == 8) {
 
-			FatLetterIProcedure.execute(entity);
+			FatLetterIProcedure.execute(world, entity);
 		}
 		if (buttonID == 9) {
 
-			FatLetterJProcedure.execute(entity);
+			FatLetterJProcedure.execute(world, entity);
 		}
 		if (buttonID == 10) {
 
-			FatLetterKProcedure.execute(entity);
+			FatLetterKProcedure.execute(world, entity);
 		}
 		if (buttonID == 11) {
 
-			FatLetterLProcedure.execute(entity);
+			FatLetterLProcedure.execute(world, entity);
 		}
 		if (buttonID == 12) {
 
-			FatLetterMProcedure.execute(entity);
+			FatLetterMProcedure.execute(world, entity);
 		}
 		if (buttonID == 13) {
 
-			FatLetterNProcedure.execute(entity);
+			FatLetterNProcedure.execute(world, entity);
 		}
 		if (buttonID == 14) {
 
-			FatLetterOProcedure.execute(entity);
+			FatLetterOProcedure.execute(world, entity);
 		}
 		if (buttonID == 15) {
 
-			FatLetterPProcedure.execute(entity);
+			FatLetterPProcedure.execute(world, entity);
 		}
 		if (buttonID == 16) {
 
-			FatLetterQProcedure.execute(entity);
+			FatLetterQProcedure.execute(world, entity);
 		}
 		if (buttonID == 17) {
 
-			FatLetterRProcedure.execute(entity);
+			FatLetterRProcedure.execute(world, entity);
 		}
 		if (buttonID == 18) {
 
-			FatLetterSProcedure.execute(entity);
+			FatLetterSProcedure.execute(world, entity);
 		}
 		if (buttonID == 19) {
 
-			FatLetterTProcedure.execute(entity);
+			FatLetterTProcedure.execute(world, entity);
 		}
 		if (buttonID == 20) {
 
-			FatLetterUProcedure.execute(entity);
+			FatLetterUProcedure.execute(world, entity);
 		}
 		if (buttonID == 21) {
 
-			FatLetterVProcedure.execute(entity);
+			FatLetterVProcedure.execute(world, entity);
 		}
 		if (buttonID == 22) {
 
-			FatLetterWProcedure.execute(entity);
+			FatLetterWProcedure.execute(world, entity);
 		}
 		if (buttonID == 23) {
 
-			FatLetterXProcedure.execute(entity);
+			FatLetterXProcedure.execute(world, entity);
 		}
 		if (buttonID == 24) {
 
-			FatLetterYProcedure.execute(entity);
+			FatLetterYProcedure.execute(world, entity);
 		}
 		if (buttonID == 25) {
 
-			FatLetterZProcedure.execute(entity);
+			FatLetterZProcedure.execute(world, entity);
 		}
 	}
 

@@ -58,7 +58,7 @@ public class MonitorBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Stackable up to 4!"));
+		list.add(Component.translatable("block.ya_fnafmod.monitor.description_0"));
 	}
 
 	@Override

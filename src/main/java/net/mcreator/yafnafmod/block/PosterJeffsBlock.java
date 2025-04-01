@@ -57,7 +57,7 @@ public class PosterJeffsBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Use the Faz-Wrench to change posters!"));
+		list.add(Component.translatable("block.ya_fnafmod.poster_jeffs.description_0"));
 	}
 
 	@Override

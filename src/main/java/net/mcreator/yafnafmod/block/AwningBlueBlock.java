@@ -34,7 +34,7 @@ public class AwningBlueBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A79Blue"));
+		list.add(Component.translatable("block.ya_fnafmod.awning_blue.description_0"));
 	}
 
 	@Override

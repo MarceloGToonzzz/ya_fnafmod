@@ -60,10 +60,10 @@ public class MusicBoxBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Lures in The Puppet while playing!"));
-		list.add(Component.literal("- Right click it to wind up"));
-		list.add(Component.literal("- Takes 30 seconds to wind down fully."));
-		list.add(Component.literal("- Only works (and plays music) at night."));
+		list.add(Component.translatable("block.ya_fnafmod.music_box.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.music_box.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.music_box.description_2"));
+		list.add(Component.translatable("block.ya_fnafmod.music_box.description_3"));
 	}
 
 	@Override

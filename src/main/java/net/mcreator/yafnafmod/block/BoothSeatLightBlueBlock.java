@@ -41,7 +41,7 @@ public class BoothSeatLightBlueBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7bLight Blue"));
+		list.add(Component.translatable("block.ya_fnafmod.booth_seat_light_blue.description_0"));
 	}
 
 	@Override

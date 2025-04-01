@@ -22,8 +22,8 @@ public class DarkWallBlackShowbizExtraTilesBigBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("* Custom design"));
-		list.add(Component.literal("\u00A76(Showbiz Tiles)"));
+		list.add(Component.translatable("block.ya_fnafmod.dark_wall_black_showbiz_extra_tiles_big.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.dark_wall_black_showbiz_extra_tiles_big.description_1"));
 	}
 
 	@Override

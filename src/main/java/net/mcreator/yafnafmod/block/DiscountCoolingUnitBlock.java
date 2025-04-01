@@ -73,7 +73,7 @@ public class DiscountCoolingUnitBlock extends BaseEntityBlock implements EntityB
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("* Requires a redstone signal to activate!"));
+		list.add(Component.translatable("block.ya_fnafmod.discount_cooling_unit.description_0"));
 	}
 
 	@Override

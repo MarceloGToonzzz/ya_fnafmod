@@ -79,9 +79,9 @@ public class ControlPanelBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Can connect to Linked Lamps and Control Shock Infusers"));
-		list.add(Component.literal("= Right Click to use Linked Lamps"));
-		list.add(Component.literal("= Shift Right Click to use Controlled Shocks"));
+		list.add(Component.translatable("block.ya_fnafmod.control_panel.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.control_panel.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.control_panel.description_2"));
 	}
 
 	@Override

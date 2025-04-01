@@ -52,9 +52,9 @@ public class ShockInfuserBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Requires a redstone signal to work!"));
-		list.add(Component.literal("= When connected to a redstone signal and a control panel, when the control panel is activated, any connected animatronics are shocked and they return to their stage"));
-		list.add(Component.literal("- Right click with a Shock Cable to start connecting, then right click an animatronic with the same shock cable."));
+		list.add(Component.translatable("block.ya_fnafmod.shock_infuser.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.shock_infuser.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.shock_infuser.description_2"));
 	}
 
 	@Override

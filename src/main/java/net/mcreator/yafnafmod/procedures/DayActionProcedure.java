@@ -220,8 +220,8 @@ public class DayActionProcedure {
 										("tp " + entity.getPersistentData().getDouble("x") + " " + entity.getPersistentData().getDouble("y") + " " + entity.getPersistentData().getDouble("z")));
 					}
 				}
-				if (entity instanceof Mob _mob) {
-					_mob.setNoAi(true);
+				if (entity instanceof Mob _mobSetNoAi) {
+					_mobSetNoAi.setNoAi(true);
 				}
 				if (!(entity instanceof GoldenFreddyEntity) && !(entity instanceof WitheredGoldenFreddyEntity)) {
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -230,13 +230,13 @@ public class DayActionProcedure {
 			} else {
 				if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:phantoms")))) {
 					if (!(entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity)) {
-						if (entity instanceof Mob _mob) {
-							_mob.setNoAi(false);
+						if (entity instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(false);
 						}
 					} else {
 						if (YaFnafmodModVariables.MapVariables.get(world).rare_night == true) {
-							if (entity instanceof Mob _mob) {
-								_mob.setNoAi(false);
+							if (entity instanceof Mob _mobSetNoAi) {
+								_mobSetNoAi.setNoAi(false);
 							}
 						} else {
 							if (entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity) {
@@ -248,16 +248,13 @@ public class DayActionProcedure {
 				} else {
 					if (entity.getPersistentData().getBoolean("just_jumpscared") == true) {
 						if (x == entity.getPersistentData().getDouble("x") && y == entity.getPersistentData().getDouble("y") && z == entity.getPersistentData().getDouble("z")) {
-							if (entity instanceof Mob _mob) {
-								_mob.setNoAi(true);
+							if (entity instanceof Mob _mobSetNoAi) {
+								_mobSetNoAi.setNoAi(true);
 							}
 						} else {
-							if (entity instanceof Mob _mob) {
-								_mob.setNoAi(false);
+							if (entity instanceof Mob _mobSetNoAi) {
+								_mobSetNoAi.setNoAi(false);
 							}
-						}
-						if (entity instanceof Mob _entity) {
-							_entity.setTarget(null);
 						}
 						if (entity instanceof Mob) {
 							try {
@@ -271,8 +268,8 @@ public class DayActionProcedure {
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 5, 5));
 					} else {
-						if (entity instanceof Mob _mob) {
-							_mob.setNoAi(false);
+						if (entity instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(false);
 						}
 					}
 				}

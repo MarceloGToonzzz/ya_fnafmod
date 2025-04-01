@@ -58,7 +58,7 @@ public class FazOvenBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click to off-center!"));
+		list.add(Component.translatable("block.ya_fnafmod.faz_oven.description_0"));
 	}
 
 	@Override

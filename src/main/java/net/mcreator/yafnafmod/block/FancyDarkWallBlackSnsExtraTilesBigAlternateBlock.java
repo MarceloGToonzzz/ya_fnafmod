@@ -22,8 +22,8 @@ public class FancyDarkWallBlackSnsExtraTilesBigAlternateBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("* Custom design"));
-		list.add(Component.literal("\u00A7c(Smiles & Servos Wall Tiles)"));
+		list.add(Component.translatable("block.ya_fnafmod.fancy_dark_wall_black_sns_extra_tiles_big_alternate.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.fancy_dark_wall_black_sns_extra_tiles_big_alternate.description_1"));
 	}
 
 	@Override

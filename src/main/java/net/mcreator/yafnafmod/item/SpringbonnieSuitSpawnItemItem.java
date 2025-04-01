@@ -22,7 +22,7 @@ public class SpringbonnieSuitSpawnItemItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- This is simply just a decoration."));
+		list.add(Component.translatable("item.ya_fnafmod.springbonnie_suit_spawn_item.description_0"));
 	}
 
 	@Override

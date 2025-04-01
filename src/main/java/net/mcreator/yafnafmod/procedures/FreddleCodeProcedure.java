@@ -67,37 +67,37 @@ public class FreddleCodeProcedure {
 		if ((entity instanceof NightmareFreddyEntity _datEntI ? _datEntI.getEntityData().get(NightmareFreddyEntity.DATA_freddles) : 0) == 0) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 5, 1, false, false));
-			if (entity instanceof Mob _mob) {
-				_mob.setNoAi(true);
+			if (entity instanceof Mob _mobSetNoAi) {
+				_mobSetNoAi.setNoAi(true);
 			}
 		} else if ((entity instanceof NightmareFreddyEntity _datEntI ? _datEntI.getEntityData().get(NightmareFreddyEntity.DATA_freddles) : 0) == 1) {
 			if (entity instanceof NightmareFreddyEntity) {
 				((NightmareFreddyEntity) entity).setAnimation("animation.nfreddy.freddle1");
 			}
-			if (entity instanceof Mob _mob) {
-				_mob.setNoAi(true);
+			if (entity instanceof Mob _mobSetNoAi) {
+				_mobSetNoAi.setNoAi(true);
 			}
 		} else if ((entity instanceof NightmareFreddyEntity _datEntI ? _datEntI.getEntityData().get(NightmareFreddyEntity.DATA_freddles) : 0) == 2) {
 			if (entity instanceof NightmareFreddyEntity) {
 				((NightmareFreddyEntity) entity).setAnimation("animation.nfreddy.freddle2");
 			}
-			if (entity instanceof Mob _mob) {
-				_mob.setNoAi(true);
+			if (entity instanceof Mob _mobSetNoAi) {
+				_mobSetNoAi.setNoAi(true);
 			}
 		} else if ((entity instanceof NightmareFreddyEntity _datEntI ? _datEntI.getEntityData().get(NightmareFreddyEntity.DATA_freddles) : 0) == 3) {
 			if (entity instanceof NightmareFreddyEntity) {
 				((NightmareFreddyEntity) entity).setAnimation("animation.nfreddy.freddle3");
 			}
-			if (entity instanceof Mob _mob) {
-				_mob.setNoAi(true);
+			if (entity instanceof Mob _mobSetNoAi) {
+				_mobSetNoAi.setNoAi(true);
 			}
 		} else if ((entity instanceof NightmareFreddyEntity _datEntI ? _datEntI.getEntityData().get(NightmareFreddyEntity.DATA_freddles) : 0) == 4) {
 			if (entity.getPersistentData().getBoolean("walking_around") == false) {
 				if (entity instanceof NightmareFreddyEntity) {
 					((NightmareFreddyEntity) entity).setAnimation("empty");
 				}
-				if (entity instanceof Mob _mob) {
-					_mob.setNoAi(false);
+				if (entity instanceof Mob _mobSetNoAi) {
+					_mobSetNoAi.setNoAi(false);
 				}
 				entity.getPersistentData().putBoolean("walking_around", true);
 			}

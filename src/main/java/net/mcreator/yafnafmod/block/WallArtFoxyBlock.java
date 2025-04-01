@@ -34,7 +34,7 @@ public class WallArtFoxyBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Foxy"));
+		list.add(Component.translatable("block.ya_fnafmod.wall_art_foxy.description_0"));
 	}
 
 	@Override

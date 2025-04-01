@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortile_moviehall",
+    "bottom": "ya_fnafmod:block/floortile_moviehall",
+    "top": "ya_fnafmod:block/floortile_moviehall",
+    "side": "ya_fnafmod:block/floortile_moviehall"
+  },
+  "render_type": "solid"
+}

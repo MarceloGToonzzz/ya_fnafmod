@@ -46,8 +46,8 @@ public class ArcadeBomberBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7bBomber"));
-		list.add(Component.literal("Use the Faz-Wrench to turn on and off!"));
+		list.add(Component.translatable("block.ya_fnafmod.arcade_bomber.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.arcade_bomber.description_1"));
 	}
 
 	@Override

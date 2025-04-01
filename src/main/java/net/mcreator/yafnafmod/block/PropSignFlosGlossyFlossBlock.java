@@ -46,7 +46,7 @@ public class PropSignFlosGlossyFlossBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\"Flo's Glossy Floss, The first step to true romance!\""));
+		list.add(Component.translatable("block.ya_fnafmod.prop_sign_flos_glossy_floss.description_0"));
 	}
 
 	@Override

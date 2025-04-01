@@ -64,8 +64,8 @@ public class TrashBagGreenBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A72Green"));
-		list.add(Component.literal("- Right click with Faz-wrench to change direction!"));
+		list.add(Component.translatable("block.ya_fnafmod.trash_bag_green.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.trash_bag_green.description_1"));
 	}
 
 	@Override

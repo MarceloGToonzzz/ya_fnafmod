@@ -18,6 +18,6 @@ public class RemoteItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("= Use this to change the channel of any TV!"));
+		list.add(Component.translatable("item.ya_fnafmod.remote.description_0"));
 	}
 }

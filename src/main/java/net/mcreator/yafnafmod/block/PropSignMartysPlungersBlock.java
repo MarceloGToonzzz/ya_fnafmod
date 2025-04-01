@@ -46,7 +46,7 @@ public class PropSignMartysPlungersBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\"Marty's Plungers! Nothing goes down, that can't come up!\""));
+		list.add(Component.translatable("block.ya_fnafmod.prop_sign_martys_plungers.description_0"));
 	}
 
 	@Override

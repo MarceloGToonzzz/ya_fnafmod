@@ -22,6 +22,6 @@ public class FNAFSlSongDaGamesItem extends RecordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Original by DaGames, This cover done by me."));
+		list.add(Component.translatable("item.ya_fnafmod.fnaf_sl_song_da_games.description_0"));
 	}
 }

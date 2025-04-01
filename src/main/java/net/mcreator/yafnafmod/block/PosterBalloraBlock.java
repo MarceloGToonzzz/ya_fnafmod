@@ -37,7 +37,7 @@ public class PosterBalloraBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\"Dance!\""));
+		list.add(Component.translatable("block.ya_fnafmod.poster_ballora.description_0"));
 	}
 
 	@Override

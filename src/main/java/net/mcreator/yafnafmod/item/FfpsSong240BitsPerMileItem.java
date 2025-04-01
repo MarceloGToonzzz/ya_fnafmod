@@ -22,6 +22,6 @@ public class FfpsSong240BitsPerMileItem extends RecordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Original by Leon Riskin, This cover done by me."));
+		list.add(Component.translatable("item.ya_fnafmod.ffps_song_240_bits_per_mile.description_0"));
 	}
 }

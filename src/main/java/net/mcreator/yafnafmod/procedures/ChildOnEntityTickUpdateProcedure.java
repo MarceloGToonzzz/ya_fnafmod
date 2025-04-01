@@ -5,6 +5,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -41,10 +42,9 @@ import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.ChildEntity;
 import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
 
+import java.util.UUID;
 import java.util.List;
 import java.util.Comparator;
-
-import com.mojang.util.UUIDTypeAdapter;
 
 public class ChildOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -115,29 +115,29 @@ public class ChildOnEntityTickUpdateProcedure {
 					animatable.setTexture("child_ghostvengeful");
 			}
 			if (new Object() {
-				Entity getEntity(String uuid) {
+				Entity entityFromStringUUID(String uuid, Level world) {
 					Entity _uuidentity = null;
 					if (world instanceof ServerLevel _server) {
 						try {
-							_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-						} catch (IllegalArgumentException e) {
+							_uuidentity = _server.getEntity(UUID.fromString(uuid));
+						} catch (Exception e) {
 						}
 					}
 					return _uuidentity;
 				}
-			}.getEntity((entity.getPersistentData().getString("killer"))) instanceof LivingEntity) {
+			}.entityFromStringUUID((entity.getPersistentData().getString("killer")), (Level) world) instanceof LivingEntity) {
 				killer = new Object() {
-					Entity getEntity(String uuid) {
+					Entity entityFromStringUUID(String uuid, Level world) {
 						Entity _uuidentity = null;
 						if (world instanceof ServerLevel _server) {
 							try {
-								_uuidentity = _server.getEntity(UUIDTypeAdapter.fromString(uuid));
-							} catch (IllegalArgumentException e) {
+								_uuidentity = _server.getEntity(UUID.fromString(uuid));
+							} catch (Exception e) {
 							}
 						}
 						return _uuidentity;
 					}
-				}.getEntity((entity.getPersistentData().getString("killer")));
+				}.entityFromStringUUID((entity.getPersistentData().getString("killer")), (Level) world);
 				if (!(killer instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 					if (entity instanceof Mob _entity && killer instanceof LivingEntity _ent)
 						_entity.setTarget(_ent);

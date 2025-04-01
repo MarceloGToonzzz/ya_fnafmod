@@ -79,99 +79,163 @@ public class FridgeIndustrialGUIMenu extends AbstractContainerMenu implements Su
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 35, 9) {
 			private final int slot = 0;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 53, 9) {
 			private final int slot = 1;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 71, 9) {
 			private final int slot = 2;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 89, 9) {
 			private final int slot = 3;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 107, 9) {
 			private final int slot = 4;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 125, 9) {
 			private final int slot = 5;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 35, 31) {
 			private final int slot = 6;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 53, 31) {
 			private final int slot = 7;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 71, 31) {
 			private final int slot = 8;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 89, 31) {
 			private final int slot = 9;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 107, 31) {
 			private final int slot = 10;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 125, 31) {
 			private final int slot = 11;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 35, 54) {
 			private final int slot = 12;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 53, 54) {
 			private final int slot = 13;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 71, 54) {
 			private final int slot = 14;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 89, 54) {
 			private final int slot = 15;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 107, 54) {
 			private final int slot = 16;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 125, 54) {
 			private final int slot = 17;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 35, 76) {
 			private final int slot = 18;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 53, 76) {
 			private final int slot = 19;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 71, 76) {
 			private final int slot = 20;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 89, 76) {
 			private final int slot = 21;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 107, 76) {
 			private final int slot = 22;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 125, 76) {
 			private final int slot = 23;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 8, 9) {
 			private final int slot = 24;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 8, 36) {
 			private final int slot = 25;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 8, 63) {
 			private final int slot = 26;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 8, 90) {
 			private final int slot = 27;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 152, 9) {
 			private final int slot = 28;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 152, 36) {
 			private final int slot = 29;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 152, 63) {
 			private final int slot = 30;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 152, 94) {
 			private final int slot = 31;
+			private int x = FridgeIndustrialGUIMenu.this.x;
+			private int y = FridgeIndustrialGUIMenu.this.y;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)

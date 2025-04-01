@@ -53,7 +53,7 @@ public class GasTankPackBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Stackable up to 9 tanks!"));
+		list.add(Component.translatable("block.ya_fnafmod.gas_tank_pack.description_0"));
 	}
 
 	@Override

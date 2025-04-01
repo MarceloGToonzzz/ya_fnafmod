@@ -67,7 +67,7 @@ public class NeonStageLightPinkBlock extends BaseEntityBlock implements EntityBl
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("* Use the Faz-Wrench to change direction!"));
+		list.add(Component.translatable("block.ya_fnafmod.neon_stage_light_pink.description_0"));
 	}
 
 	@Override

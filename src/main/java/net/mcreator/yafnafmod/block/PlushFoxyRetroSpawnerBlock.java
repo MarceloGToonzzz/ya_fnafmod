@@ -46,8 +46,8 @@ public class PlushFoxyRetroSpawnerBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Spawns Nightmare Foxy/Nightmare Mangle at night!"));
-		list.add(Component.literal("- Every night, there is a 1/31 chance of spawning halloween characters!"));
+		list.add(Component.translatable("block.ya_fnafmod.plush_foxy_retro_spawner.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.plush_foxy_retro_spawner.description_1"));
 	}
 
 	@Override

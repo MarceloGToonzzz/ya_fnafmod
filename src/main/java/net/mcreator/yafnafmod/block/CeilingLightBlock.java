@@ -39,7 +39,7 @@ public class CeilingLightBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Turn on with Redstone!"));
+		list.add(Component.translatable("block.ya_fnafmod.ceiling_light.description_0"));
 	}
 
 	@Override

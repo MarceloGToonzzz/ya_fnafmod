@@ -21,7 +21,7 @@ public class MattressExperimentBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A79(Experiment - From FNAF 4)"));
+		list.add(Component.translatable("block.ya_fnafmod.mattress_experiment.description_0"));
 	}
 
 	@Override

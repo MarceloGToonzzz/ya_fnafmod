@@ -297,42 +297,39 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 				for (Entity entityiterator : _entfound) {
 					if ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
 						if (new Object() {
-							int getX(Entity ent1, Entity ent2) {
-								int X = 0;
+							BlockPos getBlockBetweenEntities(Entity ent1, Entity ent2) {
+								BlockPos pos = BlockPos.ZERO;
 								if (ent1 instanceof LivingEntity _liveEnt && ent2 != null && !_liveEnt.hasLineOfSight(ent2)) {
 									Vec3 v1 = new Vec3(ent1.getX(), ent1.getEyeY(), ent1.getZ());
 									Vec3 v2 = new Vec3(ent2.getX(), ent2.getEyeY(), ent2.getZ());
 									BlockHitResult hitres = ent1.level().clip(new ClipContext(v1, v2, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, ent1));
-									X = hitres.getBlockPos().getX();
+									pos = hitres.getBlockPos();
 								}
-								return X;
+								return pos;
 							}
-						}.getX((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null), entityiterator) == x && new Object() {
-							int getY(Entity ent1, Entity ent2) {
-								int Y = 0;
+						}.getBlockBetweenEntities((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null), entityiterator).getX() == x && new Object() {
+							BlockPos getBlockBetweenEntities(Entity ent1, Entity ent2) {
+								BlockPos pos = BlockPos.ZERO;
 								if (ent1 instanceof LivingEntity _liveEnt && ent2 != null && !_liveEnt.hasLineOfSight(ent2)) {
 									Vec3 v1 = new Vec3(ent1.getX(), ent1.getEyeY(), ent1.getZ());
 									Vec3 v2 = new Vec3(ent2.getX(), ent2.getEyeY(), ent2.getZ());
 									BlockHitResult hitres = ent1.level().clip(new ClipContext(v1, v2, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, ent1));
-									Y = hitres.getBlockPos().getY();
+									pos = hitres.getBlockPos();
 								}
-								return Y;
+								return pos;
 							}
-						}.getY((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null), entityiterator) == y && new Object() {
-							int getZ(Entity ent1, Entity ent2) {
-								int Z = 0;
+						}.getBlockBetweenEntities((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null), entityiterator).getY() == y && new Object() {
+							BlockPos getBlockBetweenEntities(Entity ent1, Entity ent2) {
+								BlockPos pos = BlockPos.ZERO;
 								if (ent1 instanceof LivingEntity _liveEnt && ent2 != null && !_liveEnt.hasLineOfSight(ent2)) {
 									Vec3 v1 = new Vec3(ent1.getX(), ent1.getEyeY(), ent1.getZ());
 									Vec3 v2 = new Vec3(ent2.getX(), ent2.getEyeY(), ent2.getZ());
 									BlockHitResult hitres = ent1.level().clip(new ClipContext(v1, v2, ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, ent1));
-									Z = hitres.getBlockPos().getZ();
+									pos = hitres.getBlockPos();
 								}
-								return Z;
+								return pos;
 							}
-						}.getZ((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null), entityiterator) == z) {
-							if (entityiterator instanceof Mob _entity) {
-								_entity.setTarget(null);
-							}
+						}.getBlockBetweenEntities((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null), entityiterator).getZ() == z) {
 						}
 					}
 				}

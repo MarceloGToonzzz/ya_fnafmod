@@ -1,0 +1,64 @@
+{
+  "mappings": {
+    "cyantile": {
+      "map": {
+        "0": "carpet_cyantile"
+      },
+      "name": "cyantile"
+    },
+    "default": {
+      "map": {
+        "0": "carpet_cyantile"
+      },
+      "name": "default"
+    },
+    "movie": {
+      "map": {
+        "0": "carpet_movieredish"
+      },
+      "name": "movie"
+    },
+    "fredbearcarpetclean": {
+      "map": {
+        "0": "carpet_fredbearfloor_cleanpng"
+      },
+      "name": "fredbearcarpetclean"
+    },
+    "darkblueclean": {
+      "map": {
+        "0": "carpet_bluefloor_clean"
+      },
+      "name": "darkblueclean"
+    },
+    "arcadeclean": {
+      "map": {
+        "0": "carpet_arcadefloor_clean"
+      },
+      "name": "arcadeclean"
+    },
+    "arcade": {
+      "map": {
+        "0": "carpet_arcadefloor"
+      },
+      "name": "arcade"
+    },
+    "darkblue": {
+      "map": {
+        "0": "carpet_bluefloor"
+      },
+      "name": "darkblue"
+    },
+    "fredbearcarpet": {
+      "map": {
+        "0": "carpet_fredbearfloor"
+      },
+      "name": "fredbearcarpet"
+    },
+    "blue": {
+      "map": {
+        "0": "afthou_bedroomfloor1"
+      },
+      "name": "blue"
+    }
+  }
+}

@@ -22,7 +22,7 @@ public class MangleFmsSpawnItemItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Fooled by the Freddy Mask!"));
+		list.add(Component.translatable("item.ya_fnafmod.mangle_fms_spawn_item.description_0"));
 	}
 
 	@Override

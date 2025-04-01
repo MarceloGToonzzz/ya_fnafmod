@@ -66,7 +66,7 @@ public class NeonJukeboxBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click with the F.A.T to turn on, then right click to cycle through the songs!"));
+		list.add(Component.translatable("block.ya_fnafmod.neon_jukebox.description_0"));
 	}
 
 	@Override

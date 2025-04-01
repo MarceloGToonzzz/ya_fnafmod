@@ -81,6 +81,8 @@ public class WallCreatorMenu extends AbstractContainerMenu implements Supplier<M
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 17, 30) {
 			private final int slot = 0;
+			private int x = WallCreatorMenu.this.x;
+			private int y = WallCreatorMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -89,6 +91,8 @@ public class WallCreatorMenu extends AbstractContainerMenu implements Supplier<M
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 53, 30) {
 			private final int slot = 1;
+			private int x = WallCreatorMenu.this.x;
+			private int y = WallCreatorMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {
@@ -97,6 +101,8 @@ public class WallCreatorMenu extends AbstractContainerMenu implements Supplier<M
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 134, 30) {
 			private final int slot = 2;
+			private int x = WallCreatorMenu.this.x;
+			private int y = WallCreatorMenu.this.y;
 
 			@Override
 			public boolean mayPlace(ItemStack stack) {

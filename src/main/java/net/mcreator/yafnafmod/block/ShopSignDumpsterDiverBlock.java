@@ -73,8 +73,8 @@ public class ShopSignDumpsterDiverBlock extends BaseEntityBlock implements Entit
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click with Faz-Wrench to off-center!"));
-		list.add(Component.literal("- Activate with Redstone to turn on the light!"));
+		list.add(Component.translatable("block.ya_fnafmod.shop_sign_dumpster_diver.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.shop_sign_dumpster_diver.description_1"));
 	}
 
 	@Override

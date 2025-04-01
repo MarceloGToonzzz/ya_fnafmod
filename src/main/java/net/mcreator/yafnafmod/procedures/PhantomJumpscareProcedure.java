@@ -65,16 +65,16 @@ public class PhantomJumpscareProcedure {
 				if (_ent instanceof ServerPlayer _serverPlayer)
 					_serverPlayer.connection.teleport((sourceentity.getPersistentData().getDouble("x")), (sourceentity.getPersistentData().getDouble("y")), (sourceentity.getPersistentData().getDouble("z")), _ent.getYRot(), _ent.getXRot());
 			}
-			if (entity instanceof Mob _mob) {
-				_mob.setNoAi(true);
+			if (entity instanceof Mob _mobSetNoAi) {
+				_mobSetNoAi.setNoAi(true);
 			}
 			sourceentity.getPersistentData().putBoolean("just_jumpscared", true);
 			YaFnafmodMod.queueServerWork((int) (invisible_time * 20), () -> {
 				sourceentity.getPersistentData().putBoolean("just_jumpscared", false);
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.removeEffect(MobEffects.INVISIBILITY);
-				if (entity instanceof Mob _mob) {
-					_mob.setNoAi(false);
+				if (entity instanceof Mob _mobSetNoAi) {
+					_mobSetNoAi.setNoAi(false);
 				}
 			});
 		}

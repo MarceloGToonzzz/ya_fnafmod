@@ -64,7 +64,7 @@ public class CircusBabyClockBlock extends BaseEntityBlock implements EntityBlock
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click to see the current time!"));
+		list.add(Component.translatable("block.ya_fnafmod.circus_baby_clock.description_0"));
 	}
 
 	@Override

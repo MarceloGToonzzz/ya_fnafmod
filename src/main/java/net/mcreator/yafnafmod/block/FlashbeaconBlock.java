@@ -56,8 +56,8 @@ public class FlashbeaconBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click to turn on and off."));
-		list.add(Component.literal("- Ward off certain critters!"));
+		list.add(Component.translatable("block.ya_fnafmod.flashbeacon.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.flashbeacon.description_1"));
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class StructureBlockFnaf1Block extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- This block places the FNAF 1 Building, Freddy Fazbear's Pizzeria"));
+		list.add(Component.translatable("block.ya_fnafmod.structure_block_fnaf_1.description_0"));
 	}
 
 	@Override

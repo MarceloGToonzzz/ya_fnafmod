@@ -36,7 +36,7 @@ public class ArcadeRedBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A7cRed"));
+		list.add(Component.translatable("block.ya_fnafmod.arcade_red.description_0"));
 	}
 
 	@Override

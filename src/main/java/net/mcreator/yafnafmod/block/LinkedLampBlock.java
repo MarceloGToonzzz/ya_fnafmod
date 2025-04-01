@@ -52,8 +52,8 @@ public class LinkedLampBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Requires a redstone signal to work!"));
-		list.add(Component.literal("= When connected to a redstone signal and a control panel, when the control panel is activated, the light turns on!"));
+		list.add(Component.translatable("block.ya_fnafmod.linked_lamp.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.linked_lamp.description_1"));
 	}
 
 	@Override

@@ -68,7 +68,7 @@ public class FridgeIndustrialBlock extends BaseEntityBlock implements EntityBloc
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Shift right-click to open the fridge, then right-click it to open the inventory!"));
+		list.add(Component.translatable("block.ya_fnafmod.fridge_industrial.description_0"));
 	}
 
 	@Override

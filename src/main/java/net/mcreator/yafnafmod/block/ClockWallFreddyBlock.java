@@ -67,7 +67,7 @@ public class ClockWallFreddyBlock extends BaseEntityBlock implements EntityBlock
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Freddy Fazbear"));
+		list.add(Component.translatable("block.ya_fnafmod.clock_wall_freddy.description_0"));
 	}
 
 	@Override

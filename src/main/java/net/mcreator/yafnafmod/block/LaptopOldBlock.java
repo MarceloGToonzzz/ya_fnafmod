@@ -64,8 +64,8 @@ public class LaptopOldBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Old"));
-		list.add(Component.literal("- Right click to open!"));
+		list.add(Component.translatable("block.ya_fnafmod.laptop_old.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.laptop_old.description_1"));
 	}
 
 	@Override

@@ -34,7 +34,7 @@ public class TrashCanGreenBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A72Green"));
+		list.add(Component.translatable("block.ya_fnafmod.trash_can_green.description_0"));
 	}
 
 	@Override

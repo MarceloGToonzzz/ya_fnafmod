@@ -60,9 +60,9 @@ public class AlarmClockBlock extends Block implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click to see the current time!"));
-		list.add(Component.literal("- Plays a chime when it turns 6 AM! (Right click with Faz-wrench to change the chime.)"));
-		list.add(Component.literal("- Plays a chime when it turns midnight!"));
+		list.add(Component.translatable("block.ya_fnafmod.alarm_clock.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.alarm_clock.description_1"));
+		list.add(Component.translatable("block.ya_fnafmod.alarm_clock.description_2"));
 	}
 
 	@Override

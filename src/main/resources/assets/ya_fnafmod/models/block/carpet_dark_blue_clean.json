@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/carpet",
+  "textures": {
+    "all": "ya_fnafmod:block/carpet_bluefloor_clean",
+    "particle": "ya_fnafmod:block/carpet_bluefloor_clean",
+    "0": "ya_fnafmod:block/carpet_bluefloor_clean"
+  },
+  "render_type": "cutout_mipped"
+}

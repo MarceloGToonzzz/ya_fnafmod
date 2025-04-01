@@ -34,7 +34,7 @@ public class BigCakeHappiestDayBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- From FNAF 3's Minigames!"));
+		list.add(Component.translatable("block.ya_fnafmod.big_cake_happiest_day.description_0"));
 	}
 
 	@Override

@@ -56,7 +56,7 @@ public class OldManConsequencesBlockBlock extends BaseEntityBlock implements Ent
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("(Also known as OMC)"));
+		list.add(Component.translatable("block.ya_fnafmod.old_man_consequences_block.description_0"));
 	}
 
 	@Override

@@ -19,6 +19,6 @@ public class WoodenFloorSlabBlock extends SlabBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Used as a Hallway Floor in the Afton House"));
+		list.add(Component.translatable("block.ya_fnafmod.wooden_floor_slab.description_0"));
 	}
 }

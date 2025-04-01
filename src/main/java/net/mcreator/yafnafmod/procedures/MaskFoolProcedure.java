@@ -52,9 +52,6 @@ public class MaskFoolProcedure {
 											e.printStackTrace();
 										}
 									}
-									if (entity instanceof Mob _entity) {
-										_entity.setTarget(null);
-									}
 								}
 							}
 						}

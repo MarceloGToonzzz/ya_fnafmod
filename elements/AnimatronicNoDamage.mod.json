@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_hurt_non_attributable</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"text_contains\"><value name=\"text\"><block type=\"entity_registry_name\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"contains\"><block type=\"text\"><field name=\"TEXT\">ya_fnafmod</field></block></value></block></value><statement name=\"DO0\"><block type=\"controls_if\"><value name=\"IF0\"><block type=\"damagesource_isequalto\"><field name=\"damagetype\">IN_WALL</field><value name=\"damagesource\"><block type=\"damagesource_from_deps\"></block></value></block></value><statement name=\"DO0\"><block type=\"cancel_event\"></block></statement></block></statement></block></next></block></xml>"

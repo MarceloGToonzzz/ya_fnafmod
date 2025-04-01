@@ -73,8 +73,8 @@ public class PizzeriaSign1988Block extends BaseEntityBlock implements EntityBloc
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right click with Faz-Wrench to off-center!"));
-		list.add(Component.literal("- Activate with Redstone to turn on the light!"));
+		list.add(Component.translatable("block.ya_fnafmod.pizzeria_sign_1988.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.pizzeria_sign_1988.description_1"));
 	}
 
 	@Override

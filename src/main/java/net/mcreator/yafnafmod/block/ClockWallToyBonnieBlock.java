@@ -67,7 +67,7 @@ public class ClockWallToyBonnieBlock extends BaseEntityBlock implements EntityBl
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Toy Bonnie"));
+		list.add(Component.translatable("block.ya_fnafmod.clock_wall_toy_bonnie.description_0"));
 	}
 
 	@Override

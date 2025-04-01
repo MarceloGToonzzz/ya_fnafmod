@@ -73,7 +73,7 @@ public class ClawMachinePizzaPartyBlock extends BaseEntityBlock implements Entit
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A76Pizza Party"));
+		list.add(Component.translatable("block.ya_fnafmod.claw_machine_pizza_party.description_0"));
 	}
 
 	@Override

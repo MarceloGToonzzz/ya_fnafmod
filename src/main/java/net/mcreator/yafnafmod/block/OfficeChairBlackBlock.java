@@ -64,7 +64,7 @@ public class OfficeChairBlackBlock extends BaseEntityBlock implements EntityBloc
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\u00A78Black"));
+		list.add(Component.translatable("block.ya_fnafmod.office_chair_black.description_0"));
 	}
 
 	@Override

@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:movie_cyan_tile_block_stairs",
+    "ya_fnafmod:movie_purple_tile_block_stairs",
+    "ya_fnafmod:movie_hallway_big_checkered_tile_stairs",
+    "ya_fnafmod:movie_hallway_checkered_tile_stairs",
+    "ya_fnafmod:cracked_movie_hallway_tile_stairs",
+    "ya_fnafmod:movie_hallway_tile_stairs",
     "ya_fnafmod:pink_light_blue_big_checkered_tile_stairs",
     "ya_fnafmod:pink_light_blue_checkered_tile_stairs",
     "ya_fnafmod:cracked_pink_light_blue_tile_stairs",

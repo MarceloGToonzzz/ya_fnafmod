@@ -67,7 +67,7 @@ public class MusicBoxDecorationBlock extends BaseEntityBlock implements EntityBl
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Use the Faz-Wrench to open and close it!"));
+		list.add(Component.translatable("block.ya_fnafmod.music_box_decoration.description_0"));
 	}
 
 	@Override

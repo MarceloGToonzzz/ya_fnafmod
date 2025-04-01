@@ -73,7 +73,7 @@ public class BulletinBoardBlock extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Right Click with Faz-Wrench to fill with paper!"));
+		list.add(Component.translatable("block.ya_fnafmod.bulletin_board.description_0"));
 	}
 
 	@Override

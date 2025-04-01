@@ -48,8 +48,8 @@ public class PlushFredbearSpawnerBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("- Has a chance to spawn Nightmare Fredbear or Nightmare (Or even both, or even none!)"));
-		list.add(Component.literal("- Every night, there is a 1/31 chance of spawning Nightmarionne instead of Nightmare!"));
+		list.add(Component.translatable("block.ya_fnafmod.plush_fredbear_spawner.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.plush_fredbear_spawner.description_1"));
 	}
 
 	@Override

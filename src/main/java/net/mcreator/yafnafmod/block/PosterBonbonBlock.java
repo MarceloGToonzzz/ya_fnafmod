@@ -37,8 +37,8 @@ public class PosterBonbonBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("\"Let's Play!\""));
-		list.add(Component.literal("Bonk-a-bon Poster"));
+		list.add(Component.translatable("block.ya_fnafmod.poster_bonbon.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.poster_bonbon.description_1"));
 	}
 
 	@Override

@@ -83,7 +83,7 @@ public class BigBackstageDoorGrayBlock extends BaseEntityBlock implements Entity
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.literal("Gray"));
+		list.add(Component.translatable("block.ya_fnafmod.big_backstage_door_gray.description_0"));
 	}
 
 	@Override
