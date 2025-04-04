@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/stagebase_wood",
+    "up": "ya_fnafmod:block/cheap_woodenwall_top",
+    "north": "ya_fnafmod:block/wall_woodenbottom",
+    "east": "ya_fnafmod:block/wall_woodenbottom",
+    "south": "ya_fnafmod:block/wall_woodenbottom",
+    "west": "ya_fnafmod:block/wall_woodenbottom",
+    "particle": "ya_fnafmod:block/stagebase_wood"
+  },
+  "render_type": "solid"
+}

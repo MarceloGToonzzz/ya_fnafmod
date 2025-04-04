@@ -3872,6 +3872,38 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CARPET_FLOOR_ARCADE = block(YaFnafmodModBlocks.CARPET_FLOOR_ARCADE);
 	public static final RegistryObject<Item> CARPET_FLOOR_ARCADE_CLEAN = block(YaFnafmodModBlocks.CARPET_FLOOR_ARCADE_CLEAN);
 	public static final RegistryObject<Item> MOVIE_PURPLE_WALL = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_STAIRS = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_STAIRS);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_SLAB = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_SLAB);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_TILES = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_TILES);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_TILES_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_TILES_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_TILES_BIG = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_TILES_BIG);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_TILES_BIG_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_TILES_BIG_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_EXTRA_TILES = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_EXTRA_TILES);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_EXTRA_TILES_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_EXTRA_TILES_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_EXTRA_TILES_BIG = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_EXTRA_TILES_BIG);
+	public static final RegistryObject<Item> MOVIE_PURPLE_WALL_RED_EXTRA_TILES_BIG_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_PURPLE_WALL_RED_EXTRA_TILES_BIG_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_STAIRS = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_STAIRS);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_SLAB = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_SLAB);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_TILES = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_TILES);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_TILES_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_TILES_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_TILES_BIG = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_TILES_BIG);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_TILES_BIG_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_TILES_BIG_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_EXTRA_TILES = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_EXTRA_TILES);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_TILES_EXTRA_TILES_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_TILES_EXTRA_TILES_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_EXTRA_TILES_BIG = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_EXTRA_TILES_BIG);
+	public static final RegistryObject<Item> MOVIE_CYAN_WALL_RED_EXTRA_TILES_BIG_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_CYAN_WALL_RED_EXTRA_TILES_BIG_ALTERNATE);
+	public static final RegistryObject<Item> MOVIE_CYAN_PURPLE_WALL = block(YaFnafmodModBlocks.MOVIE_CYAN_PURPLE_WALL);
+	public static final RegistryObject<Item> MOVIE_PURPLE_CYAN_WALL = block(YaFnafmodModBlocks.MOVIE_PURPLE_CYAN_WALL);
+	public static final RegistryObject<Item> WOODEN_BOTTOM = block(YaFnafmodModBlocks.WOODEN_BOTTOM);
+	public static final RegistryObject<Item> WOODEN_BOTTOM_GRAY = block(YaFnafmodModBlocks.WOODEN_BOTTOM_GRAY);
+	public static final RegistryObject<Item> MOVIE_LIGHT_WALL = block(YaFnafmodModBlocks.MOVIE_LIGHT_WALL);
+	public static final RegistryObject<Item> MOVIE_LIGHT_WALL_STAIRS = block(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_STAIRS);
+	public static final RegistryObject<Item> MOVIE_LIGHT_WALL_SLAB = block(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_SLAB);
+	public static final RegistryObject<Item> MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES = block(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES);
+	public static final RegistryObject<Item> MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES_BIG = block(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES_BIG);
+	public static final RegistryObject<Item> MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES_ALT = block(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES_ALT);
+	public static final RegistryObject<Item> MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES_BIG_ALTERNATE = block(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_NULL_BLUE_LIGHT_BLUE_TILES_BIG_ALTERNATE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

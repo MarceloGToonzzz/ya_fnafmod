@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/wall_moviecyan",
+    "top": "ya_fnafmod:block/wall_moviepurple",
+    "side": "ya_fnafmod:block/wall_moviepurplecyan",
+    "overlay": "ya_fnafmod:block/wall_moviepurplecyan",
+    "particle": "ya_fnafmod:block/wall_moviecyan"
+  },
+  "render_type": "solid"
+}

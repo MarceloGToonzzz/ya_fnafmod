@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/wall_moviepurple",
+    "bottom": "ya_fnafmod:block/wall_moviepurple",
+    "top": "ya_fnafmod:block/wall_moviepurple",
+    "side": "ya_fnafmod:block/wall_moviepurple"
+  },
+  "render_type": "solid"
+}

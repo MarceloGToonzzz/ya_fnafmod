@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:movie_light_wall_slab",
+    "ya_fnafmod:movie_cyan_wall_slab",
+    "ya_fnafmod:movie_purple_wall_slab",
     "ya_fnafmod:movie_cyan_tile_block_slab",
     "ya_fnafmod:movie_purple_tile_block_slab",
     "ya_fnafmod:movie_hallway_big_checkered_tile_slab",

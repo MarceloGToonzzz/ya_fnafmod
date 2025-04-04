@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/wall_moviecyan",
+    "particle": "ya_fnafmod:block/wall_moviecyan"
+  },
+  "render_type": "solid"
+}

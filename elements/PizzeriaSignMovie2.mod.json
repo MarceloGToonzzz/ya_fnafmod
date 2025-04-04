@@ -35,10 +35,7 @@
     ],
     "name": "§4*SPOILERS!!* Pizzeria Sign (Movie 2)",
     "specialInformation": {
-      "fixedValue": [
-        "- Right click with Faz-Wrench to off-center!",
-        "- Activate with Redstone to turn on the light!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,
