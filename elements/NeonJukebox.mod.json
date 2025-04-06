@@ -35,9 +35,7 @@
     ],
     "name": "Neon Jukebox",
     "specialInformation": {
-      "fixedValue": [
-        "- Right click with the F.A.T to turn on, then right click to cycle through the songs!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

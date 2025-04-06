@@ -21,6 +21,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -99,8 +100,8 @@ public class BalloonsBlock extends Block {
 	}
 
 	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
+	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
+		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
 		BalloonsBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

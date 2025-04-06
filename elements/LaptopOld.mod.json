@@ -33,12 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Laptop",
+    "name": "Old Laptop",
     "specialInformation": {
-      "fixedValue": [
-        "Old",
-        "- Right click to open!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ya_fnafmod:blocks/sign_little_frights",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ya_fnafmod:sign_little_frights"
+        }
+      ]
+    }
+  ]
+}

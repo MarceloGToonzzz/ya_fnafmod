@@ -1,0 +1,64 @@
+{
+  "mappings": {
+    "wherekidscanplayforever": {
+      "map": {
+        "0": "framedposter_wherekidscanplayforever"
+      },
+      "name": "wherekidscanplayforever"
+    },
+    "default": {
+      "map": {
+        "0": "framedposter_freddysband"
+      },
+      "name": "default"
+    },
+    "chicamugshot": {
+      "map": {
+        "0": "framedposter_chicamugshot"
+      },
+      "name": "chicamugshot"
+    },
+    "foxymugshot": {
+      "map": {
+        "0": "framedposter_foxymugshot"
+      },
+      "name": "foxymugshot"
+    },
+    "smileforthecamera": {
+      "map": {
+        "0": "framedposter_chicasmileforthecamera"
+      },
+      "name": "smileforthecamera"
+    },
+    "bonniemugshot": {
+      "map": {
+        "0": "framedposter_bonniemugshot"
+      },
+      "name": "bonniemugshot"
+    },
+    "theressandinmyhare": {
+      "map": {
+        "0": "framedposter_ihaveasandinmyhare"
+      },
+      "name": "theressandinmyhare"
+    },
+    "freddymugshot": {
+      "map": {
+        "0": "framedposter_freddymugshot"
+      },
+      "name": "freddymugshot"
+    },
+    "leaningtowerofpizzzaaa": {
+      "map": {
+        "0": "framedposter_leaningtowerofpizzzaaa"
+      },
+      "name": "leaningtowerofpizzzaaa"
+    },
+    "foxysavesthekingdom": {
+      "map": {
+        "0": "framedposter_foxysavesthekingdom"
+      },
+      "name": "foxysavesthekingdom"
+    }
+  }
+}

@@ -12,6 +12,7 @@ import net.mcreator.yafnafmod.entity.CarStationWagonEntity;
 import net.mcreator.yafnafmod.entity.CarSeatEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
+import net.mcreator.yafnafmod.entity.CarDesotoEntity;
 
 import java.util.function.BiFunction;
 import java.util.UUID;
@@ -55,13 +56,15 @@ public class SeatOnEntityTickUpdateProcedure {
 					}
 				}).apply(world, (entity.getPersistentData().getString("og_car")));
 				if (!(car instanceof CarFazvanEntity)) {
-					if (car instanceof CarStationWagonEntity) {
+					if (car instanceof CarStationWagonEntity || car instanceof CarDesotoEntity) {
 						if (entity.getPersistentData().getDouble("car_seat") == 1) {
 							pos = "^-1 ^-0.25 ^";
 						} else if (entity.getPersistentData().getDouble("car_seat") == 2) {
 							pos = "^-1 ^-0.25 ^-1.125";
 						} else if (entity.getPersistentData().getDouble("car_seat") == 3) {
 							pos = "^ ^-0.25 ^-1.125";
+						} else if (entity.getPersistentData().getDouble("car_seat") == 4) {
+							pos = "^-0.5 ^-0.25 ^-3";
 						}
 					} else {
 						if (entity.getPersistentData().getDouble("car_seat") == 1) {

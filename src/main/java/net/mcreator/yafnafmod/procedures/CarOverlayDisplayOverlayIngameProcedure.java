@@ -8,6 +8,7 @@ import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
+import net.mcreator.yafnafmod.entity.CarDesotoEntity;
 
 public class CarOverlayDisplayOverlayIngameProcedure {
 	public static boolean execute(Entity entity) {
@@ -17,7 +18,7 @@ public class CarOverlayDisplayOverlayIngameProcedure {
 		result = false;
 		if (entity.isPassenger()) {
 			if ((entity.getVehicle()) instanceof CarPurpleChevroletImpalaEntity || (entity.getVehicle()) instanceof CarDodgeRam1982Entity || (entity.getVehicle()) instanceof CarFazvanEntity || (entity.getVehicle()) instanceof CarStationWagonEntity
-					|| (entity.getVehicle()) instanceof CarHarleyMotorcycleEntity || (entity.getVehicle()) instanceof CarPoliceCruiserChevroletImpala1983Entity) {
+					|| (entity.getVehicle()) instanceof CarHarleyMotorcycleEntity || (entity.getVehicle()) instanceof CarPoliceCruiserChevroletImpala1983Entity || (entity.getVehicle()) instanceof CarDesotoEntity) {
 				result = true;
 			}
 		}

@@ -1,0 +1,7 @@
+
+{
+  "parent": "ya_fnafmod:displaysettings/pizzeria_sign",
+  "textures": {
+    "particle": "ya_fnafmod:block/fnaf6sign2"
+  }
+}

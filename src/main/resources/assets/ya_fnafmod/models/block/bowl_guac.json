@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/dip_bowl",
+  "textures": {
+    "all": "ya_fnafmod:block/dipbowl_guac",
+    "particle": "ya_fnafmod:block/dipbowl_guac",
+    "0": "ya_fnafmod:block/dipbowl_guac"
+  },
+  "render_type": "cutout_mipped"
+}

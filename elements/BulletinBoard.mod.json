@@ -35,9 +35,7 @@
     ],
     "name": "Bulletin Board",
     "specialInformation": {
-      "fixedValue": [
-        "- Right Click with Faz-Wrench to fill with paper!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

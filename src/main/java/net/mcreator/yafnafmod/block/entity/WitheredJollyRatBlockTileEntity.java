@@ -151,7 +151,7 @@ public class WitheredJollyRatBlockTileEntity extends RandomizableContainerBlockE
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Jolly The Rat");
+		return Component.literal("Withered Jolly The Rat");
 	}
 
 	@Override

@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Pinball Machine",
+    "name": "Toy Foxy Pinball Machine",
     "specialInformation": {
-      "fixedValue": [
-        "§dToy Foxy"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

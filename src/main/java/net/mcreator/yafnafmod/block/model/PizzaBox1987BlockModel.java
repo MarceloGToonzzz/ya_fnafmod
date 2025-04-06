@@ -27,7 +27,7 @@ public class PizzaBox1987BlockModel extends GeoModel<PizzaBox1987TileEntity> {
 	public ResourceLocation getTextureResource(PizzaBox1987TileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/pizzabox_1987_empty.png");
+			return new ResourceLocation("ya_fnafmod", "textures/block/pizzabox_1987.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/pizzabox_1987.png");
 	}
 }

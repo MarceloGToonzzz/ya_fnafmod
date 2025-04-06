@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ya_fnafmod:blocks/poster_i_have_sand_in_my_hare",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ya_fnafmod:poster_i_have_sand_in_my_hare"
+        }
+      ]
+    }
+  ]
+}

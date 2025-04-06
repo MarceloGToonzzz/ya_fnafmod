@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Pinball Machine",
+    "name": "Toy Bonnie Pinball Machine",
     "specialInformation": {
-      "fixedValue": [
-        "§bToy Bonnie"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

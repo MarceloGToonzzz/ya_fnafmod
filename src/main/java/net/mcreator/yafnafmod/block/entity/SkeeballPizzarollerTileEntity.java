@@ -143,7 +143,7 @@ public class SkeeballPizzarollerTileEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Skee-ball");
+		return Component.literal("Pizza-Roller Skee-ball");
 	}
 
 	@Override

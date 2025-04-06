@@ -143,7 +143,7 @@ public class ClockWallFoxyTileEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Wall Clock");
+		return Component.literal("Foxy Wall Clock");
 	}
 
 	@Override

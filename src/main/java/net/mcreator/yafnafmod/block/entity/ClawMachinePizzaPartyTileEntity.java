@@ -151,7 +151,7 @@ public class ClawMachinePizzaPartyTileEntity extends RandomizableContainerBlockE
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Claw Machine");
+		return Component.literal("Claw Machine (Pizza Party)");
 	}
 
 	@Override

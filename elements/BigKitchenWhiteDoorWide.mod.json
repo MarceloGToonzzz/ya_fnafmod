@@ -62,9 +62,7 @@
     ],
     "name": "Big Kitchen Door (Wide)",
     "specialInformation": {
-      "fixedValue": [
-        "White"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

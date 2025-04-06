@@ -62,9 +62,7 @@
     ],
     "name": "Big Backstage Door (Signless)",
     "specialInformation": {
-      "fixedValue": [
-        "Gray"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

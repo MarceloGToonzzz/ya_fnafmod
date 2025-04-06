@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/framed_posters",
+  "textures": {
+    "all": "ya_fnafmod:block/framedposter_leaningtowerofpizzzaaa",
+    "particle": "ya_fnafmod:block/framedposter_leaningtowerofpizzzaaa",
+    "0": "ya_fnafmod:block/framedposter_leaningtowerofpizzzaaa"
+  },
+  "render_type": "cutout_mipped"
+}

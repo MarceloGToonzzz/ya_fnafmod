@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Claw Machine",
+    "name": "Claw Machine (Cupcake Bonanza)",
     "specialInformation": {
-      "fixedValue": [
-        "§4Cupcake Bonanza"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

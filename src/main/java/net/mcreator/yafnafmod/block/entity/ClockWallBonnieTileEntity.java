@@ -143,7 +143,7 @@ public class ClockWallBonnieTileEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Wall Clock");
+		return Component.literal("Bonnie Wall Clock");
 	}
 
 	@Override

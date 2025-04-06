@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/fredbearsign_small",
+  "textures": {
+    "all": "ya_fnafmod:block/fnaf3littlesign",
+    "particle": "ya_fnafmod:block/fnaf3littlesign",
+    "0": "ya_fnafmod:block/fnaf3littlesign"
+  },
+  "render_type": "cutout_mipped"
+}

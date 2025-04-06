@@ -35,10 +35,7 @@
     ],
     "name": "Trash Bag",
     "specialInformation": {
-      "fixedValue": [
-        "§8Black",
-        "- Right click with Faz-wrench to change direction!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/clocking_machine",
+  "textures": {
+    "all": "ya_fnafmod:block/clocking_machine",
+    "particle": "ya_fnafmod:block/clocking_machine",
+    "0": "ya_fnafmod:block/clocking_machine"
+  },
+  "render_type": "cutout_mipped"
+}

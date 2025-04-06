@@ -151,7 +151,7 @@ public class PizzeriaSignMovie2TileEntity extends RandomizableContainerBlockEnti
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("§4*SPOILERS!!* Pizzeria Sign (Movie 2)");
+		return Component.literal("Pizzeria Sign (Movie 2)");
 	}
 
 	@Override

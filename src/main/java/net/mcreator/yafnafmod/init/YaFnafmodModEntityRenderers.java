@@ -9,6 +9,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 import net.mcreator.yafnafmod.client.renderer.YenndoRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredJollyRatRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredJollyRatDayRenderer;
@@ -57,6 +59,8 @@ import net.mcreator.yafnafmod.client.renderer.RockstarChicaRenderer;
 import net.mcreator.yafnafmod.client.renderer.RockstarChicaDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RockstarBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.RockstarBonnieDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.RickyRatRenderer;
+import net.mcreator.yafnafmod.client.renderer.RickyRatDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFreddyDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFoxyRenderer;
@@ -71,6 +75,8 @@ import net.mcreator.yafnafmod.client.renderer.PurpleGuyRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.PossumRenderer;
+import net.mcreator.yafnafmod.client.renderer.PopgoesWeaselRenderer;
+import net.mcreator.yafnafmod.client.renderer.PopgoesWeaselDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.PlushtrapRenderer;
 import net.mcreator.yafnafmod.client.renderer.PlushtrapDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.PitbonnieRenderer;
@@ -187,6 +193,7 @@ import net.mcreator.yafnafmod.client.renderer.CarPoliceCruiserChevroletImpala198
 import net.mcreator.yafnafmod.client.renderer.CarHarleyMotorcycleRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarFazvanRenderer;
 import net.mcreator.yafnafmod.client.renderer.CarDodgeRam1982Renderer;
+import net.mcreator.yafnafmod.client.renderer.CarDesotoRenderer;
 import net.mcreator.yafnafmod.client.renderer.CandyCatRenderer;
 import net.mcreator.yafnafmod.client.renderer.CandyCatDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.BucketBobRenderer;
@@ -200,6 +207,8 @@ import net.mcreator.yafnafmod.client.renderer.BlobFuntimeFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.BlobFuntimeFoxyRenderer;
 import net.mcreator.yafnafmod.client.renderer.BlobCircusBabyRenderer;
 import net.mcreator.yafnafmod.client.renderer.BlobBalloraRenderer;
+import net.mcreator.yafnafmod.client.renderer.BlakeBadgerRenderer;
+import net.mcreator.yafnafmod.client.renderer.BlakeBadgerDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.BidybabRenderer;
 import net.mcreator.yafnafmod.client.renderer.BidybabDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.BarryPolarRenderer;
@@ -416,5 +425,19 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.CANDY_CAT_DAY.get(), CandyCatDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.CINDY_CAT.get(), CindyCatRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.CINDY_CAT_DAY.get(), CindyCatDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.TOMATO_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.CAR_DESOTO.get(), CarDesotoRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.POPGOES_WEASEL.get(), PopgoesWeaselRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.POPGOES_WEASEL_DAY.get(), PopgoesWeaselDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BLAKE_BADGER.get(), BlakeBadgerRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BLAKE_BADGER_DAY.get(), BlakeBadgerDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.RICKY_RAT.get(), RickyRatRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.RICKY_RAT_DAY.get(), RickyRatDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BALL_RED_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BALL_ORANGE_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BALL_YELLOW_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BALL_GREEN_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BALL_BLUE_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BALL_PURPLE_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

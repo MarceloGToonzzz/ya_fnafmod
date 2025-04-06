@@ -1,0 +1,7 @@
+
+{
+  "parent": "ya_fnafmod:displaysettings/animatronic_display2",
+  "textures": {
+    "particle": "ya_fnafmod:block/animatronic_ftchica"
+  }
+}

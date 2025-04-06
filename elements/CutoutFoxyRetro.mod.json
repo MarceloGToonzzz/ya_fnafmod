@@ -35,9 +35,7 @@
     ],
     "name": "Cutout (Retro Foxy)",
     "specialInformation": {
-      "fixedValue": [
-        "- Right click with Faz-Wrench to make it diagonal!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

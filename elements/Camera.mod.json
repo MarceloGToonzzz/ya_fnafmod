@@ -35,9 +35,7 @@
     ],
     "name": "Camera",
     "specialInformation": {
-      "fixedValue": [
-        "- Right click with Faz-Wrench to change angles!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

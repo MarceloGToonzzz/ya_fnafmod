@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/framed_posters",
+  "textures": {
+    "all": "ya_fnafmod:block/framedposter_foxymugshot",
+    "particle": "ya_fnafmod:block/framedposter_foxymugshot",
+    "0": "ya_fnafmod:block/framedposter_foxymugshot"
+  },
+  "render_type": "cutout_mipped"
+}

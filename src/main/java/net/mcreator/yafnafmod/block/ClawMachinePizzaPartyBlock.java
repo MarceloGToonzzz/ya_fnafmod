@@ -24,12 +24,10 @@ import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -68,12 +66,6 @@ public class ClawMachinePizzaPartyBlock extends BaseEntityBlock implements Entit
 	@Override
 	public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
 		return YaFnafmodModBlockEntities.CLAW_MACHINE_PIZZA_PARTY.get().create(blockPos, blockState);
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, level, list, flag);
-		list.add(Component.translatable("block.ya_fnafmod.claw_machine_pizza_party.description_0"));
 	}
 
 	@Override

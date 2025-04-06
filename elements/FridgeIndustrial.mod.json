@@ -35,9 +35,7 @@
     ],
     "name": "Industrial Fridge",
     "specialInformation": {
-      "fixedValue": [
-        "- Shift right-click to open the fridge, then right-click it to open the inventory!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

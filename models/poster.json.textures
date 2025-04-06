@@ -198,12 +198,6 @@
       },
       "name": "lefty"
     },
-    "clown": {
-      "map": {
-        "0": "poster_drawing_clown"
-      },
-      "name": "clown"
-    },
     "rockfreddy": {
       "map": {
         "0": "poster_rockfreddy"
@@ -233,6 +227,48 @@
         "0": "poster_drawing_lefty"
       },
       "name": "draw_lefty"
+    },
+    "visitnebraska": {
+      "map": {
+        "0": "poster_visitnebraska"
+      },
+      "name": "visitnebraska"
+    },
+    "spookfest": {
+      "map": {
+        "0": "poster_spookfest"
+      },
+      "name": "spookfest"
+    },
+    "clownposter": {
+      "map": {
+        "0": "poster_clown"
+      },
+      "name": "clownposter"
+    },
+    "freakfamily": {
+      "map": {
+        "0": "poster_freakfamily"
+      },
+      "name": "freakfamily"
+    },
+    "onenight": {
+      "map": {
+        "0": "poster_onenight"
+      },
+      "name": "onenight"
+    },
+    "manwolf": {
+      "map": {
+        "0": "poster_manwolf"
+      },
+      "name": "manwolf"
+    },
+    "spoopypuppet": {
+      "map": {
+        "0": "poster_spoopypuppet"
+      },
+      "name": "spoopypuppet"
     }
   }
 }

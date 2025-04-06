@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/framed_posters",
+  "textures": {
+    "all": "ya_fnafmod:block/framedposter_freddysband",
+    "particle": "ya_fnafmod:block/framedposter_freddysband",
+    "0": "ya_fnafmod:block/framedposter_freddysband"
+  },
+  "render_type": "cutout_mipped"
+}

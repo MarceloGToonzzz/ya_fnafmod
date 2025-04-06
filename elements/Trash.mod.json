@@ -35,9 +35,7 @@
     ],
     "name": "Trash",
     "specialInformation": {
-      "fixedValue": [
-        "- Randomized!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -151,7 +151,7 @@ public class ClawMachineCupcakeBonanzaTileEntity extends RandomizableContainerBl
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Claw Machine");
+		return Component.literal("Claw Machine (Cupcake Bonanza)");
 	}
 
 	@Override

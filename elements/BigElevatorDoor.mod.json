@@ -62,9 +62,7 @@
     ],
     "name": "Big Elevator Door",
     "specialInformation": {
-      "fixedValue": [
-        "- Needs to be linked to a Elevator Button using the Faz-Wrench"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -51,6 +51,8 @@ import net.mcreator.yafnafmod.entity.RockstarChicaEntity;
 import net.mcreator.yafnafmod.entity.RockstarChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarBonnieEntity;
 import net.mcreator.yafnafmod.entity.RockstarBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.RickyRatEntity;
+import net.mcreator.yafnafmod.entity.RickyRatDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
@@ -65,6 +67,8 @@ import net.mcreator.yafnafmod.entity.PurpleGuyEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
 import net.mcreator.yafnafmod.entity.PossumEntity;
+import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
+import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
@@ -180,6 +184,7 @@ import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
+import net.mcreator.yafnafmod.entity.CarDesotoEntity;
 import net.mcreator.yafnafmod.entity.CandyCatEntity;
 import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobEntity;
@@ -193,6 +198,8 @@ import net.mcreator.yafnafmod.entity.BlobFuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.BlobFuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.BlobCircusBabyEntity;
 import net.mcreator.yafnafmod.entity.BlobBalloraEntity;
+import net.mcreator.yafnafmod.entity.BlakeBadgerEntity;
+import net.mcreator.yafnafmod.entity.BlakeBadgerDayEntity;
 import net.mcreator.yafnafmod.entity.BidybabEntity;
 import net.mcreator.yafnafmod.entity.BidybabDayEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarEntity;
@@ -1596,6 +1603,55 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof CindyCatDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CarDesotoEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PopgoesWeaselEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PopgoesWeaselDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BlakeBadgerEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BlakeBadgerDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RickyRatEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RickyRatDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

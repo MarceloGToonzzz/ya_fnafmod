@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Pinball Machine",
+    "name": "Toy Freddy Pinball Machine",
     "specialInformation": {
-      "fixedValue": [
-        "§6Toy Freddy"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

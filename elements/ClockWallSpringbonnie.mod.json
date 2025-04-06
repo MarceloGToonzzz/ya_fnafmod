@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Wall Clock",
+    "name": "Springbonnie Wall Clock",
     "specialInformation": {
-      "fixedValue": [
-        "Springbonnie"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_manwolf",
+    "particle": "ya_fnafmod:block/poster_manwolf",
+    "0": "ya_fnafmod:block/poster_manwolf"
+  },
+  "render_type": "cutout"
+}

@@ -143,7 +143,7 @@ public class PinballToyBonnieTileEntity extends RandomizableContainerBlockEntity
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Pinball Machine");
+		return Component.literal("Toy Bonnie Pinball Machine");
 	}
 
 	@Override

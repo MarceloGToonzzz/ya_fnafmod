@@ -14,7 +14,7 @@
     "emissiveRendering": true,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "candy_red",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "§4*SPOILERS!!* Pizzeria Sign (Movie 2)",
+    "name": "Pizzeria Sign (Movie 2)",
     "specialInformation": {
       "fixedValue": []
     },
@@ -41,7 +41,11 @@
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModDecorations"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""

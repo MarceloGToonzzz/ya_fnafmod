@@ -1,0 +1,7 @@
+
+{
+  "parent": "ya_fnafmod:displaysettings/prop1",
+  "textures": {
+    "particle": "ya_fnafmod:block/big_trashbin_movie"
+  }
+}

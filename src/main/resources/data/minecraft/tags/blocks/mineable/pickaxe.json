@@ -1,6 +1,16 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:movie_light_wall_black_top",
+    "ya_fnafmod:movie_cyan_wall_black_top",
+    "ya_fnafmod:movie_purple_wall_black_top",
+    "ya_fnafmod:fancy_dark_wall_black_top",
+    "ya_fnafmod:light_wall_dirty_black_top",
+    "ya_fnafmod:fancy_light_wall_black_top",
+    "ya_fnafmod:light_wall_null_blue_light_blue_tiles_big_alternate",
+    "ya_fnafmod:light_wall_null_blue_light_blue_tiles_big",
+    "ya_fnafmod:light_wall_null_blue_light_blue_tiles_alternate",
+    "ya_fnafmod:light_wall_null_blue_light_blue_tiles",
     "ya_fnafmod:movie_light_wall_null_blue_light_blue_tiles_big_alternate",
     "ya_fnafmod:movie_light_wall_null_blue_light_blue_tiles_alt",
     "ya_fnafmod:movie_light_wall_null_blue_light_blue_tiles_big",

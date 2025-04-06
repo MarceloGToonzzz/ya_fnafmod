@@ -42,6 +42,7 @@ import net.mcreator.yafnafmod.entity.ToyChicaDayEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.TomatoProjectileEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapDayEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
@@ -64,6 +65,8 @@ import net.mcreator.yafnafmod.entity.RockstarChicaEntity;
 import net.mcreator.yafnafmod.entity.RockstarChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarBonnieEntity;
 import net.mcreator.yafnafmod.entity.RockstarBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.RickyRatEntity;
+import net.mcreator.yafnafmod.entity.RickyRatDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
@@ -78,6 +81,8 @@ import net.mcreator.yafnafmod.entity.PurpleGuyEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
 import net.mcreator.yafnafmod.entity.PossumEntity;
+import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
+import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
@@ -194,6 +199,7 @@ import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
+import net.mcreator.yafnafmod.entity.CarDesotoEntity;
 import net.mcreator.yafnafmod.entity.CandyCatEntity;
 import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobEntity;
@@ -207,6 +213,8 @@ import net.mcreator.yafnafmod.entity.BlobFuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.BlobFuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.BlobCircusBabyEntity;
 import net.mcreator.yafnafmod.entity.BlobBalloraEntity;
+import net.mcreator.yafnafmod.entity.BlakeBadgerEntity;
+import net.mcreator.yafnafmod.entity.BlakeBadgerDayEntity;
 import net.mcreator.yafnafmod.entity.BidybabEntity;
 import net.mcreator.yafnafmod.entity.BidybabDayEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarEntity;
@@ -215,6 +223,12 @@ import net.mcreator.yafnafmod.entity.BalloraEntity;
 import net.mcreator.yafnafmod.entity.BalloraDayEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
+import net.mcreator.yafnafmod.entity.BallYellowProjectileEntity;
+import net.mcreator.yafnafmod.entity.BallRedProjectileEntity;
+import net.mcreator.yafnafmod.entity.BallPurpleProjectileEntity;
+import net.mcreator.yafnafmod.entity.BallOrangeProjectileEntity;
+import net.mcreator.yafnafmod.entity.BallGreenProjectileEntity;
+import net.mcreator.yafnafmod.entity.BallBlueProjectileEntity;
 import net.mcreator.yafnafmod.entity.BaggieMaggieEntity;
 import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 import net.mcreator.yafnafmod.YaFnafmodMod;
@@ -1031,6 +1045,48 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<CindyCatDayEntity>of(CindyCatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(CindyCatDayEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TomatoProjectileEntity>> TOMATO_PROJECTILE = register("tomato_projectile", EntityType.Builder.<TomatoProjectileEntity>of(TomatoProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(TomatoProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CarDesotoEntity>> CAR_DESOTO = register("car_desoto",
+			EntityType.Builder.<CarDesotoEntity>of(CarDesotoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CarDesotoEntity::new)
+
+					.sized(1.03125f, 2f));
+	public static final RegistryObject<EntityType<PopgoesWeaselEntity>> POPGOES_WEASEL = register("popgoes_weasel",
+			EntityType.Builder.<PopgoesWeaselEntity>of(PopgoesWeaselEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PopgoesWeaselEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PopgoesWeaselDayEntity>> POPGOES_WEASEL_DAY = register("popgoes_weasel_day",
+			EntityType.Builder.<PopgoesWeaselDayEntity>of(PopgoesWeaselDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PopgoesWeaselDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BlakeBadgerEntity>> BLAKE_BADGER = register("blake_badger",
+			EntityType.Builder.<BlakeBadgerEntity>of(BlakeBadgerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(BlakeBadgerEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BlakeBadgerDayEntity>> BLAKE_BADGER_DAY = register("blake_badger_day",
+			EntityType.Builder.<BlakeBadgerDayEntity>of(BlakeBadgerDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(BlakeBadgerDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RickyRatEntity>> RICKY_RAT = register("ricky_rat",
+			EntityType.Builder.<RickyRatEntity>of(RickyRatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RickyRatEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<RickyRatDayEntity>> RICKY_RAT_DAY = register("ricky_rat_day",
+			EntityType.Builder.<RickyRatDayEntity>of(RickyRatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RickyRatDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BallRedProjectileEntity>> BALL_RED_PROJECTILE = register("ball_red_projectile", EntityType.Builder.<BallRedProjectileEntity>of(BallRedProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BallRedProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BallOrangeProjectileEntity>> BALL_ORANGE_PROJECTILE = register("ball_orange_projectile", EntityType.Builder.<BallOrangeProjectileEntity>of(BallOrangeProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BallOrangeProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BallYellowProjectileEntity>> BALL_YELLOW_PROJECTILE = register("ball_yellow_projectile", EntityType.Builder.<BallYellowProjectileEntity>of(BallYellowProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BallYellowProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BallGreenProjectileEntity>> BALL_GREEN_PROJECTILE = register("ball_green_projectile", EntityType.Builder.<BallGreenProjectileEntity>of(BallGreenProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BallGreenProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BallBlueProjectileEntity>> BALL_BLUE_PROJECTILE = register("ball_blue_projectile", EntityType.Builder.<BallBlueProjectileEntity>of(BallBlueProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BallBlueProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BallPurpleProjectileEntity>> BALL_PURPLE_PROJECTILE = register("ball_purple_projectile", EntityType.Builder.<BallPurpleProjectileEntity>of(BallPurpleProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BallPurpleProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1242,6 +1298,13 @@ public class YaFnafmodModEntities {
 			CandyCatDayEntity.init();
 			CindyCatEntity.init();
 			CindyCatDayEntity.init();
+			CarDesotoEntity.init();
+			PopgoesWeaselEntity.init();
+			PopgoesWeaselDayEntity.init();
+			BlakeBadgerEntity.init();
+			BlakeBadgerDayEntity.init();
+			RickyRatEntity.init();
+			RickyRatDayEntity.init();
 		});
 	}
 
@@ -1448,5 +1511,12 @@ public class YaFnafmodModEntities {
 		event.put(CANDY_CAT_DAY.get(), CandyCatDayEntity.createAttributes().build());
 		event.put(CINDY_CAT.get(), CindyCatEntity.createAttributes().build());
 		event.put(CINDY_CAT_DAY.get(), CindyCatDayEntity.createAttributes().build());
+		event.put(CAR_DESOTO.get(), CarDesotoEntity.createAttributes().build());
+		event.put(POPGOES_WEASEL.get(), PopgoesWeaselEntity.createAttributes().build());
+		event.put(POPGOES_WEASEL_DAY.get(), PopgoesWeaselDayEntity.createAttributes().build());
+		event.put(BLAKE_BADGER.get(), BlakeBadgerEntity.createAttributes().build());
+		event.put(BLAKE_BADGER_DAY.get(), BlakeBadgerDayEntity.createAttributes().build());
+		event.put(RICKY_RAT.get(), RickyRatEntity.createAttributes().build());
+		event.put(RICKY_RAT_DAY.get(), RickyRatDayEntity.createAttributes().build());
 	}
 }

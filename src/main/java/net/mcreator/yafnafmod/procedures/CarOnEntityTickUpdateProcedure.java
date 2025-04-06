@@ -21,6 +21,7 @@ import net.mcreator.yafnafmod.entity.CarPoliceCruiserChevroletImpala1983Entity;
 import net.mcreator.yafnafmod.entity.CarHarleyMotorcycleEntity;
 import net.mcreator.yafnafmod.entity.CarFazvanEntity;
 import net.mcreator.yafnafmod.entity.CarDodgeRam1982Entity;
+import net.mcreator.yafnafmod.entity.CarDesotoEntity;
 
 import java.util.List;
 import java.util.Comparator;
@@ -53,6 +54,9 @@ public class CarOnEntityTickUpdateProcedure {
 		if (entity instanceof CarPurpleChevroletImpalaEntity || entity instanceof CarPoliceCruiserChevroletImpala1983Entity) {
 			entity.getPersistentData().putDouble("max_speed", 16);
 			acceleration = 0.002962962965;
+		} else if (entity instanceof CarDesotoEntity) {
+			entity.getPersistentData().putDouble("max_speed", 20);
+			acceleration = 0.004783531929;
 		} else if (entity instanceof CarDodgeRam1982Entity) {
 			entity.getPersistentData().putDouble("max_speed", 10);
 			acceleration = 0.002962962965;

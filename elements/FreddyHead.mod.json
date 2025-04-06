@@ -35,9 +35,7 @@
     ],
     "name": "Freddy Head",
     "specialInformation": {
-      "fixedValue": [
-        "Use the Faz-Wrench to change direction!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

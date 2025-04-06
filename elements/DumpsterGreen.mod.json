@@ -35,9 +35,7 @@
     ],
     "name": "Dumpster (Green)",
     "specialInformation": {
-      "fixedValue": [
-        "- Right click to open!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

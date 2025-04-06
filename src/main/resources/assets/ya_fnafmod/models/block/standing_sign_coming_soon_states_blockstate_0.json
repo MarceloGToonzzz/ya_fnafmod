@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/standing_sign_diag",
+  "textures": {
+    "all": "ya_fnafmod:block/standingsign_comingsoon",
+    "particle": "ya_fnafmod:block/standingsign_comingsoon",
+    "0": "ya_fnafmod:block/standingsign_comingsoon"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Skee-ball",
+    "name": "Pizza-Roller Skee-ball",
     "specialInformation": {
-      "fixedValue": [
-        "Pizza-Roller"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

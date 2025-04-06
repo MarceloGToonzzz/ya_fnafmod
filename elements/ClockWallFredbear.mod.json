@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Wall Clock",
+    "name": "Fredbear Wall Clock",
     "specialInformation": {
-      "fixedValue": [
-        "Fredbear"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

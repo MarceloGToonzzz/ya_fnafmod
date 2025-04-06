@@ -143,7 +143,7 @@ public class LaptopOldTileEntity extends RandomizableContainerBlockEntity implem
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Laptop");
+		return Component.literal("Old Laptop");
 	}
 
 	@Override

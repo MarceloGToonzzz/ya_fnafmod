@@ -35,9 +35,7 @@
     ],
     "name": "Discount Cooling Unit",
     "specialInformation": {
-      "fixedValue": [
-        "* Requires a redstone signal to activate!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

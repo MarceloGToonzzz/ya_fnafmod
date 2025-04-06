@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/tortilachip"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "ya_fnafmod:tortilla_chip_dip": 1
+      },
+      "model": "ya_fnafmod:item/tortilla_chip_0"
+    },
+    {
+      "predicate": {
+        "ya_fnafmod:tortilla_chip_dip": 2
+      },
+      "model": "ya_fnafmod:item/tortilla_chip_1"
+    }
+  ]
+}

@@ -272,6 +272,13 @@ public class OfficeWindowUpdateProcedure {
 				}
 			} else if ((dirs).equals("..right.up.")) {
 				{
+					int _value = 7;
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+				}
+				{
 					Direction _dir = Direction.NORTH;
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
@@ -283,13 +290,6 @@ public class OfficeWindowUpdateProcedure {
 						if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
-				}
-				{
-					int _value = 7;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 			}
 		} else if ((new Object() {
@@ -400,7 +400,7 @@ public class OfficeWindowUpdateProcedure {
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 				{
-					Direction _dir = Direction.NORTH;
+					Direction _dir = Direction.SOUTH;
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -435,7 +435,14 @@ public class OfficeWindowUpdateProcedure {
 				}
 			} else if ((dirs).equals("..right.updown")) {
 				{
-					Direction _dir = Direction.SOUTH;
+					int _value = 8;
+					BlockPos _pos = BlockPos.containing(x, y, z);
+					BlockState _bs = world.getBlockState(_pos);
+					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
+						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
+				}
+				{
+					Direction _dir = Direction.NORTH;
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					Property<?> _property = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -446,13 +453,6 @@ public class OfficeWindowUpdateProcedure {
 						if (_property instanceof EnumProperty _ap && _ap.getPossibleValues().contains(_dir.getAxis()))
 							world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 					}
-				}
-				{
-					int _value = 8;
-					BlockPos _pos = BlockPos.containing(x, y, z);
-					BlockState _bs = world.getBlockState(_pos);
-					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
-						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 			}
 		} else if ((new Object() {

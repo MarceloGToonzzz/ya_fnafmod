@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ya_fnafmod:blocks/poster_starring_bonnie",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ya_fnafmod:poster_starring_bonnie"
+        }
+      ]
+    }
+  ]
+}

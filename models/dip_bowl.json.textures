@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "dipbowl_guac"
+      },
+      "name": "default"
+    },
+    "queso": {
+      "map": {
+        "0": "dipbowl_queso"
+      },
+      "name": "queso"
+    }
+  }
+}

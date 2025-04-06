@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "ya_fnafmod:stage_sun_creep",
+    "ya_fnafmod:stage_moon_creep",
+    "ya_fnafmod:stage_light_red",
+    "ya_fnafmod:stage_light_orange",
+    "ya_fnafmod:stage_light_yellow",
+    "ya_fnafmod:stage_light_green",
+    "ya_fnafmod:stage_light_blue",
+    "ya_fnafmod:stage_light_purple",
+    "ya_fnafmod:stage_light_pink",
+    "ya_fnafmod:carousel",
+    "ya_fnafmod:carousel_freddy",
+    "ya_fnafmod:carousel_freddy_toy",
+    "ya_fnafmod:carousel_freddy_retro",
+    "ya_fnafmod:carousel_fredbear",
+    "ya_fnafmod:camera"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/framed_posters",
+  "textures": {
+    "all": "ya_fnafmod:block/framedposter_chicamugshot",
+    "particle": "ya_fnafmod:block/framedposter_chicamugshot",
+    "0": "ya_fnafmod:block/framedposter_chicamugshot"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -35,11 +35,7 @@
     ],
     "name": "Control Panel",
     "specialInformation": {
-      "fixedValue": [
-        "- Can connect to Linked Lamps and Control Shock Infusers",
-        "= Right Click to use Linked Lamps",
-        "= Shift Right Click to use Controlled Shocks"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

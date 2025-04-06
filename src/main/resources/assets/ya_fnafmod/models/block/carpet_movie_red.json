@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/carpet",
+  "textures": {
+    "all": "ya_fnafmod:block/carpet_movieredish",
+    "particle": "ya_fnafmod:block/carpet_movieredish",
+    "0": "ya_fnafmod:block/carpet_movieredish"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -35,9 +35,7 @@
     ],
     "name": "§cOld Man Consequences",
     "specialInformation": {
-      "fixedValue": [
-        "(Also known as OMC)"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

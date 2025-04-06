@@ -35,9 +35,7 @@
     ],
     "name": "Candy Cadet",
     "specialInformation": {
-      "fixedValue": [
-        "- Feed him a quarter! Get some candy! Hear a story!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

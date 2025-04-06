@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ya_fnafmod:blocks/standing_sign_coming_soon",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ya_fnafmod:standing_sign_coming_soon"
+        }
+      ]
+    }
+  ]
+}

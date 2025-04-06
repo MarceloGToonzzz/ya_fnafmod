@@ -33,11 +33,9 @@
         "subtract": false
       }
     ],
-    "name": "Wall Clock",
+    "name": "Toy Freddy Wall Clock",
     "specialInformation": {
-      "fixedValue": [
-        "Toy Freddy"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

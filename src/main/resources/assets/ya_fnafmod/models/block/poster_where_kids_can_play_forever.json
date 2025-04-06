@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/framed_posters",
+  "textures": {
+    "all": "ya_fnafmod:block/framedposter_wherekidscanplayforever",
+    "particle": "ya_fnafmod:block/framedposter_wherekidscanplayforever",
+    "0": "ya_fnafmod:block/framedposter_wherekidscanplayforever"
+  },
+  "render_type": "cutout_mipped"
+}

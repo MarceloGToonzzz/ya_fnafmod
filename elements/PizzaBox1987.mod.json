@@ -144,7 +144,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "pizzabox_1987_empty",
+        "texture": "pizzabox_1987",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "pizzabox_open.geo.json",

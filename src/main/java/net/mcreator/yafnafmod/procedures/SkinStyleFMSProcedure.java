@@ -33,6 +33,8 @@ import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.RustyEntity;
 import net.mcreator.yafnafmod.entity.RustyDayEntity;
+import net.mcreator.yafnafmod.entity.RickyRatEntity;
+import net.mcreator.yafnafmod.entity.RickyRatDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
@@ -43,6 +45,8 @@ import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
+import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
+import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PigpatchEntity;
@@ -85,6 +89,8 @@ import net.mcreator.yafnafmod.entity.CandyCatEntity;
 import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyDayEntity;
+import net.mcreator.yafnafmod.entity.BlakeBadgerEntity;
+import net.mcreator.yafnafmod.entity.BlakeBadgerDayEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarDayEntity;
 
@@ -245,26 +251,6 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("gus_the_pug_fms");
 		if (entity instanceof GusThePugStillDayEntity animatable)
 			animatable.setTexture("gus_the_pug_fms");
-		if (entity instanceof JollyRatEntity animatable)
-			animatable.setTexture("jollyrat_fms");
-		if (entity instanceof JollyRatDayEntity animatable)
-			animatable.setTexture("jollyrat_fms");
-		if (entity instanceof WitheredJollyRatEntity animatable)
-			animatable.setTexture("withered_jollyrat_fms");
-		if (entity instanceof WitheredJollyRatDayEntity animatable)
-			animatable.setTexture("withered_jollyrat_fms");
-		if (entity instanceof DougDogEntity animatable)
-			animatable.setTexture("doug_fms");
-		if (entity instanceof DougDogDayEntity animatable)
-			animatable.setTexture("doug_fms");
-		if (entity instanceof WitheredDougDogEntity animatable)
-			animatable.setTexture("withered_doug_fms");
-		if (entity instanceof WitheredDougDogDayEntity animatable)
-			animatable.setTexture("withered_doug_fms");
-		if (entity instanceof IgnitedChicaEntity animatable)
-			animatable.setTexture("ignited_chica_fms");
-		if (entity instanceof IgnitedChicaDayEntity animatable)
-			animatable.setTexture("ignited_chica_fms");
 		if (entity instanceof PitbonnieEntity animatable)
 			animatable.setTexture("pitbonnie_fms");
 		if (entity instanceof PitbonnieDayEntity animatable)
@@ -283,5 +269,37 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("cindythecat_fms");
 		if (entity instanceof CindyCatDayEntity animatable)
 			animatable.setTexture("cindythecat_fms");
+		if (entity instanceof PopgoesWeaselEntity animatable)
+			animatable.setTexture("popgoes_fms");
+		if (entity instanceof PopgoesWeaselDayEntity animatable)
+			animatable.setTexture("popgoes_fms");
+		if (entity instanceof BlakeBadgerEntity animatable)
+			animatable.setTexture("blakebadger_fms");
+		if (entity instanceof BlakeBadgerDayEntity animatable)
+			animatable.setTexture("blakebadger_fms");
+		if (entity instanceof IgnitedChicaEntity animatable)
+			animatable.setTexture("ignited_chica_fms");
+		if (entity instanceof IgnitedChicaDayEntity animatable)
+			animatable.setTexture("ignited_chica_fms");
+		if (entity instanceof DougDogEntity animatable)
+			animatable.setTexture("doug_fms");
+		if (entity instanceof DougDogDayEntity animatable)
+			animatable.setTexture("doug_fms");
+		if (entity instanceof WitheredDougDogEntity animatable)
+			animatable.setTexture("withered_doug_fms");
+		if (entity instanceof WitheredDougDogDayEntity animatable)
+			animatable.setTexture("withered_doug_fms");
+		if (entity instanceof JollyRatEntity animatable)
+			animatable.setTexture("jollyrat_fms");
+		if (entity instanceof JollyRatDayEntity animatable)
+			animatable.setTexture("jollyrat_fms");
+		if (entity instanceof RickyRatEntity animatable)
+			animatable.setTexture("rickyrat_fms");
+		if (entity instanceof RickyRatDayEntity animatable)
+			animatable.setTexture("rickyrat_fms");
+		if (entity instanceof WitheredJollyRatEntity animatable)
+			animatable.setTexture("withered_jollyrat_fms");
+		if (entity instanceof WitheredJollyRatDayEntity animatable)
+			animatable.setTexture("withered_jollyrat_fms");
 	}
 }

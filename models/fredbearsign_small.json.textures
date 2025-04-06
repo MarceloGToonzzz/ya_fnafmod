@@ -5,6 +5,12 @@
         "0": "fredbearlittlesign"
       },
       "name": "default"
+    },
+    "frights": {
+      "map": {
+        "0": "fnaf3littlesign"
+      },
+      "name": "frights"
     }
   }
 }
