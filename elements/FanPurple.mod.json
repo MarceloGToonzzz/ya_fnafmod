@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "Fan (Purple)",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "- Right click to turn it on, right click with Faz-Wrench to make it diagonal!"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,

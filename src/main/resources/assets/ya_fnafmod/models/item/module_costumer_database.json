@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/customerdatabasemodule",
+  "textures": {
+    "2": "ya_fnafmod:block/costumerdatabasemodule",
+    "particle": "minecraft:item/iron_ingot"
+  }
+}

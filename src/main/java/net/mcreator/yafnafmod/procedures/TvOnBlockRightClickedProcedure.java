@@ -36,12 +36,14 @@ public class TvOnBlockRightClickedProcedure {
 		if (entity == null)
 			return;
 		double max = 0;
-		if (blockstate.getBlock() == YaFnafmodModBlocks.TV.get()) {
-			max = 1;
-		} else if (blockstate.getBlock() == YaFnafmodModBlocks.TV_TUBE.get()) {
-			max = 9;
-		}
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.REMOTE.get()) {
+			if (blockstate.getBlock() == YaFnafmodModBlocks.TV.get()) {
+				max = 1;
+			} else if (blockstate.getBlock() == YaFnafmodModBlocks.TV_TUBE.get()) {
+				max = 9;
+			} else {
+				max = 0;
+			}
 			if (!entity.isShiftKeyDown()) {
 				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip8 ? blockstate.getValue(_getip8) : -1) == 0) {
 					{

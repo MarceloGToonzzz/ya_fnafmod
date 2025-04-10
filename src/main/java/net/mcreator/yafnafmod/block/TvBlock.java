@@ -45,6 +45,7 @@ public class TvBlock extends Block {
 	public void appendHoverText(ItemStack itemstack, BlockGetter level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.translatable("block.ya_fnafmod.tv.description_0"));
+		list.add(Component.translatable("block.ya_fnafmod.tv.description_1"));
 	}
 
 	@Override

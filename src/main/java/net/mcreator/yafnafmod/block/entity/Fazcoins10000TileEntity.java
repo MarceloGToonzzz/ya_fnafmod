@@ -143,7 +143,7 @@ public class Fazcoins10000TileEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Fazcoin Bag");
+		return Component.literal("Fazcoin Bag (10000 Fazcoins)");
 	}
 
 	@Override

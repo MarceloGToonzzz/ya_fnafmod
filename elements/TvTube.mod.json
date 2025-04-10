@@ -36,7 +36,10 @@
     "customProperties": [],
     "name": "Tube TV",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "- Right click with remote to turn on your favorite show!",
+        "- Shift Right Click with remote to turn it off."
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,

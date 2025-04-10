@@ -58,7 +58,7 @@ public class TablePinkStripesBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		if (state.getValue(BLOCKSTATE) == 1) {
-			return Shapes.empty();
+			return box(0, 14, 0, 16, 16, 16);
 		}
 		return Shapes.or(box(0, 14, 0, 16, 16, 16), box(7, 0, 7, 9, 16, 9));
 	}

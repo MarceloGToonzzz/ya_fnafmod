@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/confetti2_wall",
     "particle": "ya_fnafmod:block/confetti2_wall",
-    "1": "ya_fnafmod:block/confetti2_wall"
+    "3": "ya_fnafmod:block/wires_wall1"
   },
   "render_type": "cutout"
 }

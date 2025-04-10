@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortilediag_bluewhite",
+    "bottom": "ya_fnafmod:block/floortilediag_bluewhite",
+    "top": "ya_fnafmod:block/floortilediag_bluewhite",
+    "side": "ya_fnafmod:block/floortilediag_bluewhite"
+  },
+  "render_type": "solid"
+}

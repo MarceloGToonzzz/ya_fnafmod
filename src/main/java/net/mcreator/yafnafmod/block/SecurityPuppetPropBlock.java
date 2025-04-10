@@ -1,6 +1,8 @@
 
 package net.mcreator.yafnafmod.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
@@ -29,7 +31,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.yafnafmod.procedures.AnimationStateCyclingProcedure;
+import net.mcreator.yafnafmod.procedures.Animation1CycleProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -38,13 +40,20 @@ import java.util.List;
 import java.util.Collections;
 
 public class SecurityPuppetPropBlock extends BaseEntityBlock implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public SecurityPuppetPropBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.WOOD).strength(1f, 10f).lightLevel(s -> (new Object() {
+					public int getLightLevel() {
+						if (s.getValue(BLOCKSTATE) == 1)
+							return 0;
+						return 0;
+					}
+				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -82,7 +91,7 @@ public class SecurityPuppetPropBlock extends BaseEntityBlock implements EntityBl
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(ANIMATION, FACING);
+		builder.add(ANIMATION, FACING, BLOCKSTATE);
 	}
 
 	@Override
@@ -117,7 +126,7 @@ public class SecurityPuppetPropBlock extends BaseEntityBlock implements EntityBl
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		AnimationStateCyclingProcedure.execute(world, x, y, z, blockstate, entity);
+		Animation1CycleProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

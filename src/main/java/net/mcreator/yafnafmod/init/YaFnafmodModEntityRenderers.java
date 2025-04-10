@@ -47,6 +47,7 @@ import net.mcreator.yafnafmod.client.renderer.SparkyDogDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SeatRenderer;
+import net.mcreator.yafnafmod.client.renderer.SeabonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.ScraptrapRenderer;
 import net.mcreator.yafnafmod.client.renderer.ScrapBabyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RustyRenderer;
@@ -439,5 +440,7 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.BALL_GREEN_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.BALL_BLUE_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.BALL_PURPLE_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SHOTGUN_SHELL_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SEABONNIE.get(), SeabonnieRenderer::new);
 	}
 }

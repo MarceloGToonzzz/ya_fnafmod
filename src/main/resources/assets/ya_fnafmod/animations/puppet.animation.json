@@ -43,6 +43,11 @@
 					"rotation": {
 						"vector": [-9.96271, -0.86717, -4.92442]
 					}
+				},
+				"fms": {
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
+					}
 				}
 			}
 		},
@@ -87,6 +92,11 @@
 				"LeftArm": {
 					"rotation": {
 						"vector": [-9.96271, -0.86717, -4.92442]
+					}
+				},
+				"fms": {
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
 					}
 				}
 			}
@@ -258,6 +268,11 @@
 							"easing": "easeInOutSine"
 						}
 					}
+				},
+				"fms": {
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
+					}
 				}
 			}
 		},
@@ -348,14 +363,14 @@
 				"Body2": {
 					"rotation": {
 						"0.0": {
-							"vector": ["5 + 35", 0, 0]
+							"vector": ["5 + 75", 0, 0]
 						},
 						"1.25": {
-							"vector": ["7.5 + 35", 0, 0],
+							"vector": ["7.5 + 75", 0, 0],
 							"easing": "easeInOutSine"
 						},
 						"2.5": {
-							"vector": ["5 + 35", 0, 0],
+							"vector": ["5 + 75", 0, 0],
 							"easing": "easeInOutSine"
 						}
 					}
@@ -425,6 +440,11 @@
 							"vector": [2.5, 0, 0],
 							"easing": "easeInOutSine"
 						}
+					}
+				},
+				"fms": {
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
 					}
 				}
 			}
@@ -617,6 +637,9 @@
 							"vector": [0, -0.5, 0],
 							"easing": "easeInOutSine"
 						}
+					},
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
 					}
 				},
 				"Body2": {
@@ -937,19 +960,22 @@
 							"vector": [0, -0.5, 0],
 							"easing": "easeInOutSine"
 						}
+					},
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
 					}
 				},
 				"Body2": {
 					"rotation": {
 						"0.0": {
-							"vector": ["15 + 35", 0, 5]
+							"vector": ["15 + 75", 0, 5]
 						},
 						"0.5": {
-							"vector": ["20 + 35", 0, 5],
+							"vector": ["20 + 75", 0, 5],
 							"easing": "easeInOutSine"
 						},
 						"1.0": {
-							"vector": ["15 + 35", 0, 5],
+							"vector": ["15 + 75", 0, 5],
 							"easing": "easeInOutSine"
 						}
 					}
@@ -1200,6 +1226,9 @@
 							"vector": [0, 0, 2],
 							"easing": "easeInOutSine"
 						}
+					},
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
 					}
 				},
 				"Body2": {

@@ -119,6 +119,12 @@
         "2": "plush_marcelo"
       },
       "name": "guy_marcelo"
+    },
+    "fredboi": {
+      "map": {
+        "2": "plush_fredboi"
+      },
+      "name": "fredboi"
     }
   }
 }

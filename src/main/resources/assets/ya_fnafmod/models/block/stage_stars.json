@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/stagestars_wall",
     "particle": "ya_fnafmod:block/stagestars_wall",
-    "1": "ya_fnafmod:block/stagestars_wall"
+    "3": "ya_fnafmod:block/stagestars_wall"
   },
   "render_type": "cutout"
 }

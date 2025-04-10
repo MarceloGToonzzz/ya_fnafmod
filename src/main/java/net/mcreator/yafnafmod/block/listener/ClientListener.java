@@ -202,6 +202,7 @@ import net.mcreator.yafnafmod.block.renderer.DittophobiaFreddyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.DittophobiaFoxyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.DittophobiaChicaBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.DittophobiaBonnieBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.DittophobiaBbBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.DiscountCoolingUnitTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.DiscountBallpitTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.DeluxeSpeakerTileRenderer;
@@ -666,5 +667,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.MUSIC_MAN_BLOCK.get(), context -> new MusicManBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_TRASH_BIN_MOVIE.get(), context -> new BigTrashBinMovieTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CAR_DESOTO_BLOCK.get(), context -> new CarDesotoBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.DITTOPHOBIA_BB_BLOCK.get(), context -> new DittophobiaBbBlockTileRenderer());
 	}
 }

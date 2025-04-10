@@ -43,6 +43,31 @@
 					"rotation": {
 						"vector": [0, 0, 75]
 					}
+				},
+				"fms": {
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
+					}
+				},
+				"Body2": {
+					"rotation": {
+						"vector": [7.5, 0, -2.5]
+					}
+				},
+				"Head2": {
+					"rotation": {
+						"vector": [0, 12.5, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [-52.84154, 18.26883, 13.36473]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [-108.11321, -33.64409, 10.27206]
+					}
 				}
 			}
 		},
@@ -92,6 +117,31 @@
 				"all": {
 					"rotation": {
 						"vector": [0, -45, 0]
+					}
+				},
+				"fms": {
+					"scale": {
+						"vector": [1.388, 1.388, 1.388]
+					}
+				},
+				"Body2": {
+					"rotation": {
+						"vector": [7.5, 0, -2.5]
+					}
+				},
+				"Head2": {
+					"rotation": {
+						"vector": [0, 12.5, 0]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [-52.84154, 18.26883, 13.36473]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [-108.11321, -33.64409, 10.27206]
 					}
 				}
 			}

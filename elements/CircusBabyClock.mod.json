@@ -35,9 +35,7 @@
     ],
     "name": "Circus Baby Clock",
     "specialInformation": {
-      "fixedValue": [
-        "- Right click to see the current time!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

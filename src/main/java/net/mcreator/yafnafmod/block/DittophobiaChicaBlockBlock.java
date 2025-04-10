@@ -29,7 +29,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.yafnafmod.procedures.State1CycleProcedure;
+import net.mcreator.yafnafmod.procedures.AnimationStateCyclingProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -117,7 +117,7 @@ public class DittophobiaChicaBlockBlock extends BaseEntityBlock implements Entit
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		State1CycleProcedure.execute(world, x, y, z, blockstate, entity);
+		AnimationStateCyclingProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

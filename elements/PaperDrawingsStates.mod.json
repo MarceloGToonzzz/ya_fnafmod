@@ -406,6 +406,32 @@
         "customModelName": "paper2:paper15",
         "luminance": 0,
         "boundingBoxes": []
+      },
+      {
+        "texture": "paper16",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper1:paper16",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper16",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper2:paper16",
+        "luminance": 0,
+        "boundingBoxes": []
       }
     ]
   }

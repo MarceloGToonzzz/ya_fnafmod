@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/rat",
+  "textures": {
+    "layer0": "ya_fnafmod:item/rat"
+  }
+}

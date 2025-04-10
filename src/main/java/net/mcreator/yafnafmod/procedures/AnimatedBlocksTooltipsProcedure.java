@@ -67,11 +67,6 @@ public class AnimatedBlocksTooltipsProcedure {
 			} else if (itemstack.getItem() == YaFnafmodModBlocks.BALLPIT_VINTAGE.get().asItem()) {
 				tooltip.add(1, Component.literal("\u00A76Vintage"));
 			}
-			if (itemstack.getItem() == YaFnafmodModBlocks.BALLPIT_ROTTEN.get().asItem()) {
-				tooltip.add(1, Component.literal("\u00A72Rotten"));
-			} else if (itemstack.getItem() == YaFnafmodModBlocks.BALLPIT_VINTAGE.get().asItem()) {
-				tooltip.add(1, Component.literal("\u00A76Vintage"));
-			}
 			if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("stage_light")
 					|| (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("big") && (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("door")) {
 				if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("red")) {

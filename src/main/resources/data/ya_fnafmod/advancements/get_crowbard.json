@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "ya_fnafmod:crowbar"
+    },
+    "title": {
+      "translate": "advancements.get_crowbard.title"
+    },
+    "description": {
+      "translate": "advancements.get_crowbard.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_crowbard_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "ya_fnafmod:its_just_yet_another_fnaf_mod"
+}

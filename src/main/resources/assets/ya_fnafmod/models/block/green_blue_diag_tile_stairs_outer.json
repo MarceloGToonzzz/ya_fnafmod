@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortilediag_greenblue",
+    "bottom": "ya_fnafmod:block/floortilediag_greenblue",
+    "top": "ya_fnafmod:block/floortilediag_greenblue",
+    "side": "ya_fnafmod:block/floortilediag_greenblue"
+  },
+  "render_type": "solid"
+}

@@ -19,6 +19,6 @@ public class Endo01PropDisplayModel extends GeoModel<Endo01PropDisplayItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(Endo01PropDisplayItem entity) {
-		return new ResourceLocation("ya_fnafmod", "textures/block/endo1.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_endo1.png");
 	}
 }

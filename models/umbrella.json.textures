@@ -1,0 +1,123 @@
+{
+  "mappings": {
+    "magenta": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_magenta"
+      },
+      "name": "magenta"
+    },
+    "pink": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_pink"
+      },
+      "name": "pink"
+    },
+    "green": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_green"
+      },
+      "name": "green"
+    },
+    "lime": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_lime"
+      },
+      "name": "lime"
+    },
+    "yellow": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_yellow"
+      },
+      "name": "yellow"
+    },
+    "black": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_black"
+      },
+      "name": "black"
+    },
+    "hotpink": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_hotpink"
+      },
+      "name": "hotpink"
+    },
+    "brown": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_brown"
+      },
+      "name": "brown"
+    },
+    "orange": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_orange"
+      },
+      "name": "orange"
+    },
+    "default": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_red"
+      },
+      "name": "default"
+    },
+    "gray": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_gray"
+      },
+      "name": "gray"
+    },
+    "lightblue": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_lightblue"
+      },
+      "name": "lightblue"
+    },
+    "blue": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_blue"
+      },
+      "name": "blue"
+    },
+    "white": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_white"
+      },
+      "name": "white"
+    },
+    "purple": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_purple"
+      },
+      "name": "purple"
+    },
+    "lightgray": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_lightgray"
+      },
+      "name": "lightgray"
+    },
+    "cyan": {
+      "map": {
+        "0": "umbrellabar",
+        "1": "umbrellacover_cyan"
+      },
+      "name": "cyan"
+    }
+  }
+}

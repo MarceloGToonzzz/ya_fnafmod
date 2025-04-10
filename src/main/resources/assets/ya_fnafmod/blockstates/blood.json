@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/blood"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/blood",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/blood",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/blood",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ya_fnafmod:block/blood",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ya_fnafmod:block/blood",
+      "x": 90
+    }
+  }
+}

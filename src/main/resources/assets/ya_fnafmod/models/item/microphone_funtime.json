@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/mic_long",
+  "textures": {
+    "0": "ya_fnafmod:block/microphone_funtime",
+    "particle": "ya_fnafmod:item/icon_ftfreddy"
+  }
+}

@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "endo1",
+    "texture": "animatronic_endo1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -136,6 +136,25 @@
     "normal": "endo01_block.geo.json",
     "displaySettings": "head_display.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_endo1_fms",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "endo01_block.geo.json",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 32.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
   }
 }

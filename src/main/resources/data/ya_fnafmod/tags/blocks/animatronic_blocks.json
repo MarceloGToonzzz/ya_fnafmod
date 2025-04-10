@@ -79,6 +79,8 @@
     "ya_fnafmod:blake_badger_block",
     "ya_fnafmod:funtime_chica_block",
     "ya_fnafmod:el_chip_block",
-    "ya_fnafmod:music_man_block"
+    "ya_fnafmod:music_man_block",
+    "ya_fnafmod:security_puppet_prop",
+    "ya_fnafmod:endo_01_prop"
   ]
 }

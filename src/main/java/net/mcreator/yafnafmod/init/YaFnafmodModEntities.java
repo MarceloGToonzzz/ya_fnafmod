@@ -50,9 +50,11 @@ import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
+import net.mcreator.yafnafmod.entity.ShotgunShellProjectileEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.SeatEntity;
+import net.mcreator.yafnafmod.entity.SeabonnieEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
 import net.mcreator.yafnafmod.entity.RustyEntity;
@@ -1087,6 +1089,12 @@ public class YaFnafmodModEntities {
 			.setCustomClientFactory(BallBlueProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<BallPurpleProjectileEntity>> BALL_PURPLE_PROJECTILE = register("ball_purple_projectile", EntityType.Builder.<BallPurpleProjectileEntity>of(BallPurpleProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(BallPurpleProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ShotgunShellProjectileEntity>> SHOTGUN_SHELL_PROJECTILE = register("shotgun_shell_projectile", EntityType.Builder.<ShotgunShellProjectileEntity>of(ShotgunShellProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(ShotgunShellProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SeabonnieEntity>> SEABONNIE = register("seabonnie",
+			EntityType.Builder.<SeabonnieEntity>of(SeabonnieEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeabonnieEntity::new)
+
+					.sized(0.125f, 0.125f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1305,6 +1313,7 @@ public class YaFnafmodModEntities {
 			BlakeBadgerDayEntity.init();
 			RickyRatEntity.init();
 			RickyRatDayEntity.init();
+			SeabonnieEntity.init();
 		});
 	}
 
@@ -1518,5 +1527,6 @@ public class YaFnafmodModEntities {
 		event.put(BLAKE_BADGER_DAY.get(), BlakeBadgerDayEntity.createAttributes().build());
 		event.put(RICKY_RAT.get(), RickyRatEntity.createAttributes().build());
 		event.put(RICKY_RAT_DAY.get(), RickyRatDayEntity.createAttributes().build());
+		event.put(SEABONNIE.get(), SeabonnieEntity.createAttributes().build());
 	}
 }

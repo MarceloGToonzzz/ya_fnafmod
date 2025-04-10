@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "particle": "ya_fnafmod:block/glass_dirty",
+    "edge": "ya_fnafmod:block/glass_dirty",
+    "pane": "ya_fnafmod:block/glass_dirty"
+  },
+  "render_type": "translucent"
+}

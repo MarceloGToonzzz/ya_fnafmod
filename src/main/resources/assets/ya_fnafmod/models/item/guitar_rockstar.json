@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/guitar_fnaf6",
+  "textures": {
+    "1": "ya_fnafmod:block/guitar_fnaf6",
+    "particle": "ya_fnafmod:item/icon_rock_bonnie"
+  }
+}

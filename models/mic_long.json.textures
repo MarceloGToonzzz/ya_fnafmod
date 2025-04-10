@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "microphone_funtime"
+      },
+      "name": "default"
+    },
+    "rockstar": {
+      "map": {
+        "0": "microphone_rockstar"
+      },
+      "name": "rockstar"
+    }
+  }
+}

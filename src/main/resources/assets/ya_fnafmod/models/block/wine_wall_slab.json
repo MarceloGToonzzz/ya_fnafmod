@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/wall_wine",
+    "bottom": "ya_fnafmod:block/wall_wine",
+    "top": "ya_fnafmod:block/wall_wine",
+    "side": "ya_fnafmod:block/wall_wine"
+  },
+  "render_type": "solid"
+}

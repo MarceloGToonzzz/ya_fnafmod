@@ -269,6 +269,12 @@
         "0": "poster_spoopypuppet"
       },
       "name": "spoopypuppet"
+    },
+    "draw_clown": {
+      "map": {
+        "0": "poster_drawing_clown"
+      },
+      "name": "draw_clown"
     }
   }
 }

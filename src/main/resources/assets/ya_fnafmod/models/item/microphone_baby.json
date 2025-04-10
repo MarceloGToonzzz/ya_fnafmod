@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/mic_baby",
+  "textures": {
+    "1": "ya_fnafmod:block/microphone_baby",
+    "particle": "ya_fnafmod:item/icon_baby"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "ya_fnafmod:custom/umbrella",
+  "textures": {
+    "0": "ya_fnafmod:block/umbrellabar",
+    "1": "ya_fnafmod:block/umbrellacover_gray",
+    "particle": "minecraft:item/gray_candle"
+  }
+}

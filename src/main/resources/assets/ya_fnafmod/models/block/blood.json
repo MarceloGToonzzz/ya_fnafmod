@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wallplane",
+  "textures": {
+    "all": "ya_fnafmod:block/blood",
+    "particle": "ya_fnafmod:block/blood",
+    "0": "ya_fnafmod:block/blood"
+  },
+  "render_type": "translucent"
+}

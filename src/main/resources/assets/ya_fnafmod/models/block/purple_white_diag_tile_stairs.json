@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortilediag_purplewhite",
+    "bottom": "ya_fnafmod:block/floortilediag_purplewhite",
+    "top": "ya_fnafmod:block/floortilediag_purplewhite",
+    "side": "ya_fnafmod:block/floortilediag_purplewhite"
+  },
+  "render_type": "solid"
+}

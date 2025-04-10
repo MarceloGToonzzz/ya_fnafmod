@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/microphone",
+  "textures": {
+    "2": "ya_fnafmod:block/microphone",
+    "particle": "ya_fnafmod:item/icon_freddyfazbear"
+  }
+}

@@ -37,7 +37,8 @@
     "name": "Tv",
     "specialInformation": {
       "fixedValue": [
-        "- Right click to turn on your favorite show!"
+        "- Right click with remote to turn on your favorite show!",
+        "- Shift Right Click with remote to turn it off."
       ]
     },
     "hardness": 1.0,

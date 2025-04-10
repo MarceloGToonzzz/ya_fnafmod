@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/predatorydetectionmodule",
+  "textures": {
+    "1": "ya_fnafmod:block/predatorydetectionmodule",
+    "particle": "minecraft:item/iron_ingot"
+  }
+}

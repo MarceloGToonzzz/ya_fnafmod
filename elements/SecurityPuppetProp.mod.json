@@ -123,7 +123,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "AnimationStateCycling"
+      "name": "Animation1Cycle"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [
@@ -139,6 +139,15 @@
     "normal": "security_puppet.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "security_puppet_fms",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "security_puppet.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

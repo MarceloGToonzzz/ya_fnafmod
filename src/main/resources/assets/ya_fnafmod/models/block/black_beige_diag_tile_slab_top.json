@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortilediag_blackbeige",
+    "bottom": "ya_fnafmod:block/floortilediag_blackbeige",
+    "top": "ya_fnafmod:block/floortilediag_blackbeige",
+    "side": "ya_fnafmod:block/floortilediag_blackbeige"
+  },
+  "render_type": "solid"
+}

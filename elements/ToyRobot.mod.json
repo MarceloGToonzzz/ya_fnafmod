@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "Toy Robot",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "- Right click with Faz-Wrench to make it diagonal!"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,

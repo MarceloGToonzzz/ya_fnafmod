@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "poster:clown",
+    "customModelName": "poster:draw_clown",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,

@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "stagebase_wood",
-    "textureTop": "cheap_woodenwall_top",
+    "texture": "stagebase_wood_woodenbottom",
+    "textureTop": "stagebase_wood_woodenbottom",
     "textureLeft": "wall_woodenbottom",
     "textureFront": "wall_woodenbottom",
     "textureRight": "wall_woodenbottom",

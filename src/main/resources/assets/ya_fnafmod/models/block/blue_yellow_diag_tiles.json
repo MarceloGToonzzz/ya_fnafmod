@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/floortilediag_blueyellow",
+    "particle": "ya_fnafmod:block/floortilediag_blueyellow"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,11 @@
+
+package net.mcreator.yafnafmod.item;
+
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Item;
+
+public class ModuleAudioItem extends Item {
+	public ModuleAudioItem() {
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
+	}
+}

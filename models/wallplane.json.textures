@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "blood"
+      },
+      "name": "default"
+    },
+    "smear": {
+      "map": {
+        "0": "blood_smeared"
+      },
+      "name": "smear"
+    }
+  }
+}

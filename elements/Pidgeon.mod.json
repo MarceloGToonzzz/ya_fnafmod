@@ -7,10 +7,12 @@
     "mobModelTexture": "pidgeon.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "SetBabyScale"
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "SetBabyScale"
     },
     "entityDataEntries": [],
     "modelWidth": 0.6,

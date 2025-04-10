@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/framedposter_ihaveasandinmyhare",
     "particle": "ya_fnafmod:block/framedposter_ihaveasandinmyhare",
-    "0": "ya_fnafmod:block/framedposter_freddysband"
+    "0": "ya_fnafmod:block/framedposter_ihaveasandinmyhare"
   },
   "render_type": "cutout_mipped"
 }

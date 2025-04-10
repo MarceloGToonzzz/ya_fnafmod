@@ -79,6 +79,8 @@ import net.mcreator.yafnafmod.entity.Endo02Entity;
 import net.mcreator.yafnafmod.entity.Endo02DayEntity;
 import net.mcreator.yafnafmod.entity.Endo01Entity;
 import net.mcreator.yafnafmod.entity.Endo01DayEntity;
+import net.mcreator.yafnafmod.entity.DrTeethEntity;
+import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CindyCatEntity;
@@ -237,20 +239,6 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("orville_elephant_fms");
 		if (entity instanceof OrvilleElephantDayEntity animatable)
 			animatable.setTexture("orville_elephant_fms");
-		if (entity instanceof BarryPolarEntity animatable)
-			animatable.setTexture("barrypolar_fms");
-		if (entity instanceof BarryPolarDayEntity animatable)
-			animatable.setTexture("barrypolar_fms");
-		if (entity instanceof RustyEntity animatable)
-			animatable.setTexture("endo1_rusty_fms");
-		if (entity instanceof RustyDayEntity animatable)
-			animatable.setTexture("endo1_rusty_fms");
-		if (entity instanceof GusThePugEntity animatable)
-			animatable.setTexture("gus_the_pug_fms");
-		if (entity instanceof GusThePugDayEntity animatable)
-			animatable.setTexture("gus_the_pug_fms");
-		if (entity instanceof GusThePugStillDayEntity animatable)
-			animatable.setTexture("gus_the_pug_fms");
 		if (entity instanceof PitbonnieEntity animatable)
 			animatable.setTexture("pitbonnie_fms");
 		if (entity instanceof PitbonnieDayEntity animatable)
@@ -301,5 +289,23 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("withered_jollyrat_fms");
 		if (entity instanceof WitheredJollyRatDayEntity animatable)
 			animatable.setTexture("withered_jollyrat_fms");
+		if (entity instanceof BarryPolarEntity animatable)
+			animatable.setTexture("barrypolar_fms");
+		if (entity instanceof BarryPolarDayEntity animatable)
+			animatable.setTexture("barrypolar_fms");
+		if (entity instanceof RustyEntity animatable)
+			animatable.setTexture("endo1_rusty_fms");
+		if (entity instanceof RustyDayEntity animatable)
+			animatable.setTexture("endo1_rusty_fms");
+		if (entity instanceof GusThePugEntity animatable)
+			animatable.setTexture("gus_the_pug_fms");
+		if (entity instanceof GusThePugDayEntity animatable)
+			animatable.setTexture("gus_the_pug_fms");
+		if (entity instanceof GusThePugStillDayEntity animatable)
+			animatable.setTexture("gus_the_pug_fms");
+		if (entity instanceof DrTeethEntity animatable)
+			animatable.setTexture("drteeth_fms");
+		if (entity instanceof DrTeethDayEntity animatable)
+			animatable.setTexture("drteeth_fms");
 	}
 }

@@ -7,10 +7,12 @@
     "mobModelTexture": "rat.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "SetBabyScale"
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "SetBabyScale"
     },
     "entityDataEntries": [],
     "modelWidth": 0.45,
@@ -105,6 +107,9 @@
     },
     "raidCelebrationSound": {
       "value": ""
+    },
+    "onRightClickedOn": {
+      "name": "RatRightClickedOnEntity"
     },
     "hasAI": true,
     "aiBase": "(none)",

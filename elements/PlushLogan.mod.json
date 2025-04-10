@@ -36,7 +36,9 @@
     "customProperties": [],
     "name": "DrLoganBlox07 Plushie",
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "(not me)"
+      ]
     },
     "hardness": 1.0,
     "resistance": 10.0,

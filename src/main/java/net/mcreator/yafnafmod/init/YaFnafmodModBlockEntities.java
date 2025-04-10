@@ -221,6 +221,7 @@ import net.mcreator.yafnafmod.block.entity.DittophobiaFreddyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DittophobiaFoxyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DittophobiaChicaBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DittophobiaBonnieBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.DittophobiaBbBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DiscountCoolingUnitTileEntity;
 import net.mcreator.yafnafmod.block.entity.DiscountBallpitTileEntity;
 import net.mcreator.yafnafmod.block.entity.DeluxeSpeakerTileEntity;
@@ -938,6 +939,8 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(BigTrashBinMovieTileEntity::new, YaFnafmodModBlocks.BIG_TRASH_BIN_MOVIE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CarDesotoBlockTileEntity>> CAR_DESOTO_BLOCK = REGISTRY.register("car_desoto_block",
 			() -> BlockEntityType.Builder.of(CarDesotoBlockTileEntity::new, YaFnafmodModBlocks.CAR_DESOTO_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<DittophobiaBbBlockTileEntity>> DITTOPHOBIA_BB_BLOCK = REGISTRY.register("dittophobia_bb_block",
+			() -> BlockEntityType.Builder.of(DittophobiaBbBlockTileEntity::new, YaFnafmodModBlocks.DITTOPHOBIA_BB_BLOCK.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
