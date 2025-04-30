@@ -2,31 +2,31 @@
   "mappings": {
     "phantom": {
       "map": {
-        "1": "cupcake_phantom_fms"
+        "6": "cupcake_phantom_fms"
       },
       "name": "phantom"
     },
     "default": {
       "map": {
-        "1": "cupcake_fms"
+        "6": "cupcake_fms"
       },
       "name": "default"
     },
     "retro": {
       "map": {
-        "1": "cupcake_retro_fms"
+        "6": "cupcake_retro_fms"
       },
       "name": "retro"
     },
     "funtime": {
       "map": {
-        "1": "cupcake_funtime_fms"
+        "6": "cupcake_funtime_fms"
       },
       "name": "funtime"
     },
     "toy": {
       "map": {
-        "1": "cupcake_toy_fms"
+        "6": "cupcake_toy_fms"
       },
       "name": "toy"
     }

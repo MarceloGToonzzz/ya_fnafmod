@@ -148,6 +148,10 @@ public class SpecialInfoProcedureProcedure {
 				tooltip.add((int) cur_pos, Component.literal("- Distracted by Audio Lures!"));
 				cur_pos = cur_pos + 1;
 			}
+			if (itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_ventcrawler")))) {
+				tooltip.add((int) cur_pos, Component.literal("- Crawls through vents!"));
+				cur_pos = cur_pos + 1;
+			}
 			if (entity_registry.contains("funtime_freddy")) {
 				tooltip.add((int) cur_pos, Component.literal("- Can throw Bonbon when he sees you!"));
 				cur_pos = cur_pos + 1;

@@ -116,7 +116,7 @@
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
     "model": "candy.geo.json",
     "groupName": "head",
-    "animation1": "animation.model.perform",
+    "animation1": "1",
     "animation2": "animation.model.cindy_walk",
     "animation3": "",
     "animation4": "",

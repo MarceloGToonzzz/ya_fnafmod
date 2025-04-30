@@ -118,7 +118,17 @@ public class RetroChicaEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = RetroChicaEntity.this.getX();
+				double y = RetroChicaEntity.this.getY();
+				double z = RetroChicaEntity.this.getZ();
+				Entity entity = RetroChicaEntity.this;
+				Level world = RetroChicaEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));

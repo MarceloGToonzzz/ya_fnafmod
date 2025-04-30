@@ -4,13 +4,14 @@ license="Not specified"
 
 [[mods]]
 modId="ya_fnafmod"
-version="1.0.0"
+version="2.0.0"
 displayName="Yet Another FNAF Mod"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="MarceloGToonz, MCreator"
 description="As the name says, It's Yet Another Five Nights at Freddy's Mod."
+displayTest="IGNORE_SERVER_VERSION"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

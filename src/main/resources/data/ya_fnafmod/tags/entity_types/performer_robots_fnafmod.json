@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "fnaf_mod:day_time_freddy",
+    "fnaf_mod:day_time_bonnie",
+    "fnaf_mod:daytime_chica",
+    "fnaf_mod:day_time_foxy",
+    "fnaf_mod:day_time_toy_freddy",
+    "fnaf_mod:day_time_toy_bonnie",
+    "fnaf_mod:toy_chica",
+    "fnaf_mod:day_time_toy_foxy",
+    "fnaf_mod:day_time_bb",
+    "fnaf_mod:jj",
+    "fnaf_mod:unwithered_freddy",
+    "fnaf_mod:unwithered_bonnie",
+    "fnaf_mod:unwithered_chica",
+    "fnaf_mod:unwithered_foxy",
+    "fnaf_mod:fredbears_freddy",
+    "fnaf_mod:fredbears_bonnie",
+    "fnaf_mod:fredbears_chica",
+    "fnaf_mod:fredbears_foxy",
+    "fnaf_mod:fredbear_animatronic",
+    "fnaf_mod:spring_bonnie_animatronic"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/balloon",
+  "textures": {
+    "all": "ya_fnafmod:block/balloonlone_fredbearblue",
+    "particle": "ya_fnafmod:block/balloonlone_fredbearred",
+    "10": "ya_fnafmod:block/balloonlone_pastelpurple"
+  },
+  "render_type": "cutout_mipped"
+}

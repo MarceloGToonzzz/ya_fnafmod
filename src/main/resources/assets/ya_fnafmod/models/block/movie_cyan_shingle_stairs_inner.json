@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/moviecyan_shingles",
+    "bottom": "ya_fnafmod:block/moviecyan_shingles",
+    "top": "ya_fnafmod:block/moviecyan_shingles",
+    "side": "ya_fnafmod:block/moviecyan_shingles"
+  },
+  "render_type": "solid"
+}

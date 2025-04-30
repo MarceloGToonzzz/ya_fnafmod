@@ -143,7 +143,7 @@ public class DumpsterBlueTileEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Dumpster (Green)");
+		return Component.literal("Dumpster (Blue)");
 	}
 
 	@Override

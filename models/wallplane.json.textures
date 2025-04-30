@@ -11,6 +11,12 @@
         "0": "blood_smeared"
       },
       "name": "smear"
+    },
+    "water": {
+      "map": {
+        "0": "waterpuddle"
+      },
+      "name": "water"
     }
   }
 }

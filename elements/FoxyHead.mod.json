@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "head_foxy",
+    "texture": "head_foxyclassic",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -24,12 +24,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 3.9999999999999996,
+        "mx": 4.0,
         "my": 0.0,
-        "mz": 5.5,
+        "mz": 4.0,
         "Mx": 12.0,
-        "My": 6.0,
-        "Mz": 11.5,
+        "My": 8.0,
+        "Mz": 12.0,
         "subtract": false
       }
     ],
@@ -79,7 +79,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
+    "animationCount": 4.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "AnimatronicHeadOnBlockRightClicked"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -133,81 +136,17 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "foxy_head.geo.json",
+    "normal": "animatronic_head.geo.json",
     "displaySettings": "head_display.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "head_foxy",
+        "texture": "head_foxyclassic_fms",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "foxy_head_diag1.geo.json",
+        "customModelName": "animatronic_head.geo.json",
         "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": 3.5,
-            "my": 0.0,
-            "mz": 3.5,
-            "Mx": 13.5,
-            "My": 6.0,
-            "Mz": 13.5,
-            "subtract": false
-          }
-        ]
-      },
-      {
-        "texture": "head_foxy",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "foxy_head_diag2.geo.json",
-        "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": 2.5,
-            "my": 0.0,
-            "mz": 3.5,
-            "Mx": 12.5,
-            "My": 6.0,
-            "Mz": 13.5,
-            "subtract": false
-          }
-        ]
-      },
-      {
-        "texture": "head_foxy",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "foxy_head_hori1.geo.json",
-        "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": 5.0,
-            "my": 0.0,
-            "mz": 5.5,
-            "Mx": 11.0,
-            "My": 8.0,
-            "Mz": 11.5,
-            "subtract": false
-          }
-        ]
-      },
-      {
-        "texture": "head_foxy",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "foxy_head_hori2.geo.json",
-        "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": 5.0,
-            "my": 0.0,
-            "mz": 5.5,
-            "Mx": 11.0,
-            "My": 8.0,
-            "Mz": 11.5,
-            "subtract": false
-          }
-        ]
+        "boundingBoxes": []
       }
     ]
   }

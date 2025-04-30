@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/woodenplanks_red",
+    "top": "ya_fnafmod:block/woodenplanks_beige",
+    "side": "ya_fnafmod:block/woodenplanks_red",
+    "overlay": "ya_fnafmod:block/woodenplanks_beigered",
+    "particle": "ya_fnafmod:block/woodenplanks_red"
+  },
+  "render_type": "solid"
+}

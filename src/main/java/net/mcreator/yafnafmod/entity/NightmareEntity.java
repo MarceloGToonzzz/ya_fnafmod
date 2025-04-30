@@ -120,8 +120,28 @@ public class NightmareEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareEntity.this.getX();
+				double y = NightmareEntity.this.getY();
+				double z = NightmareEntity.this.getZ();
+				Entity entity = NightmareEntity.this;
+				Level world = NightmareEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
+		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareEntity.this.getX();
+				double y = NightmareEntity.this.getY();
+				double z = NightmareEntity.this.getZ();
+				Entity entity = NightmareEntity.this;
+				Level world = NightmareEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {

@@ -1,0 +1,52 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "4": "pizzadough1"
+      },
+      "name": "default"
+    },
+    "sauce": {
+      "map": {
+        "4": "pizzadough2"
+      },
+      "name": "sauce"
+    },
+    "pepperoni": {
+      "map": {
+        "4": "pizzadough4"
+      },
+      "name": "pepperoni"
+    },
+    "cheese": {
+      "map": {
+        "4": "pizzadough3"
+      },
+      "name": "cheese"
+    },
+    "butter": {
+      "map": {
+        "4": "pizzadough5"
+      },
+      "name": "butter"
+    },
+    "anchovy": {
+      "map": {
+        "4": "pizzadough7"
+      },
+      "name": "anchovy"
+    },
+    "artichoke": {
+      "map": {
+        "4": "pizzadough6"
+      },
+      "name": "artichoke"
+    },
+    "ralph": {
+      "map": {
+        "4": "pizzadough8"
+      },
+      "name": "ralph"
+    }
+  }
+}

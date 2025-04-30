@@ -124,8 +124,28 @@ public class NightmareBbEntity extends Monster implements GeoEntity {
 			}
 		});
 		this.goalSelector.addGoal(5, new PanicGoal(this, 1.2));
-		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareBbEntity.this.getX();
+				double y = NightmareBbEntity.this.getY();
+				double z = NightmareBbEntity.this.getZ();
+				Entity entity = NightmareBbEntity.this;
+				Level world = NightmareBbEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareBbEntity.this.getX();
+				double y = NightmareBbEntity.this.getY();
+				double z = NightmareBbEntity.this.getZ();
+				Entity entity = NightmareBbEntity.this;
+				Level world = NightmareBbEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(10, new FloatGoal(this));

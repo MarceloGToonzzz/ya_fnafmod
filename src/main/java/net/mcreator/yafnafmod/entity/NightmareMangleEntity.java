@@ -120,8 +120,28 @@ public class NightmareMangleEntity extends Spider implements GeoEntity {
 		});
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareMangleEntity.this.getX();
+				double y = NightmareMangleEntity.this.getY();
+				double z = NightmareMangleEntity.this.getZ();
+				Entity entity = NightmareMangleEntity.this;
+				Level world = NightmareMangleEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
+		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareMangleEntity.this.getX();
+				double y = NightmareMangleEntity.this.getY();
+				double z = NightmareMangleEntity.this.getZ();
+				Entity entity = NightmareMangleEntity.this;
+				Level world = NightmareMangleEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {

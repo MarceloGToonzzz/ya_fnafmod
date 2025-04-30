@@ -9,16 +9,16 @@ import net.mcreator.yafnafmod.block.display.ChicaHeadDisplayItem;
 public class ChicaHeadDisplayModel extends GeoModel<ChicaHeadDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(ChicaHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "animations/chica_head.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/animatronic_head.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(ChicaHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "geo/chica_head.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/animatronic_head.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(ChicaHeadDisplayItem entity) {
-		return new ResourceLocation("ya_fnafmod", "textures/block/head_chicachicken.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/head_chicaclassic.png");
 	}
 }

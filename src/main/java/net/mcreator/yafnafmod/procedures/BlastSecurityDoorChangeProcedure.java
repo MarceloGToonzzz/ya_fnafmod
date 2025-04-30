@@ -98,7 +98,7 @@ public class BlastSecurityDoorChangeProcedure {
 				}.getDirection(blockstate)) == Direction.EAST) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~ ~1 ~-1 barrier replace air");
+								"fill ~ ~-1 ~ ~ ~1 ~-1 ya_fnafmod:thin_hitbox[facing=east] replace air");
 				} else if ((new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -112,7 +112,7 @@ public class BlastSecurityDoorChangeProcedure {
 				}.getDirection(blockstate)) == Direction.WEST) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~ ~1 ~1 barrier replace air");
+								"fill ~ ~-1 ~ ~ ~1 ~1 ya_fnafmod:thin_hitbox[facing=east] replace air");
 				} else if ((new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -126,7 +126,7 @@ public class BlastSecurityDoorChangeProcedure {
 				}.getDirection(blockstate)) == Direction.NORTH) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~-1 ~1 ~ barrier replace air");
+								"fill ~ ~-1 ~ ~-1 ~1 ~ ya_fnafmod:thin_hitbox[facing=north] replace air");
 				} else if ((new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -140,7 +140,7 @@ public class BlastSecurityDoorChangeProcedure {
 				}.getDirection(blockstate)) == Direction.SOUTH) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~1 ~1 ~ barrier replace air");
+								"fill ~ ~-1 ~ ~1 ~1 ~ ya_fnafmod:thin_hitbox[facing=north] replace air");
 				}
 			}
 		} else {
@@ -166,7 +166,7 @@ public class BlastSecurityDoorChangeProcedure {
 			}.getDirection(blockstate)) == Direction.EAST) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"fill ~ ~-1 ~ ~ ~1 ~-1 air replace barrier");
+							"fill ~ ~-1 ~ ~ ~1 ~-1 air replace ya_fnafmod:thin_hitbox");
 			} else if ((new Object() {
 				public Direction getDirection(BlockState _bs) {
 					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -178,7 +178,7 @@ public class BlastSecurityDoorChangeProcedure {
 			}.getDirection(blockstate)) == Direction.WEST) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"fill ~ ~-1 ~ ~ ~1 ~1 air replace barrier");
+							"fill ~ ~-1 ~ ~ ~1 ~1 air replace ya_fnafmod:thin_hitbox");
 			} else if ((new Object() {
 				public Direction getDirection(BlockState _bs) {
 					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -190,7 +190,7 @@ public class BlastSecurityDoorChangeProcedure {
 			}.getDirection(blockstate)) == Direction.NORTH) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"fill ~ ~-1 ~ ~-1 ~1 ~ air replace barrier");
+							"fill ~ ~-1 ~ ~-1 ~1 ~ air replace ya_fnafmod:thin_hitbox");
 			} else if ((new Object() {
 				public Direction getDirection(BlockState _bs) {
 					Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -202,7 +202,7 @@ public class BlastSecurityDoorChangeProcedure {
 			}.getDirection(blockstate)) == Direction.SOUTH) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"fill ~ ~-1 ~ ~1 ~1 ~ air replace barrier");
+							"fill ~ ~-1 ~ ~1 ~1 ~ air replace ya_fnafmod:thin_hitbox");
 			}
 		}
 	}

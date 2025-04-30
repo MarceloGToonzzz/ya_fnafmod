@@ -186,7 +186,7 @@ public class CindyCatDayEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.perform"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("1"));
 		}
 		return PlayState.STOP;
 	}

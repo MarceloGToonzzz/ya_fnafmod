@@ -9,12 +9,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
@@ -31,7 +31,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.yafnafmod.procedures.SeatOnEntityTickUpdateProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
 
-public class SeatEntity extends Monster {
+public class SeatEntity extends PathfinderMob {
 	public SeatEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(YaFnafmodModEntities.SEAT.get(), world);
 	}

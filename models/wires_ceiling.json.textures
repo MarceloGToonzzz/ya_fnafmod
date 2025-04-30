@@ -17,6 +17,114 @@
         "1": "item_stars_old"
       },
       "name": "stars_old"
+    },
+    "neonstars_red": {
+      "map": {
+        "1": "neonstars_red"
+      },
+      "name": "neonstars_red"
+    },
+    "neonstars_yellow": {
+      "map": {
+        "1": "neonstars_yellow"
+      },
+      "name": "neonstars_yellow"
+    },
+    "neonstars_lime": {
+      "map": {
+        "1": "neonstars_lime"
+      },
+      "name": "neonstars_lime"
+    },
+    "neonstars_green": {
+      "map": {
+        "1": "neonstars_green"
+      },
+      "name": "neonstars_green"
+    },
+    "neonstars_cyan": {
+      "map": {
+        "1": "neonstars_cyan"
+      },
+      "name": "neonstars_cyan"
+    },
+    "neonstars_lightblue": {
+      "map": {
+        "1": "neonstars_lightblue"
+      },
+      "name": "neonstars_lightblue"
+    },
+    "neonstars_blue": {
+      "map": {
+        "1": "neonstars_blue"
+      },
+      "name": "neonstars_blue"
+    },
+    "neonstars_purple": {
+      "map": {
+        "1": "neonstars_purple"
+      },
+      "name": "neonstars_purple"
+    },
+    "neonstars_magenta": {
+      "map": {
+        "1": "neonstars_magenta"
+      },
+      "name": "neonstars_magenta"
+    },
+    "neonstars_pink": {
+      "map": {
+        "1": "neonstars_pink"
+      },
+      "name": "neonstars_pink"
+    },
+    "neonstars_hotpink": {
+      "map": {
+        "1": "neonstars_hotpink"
+      },
+      "name": "neonstars_hotpink"
+    },
+    "neonstars_lightgray": {
+      "map": {
+        "1": "neonstars_lightgray"
+      },
+      "name": "neonstars_lightgray"
+    },
+    "neonstars_gray": {
+      "map": {
+        "1": "neonstars_gray"
+      },
+      "name": "neonstars_gray"
+    },
+    "neonstars_white": {
+      "map": {
+        "1": "neonstars_white"
+      },
+      "name": "neonstars_white"
+    },
+    "neonstars_black": {
+      "map": {
+        "1": "neonstars_black"
+      },
+      "name": "neonstars_black"
+    },
+    "neonstars_orange": {
+      "map": {
+        "1": "neonstars_orange"
+      },
+      "name": "neonstars_orange"
+    },
+    "neonstars_brown": {
+      "map": {
+        "1": "neonstars_brown"
+      },
+      "name": "neonstars_brown"
+    },
+    "neonstars_beige": {
+      "map": {
+        "1": "neonstars_beige"
+      },
+      "name": "neonstars_beige"
     }
   }
 }

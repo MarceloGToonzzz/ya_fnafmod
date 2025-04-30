@@ -71,6 +71,150 @@
         "2": "boothseat_purpleclean"
       },
       "name": "purpleclean"
+    },
+    "orange": {
+      "map": {
+        "2": "boothseat_orange"
+      },
+      "name": "orange"
+    },
+    "orangeclean": {
+      "map": {
+        "2": "boothseat_orangeclean"
+      },
+      "name": "orangeclean"
+    },
+    "lime": {
+      "map": {
+        "2": "boothseat_lime"
+      },
+      "name": "lime"
+    },
+    "limeclean": {
+      "map": {
+        "2": "boothseat_limeclean"
+      },
+      "name": "limeclean"
+    },
+    "cyan": {
+      "map": {
+        "2": "boothseat_cyan"
+      },
+      "name": "cyan"
+    },
+    "cyanclean": {
+      "map": {
+        "2": "boothseat_cyanclean"
+      },
+      "name": "cyanclean"
+    },
+    "magenta": {
+      "map": {
+        "2": "boothseat_magenta"
+      },
+      "name": "magenta"
+    },
+    "magentaclean": {
+      "map": {
+        "2": "boothseat_magentaclean"
+      },
+      "name": "magentaclean"
+    },
+    "pink": {
+      "map": {
+        "2": "boothseat_pink"
+      },
+      "name": "pink"
+    },
+    "pinkclean": {
+      "map": {
+        "2": "boothseat_pinkclean"
+      },
+      "name": "pinkclean"
+    },
+    "hotpink": {
+      "map": {
+        "2": "boothseat_hotpink"
+      },
+      "name": "hotpink"
+    },
+    "hotpinkclean": {
+      "map": {
+        "2": "boothseat_hotpinkclean"
+      },
+      "name": "hotpinkclean"
+    },
+    "brown": {
+      "map": {
+        "2": "boothseat_brown"
+      },
+      "name": "brown"
+    },
+    "brownclean": {
+      "map": {
+        "2": "boothseat_brownclean"
+      },
+      "name": "brownclean"
+    },
+    "beige": {
+      "map": {
+        "2": "boothseat_beige"
+      },
+      "name": "beige"
+    },
+    "beigeclean": {
+      "map": {
+        "2": "boothseat_beigeclean"
+      },
+      "name": "beigeclean"
+    },
+    "lightgray": {
+      "map": {
+        "2": "boothseat_lightgray"
+      },
+      "name": "lightgray"
+    },
+    "lightgrayclean": {
+      "map": {
+        "2": "boothseat_lightgrayclean"
+      },
+      "name": "lightgrayclean"
+    },
+    "gray": {
+      "map": {
+        "2": "boothseat_gray"
+      },
+      "name": "gray"
+    },
+    "grayclean": {
+      "map": {
+        "2": "boothseat_grayclean"
+      },
+      "name": "grayclean"
+    },
+    "white": {
+      "map": {
+        "2": "boothseat_white"
+      },
+      "name": "white"
+    },
+    "whiteclean": {
+      "map": {
+        "2": "boothseat_whiteclean"
+      },
+      "name": "whiteclean"
+    },
+    "black": {
+      "map": {
+        "2": "boothseat_black"
+      },
+      "name": "black"
+    },
+    "blackclean": {
+      "map": {
+        "2": "boothseat_blackclean"
+      },
+      "name": "blackclean"
     }
   }
 }

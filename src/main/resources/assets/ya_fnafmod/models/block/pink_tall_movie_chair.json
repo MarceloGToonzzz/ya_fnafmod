@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/chair_movie2",
+  "textures": {
+    "all": "ya_fnafmod:block/chair_movie2_pink",
+    "particle": "ya_fnafmod:block/chair_movie2_pink",
+    "1": "ya_fnafmod:block/chair_movie2_pink"
+  },
+  "render_type": "cutout_mipped"
+}

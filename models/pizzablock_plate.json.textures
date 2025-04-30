@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "pizzablock_plate",
+        "4": "pizzablock_pizza"
+      },
+      "name": "default"
+    },
+    "fresh": {
+      "map": {
+        "3": "pizzablock_plate",
+        "4": "pizzablock_pizzafresh"
+      },
+      "name": "fresh"
+    }
+  }
+}

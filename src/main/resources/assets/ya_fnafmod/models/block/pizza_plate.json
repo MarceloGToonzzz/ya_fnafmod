@@ -1,0 +1,10 @@
+{
+  "parent": "ya_fnafmod:custom/pizzablock_plate",
+  "textures": {
+    "all": "ya_fnafmod:block/pizzablock_plate",
+    "particle": "ya_fnafmod:block/pizzablock_plate",
+    "3": "ya_fnafmod:block/pizzablock_plate",
+    "4": "ya_fnafmod:block/pizzablock_pizza"
+  },
+  "render_type": "cutout_mipped"
+}

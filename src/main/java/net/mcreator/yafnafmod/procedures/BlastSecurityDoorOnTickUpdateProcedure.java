@@ -29,7 +29,6 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModGameRules;
-import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
 import net.mcreator.yafnafmod.entity.Minireena2Entity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
 import net.mcreator.yafnafmod.entity.JJEntity;
@@ -70,21 +69,10 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 					return -1;
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "power_z"))));
-			if (!(generator.getBlock() == YaFnafmodModBlocks.GENERATOR_BLOCK.get()) && !(generator.getBlock() == YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get())) {
-				if (!world.isClientSide()) {
-					BlockPos _bp = BlockPos.containing(x, y, z);
-					BlockEntity _blockEntity = world.getBlockEntity(_bp);
-					BlockState _bs = world.getBlockState(_bp);
-					if (_blockEntity != null)
-						_blockEntity.getPersistentData().putBoolean("has_power", false);
-					if (world instanceof Level _level)
-						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
-				}
-			}
-			if ((generator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip8 ? generator.getValue(_getip8) : -1) == 5
+			if ((generator.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip5 ? generator.getValue(_getip5) : -1) == 5
 					|| !world.getEntitiesOfClass(JJEntity.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).isEmpty() || !world.getEntitiesOfClass(Minireena2Entity.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).isEmpty()
 					|| !world.getEntitiesOfClass(LolbitEntity.class, AABB.ofSize(new Vec3(x, y, z), 5, 5, 5), e -> true).isEmpty()) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip13 ? blockstate.getValue(_getip13) : -1) == 0) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip10 ? blockstate.getValue(_getip10) : -1) == 0) {
 					{
 						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -107,7 +95,7 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 					}.getDirection(blockstate)) == Direction.EAST) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"fill ~ ~-1 ~ ~ ~1 ~-1 air replace barrier");
+									"fill ~ ~-1 ~ ~ ~1 ~-1 air replace ya_fnafmod:thin_hitbox");
 					} else if ((new Object() {
 						public Direction getDirection(BlockState _bs) {
 							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -121,7 +109,7 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 					}.getDirection(blockstate)) == Direction.WEST) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"fill ~ ~-1 ~ ~ ~1 ~1 air replace barrier");
+									"fill ~ ~-1 ~ ~ ~1 ~1 air replace ya_fnafmod:thin_hitbox");
 					} else if ((new Object() {
 						public Direction getDirection(BlockState _bs) {
 							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -135,7 +123,7 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 					}.getDirection(blockstate)) == Direction.NORTH) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"fill ~ ~-1 ~ ~-1 ~1 ~ air replace barrier");
+									"fill ~ ~-1 ~ ~-1 ~1 ~ air replace ya_fnafmod:thin_hitbox");
 					} else if ((new Object() {
 						public Direction getDirection(BlockState _bs) {
 							Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -149,12 +137,12 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 					}.getDirection(blockstate)) == Direction.SOUTH) {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"fill ~ ~-1 ~ ~1 ~1 ~ air replace barrier");
+									"fill ~ ~-1 ~ ~1 ~1 ~ air replace ya_fnafmod:thin_hitbox");
 					}
 				}
 			}
 		} else {
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip33 ? blockstate.getValue(_getip33) : -1) == 0) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip30 ? blockstate.getValue(_getip30) : -1) == 0) {
 				{
 					int _value = 1;
 					BlockPos _pos = BlockPos.containing(x, y, z);
@@ -177,7 +165,7 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 				}.getDirection(blockstate)) == Direction.EAST) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~ ~1 ~-1 air replace barrier");
+								"fill ~ ~-1 ~ ~ ~1 ~-1 air replace ya_fnafmod:thin_hitbox");
 				} else if ((new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -191,7 +179,7 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 				}.getDirection(blockstate)) == Direction.WEST) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~ ~1 ~1 air replace barrier");
+								"fill ~ ~-1 ~ ~ ~1 ~1 air replace ya_fnafmod:thin_hitbox");
 				} else if ((new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -205,7 +193,7 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 				}.getDirection(blockstate)) == Direction.NORTH) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~-1 ~1 ~ air replace barrier");
+								"fill ~ ~-1 ~ ~-1 ~1 ~ air replace ya_fnafmod:thin_hitbox");
 				} else if ((new Object() {
 					public Direction getDirection(BlockState _bs) {
 						Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -219,11 +207,11 @@ public class BlastSecurityDoorOnTickUpdateProcedure {
 				}.getDirection(blockstate)) == Direction.SOUTH) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"fill ~ ~-1 ~ ~1 ~1 ~ air replace barrier");
+								"fill ~ ~-1 ~ ~1 ~1 ~ air replace ya_fnafmod:thin_hitbox");
 				}
 			}
 		}
-		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip53 ? blockstate.getValue(_getip53) : -1) == 0) {
+		if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip50 ? blockstate.getValue(_getip50) : -1) == 0) {
 			if ((world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.GENERATOR_NIGHT) == false || IsItNighttimeProcedure.execute(world) == true) && new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);

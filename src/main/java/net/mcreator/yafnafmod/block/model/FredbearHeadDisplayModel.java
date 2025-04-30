@@ -9,12 +9,12 @@ import net.mcreator.yafnafmod.block.display.FredbearHeadDisplayItem;
 public class FredbearHeadDisplayModel extends GeoModel<FredbearHeadDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(FredbearHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "animations/freddy_head.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/animatronic_head.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(FredbearHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "geo/freddy_head.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/animatronic_head.geo.json");
 	}
 
 	@Override

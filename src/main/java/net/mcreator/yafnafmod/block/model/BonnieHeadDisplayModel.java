@@ -9,16 +9,16 @@ import net.mcreator.yafnafmod.block.display.BonnieHeadDisplayItem;
 public class BonnieHeadDisplayModel extends GeoModel<BonnieHeadDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(BonnieHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "animations/bonnie_head.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/animatronic_head.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(BonnieHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "geo/bonnie_head.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/animatronic_head.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(BonnieHeadDisplayItem entity) {
-		return new ResourceLocation("ya_fnafmod", "textures/block/head_bonniebunny.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/head_bonnieclassic.png");
 	}
 }

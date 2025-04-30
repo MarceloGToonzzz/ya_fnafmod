@@ -118,7 +118,17 @@ public class WitheredChicaEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = WitheredChicaEntity.this.getX();
+				double y = WitheredChicaEntity.this.getY();
+				double z = WitheredChicaEntity.this.getZ();
+				Entity entity = WitheredChicaEntity.this;
+				Level world = WitheredChicaEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));

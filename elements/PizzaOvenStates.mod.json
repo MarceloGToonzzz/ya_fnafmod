@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PizzaOven",
+    "blockstateList": [
+      {
+        "texture": "minecraft:cobbled_deepslate",
+        "textureTop": "tileblock_black",
+        "textureLeft": "pizzaoven_side",
+        "textureFront": "pizzaoven_fronton",
+        "textureRight": "pizzaoven_side",
+        "textureBack": "pizzaoven_side",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "Normal",
+        "luminance": 3,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

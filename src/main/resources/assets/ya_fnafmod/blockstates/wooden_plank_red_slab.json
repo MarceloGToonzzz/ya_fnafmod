@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ya_fnafmod:block/wooden_plank_red_slab"
+    },
+    "type=top": {
+      "model": "ya_fnafmod:block/wooden_plank_red_slab_top"
+    },
+    "type=double": {
+      "model": "ya_fnafmod:block/wooden_plank_red_slab_full"
+    }
+  }
+}

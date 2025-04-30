@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/diner_chair",
+  "textures": {
+    "all": "ya_fnafmod:block/dinerchair_white",
+    "particle": "ya_fnafmod:block/dinerchair_white",
+    "7": "ya_fnafmod:block/dinerchair_white"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/partychair1",
+  "textures": {
+    "all": "ya_fnafmod:block/partychair1_pink",
+    "particle": "ya_fnafmod:block/partychair1_pink",
+    "0": "ya_fnafmod:block/partychair1_pink"
+  },
+  "render_type": "cutout"
+}

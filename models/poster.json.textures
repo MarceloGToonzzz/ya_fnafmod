@@ -275,6 +275,42 @@
         "0": "poster_drawing_clown"
       },
       "name": "draw_clown"
+    },
+    "freddy2": {
+      "map": {
+        "0": "poster_freddy2"
+      },
+      "name": "freddy2"
+    },
+    "bonnie2": {
+      "map": {
+        "0": "poster_bonnie2"
+      },
+      "name": "bonnie2"
+    },
+    "chica2": {
+      "map": {
+        "0": "poster_chica2"
+      },
+      "name": "chica2"
+    },
+    "foxy1": {
+      "map": {
+        "0": "poster_foxy1"
+      },
+      "name": "foxy1"
+    },
+    "gfreddy": {
+      "map": {
+        "0": "poster_gfreddy"
+      },
+      "name": "gfreddy"
+    },
+    "bpolar": {
+      "map": {
+        "0": "poster_bpolar1"
+      },
+      "name": "bpolar"
     }
   }
 }

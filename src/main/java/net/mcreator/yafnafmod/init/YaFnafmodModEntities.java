@@ -36,6 +36,7 @@ import net.mcreator.yafnafmod.entity.ToyFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.ToyCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaDayEntity;
@@ -73,6 +74,8 @@ import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.RetroCupcakeFmsEntityEntity;
+import net.mcreator.yafnafmod.entity.RetroCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
@@ -186,6 +189,7 @@ import net.mcreator.yafnafmod.entity.DrTeethEntity;
 import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
+import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.CrowEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
@@ -810,7 +814,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<OrvilleElephantEntity>> ORVILLE_ELEPHANT = register("orville_elephant",
 			EntityType.Builder.<OrvilleElephantEntity>of(OrvilleElephantEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(OrvilleElephantEntity::new)
 
-					.sized(0.875f, 0.875f));
+					.sized(0.875f, 0.8f));
 	public static final RegistryObject<EntityType<OrvilleElephantDayEntity>> ORVILLE_ELEPHANT_DAY = register("orville_elephant_day",
 			EntityType.Builder.<OrvilleElephantDayEntity>of(OrvilleElephantDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(OrvilleElephantDayEntity::new)
 
@@ -1095,6 +1099,23 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<SeabonnieEntity>of(SeabonnieEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SeabonnieEntity::new)
 
 					.sized(0.125f, 0.125f));
+	public static final RegistryObject<EntityType<CupcakeEntityEntity>> CUPCAKE_ENTITY = register("cupcake_entity",
+			EntityType.Builder.<CupcakeEntityEntity>of(CupcakeEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(CupcakeEntityEntity::new)
+
+					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<ToyCupcakeEntityEntity>> TOY_CUPCAKE_ENTITY = register("toy_cupcake_entity",
+			EntityType.Builder.<ToyCupcakeEntityEntity>of(ToyCupcakeEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyCupcakeEntityEntity::new)
+
+					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<RetroCupcakeEntityEntity>> RETRO_CUPCAKE_ENTITY = register("retro_cupcake_entity",
+			EntityType.Builder.<RetroCupcakeEntityEntity>of(RetroCupcakeEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RetroCupcakeEntityEntity::new)
+
+					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<RetroCupcakeFmsEntityEntity>> RETRO_CUPCAKE_FMS_ENTITY = register("retro_cupcake_fms_entity",
+			EntityType.Builder.<RetroCupcakeFmsEntityEntity>of(RetroCupcakeFmsEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3)
+					.setCustomClientFactory(RetroCupcakeFmsEntityEntity::new)
+
+					.sized(0.6f, 0.9375f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1314,6 +1335,10 @@ public class YaFnafmodModEntities {
 			RickyRatEntity.init();
 			RickyRatDayEntity.init();
 			SeabonnieEntity.init();
+			CupcakeEntityEntity.init();
+			ToyCupcakeEntityEntity.init();
+			RetroCupcakeEntityEntity.init();
+			RetroCupcakeFmsEntityEntity.init();
 		});
 	}
 
@@ -1528,5 +1553,9 @@ public class YaFnafmodModEntities {
 		event.put(RICKY_RAT.get(), RickyRatEntity.createAttributes().build());
 		event.put(RICKY_RAT_DAY.get(), RickyRatDayEntity.createAttributes().build());
 		event.put(SEABONNIE.get(), SeabonnieEntity.createAttributes().build());
+		event.put(CUPCAKE_ENTITY.get(), CupcakeEntityEntity.createAttributes().build());
+		event.put(TOY_CUPCAKE_ENTITY.get(), ToyCupcakeEntityEntity.createAttributes().build());
+		event.put(RETRO_CUPCAKE_ENTITY.get(), RetroCupcakeEntityEntity.createAttributes().build());
+		event.put(RETRO_CUPCAKE_FMS_ENTITY.get(), RetroCupcakeFmsEntityEntity.createAttributes().build());
 	}
 }

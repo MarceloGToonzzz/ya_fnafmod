@@ -115,8 +115,28 @@ public class PlushtrapEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, true));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, true));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, true) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = PlushtrapEntity.this.getX();
+				double y = PlushtrapEntity.this.getY();
+				double z = PlushtrapEntity.this.getZ();
+				Entity entity = PlushtrapEntity.this;
+				Level world = PlushtrapEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, true) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = PlushtrapEntity.this.getX();
+				double y = PlushtrapEntity.this.getY();
+				double z = PlushtrapEntity.this.getZ();
+				Entity entity = PlushtrapEntity.this;
+				Level world = PlushtrapEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));
 	}

@@ -59,6 +59,7 @@ public class ChildOnEntityTickUpdateProcedure {
 		BlockState block = Blocks.AIR.defaultBlockState();
 		Entity killer = null;
 		if (entity instanceof ChildEntity) {
+			ChildStateMachineProcedure.execute(world, x, y, z, entity);
 			if ((entity instanceof ChildEntity _datEntS ? _datEntS.getEntityData().get(ChildEntity.DATA_emotion) : "").equals("happy")) {
 				if (entity instanceof ChildEntity animatable)
 					animatable.setTexture("child_happy");
@@ -82,7 +83,11 @@ public class ChildOnEntityTickUpdateProcedure {
 					animatable.setTexture("child_superangry");
 			}
 			if ((entity instanceof ChildEntity _datEntS ? _datEntS.getEntityData().get(ChildEntity.DATA_emotion) : "").equals("happy")) {
-				entity.getPersistentData().putDouble("emotion_tick", (entity.getPersistentData().getDouble("emotion_tick") + 1));
+				if (entity.getPersistentData().getDouble("aistate") == 0) {
+					entity.getPersistentData().putDouble("emotion_tick", (entity.getPersistentData().getDouble("emotion_tick") + 1));
+				} else {
+					entity.getPersistentData().putDouble("emotion_tick", 0);
+				}
 			}
 			if (entity.getPersistentData().getDouble("emotion_tick") > (world.getLevelData().getGameRules().getInt(YaFnafmodModGameRules.CHILD_EMOTION_METER)) * 20) {
 				thing = Mth.nextInt(RandomSource.create(), 1, 2);
@@ -139,6 +144,9 @@ public class ChildOnEntityTickUpdateProcedure {
 					}
 				}.entityFromStringUUID((entity.getPersistentData().getString("killer")), (Level) world);
 				if (!(killer instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+					if (entity instanceof GhostChildEntity) {
+						((GhostChildEntity) entity).setAnimation("animation.model.ghost_attack");
+					}
 					if (entity instanceof Mob _entity && killer instanceof LivingEntity _ent)
 						_entity.setTarget(_ent);
 					if (entity instanceof Mob _entity)

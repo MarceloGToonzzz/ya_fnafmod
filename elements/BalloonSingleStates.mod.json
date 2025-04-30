@@ -1,0 +1,126 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "BalloonSingle",
+    "blockstateList": [
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastelwhite",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearyellow",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearpurple",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbear_red",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastelyellow",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastelpurple",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastellightblue",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbeargreen",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearblue",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

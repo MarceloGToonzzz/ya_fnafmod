@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/pizzacutter",
+  "textures": {
+    "1": "ya_fnafmod:block/pizzacutter",
+    "particle": "ya_fnafmod:item/broom"
+  }
+}

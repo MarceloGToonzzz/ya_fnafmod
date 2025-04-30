@@ -5,6 +5,114 @@
         "0": "partychair1"
       },
       "name": "default"
+    },
+    "red": {
+      "map": {
+        "0": "partychair1_red"
+      },
+      "name": "red"
+    },
+    "orange": {
+      "map": {
+        "0": "partychair1_orange"
+      },
+      "name": "orange"
+    },
+    "yellow": {
+      "map": {
+        "0": "partychair1_yellow"
+      },
+      "name": "yellow"
+    },
+    "lime": {
+      "map": {
+        "0": "partychair1_lime"
+      },
+      "name": "lime"
+    },
+    "green": {
+      "map": {
+        "0": "partychair1_green"
+      },
+      "name": "green"
+    },
+    "cyan": {
+      "map": {
+        "0": "partychair1_cyan"
+      },
+      "name": "cyan"
+    },
+    "lightblue": {
+      "map": {
+        "0": "partychair1_lightblue"
+      },
+      "name": "lightblue"
+    },
+    "blue": {
+      "map": {
+        "0": "partychair1_blue"
+      },
+      "name": "blue"
+    },
+    "purple": {
+      "map": {
+        "0": "partychair1_purple"
+      },
+      "name": "purple"
+    },
+    "magenta": {
+      "map": {
+        "0": "partychair1_magenta"
+      },
+      "name": "magenta"
+    },
+    "pink": {
+      "map": {
+        "0": "partychair1_pink"
+      },
+      "name": "pink"
+    },
+    "hotpink": {
+      "map": {
+        "0": "partychair1_hotpink"
+      },
+      "name": "hotpink"
+    },
+    "lightgray": {
+      "map": {
+        "0": "partychair1_lightgray"
+      },
+      "name": "lightgray"
+    },
+    "gray": {
+      "map": {
+        "0": "partychair1_gray"
+      },
+      "name": "gray"
+    },
+    "white": {
+      "map": {
+        "0": "partychair1_white"
+      },
+      "name": "white"
+    },
+    "black": {
+      "map": {
+        "0": "partychair1_black"
+      },
+      "name": "black"
+    },
+    "beige": {
+      "map": {
+        "0": "partychair1_beige"
+      },
+      "name": "beige"
+    },
+    "wine": {
+      "map": {
+        "0": "partychair1_wine"
+      },
+      "name": "wine"
     }
   }
 }

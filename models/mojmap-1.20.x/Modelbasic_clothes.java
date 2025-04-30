@@ -1,4 +1,4 @@
-// Made with Blockbench 4.12.2
+// Made with Blockbench 4.12.4
 // Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
@@ -46,8 +46,11 @@ public class Modelbasic_clothes<T extends Entity> extends EntityModel<T> {
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 0).addBox(
 				-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.75F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition headwear = head.addOrReplaceChild("headwear", CubeListBuilder.create().texOffs(0, 16).addBox(
-				-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition headwear = head.addOrReplaceChild("headwear",
+				CubeListBuilder.create().texOffs(0, 16)
+						.addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F)).texOffs(0, 79)
+						.addBox(-4.0F, -13.75F, -4.0F, 8.0F, 4.0F, 8.0F, new CubeDeformation(1.25F)),
+				PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 32).addBox(
 				-4.0F, 0.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(0.35F)), PartPose.offset(0.0F, 0.0F, 0.0F));
@@ -91,11 +94,11 @@ public class Modelbasic_clothes<T extends Entity> extends EntityModel<T> {
 				PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition left_boot = partdefinition.addOrReplaceChild("left_boot", CubeListBuilder.create()
-				.texOffs(16, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.5F)),
+				.texOffs(16, 63).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.5F)),
 				PartPose.offset(2.0F, 12.0F, 0.0F));
 
 		PartDefinition right_boot = partdefinition.addOrReplaceChild("right_boot", CubeListBuilder.create()
-				.texOffs(32, 64).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.5F)),
+				.texOffs(32, 63).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.5F)),
 				PartPose.offset(-2.0F, 12.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 128, 128);

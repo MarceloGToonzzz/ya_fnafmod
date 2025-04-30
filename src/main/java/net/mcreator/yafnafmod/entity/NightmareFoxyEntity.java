@@ -36,6 +36,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
@@ -113,8 +114,28 @@ public class NightmareFoxyEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareFoxyEntity.this.getX();
+				double y = NightmareFoxyEntity.this.getY();
+				double z = NightmareFoxyEntity.this.getZ();
+				Entity entity = NightmareFoxyEntity.this;
+				Level world = NightmareFoxyEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareFoxyEntity.this.getX();
+				double y = NightmareFoxyEntity.this.getY();
+				double z = NightmareFoxyEntity.this.getZ();
+				Entity entity = NightmareFoxyEntity.this;
+				Level world = NightmareFoxyEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));
 	}

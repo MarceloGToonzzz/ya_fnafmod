@@ -51,6 +51,7 @@ import net.mcreator.yafnafmod.block.renderer.ShopSignRareFindsAuctionTileRendere
 import net.mcreator.yafnafmod.block.renderer.ShopSignDumpsterDiverTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SecurityPuppetPropTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScraptrapBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ScrapLolaChicaBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScrapBabyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScooperTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SanitationStationTileRenderer;
@@ -63,9 +64,13 @@ import net.mcreator.yafnafmod.block.renderer.RockstarBonnieBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RidingRocketRedTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RidingRocketPurpleTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RickyRatBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.RetroFreddyHeadTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RetroFreddyBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.RetroFoxyHeadTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RetroFoxyBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.RetroChicaHeadTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RetroChicaBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.RetroBonnieHeadTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RetroBonnieBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.RascBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PuppetBlockTileRenderer;
@@ -74,6 +79,7 @@ import net.mcreator.yafnafmod.block.renderer.PrizeKingTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PotTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PopgoesWeaselBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PlushFingertrapTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.PizzeriaStandingSignMovie2TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaSignMovieTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaSignMovie2TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaSignJrsTileRenderer;
@@ -135,6 +141,7 @@ import net.mcreator.yafnafmod.block.renderer.NeonSignArcadeTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.NeonJukeboxTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.NeddbearBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MusicManBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.MusicBoxRedDecorationTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MusicBoxDecorationTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MrHugsBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MrHippoBlockTileRenderer;
@@ -144,6 +151,7 @@ import net.mcreator.yafnafmod.block.renderer.MedicalStationTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MangleBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.LolbitBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.Lolbit409BlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.LolaChicaBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.LeftyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.LargeFanTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.LaptopTileRenderer;
@@ -342,9 +350,6 @@ public class ClientListener {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FREDDY_HEAD.get(), context -> new FreddyHeadTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BONNIE_HEAD.get(), context -> new BonnieHeadTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CHICA_HEAD.get(), context -> new ChicaHeadTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FOXY_HEAD.get(), context -> new FoxyHeadTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.MUSIC_BOX_DECORATION.get(), context -> new MusicBoxDecorationTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CAROUSEL.get(), context -> new CarouselTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FREDDY_STAND.get(), context -> new FreddyStandTileRenderer());
@@ -357,8 +362,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_01_PROP.get(), context -> new Endo01PropTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.PIZZA_BOX_1988.get(), context -> new PizzaBox1988TileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.GRANDFATHER_CLOCK.get(), context -> new GrandfatherClockTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FREDBEAR_HEAD.get(), context -> new FredbearHeadTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SPRINGBONNIE_HEAD.get(), context -> new SpringbonnieHeadTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FREDBEAR.get(), context -> new CutoutFredbearTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_SPRINGBONNIE.get(), context -> new CutoutSpringbonnieTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.PIZZERIA_SIGN_FREDBEARS_ALT.get(), context -> new PizzeriaSignFredbearsAltTileRenderer());
@@ -668,5 +671,18 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_TRASH_BIN_MOVIE.get(), context -> new BigTrashBinMovieTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CAR_DESOTO_BLOCK.get(), context -> new CarDesotoBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.DITTOPHOBIA_BB_BLOCK.get(), context -> new DittophobiaBbBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.LOLA_CHICA_BLOCK.get(), context -> new LolaChicaBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SCRAP_LOLA_CHICA_BLOCK.get(), context -> new ScrapLolaChicaBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.PIZZERIA_STANDING_SIGN_MOVIE_2.get(), context -> new PizzeriaStandingSignMovie2TileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BONNIE_HEAD.get(), context -> new BonnieHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CHICA_HEAD.get(), context -> new ChicaHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FOXY_HEAD.get(), context -> new FoxyHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FREDBEAR_HEAD.get(), context -> new FredbearHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SPRINGBONNIE_HEAD.get(), context -> new SpringbonnieHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.RETRO_FREDDY_HEAD.get(), context -> new RetroFreddyHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.RETRO_BONNIE_HEAD.get(), context -> new RetroBonnieHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.RETRO_CHICA_HEAD.get(), context -> new RetroChicaHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.RETRO_FOXY_HEAD.get(), context -> new RetroFoxyHeadTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.MUSIC_BOX_RED_DECORATION.get(), context -> new MusicBoxRedDecorationTileRenderer());
 	}
 }

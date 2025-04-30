@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "floortile_blackorange_cracked",
+    "texture": "floortile_orange_cracked",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Black Orange Tiles (Cracked)",
+    "name": "Orange Tiles (Cracked)",
     "specialInformation": {
       "fixedValue": []
     },

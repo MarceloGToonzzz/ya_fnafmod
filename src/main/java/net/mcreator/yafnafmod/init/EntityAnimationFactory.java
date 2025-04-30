@@ -24,6 +24,7 @@ import net.mcreator.yafnafmod.entity.ToyFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.ToyCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaDayEntity;
@@ -58,6 +59,8 @@ import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.RetroCupcakeFmsEntityEntity;
+import net.mcreator.yafnafmod.entity.RetroCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
@@ -171,6 +174,7 @@ import net.mcreator.yafnafmod.entity.DrTeethEntity;
 import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
+import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.CrowEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
@@ -1660,6 +1664,34 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof SeabonnieEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CupcakeEntityEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ToyCupcakeEntityEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RetroCupcakeEntityEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RetroCupcakeFmsEntityEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

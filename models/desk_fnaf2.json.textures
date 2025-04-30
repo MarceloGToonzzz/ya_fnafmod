@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "desk_fnaf2_off"
+      },
+      "name": "default"
+    },
+    "on": {
+      "map": {
+        "0": "desk_fnaf2_on"
+      },
+      "name": "on"
+    }
+  }
+}

@@ -44,78 +44,82 @@ public class PlayAttackVoiceProcedure {
 				if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers"))) || entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers")))
 						&& !(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
 								.getItem() == YaFnafmodModItems.FREDDY_MASK_HELMET.get())) {
-					if (entity.getPersistentData().getBoolean("said_attack_line") == false) {
-						if (entity instanceof FoxyPirateEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_foxy_voice")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof ToyFreddyEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_tfreddy_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof WitheredChicaEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_wchica_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof SpringtrapEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_springtrap_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof NightmareFredbearEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_nfredbear_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof FuntimeFreddyEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_ftfreddy_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof MoltenFreddyEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_moltenfreddy_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof ScraptrapEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_scraptrap_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof ScrapBabyEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_scrapbaby_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof LeftyEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_lefty_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof NeddbearEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_neddbear_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof RockstarBonnieEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_rockbonnie_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						}
-						if (entity instanceof BarryPolarEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_bpolar_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof GusThePugEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_guspug_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						} else if (entity instanceof FuntimeDelilahEntity) {
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_ftdelilah_voice_hostile")), SoundSource.HOSTILE, 1, 1);
-						}
-						if (entity instanceof PitbonnieEntity) {
-							entity.getPersistentData().putBoolean("aggro_anim", true);
-							if (entity instanceof PitbonnieEntity) {
-								((PitbonnieEntity) entity).setAnimation("animation.pitbonnie.alert");
+					if (40 > entity.getPersistentData().getDouble("attackvoice_tick")) {
+						if (entity.getPersistentData().getBoolean("said_attack_line") == false) {
+							if (entity instanceof FoxyPirateEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_foxy_voice")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof ToyFreddyEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_tfreddy_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof WitheredChicaEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_wchica_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof SpringtrapEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_springtrap_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof NightmareFredbearEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_nfredbear_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof FuntimeFreddyEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_ftfreddy_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof MoltenFreddyEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_moltenfreddy_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof ScraptrapEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_scraptrap_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof ScrapBabyEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_scrapbaby_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof LeftyEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_lefty_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof NeddbearEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_neddbear_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof RockstarBonnieEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_rockbonnie_voice_hostile")), SoundSource.HOSTILE, 1, 1);
 							}
-							if (world instanceof Level)
-								((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_pitbonnie_scream")), SoundSource.HOSTILE, 1, 1);
-							YaFnafmodMod.queueServerWork(45, () -> {
-								entity.getPersistentData().putBoolean("aggro_anim", false);
+							if (entity instanceof BarryPolarEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_bpolar_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof GusThePugEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_guspug_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							} else if (entity instanceof FuntimeDelilahEntity) {
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_ftdelilah_voice_hostile")), SoundSource.HOSTILE, 1, 1);
+							}
+							if (entity instanceof PitbonnieEntity) {
+								entity.getPersistentData().putBoolean("aggro_anim", true);
 								if (entity instanceof PitbonnieEntity) {
-									((PitbonnieEntity) entity).setAnimation("empty");
+									((PitbonnieEntity) entity).setAnimation("animation.pitbonnie.alert");
 								}
-							});
+								if (world instanceof Level)
+									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_pitbonnie_scream")), SoundSource.HOSTILE, 1, 1);
+								YaFnafmodMod.queueServerWork(45, () -> {
+									entity.getPersistentData().putBoolean("aggro_anim", false);
+									if (entity instanceof PitbonnieEntity) {
+										((PitbonnieEntity) entity).setAnimation("empty");
+									}
+								});
+							}
+							entity.getPersistentData().putDouble("attackvoice_tick", 0);
 						}
+						if (entity.getPersistentData().getBoolean("aggro_anim") == true) {
+							if (entity instanceof Mob _entity)
+								_entity.getNavigation().stop();
+						}
+						entity.getPersistentData().putBoolean("set_max", false);
+						entity.getPersistentData().putBoolean("said_attack_line", true);
+						entity.getPersistentData().putDouble("voice_tick", 0);
 					}
-					if (entity.getPersistentData().getBoolean("aggro_anim") == true) {
-						if (entity instanceof Mob _entity)
-							_entity.getNavigation().stop();
-					}
-					entity.getPersistentData().putBoolean("set_max", false);
-					entity.getPersistentData().putBoolean("said_attack_line", true);
-					entity.getPersistentData().putDouble("voice_tick", 0);
 				}
 			} else {
+				entity.getPersistentData().putDouble("attackvoice_tick", (entity.getPersistentData().getDouble("attackvoice_tick") + 1));
 				entity.getPersistentData().putBoolean("said_attack_line", false);
 				entity.getPersistentData().putBoolean("aggro_anim", false);
 			}

@@ -31,6 +31,7 @@ import net.mcreator.yafnafmod.client.renderer.ToyFreddyDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyFoxyStillDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyFoxyRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyFoxyDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.ToyCupcakeEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyChicaStillDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyChicaRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyChicaDayRenderer;
@@ -66,6 +67,8 @@ import net.mcreator.yafnafmod.client.renderer.RetroFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFreddyDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFoxyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFoxyDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.RetroCupcakeFmsEntityRenderer;
+import net.mcreator.yafnafmod.client.renderer.RetroCupcakeEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroChicaRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroChicaDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroBonnieRenderer;
@@ -179,6 +182,7 @@ import net.mcreator.yafnafmod.client.renderer.DrTeethRenderer;
 import net.mcreator.yafnafmod.client.renderer.DrTeethDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.DougDogRenderer;
 import net.mcreator.yafnafmod.client.renderer.DougDogDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.CupcakeEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.CrowRenderer;
 import net.mcreator.yafnafmod.client.renderer.CircusBabyRenderer;
 import net.mcreator.yafnafmod.client.renderer.CircusBabyDayRenderer;
@@ -442,5 +446,9 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.BALL_PURPLE_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SHOTGUN_SHELL_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SEABONNIE.get(), SeabonnieRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.CUPCAKE_ENTITY.get(), CupcakeEntityRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.TOY_CUPCAKE_ENTITY.get(), ToyCupcakeEntityRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.RETRO_CUPCAKE_ENTITY.get(), RetroCupcakeEntityRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.RETRO_CUPCAKE_FMS_ENTITY.get(), RetroCupcakeFmsEntityRenderer::new);
 	}
 }

@@ -9,16 +9,16 @@ import net.mcreator.yafnafmod.block.display.FoxyHeadDisplayItem;
 public class FoxyHeadDisplayModel extends GeoModel<FoxyHeadDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(FoxyHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "animations/foxy_head.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/animatronic_head.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(FoxyHeadDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "geo/foxy_head.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/animatronic_head.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(FoxyHeadDisplayItem entity) {
-		return new ResourceLocation("ya_fnafmod", "textures/block/head_foxy.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/head_foxyclassic.png");
 	}
 }

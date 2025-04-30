@@ -1,0 +1,124 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true,
+			"bones": {
+				"freddyhead": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"rotation": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					},
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"fmshead": {
+					"scale": {
+						"vector": ["(1 * 1.1)", "(1 * 1.1)", "(1 * 1.1)"]
+					}
+				}
+			}
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"rotation": {
+					"rotation": {
+						"vector": [0, 0, 90]
+					},
+					"position": {
+						"vector": [-4, 4, 0]
+					}
+				},
+				"fmshead": {
+					"position": {
+						"vector": [-0.5, 0, 0]
+					},
+					"scale": {
+						"vector": ["(1 * 1.1)", "(1 * 1.1)", "(1 * 1.1)"]
+					}
+				},
+				"bonnie": {
+					"position": {
+						"vector": [1.5, 0, 0]
+					}
+				},
+				"chica": {
+					"position": {
+						"vector": [2, 0, 0]
+					}
+				}
+			}
+		},
+		"2": {
+			"loop": true,
+			"bones": {
+				"rotation": {
+					"rotation": {
+						"vector": [0, 0, -90]
+					},
+					"position": {
+						"vector": [4, 4, 0]
+					}
+				},
+				"fmshead": {
+					"position": {
+						"vector": [0.5, 0, 0]
+					},
+					"scale": {
+						"vector": ["(1 * 1.1)", "(1 * 1.1)", "(1 * 1.1)"]
+					}
+				},
+				"bonnie": {
+					"position": {
+						"vector": [-1.5, 0, 0]
+					}
+				},
+				"chica": {
+					"position": {
+						"vector": [-2, 0, 0]
+					}
+				}
+			}
+		},
+		"3": {
+			"loop": true,
+			"bones": {
+				"rotation": {
+					"rotation": {
+						"vector": [0, -45, 0]
+					}
+				},
+				"fmshead": {
+					"scale": {
+						"vector": ["(1 * 1.1)", "(1 * 1.1)", "(1 * 1.1)"]
+					}
+				}
+			}
+		},
+		"4": {
+			"loop": true,
+			"bones": {
+				"rotation": {
+					"rotation": {
+						"vector": [0, 45, 0]
+					}
+				},
+				"fmshead": {
+					"scale": {
+						"vector": ["(1 * 1.1)", "(1 * 1.1)", "(1 * 1.1)"]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

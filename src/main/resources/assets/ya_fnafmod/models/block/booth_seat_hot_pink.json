@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/booth_seat",
+  "textures": {
+    "all": "ya_fnafmod:block/boothseat_hotpink",
+    "particle": "ya_fnafmod:block/boothseat_hotpink",
+    "2": "ya_fnafmod:block/boothseat_hotpink"
+  },
+  "render_type": "cutout_mipped"
+}

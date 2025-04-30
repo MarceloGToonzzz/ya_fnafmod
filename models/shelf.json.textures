@@ -5,6 +5,12 @@
         "2": "shelf"
       },
       "name": "default"
+    },
+    "gray": {
+      "map": {
+        "2": "shelf_gray"
+      },
+      "name": "gray"
     }
   }
 }

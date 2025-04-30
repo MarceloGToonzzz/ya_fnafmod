@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortile_blackwine",
+    "bottom": "ya_fnafmod:block/floortile_blackwine",
+    "top": "ya_fnafmod:block/floortile_blackwine",
+    "side": "ya_fnafmod:block/floortile_blackwine"
+  },
+  "render_type": "solid"
+}

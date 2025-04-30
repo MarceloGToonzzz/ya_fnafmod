@@ -123,7 +123,17 @@ public class RetroBonnieEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = RetroBonnieEntity.this.getX();
+				double y = RetroBonnieEntity.this.getY();
+				double z = RetroBonnieEntity.this.getZ();
+				Entity entity = RetroBonnieEntity.this;
+				Level world = RetroBonnieEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(10, new FloatGoal(this));

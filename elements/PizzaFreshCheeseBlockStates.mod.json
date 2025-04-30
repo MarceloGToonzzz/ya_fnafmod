@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PizzaFreshCheeseBlock",
+    "blockstateList": [
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:freshcheese3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:freshcheese2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:freshcheese1",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

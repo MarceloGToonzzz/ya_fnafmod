@@ -10,9 +10,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
@@ -30,7 +30,7 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.yafnafmod.procedures.SeatOnEntityTickUpdateProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
 
-public class CarSeatEntity extends Monster {
+public class CarSeatEntity extends PathfinderMob {
 	public CarSeatEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(YaFnafmodModEntities.CAR_SEAT.get(), world);
 	}

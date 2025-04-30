@@ -5,8 +5,61 @@
     "renderType": 0,
     "texture": "mop",
     "customModelName": "Tool",
-    "customProperties": {},
-    "states": [],
+    "customProperties": {
+      "variant": {
+        "name": "MopPropertyValueProvider"
+      }
+    },
+    "states": [
+      {
+        "renderType": 0,
+        "texture": "mop",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:variant",
+              "type": "number"
+            },
+            "value": 0.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "mop_wetwater",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:variant",
+              "type": "number"
+            },
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "renderType": 0,
+        "texture": "mop_wetblood",
+        "customModelName": "Normal",
+        "stateMap": [
+          {
+            "property": {
+              "min": -1.7976931348623157E308,
+              "max": 1.7976931348623157E308,
+              "name": "CUSTOM:variant",
+              "type": "number"
+            },
+            "value": 2.0
+          }
+        ]
+      }
+    ],
     "name": "Mop",
     "rarity": "COMMON",
     "creativeTabs": [

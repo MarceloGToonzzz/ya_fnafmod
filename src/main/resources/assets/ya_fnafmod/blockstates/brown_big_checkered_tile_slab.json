@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ya_fnafmod:block/brown_big_checkered_tile_slab"
+    },
+    "type=top": {
+      "model": "ya_fnafmod:block/brown_big_checkered_tile_slab_top"
+    },
+    "type=double": {
+      "model": "ya_fnafmod:block/brown_big_checkered_tile_slab_full"
+    }
+  }
+}

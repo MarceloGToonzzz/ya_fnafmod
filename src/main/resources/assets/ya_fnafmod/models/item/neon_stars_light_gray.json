@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/neonstars_lightgray"
+  },
+  "render_type": "translucent"
+}

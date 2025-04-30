@@ -10,11 +10,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.EquipmentSlot;
 
 import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorItem;
+import net.mcreator.yafnafmod.item.SpringbonnieFmsSuitArmorItem;
 import net.mcreator.yafnafmod.item.GasMaskItem;
 import net.mcreator.yafnafmod.item.FreddySuitArmorItem;
 import net.mcreator.yafnafmod.item.FreddyMaskItem;
 import net.mcreator.yafnafmod.item.FreddyFaceMaskItem;
 import net.mcreator.yafnafmod.item.FredbearSuitArmorItem;
+import net.mcreator.yafnafmod.item.FredbearFmsSuitArmorItem;
 import net.mcreator.yafnafmod.item.FoxyFaceMaskItem;
 import net.mcreator.yafnafmod.item.ChicaFaceMaskItem;
 import net.mcreator.yafnafmod.item.BonnieFaceMaskItem;
@@ -47,6 +49,10 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof GasMaskItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof FredbearFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GeoItem) {
@@ -70,6 +76,10 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof FreddySuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GasMaskItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof FredbearFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}
@@ -95,6 +105,10 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof GasMaskItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof FredbearFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GeoItem) {
@@ -118,6 +132,10 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof FreddySuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GasMaskItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof FredbearFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}

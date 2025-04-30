@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wires_ceiling",
+  "textures": {
+    "all": "ya_fnafmod:block/neonstars_white",
+    "particle": "ya_fnafmod:block/neonstars_white",
+    "1": "ya_fnafmod:block/neonstars_white"
+  },
+  "render_type": "cutout_mipped"
+}

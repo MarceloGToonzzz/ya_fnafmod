@@ -1,8 +1,6 @@
 
 package net.mcreator.yafnafmod.block;
 
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -61,19 +59,6 @@ public class BaggieMaggieBlockBlock extends BaseEntityBlock implements EntityBlo
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-
-		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 32, 16);
-			case NORTH -> box(0, 0, 0, 16, 32, 16);
-			case EAST -> box(0, 0, 0, 16, 32, 16);
-			case WEST -> box(0, 0, 0, 16, 32, 16);
-			case UP -> box(0, 0, 0, 16, 16, 32);
-			case DOWN -> box(0, 0, -16, 16, 16, 16);
-		};
 	}
 
 	@Override

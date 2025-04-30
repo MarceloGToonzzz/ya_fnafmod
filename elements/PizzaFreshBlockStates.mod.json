@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PizzaFreshBlock",
+    "blockstateList": [
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:fresh3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:fresh2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:fresh1",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

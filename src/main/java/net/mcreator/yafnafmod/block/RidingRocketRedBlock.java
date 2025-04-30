@@ -104,7 +104,7 @@ public class RidingRocketRedBlock extends BaseEntityBlock implements EntityBlock
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		ChairBlockRightClickProcedure.execute(world, x, y, z, entity);
+		ChairBlockRightClickProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

@@ -118,8 +118,28 @@ public class RetroFoxyEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = RetroFoxyEntity.this.getX();
+				double y = RetroFoxyEntity.this.getY();
+				double z = RetroFoxyEntity.this.getZ();
+				Entity entity = RetroFoxyEntity.this;
+				Level world = RetroFoxyEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = RetroFoxyEntity.this.getX();
+				double y = RetroFoxyEntity.this.getY();
+				double z = RetroFoxyEntity.this.getZ();
+				Entity entity = RetroFoxyEntity.this;
+				Level world = RetroFoxyEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(7, new FloatGoal(this));
 	}

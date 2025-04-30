@@ -24,17 +24,191 @@
       },
       "name": "blue"
     },
-    "yellow": {
-      "map": {
-        "7": "dinerchair_yellow"
-      },
-      "name": "yellow"
-    },
     "purple": {
       "map": {
         "7": "dinerchair_purple"
       },
       "name": "purple"
+    },
+    "redclean": {
+      "map": {
+        "7": "dinerchair_redclean"
+      },
+      "name": "redclean"
+    },
+    "yellowclean": {
+      "map": {
+        "7": "dinerchair_yellowclean"
+      },
+      "name": "yellowclean"
+    },
+    "greenclean": {
+      "map": {
+        "7": "dinerchair_greenclean"
+      },
+      "name": "greenclean"
+    },
+    "lightblueclean": {
+      "map": {
+        "7": "dinerchair_lightblueclean"
+      },
+      "name": "lightblueclean"
+    },
+    "blueclean": {
+      "map": {
+        "7": "dinerchair_blueclean"
+      },
+      "name": "blueclean"
+    },
+    "purpleclean": {
+      "map": {
+        "7": "dinerchair_purpleclean"
+      },
+      "name": "purpleclean"
+    },
+    "orange": {
+      "map": {
+        "7": "dinerchair_orange"
+      },
+      "name": "orange"
+    },
+    "lime": {
+      "map": {
+        "7": "dinerchair_lime"
+      },
+      "name": "lime"
+    },
+    "cyan": {
+      "map": {
+        "7": "dinerchair_cyan"
+      },
+      "name": "cyan"
+    },
+    "magenta": {
+      "map": {
+        "7": "dinerchair_magenta"
+      },
+      "name": "magenta"
+    },
+    "pink": {
+      "map": {
+        "7": "dinerchair_pink"
+      },
+      "name": "pink"
+    },
+    "hotpink": {
+      "map": {
+        "7": "dinerchair_hotpink"
+      },
+      "name": "hotpink"
+    },
+    "brown": {
+      "map": {
+        "7": "dinerchair_brown"
+      },
+      "name": "brown"
+    },
+    "beige": {
+      "map": {
+        "7": "dinerchair_beige"
+      },
+      "name": "beige"
+    },
+    "lightgray": {
+      "map": {
+        "7": "dinerchair_lightgray"
+      },
+      "name": "lightgray"
+    },
+    "gray": {
+      "map": {
+        "7": "dinerchair_gray"
+      },
+      "name": "gray"
+    },
+    "white": {
+      "map": {
+        "7": "dinerchair_white"
+      },
+      "name": "white"
+    },
+    "black": {
+      "map": {
+        "7": "dinerchair_black"
+      },
+      "name": "black"
+    },
+    "orangeclean": {
+      "map": {
+        "7": "dinerchair_orangeclean"
+      },
+      "name": "orangeclean"
+    },
+    "limeclean": {
+      "map": {
+        "7": "dinerchair_limeclean"
+      },
+      "name": "limeclean"
+    },
+    "cyanclean": {
+      "map": {
+        "7": "dinerchair_cyanclean"
+      },
+      "name": "cyanclean"
+    },
+    "magentaclean": {
+      "map": {
+        "7": "dinerchair_magentaclean"
+      },
+      "name": "magentaclean"
+    },
+    "pinkclean": {
+      "map": {
+        "7": "dinerchair_pinkclean"
+      },
+      "name": "pinkclean"
+    },
+    "hotpinkclean": {
+      "map": {
+        "7": "dinerchair_hotpinkclean"
+      },
+      "name": "hotpinkclean"
+    },
+    "brownclean": {
+      "map": {
+        "7": "dinerchair_brownclean"
+      },
+      "name": "brownclean"
+    },
+    "beigeclean": {
+      "map": {
+        "7": "dinerchair_beigeclean"
+      },
+      "name": "beigeclean"
+    },
+    "lightgrayclean": {
+      "map": {
+        "7": "dinerchair_lightgrayclean"
+      },
+      "name": "lightgrayclean"
+    },
+    "grayclean": {
+      "map": {
+        "7": "dinerchair_grayclean"
+      },
+      "name": "grayclean"
+    },
+    "whiteclean": {
+      "map": {
+        "7": "dinerchair_whiteclean"
+      },
+      "name": "whiteclean"
+    },
+    "blackclean": {
+      "map": {
+        "7": "dinerchair_blackclean"
+      },
+      "name": "blackclean"
     }
   }
 }

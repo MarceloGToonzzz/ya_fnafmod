@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "desk_fnaf3_empty"
+      },
+      "name": "default"
+    }
+  }
+}

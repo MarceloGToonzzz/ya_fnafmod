@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/cupcake_funtime_fms",
     "particle": "ya_fnafmod:block/cupcake_funtime_fms",
-    "1": "ya_fnafmod:block/cupcake_funtime_fms"
+    "6": "ya_fnafmod:block/cupcake_funtime_fms"
   },
   "render_type": "cutout"
 }

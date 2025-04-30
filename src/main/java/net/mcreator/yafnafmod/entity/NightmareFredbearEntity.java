@@ -120,8 +120,28 @@ public class NightmareFredbearEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareFredbearEntity.this.getX();
+				double y = NightmareFredbearEntity.this.getY();
+				double z = NightmareFredbearEntity.this.getZ();
+				Entity entity = NightmareFredbearEntity.this;
+				Level world = NightmareFredbearEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
+		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
+			@Override
+			public boolean canContinueToUse() {
+				double x = NightmareFredbearEntity.this.getX();
+				double y = NightmareFredbearEntity.this.getY();
+				double z = NightmareFredbearEntity.this.getZ();
+				Entity entity = NightmareFredbearEntity.this;
+				Level world = NightmareFredbearEntity.this.level();
+				return super.canContinueToUse() && true;
+			}
+		});
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {

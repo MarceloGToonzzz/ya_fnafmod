@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/brown_tall_movie_chair"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/brown_tall_movie_chair",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/brown_tall_movie_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/brown_tall_movie_chair",
+      "y": 270
+    }
+  }
+}

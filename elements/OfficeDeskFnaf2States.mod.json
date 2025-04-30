@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "OfficeDeskFnaf2",
+    "blockstateList": [
+      {
+        "texture": "desk_fnaf2_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "desk_fnaf2:on",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

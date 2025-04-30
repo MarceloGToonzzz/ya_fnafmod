@@ -1,0 +1,7 @@
+
+{
+  "parent": "ya_fnafmod:displaysettings/head_display",
+  "textures": {
+    "particle": "ya_fnafmod:block/head_bonnieretro"
+  }
+}

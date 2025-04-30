@@ -1,0 +1,112 @@
+{
+  "mappings": {
+    "pink": {
+      "map": {
+        "1": "chair_movie2_pink"
+      },
+      "name": "pink"
+    },
+    "green": {
+      "map": {
+        "1": "chair_movie2_green"
+      },
+      "name": "green"
+    },
+    "lime": {
+      "map": {
+        "1": "chair_movie2_lime"
+      },
+      "name": "lime"
+    },
+    "yellow": {
+      "map": {
+        "1": "chair_movie2_yellow"
+      },
+      "name": "yellow"
+    },
+    "black": {
+      "map": {
+        "1": "chair_movie2_black"
+      },
+      "name": "black"
+    },
+    "hotpink": {
+      "map": {
+        "1": "chair_movie2_hotpink"
+      },
+      "name": "hotpink"
+    },
+    "brown": {
+      "map": {
+        "1": "chair_movie2_brown"
+      },
+      "name": "brown"
+    },
+    "cyan": {
+      "map": {
+        "1": "chair_movie2_cyan"
+      },
+      "name": "cyan"
+    },
+    "red": {
+      "map": {
+        "1": "chair_movie2_red"
+      },
+      "name": "red"
+    },
+    "orange": {
+      "map": {
+        "1": "chair_movie2_orange"
+      },
+      "name": "orange"
+    },
+    "beige": {
+      "map": {
+        "1": "chair_movie2_beige"
+      },
+      "name": "beige"
+    },
+    "default": {
+      "map": {
+        "1": "chair_movie2"
+      },
+      "name": "default"
+    },
+    "gray": {
+      "map": {
+        "1": "chair_movie2_gray"
+      },
+      "name": "gray"
+    },
+    "lightblue": {
+      "map": {
+        "1": "chair_movie2_lightblue"
+      },
+      "name": "lightblue"
+    },
+    "blue": {
+      "map": {
+        "1": "chair_movie2_black"
+      },
+      "name": "blue"
+    },
+    "white": {
+      "map": {
+        "1": "chair_movie2_white"
+      },
+      "name": "white"
+    },
+    "purple": {
+      "map": {
+        "1": "chair_movie2_purple"
+      },
+      "name": "purple"
+    },
+    "lightgray": {
+      "map": {
+        "1": "chair_movie2_lightgray"
+      },
+      "name": "lightgray"
+    }
+  }
+}

@@ -42,8 +42,6 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("ya_fnafmod:textures/screens/monitor_work_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
@@ -56,7 +54,9 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("ya_fnafmod:textures/screens/monitorwork_gui.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 352, 166, 352, 166);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -73,10 +73,10 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
-				GetTextTimeProcedure.execute(world), 146, 5, -12829636, false);
+				GetTextTimeProcedure.execute(world), 154, 10, -1, false);
 		guiGraphics.drawString(this.font,
 
-				LurePageShowProcedure.execute(world, x, y, z), 19, 9, -12829636, false);
+				LurePageShowProcedure.execute(world, x, y, z), 211, 32, -1, false);
 	}
 
 	@Override
@@ -87,7 +87,7 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new MonitorWorkGuiButtonMessage(0, x, y, z));
 				MonitorWorkGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 22, this.topPos + 23, 56, 20).build();
+		}).bounds(this.leftPos + 152, this.topPos + 42, 56, 20).build();
 		guistate.put("button:button_lure_1", button_lure_1);
 		this.addRenderableWidget(button_lure_1);
 		button_lure_2 = Button.builder(Component.translatable("gui.ya_fnafmod.monitor_work_gui.button_lure_2"), e -> {
@@ -95,7 +95,7 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new MonitorWorkGuiButtonMessage(1, x, y, z));
 				MonitorWorkGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}).bounds(this.leftPos + 22, this.topPos + 50, 56, 20).build();
+		}).bounds(this.leftPos + 152, this.topPos + 62, 56, 20).build();
 		guistate.put("button:button_lure_2", button_lure_2);
 		this.addRenderableWidget(button_lure_2);
 		button_lure_3 = Button.builder(Component.translatable("gui.ya_fnafmod.monitor_work_gui.button_lure_3"), e -> {
@@ -103,7 +103,7 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new MonitorWorkGuiButtonMessage(2, x, y, z));
 				MonitorWorkGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}).bounds(this.leftPos + 22, this.topPos + 77, 56, 20).build();
+		}).bounds(this.leftPos + 152, this.topPos + 82, 56, 20).build();
 		guistate.put("button:button_lure_3", button_lure_3);
 		this.addRenderableWidget(button_lure_3);
 		button_lure_4 = Button.builder(Component.translatable("gui.ya_fnafmod.monitor_work_gui.button_lure_4"), e -> {
@@ -111,7 +111,7 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new MonitorWorkGuiButtonMessage(3, x, y, z));
 				MonitorWorkGuiButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}).bounds(this.leftPos + 22, this.topPos + 104, 56, 20).build();
+		}).bounds(this.leftPos + 152, this.topPos + 102, 56, 20).build();
 		guistate.put("button:button_lure_4", button_lure_4);
 		this.addRenderableWidget(button_lure_4);
 		button_empty = Button.builder(Component.translatable("gui.ya_fnafmod.monitor_work_gui.button_empty"), e -> {
@@ -119,7 +119,7 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new MonitorWorkGuiButtonMessage(4, x, y, z));
 				MonitorWorkGuiButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
-		}).bounds(this.leftPos + 13, this.topPos + 131, 30, 20).build();
+		}).bounds(this.leftPos + 139, this.topPos + 139, 30, 20).build();
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
 		button_empty1 = Button.builder(Component.translatable("gui.ya_fnafmod.monitor_work_gui.button_empty1"), e -> {
@@ -127,7 +127,7 @@ public class MonitorWorkGuiScreen extends AbstractContainerScreen<MonitorWorkGui
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new MonitorWorkGuiButtonMessage(5, x, y, z));
 				MonitorWorkGuiButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
-		}).bounds(this.leftPos + 58, this.topPos + 131, 30, 20).build();
+		}).bounds(this.leftPos + 191, this.topPos + 139, 30, 20).build();
 		guistate.put("button:button_empty1", button_empty1);
 		this.addRenderableWidget(button_empty1);
 	}

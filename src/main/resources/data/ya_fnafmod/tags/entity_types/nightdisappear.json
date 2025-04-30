@@ -10,6 +10,9 @@
     "ya_fnafmod:nightmare_mangle",
     "ya_fnafmod:nightmarionne",
     "ya_fnafmod:jack_o_bonnie",
-    "ya_fnafmod:jack_o_chica"
+    "ya_fnafmod:jack_o_chica",
+    "ya_fnafmod:cupcake_entity",
+    "ya_fnafmod:retro_cupcake_entity",
+    "ya_fnafmod:toy_cupcake_entity"
   ]
 }

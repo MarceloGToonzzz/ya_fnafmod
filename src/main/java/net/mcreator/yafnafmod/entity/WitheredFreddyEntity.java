@@ -56,6 +56,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.yafnafmod.procedures.NightAnimatronicOnEntityTickUpdateProcedure;
 import net.mcreator.yafnafmod.procedures.IsItNighttimeProcedure;
+import net.mcreator.yafnafmod.procedures.CanAttackProcedure;
 import net.mcreator.yafnafmod.procedures.AnimatronicRotationProcedure;
 import net.mcreator.yafnafmod.procedures.AnimatronicOnInitialEntitySpawnProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
@@ -124,7 +125,27 @@ public class WitheredFreddyEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false) {
+			@Override
+			public boolean canUse() {
+				double x = WitheredFreddyEntity.this.getX();
+				double y = WitheredFreddyEntity.this.getY();
+				double z = WitheredFreddyEntity.this.getZ();
+				Entity entity = WitheredFreddyEntity.this;
+				Level world = WitheredFreddyEntity.this.level();
+				return super.canUse() && CanAttackProcedure.execute(entity);
+			}
+
+			@Override
+			public boolean canContinueToUse() {
+				double x = WitheredFreddyEntity.this.getX();
+				double y = WitheredFreddyEntity.this.getY();
+				double z = WitheredFreddyEntity.this.getZ();
+				Entity entity = WitheredFreddyEntity.this;
+				Level world = WitheredFreddyEntity.this.level();
+				return super.canContinueToUse() && CanAttackProcedure.execute(entity);
+			}
+		});
 		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this) {
 			@Override

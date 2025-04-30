@@ -1,0 +1,64 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "10": "balloonlone_pastelred"
+      },
+      "name": "default"
+    },
+    "pastelwhite": {
+      "map": {
+        "10": "balloonlone_pastelwhite"
+      },
+      "name": "pastelwhite"
+    },
+    "fredbearyellow": {
+      "map": {
+        "10": "balloonlone_fredbearyellow"
+      },
+      "name": "fredbearyellow"
+    },
+    "fredbearpurple": {
+      "map": {
+        "10": "balloonlone_fredbearpurple"
+      },
+      "name": "fredbearpurple"
+    },
+    "fredbear_red": {
+      "map": {
+        "10": "balloonlone_fredbearred"
+      },
+      "name": "fredbear_red"
+    },
+    "pastelyellow": {
+      "map": {
+        "10": "balloonlone_pastelyellow"
+      },
+      "name": "pastelyellow"
+    },
+    "pastelpurple": {
+      "map": {
+        "10": "balloonlone_pastelpurple"
+      },
+      "name": "pastelpurple"
+    },
+    "pastellightblue": {
+      "map": {
+        "10": "balloonlone_pastellightblue"
+      },
+      "name": "pastellightblue"
+    },
+    "fredbeargreen": {
+      "map": {
+        "10": "balloonlone_fredbeargreen"
+      },
+      "name": "fredbeargreen"
+    },
+    "fredbearblue": {
+      "map": {
+        "10": "balloonlone_fredbearblue"
+      },
+      "name": "fredbearblue"
+    }
+  }
+}

@@ -105,7 +105,7 @@
     "aiPathNodeType": "WALKABLE",
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "isLadder": false,
+    "isLadder": true,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,

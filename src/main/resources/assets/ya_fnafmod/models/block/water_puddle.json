@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wallplane",
+  "textures": {
+    "all": "ya_fnafmod:block/waterpuddle",
+    "particle": "ya_fnafmod:block/waterpuddle",
+    "0": "ya_fnafmod:block/waterpuddle"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "ya_fnafmod:block/pizza_golden_bite_block"
+    },
+    "blockstate=1": {
+      "model": "ya_fnafmod:block/pizza_golden_bite_block_states_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "ya_fnafmod:block/pizza_golden_bite_block_states_blockstate_1"
+    },
+    "blockstate=3": {
+      "model": "ya_fnafmod:block/pizza_golden_bite_block_states_blockstate_2"
+    }
+  }
+}

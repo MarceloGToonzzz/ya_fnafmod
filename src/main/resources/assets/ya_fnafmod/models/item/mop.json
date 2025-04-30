@@ -2,5 +2,25 @@
   "parent": "item/handheld",
   "textures": {
     "layer0": "ya_fnafmod:item/mop"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "ya_fnafmod:mop_variant": 0
+      },
+      "model": "ya_fnafmod:item/mop_0"
+    },
+    {
+      "predicate": {
+        "ya_fnafmod:mop_variant": 1
+      },
+      "model": "ya_fnafmod:item/mop_1"
+    },
+    {
+      "predicate": {
+        "ya_fnafmod:mop_variant": 2
+      },
+      "model": "ya_fnafmod:item/mop_2"
+    }
+  ]
 }

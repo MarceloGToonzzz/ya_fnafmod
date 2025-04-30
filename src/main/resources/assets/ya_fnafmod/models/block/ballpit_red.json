@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/ballpit_red",
+    "particle": "ya_fnafmod:block/ballpit_red"
+  },
+  "render_type": "cutout_mipped"
+}

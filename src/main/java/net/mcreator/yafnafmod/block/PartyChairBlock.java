@@ -116,7 +116,7 @@ public class PartyChairBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		ChairBlockRightClickProcedure.execute(world, x, y, z, entity);
+		ChairBlockRightClickProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

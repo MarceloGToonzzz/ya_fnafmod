@@ -41,4 +41,9 @@ public class BoothTableWhiteBlock extends Block {
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
 	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.or(box(0, 14, 0, 16, 16, 16), box(7, 0, 7, 9, 16, 9));
+	}
 }

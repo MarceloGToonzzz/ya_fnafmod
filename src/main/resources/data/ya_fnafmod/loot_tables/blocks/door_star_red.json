@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "ya_fnafmod:blocks/door_star_red",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ya_fnafmod:door_star_red",
+          "conditions": [
+            {
+              "block": "ya_fnafmod:door_star_red",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

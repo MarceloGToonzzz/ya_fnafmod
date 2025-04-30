@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true
+		},
+		"1": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"bone12": {
+					"rotation": {
+						"vector": [0, 140, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -20,6 +20,11 @@
     "ya_fnafmod:jack_o_bonnie_spawn_item",
     "ya_fnafmod:jack_o_chica_spawn_item",
     "ya_fnafmod:plushtrap_spawn_item",
-    "ya_fnafmod:plushtrap_alt_spawn_item"
+    "ya_fnafmod:plushtrap_alt_spawn_item",
+    "ya_fnafmod:molten_freddy_spawn_item",
+    "ya_fnafmod:scraptrap_spawn_item",
+    "ya_fnafmod:scrap_baby_spawn_item",
+    "ya_fnafmod:lefty_spawn_item",
+    "ya_fnafmod:lefty_alt_spawn_item"
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "ya_fnafmod:custom/pizzablock",
+  "textures": {
+    "all": "ya_fnafmod:block/pizzablock_pizza",
+    "particle": "ya_fnafmod:block/pizzablock_pizza",
+    "1": "ya_fnafmod:block/pizzablock_pizzacheese",
+    "2": "ya_fnafmod:block/pizzablock_pizzacheese",
+    "3": "ya_fnafmod:block/pizzablock_pizzacheese",
+    "4": "ya_fnafmod:block/pizzablock_pizzacheese"
+  },
+  "render_type": "cutout_mipped"
+}

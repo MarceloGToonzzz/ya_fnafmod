@@ -15,5 +15,5 @@ public class YaFnafmodModGameRules {
 	public static final GameRules.Key<GameRules.BooleanValue> ENABLE_VOICES = GameRules.register("enableVoices", GameRules.Category.MOBS, GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> ENABLE_JUMPSCARES = GameRules.register("enableJumpscares", GameRules.Category.MOBS, GameRules.BooleanValue.create(true));
 	public static final GameRules.Key<GameRules.BooleanValue> SCOOPER_ALARM = GameRules.register("scooperAlarm", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
-	public static final GameRules.Key<GameRules.IntegerValue> CHILD_EMOTION_METER = GameRules.register("childEmotionMeter", GameRules.Category.PLAYER, GameRules.IntegerValue.create(5));
+	public static final GameRules.Key<GameRules.IntegerValue> CHILD_EMOTION_METER = GameRules.register("childEmotionMeter", GameRules.Category.PLAYER, GameRules.IntegerValue.create(15));
 }

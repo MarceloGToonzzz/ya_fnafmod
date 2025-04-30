@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/checktile_lime",
+    "bottom": "ya_fnafmod:block/checktile_lime",
+    "top": "ya_fnafmod:block/checktile_lime",
+    "side": "ya_fnafmod:block/checktile_lime"
+  },
+  "render_type": "solid"
+}

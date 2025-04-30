@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "floortile_blackorange_cracked",
+    "texture": "floortile_orange_cracked",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -35,7 +35,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Black Orange Tile Stairs (Cracked)",
+    "name": "Orange Tile Stairs (Cracked)",
     "specialInformation": {
       "fixedValue": []
     },

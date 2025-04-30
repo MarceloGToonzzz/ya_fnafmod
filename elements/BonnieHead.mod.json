@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "head_bonniebunny",
+    "texture": "head_bonnieclassic",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -79,7 +79,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
+    "animationCount": 4.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "AnimatronicHeadOnBlockRightClicked"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -133,39 +136,15 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "bonnie_head.geo.json",
+    "normal": "animatronic_head.geo.json",
     "displaySettings": "head_display.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "head_bonniebunny",
+        "texture": "head_bonnieclassic_fms",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "bonnie_head_diag1.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      },
-      {
-        "texture": "head_bonniebunny",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "bonnie_head_diag2.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      },
-      {
-        "texture": "head_bonniebunny",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "bonnie_head_hori1.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      },
-      {
-        "texture": "head_bonniebunny",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "bonnie_head_hori2.geo.json",
+        "customModelName": "animatronic_head.geo.json",
         "luminance": 0,
         "boundingBoxes": []
       }

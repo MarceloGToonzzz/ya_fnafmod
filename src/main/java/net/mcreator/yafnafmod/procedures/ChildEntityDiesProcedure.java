@@ -1,20 +1,19 @@
 package net.mcreator.yafnafmod.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
+import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
 import net.mcreator.yafnafmod.entity.ChildEntity;
 
 public class ChildEntityDiesProcedure {
@@ -23,6 +22,8 @@ public class ChildEntityDiesProcedure {
 			return;
 		double chance = 0;
 		String gfdasgasdg = "";
+		String killeruuid = "";
+		String type = "";
 		if (entity instanceof ChildEntity) {
 			chance = Mth.nextInt(RandomSource.create(), 1, 3);
 			if (chance == 1) {
@@ -77,18 +78,27 @@ public class ChildEntityDiesProcedure {
 				}
 			} else if (chance == 2) {
 				if (sourceentity instanceof LivingEntity) {
+					killeruuid = sourceentity.getStringUUID();
 					if (Mth.nextInt(RandomSource.create(), 1, 3) == 2) {
-						gfdasgasdg = "summon ya_fnafmod:ghost_child ~ ~ ~ {ForgeData: {killer: \"MEME\",type: \"vengeful\"}}".replace("MEME", sourceentity.getStringUUID());
+						type = "vengeful";
 					} else {
-						gfdasgasdg = "summon ya_fnafmod:ghost_child ~ ~ ~ {ForgeData: {type: \"normal\"}}";
+						type = "normal";
 					}
 				} else {
 					if (Mth.nextInt(RandomSource.create(), 1, 2) == 2) {
-						gfdasgasdg = "summon ya_fnafmod:ghost_child ~ ~ ~ {ForgeData: {type: \"normal\"}}";
+						type = "normal";
 					}
 				}
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), gfdasgasdg);
+				if (world instanceof ServerLevel _serverLevel) {
+					Entity entityinstance = YaFnafmodModEntities.GHOST_CHILD.get().create(_serverLevel, null, null, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED, false, false);
+					if (entityinstance != null) {
+						entityinstance.setYRot(world.getRandom().nextFloat() * 360.0F);
+						entityinstance.getPersistentData().putString("type", type);
+						entityinstance.getPersistentData().putString("killer", killeruuid);
+						entityinstance.setCustomName(Component.literal((entity.getDisplayName().getString())));
+						_serverLevel.addFreshEntity(entityinstance);
+					}
+				}
 			}
 		}
 	}

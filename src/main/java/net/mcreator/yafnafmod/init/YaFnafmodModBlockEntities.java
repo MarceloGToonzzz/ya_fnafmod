@@ -61,6 +61,7 @@ import net.mcreator.yafnafmod.block.entity.SecurityPuppetPropTileEntity;
 import net.mcreator.yafnafmod.block.entity.SecurityDoorWindowBlockEntity;
 import net.mcreator.yafnafmod.block.entity.SecurityDoorBlockEntity;
 import net.mcreator.yafnafmod.block.entity.ScraptrapBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.ScrapLolaChicaBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ScrapBabyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ScooperTileEntity;
 import net.mcreator.yafnafmod.block.entity.SanitationStationTileEntity;
@@ -73,9 +74,13 @@ import net.mcreator.yafnafmod.block.entity.RockstarBonnieBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.RidingRocketRedTileEntity;
 import net.mcreator.yafnafmod.block.entity.RidingRocketPurpleTileEntity;
 import net.mcreator.yafnafmod.block.entity.RickyRatBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.RetroFreddyHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.RetroFreddyBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.RetroFoxyHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.RetroFoxyBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.RetroChicaHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.RetroChicaBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.RetroBonnieHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.RetroBonnieBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.RascBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.PuppetBlockTileEntity;
@@ -84,6 +89,7 @@ import net.mcreator.yafnafmod.block.entity.PrizeKingTileEntity;
 import net.mcreator.yafnafmod.block.entity.PotTileEntity;
 import net.mcreator.yafnafmod.block.entity.PopgoesWeaselBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.PlushFingertrapTileEntity;
+import net.mcreator.yafnafmod.block.entity.PizzeriaStandingSignMovie2TileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignMovieTileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignMovie2TileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignJrsTileEntity;
@@ -98,6 +104,7 @@ import net.mcreator.yafnafmod.block.entity.PizzeriaSignBabysTileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignBabysAltTileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSign1988TileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSign1987TileEntity;
+import net.mcreator.yafnafmod.block.entity.PizzaOvenBlockEntity;
 import net.mcreator.yafnafmod.block.entity.PizzaBoxStack2023TileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzaBoxStack1988TileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzaBoxStack1987TileEntity;
@@ -145,6 +152,7 @@ import net.mcreator.yafnafmod.block.entity.NeonSignArcadeTileEntity;
 import net.mcreator.yafnafmod.block.entity.NeonJukeboxTileEntity;
 import net.mcreator.yafnafmod.block.entity.NeddbearBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.MusicManBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.MusicBoxRedDecorationTileEntity;
 import net.mcreator.yafnafmod.block.entity.MusicBoxDecorationTileEntity;
 import net.mcreator.yafnafmod.block.entity.MusicBoxBlockEntity;
 import net.mcreator.yafnafmod.block.entity.MrHugsBlockTileEntity;
@@ -156,6 +164,7 @@ import net.mcreator.yafnafmod.block.entity.MedicalStationTileEntity;
 import net.mcreator.yafnafmod.block.entity.MangleBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.LolbitBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.Lolbit409BlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.LolaChicaBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.LockerYellowOpenBlockEntity;
 import net.mcreator.yafnafmod.block.entity.LockerYellowBlockEntity;
 import net.mcreator.yafnafmod.block.entity.LockerSilverBlockEntity;
@@ -363,9 +372,6 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> LOCKER_YELLOW = register("locker_yellow", YaFnafmodModBlocks.LOCKER_YELLOW, LockerYellowBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> LOCKER_SILVER = register("locker_silver", YaFnafmodModBlocks.LOCKER_SILVER, LockerSilverBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<FreddyHeadTileEntity>> FREDDY_HEAD = REGISTRY.register("freddy_head", () -> BlockEntityType.Builder.of(FreddyHeadTileEntity::new, YaFnafmodModBlocks.FREDDY_HEAD.get()).build(null));
-	public static final RegistryObject<BlockEntityType<BonnieHeadTileEntity>> BONNIE_HEAD = REGISTRY.register("bonnie_head", () -> BlockEntityType.Builder.of(BonnieHeadTileEntity::new, YaFnafmodModBlocks.BONNIE_HEAD.get()).build(null));
-	public static final RegistryObject<BlockEntityType<ChicaHeadTileEntity>> CHICA_HEAD = REGISTRY.register("chica_head", () -> BlockEntityType.Builder.of(ChicaHeadTileEntity::new, YaFnafmodModBlocks.CHICA_HEAD.get()).build(null));
-	public static final RegistryObject<BlockEntityType<FoxyHeadTileEntity>> FOXY_HEAD = REGISTRY.register("foxy_head", () -> BlockEntityType.Builder.of(FoxyHeadTileEntity::new, YaFnafmodModBlocks.FOXY_HEAD.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> SECURITY_DOOR = register("security_door", YaFnafmodModBlocks.SECURITY_DOOR, SecurityDoorBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> GENERATOR_BLOCK = register("generator_block", YaFnafmodModBlocks.GENERATOR_BLOCK, GeneratorBlockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MUSIC_BOX = register("music_box", YaFnafmodModBlocks.MUSIC_BOX, MusicBoxBlockEntity::new);
@@ -387,9 +393,6 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<GrandfatherClockTileEntity>> GRANDFATHER_CLOCK = REGISTRY.register("grandfather_clock",
 			() -> BlockEntityType.Builder.of(GrandfatherClockTileEntity::new, YaFnafmodModBlocks.GRANDFATHER_CLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> ALARM_CLOCK = register("alarm_clock", YaFnafmodModBlocks.ALARM_CLOCK, AlarmClockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<FredbearHeadTileEntity>> FREDBEAR_HEAD = REGISTRY.register("fredbear_head", () -> BlockEntityType.Builder.of(FredbearHeadTileEntity::new, YaFnafmodModBlocks.FREDBEAR_HEAD.get()).build(null));
-	public static final RegistryObject<BlockEntityType<SpringbonnieHeadTileEntity>> SPRINGBONNIE_HEAD = REGISTRY.register("springbonnie_head",
-			() -> BlockEntityType.Builder.of(SpringbonnieHeadTileEntity::new, YaFnafmodModBlocks.SPRINGBONNIE_HEAD.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CutoutFredbearTileEntity>> CUTOUT_FREDBEAR = REGISTRY.register("cutout_fredbear",
 			() -> BlockEntityType.Builder.of(CutoutFredbearTileEntity::new, YaFnafmodModBlocks.CUTOUT_FREDBEAR.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CutoutSpringbonnieTileEntity>> CUTOUT_SPRINGBONNIE = REGISTRY.register("cutout_springbonnie",
@@ -941,6 +944,29 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(CarDesotoBlockTileEntity::new, YaFnafmodModBlocks.CAR_DESOTO_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<DittophobiaBbBlockTileEntity>> DITTOPHOBIA_BB_BLOCK = REGISTRY.register("dittophobia_bb_block",
 			() -> BlockEntityType.Builder.of(DittophobiaBbBlockTileEntity::new, YaFnafmodModBlocks.DITTOPHOBIA_BB_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<LolaChicaBlockTileEntity>> LOLA_CHICA_BLOCK = REGISTRY.register("lola_chica_block",
+			() -> BlockEntityType.Builder.of(LolaChicaBlockTileEntity::new, YaFnafmodModBlocks.LOLA_CHICA_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ScrapLolaChicaBlockTileEntity>> SCRAP_LOLA_CHICA_BLOCK = REGISTRY.register("scrap_lola_chica_block",
+			() -> BlockEntityType.Builder.of(ScrapLolaChicaBlockTileEntity::new, YaFnafmodModBlocks.SCRAP_LOLA_CHICA_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<PizzeriaStandingSignMovie2TileEntity>> PIZZERIA_STANDING_SIGN_MOVIE_2 = REGISTRY.register("pizzeria_standing_sign_movie_2",
+			() -> BlockEntityType.Builder.of(PizzeriaStandingSignMovie2TileEntity::new, YaFnafmodModBlocks.PIZZERIA_STANDING_SIGN_MOVIE_2.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BonnieHeadTileEntity>> BONNIE_HEAD = REGISTRY.register("bonnie_head", () -> BlockEntityType.Builder.of(BonnieHeadTileEntity::new, YaFnafmodModBlocks.BONNIE_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ChicaHeadTileEntity>> CHICA_HEAD = REGISTRY.register("chica_head", () -> BlockEntityType.Builder.of(ChicaHeadTileEntity::new, YaFnafmodModBlocks.CHICA_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FoxyHeadTileEntity>> FOXY_HEAD = REGISTRY.register("foxy_head", () -> BlockEntityType.Builder.of(FoxyHeadTileEntity::new, YaFnafmodModBlocks.FOXY_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<FredbearHeadTileEntity>> FREDBEAR_HEAD = REGISTRY.register("fredbear_head", () -> BlockEntityType.Builder.of(FredbearHeadTileEntity::new, YaFnafmodModBlocks.FREDBEAR_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<SpringbonnieHeadTileEntity>> SPRINGBONNIE_HEAD = REGISTRY.register("springbonnie_head",
+			() -> BlockEntityType.Builder.of(SpringbonnieHeadTileEntity::new, YaFnafmodModBlocks.SPRINGBONNIE_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<RetroFreddyHeadTileEntity>> RETRO_FREDDY_HEAD = REGISTRY.register("retro_freddy_head",
+			() -> BlockEntityType.Builder.of(RetroFreddyHeadTileEntity::new, YaFnafmodModBlocks.RETRO_FREDDY_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<RetroBonnieHeadTileEntity>> RETRO_BONNIE_HEAD = REGISTRY.register("retro_bonnie_head",
+			() -> BlockEntityType.Builder.of(RetroBonnieHeadTileEntity::new, YaFnafmodModBlocks.RETRO_BONNIE_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<RetroChicaHeadTileEntity>> RETRO_CHICA_HEAD = REGISTRY.register("retro_chica_head",
+			() -> BlockEntityType.Builder.of(RetroChicaHeadTileEntity::new, YaFnafmodModBlocks.RETRO_CHICA_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<RetroFoxyHeadTileEntity>> RETRO_FOXY_HEAD = REGISTRY.register("retro_foxy_head",
+			() -> BlockEntityType.Builder.of(RetroFoxyHeadTileEntity::new, YaFnafmodModBlocks.RETRO_FOXY_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<MusicBoxRedDecorationTileEntity>> MUSIC_BOX_RED_DECORATION = REGISTRY.register("music_box_red_decoration",
+			() -> BlockEntityType.Builder.of(MusicBoxRedDecorationTileEntity::new, YaFnafmodModBlocks.MUSIC_BOX_RED_DECORATION.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> PIZZA_OVEN = register("pizza_oven", YaFnafmodModBlocks.PIZZA_OVEN, PizzaOvenBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

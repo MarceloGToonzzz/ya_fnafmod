@@ -1,0 +1,400 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "pizzablock_pizza",
+        "2": "pizzablock_pizza",
+        "3": "pizzablock_pizza",
+        "4": "pizzablock_pizza"
+      },
+      "name": "default"
+    },
+    "default3": {
+      "map": {
+        "1": "pizzablock_pizza",
+        "2": "pizzablock_pizza",
+        "3": "pizzablock_pizza",
+        "4": "empty"
+      },
+      "name": "default3"
+    },
+    "default2": {
+      "map": {
+        "1": "pizzablock_pizza",
+        "2": "pizzablock_pizza",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "default2"
+    },
+    "default1": {
+      "map": {
+        "1": "pizzablock_pizza",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "default1"
+    },
+    "fresh4": {
+      "map": {
+        "1": "pizzablock_pizzafresh",
+        "2": "pizzablock_pizzafresh",
+        "3": "pizzablock_pizzafresh",
+        "4": "pizzablock_pizzafresh"
+      },
+      "name": "fresh4"
+    },
+    "fresh3": {
+      "map": {
+        "1": "pizzablock_pizzafresh",
+        "2": "pizzablock_pizzafresh",
+        "3": "pizzablock_pizzafresh",
+        "4": "empty"
+      },
+      "name": "fresh3"
+    },
+    "fresh2": {
+      "map": {
+        "1": "pizzablock_pizzafresh",
+        "2": "pizzablock_pizzafresh",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "fresh2"
+    },
+    "fresh1": {
+      "map": {
+        "1": "pizzablock_pizzafresh",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "fresh1"
+    },
+    "cheese": {
+      "map": {
+        "1": "pizzablock_pizzacheese",
+        "2": "pizzablock_pizzacheese",
+        "3": "pizzablock_pizzacheese",
+        "4": "pizzablock_pizzacheese"
+      },
+      "name": "cheese"
+    },
+    "cheese3": {
+      "map": {
+        "1": "pizzablock_pizzacheese",
+        "2": "pizzablock_pizzacheese",
+        "3": "pizzablock_pizzacheese",
+        "4": "empty"
+      },
+      "name": "cheese3"
+    },
+    "cheese2": {
+      "map": {
+        "1": "pizzablock_pizzacheese",
+        "2": "pizzablock_pizzacheese",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "cheese2"
+    },
+    "cheese1": {
+      "map": {
+        "1": "pizzablock_pizzacheese",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "cheese1"
+    },
+    "freshcheese1": {
+      "map": {
+        "1": "pizzablock_pizzafreshcheese",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "freshcheese1"
+    },
+    "freshcheese2": {
+      "map": {
+        "1": "pizzablock_pizzafreshcheese",
+        "2": "pizzablock_pizzafreshcheese",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "freshcheese2"
+    },
+    "freshcheese3": {
+      "map": {
+        "1": "pizzablock_pizzafreshcheese",
+        "2": "pizzablock_pizzafreshcheese",
+        "3": "pizzablock_pizzafreshcheese",
+        "4": "empty"
+      },
+      "name": "freshcheese3"
+    },
+    "freshcheese": {
+      "map": {
+        "1": "pizzablock_pizzafreshcheese",
+        "2": "pizzablock_pizzafreshcheese",
+        "3": "pizzablock_pizzafreshcheese",
+        "4": "pizzablock_pizzafreshcheese"
+      },
+      "name": "freshcheese"
+    },
+    "gbite4": {
+      "map": {
+        "1": "pizzablock_goldenbite",
+        "2": "pizzablock_goldenbite",
+        "3": "pizzablock_goldenbite",
+        "4": "pizzablock_goldenbite"
+      },
+      "name": "gbite4"
+    },
+    "gbite3": {
+      "map": {
+        "1": "pizzablock_goldenbite",
+        "2": "pizzablock_goldenbite",
+        "3": "pizzablock_goldenbite",
+        "4": "empty"
+      },
+      "name": "gbite3"
+    },
+    "gbite2": {
+      "map": {
+        "1": "pizzablock_goldenbite",
+        "2": "pizzablock_goldenbite",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "gbite2"
+    },
+    "gbite1": {
+      "map": {
+        "1": "pizzablock_goldenbite",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "gbite1"
+    },
+    "artichoke4": {
+      "map": {
+        "1": "pizzablock_artichoke",
+        "2": "pizzablock_artichoke",
+        "3": "pizzablock_artichoke",
+        "4": "pizzablock_artichoke"
+      },
+      "name": "artichoke4"
+    },
+    "artichoke3": {
+      "map": {
+        "1": "pizzablock_artichoke",
+        "2": "pizzablock_artichoke",
+        "3": "pizzablock_artichoke",
+        "4": "empty"
+      },
+      "name": "artichoke3"
+    },
+    "artichoke2": {
+      "map": {
+        "1": "pizzablock_artichoke",
+        "2": "pizzablock_artichoke",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "artichoke2"
+    },
+    "artichoke1": {
+      "map": {
+        "1": "pizzablock_artichoke",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "artichoke1"
+    },
+    "anchovy4": {
+      "map": {
+        "1": "pizzablock_anchovy",
+        "2": "pizzablock_anchovy",
+        "3": "pizzablock_anchovy",
+        "4": "pizzablock_anchovy"
+      },
+      "name": "anchovy4"
+    },
+    "anchovy3": {
+      "map": {
+        "1": "pizzablock_anchovy",
+        "2": "pizzablock_anchovy",
+        "3": "pizzablock_anchovy",
+        "4": "empty"
+      },
+      "name": "anchovy3"
+    },
+    "anchovy2": {
+      "map": {
+        "1": "pizzablock_anchovy",
+        "2": "pizzablock_anchovy",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "anchovy2"
+    },
+    "anchovy1": {
+      "map": {
+        "1": "pizzablock_anchovy",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "anchovy1"
+    },
+    "ralph4": {
+      "map": {
+        "1": "pizzablock_ralph",
+        "2": "pizzablock_ralph",
+        "3": "pizzablock_ralph",
+        "4": "pizzablock_ralph"
+      },
+      "name": "ralph4"
+    },
+    "ralph3": {
+      "map": {
+        "1": "pizzablock_ralph",
+        "2": "pizzablock_ralph",
+        "3": "pizzablock_ralph",
+        "4": "empty"
+      },
+      "name": "ralph3"
+    },
+    "ralph2": {
+      "map": {
+        "1": "pizzablock_ralph",
+        "2": "pizzablock_ralph",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "ralph2"
+    },
+    "ralph1": {
+      "map": {
+        "1": "pizzablock_ralph",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "ralph1"
+    },
+    "artichokefresh4": {
+      "map": {
+        "1": "pizzablock_pizzafreshartichoke",
+        "2": "pizzablock_pizzafreshartichoke",
+        "3": "pizzablock_pizzafreshartichoke",
+        "4": "pizzablock_pizzafreshartichoke"
+      },
+      "name": "artichokefresh4"
+    },
+    "artichokefresh3": {
+      "map": {
+        "1": "pizzablock_pizzafreshartichoke",
+        "2": "pizzablock_pizzafreshartichoke",
+        "3": "pizzablock_pizzafreshartichoke",
+        "4": "empty"
+      },
+      "name": "artichokefresh3"
+    },
+    "artichokefresh2": {
+      "map": {
+        "1": "pizzablock_pizzafreshartichoke",
+        "2": "pizzablock_pizzafreshartichoke",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "artichokefresh2"
+    },
+    "artichokefresh1": {
+      "map": {
+        "1": "pizzablock_pizzafreshartichoke",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "artichokefresh1"
+    },
+    "anchovyfresh4": {
+      "map": {
+        "1": "pizzablock_pizzafreshanchovy",
+        "2": "pizzablock_pizzafreshanchovy",
+        "3": "pizzablock_pizzafreshanchovy",
+        "4": "pizzablock_pizzafreshanchovy"
+      },
+      "name": "anchovyfresh4"
+    },
+    "anchovyfresh3": {
+      "map": {
+        "1": "pizzablock_pizzafreshanchovy",
+        "2": "pizzablock_pizzafreshanchovy",
+        "3": "pizzablock_pizzafreshanchovy",
+        "4": "empty"
+      },
+      "name": "anchovyfresh3"
+    },
+    "anchovyfresh2": {
+      "map": {
+        "1": "pizzablock_pizzafreshanchovy",
+        "2": "pizzablock_pizzafreshanchovy",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "anchovyfresh2"
+    },
+    "anchovyfresh1": {
+      "map": {
+        "1": "pizzablock_pizzafreshanchovy",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "anchovyfresh1"
+    },
+    "ralphfresh4": {
+      "map": {
+        "1": "pizzablock_pizzafreshralph",
+        "2": "pizzablock_pizzafreshralph",
+        "3": "pizzablock_pizzafreshralph",
+        "4": "pizzablock_pizzafreshralph"
+      },
+      "name": "ralphfresh4"
+    },
+    "ralphfresh3": {
+      "map": {
+        "1": "pizzablock_pizzafreshralph",
+        "2": "pizzablock_pizzafreshralph",
+        "3": "pizzablock_pizzafreshralph",
+        "4": "empty"
+      },
+      "name": "ralphfresh3"
+    },
+    "ralphfresh2": {
+      "map": {
+        "1": "pizzablock_pizzafreshralph",
+        "2": "pizzablock_pizzafreshralph",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "ralphfresh2"
+    },
+    "ralphfresh1": {
+      "map": {
+        "1": "pizzablock_pizzafreshralph",
+        "2": "empty",
+        "3": "empty",
+        "4": "empty"
+      },
+      "name": "ralphfresh1"
+    }
+  }
+}

@@ -1581,5 +1581,13 @@
         "stream": false
       }
     ]
+  },
+  "bg_dontblowit": {
+    "sounds": [
+      {
+        "name": "ya_fnafmod:bg_dontblowit",
+        "stream": true
+      }
+    ]
   }
 }

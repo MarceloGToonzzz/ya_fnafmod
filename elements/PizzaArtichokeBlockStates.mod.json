@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "PizzaArtichokeBlock",
+    "blockstateList": [
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:artichoke3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:artichoke2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzablock_pizza",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizzablock:artichoke1",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

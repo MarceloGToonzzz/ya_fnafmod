@@ -112,10 +112,10 @@ public class SpawnItemRightclickedOnBlockProcedure {
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);
 			{
 				final Vec3 _center = new Vec3(x, (y + 1), z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					if (done == false) {
-						if (entityiterator.getX() == x + 0.5 && entityiterator.getY() == y + 1 && entityiterator.getZ() == z + 0.5) {
+						if (entityiterator.getX() == x + 0.5 && (entityiterator.getY() == y + 1 || entityiterator.getY() == y + 1.5) && entityiterator.getZ() == z + 0.5) {
 							if ((ForgeRegistries.ENTITY_TYPES.getKey(entityiterator.getType()).toString()).equals(spawned) || (ForgeRegistries.ENTITY_TYPES.getKey(entityiterator.getType()).toString()).equals(spawned.replace("_day", ""))) {
 								if (og_registry.contains("fms")) {
 									entityiterator.getPersistentData().putString("style", "fms");
