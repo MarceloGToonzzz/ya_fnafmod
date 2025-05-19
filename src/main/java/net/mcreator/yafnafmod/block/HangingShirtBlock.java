@@ -112,7 +112,7 @@ public class HangingShirtBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		FazwrenchCycleVariantsProcedure.execute(world, x, y, z, blockstate);
+		FazwrenchCycleVariantsProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

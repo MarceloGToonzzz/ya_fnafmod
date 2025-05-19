@@ -18,9 +18,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -106,8 +104,6 @@ public class GoldenFreddyEntity extends Monster implements GeoEntity {
 	protected void registerGoals() {
 		super.registerGoals();
 		this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Villager.class, false, false));
 	}
 
 	@Override
@@ -195,6 +191,7 @@ public class GoldenFreddyEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 100);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		return builder;
 	}
 

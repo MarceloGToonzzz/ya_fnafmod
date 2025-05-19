@@ -20,11 +20,9 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -222,7 +220,7 @@ public class ShadowBonnieEntity extends Monster implements GeoEntity {
 				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
 			}
 		});
-		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Player.class, true, true) {
+		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = ShadowBonnieEntity.this.getX();
@@ -243,49 +241,7 @@ public class ShadowBonnieEntity extends Monster implements GeoEntity {
 				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
 			}
 		});
-		this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, Villager.class, true, true) {
-			@Override
-			public boolean canUse() {
-				double x = ShadowBonnieEntity.this.getX();
-				double y = ShadowBonnieEntity.this.getY();
-				double z = ShadowBonnieEntity.this.getZ();
-				Entity entity = ShadowBonnieEntity.this;
-				Level world = ShadowBonnieEntity.this.level();
-				return super.canUse() && IsRareNightProcedure.execute(world);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = ShadowBonnieEntity.this.getX();
-				double y = ShadowBonnieEntity.this.getY();
-				double z = ShadowBonnieEntity.this.getZ();
-				Entity entity = ShadowBonnieEntity.this;
-				Level world = ShadowBonnieEntity.this.level();
-				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(10, new RandomLookAroundGoal(this) {
-			@Override
-			public boolean canUse() {
-				double x = ShadowBonnieEntity.this.getX();
-				double y = ShadowBonnieEntity.this.getY();
-				double z = ShadowBonnieEntity.this.getZ();
-				Entity entity = ShadowBonnieEntity.this;
-				Level world = ShadowBonnieEntity.this.level();
-				return super.canUse() && IsRareNightProcedure.execute(world);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = ShadowBonnieEntity.this.getX();
-				double y = ShadowBonnieEntity.this.getY();
-				double z = ShadowBonnieEntity.this.getZ();
-				Entity entity = ShadowBonnieEntity.this;
-				Level world = ShadowBonnieEntity.this.level();
-				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(11, new FloatGoal(this) {
+		this.goalSelector.addGoal(9, new FloatGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = ShadowBonnieEntity.this.getX();
@@ -409,6 +365,7 @@ public class ShadowBonnieEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 100);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.25);
 		return builder;
 	}

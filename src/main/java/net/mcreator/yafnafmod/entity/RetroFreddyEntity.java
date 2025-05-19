@@ -19,9 +19,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -123,20 +121,8 @@ public class RetroFreddyEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canContinueToUse() {
-				double x = RetroFreddyEntity.this.getX();
-				double y = RetroFreddyEntity.this.getY();
-				double z = RetroFreddyEntity.this.getZ();
-				Entity entity = RetroFreddyEntity.this;
-				Level world = RetroFreddyEntity.this.level();
-				return super.canContinueToUse() && true;
-			}
-		});
-		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(10, new FloatGoal(this));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new FloatGoal(this));
 	}
 
 	@Override
@@ -221,6 +207,7 @@ public class RetroFreddyEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 15);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		return builder;
 	}
 

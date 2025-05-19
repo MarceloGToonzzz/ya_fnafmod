@@ -2,25 +2,25 @@
   "mappings": {
     "chica": {
       "map": {
-        "1": "hangingshirt_1chica"
+        "7": "hangingshirt_1chica"
       },
       "name": "chica"
     },
     "default": {
       "map": {
-        "1": "hangingshirt_1freddy"
+        "7": "hangingshirt_1freddy"
       },
       "name": "default"
     },
     "bonnie": {
       "map": {
-        "1": "hangingshirt_1bonnie"
+        "7": "hangingshirt_1bonnie"
       },
       "name": "bonnie"
     },
     "foxy": {
       "map": {
-        "1": "hangingshirt_1foxy"
+        "7": "hangingshirt_1foxy"
       },
       "name": "foxy"
     }

@@ -20,11 +20,9 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.Goal;
@@ -169,49 +167,7 @@ public class WitheredGoldenFreddyEntity extends Monster implements GeoEntity {
 				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
 			}
 		});
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canUse() {
-				double x = WitheredGoldenFreddyEntity.this.getX();
-				double y = WitheredGoldenFreddyEntity.this.getY();
-				double z = WitheredGoldenFreddyEntity.this.getZ();
-				Entity entity = WitheredGoldenFreddyEntity.this;
-				Level world = WitheredGoldenFreddyEntity.this.level();
-				return super.canUse() && IsRareNightProcedure.execute(world);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = WitheredGoldenFreddyEntity.this.getX();
-				double y = WitheredGoldenFreddyEntity.this.getY();
-				double z = WitheredGoldenFreddyEntity.this.getZ();
-				Entity entity = WitheredGoldenFreddyEntity.this;
-				Level world = WitheredGoldenFreddyEntity.this.level();
-				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
-			}
-		});
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
-			@Override
-			public boolean canUse() {
-				double x = WitheredGoldenFreddyEntity.this.getX();
-				double y = WitheredGoldenFreddyEntity.this.getY();
-				double z = WitheredGoldenFreddyEntity.this.getZ();
-				Entity entity = WitheredGoldenFreddyEntity.this;
-				Level world = WitheredGoldenFreddyEntity.this.level();
-				return super.canUse() && IsRareNightProcedure.execute(world);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = WitheredGoldenFreddyEntity.this.getX();
-				double y = WitheredGoldenFreddyEntity.this.getY();
-				double z = WitheredGoldenFreddyEntity.this.getZ();
-				Entity entity = WitheredGoldenFreddyEntity.this;
-				Level world = WitheredGoldenFreddyEntity.this.level();
-				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
-			}
-		});
-		this.goalSelector.addGoal(5, new Goal() {
+		this.goalSelector.addGoal(3, new Goal() {
 			{
 				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
 			}
@@ -363,6 +319,7 @@ public class WitheredGoldenFreddyEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 100);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.2);
 		return builder;
 	}

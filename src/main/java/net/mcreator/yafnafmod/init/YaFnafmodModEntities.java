@@ -298,7 +298,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<WitheredBonnieEntity>> WITHERED_BONNIE = register("withered_bonnie",
 			EntityType.Builder.<WitheredBonnieEntity>of(WitheredBonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredBonnieEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 0.95f));
 	public static final RegistryObject<EntityType<WitheredBonnieDayEntity>> WITHERED_BONNIE_DAY = register("withered_bonnie_day",
 			EntityType.Builder.<WitheredBonnieDayEntity>of(WitheredBonnieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredBonnieDayEntity::new)
 
@@ -306,7 +306,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<WitheredChicaEntity>> WITHERED_CHICA = register("withered_chica",
 			EntityType.Builder.<WitheredChicaEntity>of(WitheredChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredChicaEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 0.95f));
 	public static final RegistryObject<EntityType<WitheredChicaDayEntity>> WITHERED_CHICA_DAY = register("withered_chica_day",
 			EntityType.Builder.<WitheredChicaDayEntity>of(WitheredChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredChicaDayEntity::new)
 
@@ -330,7 +330,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ToyBonnieEntity>> TOY_BONNIE = register("toy_bonnie",
 			EntityType.Builder.<ToyBonnieEntity>of(ToyBonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyBonnieEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.95f, 0.85f));
 	public static final RegistryObject<EntityType<ToyBonnieDayEntity>> TOY_BONNIE_DAY = register("toy_bonnie_day",
 			EntityType.Builder.<ToyBonnieDayEntity>of(ToyBonnieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyBonnieDayEntity::new)
 
@@ -338,7 +338,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ToyChicaEntity>> TOY_CHICA = register("toy_chica",
 			EntityType.Builder.<ToyChicaEntity>of(ToyChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyChicaEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.95f, 0.85f));
 	public static final RegistryObject<EntityType<ToyChicaDayEntity>> TOY_CHICA_DAY = register("toy_chica_day",
 			EntityType.Builder.<ToyChicaDayEntity>of(ToyChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyChicaDayEntity::new)
 
@@ -346,7 +346,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<MangleEntity>> MANGLE = register("mangle",
 			EntityType.Builder.<MangleEntity>of(MangleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MangleEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.95f, 0.85f));
 	public static final RegistryObject<EntityType<MangleDayEntity>> MANGLE_DAY = register("mangle_day",
 			EntityType.Builder.<MangleDayEntity>of(MangleDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MangleDayEntity::new)
 
@@ -354,7 +354,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<BalloonBoyEntity>> BALLOON_BOY = register("balloon_boy",
 			EntityType.Builder.<BalloonBoyEntity>of(BalloonBoyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BalloonBoyEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.9f, 0.85f));
 	public static final RegistryObject<EntityType<BalloonBoyDayEntity>> BALLOON_BOY_DAY = register("balloon_boy_day",
 			EntityType.Builder.<BalloonBoyDayEntity>of(BalloonBoyDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BalloonBoyDayEntity::new)
 
@@ -362,7 +362,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<PuppetEntity>> PUPPET = register("puppet",
 			EntityType.Builder.<PuppetEntity>of(PuppetEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuppetEntity::new)
 
-					.sized(0.6f, 1f));
+					.sized(1.8f, 1f));
 	public static final RegistryObject<EntityType<PuppetDayEntity>> PUPPET_DAY = register("puppet_day",
 			EntityType.Builder.<PuppetDayEntity>of(PuppetDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuppetDayEntity::new)
 
@@ -370,7 +370,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<JJEntity>> JJ = register("jj",
 			EntityType.Builder.<JJEntity>of(JJEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JJEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.9f, 0.85f));
 	public static final RegistryObject<EntityType<JjDayEntity>> JJ_DAY = register("jj_day",
 			EntityType.Builder.<JjDayEntity>of(JjDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JjDayEntity::new)
 
@@ -378,7 +378,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ToyFoxyEntity>> TOY_FOXY = register("toy_foxy",
 			EntityType.Builder.<ToyFoxyEntity>of(ToyFoxyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyFoxyEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.95f, 0.85f));
 	public static final RegistryObject<EntityType<ToyFoxyDayEntity>> TOY_FOXY_DAY = register("toy_foxy_day",
 			EntityType.Builder.<ToyFoxyDayEntity>of(ToyFoxyDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyFoxyDayEntity::new)
 
@@ -391,7 +391,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ShadowBonnieEntity>> SHADOW_BONNIE = register("shadow_bonnie",
 			EntityType.Builder.<ShadowBonnieEntity>of(ShadowBonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ShadowBonnieEntity::new)
 
-					.sized(0.6f, 0.938f));
+					.sized(0.95f, 0.938f));
 	public static final RegistryObject<EntityType<ShadowFreddyEntity>> SHADOW_FREDDY = register("shadow_freddy",
 			EntityType.Builder.<ShadowFreddyEntity>of(ShadowFreddyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ShadowFreddyEntity::new)
 
@@ -399,7 +399,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<SpringtrapEntity>> SPRINGTRAP = register("springtrap",
 			EntityType.Builder.<SpringtrapEntity>of(SpringtrapEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringtrapEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<SpringtrapDayEntity>> SPRINGTRAP_DAY = register("springtrap_day",
 			EntityType.Builder.<SpringtrapDayEntity>of(SpringtrapDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringtrapDayEntity::new)
 
@@ -568,7 +568,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<EnnardEntity>> ENNARD = register("ennard",
 			EntityType.Builder.<EnnardEntity>of(EnnardEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EnnardEntity::new)
 
-					.sized(0.6f, 0.875f));
+					.sized(0.875f, 1.8f));
 	public static final RegistryObject<EntityType<MinireenaEntity>> MINIREENA = register("minireena",
 			EntityType.Builder.<MinireenaEntity>of(MinireenaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MinireenaEntity::new)
 
@@ -588,7 +588,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<BidybabEntity>> BIDYBAB = register("bidybab",
 			EntityType.Builder.<BidybabEntity>of(BidybabEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BidybabEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 0.9f));
 	public static final RegistryObject<EntityType<BidybabDayEntity>> BIDYBAB_DAY = register("bidybab_day",
 			EntityType.Builder.<BidybabDayEntity>of(BidybabDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BidybabDayEntity::new)
 
@@ -596,7 +596,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ElectrobabEntity>> ELECTROBAB = register("electrobab",
 			EntityType.Builder.<ElectrobabEntity>of(ElectrobabEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ElectrobabEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 0.9f));
 	public static final RegistryObject<EntityType<ElectrobabDayEntity>> ELECTROBAB_DAY = register("electrobab_day",
 			EntityType.Builder.<ElectrobabDayEntity>of(ElectrobabDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ElectrobabDayEntity::new)
 
@@ -640,7 +640,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<RetroBonnieEntity>> RETRO_BONNIE = register("retro_bonnie",
 			EntityType.Builder.<RetroBonnieEntity>of(RetroBonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RetroBonnieEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 0.9f));
 	public static final RegistryObject<EntityType<RetroBonnieDayEntity>> RETRO_BONNIE_DAY = register("retro_bonnie_day",
 			EntityType.Builder.<RetroBonnieDayEntity>of(RetroBonnieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RetroBonnieDayEntity::new)
 
@@ -648,7 +648,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<RetroChicaEntity>> RETRO_CHICA = register("retro_chica",
 			EntityType.Builder.<RetroChicaEntity>of(RetroChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RetroChicaEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 0.95f));
 	public static final RegistryObject<EntityType<RetroChicaDayEntity>> RETRO_CHICA_DAY = register("retro_chica_day",
 			EntityType.Builder.<RetroChicaDayEntity>of(RetroChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RetroChicaDayEntity::new)
 
@@ -724,7 +724,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<MoltenFreddyEntity>> MOLTEN_FREDDY = register("molten_freddy",
 			EntityType.Builder.<MoltenFreddyEntity>of(MoltenFreddyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MoltenFreddyEntity::new)
 
-					.sized(0.85f, 0.85f));
+					.sized(0.85f, 1.8f));
 	public static final RegistryObject<EntityType<HelpyEntity>> HELPY = register("helpy",
 			EntityType.Builder.<HelpyEntity>of(HelpyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HelpyEntity::new)
 
@@ -737,7 +737,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<NeddbearEntity>> NEDDBEAR = register("neddbear",
 			EntityType.Builder.<NeddbearEntity>of(NeddbearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(NeddbearEntity::new)
 
-					.sized(0.6f, 0.875f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<NeddBearDayEntity>> NEDDBEAR_DAY = register("neddbear_day",
 			EntityType.Builder.<NeddBearDayEntity>of(NeddBearDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(NeddBearDayEntity::new)
 
@@ -745,7 +745,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<HappyFrogEntity>> HAPPY_FROG = register("happy_frog",
 			EntityType.Builder.<HappyFrogEntity>of(HappyFrogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(HappyFrogEntity::new)
 
-					.sized(0.6f, 0.5f));
+					.sized(0.6f, 0.9f));
 	public static final RegistryObject<EntityType<HappyFrogDayEntity>> HAPPY_FROG_DAY = register("happy_frog_day",
 			EntityType.Builder.<HappyFrogDayEntity>of(HappyFrogDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(HappyFrogDayEntity::new)
 
@@ -753,7 +753,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<PigpatchEntity>> PIGPATCH = register("pigpatch",
 			EntityType.Builder.<PigpatchEntity>of(PigpatchEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PigpatchEntity::new)
 
-					.sized(0.6f, 0.875f));
+					.sized(0.6f, 1.5f));
 	public static final RegistryObject<EntityType<PigpatchDayEntity>> PIGPATCH_DAY = register("pigpatch_day",
 			EntityType.Builder.<PigpatchDayEntity>of(PigpatchDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PigpatchDayEntity::new)
 
@@ -761,7 +761,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<MrHippoEntity>> MR_HIPPO = register("mr_hippo",
 			EntityType.Builder.<MrHippoEntity>of(MrHippoEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MrHippoEntity::new)
 
-					.sized(0.6f, 0.875f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<MrHippoDayEntity>> MR_HIPPO_DAY = register("mr_hippo_day",
 			EntityType.Builder.<MrHippoDayEntity>of(MrHippoDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MrHippoDayEntity::new)
 
@@ -769,7 +769,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ScraptrapEntity>> SCRAPTRAP = register("scraptrap",
 			EntityType.Builder.<ScraptrapEntity>of(ScraptrapEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ScraptrapEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ChildEntity>> CHILD = register("child",
 			EntityType.Builder.<ChildEntity>of(ChildEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChildEntity::new)
 
@@ -819,7 +819,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<OrvilleElephantEntity>> ORVILLE_ELEPHANT = register("orville_elephant",
 			EntityType.Builder.<OrvilleElephantEntity>of(OrvilleElephantEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(OrvilleElephantEntity::new)
 
-					.sized(0.875f, 0.8f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<OrvilleElephantDayEntity>> ORVILLE_ELEPHANT_DAY = register("orville_elephant_day",
 			EntityType.Builder.<OrvilleElephantDayEntity>of(OrvilleElephantDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(OrvilleElephantDayEntity::new)
 
@@ -855,7 +855,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<FuntimeChicaEntity>> FUNTIME_CHICA = register("funtime_chica",
 			EntityType.Builder.<FuntimeChicaEntity>of(FuntimeChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(FuntimeChicaEntity::new)
 
-					.sized(0.6f, 0.9375f));
+					.sized(0.6f, 0.95f));
 	public static final RegistryObject<EntityType<FuntimeChicaDayEntity>> FUNTIME_CHICA_DAY = register("funtime_chica_day",
 			EntityType.Builder.<FuntimeChicaDayEntity>of(FuntimeChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(FuntimeChicaDayEntity::new)
 
@@ -974,7 +974,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<WitheredJollyRatEntity>> WITHERED_JOLLY_RAT = register("withered_jolly_rat",
 			EntityType.Builder.<WitheredJollyRatEntity>of(WitheredJollyRatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredJollyRatEntity::new)
 
-					.sized(0.6f, 1.8f));
+					.sized(0.6f, 0.9f));
 	public static final RegistryObject<EntityType<WitheredJollyRatDayEntity>> WITHERED_JOLLY_RAT_DAY = register("withered_jolly_rat_day",
 			EntityType.Builder.<WitheredJollyRatDayEntity>of(WitheredJollyRatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredJollyRatDayEntity::new)
 

@@ -18,9 +18,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -154,48 +152,6 @@ public class ShadowFreddyEntity extends Monster implements GeoEntity {
 				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
 			}
 		});
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canUse() {
-				double x = ShadowFreddyEntity.this.getX();
-				double y = ShadowFreddyEntity.this.getY();
-				double z = ShadowFreddyEntity.this.getZ();
-				Entity entity = ShadowFreddyEntity.this;
-				Level world = ShadowFreddyEntity.this.level();
-				return super.canUse() && IsRareNightProcedure.execute(world);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = ShadowFreddyEntity.this.getX();
-				double y = ShadowFreddyEntity.this.getY();
-				double z = ShadowFreddyEntity.this.getZ();
-				Entity entity = ShadowFreddyEntity.this;
-				Level world = ShadowFreddyEntity.this.level();
-				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
-			}
-		});
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
-			@Override
-			public boolean canUse() {
-				double x = ShadowFreddyEntity.this.getX();
-				double y = ShadowFreddyEntity.this.getY();
-				double z = ShadowFreddyEntity.this.getZ();
-				Entity entity = ShadowFreddyEntity.this;
-				Level world = ShadowFreddyEntity.this.level();
-				return super.canUse() && IsRareNightProcedure.execute(world);
-			}
-
-			@Override
-			public boolean canContinueToUse() {
-				double x = ShadowFreddyEntity.this.getX();
-				double y = ShadowFreddyEntity.this.getY();
-				double z = ShadowFreddyEntity.this.getZ();
-				Entity entity = ShadowFreddyEntity.this;
-				Level world = ShadowFreddyEntity.this.level();
-				return super.canContinueToUse() && IsRareNightProcedure.execute(world);
-			}
-		});
 	}
 
 	@Override
@@ -275,6 +231,7 @@ public class ShadowFreddyEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 100);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		return builder;
 	}
 

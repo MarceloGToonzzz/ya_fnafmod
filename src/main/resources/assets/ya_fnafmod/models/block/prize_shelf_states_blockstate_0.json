@@ -3,8 +3,8 @@
   "textures": {
     "all": "ya_fnafmod:block/prize_shelf_movie1",
     "particle": "ya_fnafmod:block/prize_shelf_movie_empty",
-    "1": "ya_fnafmod:block/prize_shelf_movie1",
-    "3": "ya_fnafmod:block/plush_combo1",
+    "0": "ya_fnafmod:block/prize_shelf_movie1",
+    "plushies": "ya_fnafmod:block/plush_combo1",
     "masks": "ya_fnafmod:block/mask_combo1"
   },
   "render_type": "cutout_mipped"

@@ -258,6 +258,7 @@ import net.mcreator.yafnafmod.block.WallPizzaBlock;
 import net.mcreator.yafnafmod.block.WallPaperWrittenBlock;
 import net.mcreator.yafnafmod.block.WallPaperBlock;
 import net.mcreator.yafnafmod.block.WallMakerBlock;
+import net.mcreator.yafnafmod.block.WallJunkBlock;
 import net.mcreator.yafnafmod.block.WallDiscoPizzaLightBlock;
 import net.mcreator.yafnafmod.block.WallArtSpringbonnieBlock;
 import net.mcreator.yafnafmod.block.WallArtPizzaBlock;
@@ -7163,6 +7164,7 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> COAT_HANGER = REGISTRY.register("coat_hanger", () -> new CoatHangerBlock());
 	public static final RegistryObject<Block> HANGING_SHIRT = REGISTRY.register("hanging_shirt", () -> new HangingShirtBlock());
 	public static final RegistryObject<Block> PRIZE_SHELF = REGISTRY.register("prize_shelf", () -> new PrizeShelfBlock());
+	public static final RegistryObject<Block> WALL_JUNK = REGISTRY.register("wall_junk", () -> new WallJunkBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

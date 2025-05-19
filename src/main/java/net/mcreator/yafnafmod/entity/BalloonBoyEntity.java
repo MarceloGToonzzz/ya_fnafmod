@@ -50,6 +50,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.yafnafmod.procedures.VentCrawlerScaleProcedure;
 import net.mcreator.yafnafmod.procedures.NightAnimatronicOnEntityTickUpdateProcedure;
 import net.mcreator.yafnafmod.procedures.AnimatronicRotationProcedure;
 import net.mcreator.yafnafmod.procedures.AnimatronicOnInitialEntitySpawnProcedure;
@@ -206,7 +207,12 @@ public class BalloonBoyEntity extends Monster implements GeoEntity {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		Entity entity = this;
+		Level world = this.level();
+		double x = this.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return super.getDimensions(p_33597_).scale((float) VentCrawlerScaleProcedure.execute(world, x, y, z));
 	}
 
 	public static void init() {
@@ -219,6 +225,7 @@ public class BalloonBoyEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 15);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
 		return builder;
 	}
 

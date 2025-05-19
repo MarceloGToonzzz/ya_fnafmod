@@ -45,7 +45,7 @@ public class DontLookAtFunctionProcedure {
 					if (entity instanceof GoldenFreddyEntity || (entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity) && entityiterator.getPersistentData().getBoolean("hiding_mask") == false) {
 						if (entityiterator instanceof Player || entityiterator instanceof Villager) {
 							if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == entityiterator) {
-								if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, 0.625) == true && (entity instanceof LivingEntity _entity ? _entity.hasLineOfSight(entityiterator) : false)) {
+								if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, 0.625, 0.735) == true && (entity instanceof LivingEntity _entity ? _entity.hasLineOfSight(entityiterator) : false)) {
 									entity.getPersistentData().putDouble("scream_tick", (entity.getPersistentData().getDouble("scream_tick") + 1));
 									if (entity.getPersistentData().getBoolean("started_mumbling") == false) {
 										if (world instanceof Level)

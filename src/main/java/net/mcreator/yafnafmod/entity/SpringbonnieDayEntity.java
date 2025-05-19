@@ -134,7 +134,7 @@ public class SpringbonnieDayEntity extends Monster implements GeoEntity {
 				double z = SpringbonnieDayEntity.this.getZ();
 				Entity entity = SpringbonnieDayEntity.this;
 				Level world = SpringbonnieDayEntity.this.level();
-				return super.canUse() && IsTargetWearingMaskProcedure.execute(entity);
+				return super.canUse() && IsTargetWearingMaskProcedure.execute(target);
 			}
 
 			@Override
@@ -144,7 +144,7 @@ public class SpringbonnieDayEntity extends Monster implements GeoEntity {
 				double z = SpringbonnieDayEntity.this.getZ();
 				Entity entity = SpringbonnieDayEntity.this;
 				Level world = SpringbonnieDayEntity.this.level();
-				return super.canContinueToUse() && IsTargetWearingMaskProcedure.execute(entity);
+				return super.canContinueToUse() && IsTargetWearingMaskProcedure.execute(target);
 			}
 		});
 		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));

@@ -10,7 +10,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.yafnafmod.entity.model.ShadowFreddyModel;
-import net.mcreator.yafnafmod.entity.layer.ShadowFreddyLayer;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -20,7 +19,6 @@ public class ShadowFreddyRenderer extends GeoEntityRenderer<ShadowFreddyEntity> 
 	public ShadowFreddyRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new ShadowFreddyModel());
 		this.shadowRadius = 0.5f;
-		this.addRenderLayer(new ShadowFreddyLayer(this));
 	}
 
 	@Override

@@ -1986,6 +1986,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.COAT_HANGER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.HANGING_SHIRT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PRIZE_SHELF.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WALL_JUNK.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_PLUSHIES = REGISTRY.register("ya_fnaf_mod_plushies",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_plushies")).icon(() -> new ItemStack(YaFnafmodModBlocks.PLUSH_FREDDY.get())).displayItems((parameters, tabData) -> {
@@ -2183,6 +2184,12 @@ public class YaFnafmodModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_skins")).icon(() -> new ItemStack(YaFnafmodModItems.FREDBEAR_STAGE_01_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(YaFnafmodModItems.FREDDY_FAZBEAR_ALT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.FOXY_PIRATE_FIXED_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.FREDDY_FAZBEAR_MOVIE_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.BONNIE_BUNNY_MOVIE_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.CHICA_CHICKEN_MOVIE_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.FOXY_PIRATE_MOVIE_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_MOVIE_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.SHADOW_FREDDY_MOVIE_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SPARKY_DOG_ALT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.BALLOON_BOY_MEME_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SHADOW_FREDDY_ALT_SPAWN_ITEM.get());

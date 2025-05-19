@@ -59,6 +59,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		RustyFunctionProcedure.execute(world, x, y, z, entity);
 		DuckingProcedure.execute(world, x, y, z, entity);
 		CrawlingProcedure.execute(world, x, y, z, entity);
+		GetNewTargetProcedure.execute(world, x, y, z, entity);
 		if (entity instanceof FoxyPirateEntity || entity instanceof WitheredFoxyEntity || entity instanceof ToyFoxyEntity || entity instanceof NightmareFoxyEntity || entity instanceof FuntimeFoxyEntity || entity instanceof DrTeethEntity
 				|| entity instanceof PitbonnieEntity) {
 			if (entity.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {

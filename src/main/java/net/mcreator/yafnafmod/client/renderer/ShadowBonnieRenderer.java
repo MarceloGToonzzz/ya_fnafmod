@@ -10,7 +10,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.yafnafmod.entity.model.ShadowBonnieModel;
-import net.mcreator.yafnafmod.entity.layer.ShadowBonnieLayer;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -20,7 +19,6 @@ public class ShadowBonnieRenderer extends GeoEntityRenderer<ShadowBonnieEntity> 
 	public ShadowBonnieRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new ShadowBonnieModel());
 		this.shadowRadius = 0.5f;
-		this.addRenderLayer(new ShadowBonnieLayer(this));
 	}
 
 	@Override

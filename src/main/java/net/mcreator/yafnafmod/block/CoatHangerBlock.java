@@ -74,10 +74,10 @@ public class CoatHangerBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(3, 12, 0, 29, 16, 1);
-			case NORTH -> box(-13, 12, 15, 13, 16, 16);
-			case EAST -> box(0, 12, -13, 1, 16, 13);
-			case WEST -> box(15, 12, 3, 16, 16, 29);
+			default -> box(-13, 12, 0, 13, 16, 1);
+			case NORTH -> box(3, 12, 15, 29, 16, 16);
+			case EAST -> box(0, 12, 3, 1, 16, 29);
+			case WEST -> box(15, 12, -13, 16, 16, 13);
 		};
 	}
 
@@ -110,7 +110,7 @@ public class CoatHangerBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		FazwrenchCycleVariantsProcedure.execute(world, x, y, z, blockstate);
+		FazwrenchCycleVariantsProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

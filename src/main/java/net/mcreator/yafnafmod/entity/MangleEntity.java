@@ -19,9 +19,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Spider;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -54,6 +52,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.yafnafmod.procedures.VentCrawlerScaleProcedure;
 import net.mcreator.yafnafmod.procedures.NightAnimatronicOnEntityTickUpdateProcedure;
 import net.mcreator.yafnafmod.procedures.IsItNighttimeProcedure;
 import net.mcreator.yafnafmod.procedures.AnimatronicRotationProcedure;
@@ -124,9 +123,7 @@ public class MangleEntity extends Spider implements GeoEntity {
 		});
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, Villager.class, false, false));
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this) {
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this) {
 			@Override
 			public boolean canUse() {
 				double x = MangleEntity.this.getX();
@@ -147,7 +144,7 @@ public class MangleEntity extends Spider implements GeoEntity {
 				return super.canContinueToUse() && IsItNighttimeProcedure.execute(world);
 			}
 		});
-		this.goalSelector.addGoal(10, new FloatGoal(this));
+		this.goalSelector.addGoal(8, new FloatGoal(this));
 	}
 
 	@Override
@@ -224,7 +221,12 @@ public class MangleEntity extends Spider implements GeoEntity {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		Entity entity = this;
+		Level world = this.level();
+		double x = this.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		return super.getDimensions(p_33597_).scale((float) VentCrawlerScaleProcedure.execute(world, x, y, z));
 	}
 
 	@Override
@@ -243,6 +245,7 @@ public class MangleEntity extends Spider implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 15);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		return builder;
 	}
 

@@ -68,7 +68,7 @@ public class FlashlightWeakProcedure {
 						|| (entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FLASHLIGHT.get()
 								&& (entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().getBoolean("damaged")) {
 					if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:flashlight_weak"))) && !(entity instanceof NightmareFreddyEntity)) {
-						if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, entity.getEyeHeight()) == true) {
+						if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, entity.getEyeHeight(), 0.735) == true) {
 							if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:flashlight_weak"))) && !(entity instanceof NightmareFreddyEntity) && !(entity instanceof PlushtrapEntity)
 									&& !(entity instanceof NightmareBbEntity) && !(entity instanceof FuntimeFoxyEntity) && !(entity instanceof LolbitEntity)) {
 								if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("phantom")) {
@@ -96,18 +96,14 @@ public class FlashlightWeakProcedure {
 									if (entity instanceof NightmareBbEntity) {
 										((NightmareBbEntity) entity).setAnimation("animation.bb.sit");
 									}
-									if (entity instanceof Mob _mobSetNoAi) {
-										_mobSetNoAi.setNoAi(true);
-									}
+									if (entity instanceof Mob _entity)
+										_entity.getNavigation().stop();
 								} else {
 									if (entity instanceof PlushtrapEntity) {
 										((PlushtrapEntity) entity).setAnimation("empty");
 									}
 									if (entity instanceof NightmareBbEntity) {
 										((NightmareBbEntity) entity).setAnimation("empty");
-									}
-									if (entity instanceof Mob _mobSetNoAi) {
-										_mobSetNoAi.setNoAi(false);
 									}
 								}
 							} else if (entity instanceof FuntimeFoxyEntity || entity instanceof LolbitEntity) {
@@ -116,7 +112,7 @@ public class FlashlightWeakProcedure {
 							}
 						}
 					} else {
-						if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, 0.625) == true) {
+						if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, 0.625, 0.735) == true) {
 							if ((entity instanceof NightmareFreddyEntity _datEntI ? _datEntI.getEntityData().get(NightmareFreddyEntity.DATA_freddles) : 0) != 4) {
 								if (entity instanceof NightmareFreddyEntity _datEntSetI)
 									_datEntSetI.getEntityData().set(NightmareFreddyEntity.DATA_freddles, 0);
@@ -125,8 +121,8 @@ public class FlashlightWeakProcedure {
 					}
 				} else {
 					if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-						if ((entity instanceof PlushtrapEntity _datEntL61 && _datEntL61.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-								|| (entity instanceof NightmareBbEntity _datEntL62 && _datEntL62.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+						if ((entity instanceof PlushtrapEntity _datEntL60 && _datEntL60.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+								|| (entity instanceof NightmareBbEntity _datEntL61 && _datEntL61.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 							if (entity instanceof PlushtrapEntity _datEntSetL)
 								_datEntSetL.getEntityData().set(PlushtrapEntity.DATA_sitting, false);
 							if (entity instanceof NightmareBbEntity _datEntSetL)

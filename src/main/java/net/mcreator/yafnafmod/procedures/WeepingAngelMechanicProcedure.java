@@ -21,7 +21,7 @@ public class WeepingAngelMechanicProcedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entity instanceof Player || entity instanceof YenndoEntity) {
-					if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, entity.getEyeHeight()) == true) {
+					if (IsEntityBeingLookedAtProcedure.execute(world, entity, entityiterator, entity.getEyeHeight(), 0.735) == true) {
 						if (entity instanceof Mob _entity)
 							_entity.getNavigation().stop();
 						entity.setDeltaMovement(new Vec3(0, 0, 0));

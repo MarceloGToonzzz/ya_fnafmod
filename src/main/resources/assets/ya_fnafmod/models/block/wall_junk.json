@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/walldecor_movie1",
+  "textures": {
+    "all": "ya_fnafmod:block/walldecor_movie1",
+    "particle": "ya_fnafmod:block/walldecor_movie1",
+    "1": "ya_fnafmod:block/walldecor_movie1"
+  },
+  "render_type": "cutout_mipped"
+}

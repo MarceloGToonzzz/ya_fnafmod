@@ -17,10 +17,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -36,7 +33,6 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
@@ -116,30 +112,8 @@ public class NightmarionneEntity extends Monster implements GeoEntity {
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canContinueToUse() {
-				double x = NightmarionneEntity.this.getX();
-				double y = NightmarionneEntity.this.getY();
-				double z = NightmarionneEntity.this.getZ();
-				Entity entity = NightmarionneEntity.this;
-				Level world = NightmarionneEntity.this.level();
-				return super.canContinueToUse() && true;
-			}
-		});
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
-			@Override
-			public boolean canContinueToUse() {
-				double x = NightmarionneEntity.this.getX();
-				double y = NightmarionneEntity.this.getY();
-				double z = NightmarionneEntity.this.getZ();
-				Entity entity = NightmarionneEntity.this;
-				Level world = NightmarionneEntity.this.level();
-				return super.canContinueToUse() && true;
-			}
-		});
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(5, new FloatGoal(this));
 	}
 
 	@Override
@@ -212,6 +186,7 @@ public class NightmarionneEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 20);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		return builder;
 	}
 

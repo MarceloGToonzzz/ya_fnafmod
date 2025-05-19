@@ -332,7 +332,7 @@ public class CrawlingProcedure {
 									return false;
 								}
 							}.checkGamemode(entityiterator)) {
-								if (IsTargetWearingMaskProcedure.execute(entity) == true) {
+								if (entityiterator.getPersistentData().getBoolean("hiding_mask") == true) {
 									can_laugh = true;
 								}
 							}

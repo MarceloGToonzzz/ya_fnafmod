@@ -80,6 +80,8 @@ public class SpawnItemRightclickedOnBlockProcedure {
 				spawned = spawned.replace("_frights", "");
 			} else if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("meme")) {
 				spawned = spawned.replace("_meme", "");
+			} else if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("movie")) {
+				spawned = spawned.replace("_movie", "");
 			}
 			if (spawned.contains("walker")) {
 				spawned = spawned.replace("_walker", "");
@@ -138,6 +140,8 @@ public class SpawnItemRightclickedOnBlockProcedure {
 									entityiterator.getPersistentData().putString("skin", "frights");
 								} else if (og_registry.contains("meme")) {
 									entityiterator.getPersistentData().putString("skin", "meme");
+								} else if (og_registry.contains("movie")) {
+									entityiterator.getPersistentData().putString("skin", "movie");
 								}
 								if (og_registry.contains("walker")) {
 									if (entityiterator instanceof FredbearDayEntity _datEntSetL)

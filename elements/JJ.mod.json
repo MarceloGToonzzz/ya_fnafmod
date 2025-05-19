@@ -10,7 +10,8 @@
       "fixedValue": 1.0
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.0,
+      "name": "VentCrawlerScale"
     },
     "entityDataEntries": [
       {
@@ -31,7 +32,7 @@
         "value": 0
       }
     ],
-    "modelWidth": 0.6,
+    "modelWidth": 0.9,
     "modelHeight": 0.85,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
@@ -71,7 +72,7 @@
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 3,
     "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
+    "knockbackResistance": 1.0,
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,

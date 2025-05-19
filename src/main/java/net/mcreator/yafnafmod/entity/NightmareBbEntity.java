@@ -19,9 +19,7 @@ import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.PanicGoal;
@@ -124,31 +122,9 @@ public class NightmareBbEntity extends Monster implements GeoEntity {
 			}
 		});
 		this.goalSelector.addGoal(5, new PanicGoal(this, 1.2));
-		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false) {
-			@Override
-			public boolean canContinueToUse() {
-				double x = NightmareBbEntity.this.getX();
-				double y = NightmareBbEntity.this.getY();
-				double z = NightmareBbEntity.this.getZ();
-				Entity entity = NightmareBbEntity.this;
-				Level world = NightmareBbEntity.this.level();
-				return super.canContinueToUse() && true;
-			}
-		});
-		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, Villager.class, false, false) {
-			@Override
-			public boolean canContinueToUse() {
-				double x = NightmareBbEntity.this.getX();
-				double y = NightmareBbEntity.this.getY();
-				double z = NightmareBbEntity.this.getZ();
-				Entity entity = NightmareBbEntity.this;
-				Level world = NightmareBbEntity.this.level();
-				return super.canContinueToUse() && true;
-			}
-		});
-		this.goalSelector.addGoal(8, new RandomStrollGoal(this, 1));
-		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(10, new FloatGoal(this));
+		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1));
+		this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(8, new FloatGoal(this));
 	}
 
 	@Override
@@ -241,6 +217,7 @@ public class NightmareBbEntity extends Monster implements GeoEntity {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		return builder;
 	}
 
