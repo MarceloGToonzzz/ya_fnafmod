@@ -97,7 +97,7 @@ public class PizzaOvenBlock extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		PizzaOvenOnTickUpdateProcedure.execute(world, x, y, z, blockstate);
+		PizzaOvenOnTickUpdateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 5);
 	}
 

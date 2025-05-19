@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/muraltext",
+  "textures": {
+    "all": "ya_fnafmod:block/muraltext_welcome",
+    "particle": "ya_fnafmod:block/muraltext_welcome",
+    "0": "ya_fnafmod:block/muraltext_welcome"
+  },
+  "render_type": "cutout_mipped"
+}

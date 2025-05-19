@@ -1,130 +1,262 @@
 {
   "mappings": {
+    "tbonnie": {
+      "map": {
+        "17": "plush_tbonnie"
+      },
+      "name": "tbonnie"
+    },
     "chica": {
       "map": {
-        "2": "plush_cchica"
+        "17": "plush_cchica"
       },
       "name": "chica"
     },
-    "default": {
-      "map": {
-        "2": "plush_cfreddy"
-      },
-      "name": "default"
-    },
     "bonnie": {
       "map": {
-        "2": "plush_cbonnie"
+        "17": "plush_cbonnie"
       },
       "name": "bonnie"
     },
+    "tfreddy": {
+      "map": {
+        "17": "plush_tfreddy"
+      },
+      "name": "tfreddy"
+    },
+    "bpolar": {
+      "map": {
+        "17": "plush_barryp"
+      },
+      "name": "bpolar"
+    },
     "uchica": {
       "map": {
-        "2": "plush_uwchica"
+        "17": "plush_uwchica"
       },
       "name": "uchica"
     },
     "ufreddy": {
       "map": {
-        "2": "plush_uwfreddy"
+        "17": "plush_uwfreddy"
       },
       "name": "ufreddy"
     },
-    "foxy": {
-      "map": {
-        "2": "plush_cfoxy"
-      },
-      "name": "foxy"
-    },
-    "ubonnie": {
-      "map": {
-        "2": "plush_uwbonnie"
-      },
-      "name": "ubonnie"
-    },
-    "ufoxy": {
-      "map": {
-        "2": "plush_uwfoxy"
-      },
-      "name": "ufoxy"
-    },
-    "fredbear": {
-      "map": {
-        "2": "plush_fredbear"
-      },
-      "name": "fredbear"
-    },
-    "springbonnie": {
-      "map": {
-        "2": "plush_springbonnie"
-      },
-      "name": "springbonnie"
-    },
-    "tfreddy": {
-      "map": {
-        "2": "plush_tfreddy"
-      },
-      "name": "tfreddy"
-    },
-    "tbonnie": {
-      "map": {
-        "2": "plush_tbonnie"
-      },
-      "name": "tbonnie"
-    },
-    "tchica": {
-      "map": {
-        "2": "plush_tchica"
-      },
-      "name": "tchica"
-    },
-    "tfoxy": {
-      "map": {
-        "2": "plush_tfoxy"
-      },
-      "name": "tfoxy"
-    },
-    "bpolar": {
-      "map": {
-        "2": "plush_barryp"
-      },
-      "name": "bpolar"
-    },
-    "indigo": {
-      "map": {
-        "2": "plush_indigo"
-      },
-      "name": "indigo"
-    },
     "guy_stephan": {
       "map": {
-        "2": "plush_stephan"
+        "17": "plush_stephan"
       },
       "name": "guy_stephan"
     },
-    "guy_logan": {
+    "tfoxy": {
       "map": {
-        "2": "plush_logan"
+        "17": "plush_tfoxy"
       },
-      "name": "guy_logan"
+      "name": "tfoxy"
     },
     "guy_staticbear": {
       "map": {
-        "2": "plush_staticbear"
+        "17": "plush_staticbear"
       },
       "name": "guy_staticbear"
     },
     "guy_marcelo": {
       "map": {
-        "2": "plush_marcelo"
+        "17": "plush_marcelo"
       },
       "name": "guy_marcelo"
     },
+    "default": {
+      "map": {
+        "17": "plush_cfreddy"
+      },
+      "name": "default"
+    },
     "fredboi": {
       "map": {
-        "2": "plush_fredboi"
+        "17": "plush_fredboi"
       },
       "name": "fredboi"
+    },
+    "tchica": {
+      "map": {
+        "17": "plush_tchica"
+      },
+      "name": "tchica"
+    },
+    "fredbear": {
+      "map": {
+        "17": "plush_fredbear"
+      },
+      "name": "fredbear"
+    },
+    "springbonnie": {
+      "map": {
+        "17": "plush_springbonnie"
+      },
+      "name": "springbonnie"
+    },
+    "foxy": {
+      "map": {
+        "17": "plush_cfoxy"
+      },
+      "name": "foxy"
+    },
+    "indigo": {
+      "map": {
+        "17": "plush_indigo"
+      },
+      "name": "indigo"
+    },
+    "ubonnie": {
+      "map": {
+        "17": "plush_uwbonnie"
+      },
+      "name": "ubonnie"
+    },
+    "ufoxy": {
+      "map": {
+        "17": "plush_uwfoxy"
+      },
+      "name": "ufoxy"
+    },
+    "baby": {
+      "map": {
+        "17": "plush_baby"
+      },
+      "name": "baby"
+    },
+    "ballora": {
+      "map": {
+        "17": "plush_ballora"
+      },
+      "name": "ballora"
+    },
+    "ftfreddy": {
+      "map": {
+        "17": "plush_ftfreddy"
+      },
+      "name": "ftfreddy"
+    },
+    "ftfoxy": {
+      "map": {
+        "17": "plush_ftfoxy"
+      },
+      "name": "ftfoxy"
+    },
+    "lolbit": {
+      "map": {
+        "17": "plush_lolbit"
+      },
+      "name": "lolbit"
+    },
+    "rfreddy": {
+      "map": {
+        "17": "plush_rfreddy"
+      },
+      "name": "rfreddy"
+    },
+    "rbonnie": {
+      "map": {
+        "17": "plush_rbonnie"
+      },
+      "name": "rbonnie"
+    },
+    "rchica": {
+      "map": {
+        "17": "plush_rchica"
+      },
+      "name": "rchica"
+    },
+    "rfoxy": {
+      "map": {
+        "17": "plush_rfoxy"
+      },
+      "name": "rfoxy"
+    },
+    "lefty": {
+      "map": {
+        "17": "plush_lefty"
+      },
+      "name": "lefty"
+    },
+    "neddbear": {
+      "map": {
+        "17": "plush_neddbear"
+      },
+      "name": "neddbear"
+    },
+    "pigpatch": {
+      "map": {
+        "17": "plush_pigpatch"
+      },
+      "name": "pigpatch"
+    },
+    "orville": {
+      "map": {
+        "17": "plush_orville"
+      },
+      "name": "orville"
+    },
+    "happyfrog": {
+      "map": {
+        "17": "plush_happyfrog"
+      },
+      "name": "happyfrog"
+    },
+    "mrhippo": {
+      "map": {
+        "17": "plush_mrhippo"
+      },
+      "name": "mrhippo"
+    },
+    "guy_logan": {
+      "map": {
+        "17": "plush_logan"
+      },
+      "name": "guy_logan"
+    },
+    "ftchica": {
+      "map": {
+        "17": "plush_ftchica"
+      },
+      "name": "ftchica"
+    },
+    "lola": {
+      "map": {
+        "17": "plush_lolachica"
+      },
+      "name": "lola"
+    },
+    "jolly": {
+      "map": {
+        "17": "plush_jolly"
+      },
+      "name": "jolly"
+    },
+    "ricky": {
+      "map": {
+        "17": "plush_ricky"
+      },
+      "name": "ricky"
+    },
+    "doug": {
+      "map": {
+        "17": "plush_doug"
+      },
+      "name": "doug"
+    },
+    "delilah": {
+      "map": {
+        "17": "plush_ftdelilah"
+      },
+      "name": "delilah"
+    },
+    "gus": {
+      "map": {
+        "17": "plush_gus"
+      },
+      "name": "gus"
     }
   }
 }

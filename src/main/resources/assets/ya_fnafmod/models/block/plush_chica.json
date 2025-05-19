@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/plush_cchica",
     "particle": "ya_fnafmod:block/plush_cchica",
-    "2": "ya_fnafmod:block/plush_cchica"
+    "17": "ya_fnafmod:block/plush_cchica"
   },
   "render_type": "cutout"
 }

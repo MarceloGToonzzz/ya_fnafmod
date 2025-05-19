@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CagedLightRed",
+    "blockstateList": [
+      {
+        "texture": "cagedlight_redon",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cagedlight:red",
+        "luminance": 7,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

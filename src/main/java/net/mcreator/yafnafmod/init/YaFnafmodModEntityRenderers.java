@@ -45,11 +45,14 @@ import net.mcreator.yafnafmod.client.renderer.SpringbonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.ShreddyFazchairRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SeatRenderer;
 import net.mcreator.yafnafmod.client.renderer.SeabonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.ScraptrapRenderer;
+import net.mcreator.yafnafmod.client.renderer.ScrapSparkyDogRenderer;
+import net.mcreator.yafnafmod.client.renderer.ScrapSparkyDogDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ScrapBabyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RustyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RustyDayRenderer;
@@ -77,6 +80,8 @@ import net.mcreator.yafnafmod.client.renderer.RatRenderer;
 import net.mcreator.yafnafmod.client.renderer.RaccoonRenderer;
 import net.mcreator.yafnafmod.client.renderer.PurpleGuyRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetRenderer;
+import net.mcreator.yafnafmod.client.renderer.PuppetFreddybearRenderer;
+import net.mcreator.yafnafmod.client.renderer.PuppetFreddybearDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.PossumRenderer;
 import net.mcreator.yafnafmod.client.renderer.PopgoesWeaselRenderer;
@@ -450,5 +455,10 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.TOY_CUPCAKE_ENTITY.get(), ToyCupcakeEntityRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.RETRO_CUPCAKE_ENTITY.get(), RetroCupcakeEntityRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.RETRO_CUPCAKE_FMS_ENTITY.get(), RetroCupcakeFmsEntityRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SCRAP_SPARKY_DOG.get(), ScrapSparkyDogRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR.get(), PuppetFreddybearRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SHREDDY_FAZCHAIR.get(), ShreddyFazchairRenderer::new);
 	}
 }

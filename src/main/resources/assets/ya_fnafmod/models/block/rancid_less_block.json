@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/rancid_block_less",
+    "particle": "ya_fnafmod:block/rancid_block_less"
+  },
+  "render_type": "solid"
+}

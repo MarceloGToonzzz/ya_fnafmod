@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/rancid_block_gray",
+    "bottom": "ya_fnafmod:block/rancid_block_gray",
+    "top": "ya_fnafmod:block/rancid_block_gray",
+    "side": "ya_fnafmod:block/rancid_block_gray"
+  },
+  "render_type": "solid"
+}

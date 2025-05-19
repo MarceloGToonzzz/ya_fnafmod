@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/prize_counter",
+  "textures": {
+    "all": "ya_fnafmod:block/prize_counter",
+    "particle": "ya_fnafmod:block/prize_counter",
+    "1": "ya_fnafmod:block/prize_counter"
+  },
+  "render_type": "cutout_mipped"
+}

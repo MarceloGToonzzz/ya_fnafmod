@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "coathanger"
+      },
+      "name": "default"
+    },
+    "coat1": {
+      "map": {
+        "1": "coathanger_coat1"
+      },
+      "name": "coat1"
+    },
+    "coat2": {
+      "map": {
+        "1": "coathanger_coat2"
+      },
+      "name": "coat2"
+    }
+  }
+}

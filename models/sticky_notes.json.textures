@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "stickynotes1"
+      },
+      "name": "default"
+    },
+    "yellowpink": {
+      "map": {
+        "0": "stickynotes3"
+      },
+      "name": "yellowpink"
+    },
+    "pinkgreen": {
+      "map": {
+        "0": "stickynotes2"
+      },
+      "name": "pinkgreen"
+    },
+    "bluegreen": {
+      "map": {
+        "0": "stickynotes4"
+      },
+      "name": "bluegreen"
+    }
+  }
+}

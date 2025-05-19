@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/plush",
+  "textures": {
+    "all": "ya_fnafmod:block/plush_lolachica",
+    "particle": "ya_fnafmod:block/plush_lolachica",
+    "17": "ya_fnafmod:block/plush_lolachica"
+  },
+  "render_type": "cutout"
+}

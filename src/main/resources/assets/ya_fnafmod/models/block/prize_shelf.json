@@ -1,0 +1,11 @@
+{
+  "parent": "ya_fnafmod:custom/prize_shelf",
+  "textures": {
+    "all": "ya_fnafmod:block/prize_shelf_movie_empty",
+    "particle": "ya_fnafmod:block/prize_shelf_movie_empty",
+    "1": "ya_fnafmod:block/prize_shelf_movie_empty",
+    "3": "ya_fnafmod:block/empty",
+    "masks": "ya_fnafmod:block/empty"
+  },
+  "render_type": "cutout_mipped"
+}

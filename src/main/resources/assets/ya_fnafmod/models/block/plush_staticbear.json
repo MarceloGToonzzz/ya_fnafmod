@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/plush_staticbear",
     "particle": "ya_fnafmod:block/plush_staticbear",
-    "2": "ya_fnafmod:block/plush_staticbear"
+    "17": "ya_fnafmod:block/plush_staticbear"
   },
   "render_type": "cutout"
 }

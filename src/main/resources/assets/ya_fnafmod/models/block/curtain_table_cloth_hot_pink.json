@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/tablecloth_curtain",
+  "textures": {
+    "all": "ya_fnafmod:block/curtain_hotpink",
+    "particle": "ya_fnafmod:block/curtain_hotpink",
+    "1": "ya_fnafmod:block/curtain_hotpink"
+  },
+  "render_type": "solid"
+}

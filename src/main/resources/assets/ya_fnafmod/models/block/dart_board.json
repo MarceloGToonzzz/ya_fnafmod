@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/dart_board",
+  "textures": {
+    "all": "ya_fnafmod:block/dart_board",
+    "particle": "ya_fnafmod:block/dart_board",
+    "0": "ya_fnafmod:block/dart_board"
+  },
+  "render_type": "cutout_mipped"
+}

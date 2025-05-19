@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/sticky_notes",
+  "textures": {
+    "all": "ya_fnafmod:block/stickynotes2",
+    "particle": "ya_fnafmod:block/stickynotes1",
+    "0": "ya_fnafmod:block/stickynotes3"
+  },
+  "render_type": "cutout_mipped"
+}

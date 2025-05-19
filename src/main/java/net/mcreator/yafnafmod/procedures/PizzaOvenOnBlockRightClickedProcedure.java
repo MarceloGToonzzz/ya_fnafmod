@@ -60,7 +60,7 @@ public class PizzaOvenOnBlockRightClickedProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
-		if (0 < new Object() {
+		if (1 <= new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)

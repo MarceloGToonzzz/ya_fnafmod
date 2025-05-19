@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "red": {
+      "map": {
+        "0": "cagedlight_redon"
+      },
+      "name": "red"
+    },
+    "default": {
+      "map": {
+        "0": "cagedlight_yellowoff"
+      },
+      "name": "default"
+    },
+    "yellowon": {
+      "map": {
+        "0": "cagedlight_yellowon"
+      },
+      "name": "yellowon"
+    },
+    "redoff": {
+      "map": {
+        "0": "cagedlight_redoff"
+      },
+      "name": "redoff"
+    }
+  }
+}

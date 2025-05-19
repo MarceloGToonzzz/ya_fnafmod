@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/plush",
+  "textures": {
+    "all": "ya_fnafmod:block/plush_orville",
+    "particle": "ya_fnafmod:block/plush_orville",
+    "17": "ya_fnafmod:block/plush_orville"
+  },
+  "render_type": "cutout"
+}

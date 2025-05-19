@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "wallprop_flat_bigstar"
+      },
+      "name": "default"
+    }
+  }
+}

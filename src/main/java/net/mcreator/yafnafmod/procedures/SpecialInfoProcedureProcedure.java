@@ -163,7 +163,7 @@ public class SpecialInfoProcedureProcedure {
 			} else if (entity_registry.contains("rockstar_freddy_walker")) {
 				tooltip.add((int) cur_pos, Component.literal("- When he wakes up, give him 5 Fazcoins to make him go to sleep!"));
 				cur_pos = cur_pos + 1;
-			} else if (entity_registry.contains("puppet") && !entity_registry.contains("phantom")) {
+			} else if (itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_musicbox")))) {
 				tooltip.add((int) cur_pos, Component.literal("- Use the Music Box to lure her to it! Make sure to keep it wound up though!"));
 				cur_pos = cur_pos + 1;
 			}

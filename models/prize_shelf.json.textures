@@ -1,0 +1,20 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "prize_shelf_movie_empty",
+        "3": "empty",
+        "masks": "empty"
+      },
+      "name": "default"
+    },
+    "movie1": {
+      "map": {
+        "1": "prize_shelf_movie1",
+        "3": "plush_combo1",
+        "masks": "mask_combo1"
+      },
+      "name": "movie1"
+    }
+  }
+}

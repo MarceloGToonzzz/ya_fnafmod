@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/plush_uwfoxy",
     "particle": "ya_fnafmod:block/plush_uwfoxy",
-    "2": "ya_fnafmod:block/plush_uwfoxy"
+    "17": "ya_fnafmod:block/plush_uwfoxy"
   },
   "render_type": "cutout"
 }

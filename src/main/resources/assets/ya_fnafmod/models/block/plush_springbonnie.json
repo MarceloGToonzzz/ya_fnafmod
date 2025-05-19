@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/plush_springbonnie",
     "particle": "ya_fnafmod:block/plush_springbonnie",
-    "2": "ya_fnafmod:block/plush_springbonnie"
+    "17": "ya_fnafmod:block/plush_springbonnie"
   },
   "render_type": "cutout"
 }

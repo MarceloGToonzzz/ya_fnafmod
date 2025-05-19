@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "dirty": {
+      "map": {
+        "0": "mirror_dirty"
+      },
+      "name": "dirty"
+    },
+    "default": {
+      "map": {
+        "0": "mirror"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -23,6 +23,7 @@ import net.mcreator.yafnafmod.entity.NightmareBbDayEntity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
+import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
@@ -33,8 +34,12 @@ import net.mcreator.yafnafmod.entity.FredbearEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateDayEntity;
+import net.mcreator.yafnafmod.entity.ChicaChickenEntity;
+import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
 import net.mcreator.yafnafmod.entity.CandyCatEntity;
 import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
+import net.mcreator.yafnafmod.entity.BonnieBunnyEntity;
+import net.mcreator.yafnafmod.entity.BonnieBunnyDayEntity;
 import net.mcreator.yafnafmod.entity.BonbonEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
@@ -160,6 +165,27 @@ public class SettingSkinProcedure {
 					animatable.setTexture("bb_enragementchild");
 				if (entity instanceof BalloonBoyDayEntity animatable)
 					animatable.setTexture("bb_enragementchild");
+			} else if ((skin).equals("movie")) {
+				if (entity instanceof FreddyFazbearEntity animatable)
+					animatable.setTexture("freddyfazbear_movie");
+				if (entity instanceof FreddyFazbearDayEntity animatable)
+					animatable.setTexture("freddyfazbear_movie");
+				if (entity instanceof BonnieBunnyEntity animatable)
+					animatable.setTexture("bonniebunny_movie");
+				if (entity instanceof BonnieBunnyDayEntity animatable)
+					animatable.setTexture("bonniebunny_movie");
+				if (entity instanceof ChicaChickenEntity animatable)
+					animatable.setTexture("chicachicken_movie");
+				if (entity instanceof ChicaChickenDayEntity animatable)
+					animatable.setTexture("chicachicken_movie");
+				if (entity instanceof FoxyPirateEntity animatable)
+					animatable.setTexture("foxy_pirate_movie");
+				if (entity instanceof FoxyPirateDayEntity animatable)
+					animatable.setTexture("foxy_pirate_movie");
+				if (entity instanceof GoldenFreddyEntity animatable)
+					animatable.setTexture("gfreddy_movie");
+				if (entity instanceof ShadowFreddyEntity animatable)
+					animatable.setTexture("sfreddy_movie");
 			}
 			entity.getPersistentData().putString("skin", skin);
 		} else {

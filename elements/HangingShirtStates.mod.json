@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "HangingShirt",
+    "blockstateList": [
+      {
+        "texture": "hangingshirt_1bonnie",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "hanging_shirts:bonnie",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "hangingshirt_1chica",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "hanging_shirts:chica",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "hangingshirt_1foxy",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "hanging_shirts:foxy",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

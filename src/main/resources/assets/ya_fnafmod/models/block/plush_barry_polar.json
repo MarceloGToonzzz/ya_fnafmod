@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/plush_barryp",
     "particle": "ya_fnafmod:block/plush_barryp",
-    "2": "ya_fnafmod:block/plush_barryp"
+    "17": "ya_fnafmod:block/plush_barryp"
   },
   "render_type": "cutout"
 }

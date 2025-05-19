@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cagedlight",
+  "textures": {
+    "all": "ya_fnafmod:block/cagedlight_redon",
+    "particle": "ya_fnafmod:block/cagedlight_redoff",
+    "0": "ya_fnafmod:block/cagedlight_redon"
+  },
+  "render_type": "cutout_mipped"
+}

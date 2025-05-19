@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CagedLightYellow",
+    "blockstateList": [
+      {
+        "texture": "cagedlight_yellowon",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cagedlight:yellowon",
+        "luminance": 7,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

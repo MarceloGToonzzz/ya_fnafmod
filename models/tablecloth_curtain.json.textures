@@ -1,0 +1,208 @@
+{
+  "mappings": {
+    "magenta": {
+      "map": {
+        "1": "curtain_magenta"
+      },
+      "name": "magenta"
+    },
+    "pink": {
+      "map": {
+        "1": "curtain_pink"
+      },
+      "name": "pink"
+    },
+    "blue_starless": {
+      "map": {
+        "1": "curtain_blue_starless"
+      },
+      "name": "blue_starless"
+    },
+    "yellow": {
+      "map": {
+        "1": "curtain_yellow"
+      },
+      "name": "yellow"
+    },
+    "gray_starless": {
+      "map": {
+        "1": "curtain_gray_starless"
+      },
+      "name": "gray_starless"
+    },
+    "hotpink": {
+      "map": {
+        "1": "curtain_hotpink"
+      },
+      "name": "hotpink"
+    },
+    "cyan": {
+      "map": {
+        "1": "curtain_cyan"
+      },
+      "name": "cyan"
+    },
+    "lime_starless": {
+      "map": {
+        "1": "curtain_lime_starless"
+      },
+      "name": "lime_starless"
+    },
+    "purple_starless": {
+      "map": {
+        "1": "curtain_purple_starless"
+      },
+      "name": "purple_starless"
+    },
+    "hotpink_starless": {
+      "map": {
+        "1": "curtain_hotpink_starless"
+      },
+      "name": "hotpink_starless"
+    },
+    "yellow_starless": {
+      "map": {
+        "1": "curtain_yellow_starless"
+      },
+      "name": "yellow_starless"
+    },
+    "pink_starless": {
+      "map": {
+        "1": "curtain_pink_starless"
+      },
+      "name": "pink_starless"
+    },
+    "default": {
+      "map": {
+        "1": "curtain_red"
+      },
+      "name": "default"
+    },
+    "gray": {
+      "map": {
+        "1": "curtain_gray"
+      },
+      "name": "gray"
+    },
+    "lightblue": {
+      "map": {
+        "1": "curtain_lightblue"
+      },
+      "name": "lightblue"
+    },
+    "white": {
+      "map": {
+        "1": "curtain_white"
+      },
+      "name": "white"
+    },
+    "black_starless": {
+      "map": {
+        "1": "curtain_black_starless"
+      },
+      "name": "black_starless"
+    },
+    "magenta_starless": {
+      "map": {
+        "1": "curtain_magenta_starless"
+      },
+      "name": "magenta_starless"
+    },
+    "brown_starless": {
+      "map": {
+        "1": "curtain_brown_starless"
+      },
+      "name": "brown_starless"
+    },
+    "lightblue_starless": {
+      "map": {
+        "1": "curtain_lightblue_starless"
+      },
+      "name": "lightblue_starless"
+    },
+    "lightgray": {
+      "map": {
+        "1": "curtain_lightgray"
+      },
+      "name": "lightgray"
+    },
+    "orange_starless": {
+      "map": {
+        "1": "curtain_orange_starless"
+      },
+      "name": "orange_starless"
+    },
+    "green": {
+      "map": {
+        "1": "curtain_green"
+      },
+      "name": "green"
+    },
+    "lime": {
+      "map": {
+        "1": "curtain_lime"
+      },
+      "name": "lime"
+    },
+    "white_starless": {
+      "map": {
+        "1": "curtain_white_starless"
+      },
+      "name": "white_starless"
+    },
+    "black": {
+      "map": {
+        "1": "curtain_black"
+      },
+      "name": "black"
+    },
+    "lightgray_starless": {
+      "map": {
+        "1": "curtain_lightgray_starless"
+      },
+      "name": "lightgray_starless"
+    },
+    "brown": {
+      "map": {
+        "1": "curtain_brown"
+      },
+      "name": "brown"
+    },
+    "orange": {
+      "map": {
+        "1": "curtain_orange"
+      },
+      "name": "orange"
+    },
+    "cyan_starless": {
+      "map": {
+        "1": "curtain_cyan_starless"
+      },
+      "name": "cyan_starless"
+    },
+    "blue": {
+      "map": {
+        "1": "curtain_blue"
+      },
+      "name": "blue"
+    },
+    "green_starless": {
+      "map": {
+        "1": "curtain_green_starless"
+      },
+      "name": "green_starless"
+    },
+    "purple": {
+      "map": {
+        "1": "curtain_purple"
+      },
+      "name": "purple"
+    },
+    "red_starless": {
+      "map": {
+        "1": "curtain_red_starless"
+      },
+      "name": "red_starless"
+    }
+  }
+}

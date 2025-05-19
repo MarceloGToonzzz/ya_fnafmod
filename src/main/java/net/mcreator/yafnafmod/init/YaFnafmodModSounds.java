@@ -149,4 +149,5 @@ public class YaFnafmodModSounds {
 	public static final RegistryObject<SoundEvent> ANIM_BPOLAR_KILLVOICE = REGISTRY.register("anim_bpolar_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_bpolar_killvoice")));
 	public static final RegistryObject<SoundEvent> ANIM_GUSPUG_KILLVOICE = REGISTRY.register("anim_guspug_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_guspug_killvoice")));
 	public static final RegistryObject<SoundEvent> BG_DONTBLOWIT = REGISTRY.register("bg_dontblowit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_dontblowit")));
+	public static final RegistryObject<SoundEvent> ANIM_GSAF_FREDDYBEAR_LAUGH = REGISTRY.register("anim_gsaf_freddybear_laugh", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_gsaf_freddybear_laugh")));
 }

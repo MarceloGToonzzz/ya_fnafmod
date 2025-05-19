@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/torture_chair",
+  "textures": {
+    "all": "ya_fnafmod:block/chair_torture",
+    "particle": "ya_fnafmod:block/chair_torture",
+    "1": "ya_fnafmod:block/chair_torture"
+  },
+  "render_type": "cutout_mipped"
+}

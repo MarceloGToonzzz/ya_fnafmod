@@ -1589,5 +1589,22 @@
         "stream": true
       }
     ]
+  },
+  "anim_gsaf_freddybear_laugh": {
+    "subtitle": "subtitles.anim_gsaf_freddybear_laugh",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_gsaf_freddybear_laugh1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_gsaf_freddybear_laugh2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_gsaf_freddybear_laugh3",
+        "stream": false
+      }
+    ]
   }
 }

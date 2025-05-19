@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "ya_fnafmod:block/rancid_stagebricks_less",
+    "bottom": "ya_fnafmod:block/rancid_stagebricks_less",
+    "top": "ya_fnafmod:block/rancid_stagebricks_less",
+    "side": "ya_fnafmod:block/rancid_stagebricks_less"
+  },
+  "render_type": "solid"
+}

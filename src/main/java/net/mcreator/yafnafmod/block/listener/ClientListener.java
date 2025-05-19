@@ -42,15 +42,18 @@ import net.mcreator.yafnafmod.block.renderer.StageLightBlueTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SpringbonnieHeadTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SpringbonnieBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SpringbonnieBlock01TileRenderer;
+import net.mcreator.yafnafmod.block.renderer.SparkyDogBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SkeeballPizzarollerTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SkeeballGenericTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SinkKitchenTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ShreddyFazchairBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ShopSignStansBudgetTechTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ShopSignSmilesAndServosTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ShopSignRareFindsAuctionTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ShopSignDumpsterDiverTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SecurityPuppetPropTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScraptrapBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ScrapSparkyDogBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScrapLolaChicaBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScrapBabyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScooperTileRenderer;
@@ -286,6 +289,8 @@ import net.mcreator.yafnafmod.block.renderer.BrokenFoxyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BrokenChicaTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BrokenBonnieTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BreakerControlTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.BoxPlush6TileRenderer;
+import net.mcreator.yafnafmod.block.renderer.BoxPlush5TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BoxPlush4TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BoxPlush3TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BoxPlush2TileRenderer;
@@ -684,5 +689,10 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.RETRO_CHICA_HEAD.get(), context -> new RetroChicaHeadTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.RETRO_FOXY_HEAD.get(), context -> new RetroFoxyHeadTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.MUSIC_BOX_RED_DECORATION.get(), context -> new MusicBoxRedDecorationTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BOX_PLUSH_5.get(), context -> new BoxPlush5TileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BOX_PLUSH_6.get(), context -> new BoxPlush6TileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SPARKY_DOG_BLOCK.get(), context -> new SparkyDogBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SCRAP_SPARKY_DOG_BLOCK.get(), context -> new ScrapSparkyDogBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SHREDDY_FAZCHAIR_BLOCK.get(), context -> new ShreddyFazchairBlockTileRenderer());
 	}
 }

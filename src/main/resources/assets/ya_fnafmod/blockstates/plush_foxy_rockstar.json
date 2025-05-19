@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/plush_foxy_rockstar"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/plush_foxy_rockstar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/plush_foxy_rockstar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/plush_foxy_rockstar",
+      "y": 270
+    }
+  }
+}

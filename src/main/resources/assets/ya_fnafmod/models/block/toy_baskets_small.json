@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/toybaskets_small",
+  "textures": {
+    "all": "ya_fnafmod:block/toybaskets_small",
+    "particle": "ya_fnafmod:block/toybaskets_small",
+    "2": "ya_fnafmod:block/toybaskets_small"
+  },
+  "render_type": "cutout_mipped"
+}

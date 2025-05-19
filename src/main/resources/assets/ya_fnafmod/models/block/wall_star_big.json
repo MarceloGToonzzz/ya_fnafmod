@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wallprop_flat",
+  "textures": {
+    "all": "ya_fnafmod:block/wallprop_flat_bigstar",
+    "particle": "ya_fnafmod:block/wallprop_flat_bigstar",
+    "0": "ya_fnafmod:block/wallprop_flat_bigstar"
+  },
+  "render_type": "cutout_mipped"
+}

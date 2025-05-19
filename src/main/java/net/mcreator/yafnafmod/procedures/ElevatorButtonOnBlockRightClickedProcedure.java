@@ -15,12 +15,16 @@ import net.mcreator.yafnafmod.init.YaFnafmodModItems;
 import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class ElevatorButtonOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		double fdasgdagdsag = 0;
 		double wawa = 0;
+		List<Object> elevators = new ArrayList<>();
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FAZWRENCH.get()) {
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("elbutton_selected", true);
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("elbutton_x", x);

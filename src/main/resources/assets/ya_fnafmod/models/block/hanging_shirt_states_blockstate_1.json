@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/hanging_shirts",
+  "textures": {
+    "all": "ya_fnafmod:block/hangingshirt_1chica",
+    "particle": "ya_fnafmod:block/hangingshirt_1freddy",
+    "1": "ya_fnafmod:block/hangingshirt_1chica"
+  },
+  "render_type": "cutout_mipped"
+}

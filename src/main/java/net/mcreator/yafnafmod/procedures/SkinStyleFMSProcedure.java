@@ -4,6 +4,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
 import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
+import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyEntity;
@@ -176,6 +177,8 @@ public class SkinStyleFMSProcedure {
 			animatable.setTexture("withered_foxy_fms");
 		if (entity instanceof WitheredFoxyDayEntity animatable)
 			animatable.setTexture("withered_foxy_fms");
+		if (entity instanceof WitheredGoldenFreddyEntity animatable)
+			animatable.setTexture("wgfreddy_fms");
 		if (entity instanceof RetroFreddyEntity animatable)
 			animatable.setTexture("retro_freddy_fms");
 		if (entity instanceof RetroFreddyDayEntity animatable)

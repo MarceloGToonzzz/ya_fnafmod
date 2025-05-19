@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/plush",
+  "textures": {
+    "all": "ya_fnafmod:block/plush_baby",
+    "particle": "ya_fnafmod:block/plush_baby",
+    "17": "ya_fnafmod:block/plush_baby"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,35 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "CoatHanger",
+    "blockstateList": [
+      {
+        "texture": "coathanger_coat1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "coat_hanger:coat1",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "coathanger_coat2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "coat_hanger:coat2",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

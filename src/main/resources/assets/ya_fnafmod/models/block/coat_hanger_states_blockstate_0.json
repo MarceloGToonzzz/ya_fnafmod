@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/coat_hanger",
+  "textures": {
+    "all": "ya_fnafmod:block/coathanger_coat1",
+    "particle": "ya_fnafmod:block/coathanger",
+    "1": "ya_fnafmod:block/coathanger_coat1"
+  },
+  "render_type": "cutout_mipped"
+}

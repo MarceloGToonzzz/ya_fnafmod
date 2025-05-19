@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/height_sign",
+  "textures": {
+    "all": "ya_fnafmod:block/height_sign",
+    "particle": "ya_fnafmod:block/height_sign",
+    "0": "ya_fnafmod:block/height_sign"
+  },
+  "render_type": "cutout_mipped"
+}

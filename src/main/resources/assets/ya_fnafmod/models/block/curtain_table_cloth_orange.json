@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/tablecloth_curtain",
+  "textures": {
+    "all": "ya_fnafmod:block/curtain_orange",
+    "particle": "ya_fnafmod:block/curtain_orange",
+    "1": "ya_fnafmod:block/curtain_orange"
+  },
+  "render_type": "solid"
+}

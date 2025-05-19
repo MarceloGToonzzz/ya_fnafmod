@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/plush",
+  "textures": {
+    "all": "ya_fnafmod:block/plush_neddbear",
+    "particle": "ya_fnafmod:block/plush_neddbear",
+    "17": "ya_fnafmod:block/plush_neddbear"
+  },
+  "render_type": "cutout"
+}

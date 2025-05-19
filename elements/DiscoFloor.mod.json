@@ -121,12 +121,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onNeighbourBlockChanges": {
-      "name": "RedstoneStateCycle"
-    },
-    "onBlockPlayedBy": {
-      "name": "RedstoneStateCycle"
-    },
     "onRedstoneOn": {
       "name": "RedstoneStateCycle"
     },

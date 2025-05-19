@@ -18,8 +18,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -82,12 +80,5 @@ public class DiscoFloorBlock extends Block {
 		} else {
 			RedstoneStateCycleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		}
-		RedstoneStateCycleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
-		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
-		RedstoneStateCycleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/plush_cfreddy",
     "particle": "ya_fnafmod:block/plush_cfreddy",
-    "2": "ya_fnafmod:block/plush_cfreddy"
+    "17": "ya_fnafmod:block/plush_cfreddy"
   },
   "render_type": "cutout"
 }

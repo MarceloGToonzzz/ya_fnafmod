@@ -51,12 +51,15 @@ import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
+import net.mcreator.yafnafmod.entity.ShreddyFazchairEntity;
 import net.mcreator.yafnafmod.entity.ShotgunShellProjectileEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.SeatEntity;
 import net.mcreator.yafnafmod.entity.SeabonnieEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
+import net.mcreator.yafnafmod.entity.ScrapSparkyDogEntity;
+import net.mcreator.yafnafmod.entity.ScrapSparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
 import net.mcreator.yafnafmod.entity.RustyEntity;
 import net.mcreator.yafnafmod.entity.RustyDayEntity;
@@ -83,6 +86,8 @@ import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.RatEntity;
 import net.mcreator.yafnafmod.entity.RaccoonEntity;
 import net.mcreator.yafnafmod.entity.PurpleGuyEntity;
+import net.mcreator.yafnafmod.entity.PuppetFreddybearEntity;
+import net.mcreator.yafnafmod.entity.PuppetFreddybearDayEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
 import net.mcreator.yafnafmod.entity.PossumEntity;
@@ -1116,6 +1121,26 @@ public class YaFnafmodModEntities {
 					.setCustomClientFactory(RetroCupcakeFmsEntityEntity::new)
 
 					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<ScrapSparkyDogEntity>> SCRAP_SPARKY_DOG = register("scrap_sparky_dog",
+			EntityType.Builder.<ScrapSparkyDogEntity>of(ScrapSparkyDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ScrapSparkyDogEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ScrapSparkyDogDayEntity>> SCRAP_SPARKY_DOG_DAY = register("scrap_sparky_dog_day",
+			EntityType.Builder.<ScrapSparkyDogDayEntity>of(ScrapSparkyDogDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ScrapSparkyDogDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PuppetFreddybearEntity>> PUPPET_FREDDYBEAR = register("puppet_freddybear",
+			EntityType.Builder.<PuppetFreddybearEntity>of(PuppetFreddybearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PuppetFreddybearEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PuppetFreddybearDayEntity>> PUPPET_FREDDYBEAR_DAY = register("puppet_freddybear_day",
+			EntityType.Builder.<PuppetFreddybearDayEntity>of(PuppetFreddybearDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PuppetFreddybearDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ShreddyFazchairEntity>> SHREDDY_FAZCHAIR = register("shreddy_fazchair",
+			EntityType.Builder.<ShreddyFazchairEntity>of(ShreddyFazchairEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShreddyFazchairEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1339,6 +1364,11 @@ public class YaFnafmodModEntities {
 			ToyCupcakeEntityEntity.init();
 			RetroCupcakeEntityEntity.init();
 			RetroCupcakeFmsEntityEntity.init();
+			ScrapSparkyDogEntity.init();
+			ScrapSparkyDogDayEntity.init();
+			PuppetFreddybearEntity.init();
+			PuppetFreddybearDayEntity.init();
+			ShreddyFazchairEntity.init();
 		});
 	}
 
@@ -1557,5 +1587,10 @@ public class YaFnafmodModEntities {
 		event.put(TOY_CUPCAKE_ENTITY.get(), ToyCupcakeEntityEntity.createAttributes().build());
 		event.put(RETRO_CUPCAKE_ENTITY.get(), RetroCupcakeEntityEntity.createAttributes().build());
 		event.put(RETRO_CUPCAKE_FMS_ENTITY.get(), RetroCupcakeFmsEntityEntity.createAttributes().build());
+		event.put(SCRAP_SPARKY_DOG.get(), ScrapSparkyDogEntity.createAttributes().build());
+		event.put(SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayEntity.createAttributes().build());
+		event.put(PUPPET_FREDDYBEAR.get(), PuppetFreddybearEntity.createAttributes().build());
+		event.put(PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayEntity.createAttributes().build());
+		event.put(SHREDDY_FAZCHAIR.get(), ShreddyFazchairEntity.createAttributes().build());
 	}
 }

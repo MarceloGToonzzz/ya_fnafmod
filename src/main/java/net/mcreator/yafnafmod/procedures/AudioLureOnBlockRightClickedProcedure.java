@@ -26,12 +26,14 @@ import net.mcreator.yafnafmod.YaFnafmodMod;
 
 import java.util.List;
 import java.util.Comparator;
+import java.util.ArrayList;
 
 public class AudioLureOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
 			return;
 		boolean success = false;
+		List<Object> cords = new ArrayList<>();
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FAZWRENCH.get()) {
 			if ((blockstate.getBlock().getStateDefinition().getProperty("enabled") instanceof BooleanProperty _getbp3 && blockstate.getValue(_getbp3)) == false) {
 				success = false;

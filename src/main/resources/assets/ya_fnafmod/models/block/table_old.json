@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/table_old",
+  "textures": {
+    "all": "ya_fnafmod:block/table_old",
+    "particle": "ya_fnafmod:block/table_old",
+    "0": "ya_fnafmod:block/table_old"
+  },
+  "render_type": "cutout_mipped"
+}

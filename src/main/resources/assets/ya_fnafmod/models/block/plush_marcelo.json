@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/plush_marcelo",
     "particle": "ya_fnafmod:block/plush_marcelo",
-    "2": "ya_fnafmod:block/plush_marcelo"
+    "17": "ya_fnafmod:block/plush_marcelo"
   },
   "render_type": "cutout"
 }

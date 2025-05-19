@@ -8,8 +8,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
 public class PizzaOvenOnTickUpdateProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if ((blockstate.getBlock().getStateDefinition().getProperty("fuel") instanceof IntegerProperty _getip1 ? blockstate.getValue(_getip1) : -1) == 0) {
+	public static void execute(LevelAccessor world, double x, double y, double z) {
+		if (new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, BlockPos.containing(x, y, z), "fuel") == 0) {
 			{
 				int _value = 0;
 				BlockPos _pos = BlockPos.containing(x, y, z);
@@ -23,7 +30,14 @@ public class PizzaOvenOnTickUpdateProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getPersistentData().putDouble("fuel", ((blockstate.getBlock().getStateDefinition().getProperty("fuel") instanceof IntegerProperty _getip4 ? blockstate.getValue(_getip4) : -1) - 1));
+					_blockEntity.getPersistentData().putDouble("fuel", ((new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, BlockPos.containing(x, y, z), "fuel")) - 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cash_register",
+  "textures": {
+    "all": "ya_fnafmod:block/cash_register",
+    "particle": "ya_fnafmod:block/cash_register",
+    "0": "ya_fnafmod:block/cash_register"
+  },
+  "render_type": "cutout_mipped"
+}
