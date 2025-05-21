@@ -45,7 +45,6 @@ import net.mcreator.yafnafmod.client.renderer.SpringbonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogDayRenderer;
-import net.mcreator.yafnafmod.client.renderer.ShreddyFazchairRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SeatRenderer;
@@ -459,6 +458,5 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR.get(), PuppetFreddybearRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayRenderer::new);
-		event.registerEntityRenderer(YaFnafmodModEntities.SHREDDY_FAZCHAIR.get(), ShreddyFazchairRenderer::new);
 	}
 }

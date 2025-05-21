@@ -42,6 +42,16 @@ public class TableOldBlock extends Block {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(22, 0, 0, 24, 12, 2), box(22, 0, 14, 24, 12, 16), box(0, 0, 14, 2, 12, 16), box(0, 0, 0, 2, 12, 2), box(0, 12, 0, 24, 16, 16));
+			case NORTH -> Shapes.or(box(-8, 0, 14, -6, 12, 16), box(-8, 0, 0, -6, 12, 2), box(14, 0, 0, 16, 12, 2), box(14, 0, 14, 16, 12, 16), box(-8, 12, 0, 16, 16, 16));
+			case EAST -> Shapes.or(box(0, 0, -8, 2, 12, -6), box(14, 0, -8, 16, 12, -6), box(14, 0, 14, 16, 12, 16), box(0, 0, 14, 2, 12, 16), box(0, 12, -8, 16, 16, 16));
+			case WEST -> Shapes.or(box(14, 0, 22, 16, 12, 24), box(0, 0, 22, 2, 12, 24), box(0, 0, 0, 2, 12, 2), box(14, 0, 0, 16, 12, 2), box(0, 12, 0, 16, 16, 24));
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
 		builder.add(FACING);

@@ -20,16 +20,16 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 4.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mz": 4.0,
+        "Mx": 12.0,
+        "My": 32.0,
+        "Mz": 12.0,
         "subtract": false
       }
     ],
@@ -60,7 +60,7 @@
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -104,7 +104,7 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 0,
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -122,8 +122,11 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onBlockPlayedBy": {
-      "name": "ShreddyFazchairBlockBlockIsPlacedBy"
+    "onTickUpdate": {
+      "name": "ShreddyFazchairOnTickUpdate"
+    },
+    "onRedstoneOn": {
+      "name": "ShreddyFazchairRedstoneOn"
     },
     "restrictionBiomes": [],
     "blocksToReplace": [

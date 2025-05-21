@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/mirror",
+  "textures": {
+    "all": "ya_fnafmod:block/mirror_dirty",
+    "particle": "ya_fnafmod:block/mirror_dirty",
+    "0": "ya_fnafmod:block/mirror_dirty"
+  },
+  "render_type": "cutout_mipped"
+}

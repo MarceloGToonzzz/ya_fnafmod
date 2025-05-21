@@ -75,7 +75,7 @@ public class CabinetGrayBlock extends Block implements EntityBlock {
 			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return Component.literal("Gray Cabinet");
+					return Component.literal("Gray File Cabinet");
 				}
 
 				@Override

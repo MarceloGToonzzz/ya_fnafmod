@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/menu_movie1",
+  "textures": {
+    "all": "ya_fnafmod:block/menu_movie1_on",
+    "particle": "ya_fnafmod:block/menu_movie1",
+    "0": "ya_fnafmod:block/menu_movie1_on"
+  },
+  "render_type": "cutout_mipped"
+}

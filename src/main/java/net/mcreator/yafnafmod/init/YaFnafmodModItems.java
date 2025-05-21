@@ -171,7 +171,6 @@ import net.mcreator.yafnafmod.item.RetroBonnieSpawnItemItem;
 import net.mcreator.yafnafmod.item.RetroBonnieFmsWalkerSpawnItemItem;
 import net.mcreator.yafnafmod.item.RetroBonnieFmsSpawnItemItem;
 import net.mcreator.yafnafmod.item.RemoteItem;
-import net.mcreator.yafnafmod.item.RemoteButtonItem;
 import net.mcreator.yafnafmod.item.RemnantItem;
 import net.mcreator.yafnafmod.item.RatItemItem;
 import net.mcreator.yafnafmod.item.QuarterItem;
@@ -5214,7 +5213,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> PUPPET_FREDDYBEAR_DAY_SPAWN_EGG = REGISTRY.register("puppet_freddybear_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.PUPPET_FREDDYBEAR_DAY, -10791357, -13685726, new Item.Properties()));
 	public static final RegistryObject<Item> PUPPET_FREDDYBEAR_SPAWN_ITEM = REGISTRY.register("puppet_freddybear_spawn_item", () -> new PuppetFreddybearSpawnItemItem());
 	public static final RegistryObject<Item> CHAIR_TORTURE = block(YaFnafmodModBlocks.CHAIR_TORTURE);
-	public static final RegistryObject<Item> REMOTE_BUTTON = REGISTRY.register("remote_button", () -> new RemoteButtonItem());
 	public static final RegistryObject<Item> SHREDDY_FAZCHAIR_BLOCK = REGISTRY.register(YaFnafmodModBlocks.SHREDDY_FAZCHAIR_BLOCK.getId().getPath(),
 			() -> new ShreddyFazchairBlockDisplayItem(YaFnafmodModBlocks.SHREDDY_FAZCHAIR_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CAUTION_TAPE = block(YaFnafmodModBlocks.CAUTION_TAPE);
@@ -5249,6 +5247,12 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> FOXY_PIRATE_MOVIE_SPAWN_ITEM = REGISTRY.register("foxy_pirate_movie_spawn_item", () -> new FoxyPirateMovieSpawnItemItem());
 	public static final RegistryObject<Item> GOLDEN_FREDDY_MOVIE_SPAWN_ITEM = REGISTRY.register("golden_freddy_movie_spawn_item", () -> new GoldenFreddyMovieSpawnItemItem());
 	public static final RegistryObject<Item> SHADOW_FREDDY_MOVIE_SPAWN_ITEM = REGISTRY.register("shadow_freddy_movie_spawn_item", () -> new ShadowFreddyMovieSpawnItemItem());
+	public static final RegistryObject<Item> LOCKER_YELLOW_HIDING = block(YaFnafmodModBlocks.LOCKER_YELLOW_HIDING);
+	public static final RegistryObject<Item> MENU_MOVIE_1 = block(YaFnafmodModBlocks.MENU_MOVIE_1);
+	public static final RegistryObject<Item> WALL_MIRROR = block(YaFnafmodModBlocks.WALL_MIRROR);
+	public static final RegistryObject<Item> WALL_MIRROR_DIRTY = block(YaFnafmodModBlocks.WALL_MIRROR_DIRTY);
+	public static final RegistryObject<Item> POWER_SWITCH = block(YaFnafmodModBlocks.POWER_SWITCH);
+	public static final RegistryObject<Item> WALL_MASKS = block(YaFnafmodModBlocks.WALL_MASKS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

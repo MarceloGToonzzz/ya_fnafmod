@@ -1,7 +1,0 @@
-{
-  "parent": "ya_fnafmod:custom/remote_button",
-  "textures": {
-    "1": "ya_fnafmod:block/remote_button",
-    "particle": "ya_fnafmod:item/icon_buttonnostalgicred"
-  }
-}

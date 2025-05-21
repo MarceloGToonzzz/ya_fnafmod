@@ -51,7 +51,6 @@ import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
-import net.mcreator.yafnafmod.entity.ShreddyFazchairEntity;
 import net.mcreator.yafnafmod.entity.ShotgunShellProjectileEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
@@ -1137,10 +1136,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<PuppetFreddybearDayEntity>of(PuppetFreddybearDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PuppetFreddybearDayEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ShreddyFazchairEntity>> SHREDDY_FAZCHAIR = register("shreddy_fazchair",
-			EntityType.Builder.<ShreddyFazchairEntity>of(ShreddyFazchairEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShreddyFazchairEntity::new)
-
-					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1368,7 +1363,6 @@ public class YaFnafmodModEntities {
 			ScrapSparkyDogDayEntity.init();
 			PuppetFreddybearEntity.init();
 			PuppetFreddybearDayEntity.init();
-			ShreddyFazchairEntity.init();
 		});
 	}
 
@@ -1591,6 +1585,5 @@ public class YaFnafmodModEntities {
 		event.put(SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR.get(), PuppetFreddybearEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayEntity.createAttributes().build());
-		event.put(SHREDDY_FAZCHAIR.get(), ShreddyFazchairEntity.createAttributes().build());
 	}
 }

@@ -257,6 +257,9 @@ import net.mcreator.yafnafmod.block.WallStarBigBlock;
 import net.mcreator.yafnafmod.block.WallPizzaBlock;
 import net.mcreator.yafnafmod.block.WallPaperWrittenBlock;
 import net.mcreator.yafnafmod.block.WallPaperBlock;
+import net.mcreator.yafnafmod.block.WallMirrorDirtyBlock;
+import net.mcreator.yafnafmod.block.WallMirrorBlock;
+import net.mcreator.yafnafmod.block.WallMasksBlock;
 import net.mcreator.yafnafmod.block.WallMakerBlock;
 import net.mcreator.yafnafmod.block.WallJunkBlock;
 import net.mcreator.yafnafmod.block.WallDiscoPizzaLightBlock;
@@ -746,6 +749,7 @@ import net.mcreator.yafnafmod.block.PrizeCounterWindowedBlock;
 import net.mcreator.yafnafmod.block.PrizeCounterLongBlock;
 import net.mcreator.yafnafmod.block.PrizeCounterBlock;
 import net.mcreator.yafnafmod.block.PresentsBlock;
+import net.mcreator.yafnafmod.block.PowerSwitchBlock;
 import net.mcreator.yafnafmod.block.PotBlock;
 import net.mcreator.yafnafmod.block.PosterWhereKidsCanPlayForeverBlock;
 import net.mcreator.yafnafmod.block.PosterVisitNebraskaBlock;
@@ -1363,6 +1367,7 @@ import net.mcreator.yafnafmod.block.MetalTableBlock;
 import net.mcreator.yafnafmod.block.MetalPipesBlock;
 import net.mcreator.yafnafmod.block.MenuVintageTornBlock;
 import net.mcreator.yafnafmod.block.MenuVintageBlock;
+import net.mcreator.yafnafmod.block.MenuMovie1Block;
 import net.mcreator.yafnafmod.block.MedicalStationBlock;
 import net.mcreator.yafnafmod.block.MattressTiledBlock;
 import net.mcreator.yafnafmod.block.MattressExperimentBlock;
@@ -1437,6 +1442,7 @@ import net.mcreator.yafnafmod.block.LolbitBlockBlock;
 import net.mcreator.yafnafmod.block.Lolbit409BlockBlock;
 import net.mcreator.yafnafmod.block.LolaChicaBlockBlock;
 import net.mcreator.yafnafmod.block.LockerYellowOpenBlock;
+import net.mcreator.yafnafmod.block.LockerYellowHidingBlock;
 import net.mcreator.yafnafmod.block.LockerYellowBlock;
 import net.mcreator.yafnafmod.block.LockerSilverBlock;
 import net.mcreator.yafnafmod.block.LittleMagicianBlock;
@@ -7165,6 +7171,12 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> HANGING_SHIRT = REGISTRY.register("hanging_shirt", () -> new HangingShirtBlock());
 	public static final RegistryObject<Block> PRIZE_SHELF = REGISTRY.register("prize_shelf", () -> new PrizeShelfBlock());
 	public static final RegistryObject<Block> WALL_JUNK = REGISTRY.register("wall_junk", () -> new WallJunkBlock());
+	public static final RegistryObject<Block> LOCKER_YELLOW_HIDING = REGISTRY.register("locker_yellow_hiding", () -> new LockerYellowHidingBlock());
+	public static final RegistryObject<Block> MENU_MOVIE_1 = REGISTRY.register("menu_movie_1", () -> new MenuMovie1Block());
+	public static final RegistryObject<Block> WALL_MIRROR = REGISTRY.register("wall_mirror", () -> new WallMirrorBlock());
+	public static final RegistryObject<Block> WALL_MIRROR_DIRTY = REGISTRY.register("wall_mirror_dirty", () -> new WallMirrorDirtyBlock());
+	public static final RegistryObject<Block> POWER_SWITCH = REGISTRY.register("power_switch", () -> new PowerSwitchBlock());
+	public static final RegistryObject<Block> WALL_MASKS = REGISTRY.register("wall_masks", () -> new WallMasksBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

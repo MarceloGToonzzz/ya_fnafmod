@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "5": "wall_masks1"
+      },
+      "name": "default"
+    }
+  }
+}

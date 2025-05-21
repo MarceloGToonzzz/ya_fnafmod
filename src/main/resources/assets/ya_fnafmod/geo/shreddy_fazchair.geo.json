@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.shreddy",
+				"identifier": "geometry.unknown",
 				"texture_width": 128,
 				"texture_height": 128,
 				"visible_bounds_width": 4,
@@ -12,7 +12,7 @@
 			},
 			"bones": [
 				{
-					"name": "pivot",
+					"name": "Shreddy",
 					"pivot": [-2, 0, 0],
 					"cubes": [
 						{"origin": [-19, 1, -5.5], "size": [9, 2, 11], "uv": [0, 0]},
@@ -28,7 +28,7 @@
 				},
 				{
 					"name": "arm",
-					"parent": "pivot",
+					"parent": "Shreddy",
 					"pivot": [-16, 30, 1],
 					"cubes": [
 						{"origin": [-13.5, 2.5, 0], "size": [4, 2, 1], "pivot": [-12.5, 8.5, 1], "rotation": [0, 0, -180], "uv": [26, 54]},
@@ -53,7 +53,7 @@
 					]
 				},
 				{
-					"name": "headholder",
+					"name": "Head holder",
 					"parent": "bone4",
 					"pivot": [-0.25, 35.25, 0.75],
 					"cubes": [
@@ -68,8 +68,8 @@
 					]
 				},
 				{
-					"name": "head",
-					"parent": "headholder",
+					"name": "Head",
+					"parent": "Head holder",
 					"pivot": [0, 29, 1.5],
 					"rotation": [-20, 0, 0],
 					"cubes": [
@@ -79,7 +79,7 @@
 				},
 				{
 					"name": "ear_l",
-					"parent": "head",
+					"parent": "Head",
 					"pivot": [3.25, 28.25, 2],
 					"cubes": [
 						{"origin": [2.5, 27.5, 1.5], "size": [3, 3, 1], "uv": [56, 29]}
@@ -87,7 +87,7 @@
 				},
 				{
 					"name": "ear_r",
-					"parent": "head",
+					"parent": "Head",
 					"pivot": [-3.25, 28.25, 2],
 					"cubes": [
 						{"origin": [-5.5, 27.5, 1.5], "size": [3, 3, 1], "uv": [56, 33]}
@@ -95,12 +95,12 @@
 				},
 				{
 					"name": "hat",
-					"parent": "head",
+					"parent": "Head",
 					"pivot": [0, 29, 2]
 				},
 				{
-					"name": "head2",
-					"parent": "head",
+					"name": "Head2",
+					"parent": "Head",
 					"pivot": [0, 21, 2],
 					"cubes": [
 						{"origin": [-4, 21, -2], "size": [8, 8, 8], "uv": [0, 29]},
@@ -109,7 +109,7 @@
 				},
 				{
 					"name": "bone8",
-					"parent": "head2",
+					"parent": "Head2",
 					"pivot": [4.99821, 29.2499, 0.50381],
 					"rotation": [0, 0, 50],
 					"cubes": [
@@ -119,7 +119,7 @@
 				},
 				{
 					"name": "bone7",
-					"parent": "head2",
+					"parent": "Head2",
 					"pivot": [-4.99821, 29.2499, 0.50381],
 					"rotation": [0, 0, -50],
 					"cubes": [
@@ -128,24 +128,24 @@
 					]
 				},
 				{
-					"name": "bits",
-					"parent": "head",
+					"name": "bits and bobs",
+					"parent": "Head",
 					"pivot": [0.5, 11, 20],
 					"cubes": [
 						{"origin": [-4, 21, 1], "size": [8, 8, 0], "uv": [44, 47]}
 					]
 				},
 				{
-					"name": "reye",
-					"parent": "bits",
+					"name": "Right eye",
+					"parent": "bits and bobs",
 					"pivot": [-2, 26, 1.25],
 					"cubes": [
 						{"origin": [-2.5, 25.5, 1.25], "size": [1, 1, 0], "uv": [40, 12]}
 					]
 				},
 				{
-					"name": "leye",
-					"parent": "bits",
+					"name": "left eye",
+					"parent": "bits and bobs",
 					"pivot": [2, 26, 1.25],
 					"cubes": [
 						{"origin": [1.5, 25.5, 1.25], "size": [1, 1, 0], "uv": [40, 12]}
@@ -153,7 +153,7 @@
 				},
 				{
 					"name": "tsaw",
-					"parent": "head",
+					"parent": "Head",
 					"pivot": [0.0513, 27.64565, 1.73668],
 					"rotation": [-15, 0, 0]
 				},
@@ -167,7 +167,7 @@
 				},
 				{
 					"name": "rsaw",
-					"parent": "head",
+					"parent": "Head",
 					"pivot": [-2.8, 22.65, 1.7],
 					"rotation": [-10.72858, 10.54529, -45.99297]
 				},
@@ -181,7 +181,7 @@
 				},
 				{
 					"name": "lsaw",
-					"parent": "head",
+					"parent": "Head",
 					"pivot": [2.8, 22.65, 1.7],
 					"rotation": [10.72858, -10.54529, -45.99297]
 				},

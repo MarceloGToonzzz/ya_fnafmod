@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "MenuMovie1",
+    "blockstateList": [
+      {
+        "texture": "menu_movie1_on",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "menu_movie1:on",
+        "luminance": 3,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

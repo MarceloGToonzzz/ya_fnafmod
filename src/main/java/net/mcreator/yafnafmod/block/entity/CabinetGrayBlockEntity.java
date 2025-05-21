@@ -94,7 +94,7 @@ public class CabinetGrayBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Gray Cabinet");
+		return Component.literal("Gray File Cabinet");
 	}
 
 	@Override

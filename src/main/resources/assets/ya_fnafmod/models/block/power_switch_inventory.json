@@ -1,0 +1,8 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "particle": "ya_fnafmod:block/power_switch",
+    "texture": "ya_fnafmod:block/power_switch"
+  },
+  "render_type": "cutout_mipped"
+}

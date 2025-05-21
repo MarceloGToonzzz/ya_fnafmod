@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/locker_hiding",
+  "textures": {
+    "all": "ya_fnafmod:block/locker_yellow_tfront",
+    "particle": "ya_fnafmod:block/locker_yellow_tfront",
+    "2": "ya_fnafmod:block/lockeryellow_hide"
+  },
+  "render_type": "cutout_mipped"
+}

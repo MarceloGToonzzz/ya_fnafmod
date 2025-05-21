@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/power_switch_on",
+  "textures": {
+    "all": "ya_fnafmod:block/power_switch",
+    "particle": "ya_fnafmod:block/power_switch",
+    "2": "ya_fnafmod:block/power_switch"
+  },
+  "render_type": "solid"
+}
