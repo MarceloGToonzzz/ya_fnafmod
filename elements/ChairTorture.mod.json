@@ -56,12 +56,12 @@
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
-    "canRedstoneConnect": false,
+    "canRedstoneConnect": true,
     "lightOpacity": 0,
     "material": {
       "value": "NONE"
     },
-    "tickRate": 0,
+    "tickRate": 2,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -105,7 +105,7 @@
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,
-    "hasInventory": false,
+    "hasInventory": true,
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
@@ -123,6 +123,9 @@
     "fluidRestrictions": [],
     "onRightClicked": {
       "name": "ChairBlockRightClick"
+    },
+    "onTickUpdate": {
+      "name": "ChairTorturePlayerTrapped"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
