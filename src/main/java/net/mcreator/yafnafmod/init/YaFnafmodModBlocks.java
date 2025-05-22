@@ -2245,6 +2245,7 @@ import net.mcreator.yafnafmod.block.DinerChairBlackBlock;
 import net.mcreator.yafnafmod.block.DinerChairBeigeCleanBlock;
 import net.mcreator.yafnafmod.block.DinerChairBeigeBlock;
 import net.mcreator.yafnafmod.block.DiamondPlateWallBlock;
+import net.mcreator.yafnafmod.block.DeskJunkMovie1Block;
 import net.mcreator.yafnafmod.block.DeskCoverBlock;
 import net.mcreator.yafnafmod.block.DeluxeSpeakerBlock;
 import net.mcreator.yafnafmod.block.DeluxeBallpitBlock;
@@ -7177,6 +7178,7 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> WALL_MIRROR_DIRTY = REGISTRY.register("wall_mirror_dirty", () -> new WallMirrorDirtyBlock());
 	public static final RegistryObject<Block> POWER_SWITCH = REGISTRY.register("power_switch", () -> new PowerSwitchBlock());
 	public static final RegistryObject<Block> WALL_MASKS = REGISTRY.register("wall_masks", () -> new WallMasksBlock());
+	public static final RegistryObject<Block> DESK_JUNK_MOVIE_1 = REGISTRY.register("desk_junk_movie_1", () -> new DeskJunkMovie1Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

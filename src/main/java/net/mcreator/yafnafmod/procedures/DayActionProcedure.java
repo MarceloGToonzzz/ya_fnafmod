@@ -25,52 +25,10 @@ import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
-import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
-import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
-import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
-import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
-import net.mcreator.yafnafmod.entity.RockstarFoxyEntity;
-import net.mcreator.yafnafmod.entity.RockstarFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.RockstarChicaEntity;
-import net.mcreator.yafnafmod.entity.RockstarChicaDayEntity;
-import net.mcreator.yafnafmod.entity.RockstarBonnieEntity;
-import net.mcreator.yafnafmod.entity.RockstarBonnieDayEntity;
-import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
-import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
-import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
-import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.RetroChicaEntity;
-import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
-import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
-import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
-import net.mcreator.yafnafmod.entity.PigpatchEntity;
-import net.mcreator.yafnafmod.entity.PigpatchDayEntity;
-import net.mcreator.yafnafmod.entity.PanStanEntity;
-import net.mcreator.yafnafmod.entity.PanStanDayEntity;
-import net.mcreator.yafnafmod.entity.OrvilleElephantEntity;
-import net.mcreator.yafnafmod.entity.OrvilleElephantDayEntity;
-import net.mcreator.yafnafmod.entity.NumberOneCrateEntity;
-import net.mcreator.yafnafmod.entity.NumberOneCrateDayEntity;
-import net.mcreator.yafnafmod.entity.NeddbearEntity;
-import net.mcreator.yafnafmod.entity.NeddBearDayEntity;
-import net.mcreator.yafnafmod.entity.MrHugsEntity;
-import net.mcreator.yafnafmod.entity.MrHugsDayEntity;
-import net.mcreator.yafnafmod.entity.MrHippoEntity;
-import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
-import net.mcreator.yafnafmod.entity.MrCanDoEntity;
-import net.mcreator.yafnafmod.entity.MrCanDoDayEntity;
-import net.mcreator.yafnafmod.entity.HappyFrogEntity;
-import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
-import net.mcreator.yafnafmod.entity.FredbearEntity;
-import net.mcreator.yafnafmod.entity.FredbearDayEntity;
-import net.mcreator.yafnafmod.entity.BucketBobEntity;
-import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
-import net.mcreator.yafnafmod.entity.BaggieMaggieEntity;
-import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 
 import java.util.List;
 import java.util.Comparator;
@@ -132,11 +90,19 @@ public class DayActionProcedure {
 						entity_name = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString() + "_still_day";
 					}
 				}
-				thing = ((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
-						.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("controlshock_z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("controlshock_y")))
-						.replace("XSHOCK", "" + entity.getPersistentData().getDouble("controlshock_x"))).replace("ENTITY_REGISTRY", entity_name)).replace("MOVEEE", ai)).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-						.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
-						.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
+				if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nonnight_walker")))) {
+					thing = ((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("controlshock_z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("controlshock_y")))
+							.replace("XSHOCK", "" + entity.getPersistentData().getDouble("controlshock_x"))).replace("ENTITY_REGISTRY", entity_name)).replace("MOVEEE", ai)).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
+							.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
+							.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
+				} else {
+					thing = ((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {walks_at_night:1b, controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("controlshock_z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("controlshock_y")))
+							.replace("XSHOCK", "" + entity.getPersistentData().getDouble("controlshock_x"))).replace("ENTITY_REGISTRY", entity_name)).replace("MOVEEE", ai)).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
+							.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
+							.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
+				}
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands()
 							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))), Vec2.ZERO,
@@ -152,54 +118,6 @@ public class DayActionProcedure {
 								entityiterator.getPersistentData().putString("skin", (entity.getPersistentData().getString("skin")));
 								entityiterator.getPersistentData().putString("style", (entity.getPersistentData().getString("style")));
 								SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getString("skin"), entity.getPersistentData().getString("style"));
-							}
-							if (entity instanceof FredbearEntity || entity instanceof SpringbonnieEntity || entity instanceof RetroFreddyEntity || entity instanceof RetroBonnieEntity || entity instanceof RetroChicaEntity
-									|| entity instanceof RetroFoxyEntity || entity instanceof MrCanDoEntity || entity instanceof MrHugsEntity || entity instanceof BucketBobEntity || entity instanceof PanStanEntity
-									|| entity instanceof NumberOneCrateEntity || entity instanceof BaggieMaggieEntity || entity instanceof NeddbearEntity || entity instanceof HappyFrogEntity || entity instanceof PigpatchEntity
-									|| entity instanceof MrHippoEntity || entity instanceof OrvilleElephantEntity || entity instanceof RockstarFreddyEntity || entity instanceof RockstarBonnieEntity || entity instanceof RockstarChicaEntity
-									|| entity instanceof RockstarFoxyEntity) {
-								if (entityiterator instanceof FredbearDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(FredbearDayEntity.DATA_walker, true);
-								if (entityiterator instanceof SpringbonnieDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(SpringbonnieDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RetroFreddyDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RetroFreddyDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RetroBonnieDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RetroBonnieDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RetroChicaDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RetroChicaDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RetroFoxyDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RetroFoxyDayEntity.DATA_walker, true);
-								if (entityiterator instanceof MrCanDoDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(MrCanDoDayEntity.DATA_walker, true);
-								if (entityiterator instanceof MrHugsDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(MrHugsDayEntity.DATA_walker, true);
-								if (entityiterator instanceof BucketBobDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(BucketBobDayEntity.DATA_walker, true);
-								if (entityiterator instanceof PanStanDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(PanStanDayEntity.DATA_walker, true);
-								if (entityiterator instanceof NumberOneCrateDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(NumberOneCrateDayEntity.DATA_walker, true);
-								if (entityiterator instanceof BaggieMaggieDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(BaggieMaggieDayEntity.DATA_walker, true);
-								if (entityiterator instanceof NeddBearDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(NeddBearDayEntity.DATA_walker, true);
-								if (entityiterator instanceof HappyFrogDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(HappyFrogDayEntity.DATA_walker, true);
-								if (entityiterator instanceof PigpatchDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(PigpatchDayEntity.DATA_walker, true);
-								if (entityiterator instanceof MrHippoDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(MrHippoDayEntity.DATA_walker, true);
-								if (entityiterator instanceof OrvilleElephantDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(OrvilleElephantDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RockstarFreddyDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RockstarFreddyDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RockstarBonnieDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RockstarBonnieDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RockstarChicaDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RockstarChicaDayEntity.DATA_walker, true);
-								if (entityiterator instanceof RockstarFoxyDayEntity _datEntSetL)
-									_datEntSetL.getEntityData().set(RockstarFoxyDayEntity.DATA_walker, true);
 							}
 						}
 					}

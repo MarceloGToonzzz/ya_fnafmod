@@ -65,9 +65,10 @@ public class NightActionProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double yaw = 0;
 		String command = "";
 		String thing = "";
+		double yaw = 0;
+		double walker = 0;
 		if (DoesAnimatronicWalkAtNightProcedure.execute(entity) == true) {
 			if (IsItNighttimeProcedure.execute(world) == true) {
 				{
@@ -81,7 +82,7 @@ public class NightActionProcedure {
 				}
 				yaw = entity.getPersistentData().getDouble("yaw");
 				if (!(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("still_day")) {
-					command = (((((((((((("summon ENTITY_REGISTRY XPOS YPOS ZPOS {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: SPEEDd, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+					command = (((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: SPEEDd, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
 							.replace("SPEED", "" + (entity instanceof LivingEntity _attributeContext ? _attributeContext.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED) : 0.0D)))
 							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
 							.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
@@ -92,7 +93,7 @@ public class NightActionProcedure {
 								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))),
 										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);
 				} else {
-					command = (((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.35d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+					command = (((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: SPEEDd, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
 							.replace("SPEED", "" + (entity instanceof LivingEntity _attributeContext ? _attributeContext.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED) : 0.0D)))
 							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
 							.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_still_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))

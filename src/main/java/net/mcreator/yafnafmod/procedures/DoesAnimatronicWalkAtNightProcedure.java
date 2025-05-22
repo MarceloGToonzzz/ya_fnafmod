@@ -1,28 +1,9 @@
 package net.mcreator.yafnafmod.procedures;
 
 import net.minecraft.world.entity.Entity;
-
-import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
-import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
-import net.mcreator.yafnafmod.entity.RockstarFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.RockstarChicaDayEntity;
-import net.mcreator.yafnafmod.entity.RockstarBonnieDayEntity;
-import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
-import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
-import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
-import net.mcreator.yafnafmod.entity.PigpatchDayEntity;
-import net.mcreator.yafnafmod.entity.PanStanDayEntity;
-import net.mcreator.yafnafmod.entity.OrvilleElephantDayEntity;
-import net.mcreator.yafnafmod.entity.NumberOneCrateDayEntity;
-import net.mcreator.yafnafmod.entity.NeddBearDayEntity;
-import net.mcreator.yafnafmod.entity.MrHugsDayEntity;
-import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
-import net.mcreator.yafnafmod.entity.MrCanDoDayEntity;
-import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
-import net.mcreator.yafnafmod.entity.FredbearDayEntity;
-import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
-import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 
 public class DoesAnimatronicWalkAtNightProcedure {
 	public static boolean execute(Entity entity) {
@@ -30,31 +11,7 @@ public class DoesAnimatronicWalkAtNightProcedure {
 			return false;
 		double yaw = 0;
 		boolean result = false;
-		if (!(entity instanceof FredbearDayEntity) && !(entity instanceof SpringbonnieDayEntity) && !(entity instanceof RetroFreddyDayEntity) && !(entity instanceof RetroBonnieDayEntity) && !(entity instanceof RetroChicaDayEntity)
-				&& !(entity instanceof RetroFoxyDayEntity) && !(entity instanceof BucketBobDayEntity) && !(entity instanceof MrCanDoDayEntity) && !(entity instanceof MrHugsDayEntity) && !(entity instanceof NumberOneCrateDayEntity)
-				&& !(entity instanceof PanStanDayEntity) && !(entity instanceof NumberOneCrateDayEntity) && !(entity instanceof BaggieMaggieDayEntity) && !(entity instanceof NeddBearDayEntity) && !(entity instanceof HappyFrogDayEntity)
-				&& !(entity instanceof PigpatchDayEntity) && !(entity instanceof MrHippoDayEntity) && !(entity instanceof OrvilleElephantDayEntity) && !(entity instanceof RockstarFreddyDayEntity) && !(entity instanceof RockstarBonnieDayEntity)
-				&& !(entity instanceof RockstarChicaDayEntity) && !(entity instanceof RockstarFoxyDayEntity) || (entity instanceof FredbearDayEntity _datEntL22 && _datEntL22.getEntityData().get(FredbearDayEntity.DATA_walker)) == true
-				|| (entity instanceof SpringbonnieDayEntity _datEntL23 && _datEntL23.getEntityData().get(SpringbonnieDayEntity.DATA_walker)) == true
-				|| (entity instanceof RetroFreddyDayEntity _datEntL24 && _datEntL24.getEntityData().get(RetroFreddyDayEntity.DATA_walker)) == true
-				|| (entity instanceof RetroBonnieDayEntity _datEntL25 && _datEntL25.getEntityData().get(RetroBonnieDayEntity.DATA_walker)) == true
-				|| (entity instanceof RetroChicaDayEntity _datEntL26 && _datEntL26.getEntityData().get(RetroChicaDayEntity.DATA_walker)) == true
-				|| (entity instanceof RetroFoxyDayEntity _datEntL27 && _datEntL27.getEntityData().get(RetroFoxyDayEntity.DATA_walker)) == true
-				|| (entity instanceof BucketBobDayEntity _datEntL28 && _datEntL28.getEntityData().get(BucketBobDayEntity.DATA_walker)) == true
-				|| (entity instanceof PanStanDayEntity _datEntL29 && _datEntL29.getEntityData().get(PanStanDayEntity.DATA_walker)) == true
-				|| (entity instanceof MrCanDoDayEntity _datEntL30 && _datEntL30.getEntityData().get(MrCanDoDayEntity.DATA_walker)) == true
-				|| (entity instanceof MrHugsDayEntity _datEntL31 && _datEntL31.getEntityData().get(MrHugsDayEntity.DATA_walker)) == true
-				|| (entity instanceof NumberOneCrateDayEntity _datEntL32 && _datEntL32.getEntityData().get(NumberOneCrateDayEntity.DATA_walker)) == true
-				|| (entity instanceof BaggieMaggieDayEntity _datEntL33 && _datEntL33.getEntityData().get(BaggieMaggieDayEntity.DATA_walker)) == true
-				|| (entity instanceof NeddBearDayEntity _datEntL34 && _datEntL34.getEntityData().get(NeddBearDayEntity.DATA_walker)) == true
-				|| (entity instanceof MrHippoDayEntity _datEntL35 && _datEntL35.getEntityData().get(MrHippoDayEntity.DATA_walker)) == true
-				|| (entity instanceof PigpatchDayEntity _datEntL36 && _datEntL36.getEntityData().get(PigpatchDayEntity.DATA_walker)) == true
-				|| (entity instanceof HappyFrogDayEntity _datEntL37 && _datEntL37.getEntityData().get(HappyFrogDayEntity.DATA_walker)) == true
-				|| (entity instanceof OrvilleElephantDayEntity _datEntL38 && _datEntL38.getEntityData().get(OrvilleElephantDayEntity.DATA_walker)) == true
-				|| (entity instanceof RockstarFreddyDayEntity _datEntL39 && _datEntL39.getEntityData().get(RockstarFreddyDayEntity.DATA_walker)) == true
-				|| (entity instanceof RockstarBonnieDayEntity _datEntL40 && _datEntL40.getEntityData().get(RockstarBonnieDayEntity.DATA_walker)) == true
-				|| (entity instanceof RockstarChicaDayEntity _datEntL41 && _datEntL41.getEntityData().get(RockstarChicaDayEntity.DATA_walker)) == true
-				|| (entity instanceof RockstarFoxyDayEntity _datEntL42 && _datEntL42.getEntityData().get(RockstarFoxyDayEntity.DATA_walker)) == true) {
+		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nonnight_walker"))) && entity.getPersistentData().getBoolean("walks_at_night") == true) {
 			result = true;
 		} else {
 			result = false;

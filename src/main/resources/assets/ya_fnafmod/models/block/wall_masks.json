@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/wall_masks1",
     "particle": "ya_fnafmod:block/wall_masks1",
-    "5": "ya_fnafmod:block/wall_masks1"
+    "1": "ya_fnafmod:block/wall_masks1"
   },
   "render_type": "cutout_mipped"
 }

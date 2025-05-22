@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/deskjunk_fnafmovie1",
+  "textures": {
+    "all": "ya_fnafmod:block/deskjunk_fnafmovie1_on",
+    "particle": "ya_fnafmod:block/deskjunk_fnafmovie1_off",
+    "3": "ya_fnafmod:block/deskjunk_fnafmovie1_on"
+  },
+  "render_type": "cutout_mipped"
+}

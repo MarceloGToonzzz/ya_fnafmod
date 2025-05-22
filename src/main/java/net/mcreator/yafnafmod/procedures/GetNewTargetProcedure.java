@@ -27,10 +27,12 @@ public class GetNewTargetProcedure {
 		double rangetest = 0;
 		rangetest = 0.55125;
 		if (!(!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:passive_animatronics")))) {
-			if (entity.getPersistentData().getBoolean("visited_targetspot") == false) {
+			if (entity.getPersistentData().getBoolean("visited_targetspot") == false && entity.getPersistentData().getBoolean("had_target") == true) {
 				if (entity instanceof Mob _entity)
 					_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z")), 1);
-				if (2 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z"))))) {
+				if (2 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z"))))
+						|| 5 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z"))))
+								&& y != entity.getPersistentData().getDouble("target_y")) {
 					entity.getPersistentData().putBoolean("visited_targetspot", true);
 				}
 			}
@@ -52,12 +54,12 @@ public class GetNewTargetProcedure {
 						}
 						if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers"))) && IsTargetWearingMaskProcedure.execute(entityiterator)
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
-										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip30
-												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip30)
+										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip36
+												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip36)
 												: -1) == 0
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
 										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock().getStateDefinition().getProperty(
-												"blockstate") instanceof IntegerProperty _getip40 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip40) : -1) == 0) {
+												"blockstate") instanceof IntegerProperty _getip46 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip46) : -1) == 0) {
 							stop = true;
 						}
 						if (!(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight(entityiterator) : false)) {
@@ -71,6 +73,7 @@ public class GetNewTargetProcedure {
 				}
 			}
 		} else if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
+			entity.getPersistentData().putBoolean("had_target", true);
 			entity.getPersistentData().putBoolean("visited_targetspot", false);
 			entity.getPersistentData().putDouble("target_x", (entity.getX()));
 			entity.getPersistentData().putDouble("target_y", (entity.getY()));

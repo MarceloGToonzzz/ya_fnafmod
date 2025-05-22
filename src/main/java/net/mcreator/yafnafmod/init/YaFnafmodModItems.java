@@ -5253,6 +5253,7 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> WALL_MIRROR_DIRTY = block(YaFnafmodModBlocks.WALL_MIRROR_DIRTY);
 	public static final RegistryObject<Item> POWER_SWITCH = block(YaFnafmodModBlocks.POWER_SWITCH);
 	public static final RegistryObject<Item> WALL_MASKS = block(YaFnafmodModBlocks.WALL_MASKS);
+	public static final RegistryObject<Item> DESK_JUNK_MOVIE_1 = block(YaFnafmodModBlocks.DESK_JUNK_MOVIE_1);
 
 	// Start of user code block custom items
 	// End of user code block custom items
