@@ -286,6 +286,7 @@ import net.mcreator.yafnafmod.block.entity.CindyCatBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ChicaStandTileEntity;
 import net.mcreator.yafnafmod.block.entity.ChicaHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.ChicaChickenBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.ChairTortureBlockEntity;
 import net.mcreator.yafnafmod.block.entity.CarouselTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarouselFreddyToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarouselFreddyTileEntity;
@@ -980,6 +981,7 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<ScrapSparkyDogBlockTileEntity>> SCRAP_SPARKY_DOG_BLOCK = REGISTRY.register("scrap_sparky_dog_block",
 			() -> BlockEntityType.Builder.of(ScrapSparkyDogBlockTileEntity::new, YaFnafmodModBlocks.SCRAP_SPARKY_DOG_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> ALARM_CLOCK_OLD = register("alarm_clock_old", YaFnafmodModBlocks.ALARM_CLOCK_OLD, AlarmClockOldBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CHAIR_TORTURE = register("chair_torture", YaFnafmodModBlocks.CHAIR_TORTURE, ChairTortureBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<ShreddyFazchairBlockTileEntity>> SHREDDY_FAZCHAIR_BLOCK = REGISTRY.register("shreddy_fazchair_block",
 			() -> BlockEntityType.Builder.of(ShreddyFazchairBlockTileEntity::new, YaFnafmodModBlocks.SHREDDY_FAZCHAIR_BLOCK.get()).build(null));
 
