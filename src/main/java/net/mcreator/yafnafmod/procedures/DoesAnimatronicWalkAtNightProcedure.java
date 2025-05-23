@@ -11,7 +11,8 @@ public class DoesAnimatronicWalkAtNightProcedure {
 			return false;
 		double yaw = 0;
 		boolean result = false;
-		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nonnight_walker"))) && entity.getPersistentData().getBoolean("walks_at_night") == true) {
+		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nonnight_walker")))
+				|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nonnight_walker"))) && entity.getPersistentData().getBoolean("walks_at_night") == true) {
 			result = true;
 		} else {
 			result = false;

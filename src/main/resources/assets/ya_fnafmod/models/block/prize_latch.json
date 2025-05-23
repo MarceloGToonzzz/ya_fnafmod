@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/prize_latch",
+  "textures": {
+    "all": "ya_fnafmod:block/prize_latch",
+    "particle": "ya_fnafmod:block/prize_latch",
+    "0": "ya_fnafmod:block/prize_latch"
+  },
+  "render_type": "cutout_mipped"
+}
