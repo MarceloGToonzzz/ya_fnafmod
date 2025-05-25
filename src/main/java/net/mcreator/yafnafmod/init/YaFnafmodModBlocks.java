@@ -7191,6 +7191,9 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> OFFICE_TILED_WALL = REGISTRY.register("office_tiled_wall", () -> new OfficeTiledWallBlock());
 	public static final RegistryObject<Block> OFFICE_TILED_WALL_STAIRS = REGISTRY.register("office_tiled_wall_stairs", () -> new OfficeTiledWallStairsBlock());
 	public static final RegistryObject<Block> OFFICE_TILED_WALL_SLAB = REGISTRY.register("office_tiled_wall_slab", () -> new OfficeTiledWallSlabBlock());
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

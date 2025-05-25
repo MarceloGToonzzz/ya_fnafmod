@@ -5264,6 +5264,9 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> OFFICE_TILED_WALL_STAIRS = block(YaFnafmodModBlocks.OFFICE_TILED_WALL_STAIRS);
 	public static final RegistryObject<Item> OFFICE_TILED_WALL_SLAB = block(YaFnafmodModBlocks.OFFICE_TILED_WALL_SLAB);
 	public static final RegistryObject<Item> YELLOW_RABBIT_SPAWN_EGG = REGISTRY.register("yellow_rabbit_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.YELLOW_RABBIT, -9475281, -12500462, new Item.Properties()));
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 	// Start of user code block custom items
