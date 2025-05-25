@@ -230,6 +230,7 @@ import net.mcreator.yafnafmod.block.WhiteStageBricksBlackExtraTilesBigAlternateB
 import net.mcreator.yafnafmod.block.WhiteStageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.WhiteStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.WhiteStageBrickSlabBlock;
+import net.mcreator.yafnafmod.block.WhiteScreenBlock;
 import net.mcreator.yafnafmod.block.WhiteMovieChairBlock;
 import net.mcreator.yafnafmod.block.WhiteCheckeredTilesBlock;
 import net.mcreator.yafnafmod.block.WhiteCheckeredTileStairsBlock;
@@ -279,6 +280,7 @@ import net.mcreator.yafnafmod.block.VentCoverGratedBlock;
 import net.mcreator.yafnafmod.block.VentCoverBlock;
 import net.mcreator.yafnafmod.block.VentBlock;
 import net.mcreator.yafnafmod.block.VendingMachinePremiumCoffeeBlock;
+import net.mcreator.yafnafmod.block.VantablackBlock;
 import net.mcreator.yafnafmod.block.VanRideBlock;
 import net.mcreator.yafnafmod.block.TvTubeBlock;
 import net.mcreator.yafnafmod.block.TvBlock;
@@ -1895,6 +1897,7 @@ import net.mcreator.yafnafmod.block.GreenStageBricksBlackExtraTilesBigAlternateB
 import net.mcreator.yafnafmod.block.GreenStageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.GreenStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.GreenStageBrickSlabBlock;
+import net.mcreator.yafnafmod.block.GreenScreenBlock;
 import net.mcreator.yafnafmod.block.GreenMovieChairBlock;
 import net.mcreator.yafnafmod.block.GreenLimeTilesBlock;
 import net.mcreator.yafnafmod.block.GreenLimeTileStairsBlock;
@@ -2778,6 +2781,7 @@ import net.mcreator.yafnafmod.block.ConfettiWallBlock;
 import net.mcreator.yafnafmod.block.ConcertSpeakerBlock;
 import net.mcreator.yafnafmod.block.ComputerBlock;
 import net.mcreator.yafnafmod.block.ColorfulPlatesBlock;
+import net.mcreator.yafnafmod.block.CoffeeMachineBlock;
 import net.mcreator.yafnafmod.block.CoatHangerBlock;
 import net.mcreator.yafnafmod.block.ClownLemonadeBlock;
 import net.mcreator.yafnafmod.block.ClownFruitPunchBlock;
@@ -3143,6 +3147,7 @@ import net.mcreator.yafnafmod.block.BlueStageBricksBlackExtraTilesBigAlternateBl
 import net.mcreator.yafnafmod.block.BlueStageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.BlueStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.BlueStageBrickSlabBlock;
+import net.mcreator.yafnafmod.block.BlueScreenBlock;
 import net.mcreator.yafnafmod.block.BlueMovieChairBlock;
 import net.mcreator.yafnafmod.block.BlueLightBlueTilesBlock;
 import net.mcreator.yafnafmod.block.BlueLightBlueTileStairsBlock;
@@ -7199,6 +7204,11 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> WHITE_BLACK_EDGE_TILES = REGISTRY.register("white_black_edge_tiles", () -> new WhiteBlackEdgeTilesBlock());
 	public static final RegistryObject<Block> WHITE_BLACK_EDGE_TILE_STAIRS = REGISTRY.register("white_black_edge_tile_stairs", () -> new WhiteBlackEdgeTileStairsBlock());
 	public static final RegistryObject<Block> WHITE_BLACK_EDGE_TILE_SLAB = REGISTRY.register("white_black_edge_tile_slab", () -> new WhiteBlackEdgeTileSlabBlock());
+	public static final RegistryObject<Block> VANTABLACK = REGISTRY.register("vantablack", () -> new VantablackBlock());
+	public static final RegistryObject<Block> WHITE_SCREEN = REGISTRY.register("white_screen", () -> new WhiteScreenBlock());
+	public static final RegistryObject<Block> GREEN_SCREEN = REGISTRY.register("green_screen", () -> new GreenScreenBlock());
+	public static final RegistryObject<Block> BLUE_SCREEN = REGISTRY.register("blue_screen", () -> new BlueScreenBlock());
+	public static final RegistryObject<Block> COFFEE_MACHINE = REGISTRY.register("coffee_machine", () -> new CoffeeMachineBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

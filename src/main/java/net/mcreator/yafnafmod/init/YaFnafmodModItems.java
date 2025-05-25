@@ -5267,6 +5267,11 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> WHITE_BLACK_EDGE_TILES = block(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILES);
 	public static final RegistryObject<Item> WHITE_BLACK_EDGE_TILE_STAIRS = block(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_STAIRS);
 	public static final RegistryObject<Item> WHITE_BLACK_EDGE_TILE_SLAB = block(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_SLAB);
+	public static final RegistryObject<Item> VANTABLACK = block(YaFnafmodModBlocks.VANTABLACK);
+	public static final RegistryObject<Item> WHITE_SCREEN = block(YaFnafmodModBlocks.WHITE_SCREEN);
+	public static final RegistryObject<Item> GREEN_SCREEN = block(YaFnafmodModBlocks.GREEN_SCREEN);
+	public static final RegistryObject<Item> BLUE_SCREEN = block(YaFnafmodModBlocks.BLUE_SCREEN);
+	public static final RegistryObject<Item> COFFEE_MACHINE = block(YaFnafmodModBlocks.COFFEE_MACHINE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

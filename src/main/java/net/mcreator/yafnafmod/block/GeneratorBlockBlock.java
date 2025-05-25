@@ -46,18 +46,18 @@ public class GeneratorBlockBlock extends Block implements EntityBlock {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
+					return 10;
 				if (s.getValue(BLOCKSTATE) == 2)
-					return 0;
+					return 7;
 				if (s.getValue(BLOCKSTATE) == 3)
-					return 0;
+					return 5;
 				if (s.getValue(BLOCKSTATE) == 4)
-					return 0;
+					return 2;
 				if (s.getValue(BLOCKSTATE) == 5)
 					return 0;
-				return 0;
+				return 12;
 			}
-		}.getLightLevel())));
+		}.getLightLevel())).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

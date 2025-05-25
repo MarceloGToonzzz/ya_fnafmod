@@ -1879,6 +1879,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.TABLE_OLD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ALARM_CLOCK_OLD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DART_BOARD.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.COFFEE_MACHINE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.COAT_HANGER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_JUNK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CHANGE_MACHINE.get().asItem());
@@ -1998,7 +1999,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.PIZZERIA_SIGN_JRS_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE_2.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DESK_JUNK_MOVIE_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PRIZE_LATCH.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
@@ -4141,4 +4141,12 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_3.get().asItem());
 			}).withSearchBar().withTabsBefore(YAFNAF_EXTRA_CURTAINS.getId()).build());
+	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MISC = REGISTRY.register("ya_fnaf_mod_misc",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_misc")).icon(() -> new ItemStack(YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.GREEN_SCREEN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.BLUE_SCREEN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.VANTABLACK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WHITE_SCREEN.get().asItem());
+			}).withSearchBar().withTabsBefore(STRUCTURE_BLOCKS.getId()).build());
 }
