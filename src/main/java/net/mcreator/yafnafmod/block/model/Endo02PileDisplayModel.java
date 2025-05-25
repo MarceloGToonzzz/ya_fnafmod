@@ -1,0 +1,24 @@
+package net.mcreator.yafnafmod.block.model;
+
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.yafnafmod.block.display.Endo02PileDisplayItem;
+
+public class Endo02PileDisplayModel extends GeoModel<Endo02PileDisplayItem> {
+	@Override
+	public ResourceLocation getAnimationResource(Endo02PileDisplayItem animatable) {
+		return new ResourceLocation("ya_fnafmod", "animations/endopile.animation.json");
+	}
+
+	@Override
+	public ResourceLocation getModelResource(Endo02PileDisplayItem animatable) {
+		return new ResourceLocation("ya_fnafmod", "geo/endopile.geo.json");
+	}
+
+	@Override
+	public ResourceLocation getTextureResource(Endo02PileDisplayItem entity) {
+		return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_endo2.png");
+	}
+}
