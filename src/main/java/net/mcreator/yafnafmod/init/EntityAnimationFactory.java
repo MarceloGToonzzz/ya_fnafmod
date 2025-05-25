@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.yafnafmod.entity.YenndoEntity;
+import net.mcreator.yafnafmod.entity.YellowRabbitEntity;
 import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
 import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
@@ -1724,6 +1725,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof PuppetFreddybearDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof YellowRabbitEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

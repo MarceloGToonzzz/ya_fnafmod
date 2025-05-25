@@ -5254,6 +5254,17 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POWER_SWITCH = block(YaFnafmodModBlocks.POWER_SWITCH);
 	public static final RegistryObject<Item> WALL_MASKS = block(YaFnafmodModBlocks.WALL_MASKS);
 	public static final RegistryObject<Item> DESK_JUNK_MOVIE_1 = block(YaFnafmodModBlocks.DESK_JUNK_MOVIE_1);
+<<<<<<< Updated upstream
+=======
+	public static final RegistryObject<Item> BLUE_MOVIE_STAGE_BASE = block(YaFnafmodModBlocks.BLUE_MOVIE_STAGE_BASE);
+	public static final RegistryObject<Item> ENDO_01_PILE = REGISTRY.register(YaFnafmodModBlocks.ENDO_01_PILE.getId().getPath(), () -> new Endo01PileDisplayItem(YaFnafmodModBlocks.ENDO_01_PILE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ENDO_02_PILE = REGISTRY.register(YaFnafmodModBlocks.ENDO_02_PILE.getId().getPath(), () -> new Endo02PileDisplayItem(YaFnafmodModBlocks.ENDO_02_PILE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> PRIZE_LATCH = block(YaFnafmodModBlocks.PRIZE_LATCH);
+	public static final RegistryObject<Item> OFFICE_TILED_WALL = block(YaFnafmodModBlocks.OFFICE_TILED_WALL);
+	public static final RegistryObject<Item> OFFICE_TILED_WALL_STAIRS = block(YaFnafmodModBlocks.OFFICE_TILED_WALL_STAIRS);
+	public static final RegistryObject<Item> OFFICE_TILED_WALL_SLAB = block(YaFnafmodModBlocks.OFFICE_TILED_WALL_SLAB);
+	public static final RegistryObject<Item> YELLOW_RABBIT_SPAWN_EGG = REGISTRY.register("yellow_rabbit_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.YELLOW_RABBIT, -9475281, -12500462, new Item.Properties()));
+>>>>>>> Stashed changes
 
 	// Start of user code block custom items
 	// End of user code block custom items

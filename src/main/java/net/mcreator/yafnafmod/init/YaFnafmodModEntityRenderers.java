@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.yafnafmod.client.renderer.YenndoRenderer;
+import net.mcreator.yafnafmod.client.renderer.YellowRabbitRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredJollyRatRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredJollyRatDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredGoldenFreddyRenderer;
@@ -458,5 +459,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR.get(), PuppetFreddybearRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.YELLOW_RABBIT.get(), YellowRabbitRenderer::new);
 	}
 }

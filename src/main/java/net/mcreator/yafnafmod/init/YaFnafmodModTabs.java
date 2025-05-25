@@ -539,6 +539,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.MOVIE_CYAN_SHINGLES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_CYAN_SHINGLE_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_CYAN_SHINGLE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OFFICE_TILED_WALL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OFFICE_TILED_WALL_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OFFICE_TILED_WALL_SLAB.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_LIGHT_WALL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_SLAB.get().asItem());

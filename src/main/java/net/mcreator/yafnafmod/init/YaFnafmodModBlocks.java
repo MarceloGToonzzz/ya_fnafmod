@@ -1163,6 +1163,9 @@ import net.mcreator.yafnafmod.block.OldManConsequencesBlockBlock;
 import net.mcreator.yafnafmod.block.OfficeWindowVerticalBlock;
 import net.mcreator.yafnafmod.block.OfficeWindowSingleBlock;
 import net.mcreator.yafnafmod.block.OfficeWindowBlock;
+import net.mcreator.yafnafmod.block.OfficeTiledWallStairsBlock;
+import net.mcreator.yafnafmod.block.OfficeTiledWallSlabBlock;
+import net.mcreator.yafnafmod.block.OfficeTiledWallBlock;
 import net.mcreator.yafnafmod.block.OfficeDoorWindow2Block;
 import net.mcreator.yafnafmod.block.OfficeDoorWindow1Block;
 import net.mcreator.yafnafmod.block.OfficeDeskFnaf3EmptyBlock;
@@ -7179,6 +7182,16 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> POWER_SWITCH = REGISTRY.register("power_switch", () -> new PowerSwitchBlock());
 	public static final RegistryObject<Block> WALL_MASKS = REGISTRY.register("wall_masks", () -> new WallMasksBlock());
 	public static final RegistryObject<Block> DESK_JUNK_MOVIE_1 = REGISTRY.register("desk_junk_movie_1", () -> new DeskJunkMovie1Block());
+<<<<<<< Updated upstream
+=======
+	public static final RegistryObject<Block> BLUE_MOVIE_STAGE_BASE = REGISTRY.register("blue_movie_stage_base", () -> new BlueMovieStageBaseBlock());
+	public static final RegistryObject<Block> ENDO_01_PILE = REGISTRY.register("endo_01_pile", () -> new Endo01PileBlock());
+	public static final RegistryObject<Block> ENDO_02_PILE = REGISTRY.register("endo_02_pile", () -> new Endo02PileBlock());
+	public static final RegistryObject<Block> PRIZE_LATCH = REGISTRY.register("prize_latch", () -> new PrizeLatchBlock());
+	public static final RegistryObject<Block> OFFICE_TILED_WALL = REGISTRY.register("office_tiled_wall", () -> new OfficeTiledWallBlock());
+	public static final RegistryObject<Block> OFFICE_TILED_WALL_STAIRS = REGISTRY.register("office_tiled_wall_stairs", () -> new OfficeTiledWallStairsBlock());
+	public static final RegistryObject<Block> OFFICE_TILED_WALL_SLAB = REGISTRY.register("office_tiled_wall_slab", () -> new OfficeTiledWallSlabBlock());
+>>>>>>> Stashed changes
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
