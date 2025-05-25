@@ -539,6 +539,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.MOVIE_CYAN_SHINGLES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_CYAN_SHINGLE_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_CYAN_SHINGLE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.MOVIE_OFFICE_TILED_WALL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.MOVIE_OFFICE_TILED_WALL_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.MOVIE_OFFICE_TILED_WALL_SLAB.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_LIGHT_WALL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MOVIE_LIGHT_WALL_SLAB.get().asItem());
@@ -620,6 +623,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.STURDY_STAGE_BASE_PURPLE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STURDY_STAGE_BASE_RED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LINED_STAGE_BASE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.STAGE_BASE_MOVIE_BLUE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RANCID_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RANCID_BLOCK_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RANCID_BLOCK_SLAB.get().asItem());
@@ -1055,6 +1059,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.CRACKED_FADED_BLUE_TILES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CRACKED_FADED_BLUE_TILE_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CRACKED_FADED_BLUE_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_SLAB.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RED_TILE_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RED_TILE_BLOCK_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RED_TILE_BLOCK_SLAB.get().asItem());
@@ -1993,6 +2000,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DESK_JUNK_MOVIE_1.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PRIZE_LATCH.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_PLUSHIES = REGISTRY.register("ya_fnaf_mod_plushies",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_plushies")).icon(() -> new ItemStack(YaFnafmodModBlocks.PLUSH_FREDDY.get())).displayItems((parameters, tabData) -> {

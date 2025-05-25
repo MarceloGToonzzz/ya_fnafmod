@@ -679,8 +679,10 @@ import net.mcreator.yafnafmod.block.display.Fazcoins10000DisplayItem;
 import net.mcreator.yafnafmod.block.display.FazOvenDisplayItem;
 import net.mcreator.yafnafmod.block.display.ExoticButterBasketDisplayItem;
 import net.mcreator.yafnafmod.block.display.EnhancedSpeakerDisplayItem;
+import net.mcreator.yafnafmod.block.display.Endo02PileDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo02BlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo01PropDisplayItem;
+import net.mcreator.yafnafmod.block.display.Endo01PileDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo01BlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.EmptyExoticButterBasketDisplayItem;
 import net.mcreator.yafnafmod.block.display.ElChipBlockDisplayItem;
@@ -5254,6 +5256,17 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POWER_SWITCH = block(YaFnafmodModBlocks.POWER_SWITCH);
 	public static final RegistryObject<Item> WALL_MASKS = block(YaFnafmodModBlocks.WALL_MASKS);
 	public static final RegistryObject<Item> DESK_JUNK_MOVIE_1 = block(YaFnafmodModBlocks.DESK_JUNK_MOVIE_1);
+	public static final RegistryObject<Item> PRIZE_LATCH = block(YaFnafmodModBlocks.PRIZE_LATCH);
+	public static final RegistryObject<Item> STAGE_BASE_MOVIE_BLUE = block(YaFnafmodModBlocks.STAGE_BASE_MOVIE_BLUE);
+	public static final RegistryObject<Item> MOVIE_OFFICE_TILED_WALL = block(YaFnafmodModBlocks.MOVIE_OFFICE_TILED_WALL);
+	public static final RegistryObject<Item> MOVIE_OFFICE_TILED_WALL_STAIRS = block(YaFnafmodModBlocks.MOVIE_OFFICE_TILED_WALL_STAIRS);
+	public static final RegistryObject<Item> MOVIE_OFFICE_TILED_WALL_SLAB = block(YaFnafmodModBlocks.MOVIE_OFFICE_TILED_WALL_SLAB);
+	public static final RegistryObject<Item> YELLOW_RABBIT_SPAWN_EGG = REGISTRY.register("yellow_rabbit_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.YELLOW_RABBIT, -9475281, -12500462, new Item.Properties()));
+	public static final RegistryObject<Item> ENDO_01_PILE = REGISTRY.register(YaFnafmodModBlocks.ENDO_01_PILE.getId().getPath(), () -> new Endo01PileDisplayItem(YaFnafmodModBlocks.ENDO_01_PILE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ENDO_02_PILE = REGISTRY.register(YaFnafmodModBlocks.ENDO_02_PILE.getId().getPath(), () -> new Endo02PileDisplayItem(YaFnafmodModBlocks.ENDO_02_PILE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> WHITE_BLACK_EDGE_TILES = block(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILES);
+	public static final RegistryObject<Item> WHITE_BLACK_EDGE_TILE_STAIRS = block(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_STAIRS);
+	public static final RegistryObject<Item> WHITE_BLACK_EDGE_TILE_SLAB = block(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_SLAB);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:white_black_edge_tile_slab",
+    "ya_fnafmod:white_black_edge_tile_stairs",
+    "ya_fnafmod:white_black_edge_tiles",
+    "ya_fnafmod:stage_base_movie_blue",
     "ya_fnafmod:movie_faded_cyan_tile_block_slab",
     "ya_fnafmod:movie_faded_cyan_tile_block_stairs",
     "ya_fnafmod:movie_faded_cyan_tile_block",

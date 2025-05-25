@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.yafnafmod.entity.YenndoEntity;
+import net.mcreator.yafnafmod.entity.YellowRabbitEntity;
 import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
 import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
@@ -1136,6 +1137,10 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<PuppetFreddybearDayEntity>of(PuppetFreddybearDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PuppetFreddybearDayEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<YellowRabbitEntity>> YELLOW_RABBIT = register("yellow_rabbit",
+			EntityType.Builder.<YellowRabbitEntity>of(YellowRabbitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YellowRabbitEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1363,6 +1368,7 @@ public class YaFnafmodModEntities {
 			ScrapSparkyDogDayEntity.init();
 			PuppetFreddybearEntity.init();
 			PuppetFreddybearDayEntity.init();
+			YellowRabbitEntity.init();
 		});
 	}
 
@@ -1585,5 +1591,6 @@ public class YaFnafmodModEntities {
 		event.put(SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR.get(), PuppetFreddybearEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayEntity.createAttributes().build());
+		event.put(YELLOW_RABBIT.get(), YellowRabbitEntity.createAttributes().build());
 	}
 }

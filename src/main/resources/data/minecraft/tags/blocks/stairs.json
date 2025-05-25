@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:white_black_edge_tile_stairs",
+    "ya_fnafmod:movie_office_tiled_wall_stairs",
     "ya_fnafmod:movie_faded_cyan_tile_block_stairs",
     "ya_fnafmod:movie_orange_tile_block_stairs",
     "ya_fnafmod:movie_office_diag_tile_stairs",

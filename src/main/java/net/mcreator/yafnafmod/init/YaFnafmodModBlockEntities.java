@@ -217,8 +217,10 @@ import net.mcreator.yafnafmod.block.entity.Fazcoins10000TileEntity;
 import net.mcreator.yafnafmod.block.entity.FazOvenTileEntity;
 import net.mcreator.yafnafmod.block.entity.ExoticButterBasketTileEntity;
 import net.mcreator.yafnafmod.block.entity.EnhancedSpeakerTileEntity;
+import net.mcreator.yafnafmod.block.entity.Endo02PileTileEntity;
 import net.mcreator.yafnafmod.block.entity.Endo02BlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.Endo01PropTileEntity;
+import net.mcreator.yafnafmod.block.entity.Endo01PileTileEntity;
 import net.mcreator.yafnafmod.block.entity.Endo01BlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.EmptyExoticButterBasketTileEntity;
 import net.mcreator.yafnafmod.block.entity.ElevatorButtonBlockEntity;
@@ -984,6 +986,8 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CHAIR_TORTURE = register("chair_torture", YaFnafmodModBlocks.CHAIR_TORTURE, ChairTortureBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<ShreddyFazchairBlockTileEntity>> SHREDDY_FAZCHAIR_BLOCK = REGISTRY.register("shreddy_fazchair_block",
 			() -> BlockEntityType.Builder.of(ShreddyFazchairBlockTileEntity::new, YaFnafmodModBlocks.SHREDDY_FAZCHAIR_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Endo01PileTileEntity>> ENDO_01_PILE = REGISTRY.register("endo_01_pile", () -> BlockEntityType.Builder.of(Endo01PileTileEntity::new, YaFnafmodModBlocks.ENDO_01_PILE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Endo02PileTileEntity>> ENDO_02_PILE = REGISTRY.register("endo_02_pile", () -> BlockEntityType.Builder.of(Endo02PileTileEntity::new, YaFnafmodModBlocks.ENDO_02_PILE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
