@@ -198,10 +198,8 @@ import net.mcreator.yafnafmod.block.renderer.Fazcoins10000TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.FazOvenTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ExoticButterBasketTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.EnhancedSpeakerTileRenderer;
-import net.mcreator.yafnafmod.block.renderer.Endo02PileTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.Endo02BlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.Endo01PropTileRenderer;
-import net.mcreator.yafnafmod.block.renderer.Endo01PileTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.Endo01BlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.EmptyExoticButterBasketTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ElChipBlockTileRenderer;
@@ -696,7 +694,5 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SPARKY_DOG_BLOCK.get(), context -> new SparkyDogBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SCRAP_SPARKY_DOG_BLOCK.get(), context -> new ScrapSparkyDogBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SHREDDY_FAZCHAIR_BLOCK.get(), context -> new ShreddyFazchairBlockTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_01_PILE.get(), context -> new Endo01PileTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_02_PILE.get(), context -> new Endo02PileTileRenderer());
 	}
 }

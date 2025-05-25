@@ -744,7 +744,6 @@ import net.mcreator.yafnafmod.block.PropSignFlosGlossyFlossBlock;
 import net.mcreator.yafnafmod.block.ProjectorBlock;
 import net.mcreator.yafnafmod.block.ProjectionBlock;
 import net.mcreator.yafnafmod.block.PrizeShelfBlock;
-import net.mcreator.yafnafmod.block.PrizeLatchBlock;
 import net.mcreator.yafnafmod.block.PrizeKingBlock;
 import net.mcreator.yafnafmod.block.PrizeCounterWindowedBlock;
 import net.mcreator.yafnafmod.block.PrizeCounterLongBlock;
@@ -2167,10 +2166,8 @@ import net.mcreator.yafnafmod.block.EntranceRedDoorBlock;
 import net.mcreator.yafnafmod.block.EntranceDoorBlock;
 import net.mcreator.yafnafmod.block.EnnardMaskBlock;
 import net.mcreator.yafnafmod.block.EnhancedSpeakerBlock;
-import net.mcreator.yafnafmod.block.Endo02PileBlock;
 import net.mcreator.yafnafmod.block.Endo02BlockBlock;
 import net.mcreator.yafnafmod.block.Endo01PropBlock;
-import net.mcreator.yafnafmod.block.Endo01PileBlock;
 import net.mcreator.yafnafmod.block.Endo01BlockBlock;
 import net.mcreator.yafnafmod.block.EmptyExoticButterBasketBlock;
 import net.mcreator.yafnafmod.block.ElevatorWallStairsBlock;
@@ -3136,7 +3133,6 @@ import net.mcreator.yafnafmod.block.BlueStageBricksBlackExtraTilesBigAlternateBl
 import net.mcreator.yafnafmod.block.BlueStageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.BlueStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.BlueStageBrickSlabBlock;
-import net.mcreator.yafnafmod.block.BlueMovieStageBaseBlock;
 import net.mcreator.yafnafmod.block.BlueMovieChairBlock;
 import net.mcreator.yafnafmod.block.BlueLightBlueTilesBlock;
 import net.mcreator.yafnafmod.block.BlueLightBlueTileStairsBlock;
@@ -7183,10 +7179,6 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> POWER_SWITCH = REGISTRY.register("power_switch", () -> new PowerSwitchBlock());
 	public static final RegistryObject<Block> WALL_MASKS = REGISTRY.register("wall_masks", () -> new WallMasksBlock());
 	public static final RegistryObject<Block> DESK_JUNK_MOVIE_1 = REGISTRY.register("desk_junk_movie_1", () -> new DeskJunkMovie1Block());
-	public static final RegistryObject<Block> BLUE_MOVIE_STAGE_BASE = REGISTRY.register("blue_movie_stage_base", () -> new BlueMovieStageBaseBlock());
-	public static final RegistryObject<Block> ENDO_01_PILE = REGISTRY.register("endo_01_pile", () -> new Endo01PileBlock());
-	public static final RegistryObject<Block> ENDO_02_PILE = REGISTRY.register("endo_02_pile", () -> new Endo02PileBlock());
-	public static final RegistryObject<Block> PRIZE_LATCH = REGISTRY.register("prize_latch", () -> new PrizeLatchBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
