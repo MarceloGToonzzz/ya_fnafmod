@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/stagebase_wood_woodenbottom",
+    "top": "ya_fnafmod:block/stagefloor_snow",
+    "side": "ya_fnafmod:block/stagebase_wood_woodenbottom",
+    "overlay": "ya_fnafmod:block/stagebase_goodwood",
+    "particle": "ya_fnafmod:block/stagebase_wood_woodenbottom"
+  },
+  "render_type": "solid"
+}

@@ -1,8 +1,9 @@
 {
-  "parent": "block/cube_all",
+  "parent": "ya_fnafmod:custom/noocclusion_block",
   "textures": {
     "all": "ya_fnafmod:block/bluescreen",
-    "particle": "ya_fnafmod:block/bluescreen"
+    "particle": "ya_fnafmod:block/bluescreen",
+    "0": "ya_fnafmod:block/bluescreen"
   },
   "render_type": "solid"
 }

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/noocclusion_block",
+  "textures": {
+    "all": "ya_fnafmod:block/staticnoise",
+    "particle": "ya_fnafmod:block/staticnoise",
+    "0": "ya_fnafmod:block/staticnoise"
+  },
+  "render_type": "solid"
+}

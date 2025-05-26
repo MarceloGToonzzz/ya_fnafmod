@@ -91,6 +91,7 @@ public class YaFnafmodModVariables {
 		public boolean hasset_halloween = false;
 		public boolean rare_night = false;
 		public boolean hasset_rare = false;
+		public boolean STRUCTUREBUILD_BUILD = false;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -103,6 +104,7 @@ public class YaFnafmodModVariables {
 			hasset_halloween = nbt.getBoolean("hasset_halloween");
 			rare_night = nbt.getBoolean("rare_night");
 			hasset_rare = nbt.getBoolean("hasset_rare");
+			STRUCTUREBUILD_BUILD = nbt.getBoolean("STRUCTUREBUILD_BUILD");
 		}
 
 		@Override
@@ -111,6 +113,7 @@ public class YaFnafmodModVariables {
 			nbt.putBoolean("hasset_halloween", hasset_halloween);
 			nbt.putBoolean("rare_night", rare_night);
 			nbt.putBoolean("hasset_rare", hasset_rare);
+			nbt.putBoolean("STRUCTUREBUILD_BUILD", STRUCTUREBUILD_BUILD);
 			return nbt;
 		}
 
