@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/randomjunk1",
+  "textures": {
+    "all": "ya_fnafmod:block/randomjunk1",
+    "particle": "ya_fnafmod:block/randomjunk1",
+    "2": "ya_fnafmod:block/randomjunk1"
+  },
+  "render_type": "cutout_mipped"
+}

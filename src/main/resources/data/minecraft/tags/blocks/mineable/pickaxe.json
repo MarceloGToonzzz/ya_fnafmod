@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:snow_stage_base",
+    "ya_fnafmod:grass_stage_base",
     "ya_fnafmod:white_black_edge_tile_slab",
     "ya_fnafmod:white_black_edge_tile_stairs",
     "ya_fnafmod:white_black_edge_tiles",

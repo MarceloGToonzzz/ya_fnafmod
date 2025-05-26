@@ -15,6 +15,11 @@ public class StructureBlockWarnProcedure {
 		double z = 0;
 		double y = 0;
 		if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_1.get()) {
+			x = 96;
+			y = 24;
+			z = 96;
+		}
+		if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_1_CLASSIC.get()) {
 			x = 48;
 			y = 25;
 			z = 48;
