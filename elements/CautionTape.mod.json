@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "caution_tape",
-    "textureTop": "caution_tape",
+    "textureTop": "empty",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",

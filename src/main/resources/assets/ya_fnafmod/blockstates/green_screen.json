@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "ya_fnafmod:block/green_screen"
+    },
+    "blockstate=1": {
+      "model": "ya_fnafmod:block/green_screen_states_blockstate_0"
+    }
+  }
+}

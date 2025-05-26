@@ -47,7 +47,7 @@
     "isWaterloggable": false,
     "creativeTabs": [
       {
-        "value": "CUSTOM:YaFNAFModDecorations"
+        "value": "CUSTOM:YaFNAFModMisc"
       }
     ],
     "destroyTool": "Not specified",
@@ -105,7 +105,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 12,
     "unbreakable": false,
     "vanillaToolTier": "NONE",
     "isBonemealable": false,

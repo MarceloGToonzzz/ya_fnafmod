@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/coffee_machine",
+  "textures": {
+    "all": "ya_fnafmod:block/coffeemachine",
+    "particle": "ya_fnafmod:block/coffeemachine",
+    "1": "ya_fnafmod:block/coffeemachine"
+  },
+  "render_type": "translucent"
+}

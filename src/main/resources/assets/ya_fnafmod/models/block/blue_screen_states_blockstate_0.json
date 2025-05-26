@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/bluescreen",
+    "particle": "ya_fnafmod:block/bluescreen"
+  },
+  "render_type": "solid"
+}

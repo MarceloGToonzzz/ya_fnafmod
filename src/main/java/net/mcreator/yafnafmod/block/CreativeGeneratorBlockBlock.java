@@ -1,6 +1,8 @@
 
 package net.mcreator.yafnafmod.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -35,7 +37,7 @@ import java.util.List;
 
 public class CreativeGeneratorBlockBlock extends Block implements EntityBlock {
 	public CreativeGeneratorBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> 12));
 	}
 
 	@Override

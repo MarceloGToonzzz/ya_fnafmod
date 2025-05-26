@@ -230,10 +230,14 @@ import net.mcreator.yafnafmod.block.WhiteStageBricksBlackExtraTilesBigAlternateB
 import net.mcreator.yafnafmod.block.WhiteStageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.WhiteStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.WhiteStageBrickSlabBlock;
+import net.mcreator.yafnafmod.block.WhiteScreenBlock;
 import net.mcreator.yafnafmod.block.WhiteMovieChairBlock;
 import net.mcreator.yafnafmod.block.WhiteCheckeredTilesBlock;
 import net.mcreator.yafnafmod.block.WhiteCheckeredTileStairsBlock;
 import net.mcreator.yafnafmod.block.WhiteCheckeredTileSlabBlock;
+import net.mcreator.yafnafmod.block.WhiteBlackEdgeTilesBlock;
+import net.mcreator.yafnafmod.block.WhiteBlackEdgeTileStairsBlock;
+import net.mcreator.yafnafmod.block.WhiteBlackEdgeTileSlabBlock;
 import net.mcreator.yafnafmod.block.WhiteBigCheckeredTilesBlock;
 import net.mcreator.yafnafmod.block.WhiteBigCheckeredTileStairsBlock;
 import net.mcreator.yafnafmod.block.WhiteBigCheckeredTileSlabBlock;
@@ -276,6 +280,7 @@ import net.mcreator.yafnafmod.block.VentCoverGratedBlock;
 import net.mcreator.yafnafmod.block.VentCoverBlock;
 import net.mcreator.yafnafmod.block.VentBlock;
 import net.mcreator.yafnafmod.block.VendingMachinePremiumCoffeeBlock;
+import net.mcreator.yafnafmod.block.VantablackBlock;
 import net.mcreator.yafnafmod.block.VanRideBlock;
 import net.mcreator.yafnafmod.block.TvTubeBlock;
 import net.mcreator.yafnafmod.block.TvBlock;
@@ -387,6 +392,7 @@ import net.mcreator.yafnafmod.block.StageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.StageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.StageBrickSlabBlock;
 import net.mcreator.yafnafmod.block.StageBaseRentalBlock;
+import net.mcreator.yafnafmod.block.StageBaseMovieBlueBlock;
 import net.mcreator.yafnafmod.block.StageBaseCheapStarsBlock;
 import net.mcreator.yafnafmod.block.StageBaseCheapStairsBlock;
 import net.mcreator.yafnafmod.block.StageBaseCheapSlabBlock;
@@ -744,6 +750,7 @@ import net.mcreator.yafnafmod.block.PropSignFlosGlossyFlossBlock;
 import net.mcreator.yafnafmod.block.ProjectorBlock;
 import net.mcreator.yafnafmod.block.ProjectionBlock;
 import net.mcreator.yafnafmod.block.PrizeShelfBlock;
+import net.mcreator.yafnafmod.block.PrizeLatchBlock;
 import net.mcreator.yafnafmod.block.PrizeKingBlock;
 import net.mcreator.yafnafmod.block.PrizeCounterWindowedBlock;
 import net.mcreator.yafnafmod.block.PrizeCounterLongBlock;
@@ -1163,9 +1170,6 @@ import net.mcreator.yafnafmod.block.OldManConsequencesBlockBlock;
 import net.mcreator.yafnafmod.block.OfficeWindowVerticalBlock;
 import net.mcreator.yafnafmod.block.OfficeWindowSingleBlock;
 import net.mcreator.yafnafmod.block.OfficeWindowBlock;
-import net.mcreator.yafnafmod.block.OfficeTiledWallStairsBlock;
-import net.mcreator.yafnafmod.block.OfficeTiledWallSlabBlock;
-import net.mcreator.yafnafmod.block.OfficeTiledWallBlock;
 import net.mcreator.yafnafmod.block.OfficeDoorWindow2Block;
 import net.mcreator.yafnafmod.block.OfficeDoorWindow1Block;
 import net.mcreator.yafnafmod.block.OfficeDeskFnaf3EmptyBlock;
@@ -1308,6 +1312,9 @@ import net.mcreator.yafnafmod.block.MovieOrangeTileBlockStairsBlock;
 import net.mcreator.yafnafmod.block.MovieOrangeTileBlockSlabBlock;
 import net.mcreator.yafnafmod.block.MovieOrangeTileBlockBlock;
 import net.mcreator.yafnafmod.block.MovieOfficeTilesBlock;
+import net.mcreator.yafnafmod.block.MovieOfficeTiledWallStairsBlock;
+import net.mcreator.yafnafmod.block.MovieOfficeTiledWallSlabBlock;
+import net.mcreator.yafnafmod.block.MovieOfficeTiledWallBlock;
 import net.mcreator.yafnafmod.block.MovieOfficeTileStairsBlock;
 import net.mcreator.yafnafmod.block.MovieOfficeTileSlabBlock;
 import net.mcreator.yafnafmod.block.MovieOfficeDiagTilesBlock;
@@ -1890,6 +1897,7 @@ import net.mcreator.yafnafmod.block.GreenStageBricksBlackExtraTilesBigAlternateB
 import net.mcreator.yafnafmod.block.GreenStageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.GreenStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.GreenStageBrickSlabBlock;
+import net.mcreator.yafnafmod.block.GreenScreenBlock;
 import net.mcreator.yafnafmod.block.GreenMovieChairBlock;
 import net.mcreator.yafnafmod.block.GreenLimeTilesBlock;
 import net.mcreator.yafnafmod.block.GreenLimeTileStairsBlock;
@@ -2169,8 +2177,10 @@ import net.mcreator.yafnafmod.block.EntranceRedDoorBlock;
 import net.mcreator.yafnafmod.block.EntranceDoorBlock;
 import net.mcreator.yafnafmod.block.EnnardMaskBlock;
 import net.mcreator.yafnafmod.block.EnhancedSpeakerBlock;
+import net.mcreator.yafnafmod.block.Endo02PileBlock;
 import net.mcreator.yafnafmod.block.Endo02BlockBlock;
 import net.mcreator.yafnafmod.block.Endo01PropBlock;
+import net.mcreator.yafnafmod.block.Endo01PileBlock;
 import net.mcreator.yafnafmod.block.Endo01BlockBlock;
 import net.mcreator.yafnafmod.block.EmptyExoticButterBasketBlock;
 import net.mcreator.yafnafmod.block.ElevatorWallStairsBlock;
@@ -2771,6 +2781,7 @@ import net.mcreator.yafnafmod.block.ConfettiWallBlock;
 import net.mcreator.yafnafmod.block.ConcertSpeakerBlock;
 import net.mcreator.yafnafmod.block.ComputerBlock;
 import net.mcreator.yafnafmod.block.ColorfulPlatesBlock;
+import net.mcreator.yafnafmod.block.CoffeeMachineBlock;
 import net.mcreator.yafnafmod.block.CoatHangerBlock;
 import net.mcreator.yafnafmod.block.ClownLemonadeBlock;
 import net.mcreator.yafnafmod.block.ClownFruitPunchBlock;
@@ -3136,6 +3147,7 @@ import net.mcreator.yafnafmod.block.BlueStageBricksBlackExtraTilesBigAlternateBl
 import net.mcreator.yafnafmod.block.BlueStageBricksBlackExtraTilesAlternateBlock;
 import net.mcreator.yafnafmod.block.BlueStageBrickStairsBlock;
 import net.mcreator.yafnafmod.block.BlueStageBrickSlabBlock;
+import net.mcreator.yafnafmod.block.BlueScreenBlock;
 import net.mcreator.yafnafmod.block.BlueMovieChairBlock;
 import net.mcreator.yafnafmod.block.BlueLightBlueTilesBlock;
 import net.mcreator.yafnafmod.block.BlueLightBlueTileStairsBlock;
@@ -7182,19 +7194,21 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> POWER_SWITCH = REGISTRY.register("power_switch", () -> new PowerSwitchBlock());
 	public static final RegistryObject<Block> WALL_MASKS = REGISTRY.register("wall_masks", () -> new WallMasksBlock());
 	public static final RegistryObject<Block> DESK_JUNK_MOVIE_1 = REGISTRY.register("desk_junk_movie_1", () -> new DeskJunkMovie1Block());
-<<<<<<< Updated upstream
-=======
-	public static final RegistryObject<Block> BLUE_MOVIE_STAGE_BASE = REGISTRY.register("blue_movie_stage_base", () -> new BlueMovieStageBaseBlock());
+	public static final RegistryObject<Block> PRIZE_LATCH = REGISTRY.register("prize_latch", () -> new PrizeLatchBlock());
+	public static final RegistryObject<Block> STAGE_BASE_MOVIE_BLUE = REGISTRY.register("stage_base_movie_blue", () -> new StageBaseMovieBlueBlock());
+	public static final RegistryObject<Block> MOVIE_OFFICE_TILED_WALL = REGISTRY.register("movie_office_tiled_wall", () -> new MovieOfficeTiledWallBlock());
+	public static final RegistryObject<Block> MOVIE_OFFICE_TILED_WALL_STAIRS = REGISTRY.register("movie_office_tiled_wall_stairs", () -> new MovieOfficeTiledWallStairsBlock());
+	public static final RegistryObject<Block> MOVIE_OFFICE_TILED_WALL_SLAB = REGISTRY.register("movie_office_tiled_wall_slab", () -> new MovieOfficeTiledWallSlabBlock());
 	public static final RegistryObject<Block> ENDO_01_PILE = REGISTRY.register("endo_01_pile", () -> new Endo01PileBlock());
 	public static final RegistryObject<Block> ENDO_02_PILE = REGISTRY.register("endo_02_pile", () -> new Endo02PileBlock());
-	public static final RegistryObject<Block> PRIZE_LATCH = REGISTRY.register("prize_latch", () -> new PrizeLatchBlock());
-	public static final RegistryObject<Block> OFFICE_TILED_WALL = REGISTRY.register("office_tiled_wall", () -> new OfficeTiledWallBlock());
-	public static final RegistryObject<Block> OFFICE_TILED_WALL_STAIRS = REGISTRY.register("office_tiled_wall_stairs", () -> new OfficeTiledWallStairsBlock());
-	public static final RegistryObject<Block> OFFICE_TILED_WALL_SLAB = REGISTRY.register("office_tiled_wall_slab", () -> new OfficeTiledWallSlabBlock());
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+	public static final RegistryObject<Block> WHITE_BLACK_EDGE_TILES = REGISTRY.register("white_black_edge_tiles", () -> new WhiteBlackEdgeTilesBlock());
+	public static final RegistryObject<Block> WHITE_BLACK_EDGE_TILE_STAIRS = REGISTRY.register("white_black_edge_tile_stairs", () -> new WhiteBlackEdgeTileStairsBlock());
+	public static final RegistryObject<Block> WHITE_BLACK_EDGE_TILE_SLAB = REGISTRY.register("white_black_edge_tile_slab", () -> new WhiteBlackEdgeTileSlabBlock());
+	public static final RegistryObject<Block> VANTABLACK = REGISTRY.register("vantablack", () -> new VantablackBlock());
+	public static final RegistryObject<Block> WHITE_SCREEN = REGISTRY.register("white_screen", () -> new WhiteScreenBlock());
+	public static final RegistryObject<Block> GREEN_SCREEN = REGISTRY.register("green_screen", () -> new GreenScreenBlock());
+	public static final RegistryObject<Block> BLUE_SCREEN = REGISTRY.register("blue_screen", () -> new BlueScreenBlock());
+	public static final RegistryObject<Block> COFFEE_MACHINE = REGISTRY.register("coffee_machine", () -> new CoffeeMachineBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -26,7 +26,6 @@ import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnGroupData;
@@ -130,9 +129,8 @@ public class YellowRabbitEntity extends Monster implements GeoEntity {
 				return super.canUse() && KillChildConditionProcedure.execute(world, x, y, z, entity);
 			}
 		});
-		this.goalSelector.addGoal(5, new AvoidEntityGoal<>(this, GhostChildEntity.class, (float) 6, 1, 1.2));
-		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(7, new FloatGoal(this));
+		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(6, new FloatGoal(this));
 	}
 
 	@Override
@@ -143,6 +141,11 @@ public class YellowRabbitEntity extends Monster implements GeoEntity {
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
+	}
+
+	@Override
+	public SoundEvent getAmbientSound() {
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_springtrap_moan"));
 	}
 
 	@Override
@@ -224,10 +227,13 @@ public class YellowRabbitEntity extends Monster implements GeoEntity {
 		if (this.animationprocedure.equals("empty")) {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
-			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.yr_walk"));
+					&& !this.isSprinting()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.yr_idle"));
+			if (this.isSprinting()) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.run"));
+			}
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.idle"));
 		}
 		return PlayState.STOP;
 	}
