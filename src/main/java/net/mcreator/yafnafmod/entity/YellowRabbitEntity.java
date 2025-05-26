@@ -227,13 +227,10 @@ public class YellowRabbitEntity extends Monster implements GeoEntity {
 		if (this.animationprocedure.equals("empty")) {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
-					&& !this.isSprinting()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.walk"));
+			) {
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.yr_walk"));
 			}
-			if (this.isSprinting()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.run"));
-			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.model.yr_idle"));
 		}
 		return PlayState.STOP;
 	}

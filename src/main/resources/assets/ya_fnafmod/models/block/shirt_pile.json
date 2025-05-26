@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/shirt_pile",
+  "textures": {
+    "all": "ya_fnafmod:block/shirtdisplay_freddy",
+    "particle": "ya_fnafmod:block/shirtdisplay_freddy",
+    "3": "ya_fnafmod:block/shirtdisplay_freddy"
+  },
+  "render_type": "cutout_mipped"
+}

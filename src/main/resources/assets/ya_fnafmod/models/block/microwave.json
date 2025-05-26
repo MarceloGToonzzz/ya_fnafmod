@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/microwave",
+  "textures": {
+    "all": "ya_fnafmod:block/microwave",
+    "particle": "ya_fnafmod:block/microwave",
+    "1": "ya_fnafmod:block/microwave"
+  },
+  "render_type": "solid"
+}

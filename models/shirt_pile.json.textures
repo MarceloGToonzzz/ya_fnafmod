@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "chica": {
+      "map": {
+        "3": "shirtdisplay_chica"
+      },
+      "name": "chica"
+    },
+    "default": {
+      "map": {
+        "3": "shirtdisplay_freddy"
+      },
+      "name": "default"
+    },
+    "bonnie": {
+      "map": {
+        "3": "shirtdisplay_bonnie"
+      },
+      "name": "bonnie"
+    },
+    "foxy": {
+      "map": {
+        "3": "shirtdisplay_foxy"
+      },
+      "name": "foxy"
+    }
+  }
+}

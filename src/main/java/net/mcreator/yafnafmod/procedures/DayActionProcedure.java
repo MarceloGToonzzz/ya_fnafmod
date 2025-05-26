@@ -128,16 +128,19 @@ public class DayActionProcedure {
 		}
 		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible"))) || entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity) {
 			if (IsItNighttimeProcedure.execute(world) == false) {
-				{
-					Entity _ent = entity;
-					if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-						_ent.getServer().getCommands()
-								.performPrefixedCommand(
-										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
-												_ent.getDisplayName(), _ent.level().getServer(), _ent),
-										("tp " + entity.getPersistentData().getDouble("x") + " " + entity.getPersistentData().getDouble("y") + " " + entity.getPersistentData().getDouble("z")));
+				if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
+					{
+						Entity _ent = entity;
+						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands()
+									.performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
+													_ent.getDisplayName(), _ent.level().getServer(), _ent),
+											("tp " + entity.getPersistentData().getDouble("x") + " " + entity.getPersistentData().getDouble("y") + " " + entity.getPersistentData().getDouble("z")));
+						}
 					}
 				}
+				entity.setSilent(true);
 				if (entity instanceof Mob _mobSetNoAi) {
 					_mobSetNoAi.setNoAi(true);
 				}
@@ -148,11 +151,13 @@ public class DayActionProcedure {
 			} else {
 				if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:phantoms")))) {
 					if (!(entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity)) {
+						entity.setSilent(false);
 						if (entity instanceof Mob _mobSetNoAi) {
 							_mobSetNoAi.setNoAi(false);
 						}
 					} else {
 						if (YaFnafmodModVariables.MapVariables.get(world).rare_night == true) {
+							entity.setSilent(false);
 							if (entity instanceof Mob _mobSetNoAi) {
 								_mobSetNoAi.setNoAi(false);
 							}

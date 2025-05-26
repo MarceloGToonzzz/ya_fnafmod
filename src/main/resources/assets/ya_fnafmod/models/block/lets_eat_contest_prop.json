@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/lets_eat_contest",
+  "textures": {
+    "all": "ya_fnafmod:block/lets_eat_contest",
+    "particle": "ya_fnafmod:block/lets_eat_contest",
+    "2": "ya_fnafmod:block/lets_eat_contest"
+  },
+  "render_type": "cutout_mipped"
+}

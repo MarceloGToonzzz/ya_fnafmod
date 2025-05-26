@@ -19,12 +19,12 @@ public class FazwrenchCycleVariantsProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FAZWRENCH.get()) {
 			if (blockstate.getBlock() == YaFnafmodModBlocks.COAT_HANGER.get()) {
 				variant = 2;
-			} else if (blockstate.getBlock() == YaFnafmodModBlocks.HANGING_SHIRT.get()) {
+			} else if (blockstate.getBlock() == YaFnafmodModBlocks.HANGING_SHIRT.get() || blockstate.getBlock() == YaFnafmodModBlocks.SHIRT_DISPLAY.get() || blockstate.getBlock() == YaFnafmodModBlocks.SHIRT_PILE.get()) {
 				variant = 3;
 			}
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip7 ? blockstate.getValue(_getip7) : -1) != variant) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip11 ? blockstate.getValue(_getip11) : -1) != variant) {
 				{
-					int _value = (int) ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip9 ? blockstate.getValue(_getip9) : -1) + 1);
+					int _value = (int) ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip13 ? blockstate.getValue(_getip13) : -1) + 1);
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))

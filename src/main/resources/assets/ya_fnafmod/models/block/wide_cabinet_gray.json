@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cabinetwide",
+  "textures": {
+    "all": "ya_fnafmod:block/cabinetwide_gray",
+    "particle": "ya_fnafmod:block/cabinetwide_gray",
+    "0": "ya_fnafmod:block/cabinetwide_gray"
+  },
+  "render_type": "cutout_mipped"
+}

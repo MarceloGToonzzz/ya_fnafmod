@@ -10,6 +10,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 
+import net.mcreator.yafnafmod.network.YaFnafmodModVariables;
 import net.mcreator.yafnafmod.entity.YenndoEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyEntity;
@@ -42,8 +43,11 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
+		GetNewTargetProcedure.execute(world, x, y, z, entity);
 		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"), entity.getPersistentData().getString("style"));
-		SetNbtPositionsProcedure.execute(x, y, z, entity);
+		if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
+			SetNbtPositionsProcedure.execute(x, y, z, entity);
+		}
 		if (!(entity instanceof EnnardEntity) && !(entity instanceof MoltenFreddyEntity) && !(entity instanceof ScraptrapEntity) && !(entity instanceof ScrapBabyEntity)) {
 			DayActionProcedure.execute(world, x, y, z, entity);
 		}
@@ -59,7 +63,6 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		RustyFunctionProcedure.execute(world, x, y, z, entity);
 		DuckingProcedure.execute(world, x, y, z, entity);
 		CrawlingProcedure.execute(world, x, y, z, entity);
-		GetNewTargetProcedure.execute(world, x, y, z, entity);
 		if (entity instanceof FoxyPirateEntity || entity instanceof WitheredFoxyEntity || entity instanceof ToyFoxyEntity || entity instanceof NightmareFoxyEntity || entity instanceof FuntimeFoxyEntity || entity instanceof DrTeethEntity
 				|| entity instanceof PitbonnieEntity) {
 			if (entity.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {

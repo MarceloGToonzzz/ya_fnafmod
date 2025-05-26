@@ -5272,6 +5272,17 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> GREEN_SCREEN = block(YaFnafmodModBlocks.GREEN_SCREEN);
 	public static final RegistryObject<Item> BLUE_SCREEN = block(YaFnafmodModBlocks.BLUE_SCREEN);
 	public static final RegistryObject<Item> COFFEE_MACHINE = block(YaFnafmodModBlocks.COFFEE_MACHINE);
+	public static final RegistryObject<Item> STATIC_SCREEN = block(YaFnafmodModBlocks.STATIC_SCREEN);
+	public static final RegistryObject<Item> GRASS_STAGE_BASE = block(YaFnafmodModBlocks.GRASS_STAGE_BASE);
+	public static final RegistryObject<Item> SNOW_STAGE_BASE = block(YaFnafmodModBlocks.SNOW_STAGE_BASE);
+	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_1_CLASSIC = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_1_CLASSIC);
+	public static final RegistryObject<Item> JUNK_MOVIE_1 = block(YaFnafmodModBlocks.JUNK_MOVIE_1);
+	public static final RegistryObject<Item> LETS_EAT_CONTEST_PROP = block(YaFnafmodModBlocks.LETS_EAT_CONTEST_PROP);
+	public static final RegistryObject<Item> WIDE_CABINET_GRAY = block(YaFnafmodModBlocks.WIDE_CABINET_GRAY);
+	public static final RegistryObject<Item> MICROWAVE = block(YaFnafmodModBlocks.MICROWAVE);
+	public static final RegistryObject<Item> OFFICE_DESK_FNAF_MOVIE_1_EMPTY = block(YaFnafmodModBlocks.OFFICE_DESK_FNAF_MOVIE_1_EMPTY);
+	public static final RegistryObject<Item> SHIRT_DISPLAY = block(YaFnafmodModBlocks.SHIRT_DISPLAY);
+	public static final RegistryObject<Item> SHIRT_PILE = block(YaFnafmodModBlocks.SHIRT_PILE);
 
 	// Start of user code block custom items
 	// End of user code block custom items
