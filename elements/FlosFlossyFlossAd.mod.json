@@ -21,16 +21,14 @@
         }
       },
       {
-        "type": "button",
+        "type": "imagebutton",
         "data": {
-          "name": "button_skip",
-          "text": "SKIP",
-          "isUndecorated": false,
+          "name": "imagebutton_skipbutton",
+          "image": "skipbutton.png",
+          "hoveredImage": "",
           "onClick": {
             "name": "AdSkipButton"
           },
-          "width": 46,
-          "height": 20,
           "x": 249,
           "y": 170,
           "locked": false

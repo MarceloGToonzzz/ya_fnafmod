@@ -6,7 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.yafnafmod.world.inventory.ElChipAdMenu;
@@ -22,7 +22,7 @@ public class ElChipAdScreen extends AbstractContainerScreen<ElChipAdMenu> {
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_skip;
+	ImageButton imagebutton_skipbutton;
 
 	public ElChipAdScreen(ElChipAdMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -48,7 +48,7 @@ public class ElChipAdScreen extends AbstractContainerScreen<ElChipAdMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("ya_fnafmod:textures/screens/elchipad.png"), this.leftPos + -12, this.topPos + -2, 0, 0, 196, 166, 196, 166);
+		guiGraphics.blit(new ResourceLocation("ya_fnafmod:textures/screens/elchipad.png"), this.leftPos + -12, this.topPos + -2, 0, 0, 98, 83, 98, 83);
 
 		RenderSystem.disableBlend();
 	}
@@ -69,13 +69,13 @@ public class ElChipAdScreen extends AbstractContainerScreen<ElChipAdMenu> {
 	@Override
 	public void init() {
 		super.init();
-		button_skip = Button.builder(Component.translatable("gui.ya_fnafmod.el_chip_ad.button_skip"), e -> {
+		imagebutton_skipbutton = new ImageButton(this.leftPos + 123, this.topPos + 133, 45, 20, 0, 0, 20, new ResourceLocation("ya_fnafmod:textures/screens/atlas/imagebutton_skipbutton.png"), 45, 40, e -> {
 			if (true) {
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new ElChipAdButtonMessage(0, x, y, z));
 				ElChipAdButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 123, this.topPos + 133, 46, 20).build();
-		guistate.put("button:button_skip", button_skip);
-		this.addRenderableWidget(button_skip);
+		});
+		guistate.put("button:imagebutton_skipbutton", imagebutton_skipbutton);
+		this.addRenderableWidget(imagebutton_skipbutton);
 	}
 }

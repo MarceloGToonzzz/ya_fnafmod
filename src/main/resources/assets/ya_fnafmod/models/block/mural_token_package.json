@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/muraltext2",
+  "textures": {
+    "all": "ya_fnafmod:block/muraltext2_tokenpackages",
+    "particle": "ya_fnafmod:block/muraltext2_tokenpackages",
+    "0": "ya_fnafmod:block/muraltext2_tokenpackages"
+  },
+  "render_type": "cutout_mipped"
+}

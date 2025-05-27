@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/vcr",
+  "textures": {
+    "all": "ya_fnafmod:block/vcr",
+    "particle": "ya_fnafmod:block/vcr",
+    "0": "ya_fnafmod:block/vcr"
+  },
+  "render_type": "cutout_mipped"
+}

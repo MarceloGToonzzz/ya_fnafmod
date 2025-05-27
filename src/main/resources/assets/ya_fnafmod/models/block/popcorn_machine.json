@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/popcornmachine",
+  "textures": {
+    "all": "ya_fnafmod:block/popcornmachine",
+    "particle": "ya_fnafmod:block/popcornmachine",
+    "0": "ya_fnafmod:block/popcornmachine"
+  },
+  "render_type": "cutout_mipped"
+}

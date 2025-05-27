@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/toaster_oven",
+  "textures": {
+    "all": "ya_fnafmod:block/toaster_oven",
+    "particle": "ya_fnafmod:block/toaster_oven",
+    "0": "ya_fnafmod:block/toaster_oven"
+  },
+  "render_type": "cutout_mipped"
+}

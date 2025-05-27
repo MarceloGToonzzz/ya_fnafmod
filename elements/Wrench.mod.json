@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "wrench",
-    "customModelName": "Normal",
+    "customModelName": "Tool",
     "customProperties": {},
     "states": [],
     "name": "Wrench",

@@ -5283,6 +5283,11 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> OFFICE_DESK_FNAF_MOVIE_1_EMPTY = block(YaFnafmodModBlocks.OFFICE_DESK_FNAF_MOVIE_1_EMPTY);
 	public static final RegistryObject<Item> SHIRT_DISPLAY = block(YaFnafmodModBlocks.SHIRT_DISPLAY);
 	public static final RegistryObject<Item> SHIRT_PILE = block(YaFnafmodModBlocks.SHIRT_PILE);
+	public static final RegistryObject<Item> MINI_FRIDGE = block(YaFnafmodModBlocks.MINI_FRIDGE);
+	public static final RegistryObject<Item> POPCORN_MACHINE = block(YaFnafmodModBlocks.POPCORN_MACHINE);
+	public static final RegistryObject<Item> TOASTER_OVEN = block(YaFnafmodModBlocks.TOASTER_OVEN);
+	public static final RegistryObject<Item> MURAL_TOKEN_PACKAGE = block(YaFnafmodModBlocks.MURAL_TOKEN_PACKAGE);
+	public static final RegistryObject<Item> VCR_STAND = block(YaFnafmodModBlocks.VCR_STAND);
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -1882,6 +1882,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.TABLE_OLD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ALARM_CLOCK_OLD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DART_BOARD.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.MINI_FRIDGE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.TOASTER_OVEN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.VCR_STAND.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.COFFEE_MACHINE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.COAT_HANGER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_JUNK.get().asItem());
@@ -1890,13 +1893,15 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.JUNK_MOVIE_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WIDE_CABINET_GRAY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MICROWAVE.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.LETS_EAT_CONTEST_PROP.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CHANGE_MACHINE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CLOCKING_MACHINE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STANDING_SIGN_COMING_SOON.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BIG_TRASH_BIN_MOVIE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.HEIGHT_SIGN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MENU_MOVIE_1.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.LETS_EAT_CONTEST_PROP.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POPCORN_MACHINE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.MURAL_TOKEN_PACKAGE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PRIZE_COUNTER_LONG.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_MASKS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.HANGING_SHIRT.get().asItem());
