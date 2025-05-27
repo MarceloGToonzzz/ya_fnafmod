@@ -6,7 +6,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.yafnafmod.world.inventory.PeppersPickledPopcornAdMenu;
@@ -22,7 +22,7 @@ public class PeppersPickledPopcornAdScreen extends AbstractContainerScreen<Peppe
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_skip;
+	ImageButton imagebutton_adskip;
 
 	public PeppersPickledPopcornAdScreen(PeppersPickledPopcornAdMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -69,13 +69,13 @@ public class PeppersPickledPopcornAdScreen extends AbstractContainerScreen<Peppe
 	@Override
 	public void init() {
 		super.init();
-		button_skip = Button.builder(Component.translatable("gui.ya_fnafmod.peppers_pickled_popcorn_ad.button_skip"), e -> {
+		imagebutton_adskip = new ImageButton(this.leftPos + 123, this.topPos + 133, 45, 20, 0, 0, 20, new ResourceLocation("ya_fnafmod:textures/screens/atlas/imagebutton_adskip.png"), 45, 40, e -> {
 			if (true) {
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new PeppersPickledPopcornAdButtonMessage(0, x, y, z));
 				PeppersPickledPopcornAdButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 123, this.topPos + 133, 46, 20).build();
-		guistate.put("button:button_skip", button_skip);
-		this.addRenderableWidget(button_skip);
+		});
+		guistate.put("button:imagebutton_adskip", imagebutton_adskip);
+		this.addRenderableWidget(imagebutton_adskip);
 	}
 }
