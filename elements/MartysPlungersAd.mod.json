@@ -23,8 +23,13 @@
       {
         "type": "imagebutton",
         "data": {
+<<<<<<< Updated upstream
           "name": "imagebutton_adskip",
           "image": "adskip.png",
+=======
+          "name": "imagebutton_skipbutton",
+          "image": "skipbutton.png",
+>>>>>>> Stashed changes
           "hoveredImage": "",
           "onClick": {
             "name": "AdSkipButton"

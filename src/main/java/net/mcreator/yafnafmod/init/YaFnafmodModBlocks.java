@@ -1837,6 +1837,7 @@ import net.mcreator.yafnafmod.block.HotPinkBigCheckeredTilesBlock;
 import net.mcreator.yafnafmod.block.HotPinkBigCheckeredTileStairsBlock;
 import net.mcreator.yafnafmod.block.HotPinkBigCheckeredTileSlabBlock;
 import net.mcreator.yafnafmod.block.HeightSignBlock;
+import net.mcreator.yafnafmod.block.HeadlightBlockBlock;
 import net.mcreator.yafnafmod.block.HappyFrogBlockBlock;
 import net.mcreator.yafnafmod.block.HangingShirtBlock;
 import net.mcreator.yafnafmod.block.HangingLampBlock;
@@ -7231,6 +7232,15 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> OFFICE_DESK_FNAF_MOVIE_1_EMPTY = REGISTRY.register("office_desk_fnaf_movie_1_empty", () -> new OfficeDeskFnafMovie1EmptyBlock());
 	public static final RegistryObject<Block> SHIRT_DISPLAY = REGISTRY.register("shirt_display", () -> new ShirtDisplayBlock());
 	public static final RegistryObject<Block> SHIRT_PILE = REGISTRY.register("shirt_pile", () -> new ShirtPileBlock());
+<<<<<<< Updated upstream
+=======
+	public static final RegistryObject<Block> MINI_FRIDGE = REGISTRY.register("mini_fridge", () -> new MiniFridgeBlock());
+	public static final RegistryObject<Block> POPCORN_MACHINE = REGISTRY.register("popcorn_machine", () -> new PopcornMachineBlock());
+	public static final RegistryObject<Block> TOASTER_OVEN = REGISTRY.register("toaster_oven", () -> new ToasterOvenBlock());
+	public static final RegistryObject<Block> MURAL_TOKEN_PACKAGE = REGISTRY.register("mural_token_package", () -> new MuralTokenPackageBlock());
+	public static final RegistryObject<Block> VCR_STAND = REGISTRY.register("vcr_stand", () -> new VcrStandBlock());
+	public static final RegistryObject<Block> HEADLIGHT_BLOCK = REGISTRY.register("headlight_block", () -> new HeadlightBlockBlock());
+>>>>>>> Stashed changes
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

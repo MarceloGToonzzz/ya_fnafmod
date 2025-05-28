@@ -22,7 +22,11 @@ public class MartysPlungersAdScreen extends AbstractContainerScreen<MartysPlunge
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+<<<<<<< Updated upstream
 	ImageButton imagebutton_adskip;
+=======
+	ImageButton imagebutton_skipbutton;
+>>>>>>> Stashed changes
 
 	public MartysPlungersAdScreen(MartysPlungersAdMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -69,13 +73,22 @@ public class MartysPlungersAdScreen extends AbstractContainerScreen<MartysPlunge
 	@Override
 	public void init() {
 		super.init();
+<<<<<<< Updated upstream
 		imagebutton_adskip = new ImageButton(this.leftPos + 123, this.topPos + 133, 45, 20, 0, 0, 20, new ResourceLocation("ya_fnafmod:textures/screens/atlas/imagebutton_adskip.png"), 45, 40, e -> {
+=======
+		imagebutton_skipbutton = new ImageButton(this.leftPos + 123, this.topPos + 133, 45, 20, 0, 0, 20, new ResourceLocation("ya_fnafmod:textures/screens/atlas/imagebutton_skipbutton.png"), 45, 40, e -> {
+>>>>>>> Stashed changes
 			if (true) {
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new MartysPlungersAdButtonMessage(0, x, y, z));
 				MartysPlungersAdButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		});
+<<<<<<< Updated upstream
 		guistate.put("button:imagebutton_adskip", imagebutton_adskip);
 		this.addRenderableWidget(imagebutton_adskip);
+=======
+		guistate.put("button:imagebutton_skipbutton", imagebutton_skipbutton);
+		this.addRenderableWidget(imagebutton_skipbutton);
+>>>>>>> Stashed changes
 	}
 }

@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.yafnafmod.network.HeadlightsMessage;
 import net.mcreator.yafnafmod.network.DrivingRightMessage;
 import net.mcreator.yafnafmod.network.DrivingLeftMessage;
 import net.mcreator.yafnafmod.network.DrivingForwardMessage;
@@ -114,6 +115,19 @@ public class YaFnafmodModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping HEADLIGHTS = new KeyMapping("key.ya_fnafmod.headlights", GLFW.GLFW_KEY_H, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				YaFnafmodMod.PACKET_HANDLER.sendToServer(new HeadlightsMessage(0, 0));
+				HeadlightsMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long DRIVING_FORWARD_LASTPRESS = 0;
 	private static long DRIVING_LEFT_LASTPRESS = 0;
 	private static long DRIVING_RIGHT_LASTPRESS = 0;
@@ -127,6 +141,7 @@ public class YaFnafmodModKeyMappings {
 		event.register(DRIVING_RIGHT);
 		event.register(DRIVING_BACKWARD);
 		event.register(CAR_ACCELERATING);
+		event.register(HEADLIGHTS);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -139,6 +154,7 @@ public class YaFnafmodModKeyMappings {
 				DRIVING_RIGHT.consumeClick();
 				DRIVING_BACKWARD.consumeClick();
 				CAR_ACCELERATING.consumeClick();
+				HEADLIGHTS.consumeClick();
 			}
 		}
 	}

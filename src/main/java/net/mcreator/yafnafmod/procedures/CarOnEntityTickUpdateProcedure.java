@@ -1,14 +1,17 @@
 package net.mcreator.yafnafmod.procedures;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
@@ -35,6 +38,10 @@ public class CarOnEntityTickUpdateProcedure {
 		double multiplier = 0;
 		double yvel = 0;
 		double acceleration = 0;
+		double distance = 0;
+		double Y_Val = 0;
+		double Z_Val = 0;
+		double X_Val = 0;
 		multiplier = 1.25;
 		if (!((world.getBlockState(BlockPos.containing(x + entity.getLookAngle().x, y, z + entity.getLookAngle().z))).getBlock() == Blocks.AIR)) {
 			{
@@ -220,6 +227,31 @@ public class CarOnEntityTickUpdateProcedure {
 		} else {
 			entity.getPersistentData().putDouble("throttle", 0);
 			entity.getPersistentData().putDouble("back_throttle", 0);
+		}
+		if (entity.getPersistentData().getDouble("HeadlightOn") == 1) {
+			if (entity.getPersistentData().getDouble("headlight") < 7 && !(entity.level()
+					.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale((entity.getPersistentData().getDouble("headlight")))), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity))
+					.getType() == HitResult.Type.BLOCK)) {
+				entity.getPersistentData().putDouble("headlight", (entity.getPersistentData().getDouble("headlight") + 1));
+			} else {
+				entity.getPersistentData().putDouble("headlight", 2);
+			}
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("Distance=" + entity.getPersistentData().getDouble("headlight"))), false);
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("fill ^- ^ ^2 ^1 ^ ^" + entity.getPersistentData().getDouble("headlight") + " ya_fnafmod:headlight_block replace air"));
+				}
+			}
+			{
+				Entity _ent = entity;
+				if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), ("fill ^-1 ^ ^2 ^-1 ^ ^" + entity.getPersistentData().getDouble("headlight") + " ya_fnafmod:headlight_block replace air"));
+				}
+			}
 		}
 	}
 }

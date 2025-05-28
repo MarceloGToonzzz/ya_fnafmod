@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/headlightblock",
+    "up": "ya_fnafmod:block/headlightblock",
+    "north": "ya_fnafmod:block/headlightblock",
+    "east": "ya_fnafmod:block/headlightblock",
+    "south": "ya_fnafmod:block/headlightblock",
+    "west": "ya_fnafmod:block/headlightblock",
+    "particle": "ya_fnafmod:block/headlightblock"
+  },
+  "render_type": "cutout"
+}
