@@ -76,7 +76,7 @@ public class ChairTorturePlayerTrappedProcedure {
 						return "";
 					}
 				}.getValue(world, BlockPos.containing(x, y, z), "victim")))) {
-					if (((new BiFunction<LevelAccessor, String, Entity>() {
+					if (!(((new BiFunction<LevelAccessor, String, Entity>() {
 						@Override
 						public Entity apply(LevelAccessor levelAccessor, String uuid) {
 							if (levelAccessor instanceof ServerLevel serverLevel) {
@@ -94,9 +94,29 @@ public class ChairTorturePlayerTrappedProcedure {
 								return blockEntity.getPersistentData().getString(tag);
 							return "";
 						}
-					}.getValue(world, BlockPos.containing(x, y, z), "victim")))) instanceof Player _player) {
-						BlockPos _bp = BlockPos.containing(x, y, z);
-						_player.level().getBlockState(_bp).use(_player.level(), _player, InteractionHand.MAIN_HAND, BlockHitResult.miss(new Vec3(_bp.getX(), _bp.getY(), _bp.getZ()), Direction.UP, _bp));
+					}.getValue(world, BlockPos.containing(x, y, z), "victim")))) == null)) {
+						if (((new BiFunction<LevelAccessor, String, Entity>() {
+							@Override
+							public Entity apply(LevelAccessor levelAccessor, String uuid) {
+								if (levelAccessor instanceof ServerLevel serverLevel) {
+									try {
+										return serverLevel.getEntity(UUID.fromString(uuid));
+									} catch (Exception e) {
+									}
+								}
+								return null;
+							}
+						}).apply(world, (new Object() {
+							public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+								BlockEntity blockEntity = world.getBlockEntity(pos);
+								if (blockEntity != null)
+									return blockEntity.getPersistentData().getString(tag);
+								return "";
+							}
+						}.getValue(world, BlockPos.containing(x, y, z), "victim")))) instanceof Player _player) {
+							BlockPos _bp = BlockPos.containing(x, y, z);
+							_player.level().getBlockState(_bp).use(_player.level(), _player, InteractionHand.MAIN_HAND, BlockHitResult.miss(new Vec3(_bp.getX(), _bp.getY(), _bp.getZ()), Direction.UP, _bp));
+						}
 					}
 				} else {
 					if (!world.isClientSide()) {
