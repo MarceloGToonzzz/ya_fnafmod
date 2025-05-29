@@ -244,6 +244,7 @@ import net.mcreator.yafnafmod.block.renderer.CutoutBonnieToyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBonnieRetroTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBalloraTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBabyTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CustomPizzeriaSignTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ControlPanelTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ConcertSpeakerTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ClownLemonadeTileRenderer;
@@ -698,5 +699,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SHREDDY_FAZCHAIR_BLOCK.get(), context -> new ShreddyFazchairBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_01_PILE.get(), context -> new Endo01PileTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_02_PILE.get(), context -> new Endo02PileTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUSTOM_PIZZERIA_SIGN.get(), context -> new CustomPizzeriaSignTileRenderer());
 	}
 }

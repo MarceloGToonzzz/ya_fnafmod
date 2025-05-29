@@ -24,6 +24,7 @@ import net.mcreator.yafnafmod.world.inventory.FlosFlossyFlossAdMenu;
 import net.mcreator.yafnafmod.world.inventory.FiztimeSodaPopAdMenu;
 import net.mcreator.yafnafmod.world.inventory.FatLetterUiMenu;
 import net.mcreator.yafnafmod.world.inventory.ElChipAdMenu;
+import net.mcreator.yafnafmod.world.inventory.CustomPizzeriaSignGUIMenu;
 import net.mcreator.yafnafmod.world.inventory.CabinetMenu;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
@@ -43,4 +44,5 @@ public class YaFnafmodModMenus {
 	public static final RegistryObject<MenuType<MartysPlungersAdMenu>> MARTYS_PLUNGERS_AD = REGISTRY.register("martys_plungers_ad", () -> IForgeMenuType.create(MartysPlungersAdMenu::new));
 	public static final RegistryObject<MenuType<ElChipAdMenu>> EL_CHIP_AD = REGISTRY.register("el_chip_ad", () -> IForgeMenuType.create(ElChipAdMenu::new));
 	public static final RegistryObject<MenuType<PeppersPickledPopcornAdMenu>> PEPPERS_PICKLED_POPCORN_AD = REGISTRY.register("peppers_pickled_popcorn_ad", () -> IForgeMenuType.create(PeppersPickledPopcornAdMenu::new));
+	public static final RegistryObject<MenuType<CustomPizzeriaSignGUIMenu>> CUSTOM_PIZZERIA_SIGN_GUI = REGISTRY.register("custom_pizzeria_sign_gui", () -> IForgeMenuType.create(CustomPizzeriaSignGUIMenu::new));
 }

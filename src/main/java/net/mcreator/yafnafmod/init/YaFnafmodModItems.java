@@ -725,6 +725,7 @@ import net.mcreator.yafnafmod.block.display.CutoutBonnieToyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBonnieRetroDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBalloraDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBabyDisplayItem;
+import net.mcreator.yafnafmod.block.display.CustomPizzeriaSignDisplayItem;
 import net.mcreator.yafnafmod.block.display.ControlPanelDisplayItem;
 import net.mcreator.yafnafmod.block.display.ConcertSpeakerDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClownLemonadeDisplayItem;
@@ -5288,6 +5289,8 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> TOASTER_OVEN = block(YaFnafmodModBlocks.TOASTER_OVEN);
 	public static final RegistryObject<Item> MURAL_TOKEN_PACKAGE = block(YaFnafmodModBlocks.MURAL_TOKEN_PACKAGE);
 	public static final RegistryObject<Item> VCR_STAND = block(YaFnafmodModBlocks.VCR_STAND);
+	public static final RegistryObject<Item> CUSTOM_PIZZERIA_SIGN = REGISTRY.register(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.getId().getPath(),
+			() -> new CustomPizzeriaSignDisplayItem(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

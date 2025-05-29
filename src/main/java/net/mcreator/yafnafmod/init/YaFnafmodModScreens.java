@@ -24,6 +24,7 @@ import net.mcreator.yafnafmod.client.gui.FlosFlossyFlossAdScreen;
 import net.mcreator.yafnafmod.client.gui.FiztimeSodaPopAdScreen;
 import net.mcreator.yafnafmod.client.gui.FatLetterUiScreen;
 import net.mcreator.yafnafmod.client.gui.ElChipAdScreen;
+import net.mcreator.yafnafmod.client.gui.CustomPizzeriaSignGUIScreen;
 import net.mcreator.yafnafmod.client.gui.CabinetScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -45,6 +46,7 @@ public class YaFnafmodModScreens {
 			MenuScreens.register(YaFnafmodModMenus.MARTYS_PLUNGERS_AD.get(), MartysPlungersAdScreen::new);
 			MenuScreens.register(YaFnafmodModMenus.EL_CHIP_AD.get(), ElChipAdScreen::new);
 			MenuScreens.register(YaFnafmodModMenus.PEPPERS_PICKLED_POPCORN_AD.get(), PeppersPickledPopcornAdScreen::new);
+			MenuScreens.register(YaFnafmodModMenus.CUSTOM_PIZZERIA_SIGN_GUI.get(), CustomPizzeriaSignGUIScreen::new);
 		});
 	}
 }

@@ -2017,6 +2017,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_PLUSHIES = REGISTRY.register("ya_fnaf_mod_plushies",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_plushies")).icon(() -> new ItemStack(YaFnafmodModBlocks.PLUSH_FREDDY.get())).displayItems((parameters, tabData) -> {

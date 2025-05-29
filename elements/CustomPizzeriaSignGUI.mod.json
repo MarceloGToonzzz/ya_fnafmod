@@ -1,0 +1,109 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 113,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Insert Text 1",
+          "name": "TextLine1",
+          "width": 120,
+          "height": 20,
+          "x": 155,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Insert Text 2",
+          "name": "TextLine2",
+          "width": 120,
+          "height": 20,
+          "x": 155,
+          "y": 130,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_apply",
+          "text": "Apply",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "ApplyNewSignTextButton"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 188,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "name": "SignHexCode",
+          "width": 120,
+          "height": 20,
+          "x": 155,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_text_color",
+          "text": {
+            "fixedValue": "Text Color"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 155,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_text",
+          "text": {
+            "fixedValue": "Text"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 155,
+          "y": 100,
+          "locked": false
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "CustomPizzeriaSignGUIThisGUIIsOpened"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

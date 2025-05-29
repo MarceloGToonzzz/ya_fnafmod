@@ -264,6 +264,7 @@ import net.mcreator.yafnafmod.block.entity.CutoutBonnieToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBonnieRetroTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBalloraTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBabyTileEntity;
+import net.mcreator.yafnafmod.block.entity.CustomPizzeriaSignTileEntity;
 import net.mcreator.yafnafmod.block.entity.CreativeGeneratorBlockBlockEntity;
 import net.mcreator.yafnafmod.block.entity.ControlPanelTileEntity;
 import net.mcreator.yafnafmod.block.entity.ConcertSpeakerTileEntity;
@@ -988,6 +989,8 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(ShreddyFazchairBlockTileEntity::new, YaFnafmodModBlocks.SHREDDY_FAZCHAIR_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<Endo01PileTileEntity>> ENDO_01_PILE = REGISTRY.register("endo_01_pile", () -> BlockEntityType.Builder.of(Endo01PileTileEntity::new, YaFnafmodModBlocks.ENDO_01_PILE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<Endo02PileTileEntity>> ENDO_02_PILE = REGISTRY.register("endo_02_pile", () -> BlockEntityType.Builder.of(Endo02PileTileEntity::new, YaFnafmodModBlocks.ENDO_02_PILE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CustomPizzeriaSignTileEntity>> CUSTOM_PIZZERIA_SIGN = REGISTRY.register("custom_pizzeria_sign",
+			() -> BlockEntityType.Builder.of(CustomPizzeriaSignTileEntity::new, YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

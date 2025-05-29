@@ -2445,6 +2445,7 @@ import net.mcreator.yafnafmod.block.CutoutBonnieToyBlock;
 import net.mcreator.yafnafmod.block.CutoutBonnieRetroBlock;
 import net.mcreator.yafnafmod.block.CutoutBalloraBlock;
 import net.mcreator.yafnafmod.block.CutoutBabyBlock;
+import net.mcreator.yafnafmod.block.CustomPizzeriaSignBlock;
 import net.mcreator.yafnafmod.block.CurtainYellowThinBlock;
 import net.mcreator.yafnafmod.block.CurtainYellowStarlessThinBlock;
 import net.mcreator.yafnafmod.block.CurtainYellowStarlessBlock;
@@ -7241,6 +7242,7 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> TOASTER_OVEN = REGISTRY.register("toaster_oven", () -> new ToasterOvenBlock());
 	public static final RegistryObject<Block> MURAL_TOKEN_PACKAGE = REGISTRY.register("mural_token_package", () -> new MuralTokenPackageBlock());
 	public static final RegistryObject<Block> VCR_STAND = REGISTRY.register("vcr_stand", () -> new VcrStandBlock());
+	public static final RegistryObject<Block> CUSTOM_PIZZERIA_SIGN = REGISTRY.register("custom_pizzeria_sign", () -> new CustomPizzeriaSignBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
