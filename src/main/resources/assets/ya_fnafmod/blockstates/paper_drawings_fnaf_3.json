@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/paper_drawings_fnaf_3"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/paper_drawings_fnaf_3",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/paper_drawings_fnaf_3",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/paper_drawings_fnaf_3",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ya_fnafmod:block/paper_drawings_fnaf_3",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ya_fnafmod:block/paper_drawings_fnaf_3",
+      "x": 90
+    }
+  }
+}

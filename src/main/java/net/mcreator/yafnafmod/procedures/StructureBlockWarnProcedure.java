@@ -18,16 +18,24 @@ public class StructureBlockWarnProcedure {
 			x = 96;
 			y = 24;
 			z = 96;
+		} else if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_2.get()) {
+			x = 96;
+			y = 30;
+			z = 96;
+		} else if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_3.get()) {
+			x = 96;
+			y = 30;
+			z = 96;
 		}
 		if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_1_CLASSIC.get()) {
 			x = 48;
 			y = 25;
 			z = 48;
-		} else if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_2.get()) {
+		} else if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_FNAF_2_CLASSIC.get()) {
 			x = 47;
 			y = 25;
 			z = 48;
-		} else if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_3.get()) {
+		} else if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_FNAF_3_CLASSIC.get()) {
 			x = 48;
 			y = 25;
 			z = 48;

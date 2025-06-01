@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/stage_rainbow",
+  "textures": {
+    "all": "ya_fnafmod:block/stage_rainbow_cmr",
+    "particle": "ya_fnafmod:block/stage_rainbow_cmr",
+    "3": "ya_fnafmod:block/stage_rainbow"
+  },
+  "render_type": "cutout_mipped"
+}

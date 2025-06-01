@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "top": "doorframe_dark",
+        "left": "doorframe_dark"
+      },
+      "name": "default"
+    },
+    "white": {
+      "map": {
+        "top": "doorframe_light",
+        "left": "doorframe_light"
+      },
+      "name": "white"
+    }
+  }
+}

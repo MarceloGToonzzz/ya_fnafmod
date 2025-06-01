@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "stage_rainbow"
+      },
+      "name": "default"
+    },
+    "cmr": {
+      "map": {
+        "3": "stage_rainbow_cmr"
+      },
+      "name": "cmr"
+    }
+  }
+}

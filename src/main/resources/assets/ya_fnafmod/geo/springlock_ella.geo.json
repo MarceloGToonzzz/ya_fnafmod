@@ -1,0 +1,97 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Ella",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Left Leg",
+					"parent": "Ella",
+					"pivot": [1.9, 12, 0],
+					"cubes": [
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "uv": [56, 25]}
+					]
+				},
+				{
+					"name": "Right Leg",
+					"parent": "Ella",
+					"pivot": [-1.9, 12, 0],
+					"cubes": [
+						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "uv": [16, 56]}
+					]
+				},
+				{
+					"name": "Body",
+					"parent": "Ella",
+					"pivot": [0, 12, 0.5],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [32, 25]},
+						{"origin": [-4, 12, -1], "size": [8, 12, 3], "inflate": 0.25, "uv": [32, 41]}
+					]
+				},
+				{
+					"name": "Hatch",
+					"parent": "Body",
+					"pivot": [4, 18, -1.25],
+					"cubes": [
+						{"origin": [-4, 12, -2.5], "size": [8, 12, 1], "inflate": 0.25, "uv": [48, 0]}
+					]
+				},
+				{
+					"name": "Dress",
+					"parent": "Body",
+					"pivot": [0, 12.5, 0.25],
+					"cubes": [
+						{"origin": [-4, 5.5, -2.75], "size": [8, 6, 5], "inflate": 0.25, "uv": [0, 45]}
+					]
+				},
+				{
+					"name": "Right Arm",
+					"parent": "Body",
+					"pivot": [-5, 22, 0],
+					"cubes": [
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [54, 41]}
+					]
+				},
+				{
+					"name": "Left Arm",
+					"parent": "Body",
+					"pivot": [5, 22, 0],
+					"cubes": [
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "uv": [0, 56]}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "Body",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 13]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.4, "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "Hat",
+					"parent": "Head",
+					"pivot": [0, 30.5, 0],
+					"rotation": [0, 0, -5],
+					"cubes": [
+						{"origin": [-6, 30.25, -6], "size": [12, 1, 12], "uv": [0, 0]},
+						{"origin": [-4.5, 30.25, -4.5], "size": [9, 3, 9], "uv": [32, 13]}
+					]
+				}
+			]
+		}
+	]
+}

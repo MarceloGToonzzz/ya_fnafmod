@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortile_blackred_oldcracked",
+    "bottom": "ya_fnafmod:block/floortile_blackred_oldcracked",
+    "top": "ya_fnafmod:block/floortile_blackred_oldcracked",
+    "side": "ya_fnafmod:block/floortile_blackred_oldcracked"
+  },
+  "render_type": "solid"
+}

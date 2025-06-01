@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade_centipede",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade_centipede",
+    "particle": "ya_fnafmod:block/arcade_centipede",
+    "2": "ya_fnafmod:block/arcade_centipede"
+  },
+  "render_type": "cutout"
+}

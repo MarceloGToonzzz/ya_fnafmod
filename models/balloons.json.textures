@@ -23,6 +23,30 @@
         "3": "balloons_4"
       },
       "name": "balloon4"
+    },
+    "balloon5": {
+      "map": {
+        "3": "balloons_5"
+      },
+      "name": "balloon5"
+    },
+    "balloon6": {
+      "map": {
+        "3": "balloons_6"
+      },
+      "name": "balloon6"
+    },
+    "balloon7": {
+      "map": {
+        "3": "balloons_7"
+      },
+      "name": "balloon7"
+    },
+    "balloon8": {
+      "map": {
+        "3": "balloons_8"
+      },
+      "name": "balloon8"
     }
   }
 }

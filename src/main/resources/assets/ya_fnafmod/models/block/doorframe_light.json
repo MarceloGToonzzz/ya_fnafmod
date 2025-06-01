@@ -1,0 +1,11 @@
+{
+  "parent": "ya_fnafmod:custom/doorframe_lefttopright",
+  "textures": {
+    "all": "ya_fnafmod:block/doorframe_light",
+    "particle": "ya_fnafmod:block/doorframe_light",
+    "top": "ya_fnafmod:block/doorframe_light",
+    "left": "ya_fnafmod:block/doorframe_light",
+    "right": "ya_fnafmod:block/doorframe_light"
+  },
+  "render_type": "cutout_mipped"
+}

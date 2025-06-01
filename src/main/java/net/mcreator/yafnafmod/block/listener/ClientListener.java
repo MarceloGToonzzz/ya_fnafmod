@@ -348,8 +348,13 @@ import net.mcreator.yafnafmod.block.renderer.BalloonCartTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BalloonBoyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BalloonBarrelTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BaggieMaggieBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ArcadeTicketMuncherCupcakeTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ArcadeMidnightMotoristTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ArcadeLilHoopsTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ArcadeFruityMazeTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ArcadeFoosballTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ArcadeCandyCraneMachineTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.ArcadeBigTreatPounderTileRenderer;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
 @Mod.EventBusSubscriber(modid = YaFnafmodMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -700,5 +705,10 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_01_PILE.get(), context -> new Endo01PileTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_02_PILE.get(), context -> new Endo02PileTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUSTOM_PIZZERIA_SIGN.get(), context -> new CustomPizzeriaSignTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_BIG_TREAT_POUNDER.get(), context -> new ArcadeBigTreatPounderTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_FOOSBALL.get(), context -> new ArcadeFoosballTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_LIL_HOOPS.get(), context -> new ArcadeLilHoopsTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_TICKET_MUNCHER_CUPCAKE.get(), context -> new ArcadeTicketMuncherCupcakeTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_CANDY_CRANE_MACHINE.get(), context -> new ArcadeCandyCraneMachineTileRenderer());
 	}
 }

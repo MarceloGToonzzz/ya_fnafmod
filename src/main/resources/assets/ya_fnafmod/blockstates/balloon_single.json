@@ -149,6 +149,51 @@
     "facing=west,blockstate=9": {
       "model": "ya_fnafmod:block/balloon_single_states_blockstate_8",
       "y": 270
+    },
+    "facing=north,blockstate=10": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_9"
+    },
+    "facing=east,blockstate=10": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_9",
+      "y": 90
+    },
+    "facing=south,blockstate=10": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_9",
+      "y": 180
+    },
+    "facing=west,blockstate=10": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_9",
+      "y": 270
+    },
+    "facing=north,blockstate=11": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_10"
+    },
+    "facing=east,blockstate=11": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_10",
+      "y": 90
+    },
+    "facing=south,blockstate=11": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_10",
+      "y": 180
+    },
+    "facing=west,blockstate=11": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_10",
+      "y": 270
+    },
+    "facing=north,blockstate=12": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_11"
+    },
+    "facing=east,blockstate=12": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_11",
+      "y": 90
+    },
+    "facing=south,blockstate=12": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_11",
+      "y": 180
+    },
+    "facing=west,blockstate=12": {
+      "model": "ya_fnafmod:block/balloon_single_states_blockstate_11",
+      "y": 270
     }
   }
 }

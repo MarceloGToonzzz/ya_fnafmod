@@ -47,12 +47,14 @@ import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.TomatoProjectileEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapDayEntity;
+import net.mcreator.yafnafmod.entity.SpringlockEllaSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ShotgunShellProjectileEntity;
+import net.mcreator.yafnafmod.entity.ShadowFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.SeatEntity;
@@ -1141,6 +1143,14 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<YellowRabbitEntity>of(YellowRabbitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(YellowRabbitEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ShadowFreddySuitEntity>> SHADOW_FREDDY_SUIT = register("shadow_freddy_suit",
+			EntityType.Builder.<ShadowFreddySuitEntity>of(ShadowFreddySuitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShadowFreddySuitEntity::new)
+
+					.sized(0.6f, 1.6f));
+	public static final RegistryObject<EntityType<SpringlockEllaSuitEntity>> SPRINGLOCK_ELLA_SUIT = register("springlock_ella_suit",
+			EntityType.Builder.<SpringlockEllaSuitEntity>of(SpringlockEllaSuitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringlockEllaSuitEntity::new)
+
+					.sized(0.6f, 1.6f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1369,6 +1379,8 @@ public class YaFnafmodModEntities {
 			PuppetFreddybearEntity.init();
 			PuppetFreddybearDayEntity.init();
 			YellowRabbitEntity.init();
+			ShadowFreddySuitEntity.init();
+			SpringlockEllaSuitEntity.init();
 		});
 	}
 
@@ -1592,5 +1604,7 @@ public class YaFnafmodModEntities {
 		event.put(PUPPET_FREDDYBEAR.get(), PuppetFreddybearEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayEntity.createAttributes().build());
 		event.put(YELLOW_RABBIT.get(), YellowRabbitEntity.createAttributes().build());
+		event.put(SHADOW_FREDDY_SUIT.get(), ShadowFreddySuitEntity.createAttributes().build());
+		event.put(SPRINGLOCK_ELLA_SUIT.get(), SpringlockEllaSuitEntity.createAttributes().build());
 	}
 }

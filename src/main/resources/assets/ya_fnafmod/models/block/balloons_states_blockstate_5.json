@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/balloons",
+  "textures": {
+    "all": "ya_fnafmod:block/balloons_7",
+    "particle": "ya_fnafmod:block/balloons_1",
+    "3": "ya_fnafmod:block/balloons_7"
+  },
+  "render_type": "cutout_mipped"
+}

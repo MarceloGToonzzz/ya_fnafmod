@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "right": "doorframe_dark"
+      },
+      "name": "default"
+    },
+    "white": {
+      "map": {
+        "right": "doorframe_light"
+      },
+      "name": "white"
+    }
+  }
+}

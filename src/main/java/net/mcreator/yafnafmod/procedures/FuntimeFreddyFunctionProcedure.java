@@ -111,14 +111,12 @@ public class FuntimeFreddyFunctionProcedure {
 						}
 					}
 				} else {
-					if (!(entity.getPersistentData().getString("skin")).equals("frights") && !(entity.getPersistentData().getString("skin")).equals("novel")) {
-						if ((entity instanceof FuntimeFreddyEntity _datEntL53 && _datEntL53.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-							if (entity instanceof FuntimeFreddyEntity animatable)
-								animatable.setTexture("ftfreddy_fms");
-						} else {
-							if (entity instanceof FuntimeFreddyEntity animatable)
-								animatable.setTexture("ftfreddy_fms_bonless");
-						}
+					if ((entity instanceof FuntimeFreddyEntity _datEntL51 && _datEntL51.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+						if (entity instanceof FuntimeFreddyEntity animatable)
+							animatable.setTexture("ftfreddy_fms");
+					} else {
+						if (entity instanceof FuntimeFreddyEntity animatable)
+							animatable.setTexture("ftfreddy_fms_bonless");
 					}
 				}
 				entity.getPersistentData().putBoolean("refresh_skin", true);
@@ -133,7 +131,7 @@ public class FuntimeFreddyFunctionProcedure {
 							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL61 && _datEntL61.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
+						}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL59 && _datEntL59.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
 							entity.getPersistentData().putString("original", (entityiterator.getStringUUID()));
 							entity.getPersistentData().putString("original_skin", (entityiterator.getPersistentData().getString("skin")));
 							entity.getPersistentData().putString("skin", (entityiterator.getPersistentData().getString("skin")));
@@ -256,9 +254,10 @@ public class FuntimeFreddyFunctionProcedure {
 										Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 											return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 										}
-									}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL99 && _datEntL99.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
+									}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof FuntimeFreddyEntity _datEntL97 && _datEntL97.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == false) {
 								if (entityiterator instanceof FuntimeFreddyEntity _datEntSetL)
 									_datEntSetL.getEntityData().set(FuntimeFreddyEntity.DATA_has_bonbon, true);
+								entityiterator.getPersistentData().putString("style", (entity.getPersistentData().getString("style")));
 								entityiterator.getPersistentData().putString("skin", (entity.getPersistentData().getString("original_skin")));
 								entityiterator.getPersistentData().putBoolean("refresh_skin", false);
 								if (!entity.level().isClientSide())

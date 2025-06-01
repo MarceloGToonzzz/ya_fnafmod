@@ -9,6 +9,8 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.EquipmentSlot;
 
+import net.mcreator.yafnafmod.item.YellowRabbitSuitArmorItem;
+import net.mcreator.yafnafmod.item.YellowRabbitFixedSuitArmorItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorItem;
 import net.mcreator.yafnafmod.item.SpringbonnieFmsSuitArmorItem;
 import net.mcreator.yafnafmod.item.GasMaskItem;
@@ -53,6 +55,10 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof YellowRabbitSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof YellowRabbitFixedSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GeoItem) {
@@ -80,6 +86,10 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof FredbearFmsSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof YellowRabbitSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof YellowRabbitFixedSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}
@@ -109,6 +119,10 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof YellowRabbitSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof YellowRabbitFixedSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GeoItem) {
@@ -136,6 +150,10 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof FredbearFmsSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof SpringbonnieFmsSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof YellowRabbitSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof YellowRabbitFixedSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}

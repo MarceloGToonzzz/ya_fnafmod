@@ -83,6 +83,59 @@
 					}
 				}
 			}
+		},
+		"animation.model.sfreddy_suit": {
+			"loop": true,
+			"bones": {
+				"pivot": {
+					"rotation": {
+						"vector": [-5, 0, 0]
+					},
+					"position": {
+						"vector": [0, -11, 2]
+					}
+				},
+				"armorLeftLeg": {
+					"rotation": {
+						"vector": [-92.5, 0, 0]
+					},
+					"position": {
+						"vector": [10, 0, 0]
+					}
+				},
+				"armorRightLeg": {
+					"rotation": {
+						"vector": [-84.07764, 32.36121, 3.17805]
+					},
+					"position": {
+						"vector": [0, 0, -2]
+					}
+				},
+				"armorLeftArm": {
+					"rotation": {
+						"vector": [-18.54835, -19.03771, -38.75395]
+					},
+					"position": {
+						"vector": [2, -2, 0]
+					}
+				},
+				"armorRightArm": {
+					"rotation": {
+						"vector": [-61.93319, 11.06861, 5.84485]
+					},
+					"position": {
+						"vector": [-1, -2, 0]
+					}
+				},
+				"armorHead": {
+					"rotation": {
+						"vector": [-7.5, 7.5, 0]
+					},
+					"position": {
+						"vector": [5, -13, -5]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

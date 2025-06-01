@@ -145,6 +145,31 @@
     "normal": "pizzeriasign_generic.geo.json",
     "displaySettings": "pizzeria_sign.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "pizzeriasign_generic2",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "pizzeriasign_generic.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzeriasign_generic3",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "pizzeriasign_generic.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "pizzeriasign_generic4",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "pizzeriasign_generic.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

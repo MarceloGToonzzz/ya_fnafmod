@@ -371,8 +371,13 @@ import net.mcreator.yafnafmod.block.entity.BalloonCartTileEntity;
 import net.mcreator.yafnafmod.block.entity.BalloonBoyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BalloonBarrelTileEntity;
 import net.mcreator.yafnafmod.block.entity.BaggieMaggieBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.ArcadeTicketMuncherCupcakeTileEntity;
 import net.mcreator.yafnafmod.block.entity.ArcadeMidnightMotoristTileEntity;
+import net.mcreator.yafnafmod.block.entity.ArcadeLilHoopsTileEntity;
 import net.mcreator.yafnafmod.block.entity.ArcadeFruityMazeTileEntity;
+import net.mcreator.yafnafmod.block.entity.ArcadeFoosballTileEntity;
+import net.mcreator.yafnafmod.block.entity.ArcadeCandyCraneMachineTileEntity;
+import net.mcreator.yafnafmod.block.entity.ArcadeBigTreatPounderTileEntity;
 import net.mcreator.yafnafmod.block.entity.AlarmClockOldBlockEntity;
 import net.mcreator.yafnafmod.block.entity.AlarmClockBlockEntity;
 import net.mcreator.yafnafmod.YaFnafmodMod;
@@ -991,6 +996,16 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<Endo02PileTileEntity>> ENDO_02_PILE = REGISTRY.register("endo_02_pile", () -> BlockEntityType.Builder.of(Endo02PileTileEntity::new, YaFnafmodModBlocks.ENDO_02_PILE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CustomPizzeriaSignTileEntity>> CUSTOM_PIZZERIA_SIGN = REGISTRY.register("custom_pizzeria_sign",
 			() -> BlockEntityType.Builder.of(CustomPizzeriaSignTileEntity::new, YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ArcadeBigTreatPounderTileEntity>> ARCADE_BIG_TREAT_POUNDER = REGISTRY.register("arcade_big_treat_pounder",
+			() -> BlockEntityType.Builder.of(ArcadeBigTreatPounderTileEntity::new, YaFnafmodModBlocks.ARCADE_BIG_TREAT_POUNDER.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ArcadeFoosballTileEntity>> ARCADE_FOOSBALL = REGISTRY.register("arcade_foosball",
+			() -> BlockEntityType.Builder.of(ArcadeFoosballTileEntity::new, YaFnafmodModBlocks.ARCADE_FOOSBALL.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ArcadeLilHoopsTileEntity>> ARCADE_LIL_HOOPS = REGISTRY.register("arcade_lil_hoops",
+			() -> BlockEntityType.Builder.of(ArcadeLilHoopsTileEntity::new, YaFnafmodModBlocks.ARCADE_LIL_HOOPS.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ArcadeTicketMuncherCupcakeTileEntity>> ARCADE_TICKET_MUNCHER_CUPCAKE = REGISTRY.register("arcade_ticket_muncher_cupcake",
+			() -> BlockEntityType.Builder.of(ArcadeTicketMuncherCupcakeTileEntity::new, YaFnafmodModBlocks.ARCADE_TICKET_MUNCHER_CUPCAKE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ArcadeCandyCraneMachineTileEntity>> ARCADE_CANDY_CRANE_MACHINE = REGISTRY.register("arcade_candy_crane_machine",
+			() -> BlockEntityType.Builder.of(ArcadeCandyCraneMachineTileEntity::new, YaFnafmodModBlocks.ARCADE_CANDY_CRANE_MACHINE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

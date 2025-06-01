@@ -31,7 +31,7 @@ import net.mcreator.yafnafmod.procedures.BalloonsBlockAddedProcedure;
 import java.util.List;
 
 public class BalloonSingleBlock extends Block {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 9);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 12);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public BalloonSingleBlock() {
@@ -54,6 +54,12 @@ public class BalloonSingleBlock extends Block {
 				if (s.getValue(BLOCKSTATE) == 8)
 					return 0;
 				if (s.getValue(BLOCKSTATE) == 9)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 10)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 11)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 12)
 					return 0;
 				return 0;
 			}

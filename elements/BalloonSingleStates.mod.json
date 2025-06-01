@@ -120,6 +120,45 @@
         "customModelName": "balloon:fredbearblue",
         "luminance": 0,
         "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_pastelorange",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastelorange",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearorange",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearorange",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearwhite",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearwhite",
+        "luminance": 0,
+        "boundingBoxes": []
       }
     ]
   }

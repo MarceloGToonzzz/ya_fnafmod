@@ -41,11 +41,13 @@ import net.mcreator.yafnafmod.client.renderer.ToyBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyBonnieDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringtrapRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringtrapDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.SpringlockEllaSuitRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieSuitRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.ShadowFreddySuitRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SeatRenderer;
@@ -460,5 +462,7 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR.get(), PuppetFreddybearRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.YELLOW_RABBIT.get(), YellowRabbitRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SHADOW_FREDDY_SUIT.get(), ShadowFreddySuitRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SPRINGLOCK_ELLA_SUIT.get(), SpringlockEllaSuitRenderer::new);
 	}
 }

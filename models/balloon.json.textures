@@ -59,6 +59,24 @@
         "10": "balloonlone_fredbearblue"
       },
       "name": "fredbearblue"
+    },
+    "pastelorange": {
+      "map": {
+        "10": "balloonlone_pastelorange"
+      },
+      "name": "pastelorange"
+    },
+    "fredbearorange": {
+      "map": {
+        "10": "balloonlone_fredbearorange"
+      },
+      "name": "fredbearorange"
+    },
+    "fredbearwhite": {
+      "map": {
+        "10": "balloonlone_fredbearwhite"
+      },
+      "name": "fredbearwhite"
     }
   }
 }

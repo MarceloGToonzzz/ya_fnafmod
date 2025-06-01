@@ -34,11 +34,13 @@ import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapDayEntity;
+import net.mcreator.yafnafmod.entity.SpringlockEllaSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
+import net.mcreator.yafnafmod.entity.ShadowFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.SeabonnieEntity;
@@ -1732,6 +1734,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof YellowRabbitEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ShadowFreddySuitEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SpringlockEllaSuitEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

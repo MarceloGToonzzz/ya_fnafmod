@@ -45,12 +45,20 @@ public class CustomPizzeriaSignTileEntity extends RandomizableContainerBlockEnti
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	public int blockstateNew = this.getBlockState().getValue(CustomPizzeriaSignBlock.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(CustomPizzeriaSignBlock.BLOCKSTATE);
 
 	public CustomPizzeriaSignTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.CUSTOM_PIZZERIA_SIGN.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
+		blockstateNew = this.getBlockState().getValue(CustomPizzeriaSignBlock.BLOCKSTATE);
+		if (blockstateOld != blockstateNew) {
+			event.getController().forceAnimationReset();
+			blockstateOld = blockstateNew;
+			return PlayState.STOP;
+		}
 		String animationprocedure = ("" + this.getBlockState().getValue(CustomPizzeriaSignBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

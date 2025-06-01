@@ -146,6 +146,12 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_SUIT_ARMOR_HELMET.get());
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_SUIT_ARMOR_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_SUIT_ARMOR_LEGGINGS.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_FIXED_SUIT_ARMOR_HELMET.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_FIXED_SUIT_ARMOR_CHESTPLATE.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_FIXED_SUIT_ARMOR_LEGGINGS.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_SUIT_ARMOR_HELMET.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_SUIT_ARMOR_CHESTPLATE.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_SUIT_ARMOR_LEGGINGS.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_FMS_SUIT_ARMOR_HELMET.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_FMS_SUIT_ARMOR_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_FMS_SUIT_ARMOR_LEGGINGS.get());
@@ -218,6 +224,18 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.PHONE_BRICK.get());
 				tabData.accept(YaFnafmodModItems.PHONE_FLIP.get());
 				tabData.accept(YaFnafmodModItems.PHONE_SMART.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_2.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_3.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_4.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_5.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_6.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_7.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_8.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_9.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_10.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_11.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_12.get());
+				tabData.accept(YaFnafmodModItems.HELPY_OUTFIT_15.get());
 				tabData.accept(YaFnafmodModItems.FNAF_SONG_TLT.get());
 				tabData.accept(YaFnafmodModItems.FNAF_SONG_DA_GAMES.get());
 				tabData.accept(YaFnafmodModItems.FNAF_2_SONG_TLT.get());
@@ -1064,6 +1082,30 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WHITE_BLACK_EDGE_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_WHITE_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_WHITE_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_WHITE_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_WHITE_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_WHITE_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_WHITE_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_RED_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_RED_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_RED_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_RED_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_RED_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_RED_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_BLUE_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_BLUE_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_BLACK_BLUE_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_BLUE_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_BLUE_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_BLACK_BLUE_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_RED_BLUE_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_RED_BLUE_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.OLD_RED_BLUE_TILE_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_RED_BLUE_TILES.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_RED_BLUE_TILE_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CRACKED_OLD_RED_BLUE_TILE_SLAB.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RED_TILE_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RED_TILE_BLOCK_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RED_TILE_BLOCK_SLAB.get().asItem());
@@ -1257,6 +1299,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.SHADOW_3.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DIRTY_GLASS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DIRTY_GLASS_PANE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.DOORFRAME_DARK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.DOORFRAME_LIGHT.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_ITEMS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_DECORATIONS = REGISTRY.register("ya_fnaf_mod_decorations",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_decorations")).icon(() -> new ItemStack(YaFnafmodModBlocks.PARTY_CHAIR.get())).displayItems((parameters, tabData) -> {
@@ -1388,6 +1432,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.TRASH_CAN_CHICA.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.TRASH_CAN_FOXY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.TRASH_CAN_CUPCAKE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_TICKET_MUNCHER_CUPCAKE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ARCADE_RED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ARCADE_ORANGE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ARCADE_YELLOW.get().asItem());
@@ -1437,10 +1482,14 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_RED_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_RED_STARLESS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_RED_STARLESS_THIN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_CHECKERBOARD_RED.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_CHECKERBOARD_RED_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_PURPLE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_PURPLE_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_PURPLE_STARLESS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_PURPLE_STARLESS_THIN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_CHECKERBOARD_PURPLE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_CHECKERBOARD_PURPLE_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_FANCY_RED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_FANCY_RED_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_FANCY_RED_STARLESS.get().asItem());
@@ -1506,6 +1555,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.STAGE_MOON_CREEP.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_CLOUD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_STARS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.STAGE_RAINBOW.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.STAGE_RAINBOW_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PARTY_CHAIR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.TABLE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.TABLE_WOOD.get().asItem());
@@ -1647,6 +1698,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.DRAWING_BIG_CLOWN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DRAWING_BIG_ROCKSTARS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_FALLFEST.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_MATPAT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_BARRY_POLAR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PAPER_DRAWINGS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_PAPER.get().asItem());
@@ -1670,6 +1722,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.WIRES_WALL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WIRES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STARS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.STARS_COLORFUL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STARS_OLD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.NEON_STARS_RED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.NEON_STARS_ORANGE.get().asItem());
@@ -1898,6 +1951,14 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.STANDING_SIGN_COMING_SOON.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BIG_TRASH_BIN_MOVIE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.HEIGHT_SIGN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_BIG_TREAT_POUNDER.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_CYCLONE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_FOOSBALL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_LIL_HOOPS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_DISCO_BALL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_SPINNING_WHEEL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_CENTIPEDE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ARCADE_CANDY_CRANE_MACHINE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.MENU_MOVIE_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LETS_EAT_CONTEST_PROP.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POPCORN_MACHINE.get().asItem());
@@ -1914,6 +1975,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.WALL_STAR_BIG.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CHAIR_TORTURE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SHREDDY_FAZCHAIR_BLOCK.get().asItem());
+				tabData.accept(YaFnafmodModItems.SPRINGLOCK_ELLA_SUIT_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.SHADOW_FREDDY_SUIT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModBlocks.SERVER_RACK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.GENERATOR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LARGE_BUTTON_TOGGLE.get().asItem());
@@ -2019,52 +2082,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
-	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_PLUSHIES = REGISTRY.register("ya_fnaf_mod_plushies",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_plushies")).icon(() -> new ItemStack(YaFnafmodModBlocks.PLUSH_FREDDY.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_BONNIE.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY_RETRO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_BONNIE_RETRO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_RETRO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY_RETRO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDBEAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_SPRINGBONNIE.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_FREDDY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_BONNIE.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_CHICA.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_FOXY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY_ROCKSTAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_BONNIE_ROCKSTAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_ROCKSTAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY_ROCKSTAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_LEFTY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_BABY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_BALLORA.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY_FUNTIME.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY_FUNTIME.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_LOLBIT.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_HAPPY_FROG.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_NEDDBEAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_MR_HIPPO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_PIGPATCH.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_ORVILLE.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_FUNTIME.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_LOLA.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_DOUG.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_JOLLY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_RICKY.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_BARRY_POLAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_DELILAH.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_GUS.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_INDIGO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_MARCELO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_LOGAN.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_STEPHAN.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_STATICBEAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDBOI.get().asItem());
-			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_DECORATIONS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(YaFnafmodModItems.CHILD_SPAWN_EGG.get());
@@ -2190,18 +2207,19 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.SCRAPTRAP_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SCRAP_BABY_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.LEFTY_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.PITBONNIE_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.PUPPET_FREDDYBEAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.CANDY_CAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.CINDY_CAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.POPGOES_WEASEL_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.BLAKE_BADGER_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.IGNITED_CHICA_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.PITBONNIE_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.DOUG_DOG_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.WITHERED_DOUG_DOG_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.JOLLY_RAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.RICKY_RAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.WITHERED_JOLLY_RAT_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.PUPPET_FREDDYBEAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.BARRY_POLAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.FUNTIME_DELILAH_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.GUS_THE_PUG_SPAWN_ITEM.get());
@@ -2210,7 +2228,53 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.INDIGO_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.DR_TEETH_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.LOLBIT_409_SPAWN_ITEM.get());
-			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_PLUSHIES.getId()).build());
+			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_DECORATIONS.getId()).build());
+	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_PLUSHIES = REGISTRY.register("ya_fnaf_mod_plushies",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_plushies")).icon(() -> new ItemStack(YaFnafmodModBlocks.PLUSH_FREDDY.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_BONNIE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY_RETRO.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_BONNIE_RETRO.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_RETRO.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY_RETRO.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDBEAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_SPRINGBONNIE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_FREDDY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_BONNIE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_CHICA.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_TOY_FOXY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY_ROCKSTAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_BONNIE_ROCKSTAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_ROCKSTAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY_ROCKSTAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_LEFTY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_BABY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_BALLORA.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDDY_FUNTIME.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FOXY_FUNTIME.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_LOLBIT.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_HAPPY_FROG.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_NEDDBEAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_MR_HIPPO.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_PIGPATCH.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_ORVILLE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_FUNTIME.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_CHICA_LOLA.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_DOUG.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_JOLLY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_RICKY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_BARRY_POLAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_DELILAH.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_GUS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_INDIGO.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_MARCELO.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_LOGAN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_STEPHAN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_STATICBEAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PLUSH_FREDBOI.get().asItem());
+			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_MOBS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_SKINS = REGISTRY.register("ya_fnaf_mod_skins",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_skins")).icon(() -> new ItemStack(YaFnafmodModItems.FREDBEAR_STAGE_01_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(YaFnafmodModItems.FREDDY_FAZBEAR_ALT_SPAWN_ITEM.get());
@@ -2228,6 +2292,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.RETRO_FREDDY_ALT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.RETRO_FREDDY_ALT_WALKER_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SPRINGTRAP_ALT_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.SPRINGTRAP_DBD_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_STAGE_01_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_STAGE_01_WALKER_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_POSTER_SPAWN_ITEM.get());
@@ -2249,9 +2314,11 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.FUNTIME_FOXY_ALT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.LOLBIT_ALT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.LEFTY_ALT_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_FIXED_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_ALT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.PITBONNIE_ALT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.CANDY_CAT_ALT_SPAWN_ITEM.get());
-			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_MOBS.getId()).build());
+			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_PLUSHIES.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YAFNAF_FMS_SKINS = REGISTRY.register("yafnaf_fms_skins",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.yafnaf_fms_skins")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_FMS_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(YaFnafmodModItems.FREDDY_FAZBEAR_FMS_SPAWN_ITEM.get());
@@ -2292,6 +2359,12 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.FREDBEAR_FMS_STAGE_01_WALKER_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_FMS_STAGE_01_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_FMS_STAGE_01_WALKER_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.CIRCUS_BABY_FMS_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.BALLORA_FMS_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.FUNTIME_FREDDY_FMS_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.FUNTIME_FOXY_FMS_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.LOLBIT_FMS_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.HELPY_FMS_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.HAPPY_FROG_FMS_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.HAPPY_FROG_FMS_WALKER_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.MR_HIPPO_FMS_SPAWN_ITEM.get());
@@ -4129,6 +4202,10 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_HOT_PINK_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_HOT_PINK_STARLESS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_HOT_PINK_STARLESS_THIN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_WINE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_WINE_THIN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_WINE_STARLESS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CURTAIN_WINE_STARLESS_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_BROWN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_BROWN_THIN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CURTAIN_BROWN_STARLESS.get().asItem());
@@ -4155,11 +4232,17 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_1_CLASSIC.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_2.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.STRUCTURE_FNAF_2_CLASSIC.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_3.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.STRUCTURE_FNAF_3_CLASSIC.get().asItem());
 			}).withSearchBar().withTabsBefore(YAFNAF_EXTRA_CURTAINS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MISC = REGISTRY.register("ya_fnaf_mod_misc",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_misc")).icon(() -> new ItemStack(YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(YaFnafmodModBlocks.CREATIVE_GENERATOR_BLOCK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PAPER_DRAWINGS_FNAF_1.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PAPER_DRAWINGS_FNAF_2.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PAPER_DRAWINGS_FNAF_3.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.PAPER_DRAWINGS_FNAF_6.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.GREEN_SCREEN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BLUE_SCREEN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.VANTABLACK.get().asItem());

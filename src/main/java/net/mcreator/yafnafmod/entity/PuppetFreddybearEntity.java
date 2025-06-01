@@ -247,10 +247,10 @@ public class PuppetFreddybearEntity extends Monster implements GeoEntity {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddybear.walk"));
 			}
 			if (this.isSprinting()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddybear.run"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddybear.chase"));
 			}
 			if (this.isAggressive() && event.isMoving()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddybear.run"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddybear.chase"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddybear.idle"));
 		}

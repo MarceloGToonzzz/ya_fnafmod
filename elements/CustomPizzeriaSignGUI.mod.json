@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
+    "width": 250,
     "height": 113,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -17,8 +17,8 @@
           "name": "TextLine1",
           "width": 120,
           "height": 20,
-          "x": 155,
-          "y": 110,
+          "x": 93,
+          "y": 109,
           "locked": false
         }
       },
@@ -29,8 +29,8 @@
           "name": "TextLine2",
           "width": 120,
           "height": 20,
-          "x": 155,
-          "y": 130,
+          "x": 93,
+          "y": 129,
           "locked": false
         }
       },
@@ -57,8 +57,8 @@
           "name": "SignHexCode",
           "width": 120,
           "height": 20,
-          "x": 155,
-          "y": 77,
+          "x": 93,
+          "y": 76,
           "locked": false
         }
       },
@@ -73,7 +73,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 155,
+          "x": 93,
           "y": 67,
           "locked": false
         }
@@ -83,14 +83,24 @@
         "data": {
           "name": "label_text",
           "text": {
-            "fixedValue": "Text"
+            "fixedValue": "Text (Don't include apostrophes)"
           },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 155,
-          "y": 100,
+          "x": 93,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "UniformFont",
+          "text": "Uniform Font?",
+          "x": 229,
+          "y": 118,
           "locked": false
         }
       }

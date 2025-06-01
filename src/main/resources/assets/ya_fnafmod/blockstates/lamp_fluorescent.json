@@ -1,34 +1,28 @@
 {
   "variants": {
-    "facing=north,blockstate=0": {
+    "axis=x,blockstate=0": {
+      "model": "ya_fnafmod:block/lamp_fluorescent",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,blockstate=0": {
       "model": "ya_fnafmod:block/lamp_fluorescent"
     },
-    "facing=east,blockstate=0": {
+    "axis=z,blockstate=0": {
       "model": "ya_fnafmod:block/lamp_fluorescent",
+      "x": 90
+    },
+    "axis=x,blockstate=1": {
+      "model": "ya_fnafmod:block/lamp_fluorescent_states_blockstate_0",
+      "x": 90,
       "y": 90
     },
-    "facing=south,blockstate=0": {
-      "model": "ya_fnafmod:block/lamp_fluorescent",
-      "y": 180
-    },
-    "facing=west,blockstate=0": {
-      "model": "ya_fnafmod:block/lamp_fluorescent",
-      "y": 270
-    },
-    "facing=north,blockstate=1": {
+    "axis=y,blockstate=1": {
       "model": "ya_fnafmod:block/lamp_fluorescent_states_blockstate_0"
     },
-    "facing=east,blockstate=1": {
+    "axis=z,blockstate=1": {
       "model": "ya_fnafmod:block/lamp_fluorescent_states_blockstate_0",
-      "y": 90
-    },
-    "facing=south,blockstate=1": {
-      "model": "ya_fnafmod:block/lamp_fluorescent_states_blockstate_0",
-      "y": 180
-    },
-    "facing=west,blockstate=1": {
-      "model": "ya_fnafmod:block/lamp_fluorescent_states_blockstate_0",
-      "y": 270
+      "x": 90
     }
   }
 }

@@ -17,7 +17,7 @@ public class BalloonsBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.BALLOONS.get()) {
 			{
-				int _value = Mth.nextInt(RandomSource.create(), 0, 3);
+				int _value = Mth.nextInt(RandomSource.create(), 0, 7);
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -25,7 +25,7 @@ public class BalloonsBlockAddedProcedure {
 			}
 		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.BALLOON_SINGLE.get()) {
 			{
-				int _value = Mth.nextInt(RandomSource.create(), 0, 9);
+				int _value = Mth.nextInt(RandomSource.create(), 0, 12);
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))

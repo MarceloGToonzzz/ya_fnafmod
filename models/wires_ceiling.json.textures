@@ -125,6 +125,12 @@
         "1": "neonstars_beige"
       },
       "name": "neonstars_beige"
+    },
+    "stars_colorful": {
+      "map": {
+        "1": "item_stars2"
+      },
+      "name": "stars_colorful"
     }
   }
 }

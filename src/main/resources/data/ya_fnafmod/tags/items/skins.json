@@ -25,6 +25,11 @@
     "ya_fnafmod:shadow_freddy_alt_spawn_item",
     "ya_fnafmod:shadow_bonnie_alt_spawn_item",
     "ya_fnafmod:funtime_freddy_alt_spawn_item",
-    "ya_fnafmod:springbonnie_stage_01_walker_spawn_item"
+    "ya_fnafmod:springbonnie_stage_01_walker_spawn_item",
+    "ya_fnafmod:sparky_dog_alt_spawn_item",
+    "ya_fnafmod:pitbonnie_alt_spawn_item",
+    "ya_fnafmod:lolbit_alt_spawn_item",
+    "ya_fnafmod:candy_cat_alt_spawn_item",
+    "ya_fnafmod:yellow_rabbit_alt_spawn_item"
   ]
 }

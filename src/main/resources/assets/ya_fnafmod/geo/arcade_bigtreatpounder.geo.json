@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.Big Treat Pounder - Converted",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{"origin": [-8, 0, -21], "size": [16, 12, 29], "uv": [0, 0]},
+						{"origin": [-2, 12, -19], "size": [5, 4, 4], "uv": [77, 62]},
+						{"origin": [-5.5, 15, -17], "size": [12, 5, 0], "uv": [77, 56]},
+						{"origin": [-8, 12, -11], "size": [16, 20, 12], "inflate": -0.001, "uv": [0, 71]},
+						{"origin": [-8, 12, 1], "size": [16, 20, 7], "uv": [57, 71]},
+						{"origin": [-5, 18, 0], "size": [10, 12, 1], "uv": [77, 42]},
+						{"origin": [-8, 32, -14], "size": [16, 6, 22], "uv": [0, 42]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade_cyclone",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade_cyclone",
+    "particle": "ya_fnafmod:block/arcade_cyclone",
+    "1": "ya_fnafmod:block/arcade_cyclone"
+  },
+  "render_type": "translucent"
+}

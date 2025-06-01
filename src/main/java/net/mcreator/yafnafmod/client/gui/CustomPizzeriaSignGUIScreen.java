@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
@@ -27,6 +28,7 @@ public class CustomPizzeriaSignGUIScreen extends AbstractContainerScreen<CustomP
 	EditBox TextLine1;
 	EditBox TextLine2;
 	EditBox SignHexCode;
+	Checkbox UniformFont;
 	Button button_apply;
 
 	public CustomPizzeriaSignGUIScreen(CustomPizzeriaSignGUIMenu container, Inventory inventory, Component text) {
@@ -36,7 +38,7 @@ public class CustomPizzeriaSignGUIScreen extends AbstractContainerScreen<CustomP
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 250;
 		this.imageHeight = 113;
 	}
 
@@ -97,14 +99,14 @@ public class CustomPizzeriaSignGUIScreen extends AbstractContainerScreen<CustomP
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.label_text_color"), 29, 3, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.label_text"), 29, 36, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.label_text_color"), 4, 3, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.label_text"), 4, 34, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		TextLine1 = new EditBox(this.font, this.leftPos + 30, this.topPos + 47, 118, 18, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.TextLine1")) {
+		TextLine1 = new EditBox(this.font, this.leftPos + 5, this.topPos + 46, 118, 18, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.TextLine1")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -127,7 +129,7 @@ public class CustomPizzeriaSignGUIScreen extends AbstractContainerScreen<CustomP
 		TextLine1.setMaxLength(32767);
 		guistate.put("text:TextLine1", TextLine1);
 		this.addWidget(this.TextLine1);
-		TextLine2 = new EditBox(this.font, this.leftPos + 30, this.topPos + 67, 118, 18, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.TextLine2")) {
+		TextLine2 = new EditBox(this.font, this.leftPos + 5, this.topPos + 66, 118, 18, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.TextLine2")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -150,7 +152,7 @@ public class CustomPizzeriaSignGUIScreen extends AbstractContainerScreen<CustomP
 		TextLine2.setMaxLength(32767);
 		guistate.put("text:TextLine2", TextLine2);
 		this.addWidget(this.TextLine2);
-		SignHexCode = new EditBox(this.font, this.leftPos + 30, this.topPos + 14, 118, 18, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.SignHexCode"));
+		SignHexCode = new EditBox(this.font, this.leftPos + 5, this.topPos + 13, 118, 18, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.SignHexCode"));
 		SignHexCode.setMaxLength(32767);
 		guistate.put("text:SignHexCode", SignHexCode);
 		this.addWidget(this.SignHexCode);
@@ -159,8 +161,11 @@ public class CustomPizzeriaSignGUIScreen extends AbstractContainerScreen<CustomP
 				YaFnafmodMod.PACKET_HANDLER.sendToServer(new CustomPizzeriaSignGUIButtonMessage(0, x, y, z));
 				CustomPizzeriaSignGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 62, this.topPos + 88, 51, 20).build();
+		}).bounds(this.leftPos + 99, this.topPos + 88, 51, 20).build();
 		guistate.put("button:button_apply", button_apply);
 		this.addRenderableWidget(button_apply);
+		UniformFont = new Checkbox(this.leftPos + 140, this.topPos + 54, 20, 20, Component.translatable("gui.ya_fnafmod.custom_pizzeria_sign_gui.UniformFont"), false);
+		guistate.put("checkbox:UniformFont", UniformFont);
+		this.addRenderableWidget(UniformFont);
 	}
 }

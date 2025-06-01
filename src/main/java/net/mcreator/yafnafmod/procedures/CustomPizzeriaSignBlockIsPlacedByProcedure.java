@@ -9,6 +9,6 @@ public class CustomPizzeriaSignBlockIsPlacedByProcedure {
 		String color = "";
 		String command = "";
 		double yaw = 0;
-		ApplyNewSignTextProcedure.execute(world, x, y, z, "#ffffff", "Insert Text 1", "Insert Text 2");
+		ApplyNewSignTextProcedure.execute(world, x, y, z, "ffffff", "default", "Insert Text 1", "Insert Text 2");
 	}
 }

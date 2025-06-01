@@ -34,7 +34,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Box Medium",
+    "name": "Box Cardboard Medium",
     "specialInformation": {
       "fixedValue": [
         "Stackable!"
@@ -86,7 +86,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "CLOTH"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""

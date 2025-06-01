@@ -83,11 +83,13 @@ public class ShreddyFazchairOnTickUpdateProcedure {
 						for (Entity entityiterator : _entfound) {
 							if (entityiterator instanceof LivingEntity) {
 								if (entityiterator instanceof SeatEntity || entityiterator instanceof CarSeatEntity) {
-									if (entityiterator instanceof LivingEntity) {
+									if ((entityiterator.getFirstPassenger()) instanceof LivingEntity) {
 										(entityiterator.getFirstPassenger()).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
 									}
 								} else {
-									entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									if (entityiterator instanceof LivingEntity) {
+										entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									}
 								}
 							}
 						}
@@ -109,11 +111,13 @@ public class ShreddyFazchairOnTickUpdateProcedure {
 						for (Entity entityiterator : _entfound) {
 							if (entityiterator instanceof LivingEntity) {
 								if (entityiterator instanceof SeatEntity || entityiterator instanceof CarSeatEntity) {
-									if (entityiterator instanceof LivingEntity) {
+									if ((entityiterator.getFirstPassenger()) instanceof LivingEntity) {
 										(entityiterator.getFirstPassenger()).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
 									}
 								} else {
-									entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									if (entityiterator instanceof LivingEntity) {
+										entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									}
 								}
 							}
 						}
@@ -135,11 +139,13 @@ public class ShreddyFazchairOnTickUpdateProcedure {
 						for (Entity entityiterator : _entfound) {
 							if (entityiterator instanceof LivingEntity) {
 								if (entityiterator instanceof SeatEntity || entityiterator instanceof CarSeatEntity) {
-									if (entityiterator instanceof LivingEntity) {
+									if ((entityiterator.getFirstPassenger()) instanceof LivingEntity) {
 										(entityiterator.getFirstPassenger()).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
 									}
 								} else {
-									entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									if (entityiterator instanceof LivingEntity) {
+										entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									}
 								}
 							}
 						}
@@ -161,11 +167,13 @@ public class ShreddyFazchairOnTickUpdateProcedure {
 						for (Entity entityiterator : _entfound) {
 							if (entityiterator instanceof LivingEntity) {
 								if (entityiterator instanceof SeatEntity || entityiterator instanceof CarSeatEntity) {
-									if (entityiterator instanceof LivingEntity) {
+									if ((entityiterator.getFirstPassenger()) instanceof LivingEntity) {
 										(entityiterator.getFirstPassenger()).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
 									}
 								} else {
-									entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									if (entityiterator instanceof LivingEntity) {
+										entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.GENERIC)), (float) damage);
+									}
 								}
 							}
 						}

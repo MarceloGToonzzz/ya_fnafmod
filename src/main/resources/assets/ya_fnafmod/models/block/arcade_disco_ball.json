@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/discoball_arcade",
+  "textures": {
+    "all": "ya_fnafmod:block/discoball_arcade",
+    "particle": "ya_fnafmod:block/discoball_arcade",
+    "0": "ya_fnafmod:block/discoball_arcade"
+  },
+  "render_type": "cutout_mipped"
+}

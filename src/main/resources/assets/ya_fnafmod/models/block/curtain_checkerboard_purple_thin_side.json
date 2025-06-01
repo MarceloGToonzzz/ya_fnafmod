@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_side",
+  "textures": {
+    "particle": "ya_fnafmod:block/curtain_purple_checktile",
+    "edge": "ya_fnafmod:block/curtain_purple_checktile",
+    "pane": "ya_fnafmod:block/curtain_purple_checktile"
+  },
+  "render_type": "solid"
+}

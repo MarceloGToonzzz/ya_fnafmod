@@ -16,6 +16,19 @@
 					}
 				}
 			}
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"bone2": {
+					"rotation": {
+						"vector": [180, 0, 0]
+					},
+					"position": {
+						"vector": [0, 16, 16]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

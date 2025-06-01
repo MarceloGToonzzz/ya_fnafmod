@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/drawing_item3"
+  },
+  "render_type": "translucent"
+}

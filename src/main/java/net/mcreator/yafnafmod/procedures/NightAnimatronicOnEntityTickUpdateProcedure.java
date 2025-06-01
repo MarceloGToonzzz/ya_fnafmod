@@ -46,7 +46,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		GetNewTargetProcedure.execute(world, x, y, z, entity);
 		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"), entity.getPersistentData().getString("style"));
 		if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
-			SetNbtPositionsProcedure.execute(x, y, z, entity);
+			SetNbtPositionsProcedure.execute(world, x, y, z, entity);
 		}
 		if (!(entity instanceof EnnardEntity) && !(entity instanceof MoltenFreddyEntity) && !(entity instanceof ScraptrapEntity) && !(entity instanceof ScrapBabyEntity)) {
 			DayActionProcedure.execute(world, x, y, z, entity);

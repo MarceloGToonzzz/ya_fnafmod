@@ -60,6 +60,8 @@ public class SpawnItemRightclickedOnBlockProcedure {
 				spawned = spawned.replace("_meme", "");
 			} else if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("movie")) {
 				spawned = spawned.replace("_movie", "");
+			} else if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("dbd")) {
+				spawned = spawned.replace("_dbd", "");
 			}
 			if (spawned.contains("walker")) {
 				spawned = spawned.replace("_walker", "");
@@ -67,7 +69,7 @@ public class SpawnItemRightclickedOnBlockProcedure {
 			if (spawned.contains("phantom") || spawned.contains("nightmare") && !spawned.contains("bb") || spawned.contains("jack_o") || spawned.contains("nightmarionne") || (spawned).equals("ya_fnafmod:golden_freddy_day")
 					|| (spawned).equals("ya_fnafmod:withered_golden_freddy_day") || (spawned).equals("ya_fnafmod:shadow_freddy_day") || (spawned).equals("ya_fnafmod:shadow_bonnie_day") || (spawned).equals("ya_fnafmod:ennard_day")
 					|| (spawned).equals("ya_fnafmod:lolbit_day") || (spawned).equals("ya_fnafmod:yenndo_day") || (spawned).equals("ya_fnafmod:helpy_day") || (spawned).equals("ya_fnafmod:molten_freddy_day")
-					|| (spawned).equals("ya_fnafmod:scraptrap_day") || (spawned).equals("ya_fnafmod:scrap_baby_day")) {
+					|| (spawned).equals("ya_fnafmod:scraptrap_day") || (spawned).equals("ya_fnafmod:scrap_baby_day") || (spawned).equals("ya_fnafmod:yellow_rabbit_day")) {
 				spawned = spawned.replace("_day", "");
 				AI = "0";
 			} else if (((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("toy") || (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("gus_the_pug"))
@@ -120,6 +122,8 @@ public class SpawnItemRightclickedOnBlockProcedure {
 									entityiterator.getPersistentData().putString("skin", "meme");
 								} else if (og_registry.contains("movie")) {
 									entityiterator.getPersistentData().putString("skin", "movie");
+								} else if (og_registry.contains("dbd")) {
+									entityiterator.getPersistentData().putString("skin", "dbd");
 								}
 								if (og_registry.contains("walker")) {
 									entityiterator.getPersistentData().putBoolean("walks_at_night", true);

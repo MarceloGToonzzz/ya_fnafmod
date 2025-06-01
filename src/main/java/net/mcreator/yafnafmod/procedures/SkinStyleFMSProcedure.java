@@ -60,6 +60,7 @@ import net.mcreator.yafnafmod.entity.MrHippoEntity;
 import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
+import net.mcreator.yafnafmod.entity.LolbitEntity;
 import net.mcreator.yafnafmod.entity.JollyRatEntity;
 import net.mcreator.yafnafmod.entity.JollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.IgnitedChicaEntity;
@@ -70,6 +71,10 @@ import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
+import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
+import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
+import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
+import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearDayEntity;
 import net.mcreator.yafnafmod.entity.FredbearEntity;
@@ -84,6 +89,8 @@ import net.mcreator.yafnafmod.entity.DrTeethEntity;
 import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
+import net.mcreator.yafnafmod.entity.CircusBabyEntity;
+import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
 import net.mcreator.yafnafmod.entity.CindyCatEntity;
 import net.mcreator.yafnafmod.entity.CindyCatDayEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenEntity;
@@ -96,6 +103,8 @@ import net.mcreator.yafnafmod.entity.BlakeBadgerEntity;
 import net.mcreator.yafnafmod.entity.BlakeBadgerDayEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarDayEntity;
+import net.mcreator.yafnafmod.entity.BalloraEntity;
+import net.mcreator.yafnafmod.entity.BalloraDayEntity;
 
 public class SkinStyleFMSProcedure {
 	public static void execute(Entity entity) {
@@ -222,6 +231,24 @@ public class SkinStyleFMSProcedure {
 			if (entity instanceof FoxyPirateDayEntity animatable)
 				animatable.setTexture("foxy_pirate_fixed_fms");
 		}
+		if (entity instanceof CircusBabyEntity animatable)
+			animatable.setTexture("baby_fms");
+		if (entity instanceof CircusBabyDayEntity animatable)
+			animatable.setTexture("baby_fms");
+		if (entity instanceof BalloraEntity animatable)
+			animatable.setTexture("ballora_fms");
+		if (entity instanceof BalloraDayEntity animatable)
+			animatable.setTexture("ballora_fms");
+		if (entity instanceof FuntimeFoxyEntity animatable)
+			animatable.setTexture("ftfoxy_fms");
+		if (entity instanceof FuntimeFoxyDayEntity animatable)
+			animatable.setTexture("ftfoxy_fms");
+		if (entity instanceof FuntimeFreddyEntity animatable)
+			animatable.setTexture("ftfreddy_fms");
+		if (entity instanceof FuntimeFreddyDayEntity animatable)
+			animatable.setTexture("ftfreddy_fms");
+		if (entity instanceof LolbitEntity animatable)
+			animatable.setTexture("lolbit_fms");
 		if (entity instanceof HappyFrogEntity animatable)
 			animatable.setTexture("happy_frog_fms");
 		if (entity instanceof HappyFrogDayEntity animatable)

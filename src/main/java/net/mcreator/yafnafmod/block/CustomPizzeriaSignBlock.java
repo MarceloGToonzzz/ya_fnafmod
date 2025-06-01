@@ -1,6 +1,8 @@
 
 package net.mcreator.yafnafmod.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
@@ -46,13 +48,24 @@ import java.util.List;
 import java.util.Collections;
 
 public class CustomPizzeriaSignBlock extends BaseEntityBlock implements EntityBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
 	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public CustomPizzeriaSignBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.WOOD).strength(1f, 10f).lightLevel(s -> (new Object() {
+					public int getLightLevel() {
+						if (s.getValue(BLOCKSTATE) == 1)
+							return 0;
+						if (s.getValue(BLOCKSTATE) == 2)
+							return 0;
+						if (s.getValue(BLOCKSTATE) == 3)
+							return 0;
+						return 0;
+					}
+				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -90,7 +103,7 @@ public class CustomPizzeriaSignBlock extends BaseEntityBlock implements EntityBl
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(ANIMATION, FACING);
+		builder.add(ANIMATION, FACING, BLOCKSTATE);
 	}
 
 	@Override
@@ -138,7 +151,7 @@ public class CustomPizzeriaSignBlock extends BaseEntityBlock implements EntityBl
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		CustomPizzeriaSignOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		CustomPizzeriaSignOnBlockRightClickedProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 

@@ -7,8 +7,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.BlockGetter;
-import net.minecraft.core.BlockPos;
 
 public class LightWallStairsConfettiBlock extends StairBlock {
 	public LightWallStairsConfettiBlock() {
@@ -24,10 +22,5 @@ public class LightWallStairsConfettiBlock extends StairBlock {
 	@Override
 	public boolean isRandomlyTicking(BlockState state) {
 		return false;
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
-		return 0;
 	}
 }

@@ -16,6 +16,30 @@
 					}
 				}
 			}
+		},
+		"1": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"bone": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.5": {
+							"vector": [0, 0, -720]
+						}
+					}
+				},
+				"bone2": {
+					"rotation": {
+						"vector": [0, 0, 180]
+					},
+					"position": {
+						"vector": [0, 16, 0]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

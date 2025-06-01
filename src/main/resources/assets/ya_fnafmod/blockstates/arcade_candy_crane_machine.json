@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:custom/arcade_candy_crane_machine_particle"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:custom/arcade_candy_crane_machine_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:custom/arcade_candy_crane_machine_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:custom/arcade_candy_crane_machine_particle",
+      "y": 270
+    }
+  }
+}

@@ -38,7 +38,7 @@ public class BoxSmallBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public BoxSmallBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f, 10f).lightLevel(s -> (new Object() {
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f, 10f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
 					return 0;

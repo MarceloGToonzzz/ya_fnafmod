@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_ithinkimissedsomelore",
+    "particle": "ya_fnafmod:block/poster_ithinkimissedsomelore",
+    "0": "ya_fnafmod:block/poster_ithinkimissedsomelore"
+  },
+  "render_type": "cutout"
+}

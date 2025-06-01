@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade_spinningwheel",
+  "textures": {
+    "all": "ya_fnafmod:block/arcade_spinningwheel",
+    "particle": "ya_fnafmod:block/arcade_spinningwheel",
+    "1": "ya_fnafmod:block/arcade_spinningwheel"
+  },
+  "render_type": "translucent"
+}
