@@ -329,6 +329,8 @@ import net.mcreator.yafnafmod.block.entity.BonnieBunnyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BonnetBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BonkABonTileEntity;
 import net.mcreator.yafnafmod.block.entity.BonbonBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.Bobbleheads3TileEntity;
+import net.mcreator.yafnafmod.block.entity.Bobbleheads2TileEntity;
 import net.mcreator.yafnafmod.block.entity.Bobbleheads1TileEntity;
 import net.mcreator.yafnafmod.block.entity.BlastSecurityDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BlakeBadgerBlockTileEntity;
@@ -1009,6 +1011,8 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(ArcadeCandyCraneMachineTileEntity::new, YaFnafmodModBlocks.ARCADE_CANDY_CRANE_MACHINE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigEntraceFancyRedWideTileEntity>> BIG_ENTRACE_FANCY_RED_WIDE = REGISTRY.register("big_entrace_fancy_red_wide",
 			() -> BlockEntityType.Builder.of(BigEntraceFancyRedWideTileEntity::new, YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Bobbleheads3TileEntity>> BOBBLEHEADS_3 = REGISTRY.register("bobbleheads_3", () -> BlockEntityType.Builder.of(Bobbleheads3TileEntity::new, YaFnafmodModBlocks.BOBBLEHEADS_3.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Bobbleheads2TileEntity>> BOBBLEHEADS_2 = REGISTRY.register("bobbleheads_2", () -> BlockEntityType.Builder.of(Bobbleheads2TileEntity::new, YaFnafmodModBlocks.BOBBLEHEADS_2.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

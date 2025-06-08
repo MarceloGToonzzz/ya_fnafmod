@@ -306,6 +306,8 @@ import net.mcreator.yafnafmod.block.renderer.BonnieBunnyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BonnetBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BonkABonTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BonbonBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.Bobbleheads3TileRenderer;
+import net.mcreator.yafnafmod.block.renderer.Bobbleheads2TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.Bobbleheads1TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BlastSecurityDoorTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BlakeBadgerBlockTileRenderer;
@@ -712,5 +714,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_TICKET_MUNCHER_CUPCAKE.get(), context -> new ArcadeTicketMuncherCupcakeTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_CANDY_CRANE_MACHINE.get(), context -> new ArcadeCandyCraneMachineTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_ENTRACE_FANCY_RED_WIDE.get(), context -> new BigEntraceFancyRedWideTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BOBBLEHEADS_3.get(), context -> new Bobbleheads3TileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BOBBLEHEADS_2.get(), context -> new Bobbleheads2TileRenderer());
 	}
 }

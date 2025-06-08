@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/supplycloset_kit",
+  "textures": {
+    "all": "ya_fnafmod:block/supplycloset_kit",
+    "particle": "ya_fnafmod:block/supplycloset_kit",
+    "0": "ya_fnafmod:block/supplycloset_kit"
+  },
+  "render_type": "cutout_mipped"
+}

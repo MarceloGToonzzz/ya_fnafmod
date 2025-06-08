@@ -17,6 +17,18 @@
         "1": "wall_discopizza1_1"
       },
       "name": "disco"
+    },
+    "olive": {
+      "map": {
+        "1": "wall_pizza3_1"
+      },
+      "name": "olive"
+    },
+    "olivecut": {
+      "map": {
+        "1": "wall_pizza3_2"
+      },
+      "name": "olivecut"
     }
   }
 }

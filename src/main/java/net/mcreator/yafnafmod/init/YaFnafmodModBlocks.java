@@ -79,6 +79,7 @@ import net.mcreator.yafnafmod.block.YellowCheckeredTileSlabBlock;
 import net.mcreator.yafnafmod.block.YellowBigCheckeredTilesBlock;
 import net.mcreator.yafnafmod.block.YellowBigCheckeredTileStairsBlock;
 import net.mcreator.yafnafmod.block.YellowBigCheckeredTileSlabBlock;
+import net.mcreator.yafnafmod.block.WoodenShelfBlock;
 import net.mcreator.yafnafmod.block.WoodenPlanksRedBlock;
 import net.mcreator.yafnafmod.block.WoodenPlanksRedBeigeBlock;
 import net.mcreator.yafnafmod.block.WoodenPlanksBeigeRedBlock;
@@ -261,6 +262,7 @@ import net.mcreator.yafnafmod.block.WallTileBlackGreenBlueBigBlock;
 import net.mcreator.yafnafmod.block.WallTileBlackBlackWhiteBlock;
 import net.mcreator.yafnafmod.block.WallTileBlackBlackWhiteBigBlock;
 import net.mcreator.yafnafmod.block.WallStarBigBlock;
+import net.mcreator.yafnafmod.block.WallPizzaOliveBlock;
 import net.mcreator.yafnafmod.block.WallPizzaBlock;
 import net.mcreator.yafnafmod.block.WallPipesYellowBlock;
 import net.mcreator.yafnafmod.block.WallPipesRedBlock;
@@ -333,6 +335,7 @@ import net.mcreator.yafnafmod.block.TableCloth2Block;
 import net.mcreator.yafnafmod.block.TableCloth1Block;
 import net.mcreator.yafnafmod.block.TableBlueStripesBlock;
 import net.mcreator.yafnafmod.block.TableBlock;
+import net.mcreator.yafnafmod.block.SupplyClosetKitBlock;
 import net.mcreator.yafnafmod.block.SunClockBlock;
 import net.mcreator.yafnafmod.block.SturdyStageBaseYellowBlock;
 import net.mcreator.yafnafmod.block.SturdyStageBaseRedBlock;
@@ -3178,6 +3181,8 @@ import net.mcreator.yafnafmod.block.BonnieBunnyBlockBlock;
 import net.mcreator.yafnafmod.block.BonnetBlockBlock;
 import net.mcreator.yafnafmod.block.BonkABonBlock;
 import net.mcreator.yafnafmod.block.BonbonBlockBlock;
+import net.mcreator.yafnafmod.block.Bobbleheads3Block;
+import net.mcreator.yafnafmod.block.Bobbleheads2Block;
 import net.mcreator.yafnafmod.block.Bobbleheads1Block;
 import net.mcreator.yafnafmod.block.BlueYellowTilesBlock;
 import net.mcreator.yafnafmod.block.BlueYellowTileStairsBlock;
@@ -7443,6 +7448,11 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> WALL_PIPES_YELLOW = REGISTRY.register("wall_pipes_yellow", () -> new WallPipesYellowBlock());
 	public static final RegistryObject<Block> ENTRANCE_FANCY_RED_DOOR = REGISTRY.register("entrance_fancy_red_door", () -> new EntranceFancyRedDoorBlock());
 	public static final RegistryObject<Block> BIG_ENTRACE_FANCY_RED_WIDE = REGISTRY.register("big_entrace_fancy_red_wide", () -> new BigEntraceFancyRedWideBlock());
+	public static final RegistryObject<Block> BOBBLEHEADS_3 = REGISTRY.register("bobbleheads_3", () -> new Bobbleheads3Block());
+	public static final RegistryObject<Block> BOBBLEHEADS_2 = REGISTRY.register("bobbleheads_2", () -> new Bobbleheads2Block());
+	public static final RegistryObject<Block> WOODEN_SHELF = REGISTRY.register("wooden_shelf", () -> new WoodenShelfBlock());
+	public static final RegistryObject<Block> SUPPLY_CLOSET_KIT = REGISTRY.register("supply_closet_kit", () -> new SupplyClosetKitBlock());
+	public static final RegistryObject<Block> WALL_PIZZA_OLIVE = REGISTRY.register("wall_pizza_olive", () -> new WallPizzaOliveBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

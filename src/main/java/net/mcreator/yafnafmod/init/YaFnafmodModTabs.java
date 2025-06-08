@@ -1619,6 +1619,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.POSTER_GOLDEN_FREDDY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DESK_FNAF_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DESK_FNAF_1_EMPTY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WOODEN_SHELF.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SUPPLY_CLOSET_KIT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.HANGING_LAMP.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_PIZZA.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_SUN.get().asItem());
@@ -1707,6 +1709,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BROKEN_CHICA.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BROKEN_FOXY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOBBLEHEADS_1.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.BOBBLEHEADS_2.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.BOBBLEHEADS_3.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PARTS_BOX.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DUAL_CAGED_LIGHT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FREDDY_STAND.get().asItem());
@@ -2141,6 +2145,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.POSTER_FALLFEST.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_MATPAT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_BARRY_POLAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WALL_PIZZA_OLIVE.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {

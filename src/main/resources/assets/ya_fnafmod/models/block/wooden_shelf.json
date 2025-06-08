@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/wooden_shelf",
+  "textures": {
+    "all": "ya_fnafmod:block/wooden_shelf",
+    "particle": "ya_fnafmod:block/wooden_shelf",
+    "2": "ya_fnafmod:block/wooden_shelf"
+  },
+  "render_type": "cutout_mipped"
+}

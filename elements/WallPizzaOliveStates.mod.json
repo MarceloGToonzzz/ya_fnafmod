@@ -1,0 +1,64 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "WallPizzaOlive",
+    "blockstateList": [
+      {
+        "texture": "wall_pizza1_2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizza_wall1:olivecut",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 2.0,
+            "my": 2.0,
+            "mz": 15.0,
+            "Mx": 14.0,
+            "My": 14.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "wall_pizza1_2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "pizza_wall2:olive",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.5,
+            "my": 0.5,
+            "mz": 15.0,
+            "Mx": 5.5,
+            "My": 5.5,
+            "Mz": 16.0,
+            "subtract": false
+          },
+          {
+            "mx": 3.5,
+            "my": 3.5,
+            "mz": 15.0,
+            "Mx": 15.5,
+            "My": 15.5,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
+  }
+}

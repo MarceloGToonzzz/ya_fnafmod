@@ -26,4 +26,9 @@ public class ChainLinkBlockBlock extends Block {
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
 	}
+
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return box(0.001, 0, 0.001, 15.999, 16, 15.999);
+	}
 }

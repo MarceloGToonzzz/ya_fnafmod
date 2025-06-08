@@ -818,6 +818,8 @@ import net.mcreator.yafnafmod.block.display.BonnieBunnyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.BonnetBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.BonkABonDisplayItem;
 import net.mcreator.yafnafmod.block.display.BonbonBlockDisplayItem;
+import net.mcreator.yafnafmod.block.display.Bobbleheads3DisplayItem;
+import net.mcreator.yafnafmod.block.display.Bobbleheads2DisplayItem;
 import net.mcreator.yafnafmod.block.display.Bobbleheads1DisplayItem;
 import net.mcreator.yafnafmod.block.display.BlastSecurityDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BlakeBadgerBlockDisplayItem;
@@ -5481,6 +5483,11 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> ENTRANCE_FANCY_RED_DOOR = doubleBlock(YaFnafmodModBlocks.ENTRANCE_FANCY_RED_DOOR);
 	public static final RegistryObject<Item> BIG_ENTRACE_FANCY_RED_WIDE = REGISTRY.register(YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.getId().getPath(),
 			() -> new BigEntraceFancyRedWideDisplayItem(YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BOBBLEHEADS_3 = REGISTRY.register(YaFnafmodModBlocks.BOBBLEHEADS_3.getId().getPath(), () -> new Bobbleheads3DisplayItem(YaFnafmodModBlocks.BOBBLEHEADS_3.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BOBBLEHEADS_2 = REGISTRY.register(YaFnafmodModBlocks.BOBBLEHEADS_2.getId().getPath(), () -> new Bobbleheads2DisplayItem(YaFnafmodModBlocks.BOBBLEHEADS_2.get(), new Item.Properties()));
+	public static final RegistryObject<Item> WOODEN_SHELF = block(YaFnafmodModBlocks.WOODEN_SHELF);
+	public static final RegistryObject<Item> SUPPLY_CLOSET_KIT = block(YaFnafmodModBlocks.SUPPLY_CLOSET_KIT);
+	public static final RegistryObject<Item> WALL_PIZZA_OLIVE = block(YaFnafmodModBlocks.WALL_PIZZA_OLIVE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

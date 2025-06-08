@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/pizza_wall1",
+  "textures": {
+    "all": "ya_fnafmod:block/wall_pizza1_2",
+    "particle": "ya_fnafmod:block/wall_pizza1_1",
+    "1": "ya_fnafmod:block/wall_pizza3_2"
+  },
+  "render_type": "cutout"
+}
