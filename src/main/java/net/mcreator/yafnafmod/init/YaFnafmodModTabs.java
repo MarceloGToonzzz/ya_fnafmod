@@ -2071,6 +2071,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.ELEVATOR_DOOR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RENTAL_DOOR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RENTAL_WINDOWED_DOOR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.ENTRANCE_FANCY_RED_DOOR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DOOR_WINDOW_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DOOR_WINDOW_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BATHROOM_STALL_DOOR_BLUE.get().asItem());
@@ -2094,6 +2095,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BIG_RENTAL_DOOR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BIG_RENTAL_WINDOWED_DOOR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BIG_OFFICE_DOOR_WINDOWED_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BIG_OFFICE_DOOR_WINDOWED_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BIG_KITCHEN_DOOR_WIDE.get().asItem());

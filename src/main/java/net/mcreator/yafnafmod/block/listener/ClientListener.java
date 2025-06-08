@@ -327,6 +327,7 @@ import net.mcreator.yafnafmod.block.renderer.BigEntranceRedDoorWideTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigEntranceRedDoorTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigEntranceDoorWideTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigEntranceDoorTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.BigEntraceFancyRedWideTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigElevatorDoorTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigClosetTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigBedroomDoorTileRenderer;
@@ -710,5 +711,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_LIL_HOOPS.get(), context -> new ArcadeLilHoopsTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_TICKET_MUNCHER_CUPCAKE.get(), context -> new ArcadeTicketMuncherCupcakeTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ARCADE_CANDY_CRANE_MACHINE.get(), context -> new ArcadeCandyCraneMachineTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_ENTRACE_FANCY_RED_WIDE.get(), context -> new BigEntraceFancyRedWideTileRenderer());
 	}
 }

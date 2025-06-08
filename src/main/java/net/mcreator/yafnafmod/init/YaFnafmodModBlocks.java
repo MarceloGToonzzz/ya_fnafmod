@@ -2251,6 +2251,7 @@ import net.mcreator.yafnafmod.block.ExoticButterBasketBlock;
 import net.mcreator.yafnafmod.block.ExitSignBlock;
 import net.mcreator.yafnafmod.block.ExitDoorBlock;
 import net.mcreator.yafnafmod.block.EntranceRedDoorBlock;
+import net.mcreator.yafnafmod.block.EntranceFancyRedDoorBlock;
 import net.mcreator.yafnafmod.block.EntranceDoorBlock;
 import net.mcreator.yafnafmod.block.EnnardMaskBlock;
 import net.mcreator.yafnafmod.block.EnhancedSpeakerBlock;
@@ -3585,6 +3586,7 @@ import net.mcreator.yafnafmod.block.BigEntranceRedDoorWideBlock;
 import net.mcreator.yafnafmod.block.BigEntranceRedDoorBlock;
 import net.mcreator.yafnafmod.block.BigEntranceDoorWideBlock;
 import net.mcreator.yafnafmod.block.BigEntranceDoorBlock;
+import net.mcreator.yafnafmod.block.BigEntraceFancyRedWideBlock;
 import net.mcreator.yafnafmod.block.BigElevatorDoorBlock;
 import net.mcreator.yafnafmod.block.BigClosetBlock;
 import net.mcreator.yafnafmod.block.BigCakeHappiestDayBlock;
@@ -7439,6 +7441,8 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> WALL_PIPES = REGISTRY.register("wall_pipes", () -> new WallPipesBlock());
 	public static final RegistryObject<Block> WALL_PIPES_RED = REGISTRY.register("wall_pipes_red", () -> new WallPipesRedBlock());
 	public static final RegistryObject<Block> WALL_PIPES_YELLOW = REGISTRY.register("wall_pipes_yellow", () -> new WallPipesYellowBlock());
+	public static final RegistryObject<Block> ENTRANCE_FANCY_RED_DOOR = REGISTRY.register("entrance_fancy_red_door", () -> new EntranceFancyRedDoorBlock());
+	public static final RegistryObject<Block> BIG_ENTRACE_FANCY_RED_WIDE = REGISTRY.register("big_entrace_fancy_red_wide", () -> new BigEntraceFancyRedWideBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -839,6 +839,7 @@ import net.mcreator.yafnafmod.block.display.BigEntranceRedDoorWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntranceRedDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntranceDoorWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntranceDoorDisplayItem;
+import net.mcreator.yafnafmod.block.display.BigEntraceFancyRedWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigElevatorDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigClosetDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigBedroomDoorDisplayItem;
@@ -5477,6 +5478,9 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> WALL_PIPES = block(YaFnafmodModBlocks.WALL_PIPES);
 	public static final RegistryObject<Item> WALL_PIPES_RED = block(YaFnafmodModBlocks.WALL_PIPES_RED);
 	public static final RegistryObject<Item> WALL_PIPES_YELLOW = block(YaFnafmodModBlocks.WALL_PIPES_YELLOW);
+	public static final RegistryObject<Item> ENTRANCE_FANCY_RED_DOOR = doubleBlock(YaFnafmodModBlocks.ENTRANCE_FANCY_RED_DOOR);
+	public static final RegistryObject<Item> BIG_ENTRACE_FANCY_RED_WIDE = REGISTRY.register(YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.getId().getPath(),
+			() -> new BigEntraceFancyRedWideDisplayItem(YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

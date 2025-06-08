@@ -350,6 +350,7 @@ import net.mcreator.yafnafmod.block.entity.BigEntranceRedDoorWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntranceRedDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntranceDoorWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntranceDoorTileEntity;
+import net.mcreator.yafnafmod.block.entity.BigEntraceFancyRedWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigElevatorDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigClosetTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigBedroomDoorTileEntity;
@@ -1006,6 +1007,8 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(ArcadeTicketMuncherCupcakeTileEntity::new, YaFnafmodModBlocks.ARCADE_TICKET_MUNCHER_CUPCAKE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ArcadeCandyCraneMachineTileEntity>> ARCADE_CANDY_CRANE_MACHINE = REGISTRY.register("arcade_candy_crane_machine",
 			() -> BlockEntityType.Builder.of(ArcadeCandyCraneMachineTileEntity::new, YaFnafmodModBlocks.ARCADE_CANDY_CRANE_MACHINE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigEntraceFancyRedWideTileEntity>> BIG_ENTRACE_FANCY_RED_WIDE = REGISTRY.register("big_entrace_fancy_red_wide",
+			() -> BlockEntityType.Builder.of(BigEntraceFancyRedWideTileEntity::new, YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

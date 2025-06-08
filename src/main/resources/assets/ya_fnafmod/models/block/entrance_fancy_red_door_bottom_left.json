@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "ya_fnafmod:block/door_entrance_fancyred_bottom",
+    "bottom": "ya_fnafmod:block/door_entrance_fancyred_bottom",
+    "top": "ya_fnafmod:block/door_entrance_fancyred_top"
+  },
+  "render_type": "cutout_mipped"
+}
