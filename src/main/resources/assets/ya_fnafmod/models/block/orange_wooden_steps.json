@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/woodensteps",
+  "textures": {
+    "all": "ya_fnafmod:block/woodensteps2",
+    "particle": "ya_fnafmod:block/woodensteps2",
+    "0": "ya_fnafmod:block/woodensteps2"
+  },
+  "render_type": "cutout_mipped"
+}

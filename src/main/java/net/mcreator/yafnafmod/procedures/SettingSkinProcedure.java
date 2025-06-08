@@ -161,6 +161,8 @@ public class SettingSkinProcedure {
 					if (entity instanceof FuntimeFreddyEntity animatable)
 						animatable.setTexture("ftfreddy_bonless_ctw");
 				}
+				if (entity instanceof ShadowFreddyEntity animatable)
+					animatable.setTexture("wsfreddy_corner");
 				if (entity instanceof FuntimeFreddyDayEntity animatable)
 					animatable.setTexture("ftfreddy_ctw");
 				if (entity instanceof BonbonEntity animatable)

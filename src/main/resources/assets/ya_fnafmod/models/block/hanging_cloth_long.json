@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/longwires_ceiling",
+  "textures": {
+    "all": "ya_fnafmod:block/longwires_dirtycloth",
+    "particle": "ya_fnafmod:block/longwires_dirtycloth",
+    "0": "ya_fnafmod:block/longwires_dirtycloth"
+  },
+  "render_type": "cutout_mipped"
+}

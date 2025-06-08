@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/battery_mediocre",
+  "textures": {
+    "all": "ya_fnafmod:block/battery_mediocre",
+    "particle": "ya_fnafmod:block/battery_mediocre",
+    "0": "ya_fnafmod:block/battery_mediocre"
+  },
+  "render_type": "cutout_mipped"
+}

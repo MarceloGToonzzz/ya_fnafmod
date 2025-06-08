@@ -2,7 +2,7 @@
   "parent": "block/grass_block",
   "textures": {
     "bottom": "ya_fnafmod:block/stagebase_moviebase",
-    "top": "ya_fnafmod:block/stagebase_wood_woodenbottom",
+    "top": "ya_fnafmod:block/stagebase_planks3",
     "side": "ya_fnafmod:block/stagebase_moviebase",
     "overlay": "ya_fnafmod:block/walltop_black",
     "particle": "ya_fnafmod:block/stagebase_moviebase"

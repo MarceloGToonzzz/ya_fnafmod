@@ -240,7 +240,7 @@ public class PhantomChicaEntity extends Monster implements GeoEntity {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.chica.chi_walk"));
 			}
 			if (!this.onGround()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.chica.ph_fly"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.chica.pchi_fly"));
 			}
 			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.chica.chi_idle"));
 		}

@@ -1750,17 +1750,15 @@
 			"bones": {
 				"pivot": {
 					"rotation": {
-						"0.0": {
-							"vector": [15, 0, 0]
-						},
-						"1.0": {
-							"vector": [15, 0, 0],
-							"easing": "easeInOutSine"
-						}
+						"vector": [22.5, 0, 0]
 					},
 					"position": {
 						"0.0": {
 							"vector": [0, 0, 2]
+						},
+						"0.5": {
+							"vector": [0, 1, 2],
+							"easing": "easeInOutSine"
 						},
 						"1.0": {
 							"vector": [0, 0, 2],
@@ -1811,17 +1809,7 @@
 				},
 				"head": {
 					"rotation": {
-						"0.0": {
-							"vector": [-2.25002, 2.99318, 9.54589]
-						},
-						"0.5": {
-							"vector": [4.37511, 7.98133, 26.40319],
-							"easing": "easeInOutSine"
-						},
-						"1.0": {
-							"vector": [-2.25002, 2.99318, 9.54589],
-							"easing": "easeInOutSine"
-						}
+						"vector": [-9.75002, 2.99318, 9.54589]
 					}
 				},
 				"tail": {

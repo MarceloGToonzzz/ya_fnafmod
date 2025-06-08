@@ -3,11 +3,11 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_rfreddy",
+    "textureHelmet": "armoricon_freddy_head",
     "enableBody": true,
-    "textureBody": "icon_rfreddy",
+    "textureBody": "armoricon_freddy_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_rfreddy",
+    "textureLeggings": "armoricon_freddy_legs",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

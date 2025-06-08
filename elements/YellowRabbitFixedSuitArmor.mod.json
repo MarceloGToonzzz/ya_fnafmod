@@ -3,11 +3,11 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_yellowrabbit_fixed",
+    "textureHelmet": "armoricon_yellowrabbit_fixed_head",
     "enableBody": true,
-    "textureBody": "icon_yellowrabbit_fixed",
+    "textureBody": "armoricon_yellowrabbit_fixed_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_yellowrabbit_fixed",
+    "textureLeggings": "armoricon_yellowrabbit_fixed_legs",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

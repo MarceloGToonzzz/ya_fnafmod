@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/playground_seesaw",
+  "textures": {
+    "all": "ya_fnafmod:block/playground_seesaw",
+    "particle": "ya_fnafmod:block/playground_seesaw",
+    "1": "ya_fnafmod:block/playground_seesaw"
+  },
+  "render_type": "cutout_mipped"
+}

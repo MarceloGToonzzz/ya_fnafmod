@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate",
+  "textures": {
+    "particle": "ya_fnafmod:block/stagebase_planks2",
+    "texture": "ya_fnafmod:block/stagebase_planks2"
+  },
+  "render_type": "solid"
+}

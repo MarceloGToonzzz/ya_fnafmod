@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "ya_fnafmod:block/stagebase_wood_woodenbottom_gray",
-    "up": "ya_fnafmod:block/stagebase_wood_woodenbottom",
+    "up": "ya_fnafmod:block/stagebase_planks3",
     "north": "ya_fnafmod:block/stagebase_dark",
     "east": "ya_fnafmod:block/stagebase_dark",
     "south": "ya_fnafmod:block/stagebase_dark",

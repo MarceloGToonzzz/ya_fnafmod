@@ -1,0 +1,10 @@
+{
+  "parent": "ya_fnafmod:custom/wallpipes",
+  "textures": {
+    "all": "ya_fnafmod:block/wallpipe_yellow",
+    "particle": "ya_fnafmod:block/wallpipe_yellow",
+    "single": "ya_fnafmod:block/empty",
+    "double": "ya_fnafmod:block/wallpipe_yellow"
+  },
+  "render_type": "cutout_mipped"
+}

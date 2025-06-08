@@ -261,9 +261,9 @@ public class PhantomFreddyEntity extends Monster implements GeoEntity {
 				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.wfred_walk"));
 			}
 			if (!this.onGround()) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.ph_flight"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.pfred_fly"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.wfred_idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.freddy.pfred_idle"));
 		}
 		return PlayState.STOP;
 	}

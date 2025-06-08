@@ -48,7 +48,7 @@ public class ElChipAdScreen extends AbstractContainerScreen<ElChipAdMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("ya_fnafmod:textures/screens/elchipad.png"), this.leftPos + -12, this.topPos + -2, 0, 0, 98, 83, 98, 83);
+		guiGraphics.blit(new ResourceLocation("ya_fnafmod:textures/screens/elchipad.png"), this.leftPos + -12, this.topPos + -2, 0, 0, 196, 166, 196, 166);
 
 		RenderSystem.disableBlend();
 	}

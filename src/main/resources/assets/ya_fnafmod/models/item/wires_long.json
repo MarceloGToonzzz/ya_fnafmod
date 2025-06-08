@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/item_longwires_wires1"
+  },
+  "render_type": "translucent"
+}

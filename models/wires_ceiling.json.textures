@@ -131,6 +131,12 @@
         "1": "item_stars2"
       },
       "name": "stars_colorful"
+    },
+    "arched1": {
+      "map": {
+        "1": "archedwires1"
+      },
+      "name": "arched1"
     }
   }
 }

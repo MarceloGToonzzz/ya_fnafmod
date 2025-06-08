@@ -2,8 +2,8 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "stagebase_wood2",
-    "textureTop": "stagebase_wood2",
+    "texture": "stagebase_planks2",
+    "textureTop": "stagebase_planks2",
     "textureLeft": "sturdystage_redcurtain",
     "textureFront": "sturdystage_redcurtain",
     "textureRight": "sturdystage_redcurtain",

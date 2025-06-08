@@ -3,11 +3,11 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_fredbear_suit",
+    "textureHelmet": "armoricon_fredbear_head",
     "enableBody": true,
-    "textureBody": "icon_fredbear_suit",
+    "textureBody": "armoricon_fredbear_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_fredbear_suit",
+    "textureLeggings": "armoricon_fredbear_legs",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

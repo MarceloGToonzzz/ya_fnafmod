@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ya_fnafmod:block/stagebase_planks2",
+    "up": "ya_fnafmod:block/stagebase_planks2",
+    "north": "ya_fnafmod:block/sturdystage_bluecurtain",
+    "east": "ya_fnafmod:block/sturdystage_bluecurtain",
+    "south": "ya_fnafmod:block/sturdystage_bluecurtain",
+    "west": "ya_fnafmod:block/sturdystage_bluecurtain",
+    "particle": "ya_fnafmod:block/stagebase_planks2"
+  },
+  "render_type": "solid"
+}

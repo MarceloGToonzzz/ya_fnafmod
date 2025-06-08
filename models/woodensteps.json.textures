@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "woodensteps1"
+      },
+      "name": "default"
+    },
+    "steps3": {
+      "map": {
+        "0": "woodensteps3"
+      },
+      "name": "steps3"
+    },
+    "steps2": {
+      "map": {
+        "0": "woodensteps2"
+      },
+      "name": "steps2"
+    }
+  }
+}

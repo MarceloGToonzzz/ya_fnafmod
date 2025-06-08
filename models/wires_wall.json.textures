@@ -29,6 +29,12 @@
         "3": "stagestars_wall"
       },
       "name": "stagestars"
+    },
+    "arched1": {
+      "map": {
+        "3": "archedwires1"
+      },
+      "name": "arched1"
     }
   }
 }

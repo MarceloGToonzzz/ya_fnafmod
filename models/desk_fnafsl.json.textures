@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "desk_fnafsl_off"
+      },
+      "name": "default"
+    },
+    "on": {
+      "map": {
+        "2": "desk_fnafsl_on"
+      },
+      "name": "on"
+    }
+  }
+}

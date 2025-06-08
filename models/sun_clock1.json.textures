@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "sun_clock1"
+      },
+      "name": "default"
+    }
+  }
+}

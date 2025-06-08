@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "stagebase_wood_woodenbottom_gray",
-    "textureTop": "stagebase_wood_woodenbottom",
+    "textureTop": "stagebase_planks3",
     "textureLeft": "stagebase_dark",
     "textureFront": "stagebase_dark",
     "textureRight": "stagebase_dark",

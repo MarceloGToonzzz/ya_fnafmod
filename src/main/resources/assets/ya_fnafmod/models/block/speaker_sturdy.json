@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/speaker_sturdy",
+  "textures": {
+    "all": "ya_fnafmod:block/speaker_sturdy",
+    "particle": "ya_fnafmod:block/speaker_sturdy",
+    "1": "ya_fnafmod:block/speaker_sturdy"
+  },
+  "render_type": "cutout_mipped"
+}

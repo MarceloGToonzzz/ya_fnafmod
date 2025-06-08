@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ya_fnafmod:block/hanging_cloth_long",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ya_fnafmod:block/hanging_cloth_long"
+    },
+    "axis=z": {
+      "model": "ya_fnafmod:block/hanging_cloth_long",
+      "x": 90
+    }
+  }
+}

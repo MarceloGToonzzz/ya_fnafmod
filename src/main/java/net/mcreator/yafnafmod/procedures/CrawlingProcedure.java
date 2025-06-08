@@ -46,8 +46,9 @@ public class CrawlingProcedure {
 		if (entity == null)
 			return;
 		boolean can_laugh = false;
-		if (world.getBlockState(BlockPos.containing(x, y + 1, z)).canOcclude() || !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.AIR)
-				|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.VENT_SHAFT.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.SECURITY_VENT.get()) {
+		if (world.getBlockState(BlockPos.containing(x, y + 1, z)).canOcclude() || (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.AIR)
+				|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.VENT_SHAFT.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.SECURITY_VENT.get())
+				&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.DOORFRAME_DARK.get()) && !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.DOORFRAME_LIGHT.get())) {
 			if (entity.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D) {
 				if (entity instanceof MangleEntity) {
 					((MangleEntity) entity).setAnimation("animation.mangle.crawl");

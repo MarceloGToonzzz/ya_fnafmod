@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "wall_graydark",
-    "textureTop": "cheap_stagebase",
+    "textureTop": "stagebase_planks3",
     "textureLeft": "darkstripe_stagebase",
     "textureFront": "",
     "textureRight": "",

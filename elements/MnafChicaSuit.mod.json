@@ -1,0 +1,69 @@
+{
+  "_fv": 73,
+  "_type": "animatedarmor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "icon_chicachicken",
+    "enableBody": true,
+    "textureBody": "icon_chicachicken",
+    "enableLeggings": true,
+    "textureLeggings": "icon_chicachicken",
+    "enableBoots": false,
+    "textureBoots": "",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "armorTextureFile": "mnaf_chicasuit.png",
+    "model": "mnaf_chicasuit.geo.json",
+    "idle": "animation.model.new",
+    "head": "armorHead",
+    "chest": "armorBody",
+    "rightArm": "armorRightArm",
+    "leftArm": "armorLeftArm",
+    "rightLeg": "armorRightLeg",
+    "leftLeg": "armorLeftLeg",
+    "rightBoot": "armorRightBoot",
+    "leftBoot": "armorLeftBoot",
+    "helmetName": "Nostalgic Chica Suit Head",
+    "bodyName": "Nostalgic Chica Suit Chestplate",
+    "leggingsName": "Nostalgic Chica Suit Leggings",
+    "bootsName": "Springbonnie Suit Armor Boots",
+    "helmetSpecialInfo": [
+      "§bIt looks like it was found in a cave.. man."
+    ],
+    "bodySpecialInfo": [
+      "§bIt looks like it was found in a cave.. man."
+    ],
+    "leggingsSpecialInfo": [
+      "§bIt looks like it was found in a cave.. man."
+    ],
+    "bootsSpecialInfo": [],
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "fullyEquipped": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

@@ -3,11 +3,11 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_springbonnie_suit",
+    "textureHelmet": "armoricon_springbonnie_head",
     "enableBody": true,
-    "textureBody": "icon_springbonnie_suit",
+    "textureBody": "armoricon_springbonnie_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_springbonnie_suit",
+    "textureLeggings": "armoricon_springbonnie_legs",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

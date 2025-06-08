@@ -35,9 +35,7 @@
     ],
     "name": "Fazcoin Bag (10000 Fazcoins)",
     "specialInformation": {
-      "fixedValue": [
-        "(10000 Fazcoins)"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

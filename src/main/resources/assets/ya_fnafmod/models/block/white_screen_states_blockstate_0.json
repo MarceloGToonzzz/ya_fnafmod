@@ -4,5 +4,5 @@
     "all": "ya_fnafmod:block/whitescreen",
     "particle": "ya_fnafmod:block/whitescreen"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

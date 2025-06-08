@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ya_fnafmod:block/stage_plank_orange_slab"
+    },
+    "type=top": {
+      "model": "ya_fnafmod:block/stage_plank_orange_slab_top"
+    },
+    "type=double": {
+      "model": "ya_fnafmod:block/stage_plank_orange_slab_full"
+    }
+  }
+}

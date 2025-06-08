@@ -1,0 +1,48 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "SofaYellow",
+    "blockstateList": [
+      {
+        "texture": "sofa_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "sofa:rightend",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "sofa_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "sofa:middle",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "sofa_blue",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "sofa:leftend",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

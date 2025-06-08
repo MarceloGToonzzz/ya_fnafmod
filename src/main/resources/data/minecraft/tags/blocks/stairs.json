@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:stage_plank_dark_stairs",
+    "ya_fnafmod:stage_plank_orange_stairs",
+    "ya_fnafmod:stage_plank_light_stairs",
     "ya_fnafmod:cracked_old_red_blue_tile_stairs",
     "ya_fnafmod:old_red_blue_tile_stairs",
     "ya_fnafmod:cracked_old_black_blue_tile_stairs",

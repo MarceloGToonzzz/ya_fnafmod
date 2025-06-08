@@ -1,0 +1,36 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "left": "sofa_blue",
+        "right": "sofa_blue",
+        "base": "sofa_blue"
+      },
+      "name": "default"
+    },
+    "middle": {
+      "map": {
+        "left": "empty",
+        "right": "empty",
+        "base": "sofa_blue"
+      },
+      "name": "middle"
+    },
+    "rightend": {
+      "map": {
+        "left": "empty",
+        "right": "sofa_blue",
+        "base": "sofa_blue"
+      },
+      "name": "rightend"
+    },
+    "leftend": {
+      "map": {
+        "left": "sofa_blue",
+        "right": "empty",
+        "base": "sofa_blue"
+      },
+      "name": "leftend"
+    }
+  }
+}

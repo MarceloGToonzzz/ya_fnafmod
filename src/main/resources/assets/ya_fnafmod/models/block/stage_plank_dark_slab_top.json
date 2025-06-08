@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "ya_fnafmod:block/stagebase_planks3",
+    "bottom": "ya_fnafmod:block/stagebase_planks3",
+    "top": "ya_fnafmod:block/stagebase_planks3",
+    "side": "ya_fnafmod:block/stagebase_planks3"
+  },
+  "render_type": "solid"
+}

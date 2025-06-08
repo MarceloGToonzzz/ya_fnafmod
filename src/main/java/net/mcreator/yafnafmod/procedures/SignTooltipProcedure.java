@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
+
 import javax.annotation.Nullable;
 
 import java.util.List;
@@ -31,10 +33,15 @@ public class SignTooltipProcedure {
 		if (tooltip == null)
 			return;
 		ItemStack wawa = ItemStack.EMPTY;
-		if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("ya_fnafmod:")
-				&& ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("pizzeria_sign") || (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("shop_sign"))) {
-			tooltip.add(1, Component.literal("- Right click with Faz-Wrench to off-center!"));
-			tooltip.add(2, Component.literal("- Activate with Redstone to turn on the light!"));
+		if (!(itemstack.getItem() == YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get().asItem())) {
+			if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("ya_fnafmod:")
+					&& ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("pizzeria_sign") || (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("shop_sign"))) {
+				tooltip.add(1, Component.literal("- Right click with Faz-Wrench to off-center!"));
+				tooltip.add(2, Component.literal("- Activate with Redstone to turn on the light!"));
+			}
+		} else {
+			tooltip.add(1, Component.literal("- Right click with Faz-Wrench to change texture!"));
+			tooltip.add(2, Component.literal("- Right click with FAT (Red Mode) to change text!"));
 		}
 	}
 }

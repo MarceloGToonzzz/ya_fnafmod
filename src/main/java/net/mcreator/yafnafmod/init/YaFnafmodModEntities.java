@@ -364,7 +364,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<PuppetEntity>> PUPPET = register("puppet",
 			EntityType.Builder.<PuppetEntity>of(PuppetEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuppetEntity::new)
 
-					.sized(1.8f, 1f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<PuppetDayEntity>> PUPPET_DAY = register("puppet_day",
 			EntityType.Builder.<PuppetDayEntity>of(PuppetDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PuppetDayEntity::new)
 

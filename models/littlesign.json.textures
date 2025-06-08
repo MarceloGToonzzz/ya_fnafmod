@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "littlesign_bathroommale"
+      },
+      "name": "default"
+    },
+    "bathroom_female": {
+      "map": {
+        "0": "littlesign_bathroomfemale"
+      },
+      "name": "bathroom_female"
+    }
+  }
+}

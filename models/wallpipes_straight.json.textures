@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "single": "wallpipestraight_gray",
+        "double": "empty"
+      },
+      "name": "default"
+    },
+    "doublegray": {
+      "map": {
+        "single": "empty",
+        "double": "wallpipestraight_gray"
+      },
+      "name": "doublegray"
+    }
+  }
+}

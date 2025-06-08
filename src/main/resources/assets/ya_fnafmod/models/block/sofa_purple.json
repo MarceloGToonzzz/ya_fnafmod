@@ -1,0 +1,11 @@
+{
+  "parent": "ya_fnafmod:custom/sofa",
+  "textures": {
+    "all": "ya_fnafmod:block/sofa_purple",
+    "particle": "ya_fnafmod:block/sofa_purple",
+    "left": "ya_fnafmod:block/sofa_purple",
+    "right": "ya_fnafmod:block/sofa_purple",
+    "base": "ya_fnafmod:block/sofa_purple"
+  },
+  "render_type": "cutout_mipped"
+}

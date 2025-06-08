@@ -1,7 +1,6 @@
 package net.mcreator.yafnafmod.procedures;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
@@ -18,7 +17,6 @@ import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
-import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
 import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
@@ -30,8 +28,6 @@ import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
 import net.mcreator.yafnafmod.entity.DrTeethEntity;
-
-import java.util.Comparator;
 
 public class NightAnimatronicOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -133,18 +129,6 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 				}
 				if (entity instanceof Mob _mobSetNoAi) {
 					_mobSetNoAi.setNoAi(false);
-				}
-			}
-		}
-		if (entity instanceof PuppetEntity) {
-			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).isEmpty()) {
-				if ((entity instanceof PuppetEntity _datEntL55 && _datEntL55.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
-					if (entity instanceof Mob _entity && ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 64, 64, 64), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _ent)
-						_entity.setTarget(_ent);
 				}
 			}
 		}

@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "longwires_wires1"
+      },
+      "name": "default"
+    },
+    "dirtycloth": {
+      "map": {
+        "0": "longwires_dirtycloth"
+      },
+      "name": "dirtycloth"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/littlesign",
+  "textures": {
+    "all": "ya_fnafmod:block/littlesign_bathroommale",
+    "particle": "ya_fnafmod:block/littlesign_bathroommale",
+    "0": "ya_fnafmod:block/littlesign_bathroommale"
+  },
+  "render_type": "cutout_mipped"
+}

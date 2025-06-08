@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/playground_swing",
+  "textures": {
+    "all": "ya_fnafmod:block/playground_swing",
+    "particle": "ya_fnafmod:block/playground_swing",
+    "2": "ya_fnafmod:block/playground_swing"
+  },
+  "render_type": "cutout_mipped"
+}

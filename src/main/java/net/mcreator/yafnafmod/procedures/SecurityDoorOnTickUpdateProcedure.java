@@ -189,9 +189,9 @@ public class SecurityDoorOnTickUpdateProcedure {
 						}
 					}
 				} else if (blockstate.getBlock() == YaFnafmodModBlocks.SECURITY_VENT.get()) {
-					if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip40 ? blockstate.getValue(_getip40) : -1) == 0) {
+					if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip40 ? blockstate.getValue(_getip40) : -1) == 1) {
 						{
-							int _value = 1;
+							int _value = 0;
 							BlockPos _pos = BlockPos.containing(x, y, z);
 							BlockState _bs = world.getBlockState(_pos);
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -212,7 +212,8 @@ public class SecurityDoorOnTickUpdateProcedure {
 			if ((blockstate.getBlock() == YaFnafmodModBlocks.SECURITY_DOOR.get() || blockstate.getBlock() == YaFnafmodModBlocks.SECURITY_DOOR_WINDOW.get())
 					&& ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip49 ? blockstate.getValue(_getip49) : -1) == 0
 							|| (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip51 ? blockstate.getValue(_getip51) : -1) == 1)
-					|| blockstate.getBlock() == YaFnafmodModBlocks.SECURITY_VENT.get() && (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip55 ? blockstate.getValue(_getip55) : -1) == 1) {
+					|| blockstate.getBlock() == YaFnafmodModBlocks.SECURITY_VENT.get() && ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip55 ? blockstate.getValue(_getip55) : -1) == 0
+							|| (blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip57 ? blockstate.getValue(_getip57) : -1) == 1)) {
 				if (world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.GENERATOR_NIGHT) == false || IsItNighttimeProcedure.execute(world) == true) {
 					if (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {

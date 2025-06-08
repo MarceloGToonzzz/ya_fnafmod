@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/conveyor_belt"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/conveyor_belt",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/conveyor_belt",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/conveyor_belt",
+      "y": 270
+    }
+  }
+}

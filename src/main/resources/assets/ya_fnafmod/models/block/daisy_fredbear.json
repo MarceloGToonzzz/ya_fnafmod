@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "ya_fnafmod:block/daisy_fredbear",
+    "particle": "ya_fnafmod:block/daisy_fredbear"
+  },
+  "render_type": "cutout"
+}
