@@ -116,7 +116,7 @@ public class NightActionProcedure {
 									&& (entityiterator.getPersistentData().getString("style")).equals(entity.getPersistentData().getString("style")))) {
 								entityiterator.getPersistentData().putString("skin", (entity.getPersistentData().getString("skin")));
 								entityiterator.getPersistentData().putString("style", (entity.getPersistentData().getString("style")));
-								SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getString("skin"), entity.getPersistentData().getString("style"));
+								SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getString("skin"));
 							}
 						}
 						if ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).contains("_still_day")) {
@@ -148,7 +148,7 @@ public class NightActionProcedure {
 					entity.discard();
 			}
 		}
-		if (!(world instanceof Level _lvl73 && _lvl73.isDay())) {
+		if (!(world instanceof Level _lvl72 && _lvl72.isDay())) {
 			if (entity instanceof FreddyFazbearDayEntity) {
 				((FreddyFazbearDayEntity) entity).setAnimation("0");
 			}

@@ -117,7 +117,7 @@ public class DayActionProcedure {
 									&& (entityiterator.getPersistentData().getString("style")).equals(entity.getPersistentData().getString("style")))) {
 								entityiterator.getPersistentData().putString("skin", (entity.getPersistentData().getString("skin")));
 								entityiterator.getPersistentData().putString("style", (entity.getPersistentData().getString("style")));
-								SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getString("skin"), entity.getPersistentData().getString("style"));
+								SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getString("skin"));
 							}
 						}
 					}

@@ -1,0 +1,7 @@
+
+{
+  "parent": "ya_fnafmod:displaysettings/puppetbox",
+  "textures": {
+    "particle": "ya_fnafmod:block/wide_fan"
+  }
+}

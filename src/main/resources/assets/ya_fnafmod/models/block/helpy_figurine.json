@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/helpy_mini",
+  "textures": {
+    "all": "ya_fnafmod:block/helpy_mini",
+    "particle": "ya_fnafmod:block/helpy_mini",
+    "2": "ya_fnafmod:block/helpy_mini"
+  },
+  "render_type": "cutout_mipped"
+}

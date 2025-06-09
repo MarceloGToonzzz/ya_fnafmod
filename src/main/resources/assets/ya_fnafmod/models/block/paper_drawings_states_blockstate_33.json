@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/paper1",
+  "textures": {
+    "all": "ya_fnafmod:block/paper17",
+    "particle": "ya_fnafmod:block/paper1",
+    "0": "ya_fnafmod:block/paper17"
+  },
+  "render_type": "cutout"
+}

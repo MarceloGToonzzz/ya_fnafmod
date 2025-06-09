@@ -432,6 +432,45 @@
         "customModelName": "paper2:paper16",
         "luminance": 0,
         "boundingBoxes": []
+      },
+      {
+        "texture": "paper17",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper1:paper17",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paper17",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper2:paper17",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "paperl_3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "paper3:paperl3",
+        "luminance": 0,
+        "boundingBoxes": []
       }
     ]
   }

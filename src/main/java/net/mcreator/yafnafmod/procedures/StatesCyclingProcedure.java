@@ -51,11 +51,11 @@ public class StatesCyclingProcedure {
 					|| blockstate.getBlock() == YaFnafmodModBlocks.PIZZERIA_SIGN_JRS.get() || blockstate.getBlock() == YaFnafmodModBlocks.PIZZERIA_SIGN_JRS_2.get() || blockstate.getBlock() == YaFnafmodModBlocks.SHOP_SIGN_DUMPSTER_DIVER.get()
 					|| blockstate.getBlock() == YaFnafmodModBlocks.SHOP_SIGN_STANS_BUDGET_TECH.get() || blockstate.getBlock() == YaFnafmodModBlocks.SHOP_SIGN_SMILES_AND_SERVOS.get() || blockstate.getBlock() == YaFnafmodModBlocks.CONTROL_LADY.get()
 					|| blockstate.getBlock() == YaFnafmodModBlocks.LITTLE_MAGICIAN.get() || blockstate.getBlock() == YaFnafmodModBlocks.LITTLE_JOE.get() || blockstate.getBlock() == YaFnafmodModBlocks.LITTLE_JOE_SITTING.get()
-					|| blockstate.getBlock() == YaFnafmodModBlocks.BIG_FAN.get() || blockstate.getBlock() == YaFnafmodModBlocks.LARGE_FAN.get() || blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_GREEN.get()
-					|| blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_BLUE.get() || blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_PINK.get() || blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_ORANGE.get()
-					|| blockstate.getBlock() == YaFnafmodModBlocks.PROP_SIGN_OUT_OF_ORDER.get() || blockstate.getBlock() == YaFnafmodModBlocks.PROP_SIGN_MARTYS_PLUNGERS.get()
-					|| blockstate.getBlock() == YaFnafmodModBlocks.PROP_SIGN_FLOS_GLOSSY_FLOSS.get() || blockstate.is(BlockTags.create(new ResourceLocation("ya_fnafmod:arcades_toggleable")))) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip87 ? blockstate.getValue(_getip87) : -1) == 0) {
+					|| blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_GREEN.get() || blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_BLUE.get() || blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_PINK.get()
+					|| blockstate.getBlock() == YaFnafmodModBlocks.NEON_STAGE_LIGHT_ORANGE.get() || blockstate.getBlock() == YaFnafmodModBlocks.PROP_SIGN_OUT_OF_ORDER.get()
+					|| blockstate.getBlock() == YaFnafmodModBlocks.PROP_SIGN_MARTYS_PLUNGERS.get() || blockstate.getBlock() == YaFnafmodModBlocks.PROP_SIGN_FLOS_GLOSSY_FLOSS.get()
+					|| blockstate.is(BlockTags.create(new ResourceLocation("ya_fnafmod:arcades_toggleable")))) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip83 ? blockstate.getValue(_getip83) : -1) == 0) {
 					{
 						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -63,7 +63,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip90 ? blockstate.getValue(_getip90) : -1) == 1) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip86 ? blockstate.getValue(_getip86) : -1) == 1) {
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -74,7 +74,7 @@ public class StatesCyclingProcedure {
 				}
 				worked = true;
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.VENT_SHAFT.get()) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip95 ? blockstate.getValue(_getip95) : -1) == 0) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip91 ? blockstate.getValue(_getip91) : -1) == 0) {
 					{
 						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -82,7 +82,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip98 ? blockstate.getValue(_getip98) : -1) == 1) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip94 ? blockstate.getValue(_getip94) : -1) == 1) {
 					{
 						int _value = 2;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -90,7 +90,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip101 ? blockstate.getValue(_getip101) : -1) == 2) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip97 ? blockstate.getValue(_getip97) : -1) == 2) {
 					{
 						int _value = 3;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -98,7 +98,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip104 ? blockstate.getValue(_getip104) : -1) == 3) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip100 ? blockstate.getValue(_getip100) : -1) == 3) {
 					{
 						int _value = 4;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -106,7 +106,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip107 ? blockstate.getValue(_getip107) : -1) == 4) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip103 ? blockstate.getValue(_getip103) : -1) == 4) {
 					{
 						int _value = 5;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -114,7 +114,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip110 ? blockstate.getValue(_getip110) : -1) == 5) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip106 ? blockstate.getValue(_getip106) : -1) == 5) {
 					{
 						int _value = 6;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -122,7 +122,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip113 ? blockstate.getValue(_getip113) : -1) == 6) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip109 ? blockstate.getValue(_getip109) : -1) == 6) {
 					{
 						int _value = 7;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -130,7 +130,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip116 ? blockstate.getValue(_getip116) : -1) == 7) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip112 ? blockstate.getValue(_getip112) : -1) == 7) {
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -142,7 +142,7 @@ public class StatesCyclingProcedure {
 				worked = true;
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.POSTER_JEFFS.get() || blockstate.getBlock() == YaFnafmodModBlocks.POSTER_FRIGHTS.get()) {
 				if (blockstate.getBlock() == YaFnafmodModBlocks.POSTER_FRIGHTS.get()) {
-					if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip125 ? blockstate.getValue(_getip125) : -1) == 0) {
+					if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip121 ? blockstate.getValue(_getip121) : -1) == 0) {
 						{
 							int _value = 1;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -150,7 +150,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip128 ? blockstate.getValue(_getip128) : -1) == 1) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip124 ? blockstate.getValue(_getip124) : -1) == 1) {
 						{
 							int _value = 2;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -158,7 +158,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip131 ? blockstate.getValue(_getip131) : -1) == 2) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip127 ? blockstate.getValue(_getip127) : -1) == 2) {
 						{
 							int _value = 3;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -166,7 +166,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip134 ? blockstate.getValue(_getip134) : -1) == 3) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip130 ? blockstate.getValue(_getip130) : -1) == 3) {
 						{
 							int _value = 4;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -174,7 +174,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip137 ? blockstate.getValue(_getip137) : -1) == 4) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip133 ? blockstate.getValue(_getip133) : -1) == 4) {
 						{
 							int _value = 5;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -182,7 +182,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip140 ? blockstate.getValue(_getip140) : -1) == 5) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip136 ? blockstate.getValue(_getip136) : -1) == 5) {
 						{
 							int _value = 6;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -190,7 +190,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip143 ? blockstate.getValue(_getip143) : -1) == 6) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip139 ? blockstate.getValue(_getip139) : -1) == 6) {
 						{
 							int _value = 0;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -201,7 +201,7 @@ public class StatesCyclingProcedure {
 					}
 					worked = true;
 				} else if (blockstate.getBlock() == YaFnafmodModBlocks.POSTER_JEFFS.get()) {
-					if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip148 ? blockstate.getValue(_getip148) : -1) == 0) {
+					if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip144 ? blockstate.getValue(_getip144) : -1) == 0) {
 						{
 							int _value = 1;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -209,7 +209,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip151 ? blockstate.getValue(_getip151) : -1) == 1) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip147 ? blockstate.getValue(_getip147) : -1) == 1) {
 						{
 							int _value = 2;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -217,7 +217,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip154 ? blockstate.getValue(_getip154) : -1) == 2) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip150 ? blockstate.getValue(_getip150) : -1) == 2) {
 						{
 							int _value = 3;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -225,7 +225,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip157 ? blockstate.getValue(_getip157) : -1) == 3) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip153 ? blockstate.getValue(_getip153) : -1) == 3) {
 						{
 							int _value = 4;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -233,7 +233,7 @@ public class StatesCyclingProcedure {
 							if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 								world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 						}
-					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip160 ? blockstate.getValue(_getip160) : -1) == 4) {
+					} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip156 ? blockstate.getValue(_getip156) : -1) == 4) {
 						{
 							int _value = 0;
 							BlockPos _pos = BlockPos.containing(x, y, z);
@@ -245,7 +245,7 @@ public class StatesCyclingProcedure {
 					worked = true;
 				}
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.BIG_SPEAKER.get()) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip165 ? blockstate.getValue(_getip165) : -1) == 0) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip161 ? blockstate.getValue(_getip161) : -1) == 0) {
 					{
 						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -253,7 +253,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip168 ? blockstate.getValue(_getip168) : -1) == 1) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip164 ? blockstate.getValue(_getip164) : -1) == 1) {
 					{
 						int _value = 2;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -261,7 +261,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip171 ? blockstate.getValue(_getip171) : -1) == 2) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip167 ? blockstate.getValue(_getip167) : -1) == 2) {
 					{
 						int _value = 3;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -269,7 +269,7 @@ public class StatesCyclingProcedure {
 						if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
-				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip174 ? blockstate.getValue(_getip174) : -1) == 3) {
+				} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip170 ? blockstate.getValue(_getip170) : -1) == 3) {
 					{
 						int _value = 0;
 						BlockPos _pos = BlockPos.containing(x, y, z);

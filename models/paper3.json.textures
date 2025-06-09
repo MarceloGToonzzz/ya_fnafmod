@@ -11,6 +11,12 @@
         "0": "paperl_2"
       },
       "name": "paperl2"
+    },
+    "paperl3": {
+      "map": {
+        "0": "paperl_3"
+      },
+      "name": "paperl3"
     }
   }
 }

@@ -18,6 +18,7 @@ import net.mcreator.yafnafmod.block.entity.WitheredDougDogBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.WitheredChicaBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.WitheredBonnieBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.WitheredBonbonBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.WideFanTileEntity;
 import net.mcreator.yafnafmod.block.entity.WallMakerBlockEntity;
 import net.mcreator.yafnafmod.block.entity.VanRideTileEntity;
 import net.mcreator.yafnafmod.block.entity.TvTubeBlockEntity;
@@ -156,6 +157,7 @@ import net.mcreator.yafnafmod.block.entity.NeonJukeboxTileEntity;
 import net.mcreator.yafnafmod.block.entity.NeddbearBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.MusicManBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.MusicBoxRedDecorationTileEntity;
+import net.mcreator.yafnafmod.block.entity.MusicBoxPurpleDecorationTileEntity;
 import net.mcreator.yafnafmod.block.entity.MusicBoxDecorationTileEntity;
 import net.mcreator.yafnafmod.block.entity.MusicBoxBlockEntity;
 import net.mcreator.yafnafmod.block.entity.MrHugsBlockTileEntity;
@@ -1013,6 +1015,9 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(BigEntraceFancyRedWideTileEntity::new, YaFnafmodModBlocks.BIG_ENTRACE_FANCY_RED_WIDE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<Bobbleheads3TileEntity>> BOBBLEHEADS_3 = REGISTRY.register("bobbleheads_3", () -> BlockEntityType.Builder.of(Bobbleheads3TileEntity::new, YaFnafmodModBlocks.BOBBLEHEADS_3.get()).build(null));
 	public static final RegistryObject<BlockEntityType<Bobbleheads2TileEntity>> BOBBLEHEADS_2 = REGISTRY.register("bobbleheads_2", () -> BlockEntityType.Builder.of(Bobbleheads2TileEntity::new, YaFnafmodModBlocks.BOBBLEHEADS_2.get()).build(null));
+	public static final RegistryObject<BlockEntityType<MusicBoxPurpleDecorationTileEntity>> MUSIC_BOX_PURPLE_DECORATION = REGISTRY.register("music_box_purple_decoration",
+			() -> BlockEntityType.Builder.of(MusicBoxPurpleDecorationTileEntity::new, YaFnafmodModBlocks.MUSIC_BOX_PURPLE_DECORATION.get()).build(null));
+	public static final RegistryObject<BlockEntityType<WideFanTileEntity>> WIDE_FAN = REGISTRY.register("wide_fan", () -> BlockEntityType.Builder.of(WideFanTileEntity::new, YaFnafmodModBlocks.WIDE_FAN.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

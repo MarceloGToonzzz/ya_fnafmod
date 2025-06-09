@@ -13,6 +13,6 @@ public class AnimatronicOnInitialEntitySpawnProcedure {
 			entity.getPersistentData().putDouble("yaw", (entity.getYRot()));
 			entity.getPersistentData().putBoolean("GotCordinates", true);
 		}
-		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"), entity.getPersistentData().getString("style"));
+		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"));
 	}
 }

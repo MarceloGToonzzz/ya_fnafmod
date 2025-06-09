@@ -28,7 +28,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.yafnafmod.procedures.PaperDrawingsBlockAddedProcedure;
 
 public class PaperDrawingsBlock extends Block {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 33);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 36);
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public PaperDrawingsBlock() {
@@ -99,6 +99,12 @@ public class PaperDrawingsBlock extends Block {
 				if (s.getValue(BLOCKSTATE) == 32)
 					return 0;
 				if (s.getValue(BLOCKSTATE) == 33)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 34)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 35)
+					return 0;
+				if (s.getValue(BLOCKSTATE) == 36)
 					return 0;
 				return 0;
 			}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bigposterr",
+  "textures": {
+    "all": "ya_fnafmod:block/posterbigr_fredbear1_torn",
+    "particle": "ya_fnafmod:block/posterbigr_fredbear1_torn",
+    "0": "ya_fnafmod:block/posterbigr_fredbear1_torn"
+  },
+  "render_type": "cutout"
+}

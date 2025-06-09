@@ -72,7 +72,6 @@ import net.mcreator.yafnafmod.client.renderer.RetroFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFreddyDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFoxyRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroFoxyDayRenderer;
-import net.mcreator.yafnafmod.client.renderer.RetroCupcakeFmsEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroCupcakeEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroChicaRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroChicaDayRenderer;
@@ -456,7 +455,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.CUPCAKE_ENTITY.get(), CupcakeEntityRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.TOY_CUPCAKE_ENTITY.get(), ToyCupcakeEntityRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.RETRO_CUPCAKE_ENTITY.get(), RetroCupcakeEntityRenderer::new);
-		event.registerEntityRenderer(YaFnafmodModEntities.RETRO_CUPCAKE_FMS_ENTITY.get(), RetroCupcakeFmsEntityRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SCRAP_SPARKY_DOG.get(), ScrapSparkyDogRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_FREDDYBEAR.get(), PuppetFreddybearRenderer::new);

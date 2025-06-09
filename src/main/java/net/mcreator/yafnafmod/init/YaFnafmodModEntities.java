@@ -79,7 +79,6 @@ import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.RetroCupcakeFmsEntityEntity;
 import net.mcreator.yafnafmod.entity.RetroCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
@@ -1118,11 +1117,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<RetroCupcakeEntityEntity>of(RetroCupcakeEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RetroCupcakeEntityEntity::new)
 
 					.sized(0.6f, 0.9375f));
-	public static final RegistryObject<EntityType<RetroCupcakeFmsEntityEntity>> RETRO_CUPCAKE_FMS_ENTITY = register("retro_cupcake_fms_entity",
-			EntityType.Builder.<RetroCupcakeFmsEntityEntity>of(RetroCupcakeFmsEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3)
-					.setCustomClientFactory(RetroCupcakeFmsEntityEntity::new)
-
-					.sized(0.6f, 0.9375f));
 	public static final RegistryObject<EntityType<ScrapSparkyDogEntity>> SCRAP_SPARKY_DOG = register("scrap_sparky_dog",
 			EntityType.Builder.<ScrapSparkyDogEntity>of(ScrapSparkyDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ScrapSparkyDogEntity::new)
 
@@ -1373,7 +1367,6 @@ public class YaFnafmodModEntities {
 			CupcakeEntityEntity.init();
 			ToyCupcakeEntityEntity.init();
 			RetroCupcakeEntityEntity.init();
-			RetroCupcakeFmsEntityEntity.init();
 			ScrapSparkyDogEntity.init();
 			ScrapSparkyDogDayEntity.init();
 			PuppetFreddybearEntity.init();
@@ -1598,7 +1591,6 @@ public class YaFnafmodModEntities {
 		event.put(CUPCAKE_ENTITY.get(), CupcakeEntityEntity.createAttributes().build());
 		event.put(TOY_CUPCAKE_ENTITY.get(), ToyCupcakeEntityEntity.createAttributes().build());
 		event.put(RETRO_CUPCAKE_ENTITY.get(), RetroCupcakeEntityEntity.createAttributes().build());
-		event.put(RETRO_CUPCAKE_FMS_ENTITY.get(), RetroCupcakeFmsEntityEntity.createAttributes().build());
 		event.put(SCRAP_SPARKY_DOG.get(), ScrapSparkyDogEntity.createAttributes().build());
 		event.put(SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR.get(), PuppetFreddybearEntity.createAttributes().build());

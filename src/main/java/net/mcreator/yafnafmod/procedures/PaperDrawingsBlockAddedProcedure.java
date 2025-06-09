@@ -13,7 +13,7 @@ public class PaperDrawingsBlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.PAPER_DRAWINGS.get()) {
 			{
-				int _value = Mth.nextInt(RandomSource.create(), 0, 33);
+				int _value = Mth.nextInt(RandomSource.create(), 0, 36);
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))

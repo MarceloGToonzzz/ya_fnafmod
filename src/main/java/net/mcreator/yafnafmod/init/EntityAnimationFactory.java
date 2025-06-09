@@ -64,7 +64,6 @@ import net.mcreator.yafnafmod.entity.RetroFreddyEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.RetroCupcakeFmsEntityEntity;
 import net.mcreator.yafnafmod.entity.RetroCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
@@ -1692,13 +1691,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof RetroCupcakeEntityEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof RetroCupcakeFmsEntityEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

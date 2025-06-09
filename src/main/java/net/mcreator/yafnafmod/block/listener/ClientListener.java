@@ -14,6 +14,7 @@ import net.mcreator.yafnafmod.block.renderer.WitheredDougDogBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.WitheredChicaBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.WitheredBonnieBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.WitheredBonbonBlockTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.WideFanTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.VanRideTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.TrashTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.TrashCanMeshTileRenderer;
@@ -145,6 +146,7 @@ import net.mcreator.yafnafmod.block.renderer.NeonJukeboxTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.NeddbearBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MusicManBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MusicBoxRedDecorationTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.MusicBoxPurpleDecorationTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MusicBoxDecorationTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MrHugsBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.MrHippoBlockTileRenderer;
@@ -716,5 +718,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_ENTRACE_FANCY_RED_WIDE.get(), context -> new BigEntraceFancyRedWideTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BOBBLEHEADS_3.get(), context -> new Bobbleheads3TileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BOBBLEHEADS_2.get(), context -> new Bobbleheads2TileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.MUSIC_BOX_PURPLE_DECORATION.get(), context -> new MusicBoxPurpleDecorationTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.WIDE_FAN.get(), context -> new WideFanTileRenderer());
 	}
 }

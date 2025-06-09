@@ -5,9 +5,6 @@
     "ya_fnafmod:withered_bonnie_spawn_item",
     "ya_fnafmod:withered_chica_spawn_item",
     "ya_fnafmod:withered_golden_freddy_spawn_item",
-    "ya_fnafmod:withered_freddy_fms_spawn_item",
-    "ya_fnafmod:withered_bonnie_fms_spawn_item",
-    "ya_fnafmod:withered_chica_fms_spawn_item",
     "ya_fnafmod:toy_freddy_spawn_item",
     "ya_fnafmod:toy_bonnie_spawn_item",
     "ya_fnafmod:toy_chica_spawn_item",
@@ -21,17 +18,6 @@
     "ya_fnafmod:toy_foxy_still_spawn_item",
     "ya_fnafmod:endo_02_spawn_item",
     "ya_fnafmod:gus_the_pug_spawn_item",
-    "ya_fnafmod:gus_the_pug_fms_spawn_item",
-    "ya_fnafmod:gus_the_pug_still_spawn_item",
-    "ya_fnafmod:gus_the_pug_still_fms_spawn_item",
-    "ya_fnafmod:toy_freddy_fms_spawn_item",
-    "ya_fnafmod:toy_freddy_still_fms_spawn_item",
-    "ya_fnafmod:toy_bonnie_fms_spawn_item",
-    "ya_fnafmod:toy_bonnie_fms_still_spawn_item",
-    "ya_fnafmod:toy_chica_fms_spawn_item",
-    "ya_fnafmod:toy_chica_fms_still_spawn_item",
-    "ya_fnafmod:mangle_fms_spawn_item",
-    "ya_fnafmod:toy_foxy_fms_spawn_item",
-    "ya_fnafmod:toy_foxy_still_fms_spawn_item"
+    "ya_fnafmod:gus_the_pug_still_spawn_item"
   ]
 }

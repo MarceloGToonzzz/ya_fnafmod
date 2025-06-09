@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "posterbigr_fredbear1"
+      },
+      "name": "default"
+    },
+    "fredbear1torn": {
+      "map": {
+        "0": "posterbigr_fredbear1_torn"
+      },
+      "name": "fredbear1torn"
+    },
+    "fredbear2": {
+      "map": {
+        "0": "posterbigr_fredbear2"
+      },
+      "name": "fredbear2"
+    },
+    "fredbear3": {
+      "map": {
+        "0": "posterbigr_fredbear3"
+      },
+      "name": "fredbear3"
+    }
+  }
+}

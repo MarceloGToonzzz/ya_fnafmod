@@ -125,6 +125,12 @@
         "4": "paper16"
       },
       "name": "paper16"
+    },
+    "paper17": {
+      "map": {
+        "4": "paper17"
+      },
+      "name": "paper17"
     }
   }
 }

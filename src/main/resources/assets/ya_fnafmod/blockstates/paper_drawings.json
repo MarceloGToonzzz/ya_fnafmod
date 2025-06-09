@@ -781,6 +781,75 @@
     "facing=down,blockstate=33": {
       "model": "ya_fnafmod:block/paper_drawings_states_blockstate_32",
       "x": 90
+    },
+    "facing=north,blockstate=34": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_33"
+    },
+    "facing=east,blockstate=34": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_33",
+      "y": 90
+    },
+    "facing=south,blockstate=34": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_33",
+      "y": 180
+    },
+    "facing=west,blockstate=34": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_33",
+      "y": 270
+    },
+    "facing=up,blockstate=34": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_33",
+      "x": 270
+    },
+    "facing=down,blockstate=34": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_33",
+      "x": 90
+    },
+    "facing=north,blockstate=35": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_34"
+    },
+    "facing=east,blockstate=35": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_34",
+      "y": 90
+    },
+    "facing=south,blockstate=35": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_34",
+      "y": 180
+    },
+    "facing=west,blockstate=35": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_34",
+      "y": 270
+    },
+    "facing=up,blockstate=35": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_34",
+      "x": 270
+    },
+    "facing=down,blockstate=35": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_34",
+      "x": 90
+    },
+    "facing=north,blockstate=36": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_35"
+    },
+    "facing=east,blockstate=36": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_35",
+      "y": 90
+    },
+    "facing=south,blockstate=36": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_35",
+      "y": 180
+    },
+    "facing=west,blockstate=36": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_35",
+      "y": 270
+    },
+    "facing=up,blockstate=36": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_35",
+      "x": 270
+    },
+    "facing=down,blockstate=36": {
+      "model": "ya_fnafmod:block/paper_drawings_states_blockstate_35",
+      "x": 90
     }
   }
 }

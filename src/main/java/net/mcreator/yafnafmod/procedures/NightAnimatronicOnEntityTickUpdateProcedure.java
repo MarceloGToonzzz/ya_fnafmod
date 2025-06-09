@@ -40,7 +40,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		double sy = 0;
 		double sz = 0;
 		GetNewTargetProcedure.execute(world, x, y, z, entity);
-		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"), entity.getPersistentData().getString("style"));
+		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"));
 		if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
 			SetNbtPositionsProcedure.execute(world, x, y, z, entity);
 		}
@@ -68,7 +68,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 			}
 		}
 		if (entity instanceof EnnardEntity) {
-			if ((entity instanceof EnnardEntity _datEntL22 && _datEntL22.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
+			if ((entity instanceof EnnardEntity _datEntL21 && _datEntL21.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
 				if (entity instanceof EnnardEntity animatable)
 					animatable.setTexture("ennard_maskless");
 			} else {
@@ -109,8 +109,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		if (entity instanceof NightmareFreddyEntity) {
 			FreddleCodeProcedure.execute(world, x, y, z, entity);
 		} else if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-			if ((entity instanceof PlushtrapEntity _datEntL45 && _datEntL45.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-					|| (entity instanceof NightmareBbEntity _datEntL46 && _datEntL46.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+			if ((entity instanceof PlushtrapEntity _datEntL44 && _datEntL44.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+					|| (entity instanceof NightmareBbEntity _datEntL45 && _datEntL45.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("animation.plush.sit");
 				}

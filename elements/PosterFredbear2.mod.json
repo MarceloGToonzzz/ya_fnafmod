@@ -37,7 +37,7 @@
     "name": "Fredbear Poster",
     "specialInformation": {
       "fixedValue": [
-        "\"HUNGRY? ORDER NOW!\""
+        "\"Hungry? We deliver! ORDER NOW!\""
       ]
     },
     "hardness": 0.25,
@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "PosterOnBlockRightClicked"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

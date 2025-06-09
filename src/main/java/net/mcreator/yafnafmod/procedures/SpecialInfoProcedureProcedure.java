@@ -47,7 +47,7 @@ public class SpecialInfoProcedureProcedure {
 			if (itemstack.getItem() == YaFnafmodModItems.FREDDY_FAZBEAR_ALT_SPAWN_ITEM.get()) {
 				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on FNAF Movie Sign!)")));
 				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.FOXY_PIRATE_FIXED_SPAWN_ITEM.get() || itemstack.getItem() == YaFnafmodModItems.FOXY_PIRATE_FIXED_FMS_SPAWN_ITEM.get()) {
+			} else if (itemstack.getItem() == YaFnafmodModItems.FOXY_PIRATE_FIXED_SPAWN_ITEM.get()) {
 				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(A fixed version of Foxy!) ")));
 				cur_pos = cur_pos + 1;
 			} else if (itemstack.getItem() == YaFnafmodModItems.SPARKY_DOG_ALT_SPAWN_ITEM.get()) {
@@ -113,8 +113,6 @@ public class SpecialInfoProcedureProcedure {
 				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(lefty but inverted, idk what else to tell you)")));
 			}
 			if (itemstack.getItem() == YaFnafmodModItems.PITBONNIE_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Graphic Novel design.)")));
-			} else if (itemstack.getItem() == YaFnafmodModItems.PITBONNIE_ALT_FMS_SPAWN_ITEM.get()) {
 				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Graphic Novel design.)")));
 			}
 			if (entity_registry.contains("walker")) {
