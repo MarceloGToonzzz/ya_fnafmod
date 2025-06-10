@@ -136,15 +136,6 @@
     "normal": "broken_bonnie.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "broken_bonnie_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "broken_bonnie.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

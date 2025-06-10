@@ -42,20 +42,12 @@ public class RetroBonnieHeadTileEntity extends RandomizableContainerBlockEntity 
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-	public int blockstateNew = this.getBlockState().getValue(RetroBonnieHeadBlock.BLOCKSTATE);
-	private int blockstateOld = this.getBlockState().getValue(RetroBonnieHeadBlock.BLOCKSTATE);
 
 	public RetroBonnieHeadTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.RETRO_BONNIE_HEAD.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
-		blockstateNew = this.getBlockState().getValue(RetroBonnieHeadBlock.BLOCKSTATE);
-		if (blockstateOld != blockstateNew) {
-			event.getController().forceAnimationReset();
-			blockstateOld = blockstateNew;
-			return PlayState.STOP;
-		}
 		String animationprocedure = ("" + this.getBlockState().getValue(RetroBonnieHeadBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

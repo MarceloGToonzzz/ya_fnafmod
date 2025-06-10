@@ -136,15 +136,6 @@
     "normal": "dougthedog.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_doug_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "dougthedog.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

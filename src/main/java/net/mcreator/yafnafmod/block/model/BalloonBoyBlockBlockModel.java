@@ -9,25 +9,16 @@ import net.mcreator.yafnafmod.block.entity.BalloonBoyBlockTileEntity;
 public class BalloonBoyBlockBlockModel extends GeoModel<BalloonBoyBlockTileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(BalloonBoyBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "animations/bb.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/bb.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(BalloonBoyBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "geo/bb.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/bb.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(BalloonBoyBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_bb_fms.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_bb.png");
 	}
 }

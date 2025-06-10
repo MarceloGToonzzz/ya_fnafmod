@@ -48,8 +48,6 @@ import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapSparkyDogEntity;
 import net.mcreator.yafnafmod.entity.ScrapSparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
-import net.mcreator.yafnafmod.entity.RustyEntity;
-import net.mcreator.yafnafmod.entity.RustyDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarFoxyEntity;
@@ -176,8 +174,6 @@ import net.mcreator.yafnafmod.entity.ElectrobabEntity;
 import net.mcreator.yafnafmod.entity.ElectrobabDayEntity;
 import net.mcreator.yafnafmod.entity.ElChipEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
-import net.mcreator.yafnafmod.entity.DrTeethEntity;
-import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
@@ -1341,34 +1337,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof OfficeChairBlackEntityEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof RustyEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof RustyDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof DrTeethEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof DrTeethDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

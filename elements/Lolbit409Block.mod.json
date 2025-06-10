@@ -136,15 +136,6 @@
     "normal": "lolbit_409.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_lolbit_409_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "lolbit_409.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

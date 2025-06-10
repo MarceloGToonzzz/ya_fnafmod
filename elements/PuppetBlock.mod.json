@@ -136,15 +136,6 @@
     "normal": "puppet.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_puppet_day_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "puppet.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

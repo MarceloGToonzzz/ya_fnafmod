@@ -136,15 +136,6 @@
     "normal": "broken_freddy.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "broken_freddy_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "broken_freddy.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

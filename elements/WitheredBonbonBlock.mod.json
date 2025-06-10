@@ -136,15 +136,6 @@
     "normal": "bonbon.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_bonbonwithered_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "bonbon.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

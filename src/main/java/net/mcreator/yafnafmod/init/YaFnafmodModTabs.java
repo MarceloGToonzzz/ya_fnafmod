@@ -2273,9 +2273,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.FUNTIME_DELILAH_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.GUS_THE_PUG_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.GUS_THE_PUG_STILL_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.RUSTY_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.INDIGO_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.DR_TEETH_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.LOLBIT_409_SPAWN_ITEM.get());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_DECORATIONS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_PLUSHIES = REGISTRY.register("ya_fnaf_mod_plushies",
@@ -2443,11 +2441,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.WITHERED_JOLLY_RAT_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DOUG_DOG_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WITHERED_DOUG_DOG_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.RUSTY_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BARRY_POLAR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.GUS_THE_PUG_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.DR_TEETH_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.INDIGO_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LOLA_CHICA_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SCRAP_LOLA_CHICA_BLOCK.get().asItem());

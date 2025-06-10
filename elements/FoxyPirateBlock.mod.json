@@ -136,15 +136,6 @@
     "normal": "foxypirate.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_foxy_pirate_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "foxypirate.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

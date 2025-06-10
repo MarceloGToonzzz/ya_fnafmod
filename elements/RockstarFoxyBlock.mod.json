@@ -136,15 +136,6 @@
     "normal": "rockstar_foxy.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_rockstar_foxy_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "rockstar_foxy.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

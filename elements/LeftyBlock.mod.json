@@ -136,15 +136,6 @@
     "normal": "lefty.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_lefty_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "lefty.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

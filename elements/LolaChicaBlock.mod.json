@@ -136,25 +136,6 @@
     "normal": "lola_chica.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_lolachica_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "lola_chica.geo.json",
-        "luminance": 0,
-        "boundingBoxes": [
-          {
-            "mx": 0.0,
-            "my": 0.0,
-            "mz": 0.0,
-            "Mx": 16.0,
-            "My": 32.0,
-            "Mz": 16.0,
-            "subtract": false
-          }
-        ]
-      }
-    ]
+    "blockstateList": []
   }
 }

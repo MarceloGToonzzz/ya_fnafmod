@@ -136,15 +136,6 @@
     "normal": "broken_chica.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "broken_chica_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "broken_chica.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

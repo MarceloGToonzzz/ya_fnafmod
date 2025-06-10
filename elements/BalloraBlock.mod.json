@@ -136,15 +136,6 @@
     "normal": "ballora.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_ballora_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "ballora.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

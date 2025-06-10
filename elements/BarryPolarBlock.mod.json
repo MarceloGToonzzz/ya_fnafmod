@@ -136,15 +136,6 @@
     "normal": "barrypolar.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_barrypolar_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "barrypolar.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

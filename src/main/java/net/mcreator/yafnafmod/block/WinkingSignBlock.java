@@ -42,6 +42,16 @@ public class WinkingSignBlock extends Block {
 	}
 
 	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return switch (state.getValue(FACING)) {
+			default -> Shapes.or(box(7.5, 1, 7.5, 8.5, 20, 8.5), box(3, 20, 7.5, 13, 30, 8.5), box(1.5, 13, 8.5, 14.5, 19, 9.5), box(3, 0, 6, 13, 1, 10));
+			case NORTH -> Shapes.or(box(7.5, 1, 7.5, 8.5, 20, 8.5), box(3, 20, 7.5, 13, 30, 8.5), box(1.5, 13, 6.5, 14.5, 19, 7.5), box(3, 0, 6, 13, 1, 10));
+			case EAST -> Shapes.or(box(7.5, 1, 7.5, 8.5, 20, 8.5), box(7.5, 20, 3, 8.5, 30, 13), box(8.5, 13, 1.5, 9.5, 19, 14.5), box(6, 0, 3, 10, 1, 13));
+			case WEST -> Shapes.or(box(7.5, 1, 7.5, 8.5, 20, 8.5), box(7.5, 20, 3, 8.5, 30, 13), box(6.5, 13, 1.5, 7.5, 19, 14.5), box(6, 0, 3, 10, 1, 13));
+		};
+	}
+
+	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
 		builder.add(FACING);

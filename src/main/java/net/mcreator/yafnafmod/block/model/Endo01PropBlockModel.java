@@ -9,25 +9,16 @@ import net.mcreator.yafnafmod.block.entity.Endo01PropTileEntity;
 public class Endo01PropBlockModel extends GeoModel<Endo01PropTileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(Endo01PropTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "animations/endo01_block.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/endo01_block.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(Endo01PropTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "geo/endo01_block.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/endo01_block.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(Endo01PropTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_endo1_fms.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_endo1.png");
 	}
 }

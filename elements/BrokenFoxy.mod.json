@@ -136,15 +136,6 @@
     "normal": "broken_foxy.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "broken_foxy_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "broken_foxy.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

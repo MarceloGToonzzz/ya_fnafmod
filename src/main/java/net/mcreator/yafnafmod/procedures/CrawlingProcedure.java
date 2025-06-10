@@ -34,7 +34,6 @@ import net.mcreator.yafnafmod.entity.JJEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
 import net.mcreator.yafnafmod.entity.ElectrobabEntity;
-import net.mcreator.yafnafmod.entity.DrTeethEntity;
 import net.mcreator.yafnafmod.entity.BidybabEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 
@@ -113,15 +112,6 @@ public class CrawlingProcedure {
 				if (entity instanceof LeftyEntity) {
 					((LeftyEntity) entity).setAnimation("animation.lefty.crawl");
 				}
-				if (!entity.isSprinting()) {
-					if (entity instanceof DrTeethEntity) {
-						((DrTeethEntity) entity).setAnimation("animation.model.drteeth_crawl");
-					}
-				} else {
-					if (entity instanceof DrTeethEntity) {
-						((DrTeethEntity) entity).setAnimation("animation.model.drteeth_crawl_aggro");
-					}
-				}
 			} else {
 				if (entity instanceof MangleEntity) {
 					((MangleEntity) entity).setAnimation("animation.mangle.crawl");
@@ -185,9 +175,6 @@ public class CrawlingProcedure {
 				}
 				if (entity instanceof LeftyEntity) {
 					((LeftyEntity) entity).setAnimation("animation.lefty.crawl_idle");
-				}
-				if (entity instanceof DrTeethEntity) {
-					((DrTeethEntity) entity).setAnimation("animation.model.drteeth_crawl_idle");
 				}
 			}
 			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 16, 16, 16), e -> true).isEmpty()) {
@@ -299,9 +286,6 @@ public class CrawlingProcedure {
 				}
 				if (entity instanceof LeftyEntity) {
 					((LeftyEntity) entity).setAnimation("empty");
-				}
-				if (entity instanceof DrTeethEntity) {
-					((DrTeethEntity) entity).setAnimation("empty");
 				}
 			}
 		}

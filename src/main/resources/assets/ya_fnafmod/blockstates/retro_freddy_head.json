@@ -1,33 +1,18 @@
 {
   "variants": {
-    "facing=north,blockstate=0": {
+    "facing=north": {
       "model": "ya_fnafmod:custom/retro_freddy_head_particle"
     },
-    "facing=east,blockstate=0": {
+    "facing=east": {
       "model": "ya_fnafmod:custom/retro_freddy_head_particle",
       "y": 90
     },
-    "facing=south,blockstate=0": {
+    "facing=south": {
       "model": "ya_fnafmod:custom/retro_freddy_head_particle",
       "y": 180
     },
-    "facing=west,blockstate=0": {
+    "facing=west": {
       "model": "ya_fnafmod:custom/retro_freddy_head_particle",
-      "y": 270
-    },
-    "facing=north,blockstate=1": {
-      "model": "ya_fnafmod:block/retro_freddy_head_blockstate_0"
-    },
-    "facing=east,blockstate=1": {
-      "model": "ya_fnafmod:block/retro_freddy_head_blockstate_0",
-      "y": 90
-    },
-    "facing=south,blockstate=1": {
-      "model": "ya_fnafmod:block/retro_freddy_head_blockstate_0",
-      "y": 180
-    },
-    "facing=west,blockstate=1": {
-      "model": "ya_fnafmod:block/retro_freddy_head_blockstate_0",
       "y": 270
     }
   }

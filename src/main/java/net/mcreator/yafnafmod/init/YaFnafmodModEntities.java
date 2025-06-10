@@ -63,8 +63,6 @@ import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapSparkyDogEntity;
 import net.mcreator.yafnafmod.entity.ScrapSparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
-import net.mcreator.yafnafmod.entity.RustyEntity;
-import net.mcreator.yafnafmod.entity.RustyDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarFoxyEntity;
@@ -191,8 +189,6 @@ import net.mcreator.yafnafmod.entity.ElectrobabEntity;
 import net.mcreator.yafnafmod.entity.ElectrobabDayEntity;
 import net.mcreator.yafnafmod.entity.ElChipEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
-import net.mcreator.yafnafmod.entity.DrTeethEntity;
-import net.mcreator.yafnafmod.entity.DrTeethDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
@@ -899,22 +895,6 @@ public class YaFnafmodModEntities {
 					.setCustomClientFactory(OfficeChairBlackEntityEntity::new)
 
 					.sized(0.6f, 0.625f));
-	public static final RegistryObject<EntityType<RustyEntity>> RUSTY = register("rusty",
-			EntityType.Builder.<RustyEntity>of(RustyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RustyEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<RustyDayEntity>> RUSTY_DAY = register("rusty_day",
-			EntityType.Builder.<RustyDayEntity>of(RustyDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RustyDayEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<DrTeethEntity>> DR_TEETH = register("dr_teeth",
-			EntityType.Builder.<DrTeethEntity>of(DrTeethEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DrTeethEntity::new)
-
-					.sized(0.6f, 0.85f));
-	public static final RegistryObject<EntityType<DrTeethDayEntity>> DR_TEETH_DAY = register("dr_teeth_day",
-			EntityType.Builder.<DrTeethDayEntity>of(DrTeethDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DrTeethDayEntity::new)
-
-					.sized(0.6f, 0.85f));
 	public static final RegistryObject<EntityType<CarHarleyMotorcycleEntity>> CAR_HARLEY_MOTORCYCLE = register("car_harley_motorcycle",
 			EntityType.Builder.<CarHarleyMotorcycleEntity>of(CarHarleyMotorcycleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CarHarleyMotorcycleEntity::new)
 
@@ -1317,10 +1297,6 @@ public class YaFnafmodModEntities {
 			CarStationWagonEntity.init();
 			OfficeChairRedEntityEntity.init();
 			OfficeChairBlackEntityEntity.init();
-			RustyEntity.init();
-			RustyDayEntity.init();
-			DrTeethEntity.init();
-			DrTeethDayEntity.init();
 			CarHarleyMotorcycleEntity.init();
 			SparkyDogEntity.init();
 			SparkyDogDayEntity.init();
@@ -1541,10 +1517,6 @@ public class YaFnafmodModEntities {
 		event.put(CAR_STATION_WAGON.get(), CarStationWagonEntity.createAttributes().build());
 		event.put(OFFICE_CHAIR_RED_ENTITY.get(), OfficeChairRedEntityEntity.createAttributes().build());
 		event.put(OFFICE_CHAIR_BLACK_ENTITY.get(), OfficeChairBlackEntityEntity.createAttributes().build());
-		event.put(RUSTY.get(), RustyEntity.createAttributes().build());
-		event.put(RUSTY_DAY.get(), RustyDayEntity.createAttributes().build());
-		event.put(DR_TEETH.get(), DrTeethEntity.createAttributes().build());
-		event.put(DR_TEETH_DAY.get(), DrTeethDayEntity.createAttributes().build());
 		event.put(CAR_HARLEY_MOTORCYCLE.get(), CarHarleyMotorcycleEntity.createAttributes().build());
 		event.put(SPARKY_DOG.get(), SparkyDogEntity.createAttributes().build());
 		event.put(SPARKY_DOG_DAY.get(), SparkyDogDayEntity.createAttributes().build());

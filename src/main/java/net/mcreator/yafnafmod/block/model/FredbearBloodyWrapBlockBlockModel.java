@@ -9,25 +9,16 @@ import net.mcreator.yafnafmod.block.entity.FredbearBloodyWrapBlockTileEntity;
 public class FredbearBloodyWrapBlockBlockModel extends GeoModel<FredbearBloodyWrapBlockTileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(FredbearBloodyWrapBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "animations/fredbear_bloody.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/fredbear_bloody.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(FredbearBloodyWrapBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "geo/fredbear_bloody.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/fredbear_bloody.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(FredbearBloodyWrapBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/fredbear_bloodywrap_fms.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/fredbear_bloodywrap.png");
 	}
 }

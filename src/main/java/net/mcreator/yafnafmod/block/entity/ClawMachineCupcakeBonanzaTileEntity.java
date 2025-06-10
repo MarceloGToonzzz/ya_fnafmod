@@ -42,20 +42,12 @@ public class ClawMachineCupcakeBonanzaTileEntity extends RandomizableContainerBl
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-	public int blockstateNew = this.getBlockState().getValue(ClawMachineCupcakeBonanzaBlock.BLOCKSTATE);
-	private int blockstateOld = this.getBlockState().getValue(ClawMachineCupcakeBonanzaBlock.BLOCKSTATE);
 
 	public ClawMachineCupcakeBonanzaTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.CLAW_MACHINE_CUPCAKE_BONANZA.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
-		blockstateNew = this.getBlockState().getValue(ClawMachineCupcakeBonanzaBlock.BLOCKSTATE);
-		if (blockstateOld != blockstateNew) {
-			event.getController().forceAnimationReset();
-			blockstateOld = blockstateNew;
-			return PlayState.STOP;
-		}
 		String animationprocedure = ("" + this.getBlockState().getValue(ClawMachineCupcakeBonanzaBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

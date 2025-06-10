@@ -139,15 +139,6 @@
     "normal": "clawmachine.geo.json",
     "displaySettings": "prop2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "clawmachine_pizzaparty_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "clawmachine.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

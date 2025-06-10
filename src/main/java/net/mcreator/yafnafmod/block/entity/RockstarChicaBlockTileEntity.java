@@ -42,20 +42,12 @@ public class RockstarChicaBlockTileEntity extends RandomizableContainerBlockEnti
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-	public int blockstateNew = this.getBlockState().getValue(RockstarChicaBlockBlock.BLOCKSTATE);
-	private int blockstateOld = this.getBlockState().getValue(RockstarChicaBlockBlock.BLOCKSTATE);
 
 	public RockstarChicaBlockTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.ROCKSTAR_CHICA_BLOCK.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
-		blockstateNew = this.getBlockState().getValue(RockstarChicaBlockBlock.BLOCKSTATE);
-		if (blockstateOld != blockstateNew) {
-			event.getController().forceAnimationReset();
-			blockstateOld = blockstateNew;
-			return PlayState.STOP;
-		}
 		String animationprocedure = ("" + this.getBlockState().getValue(RockstarChicaBlockBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

@@ -136,15 +136,6 @@
     "normal": "retro_foxy.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_retro_foxy_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "retro_foxy.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

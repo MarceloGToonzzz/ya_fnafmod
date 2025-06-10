@@ -136,15 +136,6 @@
     "normal": "toy_bonniebunny.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_tbonnie_fms_day",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "toy_bonniebunny.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

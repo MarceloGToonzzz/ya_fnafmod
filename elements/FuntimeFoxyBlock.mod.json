@@ -136,15 +136,6 @@
     "normal": "funtime_foxy.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_ftfoxy_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "funtime_foxy.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

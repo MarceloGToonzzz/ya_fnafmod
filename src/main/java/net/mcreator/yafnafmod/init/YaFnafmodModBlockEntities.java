@@ -69,7 +69,6 @@ import net.mcreator.yafnafmod.block.entity.ScrapLolaChicaBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ScrapBabyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ScooperTileEntity;
 import net.mcreator.yafnafmod.block.entity.SanitationStationTileEntity;
-import net.mcreator.yafnafmod.block.entity.RustyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.RosieTileEntity;
 import net.mcreator.yafnafmod.block.entity.RockstarFreddyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.RockstarFoxyBlockTileEntity;
@@ -231,7 +230,6 @@ import net.mcreator.yafnafmod.block.entity.EggBabyTileEntity;
 import net.mcreator.yafnafmod.block.entity.DumpsterGreenTileEntity;
 import net.mcreator.yafnafmod.block.entity.DumpsterBlueTileEntity;
 import net.mcreator.yafnafmod.block.entity.DuckPondTileEntity;
-import net.mcreator.yafnafmod.block.entity.DrTeethBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DougDogBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DittophobiaFreddyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.DittophobiaFoxyBlockTileEntity;
@@ -876,7 +874,6 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<DittophobiaFoxyBlockTileEntity>> DITTOPHOBIA_FOXY_BLOCK = REGISTRY.register("dittophobia_foxy_block",
 			() -> BlockEntityType.Builder.of(DittophobiaFoxyBlockTileEntity::new, YaFnafmodModBlocks.DITTOPHOBIA_FOXY_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<Endo01BlockTileEntity>> ENDO_01_BLOCK = REGISTRY.register("endo_01_block", () -> BlockEntityType.Builder.of(Endo01BlockTileEntity::new, YaFnafmodModBlocks.ENDO_01_BLOCK.get()).build(null));
-	public static final RegistryObject<BlockEntityType<RustyBlockTileEntity>> RUSTY_BLOCK = REGISTRY.register("rusty_block", () -> BlockEntityType.Builder.of(RustyBlockTileEntity::new, YaFnafmodModBlocks.RUSTY_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<Endo02BlockTileEntity>> ENDO_02_BLOCK = REGISTRY.register("endo_02_block", () -> BlockEntityType.Builder.of(Endo02BlockTileEntity::new, YaFnafmodModBlocks.ENDO_02_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CarPoliceCruiserChevroletImpala1983BlockTileEntity>> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK = REGISTRY.register("car_police_cruiser_chevrolet_impala_1983_block",
 			() -> BlockEntityType.Builder.of(CarPoliceCruiserChevroletImpala1983BlockTileEntity::new, YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.get()).build(null));
@@ -911,7 +908,6 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(MoltenFreddyBlockTileEntity::new, YaFnafmodModBlocks.MOLTEN_FREDDY_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<GusThePugBlockTileEntity>> GUS_THE_PUG_BLOCK = REGISTRY.register("gus_the_pug_block",
 			() -> BlockEntityType.Builder.of(GusThePugBlockTileEntity::new, YaFnafmodModBlocks.GUS_THE_PUG_BLOCK.get()).build(null));
-	public static final RegistryObject<BlockEntityType<DrTeethBlockTileEntity>> DR_TEETH_BLOCK = REGISTRY.register("dr_teeth_block", () -> BlockEntityType.Builder.of(DrTeethBlockTileEntity::new, YaFnafmodModBlocks.DR_TEETH_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ScrapBabyBlockTileEntity>> SCRAP_BABY_BLOCK = REGISTRY.register("scrap_baby_block",
 			() -> BlockEntityType.Builder.of(ScrapBabyBlockTileEntity::new, YaFnafmodModBlocks.SCRAP_BABY_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<DougDogBlockTileEntity>> DOUG_DOG_BLOCK = REGISTRY.register("doug_dog_block", () -> BlockEntityType.Builder.of(DougDogBlockTileEntity::new, YaFnafmodModBlocks.DOUG_DOG_BLOCK.get()).build(null));

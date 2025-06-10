@@ -42,20 +42,12 @@ public class BalloraBlockTileEntity extends RandomizableContainerBlockEntity imp
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
-	public int blockstateNew = this.getBlockState().getValue(BalloraBlockBlock.BLOCKSTATE);
-	private int blockstateOld = this.getBlockState().getValue(BalloraBlockBlock.BLOCKSTATE);
 
 	public BalloraBlockTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.BALLORA_BLOCK.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
-		blockstateNew = this.getBlockState().getValue(BalloraBlockBlock.BLOCKSTATE);
-		if (blockstateOld != blockstateNew) {
-			event.getController().forceAnimationReset();
-			blockstateOld = blockstateNew;
-			return PlayState.STOP;
-		}
 		String animationprocedure = ("" + this.getBlockState().getValue(BalloraBlockBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

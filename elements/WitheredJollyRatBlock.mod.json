@@ -136,15 +136,6 @@
     "normal": "jollyrat.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_withered_jollyrat_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "jollyrat.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

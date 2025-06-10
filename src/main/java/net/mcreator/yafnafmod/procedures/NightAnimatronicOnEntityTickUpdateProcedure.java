@@ -27,7 +27,6 @@ import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
-import net.mcreator.yafnafmod.entity.DrTeethEntity;
 
 public class NightAnimatronicOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -56,11 +55,9 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 			WeepingAngelMechanicProcedure.execute(world, x, y, z, entity);
 		}
 		DontLookAtFunctionProcedure.execute(world, x, y, z, entity);
-		RustyFunctionProcedure.execute(world, x, y, z, entity);
 		DuckingProcedure.execute(world, x, y, z, entity);
 		CrawlingProcedure.execute(world, x, y, z, entity);
-		if (entity instanceof FoxyPirateEntity || entity instanceof WitheredFoxyEntity || entity instanceof ToyFoxyEntity || entity instanceof NightmareFoxyEntity || entity instanceof FuntimeFoxyEntity || entity instanceof DrTeethEntity
-				|| entity instanceof PitbonnieEntity) {
+		if (entity instanceof FoxyPirateEntity || entity instanceof WitheredFoxyEntity || entity instanceof ToyFoxyEntity || entity instanceof NightmareFoxyEntity || entity instanceof FuntimeFoxyEntity || entity instanceof PitbonnieEntity) {
 			if (entity.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
 				entity.setSprinting(true);
 			} else {
@@ -68,7 +65,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 			}
 		}
 		if (entity instanceof EnnardEntity) {
-			if ((entity instanceof EnnardEntity _datEntL21 && _datEntL21.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
+			if ((entity instanceof EnnardEntity _datEntL20 && _datEntL20.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
 				if (entity instanceof EnnardEntity animatable)
 					animatable.setTexture("ennard_maskless");
 			} else {
@@ -109,8 +106,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		if (entity instanceof NightmareFreddyEntity) {
 			FreddleCodeProcedure.execute(world, x, y, z, entity);
 		} else if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-			if ((entity instanceof PlushtrapEntity _datEntL44 && _datEntL44.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-					|| (entity instanceof NightmareBbEntity _datEntL45 && _datEntL45.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+			if ((entity instanceof PlushtrapEntity _datEntL43 && _datEntL43.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+					|| (entity instanceof NightmareBbEntity _datEntL44 && _datEntL44.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("animation.plush.sit");
 				}

@@ -136,15 +136,6 @@
     "normal": "gus_the_pug.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_gus_the_pug_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "gus_the_pug.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

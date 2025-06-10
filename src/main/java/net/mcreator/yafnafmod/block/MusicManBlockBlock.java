@@ -1,10 +1,6 @@
 
 package net.mcreator.yafnafmod.block;
 
-import org.checkerframework.checker.units.qual.s;
-
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -34,20 +30,13 @@ import java.util.List;
 import java.util.Collections;
 
 public class MusicManBlockBlock extends BaseEntityBlock implements EntityBlock {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 1);
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public MusicManBlockBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
-					public int getLightLevel() {
-						if (s.getValue(BLOCKSTATE) == 1)
-							return 0;
-						return 0;
-					}
-				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -73,32 +62,8 @@ public class MusicManBlockBlock extends BaseEntityBlock implements EntityBlock {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		if (state.getValue(BLOCKSTATE) == 1) {
-
-			return switch (state.getValue(FACING)) {
-				default -> box(0, 0, 0, 16, 32, 16);
-				case NORTH -> box(0, 0, 0, 16, 32, 16);
-				case EAST -> box(0, 0, 0, 16, 32, 16);
-				case WEST -> box(0, 0, 0, 16, 32, 16);
-				case UP -> box(0, 0, 0, 16, 16, 32);
-				case DOWN -> box(0, 0, -16, 16, 16, 16);
-			};
-		}
-
-		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 16, 16);
-			case NORTH -> box(0, 0, 0, 16, 16, 16);
-			case EAST -> box(0, 0, 0, 16, 16, 16);
-			case WEST -> box(0, 0, 0, 16, 16, 16);
-			case UP -> box(0, 0, 0, 16, 16, 16);
-			case DOWN -> box(0, 0, 0, 16, 16, 16);
-		};
-	}
-
-	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-		builder.add(ANIMATION, FACING, BLOCKSTATE);
+		builder.add(ANIMATION, FACING);
 	}
 
 	@Override

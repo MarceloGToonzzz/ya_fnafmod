@@ -9,25 +9,16 @@ import net.mcreator.yafnafmod.block.entity.FredbearBlockTileEntity;
 public class FredbearBlockBlockModel extends GeoModel<FredbearBlockTileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(FredbearBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "animations/fredbear.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/fredbear.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(FredbearBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "geo/fredbear.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/fredbear.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(FredbearBlockTileEntity animatable) {
-		final int blockstate = animatable.blockstateNew;
-		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_fredbear_fms.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/animatronic_fredbear.png");
 	}
 }

@@ -136,15 +136,6 @@
     "normal": "rockstar_freddy.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_rockstar_freddy_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "rockstar_freddy.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

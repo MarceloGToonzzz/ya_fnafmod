@@ -136,15 +136,6 @@
     "normal": "neddbear.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_neddbear_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "neddbear.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

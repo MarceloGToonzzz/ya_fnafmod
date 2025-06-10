@@ -127,7 +127,6 @@ import net.mcreator.yafnafmod.item.ShadowBonnieSpawnItemItem;
 import net.mcreator.yafnafmod.item.ShadowBonnieAltSpawnItemItem;
 import net.mcreator.yafnafmod.item.ScraptrapSpawnItemItem;
 import net.mcreator.yafnafmod.item.ScrapBabySpawnItemItem;
-import net.mcreator.yafnafmod.item.RustySpawnItemItem;
 import net.mcreator.yafnafmod.item.RockstarFreddyWalkerSpawnItemItem;
 import net.mcreator.yafnafmod.item.RockstarFreddySpawnItemItem;
 import net.mcreator.yafnafmod.item.RockstarFoxyWalkerSpawnItemItem;
@@ -358,7 +357,6 @@ import net.mcreator.yafnafmod.item.Endo02SpawnItemItem;
 import net.mcreator.yafnafmod.item.Endo01SpawnItemItem;
 import net.mcreator.yafnafmod.item.ElectrobabSpawnItemItem;
 import net.mcreator.yafnafmod.item.ElChipSpawnItemItem;
-import net.mcreator.yafnafmod.item.DrTeethSpawnItemItem;
 import net.mcreator.yafnafmod.item.DougDogSpawnItemItem;
 import net.mcreator.yafnafmod.item.DeathCoinItem;
 import net.mcreator.yafnafmod.item.CrowbarItem;
@@ -487,7 +485,6 @@ import net.mcreator.yafnafmod.block.display.ScrapLolaChicaBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScrapBabyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScooperDisplayItem;
 import net.mcreator.yafnafmod.block.display.SanitationStationDisplayItem;
-import net.mcreator.yafnafmod.block.display.RustyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.RosieDisplayItem;
 import net.mcreator.yafnafmod.block.display.RockstarFreddyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.RockstarFoxyBlockDisplayItem;
@@ -639,7 +636,6 @@ import net.mcreator.yafnafmod.block.display.EggBabyDisplayItem;
 import net.mcreator.yafnafmod.block.display.DumpsterGreenDisplayItem;
 import net.mcreator.yafnafmod.block.display.DumpsterBlueDisplayItem;
 import net.mcreator.yafnafmod.block.display.DuckPondDisplayItem;
-import net.mcreator.yafnafmod.block.display.DrTeethBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.DougDogBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.DittophobiaFreddyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.DittophobiaFoxyBlockDisplayItem;
@@ -3499,11 +3495,6 @@ public class YaFnafmodModItems {
 			() -> new BigEntranceRedDoorWideDisplayItem(YaFnafmodModBlocks.BIG_ENTRANCE_RED_DOOR_WIDE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BIG_BACKSTAGE_RED_DOOR_WIDE = REGISTRY.register(YaFnafmodModBlocks.BIG_BACKSTAGE_RED_DOOR_WIDE.getId().getPath(),
 			() -> new BigBackstageRedDoorWideDisplayItem(YaFnafmodModBlocks.BIG_BACKSTAGE_RED_DOOR_WIDE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> RUSTY_SPAWN_EGG = REGISTRY.register("rusty_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.RUSTY, -6662865, -4952003, new Item.Properties()));
-	public static final RegistryObject<Item> RUSTY_DAY_SPAWN_EGG = REGISTRY.register("rusty_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.RUSTY_DAY, -6662865, -4952003, new Item.Properties()));
-	public static final RegistryObject<Item> DR_TEETH_SPAWN_EGG = REGISTRY.register("dr_teeth_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.DR_TEETH, -1, -1, new Item.Properties()));
-	public static final RegistryObject<Item> DR_TEETH_DAY_SPAWN_EGG = REGISTRY.register("dr_teeth_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.DR_TEETH_DAY, -1, -1, new Item.Properties()));
-	public static final RegistryObject<Item> DR_TEETH_SPAWN_ITEM = REGISTRY.register("dr_teeth_spawn_item", () -> new DrTeethSpawnItemItem());
 	public static final RegistryObject<Item> BIG_OFFICE_DOOR_WINDOWED_1 = REGISTRY.register(YaFnafmodModBlocks.BIG_OFFICE_DOOR_WINDOWED_1.getId().getPath(),
 			() -> new BigOfficeDoorWindowed1DisplayItem(YaFnafmodModBlocks.BIG_OFFICE_DOOR_WINDOWED_1.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BIG_OFFICE_DOOR_WINDOWED_2 = REGISTRY.register(YaFnafmodModBlocks.BIG_OFFICE_DOOR_WINDOWED_2.getId().getPath(),
@@ -3652,7 +3643,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> DITTOPHOBIA_FOXY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DITTOPHOBIA_FOXY_BLOCK.getId().getPath(),
 			() -> new DittophobiaFoxyBlockDisplayItem(YaFnafmodModBlocks.DITTOPHOBIA_FOXY_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> ENDO_01_BLOCK = REGISTRY.register(YaFnafmodModBlocks.ENDO_01_BLOCK.getId().getPath(), () -> new Endo01BlockDisplayItem(YaFnafmodModBlocks.ENDO_01_BLOCK.get(), new Item.Properties()));
-	public static final RegistryObject<Item> RUSTY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.RUSTY_BLOCK.getId().getPath(), () -> new RustyBlockDisplayItem(YaFnafmodModBlocks.RUSTY_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> ENDO_02_BLOCK = REGISTRY.register(YaFnafmodModBlocks.ENDO_02_BLOCK.getId().getPath(), () -> new Endo02BlockDisplayItem(YaFnafmodModBlocks.ENDO_02_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.getId().getPath(),
 			() -> new CarPoliceCruiserChevroletImpala1983BlockDisplayItem(YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.get(), new Item.Properties()));
@@ -3686,7 +3676,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> GUS_THE_PUG_DAY_SPAWN_EGG = REGISTRY.register("gus_the_pug_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.GUS_THE_PUG_DAY, -6662865, -4952003, new Item.Properties()));
 	public static final RegistryObject<Item> GUS_THE_PUG_STILL_DAY_SPAWN_EGG = REGISTRY.register("gus_the_pug_still_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.GUS_THE_PUG_STILL_DAY, -6662865, -4952003, new Item.Properties()));
 	public static final RegistryObject<Item> GUS_THE_PUG_BLOCK = REGISTRY.register(YaFnafmodModBlocks.GUS_THE_PUG_BLOCK.getId().getPath(), () -> new GusThePugBlockDisplayItem(YaFnafmodModBlocks.GUS_THE_PUG_BLOCK.get(), new Item.Properties()));
-	public static final RegistryObject<Item> DR_TEETH_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DR_TEETH_BLOCK.getId().getPath(), () -> new DrTeethBlockDisplayItem(YaFnafmodModBlocks.DR_TEETH_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DOUG_DOG_SPAWN_EGG = REGISTRY.register("doug_dog_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.DOUG_DOG, -6662865, -4952003, new Item.Properties()));
 	public static final RegistryObject<Item> DOUG_DOG_DAY_SPAWN_EGG = REGISTRY.register("doug_dog_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.DOUG_DOG_DAY, -6662865, -4952003, new Item.Properties()));
 	public static final RegistryObject<Item> DOUG_DOG_SPAWN_ITEM = REGISTRY.register("doug_dog_spawn_item", () -> new DougDogSpawnItemItem());
@@ -4289,7 +4278,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> WINE_STAGE_BRICKS_BLACK_EXTRA_TILES_BIG = block(YaFnafmodModBlocks.WINE_STAGE_BRICKS_BLACK_EXTRA_TILES_BIG);
 	public static final RegistryObject<Item> WINE_STAGE_BRICKS_BLACK_EXTRA_TILES_BIG_ALTERNATE = block(YaFnafmodModBlocks.WINE_STAGE_BRICKS_BLACK_EXTRA_TILES_BIG_ALTERNATE);
 	public static final RegistryObject<Item> WINE_STAGE_BRICKS_BLACK_TOP = block(YaFnafmodModBlocks.WINE_STAGE_BRICKS_BLACK_TOP);
-	public static final RegistryObject<Item> RUSTY_SPAWN_ITEM = REGISTRY.register("rusty_spawn_item", () -> new RustySpawnItemItem());
 	public static final RegistryObject<Item> SEABONNIE_SPAWN_EGG = REGISTRY.register("seabonnie_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.SEABONNIE, -12499048, -10457922, new Item.Properties()));
 	public static final RegistryObject<Item> PLUSH_FREDBOI = block(YaFnafmodModBlocks.PLUSH_FREDBOI);
 	public static final RegistryObject<Item> RED_TILES = block(YaFnafmodModBlocks.RED_TILES);

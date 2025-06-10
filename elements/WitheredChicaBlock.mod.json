@@ -136,15 +136,6 @@
     "normal": "withered_chica.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "animatronic_withered_chica_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "withered_chica.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }
