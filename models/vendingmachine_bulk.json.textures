@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "red": {
+      "map": {
+        "3": "vendingmachine_bulk_red"
+      },
+      "name": "red"
+    },
+    "default": {
+      "map": {
+        "3": "vendingmachine_bulk"
+      },
+      "name": "default"
+    }
+  }
+}

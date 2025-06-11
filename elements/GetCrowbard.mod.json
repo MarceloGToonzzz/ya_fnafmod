@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Get Crowbar'd!!",
-    "achievementDescription": "Kill a player with a crowbar.",
+    "achievementDescription": "Kill something with a crowbar.",
     "achievementIcon": {
       "value": "CUSTOM:Crowbar"
     },

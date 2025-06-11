@@ -177,18 +177,16 @@ public class SpecialInfoProcedureProcedure {
 				tooltip.add((int) cur_pos, Component.literal("- Disables security doors"));
 				cur_pos = cur_pos + 1;
 			}
-			if (entity_registry.contains("bb") || entity_registry.contains("jj")) {
-				if (!(final_thing).isEmpty()) {
-					final_thing = final_thing + " \\n ";
-				}
-				if (entity_registry.contains("balloon_boy_") && !entity_registry.contains("phantom") || entity_registry.contains("jj_")) {
-					tooltip.add((int) cur_pos, Component.literal("- Lures animatronics!"));
-					cur_pos = cur_pos + 1;
-				}
-			}
-			if (entity_registry.contains("minireena_") && !entity_registry.contains("2")) {
+			if (entity_registry.contains("minireena") && !entity_registry.contains("2")) {
 				tooltip.add((int) cur_pos, Component.literal("- Lures Ballora!"));
 				cur_pos = cur_pos + 1;
+			}
+			if ((entity_registry.contains("balloon_boy") || entity_registry.contains("jj")) && !entity_registry.contains("phantom")) {
+				tooltip.add((int) cur_pos, Component.literal("- Lures animatronics!"));
+				cur_pos = cur_pos + 1;
+			}
+			if (!(final_thing).isEmpty()) {
+				final_thing = final_thing + " \\n ";
 			}
 		}
 	}

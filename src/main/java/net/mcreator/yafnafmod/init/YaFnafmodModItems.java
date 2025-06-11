@@ -4279,7 +4279,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> WINE_STAGE_BRICKS_BLACK_EXTRA_TILES_BIG_ALTERNATE = block(YaFnafmodModBlocks.WINE_STAGE_BRICKS_BLACK_EXTRA_TILES_BIG_ALTERNATE);
 	public static final RegistryObject<Item> WINE_STAGE_BRICKS_BLACK_TOP = block(YaFnafmodModBlocks.WINE_STAGE_BRICKS_BLACK_TOP);
 	public static final RegistryObject<Item> SEABONNIE_SPAWN_EGG = REGISTRY.register("seabonnie_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.SEABONNIE, -12499048, -10457922, new Item.Properties()));
-	public static final RegistryObject<Item> PLUSH_FREDBOI = block(YaFnafmodModBlocks.PLUSH_FREDBOI);
 	public static final RegistryObject<Item> RED_TILES = block(YaFnafmodModBlocks.RED_TILES);
 	public static final RegistryObject<Item> RED_TILE_STAIRS = block(YaFnafmodModBlocks.RED_TILE_STAIRS);
 	public static final RegistryObject<Item> RED_TILE_SLAB = block(YaFnafmodModBlocks.RED_TILE_SLAB);
@@ -5305,6 +5304,27 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POSTER_FREDBEAR_1_BIG_TORN = block(YaFnafmodModBlocks.POSTER_FREDBEAR_1_BIG_TORN);
 	public static final RegistryObject<Item> POSTER_FREDBEAR_2_BIG = block(YaFnafmodModBlocks.POSTER_FREDBEAR_2_BIG);
 	public static final RegistryObject<Item> POSTER_FREDBEAR_3_BIG = block(YaFnafmodModBlocks.POSTER_FREDBEAR_3_BIG);
+	public static final RegistryObject<Item> SHELF_CHEMICALS = block(YaFnafmodModBlocks.SHELF_CHEMICALS);
+	public static final RegistryObject<Item> ROCKET_RIDE = block(YaFnafmodModBlocks.ROCKET_RIDE);
+	public static final RegistryObject<Item> BULK_VENDING_MACHINE_BLUE = block(YaFnafmodModBlocks.BULK_VENDING_MACHINE_BLUE);
+	public static final RegistryObject<Item> BULK_VENDING_MACHINE_RED = block(YaFnafmodModBlocks.BULK_VENDING_MACHINE_RED);
+	public static final RegistryObject<Item> BB_FIGURINE = block(YaFnafmodModBlocks.BB_FIGURINE);
+	public static final RegistryObject<Item> CATALOG_TILES = block(YaFnafmodModBlocks.CATALOG_TILES);
+	public static final RegistryObject<Item> CATALOG_TILE_STAIRS = block(YaFnafmodModBlocks.CATALOG_TILE_STAIRS);
+	public static final RegistryObject<Item> CATALOG_TILE_SLAB = block(YaFnafmodModBlocks.CATALOG_TILE_SLAB);
+	public static final RegistryObject<Item> CRACKED_CATALOG_TILES = block(YaFnafmodModBlocks.CRACKED_CATALOG_TILES);
+	public static final RegistryObject<Item> CRACKED_CATALOG_TILE_STAIRS = block(YaFnafmodModBlocks.CRACKED_CATALOG_TILE_STAIRS);
+	public static final RegistryObject<Item> CRACKED_CATALOG_TILE_SLAB = block(YaFnafmodModBlocks.CRACKED_CATALOG_TILE_SLAB);
+	public static final RegistryObject<Item> CATALOG_CHECKERED_TILES = block(YaFnafmodModBlocks.CATALOG_CHECKERED_TILES);
+	public static final RegistryObject<Item> CATALOG_CHECKERED_TILE_STAIRS = block(YaFnafmodModBlocks.CATALOG_CHECKERED_TILE_STAIRS);
+	public static final RegistryObject<Item> CATALOG_CHECKERED_TILE_SLAB = block(YaFnafmodModBlocks.CATALOG_CHECKERED_TILE_SLAB);
+	public static final RegistryObject<Item> CATALOG_BIG_CHECKERED_TILES = block(YaFnafmodModBlocks.CATALOG_BIG_CHECKERED_TILES);
+	public static final RegistryObject<Item> CATALOG_BIG_CHECKERED_TILE_STAIRS = block(YaFnafmodModBlocks.CATALOG_BIG_CHECKERED_TILE_STAIRS);
+	public static final RegistryObject<Item> CATALOG_BIG_CHECKERED_TILE_SLAB = block(YaFnafmodModBlocks.CATALOG_BIG_CHECKERED_TILE_SLAB);
+	public static final RegistryObject<Item> DIAMOND_PLATE_DOOR = doubleBlock(YaFnafmodModBlocks.DIAMOND_PLATE_DOOR);
+	public static final RegistryObject<Item> POSTER_MYSTERIOUS_MAN = block(YaFnafmodModBlocks.POSTER_MYSTERIOUS_MAN);
+	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_4 = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_4);
+	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_6 = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_6);
 
 	// Start of user code block custom items
 	// End of user code block custom items

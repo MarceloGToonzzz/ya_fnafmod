@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/shelf_chemicals",
+  "textures": {
+    "all": "ya_fnafmod:block/shelf_chemicals",
+    "particle": "ya_fnafmod:block/shelf_chemicals",
+    "1": "ya_fnafmod:block/shelf_chemicals"
+  },
+  "render_type": "cutout_mipped"
+}

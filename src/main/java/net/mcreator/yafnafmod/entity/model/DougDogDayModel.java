@@ -9,12 +9,12 @@ import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 public class DougDogDayModel extends GeoModel<DougDogDayEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(DougDogDayEntity entity) {
-		return new ResourceLocation("ya_fnafmod", "animations/sparky.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/dougthedog.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(DougDogDayEntity entity) {
-		return new ResourceLocation("ya_fnafmod", "geo/sparky.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/dougthedog.geo.json");
 	}
 
 	@Override

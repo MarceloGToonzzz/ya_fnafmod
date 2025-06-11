@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ya_fnafmod:block/poster_mysterious_man"
+    },
+    "facing=east": {
+      "model": "ya_fnafmod:block/poster_mysterious_man",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "ya_fnafmod:block/poster_mysterious_man",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "ya_fnafmod:block/poster_mysterious_man",
+      "y": 270
+    }
+  }
+}

@@ -44,14 +44,10 @@ public class WoodenShelfBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> Shapes.or(box(14, 0, 0, 16, 27, 11), box(-16, 0, 0, -14, 27, 11), box(-14, 0, 1.5, 14, 2, 10.5), box(-14, 24, 1.5, 14, 26, 10.5), box(-14, 18, 1.5, 14, 20, 10.5), box(-14, 11.5, 1.5, 14, 13.5, 10.5),
-					box(-14, 5, 1.5, 14, 7, 10.5), box(-14, 0, 0, 14, 27, 2));
-			case NORTH -> Shapes.or(box(0, 0, 5, 2, 27, 16), box(30, 0, 5, 32, 27, 16), box(2, 0, 5.5, 30, 2, 14.5), box(2, 24, 5.5, 30, 26, 14.5), box(2, 18, 5.5, 30, 20, 14.5), box(2, 11.5, 5.5, 30, 13.5, 14.5), box(2, 5, 5.5, 30, 7, 14.5),
-					box(2, 0, 14, 30, 27, 16));
-			case EAST -> Shapes.or(box(0, 0, 0, 11, 27, 2), box(0, 0, 30, 11, 27, 32), box(1.5, 0, 2, 10.5, 2, 30), box(1.5, 24, 2, 10.5, 26, 30), box(1.5, 18, 2, 10.5, 20, 30), box(1.5, 11.5, 2, 10.5, 13.5, 30), box(1.5, 5, 2, 10.5, 7, 30),
-					box(0, 0, 2, 2, 27, 30));
-			case WEST -> Shapes.or(box(5, 0, 14, 16, 27, 16), box(5, 0, -16, 16, 27, -14), box(5.5, 0, -14, 14.5, 2, 14), box(5.5, 24, -14, 14.5, 26, 14), box(5.5, 18, -14, 14.5, 20, 14), box(5.5, 11.5, -14, 14.5, 13.5, 14),
-					box(5.5, 5, -14, 14.5, 7, 14), box(14, 0, -14, 16, 27, 14));
+			default -> box(-16, 0, 0, 16, 27, 11);
+			case NORTH -> box(0, 0, 5, 32, 27, 16);
+			case EAST -> box(0, 0, 0, 11, 27, 32);
+			case WEST -> box(5, 0, -16, 16, 27, 16);
 		};
 	}
 

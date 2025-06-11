@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bb_figurine",
+  "textures": {
+    "all": "ya_fnafmod:block/bb_figurine",
+    "particle": "ya_fnafmod:block/bb_figurine",
+    "2": "ya_fnafmod:block/bb_figurine"
+  },
+  "render_type": "cutout_mipped"
+}

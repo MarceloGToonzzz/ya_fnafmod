@@ -186,7 +186,7 @@ public class DougDogDayEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.sparky.dougday"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.doug.day"));
 		}
 		return PlayState.STOP;
 	}

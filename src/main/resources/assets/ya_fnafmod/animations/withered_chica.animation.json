@@ -1176,7 +1176,8 @@
 			}
 		},
 		"animation.chica.retro_deactivate": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.0417,
 			"bones": {
 				"right_leg": {
 					"rotation": {

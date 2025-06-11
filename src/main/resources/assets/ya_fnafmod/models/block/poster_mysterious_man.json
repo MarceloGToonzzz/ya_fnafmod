@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_mysteryman",
+    "particle": "ya_fnafmod:block/poster_mysteryman",
+    "0": "ya_fnafmod:block/poster_mysteryman"
+  },
+  "render_type": "cutout"
+}

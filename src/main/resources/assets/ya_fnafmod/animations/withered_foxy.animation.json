@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"0": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"body": {
 					"rotation": {
@@ -2621,7 +2621,8 @@
 			}
 		},
 		"animation.foxy.fox_retrodeactivate": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.0417,
 			"bones": {
 				"body": {
 					"rotation": {

@@ -232,9 +232,9 @@ public class DougDogEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.sparky.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.doug.walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.sparky.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.doug.idle"));
 		}
 		return PlayState.STOP;
 	}

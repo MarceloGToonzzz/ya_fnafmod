@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/vendingmachine_bulk",
+  "textures": {
+    "all": "ya_fnafmod:block/vendingmachine_bulk",
+    "particle": "ya_fnafmod:block/vendingmachine_bulk",
+    "3": "ya_fnafmod:block/vendingmachine_bulk_red"
+  },
+  "render_type": "cutout_mipped"
+}

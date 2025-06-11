@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/rocketride",
+  "textures": {
+    "all": "ya_fnafmod:block/rocketride",
+    "particle": "ya_fnafmod:block/rocketride",
+    "0": "ya_fnafmod:block/rocketride"
+  },
+  "render_type": "cutout_mipped"
+}

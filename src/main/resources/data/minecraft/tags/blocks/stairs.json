@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:catalog_big_checkered_tile_stairs",
+    "ya_fnafmod:catalog_checkered_tile_stairs",
+    "ya_fnafmod:cracked_catalog_tile_stairs",
+    "ya_fnafmod:catalog_tile_stairs",
     "ya_fnafmod:stage_plank_dark_stairs",
     "ya_fnafmod:stage_plank_orange_stairs",
     "ya_fnafmod:stage_plank_light_stairs",

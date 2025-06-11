@@ -3,6 +3,7 @@
 	"animations": {
 		"0": {
 			"loop": true,
+			"animation_length": 0.0417,
 			"bones": {
 				"pivot": {
 					"rotation": {
@@ -1438,7 +1439,7 @@
 			}
 		},
 		"animation.bonnie.perform_deactivated": {
-			"loop": true,
+			"loop": "hold_on_last_frame",
 			"bones": {
 				"pivot": {
 					"rotation": {

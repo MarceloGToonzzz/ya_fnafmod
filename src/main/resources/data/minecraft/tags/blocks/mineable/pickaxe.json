@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:catalog_big_checkered_tile_slab",
+    "ya_fnafmod:catalog_big_checkered_tile_stairs",
+    "ya_fnafmod:catalog_big_checkered_tiles",
+    "ya_fnafmod:catalog_checkered_tile_slab",
+    "ya_fnafmod:catalog_checkered_tile_stairs",
+    "ya_fnafmod:catalog_checkered_tiles",
+    "ya_fnafmod:cracked_catalog_tile_slab",
+    "ya_fnafmod:cracked_catalog_tile_stairs",
+    "ya_fnafmod:cracked_catalog_tiles",
+    "ya_fnafmod:catalog_tile_slab",
+    "ya_fnafmod:catalog_tile_stairs",
+    "ya_fnafmod:catalog_tiles",
     "ya_fnafmod:cracked_old_red_blue_tile_slab",
     "ya_fnafmod:cracked_old_red_blue_tile_stairs",
     "ya_fnafmod:cracked_old_red_blue_tiles",

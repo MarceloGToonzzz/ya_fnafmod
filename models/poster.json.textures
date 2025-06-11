@@ -317,6 +317,12 @@
         "0": "poster_ithinkimissedsomelore"
       },
       "name": "matpat1"
+    },
+    "edwin": {
+      "map": {
+        "0": "poster_mysteryman"
+      },
+      "name": "edwin"
     }
   }
 }

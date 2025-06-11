@@ -27,10 +27,12 @@ import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.RickyRatDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PigpatchDayEntity;
 import net.mcreator.yafnafmod.entity.PanStanDayEntity;
@@ -43,19 +45,28 @@ import net.mcreator.yafnafmod.entity.MrHugsDayEntity;
 import net.mcreator.yafnafmod.entity.MrHippoDayEntity;
 import net.mcreator.yafnafmod.entity.MrCanDoDayEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
+import net.mcreator.yafnafmod.entity.JollyRatDayEntity;
+import net.mcreator.yafnafmod.entity.IndigoDayEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
+import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.FuntimeDelilahDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeChicaDayEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearDayEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateDayEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
+import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
+import net.mcreator.yafnafmod.entity.CindyCatDayEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
+import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
 import net.mcreator.yafnafmod.entity.BonnieBunnyDayEntity;
+import net.mcreator.yafnafmod.entity.BlakeBadgerDayEntity;
+import net.mcreator.yafnafmod.entity.BarryPolarDayEntity;
 import net.mcreator.yafnafmod.entity.BalloraDayEntity;
 
 import java.util.List;
@@ -260,6 +271,39 @@ public class NightActionProcedure {
 			if (entity instanceof FuntimeChicaDayEntity) {
 				((FuntimeChicaDayEntity) entity).setAnimation("0");
 			}
+			if (entity instanceof CandyCatDayEntity) {
+				((CandyCatDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof CindyCatDayEntity) {
+				((CindyCatDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof PopgoesWeaselDayEntity) {
+				((PopgoesWeaselDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof BlakeBadgerDayEntity) {
+				((BlakeBadgerDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof DougDogDayEntity) {
+				((DougDogDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof JollyRatDayEntity) {
+				((JollyRatDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof RickyRatDayEntity) {
+				((RickyRatDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof BarryPolarDayEntity) {
+				((BarryPolarDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof FuntimeDelilahDayEntity) {
+				((FuntimeDelilahDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof IndigoDayEntity) {
+				((IndigoDayEntity) entity).setAnimation("0");
+			}
+			if (entity instanceof GusThePugStillDayEntity) {
+				((GusThePugStillDayEntity) entity).setAnimation("0");
+			}
 		} else {
 			if (entity instanceof FreddyFazbearDayEntity) {
 				((FreddyFazbearDayEntity) entity).setAnimation("empty");
@@ -371,6 +415,39 @@ public class NightActionProcedure {
 			}
 			if (entity instanceof MusicManDayEntity) {
 				((MusicManDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof CandyCatDayEntity) {
+				((CandyCatDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof CindyCatDayEntity) {
+				((CindyCatDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof PopgoesWeaselDayEntity) {
+				((PopgoesWeaselDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof BlakeBadgerDayEntity) {
+				((BlakeBadgerDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof DougDogDayEntity) {
+				((DougDogDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof JollyRatDayEntity) {
+				((JollyRatDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof RickyRatDayEntity) {
+				((RickyRatDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof BarryPolarDayEntity) {
+				((BarryPolarDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof FuntimeDelilahDayEntity) {
+				((FuntimeDelilahDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof IndigoDayEntity) {
+				((IndigoDayEntity) entity).setAnimation("empty");
+			}
+			if (entity instanceof GusThePugStillDayEntity) {
+				((GusThePugStillDayEntity) entity).setAnimation("empty");
 			}
 		}
 	}
