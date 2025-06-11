@@ -2149,6 +2149,13 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.POSTER_FALLFEST.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_MATPAT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_BARRY_POLAR.get().asItem());
+<<<<<<< HEAD
+=======
+				tabData.accept(YaFnafmodModBlocks.WALL_PIZZA_OLIVE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.MUSIC_BOX_PURPLE_DECORATION.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WIDE_FAN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SECURITY_GATE.get().asItem());
+>>>>>>> f08a0366e397d5b5fbb30b737c890e8bd36c6a87
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {

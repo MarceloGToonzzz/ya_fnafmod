@@ -18,3 +18,7 @@ run/
 # Other Files (In Eclipse)
 .classpath
 .project
+src/main/java/net/mcreator/yafnafmod/init/YaFnafmodModBlocks.java
+src/main/java/net/mcreator/yafnafmod/init/YaFnafmodModItems.java
+src/main/java/net/mcreator/yafnafmod/init/YaFnafmodModTabs.java
+src/main/resources/assets/ya_fnafmod/lang/en_us.json

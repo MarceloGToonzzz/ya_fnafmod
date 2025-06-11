@@ -333,7 +333,10 @@
   "block.ya_fnafmod.stool_magenta": "Stool (Magenta)",
   "block.ya_fnafmod.toy_cupcake": "Toy Cupcake",
   "block.ya_fnafmod.movie_purple_tile_block_slab": "Movie Purple Tile Block Slab",
+<<<<<<< HEAD
   "block.ya_fnafmod.shelf_chemicals": "Chemical Shelf",
+=======
+>>>>>>> f08a0366e397d5b5fbb30b737c890e8bd36c6a87
   "block.ya_fnafmod.disco_floor": "Disco Floor",
   "block.ya_fnafmod.light_wall_stairs_confetti": "Light Wall Stairs (Confetti)",
   "block.ya_fnafmod.cyan_big_checkered_tiles": "Cyan Big Checkered Tiles",
@@ -3934,6 +3937,7 @@
   "death.attack.scooped.player": "%1$s was scooped whilst trying to escape %2$s",
   "gamerule.generatorMaxCapacity.description": "How much energy the generator can have. It normally drains 1 energy every 15 ticks. (Max is 10,000.)",
   "block.ya_fnafmod.light_gray_tile_block": "Light Gray Tile Block",
+  "effect.ya_fnafmod.quantum_lock": "Quantum Lock",
   "block.ya_fnafmod.paperpal_2": "Paperpal Bunny",
   "block.ya_fnafmod.paperpal_1": "Paperpal Bear",
   "block.ya_fnafmod.paperpal_4": "Paperpal New Clown",
@@ -4306,6 +4310,7 @@
   "block.ya_fnafmod.pink_checkered_tiles": "Pink Checkered Tiles",
   "block.ya_fnafmod.office_desk_fnaf_1_empty": "Empty Office Desk (FNAF 1)",
   "entity.ya_fnafmod.chica_chicken_day": "Chica The Chicken (Daytime)",
+  "block.ya_fnafmod.security_gate": "Security Gate",
   "block.ya_fnafmod.purple_wall_slab": "Purple Wall Slab",
   "block.ya_fnafmod.cracked_green_light_blue_tiles": "Green Light Blue Tiles (Cracked)",
   "block.ya_fnafmod.blue_yellow_checkered_tile_stairs": "Blue Yellow Checkered Tile Stairs",

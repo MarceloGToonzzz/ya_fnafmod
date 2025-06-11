@@ -479,6 +479,7 @@ import net.mcreator.yafnafmod.block.display.ShopSignSmilesAndServosDisplayItem;
 import net.mcreator.yafnafmod.block.display.ShopSignRareFindsAuctionDisplayItem;
 import net.mcreator.yafnafmod.block.display.ShopSignDumpsterDiverDisplayItem;
 import net.mcreator.yafnafmod.block.display.SecurityPuppetPropDisplayItem;
+import net.mcreator.yafnafmod.block.display.SecurityGateDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScraptrapBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScrapSparkyDogBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScrapLolaChicaBlockDisplayItem;
@@ -5304,6 +5305,7 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POSTER_FREDBEAR_1_BIG_TORN = block(YaFnafmodModBlocks.POSTER_FREDBEAR_1_BIG_TORN);
 	public static final RegistryObject<Item> POSTER_FREDBEAR_2_BIG = block(YaFnafmodModBlocks.POSTER_FREDBEAR_2_BIG);
 	public static final RegistryObject<Item> POSTER_FREDBEAR_3_BIG = block(YaFnafmodModBlocks.POSTER_FREDBEAR_3_BIG);
+<<<<<<< HEAD
 	public static final RegistryObject<Item> SHELF_CHEMICALS = block(YaFnafmodModBlocks.SHELF_CHEMICALS);
 	public static final RegistryObject<Item> ROCKET_RIDE = block(YaFnafmodModBlocks.ROCKET_RIDE);
 	public static final RegistryObject<Item> BULK_VENDING_MACHINE_BLUE = block(YaFnafmodModBlocks.BULK_VENDING_MACHINE_BLUE);
@@ -5325,6 +5327,9 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POSTER_MYSTERIOUS_MAN = block(YaFnafmodModBlocks.POSTER_MYSTERIOUS_MAN);
 	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_4 = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_4);
 	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_6 = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_6);
+=======
+	public static final RegistryObject<Item> SECURITY_GATE = REGISTRY.register(YaFnafmodModBlocks.SECURITY_GATE.getId().getPath(), () -> new SecurityGateDisplayItem(YaFnafmodModBlocks.SECURITY_GATE.get(), new Item.Properties()));
+>>>>>>> f08a0366e397d5b5fbb30b737c890e8bd36c6a87
 
 	// Start of user code block custom items
 	// End of user code block custom items
