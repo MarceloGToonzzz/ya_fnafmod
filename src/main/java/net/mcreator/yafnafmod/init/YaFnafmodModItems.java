@@ -479,6 +479,7 @@ import net.mcreator.yafnafmod.block.display.ShopSignSmilesAndServosDisplayItem;
 import net.mcreator.yafnafmod.block.display.ShopSignRareFindsAuctionDisplayItem;
 import net.mcreator.yafnafmod.block.display.ShopSignDumpsterDiverDisplayItem;
 import net.mcreator.yafnafmod.block.display.SecurityPuppetPropDisplayItem;
+import net.mcreator.yafnafmod.block.display.SecurityGateDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScraptrapBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScrapSparkyDogBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ScrapLolaChicaBlockDisplayItem;
@@ -5305,6 +5306,7 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POSTER_FREDBEAR_1_BIG_TORN = block(YaFnafmodModBlocks.POSTER_FREDBEAR_1_BIG_TORN);
 	public static final RegistryObject<Item> POSTER_FREDBEAR_2_BIG = block(YaFnafmodModBlocks.POSTER_FREDBEAR_2_BIG);
 	public static final RegistryObject<Item> POSTER_FREDBEAR_3_BIG = block(YaFnafmodModBlocks.POSTER_FREDBEAR_3_BIG);
+	public static final RegistryObject<Item> SECURITY_GATE = REGISTRY.register(YaFnafmodModBlocks.SECURITY_GATE.getId().getPath(), () -> new SecurityGateDisplayItem(YaFnafmodModBlocks.SECURITY_GATE.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

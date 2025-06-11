@@ -497,6 +497,7 @@ import net.mcreator.yafnafmod.block.ServerRackBlock;
 import net.mcreator.yafnafmod.block.ServerBlock;
 import net.mcreator.yafnafmod.block.SecurityVentBlock;
 import net.mcreator.yafnafmod.block.SecurityPuppetPropBlock;
+import net.mcreator.yafnafmod.block.SecurityGateBlock;
 import net.mcreator.yafnafmod.block.SecurityDoorWindowBlock;
 import net.mcreator.yafnafmod.block.SecurityDoorHingedBlock;
 import net.mcreator.yafnafmod.block.SecurityDoorBlock;
@@ -7453,6 +7454,7 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> POSTER_FREDBEAR_1_BIG_TORN = REGISTRY.register("poster_fredbear_1_big_torn", () -> new PosterFredbear1BigTornBlock());
 	public static final RegistryObject<Block> POSTER_FREDBEAR_2_BIG = REGISTRY.register("poster_fredbear_2_big", () -> new PosterFredbear2BigBlock());
 	public static final RegistryObject<Block> POSTER_FREDBEAR_3_BIG = REGISTRY.register("poster_fredbear_3_big", () -> new PosterFredbear3BigBlock());
+	public static final RegistryObject<Block> SECURITY_GATE = REGISTRY.register("security_gate", () -> new SecurityGateBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

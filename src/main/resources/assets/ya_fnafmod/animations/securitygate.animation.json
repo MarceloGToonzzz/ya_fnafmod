@@ -1,0 +1,147 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"0": {
+			"loop": true,
+			"bones": {
+				"BarTwo": {
+					"position": {
+						"vector": [-3, 0, 0]
+					}
+				},
+				"BarThree": {
+					"position": {
+						"vector": [-6, 0, 0]
+					}
+				},
+				"BarFour": {
+					"position": {
+						"vector": [-9, 0, 0]
+					}
+				},
+				"BarFive": {
+					"position": {
+						"vector": [-12, 0, 0]
+					}
+				},
+				"BottomeTrack": {
+					"rotation": {
+						"vector": [0, 0, -90]
+					},
+					"position": {
+						"vector": [-4, 7, 0]
+					}
+				},
+				"Connector1": {
+					"rotation": {
+						"vector": [0, 0, 40]
+					}
+				},
+				"Connector2": {
+					"rotation": {
+						"vector": [0, 0, -40]
+					}
+				},
+				"Connector3": {
+					"rotation": {
+						"vector": [0, 0, -40]
+					}
+				},
+				"Connector4": {
+					"rotation": {
+						"vector": [0, 0, 40]
+					}
+				},
+				"Connector5": {
+					"rotation": {
+						"vector": [0, 0, 40]
+					}
+				},
+				"Connector6": {
+					"rotation": {
+						"vector": [0, 0, -40]
+					}
+				},
+				"Connector7": {
+					"rotation": {
+						"vector": [0, 0, -40]
+					}
+				},
+				"Connector8": {
+					"rotation": {
+						"vector": [0, 0, 40]
+					}
+				}
+			}
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"BarTwo": {
+					"position": {
+						"vector": [-2, 0, 0]
+					}
+				},
+				"BarThree": {
+					"position": {
+						"vector": [-4, 0, 0]
+					}
+				},
+				"BarFour": {
+					"position": {
+						"vector": [-6, 0, 0]
+					}
+				},
+				"BarFive": {
+					"position": {
+						"vector": [-8, 0, 0]
+					}
+				},
+				"Connector1": {
+					"rotation": {
+						"vector": [0, 0, 22.5]
+					}
+				},
+				"Connector2": {
+					"rotation": {
+						"vector": [0, 0, -22.5]
+					}
+				},
+				"Connector3": {
+					"rotation": {
+						"vector": [0, 0, -22.5]
+					}
+				},
+				"Connector4": {
+					"rotation": {
+						"vector": [0, 0, 22.5]
+					}
+				},
+				"Connector5": {
+					"rotation": {
+						"vector": [0, 0, 22.5]
+					}
+				},
+				"Connector6": {
+					"rotation": {
+						"vector": [0, 0, -22.5]
+					}
+				},
+				"Connector7": {
+					"rotation": {
+						"vector": [0, 0, -22.5]
+					}
+				},
+				"Connector8": {
+					"rotation": {
+						"vector": [0, 0, 22.5]
+					}
+				}
+			}
+		},
+		"2": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

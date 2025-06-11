@@ -53,6 +53,7 @@ import net.mcreator.yafnafmod.block.renderer.ShopSignSmilesAndServosTileRenderer
 import net.mcreator.yafnafmod.block.renderer.ShopSignRareFindsAuctionTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ShopSignDumpsterDiverTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SecurityPuppetPropTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.SecurityGateTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScraptrapBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScrapSparkyDogBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ScrapLolaChicaBlockTileRenderer;
@@ -716,5 +717,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BOBBLEHEADS_2.get(), context -> new Bobbleheads2TileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.MUSIC_BOX_PURPLE_DECORATION.get(), context -> new MusicBoxPurpleDecorationTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.WIDE_FAN.get(), context -> new WideFanTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SECURITY_GATE.get(), context -> new SecurityGateTileRenderer());
 	}
 }
