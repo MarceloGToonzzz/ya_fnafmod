@@ -61,6 +61,7 @@ import net.mcreator.yafnafmod.block.entity.ShopSignDumpsterDiverTileEntity;
 import net.mcreator.yafnafmod.block.entity.ShockInfuserBlockEntity;
 import net.mcreator.yafnafmod.block.entity.SecurityVentBlockEntity;
 import net.mcreator.yafnafmod.block.entity.SecurityPuppetPropTileEntity;
+import net.mcreator.yafnafmod.block.entity.SecurityGateTileEntity;
 import net.mcreator.yafnafmod.block.entity.SecurityDoorWindowBlockEntity;
 import net.mcreator.yafnafmod.block.entity.SecurityDoorBlockEntity;
 import net.mcreator.yafnafmod.block.entity.ScraptrapBlockTileEntity;
@@ -1014,6 +1015,7 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<MusicBoxPurpleDecorationTileEntity>> MUSIC_BOX_PURPLE_DECORATION = REGISTRY.register("music_box_purple_decoration",
 			() -> BlockEntityType.Builder.of(MusicBoxPurpleDecorationTileEntity::new, YaFnafmodModBlocks.MUSIC_BOX_PURPLE_DECORATION.get()).build(null));
 	public static final RegistryObject<BlockEntityType<WideFanTileEntity>> WIDE_FAN = REGISTRY.register("wide_fan", () -> BlockEntityType.Builder.of(WideFanTileEntity::new, YaFnafmodModBlocks.WIDE_FAN.get()).build(null));
+	public static final RegistryObject<BlockEntityType<SecurityGateTileEntity>> SECURITY_GATE = REGISTRY.register("security_gate", () -> BlockEntityType.Builder.of(SecurityGateTileEntity::new, YaFnafmodModBlocks.SECURITY_GATE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

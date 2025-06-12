@@ -28,6 +28,13 @@ public class WeepingAngelMechanicProcedure {
 						if (entity instanceof YenndoEntity) {
 							((YenndoEntity) entity).setAnimation("animation.model.pose2");
 						}
+						if (entity instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
+						}
+					} else {
+						if (entity instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(false);
+						}
 					}
 				}
 			}

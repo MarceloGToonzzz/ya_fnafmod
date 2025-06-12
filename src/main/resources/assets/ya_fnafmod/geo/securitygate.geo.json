@@ -1,0 +1,136 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "whole",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 14, -1], "size": [16, 2, 2], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "BarOne",
+					"parent": "whole",
+					"pivot": [1, 2, 0],
+					"cubes": [
+						{"origin": [-8.5, 0, -0.5], "size": [1, 16, 1], "uv": [0, 8]}
+					]
+				},
+				{
+					"name": "Connector1",
+					"parent": "BarOne",
+					"pivot": [-8, 8, 0],
+					"cubes": [
+						{"origin": [-7, 2.5, -0.5], "size": [1, 6, 1], "pivot": [-6.5, 6.5, 0], "rotation": [0, 0, -40], "uv": [24, 8]}
+					]
+				},
+				{
+					"name": "Connector2",
+					"parent": "BarOne",
+					"pivot": [-8, 8, 0],
+					"cubes": [
+						{"origin": [-6.5, 7.25, -0.5], "size": [1, 6, 1], "pivot": [-6, 10.25, 0], "rotation": [0, 0, 40], "uv": [20, 8]}
+					]
+				},
+				{
+					"name": "BarTwo",
+					"parent": "whole",
+					"pivot": [1, 2, 0],
+					"cubes": [
+						{"origin": [-4.5, 0, -0.5], "size": [1, 16, 1], "uv": [4, 8]}
+					]
+				},
+				{
+					"name": "BarThree",
+					"parent": "whole",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 0, -0.5], "size": [1, 16, 1], "uv": [8, 8]}
+					]
+				},
+				{
+					"name": "Connector3",
+					"parent": "BarThree",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-2.5, 2.75, -0.5], "size": [1, 6, 1], "pivot": [-2, 5.75, 0], "rotation": [0, 0, 40], "uv": [20, 8]}
+					]
+				},
+				{
+					"name": "Connector4",
+					"parent": "BarThree",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-3, 7, -0.5], "size": [1, 6, 1], "pivot": [-2.5, 11, 0], "rotation": [0, 0, -40], "uv": [24, 8]}
+					]
+				},
+				{
+					"name": "Connector5",
+					"parent": "BarThree",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [1, 2.5, -0.5], "size": [1, 6, 1], "pivot": [1.5, 6.5, 0], "rotation": [0, 0, -40], "uv": [24, 8]}
+					]
+				},
+				{
+					"name": "Connector6",
+					"parent": "BarThree",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [1.5, 7.25, -0.5], "size": [1, 6, 1], "pivot": [2, 10.25, 0], "rotation": [0, 0, 40], "uv": [20, 8]}
+					]
+				},
+				{
+					"name": "BarFour",
+					"parent": "whole",
+					"pivot": [11, 2, 0],
+					"cubes": [
+						{"origin": [3.5, 0, -0.5], "size": [1, 16, 1], "uv": [12, 8]}
+					]
+				},
+				{
+					"name": "BarFive",
+					"parent": "whole",
+					"pivot": [14, 2, 0],
+					"cubes": [
+						{"origin": [7.5, 0, -0.5], "size": [1, 16, 1], "uv": [16, 8]}
+					]
+				},
+				{
+					"name": "Connector7",
+					"parent": "BarFive",
+					"pivot": [8, 8, 0],
+					"cubes": [
+						{"origin": [5.5, 2.75, -0.5], "size": [1, 6, 1], "pivot": [6, 5.75, 0], "rotation": [0, 0, 40], "uv": [20, 8]}
+					]
+				},
+				{
+					"name": "Connector8",
+					"parent": "BarFive",
+					"pivot": [8, 8, 0],
+					"cubes": [
+						{"origin": [5, 7, -0.5], "size": [1, 6, 1], "pivot": [5.5, 11, 0], "rotation": [0, 0, -40], "uv": [24, 8]}
+					]
+				},
+				{
+					"name": "BottomeTrack",
+					"parent": "whole",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [-8, 0, -1], "size": [16, 2, 2], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}
