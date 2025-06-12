@@ -19,7 +19,6 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModTabs;
 import net.mcreator.yafnafmod.init.YaFnafmodModSounds;
-import net.mcreator.yafnafmod.init.YaFnafmodModMobEffects;
 import net.mcreator.yafnafmod.init.YaFnafmodModMenus;
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
 import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
@@ -52,8 +51,6 @@ public class YaFnafmodMod {
 		YaFnafmodModEntities.REGISTRY.register(bus);
 
 		YaFnafmodModTabs.REGISTRY.register(bus);
-
-		YaFnafmodModMobEffects.REGISTRY.register(bus);
 
 		YaFnafmodModMenus.REGISTRY.register(bus);
 

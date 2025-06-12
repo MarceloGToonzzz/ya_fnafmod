@@ -10,7 +10,7 @@
     },
     "isInstant": false,
     "mobEffectCategory": "NEUTRAL",
-    "renderStatusInInventory": false,
+    "renderStatusInInventory": true,
     "renderStatusInHUD": false,
     "isCuredByMilk": false,
     "isProtectedByTotem": false,
