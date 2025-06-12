@@ -7473,7 +7473,6 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> POSTER_FREDBEAR_1_BIG_TORN = REGISTRY.register("poster_fredbear_1_big_torn", () -> new PosterFredbear1BigTornBlock());
 	public static final RegistryObject<Block> POSTER_FREDBEAR_2_BIG = REGISTRY.register("poster_fredbear_2_big", () -> new PosterFredbear2BigBlock());
 	public static final RegistryObject<Block> POSTER_FREDBEAR_3_BIG = REGISTRY.register("poster_fredbear_3_big", () -> new PosterFredbear3BigBlock());
-<<<<<<< HEAD
 	public static final RegistryObject<Block> SHELF_CHEMICALS = REGISTRY.register("shelf_chemicals", () -> new ShelfChemicalsBlock());
 	public static final RegistryObject<Block> ROCKET_RIDE = REGISTRY.register("rocket_ride", () -> new RocketRideBlock());
 	public static final RegistryObject<Block> BULK_VENDING_MACHINE_BLUE = REGISTRY.register("bulk_vending_machine_blue", () -> new BulkVendingMachineBlueBlock());
@@ -7495,9 +7494,7 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> POSTER_MYSTERIOUS_MAN = REGISTRY.register("poster_mysterious_man", () -> new PosterMysteriousManBlock());
 	public static final RegistryObject<Block> STRUCTURE_BLOCK_FNAF_4 = REGISTRY.register("structure_block_fnaf_4", () -> new StructureBlockFnaf4Block());
 	public static final RegistryObject<Block> STRUCTURE_BLOCK_FNAF_6 = REGISTRY.register("structure_block_fnaf_6", () -> new StructureBlockFnaf6Block());
-=======
 	public static final RegistryObject<Block> SECURITY_GATE = REGISTRY.register("security_gate", () -> new SecurityGateBlock());
->>>>>>> f08a0366e397d5b5fbb30b737c890e8bd36c6a87
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -95,7 +95,7 @@ public class LightFunctionProcedure {
 						return 0;
 					}
 				}.convert(RZ))) - Math.abs(z) < 1) {
-					LeverTriggerProcedure.execute(world, x, y, z);
+					LeverChangeProcedure.execute(world, x, y, z);
 				}
 			}
 		} else {

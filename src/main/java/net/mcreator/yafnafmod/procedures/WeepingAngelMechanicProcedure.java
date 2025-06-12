@@ -25,11 +25,11 @@ public class WeepingAngelMechanicProcedure {
 						if (entity instanceof Mob _entity)
 							_entity.getNavigation().stop();
 						entity.setDeltaMovement(new Vec3(0, 0, 0));
-						if (entity instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(true);
-						}
 						if (entity instanceof YenndoEntity) {
 							((YenndoEntity) entity).setAnimation("animation.model.pose2");
+						}
+						if (entity instanceof Mob _mobSetNoAi) {
+							_mobSetNoAi.setNoAi(true);
 						}
 					} else {
 						if (entity instanceof Mob _mobSetNoAi) {
