@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/bigposter",
+  "textures": {
+    "all": "ya_fnafmod:block/posterbig_1_hatchet",
+    "particle": "ya_fnafmod:block/posterbig_1_hatchet",
+    "0": "ya_fnafmod:block/posterbig_1_hatchet"
+  },
+  "render_type": "cutout"
+}

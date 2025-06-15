@@ -13,6 +13,13 @@
         "3": "wall_pizza4_1"
       },
       "name": "olive"
+    },
+    "olivepep": {
+      "map": {
+        "1": "wall_pizza5_2",
+        "3": "wall_pizza6_1"
+      },
+      "name": "olivepep"
     }
   }
 }

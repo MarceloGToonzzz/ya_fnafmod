@@ -1619,6 +1619,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.HANGING_LAMP.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_PIZZA.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_PIZZA_OLIVE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.WALL_PIZZA_PEPPERONI_OLIVE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_SUN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_MOON.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_SUN_CREEP.get().asItem());
@@ -1854,6 +1855,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BREAKER_CONTROL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BREAKER_PANEL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CABINET_GRAY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SERVER_RACK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DESK_COVER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CIRCUS_CONTROL_PANEL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CONVEYOR_BELT.get().asItem());
@@ -2039,7 +2041,11 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BB_FIGURINE.get().asItem());
 				tabData.accept(YaFnafmodModItems.SPRINGLOCK_ELLA_SUIT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SHADOW_FREDDY_SUIT_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModBlocks.SERVER_RACK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_FALLFEST.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_MATPAT.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_BARRY_POLAR.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_HATCHET.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_DELILAH.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.GENERATOR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LARGE_BUTTON_TOGGLE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LARGE_BUTTON.get().asItem());
@@ -2055,6 +2061,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.MONITOR_WORK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WALL_MAKER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PIZZA_OVEN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SECURITY_GATE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SECURITY_DOOR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SECURITY_DOOR_WINDOW.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SECURITY_DOOR_HINGED.get().asItem());
@@ -2146,9 +2153,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.POSTER_FALLFEST.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.POSTER_MATPAT.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.POSTER_BARRY_POLAR.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {

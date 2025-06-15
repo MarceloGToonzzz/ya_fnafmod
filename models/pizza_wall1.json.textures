@@ -29,6 +29,18 @@
         "1": "wall_pizza3_2"
       },
       "name": "olivecut"
+    },
+    "olivepep": {
+      "map": {
+        "1": "wall_pizza5_1"
+      },
+      "name": "olivepep"
+    },
+    "olivepepcut": {
+      "map": {
+        "1": "wall_pizza5_2"
+      },
+      "name": "olivepepcut"
     }
   }
 }

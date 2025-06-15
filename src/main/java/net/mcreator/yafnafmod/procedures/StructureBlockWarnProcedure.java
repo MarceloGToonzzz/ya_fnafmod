@@ -51,9 +51,9 @@ public class StructureBlockWarnProcedure {
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(
 					Component.literal(("Are you sure you want to place this structure? It will take up an area of SIZE, facing South-East. Right click it to confirm.".replace("SIZE", (x + " by " + y + " by " + z).replace(".0", "")))), false);
-		if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_6.get()) {
+		if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_4.get() || blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_6.get()) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("* WARNING, SPAWNING THIS STRUCTURE MIGHT CAUSE A LAG SPIKE. *"), false);
+				_player.displayClientMessage(Component.literal("\u00A7c* WARNING, SPAWNING THIS STRUCTURE MIGHT CAUSE A LAG SPIKE. *"), false);
 		}
 	}
 }

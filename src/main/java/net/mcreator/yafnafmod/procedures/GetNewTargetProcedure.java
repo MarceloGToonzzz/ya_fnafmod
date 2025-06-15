@@ -91,6 +91,9 @@ public class GetNewTargetProcedure {
 												"blockstate") instanceof IntegerProperty _getip49 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip49) : -1) == 0) {
 							stop = true;
 						}
+						if (IsEntityWearingHidingSuitProcedure.execute(entityiterator) == true) {
+							stop = true;
+						}
 						if (!(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight(entityiterator) : false)) {
 							stop = true;
 						}
@@ -112,7 +115,8 @@ public class GetNewTargetProcedure {
 					|| ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 16
 					|| !(entity instanceof LivingEntity _liveEnt && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null
 							? _liveEnt.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null))
-							: false)) {
+							: false)
+					|| IsEntityWearingHidingSuitProcedure.execute(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == true) {
 				if (entity instanceof Mob) {
 					try {
 						((Mob) entity).setTarget(null);

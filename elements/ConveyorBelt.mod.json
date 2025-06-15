@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "tileblock_gray",
-    "textureTop": "conveyorbelt_top",
+    "textureTop": "conveyorbelt_top_off",
     "textureLeft": "conveyorbelt_side",
     "textureFront": "conveyorbelt_side",
     "textureRight": "conveyorbelt_side",
@@ -123,6 +123,12 @@
     "fluidRestrictions": [],
     "onEntityCollides": {
       "name": "ConveyorBeltEntityCollidesInTheBlock"
+    },
+    "onRedstoneOn": {
+      "name": "RedstoneStateCycle"
+    },
+    "onRedstoneOff": {
+      "name": "RedstoneStateCycle"
     },
     "generateFeature": false,
     "restrictionBiomes": [],
