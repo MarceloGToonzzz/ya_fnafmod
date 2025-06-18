@@ -263,6 +263,7 @@ import net.mcreator.yafnafmod.block.WallTileBlackGreenBlueBigBlock;
 import net.mcreator.yafnafmod.block.WallTileBlackBlackWhiteBlock;
 import net.mcreator.yafnafmod.block.WallTileBlackBlackWhiteBigBlock;
 import net.mcreator.yafnafmod.block.WallStarBigBlock;
+import net.mcreator.yafnafmod.block.WallPizzaPepperoniOliveBlock;
 import net.mcreator.yafnafmod.block.WallPizzaOliveBlock;
 import net.mcreator.yafnafmod.block.WallPizzaBlock;
 import net.mcreator.yafnafmod.block.WallPipesYellowBlock;
@@ -845,6 +846,7 @@ import net.mcreator.yafnafmod.block.PosterLeftyBlock;
 import net.mcreator.yafnafmod.block.PosterLeaningTowerOfPizzzaaaBlock;
 import net.mcreator.yafnafmod.block.PosterJeffsBlock;
 import net.mcreator.yafnafmod.block.PosterIHaveSandInMyHareBlock;
+import net.mcreator.yafnafmod.block.PosterHatchetBlock;
 import net.mcreator.yafnafmod.block.PosterGoldenFreddyBlock;
 import net.mcreator.yafnafmod.block.PosterFuntimeFreddyBlock;
 import net.mcreator.yafnafmod.block.PosterFuntimeFoxyBlock;
@@ -862,6 +864,7 @@ import net.mcreator.yafnafmod.block.PosterFreakFamilyBlock;
 import net.mcreator.yafnafmod.block.PosterFoxySavesTheKingdomBlock;
 import net.mcreator.yafnafmod.block.PosterFoxy1Block;
 import net.mcreator.yafnafmod.block.PosterFallfestBlock;
+import net.mcreator.yafnafmod.block.PosterDelilahBlock;
 import net.mcreator.yafnafmod.block.PosterClownBlock;
 import net.mcreator.yafnafmod.block.PosterChica2Block;
 import net.mcreator.yafnafmod.block.PosterChica1Block;
@@ -7495,6 +7498,9 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> STRUCTURE_BLOCK_FNAF_4 = REGISTRY.register("structure_block_fnaf_4", () -> new StructureBlockFnaf4Block());
 	public static final RegistryObject<Block> STRUCTURE_BLOCK_FNAF_6 = REGISTRY.register("structure_block_fnaf_6", () -> new StructureBlockFnaf6Block());
 	public static final RegistryObject<Block> SECURITY_GATE = REGISTRY.register("security_gate", () -> new SecurityGateBlock());
+	public static final RegistryObject<Block> POSTER_DELILAH = REGISTRY.register("poster_delilah", () -> new PosterDelilahBlock());
+	public static final RegistryObject<Block> POSTER_HATCHET = REGISTRY.register("poster_hatchet", () -> new PosterHatchetBlock());
+	public static final RegistryObject<Block> WALL_PIZZA_PEPPERONI_OLIVE = REGISTRY.register("wall_pizza_pepperoni_olive", () -> new WallPizzaPepperoniOliveBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

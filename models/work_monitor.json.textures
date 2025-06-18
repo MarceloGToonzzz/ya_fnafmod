@@ -1,0 +1,58 @@
+{
+  "mappings": {
+    "ad4": {
+      "map": {
+        "2": "work_monitor-ad_lallyslollies"
+      },
+      "name": "ad4"
+    },
+    "ad3": {
+      "map": {
+        "2": "work_monitor-ad_wackywartpaste"
+      },
+      "name": "ad3"
+    },
+    "default": {
+      "map": {
+        "2": "work_monitor"
+      },
+      "name": "default"
+    },
+    "ad6": {
+      "map": {
+        "2": "work_monitor-ad_pickledpopcorn"
+      },
+      "name": "ad6"
+    },
+    "ad5": {
+      "map": {
+        "2": "work_monitor-ad_flosglossyfloss"
+      },
+      "name": "ad5"
+    },
+    "ad2": {
+      "map": {
+        "2": "work_monitor-ad_martysplungers"
+      },
+      "name": "ad2"
+    },
+    "on": {
+      "map": {
+        "2": "work_monitor-work"
+      },
+      "name": "on"
+    },
+    "ad1": {
+      "map": {
+        "2": "work_monitor-ad_fiztime"
+      },
+      "name": "ad1"
+    },
+    "ad7": {
+      "map": {
+        "2": "work_monitor-ad_elchip"
+      },
+      "name": "ad7"
+    }
+  }
+}

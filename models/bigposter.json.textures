@@ -5,6 +5,12 @@
         "0": "posterbig_1_celebrate"
       },
       "name": "default"
+    },
+    "hatchet": {
+      "map": {
+        "0": "posterbig_1_hatchet"
+      },
+      "name": "hatchet"
     }
   }
 }

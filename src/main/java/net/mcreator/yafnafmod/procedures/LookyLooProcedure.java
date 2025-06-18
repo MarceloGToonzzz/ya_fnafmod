@@ -1,9 +1,9 @@
 package net.mcreator.yafnafmod.procedures;
 
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
 
 public class LookyLooProcedure {
 	public static String execute(LevelAccessor world, double x, double y, double z) {
@@ -12,7 +12,7 @@ public class LookyLooProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		Radius = 20;
+		Radius = 64;
 		sx = Radius * (-0.5);
 		found = false;
 		for (int index0 = 0; index0 < (int) Radius; index0++) {
@@ -23,8 +23,7 @@ public class LookyLooProcedure {
 						sz = Radius * (-0.5);
 						for (int index2 = 0; index2 < (int) Radius; index2++) {
 							if (found == false) {
-								if (((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock().getStateDefinition().getProperty("powered") instanceof BooleanProperty _getbp1
-										&& (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getValue(_getbp1)) == true && (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.LEVER) {
+								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == YaFnafmodModBlocks.ENNARD_MASK.get()) {
 									found = true;
 									return "X" + Math.floor(x + sx) + "X" + "Y" + Math.floor(y + sy) + "Y" + "Z" + Math.floor(z + sz) + "Z";
 								}
@@ -37,6 +36,6 @@ public class LookyLooProcedure {
 				sx = sx + 1;
 			}
 		}
-		return "X" + 0 + "X" + "Y" + 0 + "Y" + "Z" + 0 + "Z";
+		return "X" + 0 + "X" + "Y" + (-200) + "Y" + "Z" + 0 + "Z";
 	}
 }

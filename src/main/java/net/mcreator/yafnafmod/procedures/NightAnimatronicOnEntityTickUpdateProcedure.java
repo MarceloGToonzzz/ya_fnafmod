@@ -72,6 +72,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 			if ((entity instanceof EnnardEntity _datEntL22 && _datEntL22.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
 				if (entity instanceof EnnardEntity animatable)
 					animatable.setTexture("ennard_maskless");
+				WalkyTooProcedure.execute(world, x, y, z, entity);
 			} else {
 				if (entity instanceof EnnardEntity animatable)
 					animatable.setTexture("ennard");

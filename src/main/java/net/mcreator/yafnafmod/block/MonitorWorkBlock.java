@@ -102,10 +102,10 @@ public class MonitorWorkBlock extends Block implements EntityBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 16, 16);
-			case NORTH -> box(0, 0, 0, 16, 16, 16);
-			case EAST -> box(0, 0, 0, 16, 16, 16);
-			case WEST -> box(0, 0, 0, 16, 16, 16);
+			default -> box(-1, 0, 0, 17, 16, 14);
+			case NORTH -> box(-1, 0, 2, 17, 16, 16);
+			case EAST -> box(0, 0, -1, 14, 16, 17);
+			case WEST -> box(2, 0, -1, 16, 16, 17);
 		};
 	}
 

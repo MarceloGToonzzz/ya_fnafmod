@@ -13,7 +13,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_work",
+        "customModelName": "work_monitor:on",
         "luminance": 2,
         "boundingBoxes": []
       },
@@ -26,7 +26,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_fiztime",
+        "customModelName": "work_monitor:ad1",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -39,7 +39,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_flos",
+        "customModelName": "work_monitor:ad2",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -52,7 +52,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_lallies",
+        "customModelName": "work_monitor:ad3",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -65,7 +65,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_martys",
+        "customModelName": "work_monitor:ad4",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -78,7 +78,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_peppers",
+        "customModelName": "work_monitor:ad5",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -91,7 +91,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_wacky",
+        "customModelName": "work_monitor:ad6",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -104,7 +104,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "bigmonitor:monitor_elchip",
+        "customModelName": "work_monitor:ad7",
         "luminance": 0,
         "boundingBoxes": []
       }

@@ -2,7 +2,7 @@
   "parent": "block/cube",
   "textures": {
     "down": "ya_fnafmod:block/tileblock_gray",
-    "up": "ya_fnafmod:block/conveyorbelt_top",
+    "up": "ya_fnafmod:block/conveyorbelt_top_off",
     "north": "ya_fnafmod:block/conveyorbelt_side",
     "east": "ya_fnafmod:block/conveyorbelt_side",
     "south": "ya_fnafmod:block/conveyorbelt_side",

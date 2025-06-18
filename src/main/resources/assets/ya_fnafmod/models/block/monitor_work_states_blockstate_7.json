@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/bigmonitor",
+  "parent": "ya_fnafmod:custom/work_monitor",
   "textures": {
     "all": "ya_fnafmod:block/bigmonitor_off",
     "particle": "ya_fnafmod:block/bigmonitor_off",
-    "1": "ya_fnafmod:block/bigmonitor_elchip"
+    "2": "ya_fnafmod:block/work_monitor-ad_elchip"
   },
   "render_type": "cutout_mipped"
 }

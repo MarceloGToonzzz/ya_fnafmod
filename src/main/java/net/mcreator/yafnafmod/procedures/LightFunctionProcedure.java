@@ -70,33 +70,6 @@ public class LightFunctionProcedure {
 							return 0;
 						}
 					}.convert(RZ), 1);
-				if (Math.floor(Math.abs(new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(RX))) - Math.abs(x) < 1 && Math.floor(Math.abs(new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(RY))) - Math.abs(y) < 1 && Math.floor(Math.abs(new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(RZ))) - Math.abs(z) < 1) {
-					LeverChangeProcedure.execute(world, x, y, z);
-				}
 			}
 		} else {
 			{

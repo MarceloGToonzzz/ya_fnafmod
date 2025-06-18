@@ -323,6 +323,12 @@
         "0": "poster_mysteryman"
       },
       "name": "edwin"
+    },
+    "delilah1": {
+      "map": {
+        "0": "poster_delilah"
+      },
+      "name": "delilah1"
     }
   }
 }
