@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModGameRules;
 import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
+import net.mcreator.yafnafmod.entity.WitheredBarryPolarEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
@@ -86,6 +87,9 @@ public class PlayVoiceProcedure {
 				} else if (entity instanceof FuntimeDelilahEntity) {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_ftdelilah_voice")), SoundSource.HOSTILE, 1, 1);
+				} else if (entity instanceof WitheredBarryPolarEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_wbpolar_voice")), SoundSource.HOSTILE, 1, 1);
 				}
 				entity.getPersistentData().putDouble("voice_tick", 0);
 				entity.getPersistentData().putBoolean("set_max", false);

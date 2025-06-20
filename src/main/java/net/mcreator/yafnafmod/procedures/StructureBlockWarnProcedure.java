@@ -48,6 +48,15 @@ public class StructureBlockWarnProcedure {
 			y = 25;
 			z = 48;
 		}
+		if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_PIZZA_N_GRILL.get()) {
+			x = 48;
+			y = 15;
+			z = 48;
+		} else if (blockstate.getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_OBHF_CLASSIC.get()) {
+			x = 86;
+			y = 28;
+			z = 57;
+		}
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(
 					Component.literal(("Are you sure you want to place this structure? It will take up an area of SIZE, facing South-East. Right click it to confirm.".replace("SIZE", (x + " by " + y + " by " + z).replace(".0", "")))), false);

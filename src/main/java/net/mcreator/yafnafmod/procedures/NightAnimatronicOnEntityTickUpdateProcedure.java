@@ -1,8 +1,10 @@
 package net.mcreator.yafnafmod.procedures;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
@@ -17,6 +19,7 @@ import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
+import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
 import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
@@ -103,11 +106,21 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 					entity.setNoGravity(true);
 				}
 			}
-		} else if (entity instanceof GoldenFreddyEntity || entity instanceof ShadowFreddyEntity) {
-			if (IsItNighttimeProcedure.execute(world) == true) {
-				if (Mth.nextInt(RandomSource.create(), 1, 18) == Mth.nextInt(RandomSource.create(), 1, 36)) {
-					if (entity.getPersistentData().getBoolean("can_tp") == true) {
-						TeleportProcedure.execute(world, x, y, z, entity);
+		} else if (entity instanceof GoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof PuppetEntity && (entity instanceof PuppetEntity _datEntL40 && _datEntL40.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
+			if (!(entity instanceof PuppetEntity)) {
+				if (IsItNighttimeProcedure.execute(world) == true) {
+					if (Mth.nextInt(RandomSource.create(), 1, 18) == Mth.nextInt(RandomSource.create(), 1, 36)) {
+						if (entity.getPersistentData().getBoolean("can_tp") == true) {
+							TeleportProcedure.execute(world, x, y, z, entity);
+						}
+					}
+				}
+			} else {
+				if (!(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 24, 24, 24), e -> true).isEmpty()) && !(!world.getEntitiesOfClass(Villager.class, AABB.ofSize(new Vec3(x, y, z), 24, 24, 24), e -> true).isEmpty())) {
+					if (Mth.nextInt(RandomSource.create(), 1, 18) == Mth.nextInt(RandomSource.create(), 1, 36)) {
+						if (entity.getPersistentData().getBoolean("can_tp") == true) {
+							TeleportProcedure.execute(world, x, y, z, entity);
+						}
 					}
 				}
 			}
@@ -115,8 +128,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		if (entity instanceof NightmareFreddyEntity) {
 			FreddleCodeProcedure.execute(world, x, y, z, entity);
 		} else if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-			if ((entity instanceof PlushtrapEntity _datEntL45 && _datEntL45.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-					|| (entity instanceof NightmareBbEntity _datEntL46 && _datEntL46.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+			if ((entity instanceof PlushtrapEntity _datEntL53 && _datEntL53.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+					|| (entity instanceof NightmareBbEntity _datEntL54 && _datEntL54.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("animation.plush.sit");
 				}

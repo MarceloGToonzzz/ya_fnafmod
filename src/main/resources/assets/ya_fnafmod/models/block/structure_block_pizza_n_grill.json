@@ -1,0 +1,11 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "ya_fnafmod:block/floortile_structure",
+    "top": "ya_fnafmod:block/floortile_structure",
+    "side": "ya_fnafmod:block/floortile_structure",
+    "overlay": "ya_fnafmod:block/icon_rfreddy",
+    "particle": "ya_fnafmod:block/floortile_structure"
+  },
+  "render_type": "cutout_mipped"
+}

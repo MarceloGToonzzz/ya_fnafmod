@@ -17,6 +17,7 @@ import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
 public class GeneratorOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double wawa = 0;
+		double result = 0;
 		if (world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.GENERATOR_NIGHT) == false
 				|| world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.GENERATOR_NIGHT) == true && IsItNighttimeProcedure.execute(world) == true) {
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.GENERATOR_BLOCK.get()) {
@@ -53,6 +54,16 @@ public class GeneratorOnTickUpdateProcedure {
 				_level.updateNeighborsAt(BlockPos.containing(x + 1, y, z - 1), _level.getBlockState(BlockPos.containing(x + 1, y, z - 1)).getBlock());
 			if (world instanceof Level _level)
 				_level.updateNeighborsAt(BlockPos.containing(x - 1, y, z - 1), _level.getBlockState(BlockPos.containing(x - 1, y, z - 1)).getBlock());
+		} else if (world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.GENERATOR_NIGHT) == true && IsItNighttimeProcedure.execute(world) == false) {
+			if (!world.isClientSide()) {
+				BlockPos _bp = BlockPos.containing(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("energy", (world.getLevelData().getGameRules().getInt(YaFnafmodModGameRules.GENERATOR_MAX_CAPACITY)));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.GENERATOR_BLOCK.get()) {
 			if (new Object() {

@@ -31,6 +31,8 @@ import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.WitheredBarryPolarEntity;
+import net.mcreator.yafnafmod.entity.WitheredBarryPolarDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyDayEntity;
@@ -115,11 +117,13 @@ import net.mcreator.yafnafmod.entity.OfficeChairBlackEntityEntity;
 import net.mcreator.yafnafmod.entity.NumberOneCrateEntity;
 import net.mcreator.yafnafmod.entity.NumberOneCrateDayEntity;
 import net.mcreator.yafnafmod.entity.NightmarionneEntity;
+import net.mcreator.yafnafmod.entity.NightmarePumpkinEntityEntity;
 import net.mcreator.yafnafmod.entity.NightmareMangleEntity;
 import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
 import net.mcreator.yafnafmod.entity.NightmareFredbearEntity;
 import net.mcreator.yafnafmod.entity.NightmareFoxyEntity;
 import net.mcreator.yafnafmod.entity.NightmareEntity;
+import net.mcreator.yafnafmod.entity.NightmareCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.NightmareChicaEntity;
 import net.mcreator.yafnafmod.entity.NightmareBonnieEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbEntity;
@@ -1118,6 +1122,25 @@ public class YaFnafmodModEntities {
 					.sized(0.6f, 1.6f));
 	public static final RegistryObject<EntityType<PopgunBulletProjectileEntity>> POPGUN_BULLET_PROJECTILE = register("popgun_bullet_projectile", EntityType.Builder.<PopgunBulletProjectileEntity>of(PopgunBulletProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(PopgunBulletProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<WitheredBarryPolarEntity>> WITHERED_BARRY_POLAR = register("withered_barry_polar",
+			EntityType.Builder.<WitheredBarryPolarEntity>of(WitheredBarryPolarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredBarryPolarEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WitheredBarryPolarDayEntity>> WITHERED_BARRY_POLAR_DAY = register("withered_barry_polar_day",
+			EntityType.Builder.<WitheredBarryPolarDayEntity>of(WitheredBarryPolarDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3)
+					.setCustomClientFactory(WitheredBarryPolarDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<NightmareCupcakeEntityEntity>> NIGHTMARE_CUPCAKE_ENTITY = register("nightmare_cupcake_entity",
+			EntityType.Builder.<NightmareCupcakeEntityEntity>of(NightmareCupcakeEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3)
+					.setCustomClientFactory(NightmareCupcakeEntityEntity::new)
+
+					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<NightmarePumpkinEntityEntity>> NIGHTMARE_PUMPKIN_ENTITY = register("nightmare_pumpkin_entity",
+			EntityType.Builder.<NightmarePumpkinEntityEntity>of(NightmarePumpkinEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3)
+					.setCustomClientFactory(NightmarePumpkinEntityEntity::new)
+
+					.sized(0.6f, 0.9375f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1341,6 +1364,10 @@ public class YaFnafmodModEntities {
 			YellowRabbitEntity.init();
 			ShadowFreddySuitEntity.init();
 			SpringlockEllaSuitEntity.init();
+			WitheredBarryPolarEntity.init();
+			WitheredBarryPolarDayEntity.init();
+			NightmareCupcakeEntityEntity.init();
+			NightmarePumpkinEntityEntity.init();
 		});
 	}
 
@@ -1559,5 +1586,9 @@ public class YaFnafmodModEntities {
 		event.put(YELLOW_RABBIT.get(), YellowRabbitEntity.createAttributes().build());
 		event.put(SHADOW_FREDDY_SUIT.get(), ShadowFreddySuitEntity.createAttributes().build());
 		event.put(SPRINGLOCK_ELLA_SUIT.get(), SpringlockEllaSuitEntity.createAttributes().build());
+		event.put(WITHERED_BARRY_POLAR.get(), WitheredBarryPolarEntity.createAttributes().build());
+		event.put(WITHERED_BARRY_POLAR_DAY.get(), WitheredBarryPolarDayEntity.createAttributes().build());
+		event.put(NIGHTMARE_CUPCAKE_ENTITY.get(), NightmareCupcakeEntityEntity.createAttributes().build());
+		event.put(NIGHTMARE_PUMPKIN_ENTITY.get(), NightmarePumpkinEntityEntity.createAttributes().build());
 	}
 }

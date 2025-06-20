@@ -350,6 +350,8 @@ import net.mcreator.yafnafmod.block.SturdyStageBaseGreenBlock;
 import net.mcreator.yafnafmod.block.SturdyStageBaseBlueBlock;
 import net.mcreator.yafnafmod.block.StructureFnaf3ClassicBlock;
 import net.mcreator.yafnafmod.block.StructureFnaf2ClassicBlock;
+import net.mcreator.yafnafmod.block.StructureBlockPizzaNGrillBlock;
+import net.mcreator.yafnafmod.block.StructureBlockObhfClassicBlock;
 import net.mcreator.yafnafmod.block.StructureBlockFnaf6Block;
 import net.mcreator.yafnafmod.block.StructureBlockFnaf4Block;
 import net.mcreator.yafnafmod.block.StructureBlockFnaf3Block;
@@ -7553,6 +7555,8 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> CUTOUT_FOXY_TOY = REGISTRY.register("cutout_foxy_toy", () -> new CutoutFoxyToyBlock());
 	public static final RegistryObject<Block> MOVIE_CYAN_SHINGLE_WALL = REGISTRY.register("movie_cyan_shingle_wall", () -> new MovieCyanShingleWallBlock());
 	public static final RegistryObject<Block> BATHROOM_SINK = REGISTRY.register("bathroom_sink", () -> new BathroomSinkBlock());
+	public static final RegistryObject<Block> STRUCTURE_BLOCK_PIZZA_N_GRILL = REGISTRY.register("structure_block_pizza_n_grill", () -> new StructureBlockPizzaNGrillBlock());
+	public static final RegistryObject<Block> STRUCTURE_BLOCK_OBHF_CLASSIC = REGISTRY.register("structure_block_obhf_classic", () -> new StructureBlockObhfClassicBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

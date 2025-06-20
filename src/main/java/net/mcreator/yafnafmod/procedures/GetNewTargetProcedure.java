@@ -47,32 +47,36 @@ public class GetNewTargetProcedure {
 					stop = false;
 					if (entityiterator instanceof Player || entityiterator instanceof Villager) {
 						if (!IsEntityBeingLookedAtProcedure.execute(world, entityiterator, entity, entityiterator.getEyeHeight(), rangetest)) {
-							if (!(entityiterator.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D)) {
-								stop = true;
-							} else if (entityiterator.isShiftKeyDown() || entityiterator.isSwimming()) {
-								stop = true;
+							if (!(entity instanceof PuppetEntity)) {
+								if (!(entityiterator.getDeltaMovement().horizontalDistanceSqr() > 1.0E-6D)) {
+									stop = true;
+								} else if (entityiterator.isShiftKeyDown() || entityiterator.isSwimming()) {
+									stop = true;
+								}
 							}
 						}
 						if (entity instanceof PuppetEntity) {
-							if ((entity instanceof PuppetEntity _datEntL26 && _datEntL26.getEntityData().get(PuppetEntity.DATA_busy)) == true) {
+							if ((entity instanceof PuppetEntity _datEntL27 && _datEntL27.getEntityData().get(PuppetEntity.DATA_busy)) == true) {
 								stop = true;
 							}
 						}
 						if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers"))) && IsTargetWearingMaskProcedure.execute(entityiterator)
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
-										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip37
-												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip37)
+										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip38
+												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip38)
 												: -1) == 0
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
 										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock().getStateDefinition().getProperty(
-												"blockstate") instanceof IntegerProperty _getip47 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip47) : -1) == 0) {
+												"blockstate") instanceof IntegerProperty _getip48 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip48) : -1) == 0) {
 							stop = true;
 						}
 						if (IsEntityWearingHidingSuitProcedure.execute(entityiterator) == true && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:springlock_exceptions")))) {
 							stop = true;
 						}
 						if (!(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight(entityiterator) : false)) {
-							stop = true;
+							if (!(entity instanceof PuppetEntity)) {
+								stop = true;
+							}
 						}
 						if (stop == false) {
 							if (!(new Object() {
@@ -129,7 +133,8 @@ public class GetNewTargetProcedure {
 					}
 					return false;
 				}
-			}.checkGamemode((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) || !(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : false)
+			}.checkGamemode((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null))
+					|| !(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : false) && !(entity instanceof PuppetEntity)
 					|| ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 16
 					|| !(entity instanceof LivingEntity _liveEnt && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null
 							? _liveEnt.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null))

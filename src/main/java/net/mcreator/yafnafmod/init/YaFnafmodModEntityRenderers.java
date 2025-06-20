@@ -26,6 +26,8 @@ import net.mcreator.yafnafmod.client.renderer.WitheredChicaRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredChicaDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.WitheredBonnieDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.WitheredBarryPolarRenderer;
+import net.mcreator.yafnafmod.client.renderer.WitheredBarryPolarDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyFreddyStillDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.ToyFreddyDayRenderer;
@@ -108,10 +110,12 @@ import net.mcreator.yafnafmod.client.renderer.NumberOneCrateRenderer;
 import net.mcreator.yafnafmod.client.renderer.NumberOneCrateDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmarionneRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareRenderer;
+import net.mcreator.yafnafmod.client.renderer.NightmarePumpkinEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareMangleRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareFredbearRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareFoxyRenderer;
+import net.mcreator.yafnafmod.client.renderer.NightmareCupcakeEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareChicaRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.NightmareBbRenderer;
@@ -451,5 +455,9 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.SHADOW_FREDDY_SUIT.get(), ShadowFreddySuitRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SPRINGLOCK_ELLA_SUIT.get(), SpringlockEllaSuitRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.POPGUN_BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.WITHERED_BARRY_POLAR.get(), WitheredBarryPolarRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.WITHERED_BARRY_POLAR_DAY.get(), WitheredBarryPolarDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.NIGHTMARE_CUPCAKE_ENTITY.get(), NightmareCupcakeEntityRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.NIGHTMARE_PUMPKIN_ENTITY.get(), NightmarePumpkinEntityRenderer::new);
 	}
 }

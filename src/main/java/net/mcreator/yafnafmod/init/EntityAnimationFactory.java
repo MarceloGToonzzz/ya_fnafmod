@@ -19,6 +19,8 @@ import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.WitheredBarryPolarEntity;
+import net.mcreator.yafnafmod.entity.WitheredBarryPolarDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyDayEntity;
@@ -99,11 +101,13 @@ import net.mcreator.yafnafmod.entity.OfficeChairBlackEntityEntity;
 import net.mcreator.yafnafmod.entity.NumberOneCrateEntity;
 import net.mcreator.yafnafmod.entity.NumberOneCrateDayEntity;
 import net.mcreator.yafnafmod.entity.NightmarionneEntity;
+import net.mcreator.yafnafmod.entity.NightmarePumpkinEntityEntity;
 import net.mcreator.yafnafmod.entity.NightmareMangleEntity;
 import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
 import net.mcreator.yafnafmod.entity.NightmareFredbearEntity;
 import net.mcreator.yafnafmod.entity.NightmareFoxyEntity;
 import net.mcreator.yafnafmod.entity.NightmareEntity;
+import net.mcreator.yafnafmod.entity.NightmareCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.NightmareChicaEntity;
 import net.mcreator.yafnafmod.entity.NightmareBonnieEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbEntity;
@@ -1692,6 +1696,34 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof SpringlockEllaSuitEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof WitheredBarryPolarEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof WitheredBarryPolarDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NightmareCupcakeEntityEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof NightmarePumpkinEntityEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

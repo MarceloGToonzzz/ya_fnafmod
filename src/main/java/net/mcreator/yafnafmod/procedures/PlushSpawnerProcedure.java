@@ -51,9 +51,21 @@ public class PlushSpawnerProcedure {
 								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}
 						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = YaFnafmodModEntities.NIGHTMARE_CUPCAKE_ENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
 					} else {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = YaFnafmodModEntities.JACK_O_CHICA.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
+							}
+						}
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = YaFnafmodModEntities.NIGHTMARE_PUMPKIN_ENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 							if (entityToSpawn != null) {
 								entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 							}

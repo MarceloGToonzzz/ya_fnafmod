@@ -7,19 +7,23 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
 import net.mcreator.yafnafmod.entity.ToyFreddyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaEntity;
+import net.mcreator.yafnafmod.entity.ToyChicaDayEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
@@ -155,11 +159,32 @@ public class NightActionProcedure {
 						}
 					}
 				}
+				if (entity instanceof ChicaChickenDayEntity || entity instanceof ToyChicaDayEntity || entity instanceof ToyChicaStillDayEntity || entity instanceof RetroChicaDayEntity) {
+					if (entity instanceof ChicaChickenDayEntity) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = YaFnafmodModEntities.CUPCAKE_ENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+							}
+						}
+					} else if (entity instanceof ToyChicaDayEntity || entity instanceof ToyChicaStillDayEntity) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = YaFnafmodModEntities.TOY_CUPCAKE_ENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+							}
+						}
+					} else if (entity instanceof RetroChicaDayEntity) {
+						if (world instanceof ServerLevel _level) {
+							Entity entityToSpawn = YaFnafmodModEntities.RETRO_CUPCAKE_ENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+							if (entityToSpawn != null) {
+							}
+						}
+					}
+				}
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}
 		}
-		if (!(world instanceof Level _lvl72 && _lvl72.isDay())) {
+		if (!(world instanceof Level _lvl83 && _lvl83.isDay())) {
 			if (entity instanceof FreddyFazbearDayEntity) {
 				((FreddyFazbearDayEntity) entity).setAnimation("0");
 			}

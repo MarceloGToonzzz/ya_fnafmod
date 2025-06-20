@@ -40,6 +40,7 @@ import net.mcreator.yafnafmod.item.WitheredFoxySpawnItemItem;
 import net.mcreator.yafnafmod.item.WitheredDougDogSpawnItemItem;
 import net.mcreator.yafnafmod.item.WitheredChicaSpawnItemItem;
 import net.mcreator.yafnafmod.item.WitheredBonnieSpawnItemItem;
+import net.mcreator.yafnafmod.item.WitheredBarryPolarSpawnItemItem;
 import net.mcreator.yafnafmod.item.WallTileRedBlackWhiteItemItem;
 import net.mcreator.yafnafmod.item.WallTileRedBigBlackWhiteItemItem;
 import net.mcreator.yafnafmod.item.WallTilePurpleBlackWhiteItemItem;
@@ -5397,6 +5398,16 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CUTOUT_FOXY_TOY = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_FOXY_TOY.getId().getPath(), () -> new CutoutFoxyToyDisplayItem(YaFnafmodModBlocks.CUTOUT_FOXY_TOY.get(), new Item.Properties()));
 	public static final RegistryObject<Item> MOVIE_CYAN_SHINGLE_WALL = block(YaFnafmodModBlocks.MOVIE_CYAN_SHINGLE_WALL);
 	public static final RegistryObject<Item> BATHROOM_SINK = block(YaFnafmodModBlocks.BATHROOM_SINK);
+	public static final RegistryObject<Item> STRUCTURE_BLOCK_PIZZA_N_GRILL = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_PIZZA_N_GRILL);
+	public static final RegistryObject<Item> WITHERED_BARRY_POLAR_SPAWN_ITEM = REGISTRY.register("withered_barry_polar_spawn_item", () -> new WitheredBarryPolarSpawnItemItem());
+	public static final RegistryObject<Item> WITHERED_BARRY_POLAR_SPAWN_EGG = REGISTRY.register("withered_barry_polar_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.WITHERED_BARRY_POLAR, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> WITHERED_BARRY_POLAR_DAY_SPAWN_EGG = REGISTRY.register("withered_barry_polar_day_spawn_egg",
+			() -> new ForgeSpawnEggItem(YaFnafmodModEntities.WITHERED_BARRY_POLAR_DAY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> NIGHTMARE_CUPCAKE_ENTITY_SPAWN_EGG = REGISTRY.register("nightmare_cupcake_entity_spawn_egg",
+			() -> new ForgeSpawnEggItem(YaFnafmodModEntities.NIGHTMARE_CUPCAKE_ENTITY, -3627468, -6729975, new Item.Properties()));
+	public static final RegistryObject<Item> NIGHTMARE_PUMPKIN_ENTITY_SPAWN_EGG = REGISTRY.register("nightmare_pumpkin_entity_spawn_egg",
+			() -> new ForgeSpawnEggItem(YaFnafmodModEntities.NIGHTMARE_PUMPKIN_ENTITY, -3627468, -6729975, new Item.Properties()));
+	public static final RegistryObject<Item> STRUCTURE_BLOCK_OBHF_CLASSIC = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_OBHF_CLASSIC);
 
 	// Start of user code block custom items
 	// End of user code block custom items

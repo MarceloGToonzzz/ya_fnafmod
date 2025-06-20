@@ -150,4 +150,7 @@ public class YaFnafmodModSounds {
 	public static final RegistryObject<SoundEvent> ANIM_GUSPUG_KILLVOICE = REGISTRY.register("anim_guspug_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_guspug_killvoice")));
 	public static final RegistryObject<SoundEvent> BG_DONTBLOWIT = REGISTRY.register("bg_dontblowit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "bg_dontblowit")));
 	public static final RegistryObject<SoundEvent> ANIM_GSAF_FREDDYBEAR_LAUGH = REGISTRY.register("anim_gsaf_freddybear_laugh", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_gsaf_freddybear_laugh")));
+	public static final RegistryObject<SoundEvent> ANIM_WBPOLAR_VOICE = REGISTRY.register("anim_wbpolar_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_wbpolar_voice")));
+	public static final RegistryObject<SoundEvent> ANIM_WBPOLAR_VOICE_HOSTILE = REGISTRY.register("anim_wbpolar_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_wbpolar_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIM_WBPOLAR_KILLVOICE = REGISTRY.register("anim_wbpolar_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_wbpolar_killvoice")));
 }

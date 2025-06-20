@@ -1606,5 +1606,44 @@
         "stream": false
       }
     ]
+  },
+  "anim_wbpolar_voice": {
+    "subtitle": "subtitles.anim_wbpolar_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_wbpolar_voice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_wbpolar_voice2",
+        "stream": false
+      }
+    ]
+  },
+  "anim_wbpolar_voice_hostile": {
+    "subtitle": "subtitles.anim_wbpolar_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_wbpolar_voice2_hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_wbpolar_voice1_hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anim_wbpolar_killvoice": {
+    "subtitle": "subtitles.anim_wbpolar_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_wbpolar_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_wbpolar_killvoice1",
+        "stream": false
+      }
+    ]
   }
 }

@@ -44,6 +44,15 @@ public class StructureBlockPlaceProcedure {
 				}
 			}
 		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_PIZZA_N_GRILL.get()) {
+			if (world instanceof ServerLevel _serverworld) {
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("ya_fnafmod", "fnaf_pizzangrill"));
+				if (template != null) {
+					template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+				}
+			}
+			LinkDoorToGeneratorProcedure.execute(world, x + 28, y + 6, z + 6, x + 16, y + 5, z + 35);
+		}
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_1.get()) {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("ya_fnafmod", "fnaf1_freddyfazbearspizzaplace_big1"));
@@ -230,6 +239,35 @@ public class StructureBlockPlaceProcedure {
 				}
 				repeat_z = 0;
 				repeat_x = repeat_x + 1;
+			}
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.STRUCTURE_BLOCK_OBHF_CLASSIC.get()) {
+			if (world instanceof ServerLevel _serverworld) {
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("ya_fnafmod", "obhf_pizzaparlor1"));
+				if (template != null) {
+					template.placeInWorld(_serverworld, BlockPos.containing(x, y, z), BlockPos.containing(x, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+				}
+			}
+			if (world instanceof ServerLevel _serverworld) {
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("ya_fnafmod", "obhf_pizzaparlor2"));
+				if (template != null) {
+					template.placeInWorld(_serverworld, BlockPos.containing(x + 48, y, z), BlockPos.containing(x + 48, y, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							_serverworld.random, 3);
+				}
+			}
+			if (world instanceof ServerLevel _serverworld) {
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("ya_fnafmod", "obhf_pizzaparlor3"));
+				if (template != null) {
+					template.placeInWorld(_serverworld, BlockPos.containing(x, y, z + 48), BlockPos.containing(x, y, z + 48), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							_serverworld.random, 3);
+				}
+			}
+			if (world instanceof ServerLevel _serverworld) {
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("ya_fnafmod", "obhf_pizzaparlor4"));
+				if (template != null) {
+					template.placeInWorld(_serverworld, BlockPos.containing(x + 48, y, z + 48), BlockPos.containing(x + 48, y, z + 48), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							_serverworld.random, 3);
+				}
 			}
 		}
 	}
