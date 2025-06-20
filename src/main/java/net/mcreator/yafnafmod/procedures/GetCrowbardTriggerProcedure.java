@@ -35,8 +35,8 @@ public class GetCrowbardTriggerProcedure {
 		if (sourceentity == null)
 			return;
 		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.CROWBAR.get()) {
-			if (sourceentity instanceof ServerPlayer _plr2 && _plr2.level() instanceof ServerLevel
-					&& _plr2.getAdvancements().getOrStartProgress(_plr2.server.getAdvancements().getAdvancement(new ResourceLocation("ya_fnafmod:get_crowbard"))).isDone()) {
+			if (!(sourceentity instanceof ServerPlayer _plr2 && _plr2.level() instanceof ServerLevel
+					&& _plr2.getAdvancements().getOrStartProgress(_plr2.server.getAdvancements().getAdvancement(new ResourceLocation("ya_fnafmod:get_crowbard"))).isDone())) {
 				if (sourceentity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("ya_fnafmod:get_crowbard"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

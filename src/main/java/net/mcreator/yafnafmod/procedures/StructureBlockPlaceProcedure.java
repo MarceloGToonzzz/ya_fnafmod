@@ -10,7 +10,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
@@ -232,8 +231,6 @@ public class StructureBlockPlaceProcedure {
 			repeat_z = 0;
 			for (int index0 = 0; index0 < 95; index0++) {
 				for (int index1 = 0; index1 < 95; index1++) {
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal((((x + repeat_x) + " ") + "" + ((y + 4) + " ") + (z + repeat_z))), false);
 					LinkAudioLureToMonitorProcedure.execute(world, x + repeat_x, y + 4, z + repeat_z, x + 67, y + 3, z + 47);
 					repeat_z = repeat_z + 1;
 				}

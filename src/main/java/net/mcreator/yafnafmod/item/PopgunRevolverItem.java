@@ -55,9 +55,9 @@ public class PopgunRevolverItem extends Item implements GeoItem {
 
 			private static final HumanoidModel.ArmPose PopgunRevolverPose = HumanoidModel.ArmPose.create("PopgunRevolver", false, (model, entity, arm) -> {
 				if (arm == HumanoidArm.LEFT) {
-					model.leftArm.xRot = 215F + model.head.xRot;
+					model.leftArm.xRot = 80F + model.head.xRot;
 				} else {
-					model.rightArm.xRot = 215F + model.head.xRot;
+					model.rightArm.xRot = 80F + model.head.xRot;
 				}
 			});
 
