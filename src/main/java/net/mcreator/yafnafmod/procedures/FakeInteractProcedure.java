@@ -37,17 +37,19 @@ public class FakeInteractProcedure {
 			return;
 		ItemStack item = ItemStack.EMPTY;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.BROOM.get()
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.MOP.get()) {
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.MOP.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.PLUNGER.get()) {
 			item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).copy();
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.BROOM.get()
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.MOP.get()) {
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.MOP.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.PLUNGER.get()) {
 			item = (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).copy();
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.OFF_HAND, true);
 		}
-		if (item.getItem() == YaFnafmodModItems.MOP.get() || item.getItem() == YaFnafmodModItems.MOP.get()) {
+		if (item.getItem() == YaFnafmodModItems.MOP.get()) {
 			if (blockstate.getBlock() == YaFnafmodModBlocks.BLOOD.get() || blockstate.getBlock() == YaFnafmodModBlocks.BLOOD_SMEARED.get() || blockstate.getBlock() == YaFnafmodModBlocks.WATER_PUDDLE.get()) {
 				if (blockstate.getBlock() == YaFnafmodModBlocks.WATER_PUDDLE.get()) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.MOP.get()) {

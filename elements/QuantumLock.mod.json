@@ -3,13 +3,13 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Quantum Lock",
-    "icon": "weeping_angel",
+    "icon": "quantum_lock",
     "color": {
       "value": -1,
       "falpha": 0.0
     },
     "isInstant": false,
-    "mobEffectCategory": "NEUTRAL",
+    "mobEffectCategory": "HARMFUL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": false,
     "isCuredByMilk": false,

@@ -13,9 +13,12 @@ public class WalkyTooProcedure {
 		String RX = "";
 		String RY = "";
 		String RZ = "";
-		RX = LookyLooProcedure.execute(world, x, y, z).substring((int) LookyLooProcedure.execute(world, x, y, z).indexOf("X") + "X".length(), (int) LookyLooProcedure.execute(world, x, y, z).lastIndexOf("X"));
-		RY = LookyLooProcedure.execute(world, x, y, z).substring((int) LookyLooProcedure.execute(world, x, y, z).indexOf("Y") + "Y".length(), (int) LookyLooProcedure.execute(world, x, y, z).lastIndexOf("Y"));
-		RZ = LookyLooProcedure.execute(world, x, y, z).substring((int) LookyLooProcedure.execute(world, x, y, z).indexOf("Z") + "Z".length(), (int) LookyLooProcedure.execute(world, x, y, z).lastIndexOf("Z"));
+		RX = LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").substring((int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").indexOf("X") + "X".length(),
+				(int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").lastIndexOf("X"));
+		RY = LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").substring((int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").indexOf("Y") + "Y".length(),
+				(int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").lastIndexOf("Y"));
+		RZ = LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").substring((int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").indexOf("Z") + "Z".length(),
+				(int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").lastIndexOf("Z"));
 		if (new Object() {
 			double convert(String s) {
 				try {

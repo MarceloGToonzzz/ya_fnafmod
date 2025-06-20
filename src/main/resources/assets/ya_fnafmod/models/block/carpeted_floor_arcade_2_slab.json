@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/carpet_arcadefloor2",
+    "bottom": "ya_fnafmod:block/carpet_arcadefloor2",
+    "top": "ya_fnafmod:block/carpet_arcadefloor2",
+    "side": "ya_fnafmod:block/carpet_arcadefloor2"
+  },
+  "render_type": "solid"
+}

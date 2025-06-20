@@ -222,6 +222,10 @@ public class CrawlingProcedure {
 				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _ent)
 					_entity.setTarget(_ent);
 			}
+			if (entity instanceof Player _player) {
+				_player.getAbilities().invulnerable = true;
+				_player.onUpdateAbilities();
+			}
 		} else {
 			if (!world.getBlockState(BlockPos.containing(x, y + 2, z)).canOcclude()) {
 				if (entity instanceof MangleEntity) {
@@ -287,6 +291,10 @@ public class CrawlingProcedure {
 				if (entity instanceof LeftyEntity) {
 					((LeftyEntity) entity).setAnimation("empty");
 				}
+			}
+			if (entity instanceof Player _player) {
+				_player.getAbilities().invulnerable = false;
+				_player.onUpdateAbilities();
 			}
 		}
 		if (entity instanceof BalloonBoyEntity || entity instanceof JJEntity) {

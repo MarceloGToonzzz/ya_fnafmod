@@ -3,11 +3,11 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_bonniebunny",
+    "textureHelmet": "armoricon_mnafbonnie_head",
     "enableBody": true,
-    "textureBody": "icon_bonniebunny",
+    "textureBody": "armoricon_mnafbonnie_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_bonniebunny",
+    "textureLeggings": "armoricon_mnafbonnie_legs",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

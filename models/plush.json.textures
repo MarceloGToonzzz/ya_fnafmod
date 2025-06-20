@@ -257,6 +257,18 @@
         "17": "plush_gus"
       },
       "name": "gus"
+    },
+    "dt": {
+      "map": {
+        "17": "plush_dt"
+      },
+      "name": "dt"
+    },
+    "vass": {
+      "map": {
+        "17": "plush_vass"
+      },
+      "name": "vass"
     }
   }
 }

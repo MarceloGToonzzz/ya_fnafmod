@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/popgun_revolver",
+  "textures": {
+    "layer0": "ya_fnafmod:item/popgun_revolver"
+  }
+}

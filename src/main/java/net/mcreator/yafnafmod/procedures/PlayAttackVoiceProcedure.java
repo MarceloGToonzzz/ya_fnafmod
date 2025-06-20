@@ -4,18 +4,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.TagKey;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.yafnafmod.init.YaFnafmodModItems;
 import net.mcreator.yafnafmod.init.YaFnafmodModGameRules;
 import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
@@ -41,9 +36,7 @@ public class PlayAttackVoiceProcedure {
 			return;
 		if (world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.ENABLE_VOICES) == true) {
 			if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity) {
-				if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers"))) || entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers")))
-						&& !(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-								.getItem() == YaFnafmodModItems.FREDDY_MASK_HELMET.get())) {
+				if (!(entity == null)) {
 					if (40 > entity.getPersistentData().getDouble("attackvoice_tick")) {
 						if (entity.getPersistentData().getBoolean("said_attack_line") == false) {
 							if (entity instanceof FoxyPirateEntity) {
@@ -108,18 +101,18 @@ public class PlayAttackVoiceProcedure {
 								});
 							}
 							entity.getPersistentData().putDouble("attackvoice_tick", 0);
+							entity.getPersistentData().putBoolean("said_attack_line", true);
 						}
 						if (entity.getPersistentData().getBoolean("aggro_anim") == true) {
 							if (entity instanceof Mob _entity)
 								_entity.getNavigation().stop();
 						}
 						entity.getPersistentData().putBoolean("set_max", false);
-						entity.getPersistentData().putBoolean("said_attack_line", true);
-						entity.getPersistentData().putDouble("voice_tick", 0);
+						entity.getPersistentData().putDouble("voice_tick", (entity.getPersistentData().getDouble("attackvoice_tick") + 1));
 					}
 				}
 			} else {
-				entity.getPersistentData().putDouble("attackvoice_tick", (entity.getPersistentData().getDouble("attackvoice_tick") + 1));
+				entity.getPersistentData().putDouble("attackvoice_tick", 0);
 				entity.getPersistentData().putBoolean("said_attack_line", false);
 				entity.getPersistentData().putBoolean("aggro_anim", false);
 			}

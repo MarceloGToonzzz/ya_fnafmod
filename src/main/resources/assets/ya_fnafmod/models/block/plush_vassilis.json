@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/plush",
+  "textures": {
+    "all": "ya_fnafmod:block/plush_vass",
+    "particle": "ya_fnafmod:block/plush_vass",
+    "17": "ya_fnafmod:block/plush_vass"
+  },
+  "render_type": "cutout"
+}

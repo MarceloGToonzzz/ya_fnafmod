@@ -224,8 +224,6 @@ import net.mcreator.yafnafmod.client.renderer.BalloraRenderer;
 import net.mcreator.yafnafmod.client.renderer.BalloraDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.BalloonBoyRenderer;
 import net.mcreator.yafnafmod.client.renderer.BalloonBoyDayRenderer;
-import net.mcreator.yafnafmod.client.renderer.BaggieMaggieRenderer;
-import net.mcreator.yafnafmod.client.renderer.BaggieMaggieDayRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class YaFnafmodModEntityRenderers {
@@ -413,8 +411,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.WITHERED_DOUG_DOG_DAY.get(), WitheredDougDogDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.IGNITED_CHICA.get(), IgnitedChicaRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.IGNITED_CHICA_DAY.get(), IgnitedChicaDayRenderer::new);
-		event.registerEntityRenderer(YaFnafmodModEntities.BAGGIE_MAGGIE.get(), BaggieMaggieRenderer::new);
-		event.registerEntityRenderer(YaFnafmodModEntities.BAGGIE_MAGGIE_DAY.get(), BaggieMaggieDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.PIDGEON.get(), PidgeonRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.CROW.get(), CrowRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.POSSUM.get(), PossumRenderer::new);
@@ -454,5 +450,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.YELLOW_RABBIT.get(), YellowRabbitRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SHADOW_FREDDY_SUIT.get(), ShadowFreddySuitRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SPRINGLOCK_ELLA_SUIT.get(), SpringlockEllaSuitRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.POPGUN_BULLET_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class QuantumLockMobEffect extends MobEffect {
 	public QuantumLockMobEffect() {
-		super(MobEffectCategory.NEUTRAL, -1);
+		super(MobEffectCategory.HARMFUL, -1);
 	}
 
 	@Override

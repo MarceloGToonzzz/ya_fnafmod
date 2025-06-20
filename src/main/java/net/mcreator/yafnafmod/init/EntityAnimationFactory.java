@@ -215,8 +215,6 @@ import net.mcreator.yafnafmod.entity.BalloraEntity;
 import net.mcreator.yafnafmod.entity.BalloraDayEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
-import net.mcreator.yafnafmod.entity.BaggieMaggieEntity;
-import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -1477,20 +1475,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof IgnitedChicaDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof BaggieMaggieEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof BaggieMaggieDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

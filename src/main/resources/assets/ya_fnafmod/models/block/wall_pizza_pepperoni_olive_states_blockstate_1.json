@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/wall_pizza1_2",
     "particle": "ya_fnafmod:block/wall_pizza1_1",
-    "1": "ya_fnafmod:block/wall_pizza5_1",
+    "1": "ya_fnafmod:block/wall_pizza5_2",
     "3": "ya_fnafmod:block/wall_pizza6_1"
   },
   "render_type": "cutout"

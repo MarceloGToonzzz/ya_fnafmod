@@ -1,6 +1,6 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
+    "background": "ya_fnafmod:textures/screens/floortile_catalog.png",
     "icon": {
       "item": "ya_fnafmod:freddy_fazbear_spawn_item"
     },
@@ -17,10 +17,7 @@
   },
   "criteria": {
     "its_just_yet_another_fnaf_mod_0": {
-      "trigger": "minecraft:changed_dimension",
-      "conditions": {
-        "to": "minecraft:overworld"
-      }
+      "trigger": "minecraft:tick"
     }
   }
 }

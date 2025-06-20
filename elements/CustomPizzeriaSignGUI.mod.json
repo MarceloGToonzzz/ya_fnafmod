@@ -83,7 +83,7 @@
         "data": {
           "name": "label_text",
           "text": {
-            "fixedValue": "Text (Don't include apostrophes)"
+            "fixedValue": "Text ( Don't include ' or \" )"
           },
           "color": {
             "value": -12829636,
@@ -107,6 +107,9 @@
     ],
     "onOpen": {
       "name": "CustomPizzeriaSignGUIThisGUIIsOpened"
+    },
+    "onTick": {
+      "name": "CustomPizzeriaSignGUIWhileThisGUIIsOpenTick"
     },
     "gridSettings": {
       "sx": 18,

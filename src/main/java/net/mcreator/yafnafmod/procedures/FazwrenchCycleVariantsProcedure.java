@@ -21,16 +21,16 @@ public class FazwrenchCycleVariantsProcedure {
 				variant = 2;
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.HANGING_SHIRT.get() || blockstate.getBlock() == YaFnafmodModBlocks.SHIRT_DISPLAY.get() || blockstate.getBlock() == YaFnafmodModBlocks.SHIRT_PILE.get()) {
 				variant = 3;
-			} else if (blockstate.getBlock() == YaFnafmodModBlocks.DOORFRAME_DARK.get() || blockstate.getBlock() == YaFnafmodModBlocks.DOORFRAME_LIGHT.get()) {
+			} else if (blockstate.getBlock() == YaFnafmodModBlocks.DOORFRAME_DARK.get() || blockstate.getBlock() == YaFnafmodModBlocks.DOORFRAME_LIGHT.get() || blockstate.getBlock() == YaFnafmodModBlocks.DOORFRAME_CYAN.get()) {
 				variant = 4;
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIPES.get() || blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIPES_RED.get() || blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIPES_YELLOW.get()) {
 				variant = 5;
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIZZA.get() || blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIZZA_OLIVE.get() || blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIZZA_PEPPERONI_OLIVE.get()) {
 				variant = 2;
 			}
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip27 ? blockstate.getValue(_getip27) : -1) != variant) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip29 ? blockstate.getValue(_getip29) : -1) != variant) {
 				{
-					int _value = (int) ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip29 ? blockstate.getValue(_getip29) : -1) + 1);
+					int _value = (int) ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip31 ? blockstate.getValue(_getip31) : -1) + 1);
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))

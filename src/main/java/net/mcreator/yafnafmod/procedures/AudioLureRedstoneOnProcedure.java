@@ -19,6 +19,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.yafnafmod.entity.PhantomBalloonBoyEntity;
+import net.mcreator.yafnafmod.configuration.YafnafmodConfigConfiguration;
 
 import java.util.List;
 import java.util.Comparator;
@@ -46,7 +47,7 @@ public class AudioLureRedstoneOnProcedure {
 					}
 				}
 			}
-			sadsfdf = Mth.nextInt(RandomSource.create(), 1, 10);
+			sadsfdf = Mth.nextInt(RandomSource.create(), 1, (int) (double) YafnafmodConfigConfiguration.AUDIOLURE_BREAKCHANCE.get());
 			if (sadsfdf == 1) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);

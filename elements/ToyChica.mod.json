@@ -146,7 +146,7 @@
     "tameable": false,
     "disableDeathRotation": false,
     "headMovement": false,
-    "eyeHeight": true,
+    "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {

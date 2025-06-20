@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/pc",
+  "textures": {
+    "all": "ya_fnafmod:block/pc",
+    "particle": "ya_fnafmod:block/pc",
+    "1": "ya_fnafmod:block/pc"
+  },
+  "render_type": "cutout_mipped"
+}

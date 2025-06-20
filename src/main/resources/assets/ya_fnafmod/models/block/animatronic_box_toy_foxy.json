@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/boxanimatronic",
+  "textures": {
+    "all": "ya_fnafmod:block/boxanimatronic_freddy",
+    "particle": "ya_fnafmod:block/boxanimatronic_freddy",
+    "0": "ya_fnafmod:block/boxanimatronic_toyfoxy"
+  },
+  "render_type": "cutout_mipped"
+}

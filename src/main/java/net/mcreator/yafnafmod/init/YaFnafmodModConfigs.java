@@ -6,7 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-import net.mcreator.yafnafmod.configuration.YafnafmodEntityconfigConfiguration;
+import net.mcreator.yafnafmod.configuration.YafnafmodConfigConfiguration;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
 @Mod.EventBusSubscriber(modid = YaFnafmodMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -14,7 +14,7 @@ public class YaFnafmodModConfigs {
 	@SubscribeEvent
 	public static void register(FMLConstructModEvent event) {
 		event.enqueueWork(() -> {
-			ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, YafnafmodEntityconfigConfiguration.SPEC, "yafnafmod_entityconfig.toml");
+			ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, YafnafmodConfigConfiguration.SPEC, "yafnafmod_entityconfig.toml");
 		});
 	}
 }

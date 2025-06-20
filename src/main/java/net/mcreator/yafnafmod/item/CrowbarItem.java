@@ -19,8 +19,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.yafnafmod.procedures.GetCrowbardTriggerProcedure;
-
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ImmutableMultimap;
 
@@ -90,7 +88,6 @@ public class CrowbarItem extends TieredItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		itemstack.hurtAndBreak(2, entity, i -> i.broadcastBreakEvent(EquipmentSlot.MAINHAND));
-		GetCrowbardTriggerProcedure.execute(entity, sourceentity);
 		return true;
 	}
 }

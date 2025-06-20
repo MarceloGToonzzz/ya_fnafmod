@@ -3,11 +3,11 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_chicachicken",
+    "textureHelmet": "armoricon_mnafchica_head",
     "enableBody": true,
-    "textureBody": "icon_chicachicken",
+    "textureBody": "armoricon_mnafchica_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_chicachicken",
+    "textureLeggings": "armoricon_mnafchica_legs",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

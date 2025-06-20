@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/arcade_racer",
+  "textures": {
+    "particle": "ya_fnafmod:block/arcaderacing_pink"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/sink_bathroom",
+  "textures": {
+    "all": "ya_fnafmod:block/sink_bathroom",
+    "particle": "ya_fnafmod:block/sink_bathroom",
+    "1": "ya_fnafmod:block/sink_bathroom"
+  },
+  "render_type": "cutout_mipped"
+}

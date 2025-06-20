@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "ya_fnafmod:block/moviecyan_shingles",
+    "particle": "ya_fnafmod:block/moviecyan_shingles"
+  },
+  "render_type": "solid"
+}

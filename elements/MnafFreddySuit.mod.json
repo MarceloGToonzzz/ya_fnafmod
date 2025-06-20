@@ -3,11 +3,11 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_freddyfazbear",
+    "textureHelmet": "armoricon_mnaffreddy_head",
     "enableBody": true,
-    "textureBody": "icon_freddyfazbear",
+    "textureBody": "armoricon_mnaffreddy_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_freddyfazbear",
+    "textureLeggings": "armoricon_mnaffreddy_legs",
     "enableBoots": false,
     "textureBoots": "",
     "creativeTabs": [

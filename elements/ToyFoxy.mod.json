@@ -21,7 +21,7 @@
       }
     ],
     "modelWidth": 0.95,
-    "modelHeight": 0.85,
+    "modelHeight": 1.2,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "stepHeight": 0.6,
@@ -146,7 +146,7 @@
     "tameable": false,
     "disableDeathRotation": false,
     "headMovement": true,
-    "eyeHeight": true,
+    "eyeHeight": false,
     "breedTriggerItems": [],
     "ranged": false,
     "rangedAttackItem": {

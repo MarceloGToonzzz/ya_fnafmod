@@ -1,12 +1,15 @@
 package net.mcreator.yafnafmod.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
-
 public class LookyLooProcedure {
-	public static String execute(LevelAccessor world, double x, double y, double z) {
+	public static String execute(LevelAccessor world, double x, double y, double z, String block) {
+		if (block == null)
+			return "";
 		boolean found = false;
 		double Radius = 0;
 		double sx = 0;
@@ -23,7 +26,7 @@ public class LookyLooProcedure {
 						sz = Radius * (-0.5);
 						for (int index2 = 0; index2 < (int) Radius; index2++) {
 							if (found == false) {
-								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == YaFnafmodModBlocks.ENNARD_MASK.get()) {
+								if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == ForgeRegistries.BLOCKS.getValue(new ResourceLocation((block).toLowerCase(java.util.Locale.ENGLISH)))) {
 									found = true;
 									return "X" + Math.floor(x + sx) + "X" + "Y" + Math.floor(y + sy) + "Y" + "Z" + Math.floor(z + sz) + "Z";
 								}

@@ -155,6 +155,11 @@ public class ChildOnEntityTickUpdateProcedure {
 						killer.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MOB_ATTACK), entity), 2);
 					}
 				}
+			} else {
+				if (world instanceof ServerLevel)
+					((ServerLevel) world).sendParticles((ParticleTypes.SMOKE), x, y, z, 5, (Mth.nextDouble(RandomSource.create(), -3, 3)), (Mth.nextDouble(RandomSource.create(), -3, 3)), (Mth.nextDouble(RandomSource.create(), -3, 3)), 1);
+				if (!entity.level().isClientSide())
+					entity.discard();
 			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);

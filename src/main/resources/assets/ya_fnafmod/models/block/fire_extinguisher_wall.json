@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/fireextinguisher_wall",
+  "textures": {
+    "all": "ya_fnafmod:block/fireextinguisher_wall",
+    "particle": "ya_fnafmod:block/fireextinguisher_wall",
+    "0": "ya_fnafmod:block/fireextinguisher_wall"
+  },
+  "render_type": "cutout_mipped"
+}

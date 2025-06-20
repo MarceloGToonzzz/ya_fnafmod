@@ -38,8 +38,12 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
+		String RX = "";
+		String RY = "";
+		String RZ = "";
 		GetNewTargetProcedure.execute(world, x, y, z, entity);
 		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"));
+		RandomMovementFunctionProcedure.execute(world, x, y, z, entity);
 		if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
 			SetNbtPositionsProcedure.execute(world, x, y, z, entity);
 		} else {

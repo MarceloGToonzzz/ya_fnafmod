@@ -41,7 +41,7 @@ public class SignTooltipProcedure {
 			}
 		} else {
 			tooltip.add(1, Component.literal("- Right click with Faz-Wrench to change texture!"));
-			tooltip.add(2, Component.literal("- Right click with FAT (Red Mode) to change text!"));
+			tooltip.add(2, Component.literal(("- Right click with FAT (Red Mode) to change text!" + "\n" + "Or alternatively, right click and sneak right click with name tags, and use dye to color!")));
 		}
 	}
 }

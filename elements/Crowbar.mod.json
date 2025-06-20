@@ -30,9 +30,6 @@
     "blockDropsTier": "IRON",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "GetCrowbardTrigger"
-    }
+    "damageOnCrafting": false
   }
 }

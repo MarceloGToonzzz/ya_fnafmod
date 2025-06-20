@@ -59,6 +59,12 @@
         "0": "afthou_bedroomfloor1"
       },
       "name": "blue"
+    },
+    "arcade2": {
+      "map": {
+        "0": "carpet_arcadefloor2"
+      },
+      "name": "arcade2"
     }
   }
 }

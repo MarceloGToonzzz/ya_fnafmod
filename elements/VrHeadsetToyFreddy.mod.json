@@ -1,0 +1,67 @@
+{
+  "_fv": 73,
+  "_type": "animatedarmor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "vrheadset_tfreddy",
+    "enableBody": false,
+    "textureBody": "icon_freddyfazbear",
+    "enableLeggings": false,
+    "textureLeggings": "icon_freddyfazbear",
+    "enableBoots": false,
+    "textureBoots": "",
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:YaFNAFModItems"
+      }
+    ],
+    "armorTextureFile": "vrheadset_toyfreddy.png",
+    "model": "vrheadset_toyfreddy.geo.json",
+    "idle": "animation.model.new",
+    "head": "armorHead",
+    "chest": "armorBody",
+    "rightArm": "armorRightArm",
+    "leftArm": "armorLeftArm",
+    "rightLeg": "armorRightLeg",
+    "leftLeg": "armorLeftLeg",
+    "rightBoot": "armorRightBoot",
+    "leftBoot": "armorLeftBoot",
+    "helmetName": "Toy Freddy VR Headset",
+    "bodyName": "Nostalgic Freddy Suit Chestplate",
+    "leggingsName": "Nostalgic Freddy Suit Leggings",
+    "bootsName": "Springbonnie Suit Armor Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [
+      "§bIt looks like it was found in a cave.. man."
+    ],
+    "leggingsSpecialInfo": [
+      "§bIt looks like it was found in a cave.. man."
+    ],
+    "bootsSpecialInfo": [],
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "fullyEquipped": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

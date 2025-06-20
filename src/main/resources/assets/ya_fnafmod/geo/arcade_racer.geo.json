@@ -1,0 +1,47 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.arcade_racer",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{"origin": [-8, 0, 1], "size": [16, 3, 23], "uv": [0, 53]},
+						{"origin": [-8, 10, 1], "size": [16, 5, 7], "uv": [0, 79]},
+						{"origin": [-1, 13, -2], "size": [2, 2, 3], "uv": [106, 102]},
+						{"origin": [-6, 11, -1], "size": [12, 6, 0], "uv": [46, 79]},
+						{"origin": [2, 3, 3], "size": [5, 7, 5], "uv": [0, 101]},
+						{"origin": [-8, 0, 6], "size": [10, 7, 0], "pivot": [-5.5, 3.5, 8.5], "rotation": [-40, 0, 0], "uv": [86, 102]},
+						{"origin": [-8, 3, 8], "size": [16, 37, 16], "uv": [0, 0]},
+						{"origin": [-8, 28, 3], "size": [16, 12, 5], "uv": [78, 69]},
+						{"origin": [-7, 40, 3], "size": [14, 5, 5], "uv": [0, 91]},
+						{"origin": [-8, 40, 8], "size": [16, 5, 14], "uv": [78, 50]}
+					]
+				},
+				{
+					"name": "chair",
+					"parent": "bone",
+					"pivot": [7.5, 10, -22],
+					"cubes": [
+						{"origin": [-5.5, 2, -24], "size": [11, 5, 20], "uv": [64, 25]},
+						{"origin": [-5.5, 9, -17], "size": [11, 7, 2], "uv": [38, 99]},
+						{"origin": [-4.5, 16, -17], "size": [9, 9, 2], "uv": [64, 99]},
+						{"origin": [-2.5, 25, -17], "size": [5, 4, 2], "uv": [20, 101]},
+						{"origin": [-5.5, 7, -17], "size": [11, 2, 11], "uv": [46, 86]},
+						{"origin": [-5.5, 0, -22], "size": [11, 2, 23], "uv": [64, 0]},
+						{"origin": [-5.5, 9, -15], "size": [11, 7, 9], "uv": [90, 86]}
+					]
+				}
+			]
+		}
+	]
+}

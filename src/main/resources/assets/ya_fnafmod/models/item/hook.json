@@ -1,0 +1,7 @@
+{
+  "parent": "ya_fnafmod:custom/hook",
+  "textures": {
+    "1": "ya_fnafmod:block/hook",
+    "particle": "ya_fnafmod:item/icon_foxypirate"
+  }
+}

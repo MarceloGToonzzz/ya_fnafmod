@@ -3,13 +3,13 @@
   "_type": "animatedarmor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "icon_foxypirate",
+    "textureHelmet": "armoricon_mnaffoxy_head",
     "enableBody": true,
-    "textureBody": "icon_foxypirate",
+    "textureBody": "armoricon_mnaffoxy_chestplate",
     "enableLeggings": true,
-    "textureLeggings": "icon_foxypirate",
+    "textureLeggings": "armoricon_mnaffoxy_legs",
     "enableBoots": true,
-    "textureBoots": "icon_foxypirate",
+    "textureBoots": "armoricon_mnaffoxy_boots",
     "creativeTabs": [
       {
         "value": "CUSTOM:YaFNAFModItems"

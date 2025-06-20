@@ -161,9 +161,6 @@
     "onDestroyedByPlayer": {
       "name": "MusicBoxBlockDestroyedByPlayer"
     },
-    "onDestroyedByExplosion": {
-      "name": "MusicBoxBlockDestroyedByPlayer"
-    },
     "onStartToDestroy": {
       "name": "MusicBoxBlockDestroyedByPlayer"
     },

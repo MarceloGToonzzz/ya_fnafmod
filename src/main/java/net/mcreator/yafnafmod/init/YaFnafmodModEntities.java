@@ -90,6 +90,7 @@ import net.mcreator.yafnafmod.entity.PuppetFreddybearDayEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
 import net.mcreator.yafnafmod.entity.PossumEntity;
+import net.mcreator.yafnafmod.entity.PopgunBulletProjectileEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
@@ -237,8 +238,6 @@ import net.mcreator.yafnafmod.entity.BallPurpleProjectileEntity;
 import net.mcreator.yafnafmod.entity.BallOrangeProjectileEntity;
 import net.mcreator.yafnafmod.entity.BallGreenProjectileEntity;
 import net.mcreator.yafnafmod.entity.BallBlueProjectileEntity;
-import net.mcreator.yafnafmod.entity.BaggieMaggieEntity;
-import net.mcreator.yafnafmod.entity.BaggieMaggieDayEntity;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -343,7 +342,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<MangleEntity>> MANGLE = register("mangle",
 			EntityType.Builder.<MangleEntity>of(MangleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MangleEntity::new)
 
-					.sized(0.95f, 0.85f));
+					.sized(0.95f, 1.5f));
 	public static final RegistryObject<EntityType<MangleDayEntity>> MANGLE_DAY = register("mangle_day",
 			EntityType.Builder.<MangleDayEntity>of(MangleDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MangleDayEntity::new)
 
@@ -375,7 +374,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ToyFoxyEntity>> TOY_FOXY = register("toy_foxy",
 			EntityType.Builder.<ToyFoxyEntity>of(ToyFoxyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyFoxyEntity::new)
 
-					.sized(0.95f, 0.85f));
+					.sized(0.95f, 1.2f));
 	public static final RegistryObject<EntityType<ToyFoxyDayEntity>> TOY_FOXY_DAY = register("toy_foxy_day",
 			EntityType.Builder.<ToyFoxyDayEntity>of(ToyFoxyDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyFoxyDayEntity::new)
 
@@ -812,7 +811,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<ScrapBabyEntity>> SCRAP_BABY = register("scrap_baby",
 			EntityType.Builder.<ScrapBabyEntity>of(ScrapBabyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ScrapBabyEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<OrvilleElephantEntity>> ORVILLE_ELEPHANT = register("orville_elephant",
 			EntityType.Builder.<OrvilleElephantEntity>of(OrvilleElephantEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(OrvilleElephantEntity::new)
 
@@ -824,7 +823,7 @@ public class YaFnafmodModEntities {
 	public static final RegistryObject<EntityType<LeftyEntity>> LEFTY = register("lefty",
 			EntityType.Builder.<LeftyEntity>of(LeftyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(LeftyEntity::new)
 
-					.sized(0.6f, 0.85f));
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<LeftyDayEntity>> LEFTY_DAY = register("lefty_day",
 			EntityType.Builder.<LeftyDayEntity>of(LeftyDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(LeftyDayEntity::new)
 
@@ -976,14 +975,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<IgnitedChicaDayEntity>of(IgnitedChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(IgnitedChicaDayEntity::new)
 
 					.sized(0.6f, 0.9375f));
-	public static final RegistryObject<EntityType<BaggieMaggieEntity>> BAGGIE_MAGGIE = register("baggie_maggie",
-			EntityType.Builder.<BaggieMaggieEntity>of(BaggieMaggieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BaggieMaggieEntity::new)
-
-					.sized(0.6f, 0.875f));
-	public static final RegistryObject<EntityType<BaggieMaggieDayEntity>> BAGGIE_MAGGIE_DAY = register("baggie_maggie_day",
-			EntityType.Builder.<BaggieMaggieDayEntity>of(BaggieMaggieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BaggieMaggieDayEntity::new)
-
-					.sized(0.6f, 0.875f));
 	public static final RegistryObject<EntityType<PidgeonEntity>> PIDGEON = register("pidgeon",
 			EntityType.Builder.<PidgeonEntity>of(PidgeonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PidgeonEntity::new)
 
@@ -1125,6 +1116,8 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<SpringlockEllaSuitEntity>of(SpringlockEllaSuitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringlockEllaSuitEntity::new)
 
 					.sized(0.6f, 1.6f));
+	public static final RegistryObject<EntityType<PopgunBulletProjectileEntity>> POPGUN_BULLET_PROJECTILE = register("popgun_bullet_projectile", EntityType.Builder.<PopgunBulletProjectileEntity>of(PopgunBulletProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(PopgunBulletProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1317,8 +1310,6 @@ public class YaFnafmodModEntities {
 			WitheredDougDogDayEntity.init();
 			IgnitedChicaEntity.init();
 			IgnitedChicaDayEntity.init();
-			BaggieMaggieEntity.init();
-			BaggieMaggieDayEntity.init();
 			PidgeonEntity.init();
 			CrowEntity.init();
 			PossumEntity.init();
@@ -1537,8 +1528,6 @@ public class YaFnafmodModEntities {
 		event.put(WITHERED_DOUG_DOG_DAY.get(), WitheredDougDogDayEntity.createAttributes().build());
 		event.put(IGNITED_CHICA.get(), IgnitedChicaEntity.createAttributes().build());
 		event.put(IGNITED_CHICA_DAY.get(), IgnitedChicaDayEntity.createAttributes().build());
-		event.put(BAGGIE_MAGGIE.get(), BaggieMaggieEntity.createAttributes().build());
-		event.put(BAGGIE_MAGGIE_DAY.get(), BaggieMaggieDayEntity.createAttributes().build());
 		event.put(PIDGEON.get(), PidgeonEntity.createAttributes().build());
 		event.put(CROW.get(), CrowEntity.createAttributes().build());
 		event.put(POSSUM.get(), PossumEntity.createAttributes().build());

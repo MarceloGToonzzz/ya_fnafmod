@@ -53,53 +53,52 @@ public class GetNewTargetProcedure {
 								stop = true;
 							}
 						}
-						if (new Object() {
-							public boolean checkGamemode(Entity _ent) {
-								if (_ent instanceof ServerPlayer _serverPlayer) {
-									return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-								} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-									return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-								}
-								return false;
-							}
-						}.checkGamemode(entity) || new Object() {
-							public boolean checkGamemode(Entity _ent) {
-								if (_ent instanceof ServerPlayer _serverPlayer) {
-									return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.ADVENTURE;
-								} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-									return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.ADVENTURE;
-								}
-								return false;
-							}
-						}.checkGamemode(entity)) {
-							stop = true;
-						}
 						if (entity instanceof PuppetEntity) {
-							if ((entity instanceof PuppetEntity _datEntL28 && _datEntL28.getEntityData().get(PuppetEntity.DATA_busy)) == true) {
+							if ((entity instanceof PuppetEntity _datEntL26 && _datEntL26.getEntityData().get(PuppetEntity.DATA_busy)) == true) {
 								stop = true;
 							}
 						}
 						if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers"))) && IsTargetWearingMaskProcedure.execute(entityiterator)
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
-										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip39
-												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip39)
+										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip37
+												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip37)
 												: -1) == 0
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
 										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock().getStateDefinition().getProperty(
-												"blockstate") instanceof IntegerProperty _getip49 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip49) : -1) == 0) {
+												"blockstate") instanceof IntegerProperty _getip47 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip47) : -1) == 0) {
 							stop = true;
 						}
-						if (IsEntityWearingHidingSuitProcedure.execute(entityiterator) == true) {
+						if (IsEntityWearingHidingSuitProcedure.execute(entityiterator) == true && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:springlock_exceptions")))) {
 							stop = true;
 						}
 						if (!(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight(entityiterator) : false)) {
 							stop = true;
 						}
 						if (stop == false) {
-							if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
-								_entity.setTarget(_ent);
+							if (!(new Object() {
+								public boolean checkGamemode(Entity _ent) {
+									if (_ent instanceof ServerPlayer _serverPlayer) {
+										return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+									} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+										return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+												&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+									}
+									return false;
+								}
+							}.checkGamemode(entityiterator)) && !(new Object() {
+								public boolean checkGamemode(Entity _ent) {
+									if (_ent instanceof ServerPlayer _serverPlayer) {
+										return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+									} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+										return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+												&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+									}
+									return false;
+								}
+							}.checkGamemode(entityiterator))) {
+								if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
+									_entity.setTarget(_ent);
+							}
 						}
 					}
 				}
@@ -110,8 +109,27 @@ public class GetNewTargetProcedure {
 			entity.getPersistentData().putDouble("target_x", (entity.getX()));
 			entity.getPersistentData().putDouble("target_y", (entity.getY()));
 			entity.getPersistentData().putDouble("target_z", (entity.getZ()));
-			if (((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player _plr ? _plr.getAbilities().instabuild : false)
-					|| !(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : false)
+			if (new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+					}
+					return false;
+				}
+			}.checkGamemode((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) || new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayer _serverPlayer) {
+						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SPECTATOR;
+					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SPECTATOR;
+					}
+					return false;
+				}
+			}.checkGamemode((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) || !(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : false)
 					|| ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 16
 					|| !(entity instanceof LivingEntity _liveEnt && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null
 							? _liveEnt.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null))

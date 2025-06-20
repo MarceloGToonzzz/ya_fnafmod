@@ -10,6 +10,7 @@ import net.minecraft.world.item.ItemStack;
 
 import net.mcreator.yafnafmod.item.ShotgunItem;
 import net.mcreator.yafnafmod.item.RatItemItem;
+import net.mcreator.yafnafmod.item.PopgunRevolverItem;
 import net.mcreator.yafnafmod.item.MegaphoneItem;
 
 @Mod.EventBusSubscriber
@@ -71,6 +72,24 @@ public class ItemAnimationFactory {
 					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
 						((ShotgunItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (mainhandItem.getItem() instanceof PopgunRevolverItem animatable) {
+				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((PopgunRevolverItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+					}
+				}
+			}
+			if (offhandItem.getItem() instanceof PopgunRevolverItem animatable) {
+				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				if (!animation.isEmpty()) {
+					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
+					if (event.player.level().isClientSide()) {
+						((PopgunRevolverItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}

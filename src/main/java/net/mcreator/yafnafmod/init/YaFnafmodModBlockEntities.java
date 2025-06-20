@@ -32,9 +32,13 @@ import net.mcreator.yafnafmod.block.entity.TrashCanBonnieTileEntity;
 import net.mcreator.yafnafmod.block.entity.TrashBagGreenTileEntity;
 import net.mcreator.yafnafmod.block.entity.TrashBagBlackTileEntity;
 import net.mcreator.yafnafmod.block.entity.ToypugTileEntity;
+import net.mcreator.yafnafmod.block.entity.ToyFreddyHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.ToyFreddyBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.ToyFoxyHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.ToyFoxyBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.ToyChicaHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.ToyChicaChickenBlockTileEntity;
+import net.mcreator.yafnafmod.block.entity.ToyBonnieHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.ToyBonnieBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.StarArchTileEntity;
 import net.mcreator.yafnafmod.block.entity.StageSunCreepTileEntity;
@@ -256,6 +260,7 @@ import net.mcreator.yafnafmod.block.entity.CutoutFreddyFuntimeTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFredbearTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFredbearIcecreamTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFredbearBittenTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutFoxyToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFoxyRetroTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFoxyFuntimeTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFazvanTileEntity;
@@ -374,8 +379,9 @@ import net.mcreator.yafnafmod.block.entity.BalloraBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BalloonCartTileEntity;
 import net.mcreator.yafnafmod.block.entity.BalloonBoyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BalloonBarrelTileEntity;
-import net.mcreator.yafnafmod.block.entity.BaggieMaggieBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ArcadeTicketMuncherCupcakeTileEntity;
+import net.mcreator.yafnafmod.block.entity.ArcadeRacingPinkTileEntity;
+import net.mcreator.yafnafmod.block.entity.ArcadeRacingBlueTileEntity;
 import net.mcreator.yafnafmod.block.entity.ArcadeMidnightMotoristTileEntity;
 import net.mcreator.yafnafmod.block.entity.ArcadeLilHoopsTileEntity;
 import net.mcreator.yafnafmod.block.entity.ArcadeFruityMazeTileEntity;
@@ -923,8 +929,6 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<JjBlockTileEntity>> JJ_BLOCK = REGISTRY.register("jj_block", () -> BlockEntityType.Builder.of(JjBlockTileEntity::new, YaFnafmodModBlocks.JJ_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<IgnitedChicaBlockTileEntity>> IGNITED_CHICA_BLOCK = REGISTRY.register("ignited_chica_block",
 			() -> BlockEntityType.Builder.of(IgnitedChicaBlockTileEntity::new, YaFnafmodModBlocks.IGNITED_CHICA_BLOCK.get()).build(null));
-	public static final RegistryObject<BlockEntityType<BaggieMaggieBlockTileEntity>> BAGGIE_MAGGIE_BLOCK = REGISTRY.register("baggie_maggie_block",
-			() -> BlockEntityType.Builder.of(BaggieMaggieBlockTileEntity::new, YaFnafmodModBlocks.BAGGIE_MAGGIE_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigBackstageDoorBlackTileEntity>> BIG_BACKSTAGE_DOOR_BLACK = REGISTRY.register("big_backstage_door_black",
 			() -> BlockEntityType.Builder.of(BigBackstageDoorBlackTileEntity::new, YaFnafmodModBlocks.BIG_BACKSTAGE_DOOR_BLACK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigBackstageDoorBlack2TileEntity>> BIG_BACKSTAGE_DOOR_BLACK_2 = REGISTRY.register("big_backstage_door_black_2",
@@ -1016,6 +1020,18 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(MusicBoxPurpleDecorationTileEntity::new, YaFnafmodModBlocks.MUSIC_BOX_PURPLE_DECORATION.get()).build(null));
 	public static final RegistryObject<BlockEntityType<WideFanTileEntity>> WIDE_FAN = REGISTRY.register("wide_fan", () -> BlockEntityType.Builder.of(WideFanTileEntity::new, YaFnafmodModBlocks.WIDE_FAN.get()).build(null));
 	public static final RegistryObject<BlockEntityType<SecurityGateTileEntity>> SECURITY_GATE = REGISTRY.register("security_gate", () -> BlockEntityType.Builder.of(SecurityGateTileEntity::new, YaFnafmodModBlocks.SECURITY_GATE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ArcadeRacingPinkTileEntity>> ARCADE_RACING_PINK = REGISTRY.register("arcade_racing_pink",
+			() -> BlockEntityType.Builder.of(ArcadeRacingPinkTileEntity::new, YaFnafmodModBlocks.ARCADE_RACING_PINK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ArcadeRacingBlueTileEntity>> ARCADE_RACING_BLUE = REGISTRY.register("arcade_racing_blue",
+			() -> BlockEntityType.Builder.of(ArcadeRacingBlueTileEntity::new, YaFnafmodModBlocks.ARCADE_RACING_BLUE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ToyFreddyHeadTileEntity>> TOY_FREDDY_HEAD = REGISTRY.register("toy_freddy_head",
+			() -> BlockEntityType.Builder.of(ToyFreddyHeadTileEntity::new, YaFnafmodModBlocks.TOY_FREDDY_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ToyBonnieHeadTileEntity>> TOY_BONNIE_HEAD = REGISTRY.register("toy_bonnie_head",
+			() -> BlockEntityType.Builder.of(ToyBonnieHeadTileEntity::new, YaFnafmodModBlocks.TOY_BONNIE_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ToyChicaHeadTileEntity>> TOY_CHICA_HEAD = REGISTRY.register("toy_chica_head", () -> BlockEntityType.Builder.of(ToyChicaHeadTileEntity::new, YaFnafmodModBlocks.TOY_CHICA_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<ToyFoxyHeadTileEntity>> TOY_FOXY_HEAD = REGISTRY.register("toy_foxy_head", () -> BlockEntityType.Builder.of(ToyFoxyHeadTileEntity::new, YaFnafmodModBlocks.TOY_FOXY_HEAD.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutFoxyToyTileEntity>> CUTOUT_FOXY_TOY = REGISTRY.register("cutout_foxy_toy",
+			() -> BlockEntityType.Builder.of(CutoutFoxyToyTileEntity::new, YaFnafmodModBlocks.CUTOUT_FOXY_TOY.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

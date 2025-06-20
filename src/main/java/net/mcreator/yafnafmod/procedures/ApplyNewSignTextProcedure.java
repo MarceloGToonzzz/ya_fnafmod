@@ -32,15 +32,15 @@ public class ApplyNewSignTextProcedure {
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"kill @e[type=minecraft:text_display,distance=..2]");
-		text1 = TEXT1;
-		text2 = TEXT2;
-		font = FONT;
+		text1 = (TEXT1.replace("\"", "")).replace("'", "");
+		text2 = (TEXT2.replace("\"", "")).replace("'", "");
+		font = (FONT.replace("\"", "")).replace("'", "");
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("text1", TEXT1);
+				_blockEntity.getPersistentData().putString("text1", ((TEXT1.replace("\"", "")).replace("'", "")));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -49,7 +49,7 @@ public class ApplyNewSignTextProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("text2", TEXT2);
+				_blockEntity.getPersistentData().putString("text2", ((TEXT2.replace("\"", "")).replace("'", "")));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -58,7 +58,7 @@ public class ApplyNewSignTextProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("color", COLOR);
+				_blockEntity.getPersistentData().putString("color", ((COLOR).toLowerCase().replace("#", "")));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

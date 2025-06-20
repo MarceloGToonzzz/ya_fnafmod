@@ -64,7 +64,7 @@ public class CustomPizzeriaSignGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ApplyNewSignTextButtonProcedure.execute(world, x, y, z, guistate);
+			ApplyNewSignTextButtonProcedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 

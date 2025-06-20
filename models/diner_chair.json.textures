@@ -209,6 +209,12 @@
         "7": "dinerchair_blackclean"
       },
       "name": "blackclean"
+    },
+    "yellow": {
+      "map": {
+        "7": "dinerchair_yellow"
+      },
+      "name": "yellow"
     }
   }
 }

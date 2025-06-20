@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fireextinguisher_wall"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -132,6 +132,16 @@ public class MusicBoxOnTickUpdateProcedure {
 					if (_bs.getBlock().getStateDefinition().getProperty("playing") instanceof BooleanProperty _booleanProp)
 						world.setBlock(_pos, _bs.setValue(_booleanProp, false), 3);
 				}
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator instanceof PuppetEntity) {
+							if (entityiterator instanceof PuppetEntity _datEntSetL)
+								_datEntSetL.getEntityData().set(PuppetEntity.DATA_busy, false);
+						}
+					}
+				}
 			} else {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);
@@ -139,7 +149,7 @@ public class MusicBoxOnTickUpdateProcedure {
 					if (_bs.getBlock().getStateDefinition().getProperty("playing") instanceof BooleanProperty _booleanProp)
 						world.setBlock(_pos, _bs.setValue(_booleanProp, true), 3);
 				}
-				if ((blockstate.getBlock().getStateDefinition().getProperty("winding") instanceof IntegerProperty _getip26 ? blockstate.getValue(_getip26) : -1) == 60) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("winding") instanceof IntegerProperty _getip29 ? blockstate.getValue(_getip29) : -1) == 60) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"stopsound @a[distance=..32] * ya_fnafmod:musicbox_song");
@@ -160,7 +170,7 @@ public class MusicBoxOnTickUpdateProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof PuppetEntity) {
-							if (new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()))) > 2) {
+							if (new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()))) >= 4) {
 								if (entityiterator instanceof Mob _entity)
 									_entity.getNavigation().moveTo(x, y, z, 1);
 							} else {
@@ -168,7 +178,7 @@ public class MusicBoxOnTickUpdateProcedure {
 								if (entityiterator instanceof Mob _entity)
 									_entity.getNavigation().stop();
 							}
-							if (new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()))) > 32) {
+							if (new Vec3(x, y, z).distanceTo(new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()))) <= 32) {
 								if (entityiterator instanceof PuppetEntity _datEntSetL)
 									_datEntSetL.getEntityData().set(PuppetEntity.DATA_busy, true);
 							} else {
