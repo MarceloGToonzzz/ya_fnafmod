@@ -36,7 +36,7 @@ public class Fazcoins5Block extends BaseEntityBlock implements EntityBlock {
 	public Fazcoins5Block() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.METAL).strength(1f, 10f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

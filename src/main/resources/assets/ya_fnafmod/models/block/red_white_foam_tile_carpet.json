@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/carpet",
+  "textures": {
+    "all": "ya_fnafmod:block/foamtiles_redwhite",
+    "particle": "ya_fnafmod:block/foamtiles_redwhite",
+    "0": "ya_fnafmod:block/foamtiles_redwhite"
+  },
+  "render_type": "cutout_mipped"
+}

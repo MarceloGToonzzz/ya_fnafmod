@@ -22,17 +22,7 @@
     "connectedSides": false,
     "transparencyType": "CUTOUT_MIPPED",
     "disableOffset": false,
-    "boundingBoxes": [
-      {
-        "mx": 0.01,
-        "my": 0.0,
-        "mz": 0.01,
-        "Mx": 15.99,
-        "My": 16.0,
-        "Mz": 15.99,
-        "subtract": false
-      }
-    ],
+    "boundingBoxes": [],
     "customProperties": [],
     "name": "Chainlink Block",
     "specialInformation": {

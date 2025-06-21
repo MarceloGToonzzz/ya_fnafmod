@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/foamtiles_redblue",
+    "particle": "ya_fnafmod:block/foamtiles_redblue"
+  },
+  "render_type": "solid"
+}

@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:green_lime_foam_tile_slab",
+    "ya_fnafmod:green_white_foam_tile_slab",
+    "ya_fnafmod:black_green_foam_tile_slab",
+    "ya_fnafmod:red_blue_foam_tile_slab",
+    "ya_fnafmod:blue_white_foam_tile_slab",
+    "ya_fnafmod:black_blue_foam_tile_slab",
+    "ya_fnafmod:red_white_foam_tile_slab",
+    "ya_fnafmod:black_red_foam_tile_slab",
+    "ya_fnafmod:black_white_foam_tile_slab",
     "ya_fnafmod:carpeted_floor_arcade_2_slab",
     "ya_fnafmod:catalog_big_checkered_tile_slab",
     "ya_fnafmod:catalog_checkered_tile_slab",
