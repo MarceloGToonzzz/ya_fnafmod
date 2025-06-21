@@ -1,6 +1,7 @@
 package net.mcreator.yafnafmod.configuration;
 
 import net.minecraftforge.common.ForgeConfigSpec;
+import org.apache.commons.lang3.tuple.Pair;
 
 public class YafnafmodConfigConfiguration {
 	public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
@@ -24,6 +25,12 @@ public class YafnafmodConfigConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<String> POSSIBLE_LASTNAMES_EUROPE;
 
 	public static final ForgeConfigSpec.ConfigValue<Double> AUDIOLURE_BREAKCHANCE;
+	public final ForgeConfigSpec.BooleanValue customMainMenu;
+
+	public YafnafmodConfigConfiguration(final ForgeConfigSpec.Builder builder) {
+		builder.push("general");
+		this.customMainMenu = buildBoolean(builder, "Custom main menu", "all", true, null);
+	}
 	static {
 		BUILDER.push("Entities");
 		BUILDER.push("Humans");
@@ -78,6 +85,18 @@ public class YafnafmodConfigConfiguration {
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();
+	}
+
+	private static ForgeConfigSpec.BooleanValue buildBoolean(ForgeConfigSpec.Builder builder, String name, String catagory, boolean defaultValue, String comment){
+		return builder.comment(comment).translation(name).define(name, defaultValue);
+	}
+
+	private static ForgeConfigSpec.IntValue buildInt(ForgeConfigSpec.Builder builder, String name, String catagory, int defaultValue, int min, int max, String comment){
+		return builder.comment(comment).translation(name).defineInRange(name, defaultValue, min, max);
+	}
+
+	private static ForgeConfigSpec.DoubleValue buildDouble(ForgeConfigSpec.Builder builder, String name, String catagory, double defaultValue, double min, double max, String comment){
+		return builder.comment(comment).translation(name).defineInRange(name, defaultValue, min, max);
 	}
 
 }
