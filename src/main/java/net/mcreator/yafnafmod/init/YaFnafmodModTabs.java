@@ -2179,6 +2179,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BB_FIGURINE.get().asItem());
 				tabData.accept(YaFnafmodModItems.SPRINGLOCK_ELLA_SUIT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SHADOW_FREDDY_SUIT_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModBlocks.STAGE_LIGHT_BULB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.STAGE_LIGHT_BULB_BROKEN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_FALLFEST.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_MATPAT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_BARRY_POLAR.get().asItem());
@@ -2291,8 +2293,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.STAGE_LIGHT_BULB.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.STAGE_LIGHT_BULB_BROKEN.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
