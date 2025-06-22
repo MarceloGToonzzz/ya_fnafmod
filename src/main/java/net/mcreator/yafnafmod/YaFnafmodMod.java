@@ -1,5 +1,13 @@
 package net.mcreator.yafnafmod;
 
+import net.mcreator.yafnafmod.client.screens.TitleTestOverlay;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.TitleScreen;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.ScreenEvent;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.config.ModConfigEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -91,5 +99,44 @@ public class YaFnafmodMod {
 			actions.forEach(e -> e.getKey().run());
 			workQueue.removeAll(actions);
 		}
+	}
+	@Mod.EventBusSubscriber(modid = YaFnafmodMod.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE)
+
+	public static class ClientModEvents {
+
+		public static boolean customMainMenu = true;
+
+		@SubscribeEvent
+		public static void onClientSetup(FMLClientSetupEvent event) {
+			// Some client setup code
+			LOGGER.info("HELLO FROM CLIENT SETUP");
+			LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+		}
+		@SubscribeEvent
+		public static void onModConfigEvent(final ModConfigEvent.Loading event) {
+			final ModConfig config = event.getConfig();
+			if (config.getSpec() == Config.CLIENT_SPEC) {
+				ClientModEvents.bakeClient(config);
+			}
+		}
+
+
+		@SubscribeEvent
+		public static void onGuiOpened(ScreenEvent.Opening event) {
+			if (customMainMenu && event.getScreen() instanceof TitleScreen && !(event.getScreen() instanceof TitleTestOverlay)) {
+				System.out.println("Replacing TitleScreen with TitleTestOverlay");
+				event.setNewScreen(new TitleTestOverlay());
+			}
+		}
+
+		public static void bakeClient(final ModConfig config) {
+			try {
+				customMainMenu = Config.CLIENT.customMainMenu.get();
+			} catch (Exception e) {
+				LOGGER.warn("An exception was caused trying to load the client config for YET ANOTHER FNAF MOD.");
+				e.printStackTrace();
+			}
+		}
+
 	}
 }
