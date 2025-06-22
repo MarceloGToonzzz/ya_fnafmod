@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "lightbulb_stage-off"
+      },
+      "name": "default"
+    },
+    "broke": {
+      "map": {
+        "0": "lightbulb_stage-broken"
+      },
+      "name": "broke"
+    },
+    "on": {
+      "map": {
+        "0": "lightbulb_stage-on"
+      },
+      "name": "on"
+    }
+  }
+}

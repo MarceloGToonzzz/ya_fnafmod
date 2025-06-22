@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/lightbulb_stage",
+  "textures": {
+    "all": "ya_fnafmod:block/lightbulb_stage-off",
+    "particle": "ya_fnafmod:block/lightbulb_stage-off",
+    "0": "ya_fnafmod:block/lightbulb_stage-broken"
+  },
+  "render_type": "cutout_mipped"
+}

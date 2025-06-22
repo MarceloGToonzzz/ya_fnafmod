@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "ya_fnafmod:block/floortile_greenfaded",
+    "bottom": "ya_fnafmod:block/floortile_greenfaded",
+    "top": "ya_fnafmod:block/floortile_greenfaded",
+    "side": "ya_fnafmod:block/floortile_greenfaded"
+  },
+  "render_type": "solid"
+}

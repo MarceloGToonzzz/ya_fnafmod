@@ -37,7 +37,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 import org.apache.commons.lang3.tuple.Pair;
 import org.jetbrains.annotations.NotNull;
-import org.mintyyy.fnafmod.client.screens.component.FnafModButton;
+import net.mcreator.yafnafmod.client.screens.component.FnafModButton;
 
 import java.util.ArrayList;
 import java.util.List;

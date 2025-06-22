@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "ya_fnafmod:block/stage_light_bulb"
+    },
+    "blockstate=1": {
+      "model": "ya_fnafmod:block/stage_light_bulb_states_blockstate_0"
+    }
+  }
+}

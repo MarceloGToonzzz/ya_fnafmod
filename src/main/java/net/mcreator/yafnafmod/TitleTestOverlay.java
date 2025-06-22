@@ -12,7 +12,7 @@
  *
  * This class will be added in the mod root package.
 */
-package net.mcreator.yafnafmod.client.screens;
+package net.mcreator.yafnafmod.screens;
 
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
