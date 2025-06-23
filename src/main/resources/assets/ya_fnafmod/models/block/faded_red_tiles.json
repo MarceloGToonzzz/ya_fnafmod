@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "ya_fnafmod:block/floortile_redfaded",
-    "particle": "ya_fnafmod:block/floortile_redfaded"
-  },
-  "render_type": "solid"
-}

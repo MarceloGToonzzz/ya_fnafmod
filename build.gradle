@@ -1,6 +1,7 @@
 plugins {
     id 'eclipse'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
+    id 'com.gradleup.shadow' version '8.3.0'
 }
 
 version = '1.0'
@@ -42,8 +43,14 @@ minecraft {
     }
 }
 
+configurations {
+    shade
+    implementation.extendsFrom shade
+}
+
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
+    // shade 'com.example:example-thing:1.0.0'
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -52,3 +59,18 @@ tasks.withType(JavaCompile).configureEach {
 
 apply from: 'mcreator.gradle'
 
+jar {
+    archiveClassifier = 'slim'
+}
+
+shadowJar {
+    archiveClassifier = ''
+    configurations = [project.configurations.shade]
+    finalizedBy 'reobfShadowJar'
+}
+
+assemble.dependsOn shadowJar
+
+reobf {
+    shadowJar {}
+}

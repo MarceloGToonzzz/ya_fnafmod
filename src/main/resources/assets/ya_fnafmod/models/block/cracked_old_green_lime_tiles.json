@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "ya_fnafmod:block/floortile_greenlime_oldcracked",
-    "particle": "ya_fnafmod:block/floortile_greenlime_oldcracked"
-  },
-  "render_type": "solid"
-}
