@@ -143,7 +143,7 @@ public class SparkyDogBlockTileEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Sparky The Dog");
+		return Component.literal("Bub The Dog");
 	}
 
 	@Override

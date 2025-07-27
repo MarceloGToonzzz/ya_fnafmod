@@ -135,11 +135,29 @@ public class GetNewTargetProcedure {
 				}
 			}.checkGamemode((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null))
 					|| !(entity instanceof LivingEntity _entity ? _entity.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : false) && !(entity instanceof PuppetEntity)
-					|| ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 16
+					|| ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 24
 					|| !(entity instanceof LivingEntity _liveEnt && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null
 							? _liveEnt.hasLineOfSight((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null))
 							: false)
-					|| IsEntityWearingHidingSuitProcedure.execute(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == true) {
+					|| IsEntityWearingHidingSuitProcedure.execute(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == true
+					|| (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers"))) && IsTargetWearingMaskProcedure.execute(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)
+							|| (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(),
+									(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
+									&& ((world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(),
+											(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip95
+													? (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(),
+															(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getValue(_getip95)
+													: -1) == 0
+							|| (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1,
+									(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
+									&& ((world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1,
+											(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip111
+													? (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(),
+															(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1, (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getValue(_getip111)
+													: -1) == 0
+							|| IsEntityWearingHidingSuitProcedure.execute(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == true
+									&& !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:springlock_exceptions"))))
+							&& ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 24) {
 				if (entity instanceof Mob) {
 					try {
 						((Mob) entity).setTarget(null);

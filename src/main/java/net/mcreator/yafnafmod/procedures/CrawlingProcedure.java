@@ -37,7 +37,6 @@ import net.mcreator.yafnafmod.entity.ElectrobabEntity;
 import net.mcreator.yafnafmod.entity.BidybabEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 
-import java.util.List;
 import java.util.Comparator;
 
 public class CrawlingProcedure {
@@ -45,6 +44,7 @@ public class CrawlingProcedure {
 		if (entity == null)
 			return;
 		boolean can_laugh = false;
+		boolean theresnear = false;
 		if (world.getBlockState(BlockPos.containing(x, y + 1, z)).canOcclude() || (!((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.AIR)
 				|| (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.VENT_SHAFT.get() || (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.SECURITY_VENT.get())
 				&& !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.DOORFRAME_DARK.get()) && !((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == YaFnafmodModBlocks.DOORFRAME_LIGHT.get())) {
@@ -295,51 +295,6 @@ public class CrawlingProcedure {
 			if (entity instanceof Player _player) {
 				_player.getAbilities().invulnerable = false;
 				_player.onUpdateAbilities();
-			}
-		}
-		if (entity instanceof BalloonBoyEntity || entity instanceof JJEntity) {
-			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 8, 8, 8), e -> true).isEmpty()) {
-				{
-					final Vec3 _center = new Vec3(x, y, z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
-					for (Entity entityiterator : _entfound) {
-						if (entityiterator instanceof Player) {
-							if (new Object() {
-								public boolean checkGamemode(Entity _ent) {
-									if (_ent instanceof ServerPlayer _serverPlayer) {
-										return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-									} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-										return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-												&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
-									}
-									return false;
-								}
-							}.checkGamemode(entityiterator) || new Object() {
-								public boolean checkGamemode(Entity _ent) {
-									if (_ent instanceof ServerPlayer _serverPlayer) {
-										return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.ADVENTURE;
-									} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-										return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-												&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.ADVENTURE;
-									}
-									return false;
-								}
-							}.checkGamemode(entityiterator)) {
-								if (entityiterator.getPersistentData().getBoolean("hiding_mask") == true) {
-									can_laugh = true;
-								}
-							}
-						}
-					}
-				}
-				if (can_laugh == true) {
-					BBLaughLureProcedure.execute(world, x, y, z, entity);
-				}
-			} else {
-				if (entity instanceof BalloonBoyEntity _datEntSetL)
-					_datEntSetL.getEntityData().set(BalloonBoyEntity.DATA_laughing, false);
-				if (entity instanceof JJEntity _datEntSetL)
-					_datEntSetL.getEntityData().set(JJEntity.DATA_laughing, false);
 			}
 		}
 	}

@@ -37,12 +37,12 @@ public class AudioLureRedstoneOnProcedure {
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:audio_lovers")))) {
 						if (entityiterator instanceof Mob _entity)
-							_entity.getNavigation().moveTo(x, y, z, 1.25);
+							_entity.getNavigation().moveTo(x, y, z, 1.125);
 					} else if (entityiterator instanceof PhantomBalloonBoyEntity) {
 						chance = Mth.nextInt(RandomSource.create(), 1, 2);
 						if (chance == 2) {
 							if (entityiterator instanceof Mob _entity)
-								_entity.getNavigation().moveTo(x, y, z, 1.5);
+								_entity.getNavigation().moveTo(x, y, z, 1.25);
 						}
 					}
 				}

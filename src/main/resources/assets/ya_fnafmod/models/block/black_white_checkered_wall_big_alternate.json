@@ -4,7 +4,7 @@
     "bottom": "ya_fnafmod:block/wall_dark",
     "top": "ya_fnafmod:block/checktile_blackwhite_big",
     "side": "ya_fnafmod:block/wall_dark",
-    "overlay": "ya_fnafmod:block/checkwall_big_blackwhite_alt",
+    "overlay": "ya_fnafmod:block/checkwall_big_black_blackwhite_alt",
     "particle": "ya_fnafmod:block/wall_dark"
   },
   "render_type": "solid"

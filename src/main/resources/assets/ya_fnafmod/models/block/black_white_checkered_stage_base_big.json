@@ -4,7 +4,7 @@
     "bottom": "ya_fnafmod:block/checktile_blackwhite_big",
     "top": "ya_fnafmod:block/stagebase_wood",
     "side": "ya_fnafmod:block/checktile_blackwhite_big",
-    "overlay": "ya_fnafmod:block/checkwall_big_blackwhite",
+    "overlay": "ya_fnafmod:block/checkwall_big_black_blackwhite",
     "particle": "ya_fnafmod:block/checktile_blackwhite_big"
   },
   "render_type": "solid"

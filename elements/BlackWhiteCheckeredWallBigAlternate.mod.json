@@ -4,7 +4,7 @@
   "definition": {
     "texture": "wall_dark",
     "textureTop": "checktile_blackwhite_big",
-    "textureLeft": "checkwall_big_blackwhite_alt",
+    "textureLeft": "checkwall_big_black_blackwhite_alt",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",

@@ -3,6 +3,7 @@ package net.mcreator.yafnafmod.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.GameType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.entity.Mob;
@@ -10,6 +11,11 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.tags.TagKey;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.yafnafmod.network.YaFnafmodModVariables;
 import net.mcreator.yafnafmod.entity.YenndoEntity;
@@ -26,17 +32,20 @@ import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
 import net.mcreator.yafnafmod.entity.NightmareFoxyEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbEntity;
 import net.mcreator.yafnafmod.entity.MoltenFreddyEntity;
+import net.mcreator.yafnafmod.entity.JJEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
+import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
+
+import java.util.List;
+import java.util.Comparator;
 
 public class NightAnimatronicOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		boolean can_laugh = false;
-		boolean found = false;
 		double chance = 0;
 		double sx = 0;
 		double sy = 0;
@@ -44,6 +53,9 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		String RX = "";
 		String RY = "";
 		String RZ = "";
+		boolean can_laugh = false;
+		boolean found = false;
+		boolean theresnear = false;
 		GetNewTargetProcedure.execute(world, x, y, z, entity);
 		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"));
 		RandomMovementFunctionProcedure.execute(world, x, y, z, entity);
@@ -76,7 +88,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 			}
 		}
 		if (entity instanceof EnnardEntity) {
-			if ((entity instanceof EnnardEntity _datEntL22 && _datEntL22.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
+			if ((entity instanceof EnnardEntity _datEntL23 && _datEntL23.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
 				if (entity instanceof EnnardEntity animatable)
 					animatable.setTexture("ennard_maskless");
 				WalkyTooProcedure.execute(world, x, y, z, entity);
@@ -106,7 +118,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 					entity.setNoGravity(true);
 				}
 			}
-		} else if (entity instanceof GoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof PuppetEntity && (entity instanceof PuppetEntity _datEntL40 && _datEntL40.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
+		} else if (entity instanceof GoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof PuppetEntity && (entity instanceof PuppetEntity _datEntL41 && _datEntL41.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
 			if (!(entity instanceof PuppetEntity)) {
 				if (IsItNighttimeProcedure.execute(world) == true) {
 					if (Mth.nextInt(RandomSource.create(), 1, 18) == Mth.nextInt(RandomSource.create(), 1, 36)) {
@@ -125,11 +137,69 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 				}
 			}
 		}
+		if (entity instanceof BalloonBoyEntity || entity instanceof JJEntity) {
+			theresnear = false;
+			{
+				final Vec3 _center = new Vec3(x, y, z);
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				for (Entity entityiterator : _entfound) {
+					if (entityiterator instanceof Player) {
+						if (new Object() {
+							public boolean checkGamemode(Entity _ent) {
+								if (_ent instanceof ServerPlayer _serverPlayer) {
+									return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
+								} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+									return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+								}
+								return false;
+							}
+						}.checkGamemode(entityiterator) || new Object() {
+							public boolean checkGamemode(Entity _ent) {
+								if (_ent instanceof ServerPlayer _serverPlayer) {
+									return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.ADVENTURE;
+								} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+									return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.ADVENTURE;
+								}
+								return false;
+							}
+						}.checkGamemode(entityiterator)) {
+							if (IsTargetWearingMaskProcedure.execute(entityiterator) == false) {
+								theresnear = true;
+								can_laugh = true;
+							}
+						}
+					}
+				}
+			}
+			if (can_laugh == true) {
+				BBLaughLureProcedure.execute(world, x, y, z, entity);
+				{
+					final Vec3 _center = new Vec3(x, y, z);
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+					for (Entity entityiterator : _entfound) {
+						if (entityiterator.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:animatronics")))) {
+							if (!((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity)) {
+								if (entityiterator instanceof Mob _entity)
+									_entity.getNavigation().moveTo(x, y, z, 1.125);
+							}
+						}
+					}
+				}
+			}
+			if (theresnear == false) {
+				if (entity instanceof BalloonBoyEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(BalloonBoyEntity.DATA_laughing, false);
+				if (entity instanceof JJEntity _datEntSetL)
+					_datEntSetL.getEntityData().set(JJEntity.DATA_laughing, false);
+			}
+		}
 		if (entity instanceof NightmareFreddyEntity) {
 			FreddleCodeProcedure.execute(world, x, y, z, entity);
 		} else if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-			if ((entity instanceof PlushtrapEntity _datEntL53 && _datEntL53.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-					|| (entity instanceof NightmareBbEntity _datEntL54 && _datEntL54.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+			if ((entity instanceof PlushtrapEntity _datEntL71 && _datEntL71.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+					|| (entity instanceof NightmareBbEntity _datEntL72 && _datEntL72.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("animation.plush.sit");
 				}

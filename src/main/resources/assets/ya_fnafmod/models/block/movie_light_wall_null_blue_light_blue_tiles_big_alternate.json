@@ -4,7 +4,7 @@
     "bottom": "ya_fnafmod:block/wall_movielight",
     "top": "ya_fnafmod:block/wall_movielight",
     "side": "ya_fnafmod:block/wall_movielight",
-    "overlay": "ya_fnafmod:block/walltile_big_none_bluelightblue_alt",
+    "overlay": "ya_fnafmod:block/walltile_big_gray_bluelightblue_alt",
     "particle": "ya_fnafmod:block/wall_movielight"
   },
   "render_type": "cutout_mipped"

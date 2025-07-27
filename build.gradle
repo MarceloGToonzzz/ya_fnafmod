@@ -1,8 +1,15 @@
+buildscript {
+    repositories {
+        jcenter() // buildscript repo to get shadow from
+    }
+}
+
 plugins {
     id 'eclipse'
     id 'net.minecraftforge.gradle' version '[6.0.16,6.2)'
     id 'com.gradleup.shadow' version '8.3.0'
 }
+apply plugin: 'com.gradleup.shadow'
 
 version = '1.0'
 group = 'com.yourname.modid'
@@ -43,14 +50,19 @@ minecraft {
     }
 }
 
+
+repositories {
+    // java repo to get the repackaged lib from
+    maven { url "https://github.com/MarceloGToonzzz/ya_fnafmod2" }
+}
+
 configurations {
     shade
-    implementation.extendsFrom shade
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.3.0'
-    // shade 'com.example:example-thing:1.0.0'
+    //shade 'io.github.marcelogtoonzzz.ya_fnafmod2:1.0'
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -72,5 +84,5 @@ shadowJar {
 assemble.dependsOn shadowJar
 
 reobf {
-    shadowJar {}
+    shadowJar { }
 }

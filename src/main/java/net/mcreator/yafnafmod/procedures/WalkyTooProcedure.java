@@ -13,47 +13,50 @@ public class WalkyTooProcedure {
 		String RX = "";
 		String RY = "";
 		String RZ = "";
-		RX = LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").substring((int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").indexOf("X") + "X".length(),
-				(int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").lastIndexOf("X"));
-		RY = LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").substring((int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").indexOf("Y") + "Y".length(),
-				(int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").lastIndexOf("Y"));
-		RZ = LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").substring((int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").indexOf("Z") + "Z".length(),
-				(int) LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask").lastIndexOf("Z"));
-		if (new Object() {
-			double convert(String s) {
-				try {
-					return Double.parseDouble(s.trim());
-				} catch (Exception e) {
+		String wah = "";
+		entity.getPersistentData().putDouble("walky_tick", (entity.getPersistentData().getDouble("walky_tick") + 1));
+		if (entity.getPersistentData().getDouble("walky_tick") >= 100) {
+			entity.getPersistentData().putDouble("walky_tick", 0);
+			wah = LookyLooProcedure.execute(world, x, y, z, "ya_fnafmod:ennard_mask");
+			RX = wah.substring((int) wah.indexOf("X") + "X".length(), (int) wah.lastIndexOf("X"));
+			RY = wah.substring((int) wah.indexOf("Y") + "Y".length(), (int) wah.lastIndexOf("Y"));
+			RZ = wah.substring((int) wah.indexOf("Z") + "Z".length(), (int) wah.lastIndexOf("Z"));
+			if (new Object() {
+				double convert(String s) {
+					try {
+						return Double.parseDouble(s.trim());
+					} catch (Exception e) {
+					}
+					return 0;
 				}
-				return 0;
+			}.convert(RY) != -200) {
+				if (entity instanceof Mob _entity)
+					_entity.getNavigation().moveTo(new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(RX), new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(RY), new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(RZ), 1);
 			}
-		}.convert(RY) != -200) {
-			if (entity instanceof Mob _entity)
-				_entity.getNavigation().moveTo(new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(RX), new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(RY), new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(RZ), 1);
 		}
 	}
 }

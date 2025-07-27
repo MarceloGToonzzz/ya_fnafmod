@@ -5446,6 +5446,17 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> GREEN_LIME_FOAM_TILE_CARPET = block(YaFnafmodModBlocks.GREEN_LIME_FOAM_TILE_CARPET);
 	public static final RegistryObject<Item> STAGE_LIGHT_BULB = block(YaFnafmodModBlocks.STAGE_LIGHT_BULB);
 	public static final RegistryObject<Item> STAGE_LIGHT_BULB_BROKEN = block(YaFnafmodModBlocks.STAGE_LIGHT_BULB_BROKEN);
+	public static final RegistryObject<Item> WALL_TILE_RED_BLACK_WHITE_LARGE = block(YaFnafmodModBlocks.WALL_TILE_RED_BLACK_WHITE_LARGE);
+	public static final RegistryObject<Item> WALL_TILE_BLACK_BLACK_WHITE_LARGE = block(YaFnafmodModBlocks.WALL_TILE_BLACK_BLACK_WHITE_LARGE);
+	public static final RegistryObject<Item> WALL_TILE_BLACK_GREEN_BLUE_LARGE = block(YaFnafmodModBlocks.WALL_TILE_BLACK_GREEN_BLUE_LARGE);
+	public static final RegistryObject<Item> WALL_TILE_BLACK_GREEN_LIME_LARGE = block(YaFnafmodModBlocks.WALL_TILE_BLACK_GREEN_LIME_LARGE);
+	public static final RegistryObject<Item> WALL_TILE_PURPLE_BLACK_WHITE_LARGE = block(YaFnafmodModBlocks.WALL_TILE_PURPLE_BLACK_WHITE_LARGE);
+	public static final RegistryObject<Item> WALL_TILE_BLUE_BLACK_WHITE_LARGE = block(YaFnafmodModBlocks.WALL_TILE_BLUE_BLACK_WHITE_LARGE);
+	public static final RegistryObject<Item> WALL_TILE_GREEN_BLACK_WHITE_LARGE = block(YaFnafmodModBlocks.WALL_TILE_GREEN_BLACK_WHITE_LARGE);
+	public static final RegistryObject<Item> BLACK_WHITE_GREEN_CHECKERED_WALL = block(YaFnafmodModBlocks.BLACK_WHITE_GREEN_CHECKERED_WALL);
+	public static final RegistryObject<Item> BLACK_WHITE_GREEN_CHECKERED_WALL_ALTERNATE = block(YaFnafmodModBlocks.BLACK_WHITE_GREEN_CHECKERED_WALL_ALTERNATE);
+	public static final RegistryObject<Item> BLACK_WHITE_GREEN_CHECKERED_WALL_BIG = block(YaFnafmodModBlocks.BLACK_WHITE_GREEN_CHECKERED_WALL_BIG);
+	public static final RegistryObject<Item> BLACK_WHITE_GREEN_CHECKERED_WALL_BIG_ALTERNATE = block(YaFnafmodModBlocks.BLACK_WHITE_GREEN_CHECKERED_WALL_BIG_ALTERNATE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

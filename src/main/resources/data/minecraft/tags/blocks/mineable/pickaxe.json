@@ -1,6 +1,17 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:black_white_green_checkered_wall_big_alternate",
+    "ya_fnafmod:black_white_green_checkered_wall_big",
+    "ya_fnafmod:black_white_green_checkered_wall_alternate",
+    "ya_fnafmod:black_white_green_checkered_wall",
+    "ya_fnafmod:wall_tile_green_black_white_large",
+    "ya_fnafmod:wall_tile_blue_black_white_large",
+    "ya_fnafmod:wall_tile_purple_black_white_large",
+    "ya_fnafmod:wall_tile_black_green_lime_large",
+    "ya_fnafmod:wall_tile_black_green_blue_large",
+    "ya_fnafmod:wall_tile_black_black_white_large",
+    "ya_fnafmod:wall_tile_red_black_white_large",
     "ya_fnafmod:movie_cyan_shingle_wall",
     "ya_fnafmod:catalog_big_checkered_tile_slab",
     "ya_fnafmod:catalog_big_checkered_tile_stairs",
