@@ -142,7 +142,7 @@
         "particleTexture": "locker_yellow_tside",
         "renderType": 0,
         "customModelName": "carousel_on.geo.json",
-        "luminance": 0,
+        "luminance": 8,
         "boundingBoxes": []
       }
     ]

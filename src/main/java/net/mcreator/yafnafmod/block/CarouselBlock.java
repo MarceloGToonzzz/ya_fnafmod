@@ -44,7 +44,7 @@ public class CarouselBlock extends BaseEntityBlock implements EntityBlock {
 				.sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
 					public int getLightLevel() {
 						if (s.getValue(BLOCKSTATE) == 1)
-							return 0;
+							return 8;
 						return 0;
 					}
 				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
