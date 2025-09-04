@@ -1709,6 +1709,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.POSTER_CHICA_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_RULES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_GOLDEN_FREDDY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_CRYING_CHILD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DESK_FNAF_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DESK_FNAF_1_EMPTY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WOODEN_SHELF.get().asItem());
@@ -1756,8 +1757,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.RETRO_CUPCAKE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_CELEBRATE_RETRO.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_PRIZE_CORNER_RETRO.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FREDDY_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FREDDY_2.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FREDDY_1.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FREDDY_3.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_BONNIE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_CHICA.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FOXY.get().asItem());
@@ -2258,8 +2260,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.POSTER_CRYING_CHILD.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FREDDY_3.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {

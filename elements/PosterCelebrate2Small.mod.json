@@ -24,12 +24,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -15.0,
-        "my": 1.0,
-        "mz": 15.9,
+        "mx": -16.0,
+        "my": 0.0,
+        "mz": 15.0,
         "Mx": 15.0,
-        "My": 15.0,
-        "Mz": 15.9,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "PosterOnBlockRightClicked"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -64,7 +64,12 @@ public class PosterCelebrate2Block extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
+		return switch (state.getValue(FACING)) {
+			default -> box(-16, -4, 0, 16, 20, 1);
+			case NORTH -> box(0, -4, 15, 32, 20, 16);
+			case EAST -> box(0, -4, 0, 1, 20, 32);
+			case WEST -> box(15, -4, -16, 16, 20, 16);
+		};
 	}
 
 	@Override
