@@ -13,8 +13,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.yafnafmod.init.YaFnafmodModItems;
-
 import javax.annotation.Nullable;
 
 import java.util.List;
@@ -44,77 +42,6 @@ public class SpecialInfoProcedureProcedure {
 			entity_registry = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "");
 			final_thing = "";
 			wubawuba = "\u00A7l";
-			if (itemstack.getItem() == YaFnafmodModItems.FREDDY_FAZBEAR_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on FNAF Movie Sign!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.FOXY_PIRATE_FIXED_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(A fixed version of Foxy!) ")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.SPARKY_DOG_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the original Sparky Hoax design!)")));
-			}
-			if (itemstack.getItem() == YaFnafmodModItems.RETRO_FREDDY_ALT_SPAWN_ITEM.get() || itemstack.getItem() == YaFnafmodModItems.RETRO_FREDDY_ALT_WALKER_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on FNAF 6 Cutscenes!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.BALLOON_BOY_MEME_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on Enragement Child from FNAFB!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.SHADOW_FREDDY_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on Redbear from FNAF World!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.SHADOW_BONNIE_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on White Rabbit from FNAF World!)")));
-				cur_pos = cur_pos + 1;
-			}
-			if (itemstack.getItem() == YaFnafmodModItems.SPRINGTRAP_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Springtrap from FNAF SL and his funko merch.)")));
-				cur_pos = cur_pos + 1;
-			}
-			if (entity_registry.contains("stage_01")) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on STAGE 01!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.SPRINGBONNIE_ALT_SPAWN_ITEM.get() || itemstack.getItem() == YaFnafmodModItems.SPRINGBONNIE_ALT_WALKER_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the FNAF 4 Springbonnie!)")));
-				cur_pos = cur_pos + 1;
-			} else if (entity_registry.contains("poster")) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Security Breach Fredbear's posters!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.PLUSHTRAP_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Springbonnie Plushie!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.NIGHTMARE_BB_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Nightmare JJ hoax!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.NIGHTMARE_FREDBEAR_VR_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the FNAF VR trailer!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.NIGHTMARE_FREDBEAR_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the gray Nightmare Fredbear teaser!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.NIGHTMARE_SOLID_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(A solid version of Nightmare!)")));
-				cur_pos = cur_pos + 1;
-			}
-			if (itemstack.getItem() == YaFnafmodModItems.FUNTIME_FREDDY_NOVEL_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Fourth Closet book cover!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.FUNTIME_FREDDY_FRIGHTS_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on Count The Ways!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.FUNTIME_FREDDY_ALT_SPAWN_ITEM.get() || itemstack.getItem() == YaFnafmodModItems.FUNTIME_FOXY_ALT_SPAWN_ITEM.get()
-					|| itemstack.getItem() == YaFnafmodModItems.CANDY_CAT_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the beta design!)")));
-				cur_pos = cur_pos + 1;
-			} else if (itemstack.getItem() == YaFnafmodModItems.LOLBIT_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on Lolbit from Five Laps at Freddy's!)")));
-				cur_pos = cur_pos + 1;
-			}
-			if (itemstack.getItem() == YaFnafmodModItems.LEFTY_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(lefty but inverted, idk what else to tell you)")));
-			}
-			if (itemstack.getItem() == YaFnafmodModItems.PITBONNIE_ALT_SPAWN_ITEM.get()) {
-				tooltip.add((int) cur_pos, Component.literal((wubawuba + "(Based on the Graphic Novel design.)")));
-			}
 			if (entity_registry.contains("walker")) {
 				tooltip.add((int) cur_pos, Component.literal("\u00A7lWALKS DURING THE NIGHT"));
 				cur_pos = cur_pos + 1;

@@ -21,17 +21,13 @@ import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBarryPolarEntity;
 import net.mcreator.yafnafmod.entity.WitheredBarryPolarDayEntity;
-import net.mcreator.yafnafmod.entity.ToyFreddyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyDayEntity;
-import net.mcreator.yafnafmod.entity.ToyFoxyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.ToyCupcakeEntityEntity;
-import net.mcreator.yafnafmod.entity.ToyChicaStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaDayEntity;
-import net.mcreator.yafnafmod.entity.ToyBonnieStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapEntity;
@@ -148,7 +144,6 @@ import net.mcreator.yafnafmod.entity.IgnitedChicaDayEntity;
 import net.mcreator.yafnafmod.entity.HelpyEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
-import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
@@ -483,34 +478,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof SpringtrapDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof ToyFreddyStillDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof ToyBonnieStillDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof ToyChicaStillDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof ToyFoxyStillDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
@@ -1386,13 +1353,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof GusThePugDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof GusThePugStillDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

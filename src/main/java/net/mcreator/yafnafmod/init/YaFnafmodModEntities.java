@@ -33,17 +33,13 @@ import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBarryPolarEntity;
 import net.mcreator.yafnafmod.entity.WitheredBarryPolarDayEntity;
-import net.mcreator.yafnafmod.entity.ToyFreddyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.ToyFreddyDayEntity;
-import net.mcreator.yafnafmod.entity.ToyFoxyStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.ToyCupcakeEntityEntity;
-import net.mcreator.yafnafmod.entity.ToyChicaStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaDayEntity;
-import net.mcreator.yafnafmod.entity.ToyBonnieStillDayEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.TomatoProjectileEntity;
@@ -164,7 +160,6 @@ import net.mcreator.yafnafmod.entity.IgnitedChicaDayEntity;
 import net.mcreator.yafnafmod.entity.HelpyEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
-import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
@@ -402,22 +397,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<SpringtrapDayEntity>of(SpringtrapDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringtrapDayEntity::new)
 
 					.sized(0.6f, 1.5f));
-	public static final RegistryObject<EntityType<ToyFreddyStillDayEntity>> TOY_FREDDY_STILL_DAY = register("toy_freddy_still_day",
-			EntityType.Builder.<ToyFreddyStillDayEntity>of(ToyFreddyStillDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyFreddyStillDayEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ToyBonnieStillDayEntity>> TOY_BONNIE_STILL_DAY = register("toy_bonnie_still_day",
-			EntityType.Builder.<ToyBonnieStillDayEntity>of(ToyBonnieStillDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyBonnieStillDayEntity::new)
-
-					.sized(0.6f, 0.938f));
-	public static final RegistryObject<EntityType<ToyChicaStillDayEntity>> TOY_CHICA_STILL_DAY = register("toy_chica_still_day",
-			EntityType.Builder.<ToyChicaStillDayEntity>of(ToyChicaStillDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyChicaStillDayEntity::new)
-
-					.sized(0.6f, 0.9375f));
-	public static final RegistryObject<EntityType<ToyFoxyStillDayEntity>> TOY_FOXY_STILL_DAY = register("toy_foxy_still_day",
-			EntityType.Builder.<ToyFoxyStillDayEntity>of(ToyFoxyStillDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ToyFoxyStillDayEntity::new)
-
-					.sized(0.6f, 1.4375f));
 	public static final RegistryObject<EntityType<PhantomChicaEntity>> PHANTOM_CHICA = register("phantom_chica",
 			EntityType.Builder.<PhantomChicaEntity>of(PhantomChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PhantomChicaEntity::new)
 
@@ -925,10 +904,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<GusThePugDayEntity>of(GusThePugDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(GusThePugDayEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<GusThePugStillDayEntity>> GUS_THE_PUG_STILL_DAY = register("gus_the_pug_still_day",
-			EntityType.Builder.<GusThePugStillDayEntity>of(GusThePugStillDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(GusThePugStillDayEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<DougDogEntity>> DOUG_DOG = register("doug_dog",
 			EntityType.Builder.<DougDogEntity>of(DougDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(DougDogEntity::new)
 
@@ -1180,10 +1155,6 @@ public class YaFnafmodModEntities {
 			ShadowFreddyEntity.init();
 			SpringtrapEntity.init();
 			SpringtrapDayEntity.init();
-			ToyFreddyStillDayEntity.init();
-			ToyBonnieStillDayEntity.init();
-			ToyChicaStillDayEntity.init();
-			ToyFoxyStillDayEntity.init();
 			PhantomChicaEntity.init();
 			PhantomFreddyEntity.init();
 			PhantomFoxyEntity.init();
@@ -1310,7 +1281,6 @@ public class YaFnafmodModEntities {
 			RaccoonEntity.init();
 			GusThePugEntity.init();
 			GusThePugDayEntity.init();
-			GusThePugStillDayEntity.init();
 			DougDogEntity.init();
 			DougDogDayEntity.init();
 			JollyRatEntity.init();
@@ -1400,10 +1370,6 @@ public class YaFnafmodModEntities {
 		event.put(SHADOW_FREDDY.get(), ShadowFreddyEntity.createAttributes().build());
 		event.put(SPRINGTRAP.get(), SpringtrapEntity.createAttributes().build());
 		event.put(SPRINGTRAP_DAY.get(), SpringtrapDayEntity.createAttributes().build());
-		event.put(TOY_FREDDY_STILL_DAY.get(), ToyFreddyStillDayEntity.createAttributes().build());
-		event.put(TOY_BONNIE_STILL_DAY.get(), ToyBonnieStillDayEntity.createAttributes().build());
-		event.put(TOY_CHICA_STILL_DAY.get(), ToyChicaStillDayEntity.createAttributes().build());
-		event.put(TOY_FOXY_STILL_DAY.get(), ToyFoxyStillDayEntity.createAttributes().build());
 		event.put(PHANTOM_CHICA.get(), PhantomChicaEntity.createAttributes().build());
 		event.put(PHANTOM_FREDDY.get(), PhantomFreddyEntity.createAttributes().build());
 		event.put(PHANTOM_FOXY.get(), PhantomFoxyEntity.createAttributes().build());
@@ -1530,7 +1496,6 @@ public class YaFnafmodModEntities {
 		event.put(RACCOON.get(), RaccoonEntity.createAttributes().build());
 		event.put(GUS_THE_PUG.get(), GusThePugEntity.createAttributes().build());
 		event.put(GUS_THE_PUG_DAY.get(), GusThePugDayEntity.createAttributes().build());
-		event.put(GUS_THE_PUG_STILL_DAY.get(), GusThePugStillDayEntity.createAttributes().build());
 		event.put(DOUG_DOG.get(), DougDogEntity.createAttributes().build());
 		event.put(DOUG_DOG_DAY.get(), DougDogDayEntity.createAttributes().build());
 		event.put(JOLLY_RAT.get(), JollyRatEntity.createAttributes().build());

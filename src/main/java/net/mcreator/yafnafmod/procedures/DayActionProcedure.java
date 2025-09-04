@@ -21,13 +21,8 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.yafnafmod.network.YaFnafmodModVariables;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
-import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
-import net.mcreator.yafnafmod.entity.ToyFoxyEntity;
-import net.mcreator.yafnafmod.entity.ToyChicaEntity;
-import net.mcreator.yafnafmod.entity.ToyBonnieEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
-import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 
 import java.util.List;
@@ -44,7 +39,7 @@ public class DayActionProcedure {
 		String ai = "";
 		String entity_name = "";
 		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible"))) && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nightdisappear")))
-				&& !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:no_daymode")))) {
+				|| !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:no_daymode")))) {
 			if ((GetWorldTimeProcedure.execute(world)) > (23829) && (GetWorldTimeProcedure.execute(world)) < (24000)) {
 				if (entity instanceof Mob _entity)
 					_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z")), 1);
@@ -69,40 +64,17 @@ public class DayActionProcedure {
 						_ent.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
 										_ent.level().getServer(), _ent),
-								("tp " + entity.getPersistentData().getDouble("x") + " " + entity.getPersistentData().getDouble("y") + " " + entity.getPersistentData().getDouble("z") + " " + entity.getPersistentData().getDouble("yaw") + " 0"));
+								("tp @s " + entity.getPersistentData().getDouble("x") + " " + entity.getPersistentData().getDouble("y") + " " + entity.getPersistentData().getDouble("z") + " " + entity.getPersistentData().getDouble("yaw") + " 0"));
 					}
 				}
 				yaw = entity.getPersistentData().getDouble("yaw");
 				entity_name = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString() + "_day";
-				if (entity instanceof ToyFreddyEntity && (entity instanceof ToyFreddyEntity _datEntL18 && _datEntL18.getEntityData().get(ToyFreddyEntity.DATA_unmoving)) == false
-						|| entity instanceof ToyBonnieEntity && (entity instanceof ToyBonnieEntity _datEntL20 && _datEntL20.getEntityData().get(ToyBonnieEntity.DATA_unmoving)) == false
-						|| entity instanceof ToyChicaEntity && (entity instanceof ToyChicaEntity _datEntL22 && _datEntL22.getEntityData().get(ToyChicaEntity.DATA_unmoving)) == false
-						|| entity instanceof ToyFoxyEntity && (entity instanceof ToyFoxyEntity _datEntL24 && _datEntL24.getEntityData().get(ToyFoxyEntity.DATA_unmoving)) == false
-						|| entity instanceof GusThePugEntity && (entity instanceof GusThePugEntity _datEntL26 && _datEntL26.getEntityData().get(GusThePugEntity.DATA_unmoving)) == false) {
-					ai = "0";
-				} else {
-					ai = "1";
-					if (entity instanceof ToyFreddyEntity && (entity instanceof ToyFreddyEntity _datEntL28 && _datEntL28.getEntityData().get(ToyFreddyEntity.DATA_unmoving)) == true
-							|| entity instanceof ToyBonnieEntity && (entity instanceof ToyBonnieEntity _datEntL30 && _datEntL30.getEntityData().get(ToyBonnieEntity.DATA_unmoving)) == true
-							|| entity instanceof ToyChicaEntity && (entity instanceof ToyChicaEntity _datEntL32 && _datEntL32.getEntityData().get(ToyChicaEntity.DATA_unmoving)) == true
-							|| entity instanceof ToyFoxyEntity && (entity instanceof ToyFoxyEntity _datEntL34 && _datEntL34.getEntityData().get(ToyFoxyEntity.DATA_unmoving)) == true
-							|| entity instanceof GusThePugEntity && (entity instanceof GusThePugEntity _datEntL36 && _datEntL36.getEntityData().get(GusThePugEntity.DATA_unmoving)) == true) {
-						entity_name = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString() + "_still_day";
-					}
-				}
-				if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nonnight_walker")))) {
-					thing = ((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
-							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("controlshock_z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("controlshock_y")))
-							.replace("XSHOCK", "" + entity.getPersistentData().getDouble("controlshock_x"))).replace("ENTITY_REGISTRY", entity_name)).replace("MOVEEE", ai)).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-							.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
-							.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
-				} else {
-					thing = ((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {walks_at_night:1b, controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: \"STYLISTIC\", skin: \"SKINS\", z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
-							.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("controlshock_z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("controlshock_y")))
-							.replace("XSHOCK", "" + entity.getPersistentData().getDouble("controlshock_x"))).replace("ENTITY_REGISTRY", entity_name)).replace("MOVEEE", ai)).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
-							.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINS", entity.getPersistentData().getString("skin"))).replace("STYLISTIC", entity.getPersistentData().getString("style")))
-							.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
-				}
+				ai = "1";
+				thing = ((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {walks_at_night:1b, controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: STYLISTIC, skin: SKINNY, z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK,skin:SKINNY,style:STYLISTIC}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+						.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("controlshock_z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("controlshock_y")))
+						.replace("XSHOCK", "" + entity.getPersistentData().getDouble("controlshock_x"))).replace("ENTITY_REGISTRY", entity_name)).replace("MOVEEE", ai)).replace("STYLISTIC", "" + entity.getPersistentData().getDouble("style")))
+						.replace("SKINNY", "" + entity.getPersistentData().getDouble("skin"))).replace("YAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw")))
+						.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands()
 							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))), Vec2.ZERO,
@@ -111,14 +83,10 @@ public class DayActionProcedure {
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 					for (Entity entityiterator : _entfound) {
-						if ((ForgeRegistries.ENTITY_TYPES.getKey(entityiterator.getType()).toString()).equals(ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString() + "_day")) {
-							GiveNbtsProcedure.execute(entity, entityiterator, yaw);
-							while (!((entityiterator.getPersistentData().getString("skin")).equals(entity.getPersistentData().getString("skin"))
-									&& (entityiterator.getPersistentData().getString("style")).equals(entity.getPersistentData().getString("style")))) {
-								entityiterator.getPersistentData().putString("skin", (entity.getPersistentData().getString("skin")));
-								entityiterator.getPersistentData().putString("style", (entity.getPersistentData().getString("style")));
-								SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getString("skin"));
-							}
+						if ((ForgeRegistries.ENTITY_TYPES.getKey(entityiterator.getType()).toString()).equals(entity_name)) {
+							entityiterator.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin")));
+							entityiterator.getPersistentData().putDouble("style", (entity.getPersistentData().getDouble("style")));
+							SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"));
 						}
 					}
 				}

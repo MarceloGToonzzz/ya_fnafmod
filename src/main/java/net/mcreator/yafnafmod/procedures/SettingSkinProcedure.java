@@ -46,158 +46,240 @@ import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
 
 public class SettingSkinProcedure {
-	public static void execute(Entity entity, String skin) {
-		if (entity == null || skin == null)
+	public static void execute(Entity entity, double skin) {
+		if (entity == null)
 			return;
 		boolean can_laugh = false;
-		if ((skin).equals("stage01")) {
-			if (entity instanceof FredbearEntity animatable)
-				animatable.setTexture("fredbear_stage01");
-			if (entity instanceof FredbearDayEntity animatable)
-				animatable.setTexture("fredbear_stage01");
-			if (entity instanceof SpringbonnieEntity animatable)
-				animatable.setTexture("springbonnie_stage01");
-			if (entity instanceof SpringbonnieDayEntity animatable)
-				animatable.setTexture("springbonnie_stage01");
-		} else if ((skin).equals("alt")) {
+		String suffix = "";
+		String textureName = "";
+		suffix = "";
+		if (skin == 0) {
 			if (entity instanceof FreddyFazbearEntity animatable)
-				animatable.setTexture("freddyfazbear_sign");
+				animatable.setTexture(("freddyfazbear" + suffix));
 			if (entity instanceof FreddyFazbearDayEntity animatable)
-				animatable.setTexture("freddyfazbear_sign");
-			if (entity instanceof RetroFreddyEntity animatable)
-				animatable.setTexture("retro_freddy_cutscene");
-			if (entity instanceof RetroFreddyDayEntity animatable)
-				animatable.setTexture("retro_freddy_cutscene");
-			if (entity instanceof ShadowFreddyEntity animatable)
-				animatable.setTexture("wsfreddy_redbear");
-			if (entity instanceof ShadowBonnieEntity animatable)
-				animatable.setTexture("sbonnie_whiterabbit");
-			if (entity instanceof SpringtrapEntity animatable)
-				animatable.setTexture("springtrap_dark");
-			if (entity instanceof SpringtrapDayEntity animatable)
-				animatable.setTexture("springtrap_dark");
-			if (entity instanceof SpringbonnieEntity animatable)
-				animatable.setTexture("springbonnie_fnaf4");
-			if (entity instanceof SpringbonnieDayEntity animatable)
-				animatable.setTexture("springbonnie_fnaf4");
-			if (entity instanceof NightmareBbEntity animatable)
-				animatable.setTexture("nightmare_bb_jjskin");
-			if (entity instanceof NightmareBbDayEntity animatable)
-				animatable.setTexture("nightmare_bb_jjskin");
-			if (entity instanceof PlushtrapEntity animatable)
-				animatable.setTexture("plushtrap_fingertrap");
-			if (entity instanceof PlushtrapDayEntity animatable)
-				animatable.setTexture("plushtrap_fingertrap");
-			if (entity instanceof FuntimeFreddyEntity animatable)
-				animatable.setTexture("ftfreddy_beta");
-			if (entity instanceof FuntimeFreddyDayEntity animatable)
-				animatable.setTexture("ftfreddy_beta");
-			if (entity instanceof FuntimeFoxyEntity animatable)
-				animatable.setTexture("ftfoxy_beta");
-			if (entity instanceof FuntimeFoxyDayEntity animatable)
-				animatable.setTexture("ftfoxy_beta");
-			if (entity instanceof NightmareFredbearEntity animatable)
-				animatable.setTexture("nightmare_fredbear_teaser");
-			if (entity instanceof LeftyEntity animatable)
-				animatable.setTexture("lefty_alt");
-			if (entity instanceof LeftyDayEntity animatable)
-				animatable.setTexture("lefty_alt");
-			if (entity instanceof SparkyDogEntity animatable)
-				animatable.setTexture("sparky_hoax");
-			if (entity instanceof SparkyDogDayEntity animatable)
-				animatable.setTexture("sparky_hoax");
-			if (entity instanceof PitbonnieEntity animatable)
-				animatable.setTexture("pitbonnie_novel");
-			if (entity instanceof PitbonnieDayEntity animatable)
-				animatable.setTexture("pitbonnie_novel");
-			if (entity instanceof LolbitEntity animatable)
-				animatable.setTexture("lolbit_racer");
-			if (entity instanceof CandyCatEntity animatable)
-				animatable.setTexture("candythecat_beta");
-			if (entity instanceof CandyCatDayEntity animatable)
-				animatable.setTexture("candythecat_beta");
-			if (entity instanceof YellowRabbitEntity animatable)
-				animatable.setTexture("yellow_rabbit_game");
-		} else if ((skin).equals("fixed")) {
-			if (entity instanceof FoxyPirateEntity animatable)
-				animatable.setTexture("foxy_pirate_fixed");
-			if (entity instanceof FoxyPirateDayEntity animatable)
-				animatable.setTexture("foxy_pirate_fixed");
-			if (entity instanceof YellowRabbitEntity animatable)
-				animatable.setTexture("yellow_rabbit_fixed");
-		} else if ((skin).equals("vr_trailer")) {
-			if (entity instanceof NightmareFredbearEntity animatable)
-				animatable.setTexture("nightmare_fredbear_vrtrailer");
-		} else if ((skin).equals("solid")) {
-			if (entity instanceof NightmareEntity animatable)
-				animatable.setTexture("nightmare_solid");
-		} else if ((skin).equals("poster")) {
-			if (entity instanceof FredbearEntity animatable)
-				animatable.setTexture("fredbear_poster");
-			if (entity instanceof FredbearDayEntity animatable)
-				animatable.setTexture("fredbear_poster");
-			if (entity instanceof SpringbonnieEntity animatable)
-				animatable.setTexture("springbonnie_poster");
-			if (entity instanceof SpringbonnieDayEntity animatable)
-				animatable.setTexture("springbonnie_poster");
-		} else if ((skin).equals("novel")) {
-			if ((entity instanceof FuntimeFreddyEntity _datEntL42 && _datEntL42.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-				if (entity instanceof FuntimeFreddyEntity animatable)
-					animatable.setTexture("ftfreddy_novel");
-			} else {
-				if (entity instanceof FuntimeFreddyEntity animatable)
-					animatable.setTexture("ftfreddy_bonless_novel");
-			}
-			if (entity instanceof FuntimeFreddyDayEntity animatable)
-				animatable.setTexture("ftfreddy_novel");
-			if (entity instanceof BonbonEntity animatable)
-				animatable.setTexture("bonbon_novel");
-		} else if ((skin).equals("frights")) {
-			if ((entity instanceof FuntimeFreddyEntity _datEntL47 && _datEntL47.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-				if (entity instanceof FuntimeFreddyEntity animatable)
-					animatable.setTexture("ftfreddy_ctw");
-			} else {
-				if (entity instanceof FuntimeFreddyEntity animatable)
-					animatable.setTexture("ftfreddy_bonless_ctw");
-			}
-			if (entity instanceof ShadowFreddyEntity animatable)
-				animatable.setTexture("wsfreddy_corner");
-			if (entity instanceof FuntimeFreddyDayEntity animatable)
-				animatable.setTexture("ftfreddy_ctw");
-			if (entity instanceof BonbonEntity animatable)
-				animatable.setTexture("bonbon_ctw");
-		} else if ((skin).equals("meme")) {
-			if (entity instanceof BalloonBoyEntity animatable)
-				animatable.setTexture("bb_enragementchild");
-			if (entity instanceof BalloonBoyDayEntity animatable)
-				animatable.setTexture("bb_enragementchild");
-		} else if ((skin).equals("movie")) {
-			if (entity instanceof FreddyFazbearEntity animatable)
-				animatable.setTexture("freddyfazbear_movie");
-			if (entity instanceof FreddyFazbearDayEntity animatable)
-				animatable.setTexture("freddyfazbear_movie");
+				animatable.setTexture(("freddyfazbear" + suffix));
 			if (entity instanceof BonnieBunnyEntity animatable)
-				animatable.setTexture("bonniebunny_movie");
+				animatable.setTexture(("bonniebunny" + suffix));
 			if (entity instanceof BonnieBunnyDayEntity animatable)
-				animatable.setTexture("bonniebunny_movie");
+				animatable.setTexture(("bonniebunny" + suffix));
 			if (entity instanceof ChicaChickenEntity animatable)
-				animatable.setTexture("chicachicken_movie");
+				animatable.setTexture(("chicachicken" + suffix));
 			if (entity instanceof ChicaChickenDayEntity animatable)
-				animatable.setTexture("chicachicken_movie");
+				animatable.setTexture(("chicachicken" + suffix));
 			if (entity instanceof FoxyPirateEntity animatable)
-				animatable.setTexture("foxy_pirate_movie");
+				animatable.setTexture(("foxy_pirate" + suffix));
 			if (entity instanceof FoxyPirateDayEntity animatable)
-				animatable.setTexture("foxy_pirate_movie");
+				animatable.setTexture(("foxy_pirate" + suffix));
 			if (entity instanceof GoldenFreddyEntity animatable)
-				animatable.setTexture("gfreddy_movie");
+				animatable.setTexture(("gfreddy" + suffix));
+			if (entity instanceof SparkyDogEntity animatable)
+				animatable.setTexture(("sparky" + suffix));
+			if (entity instanceof SparkyDogDayEntity animatable)
+				animatable.setTexture(("sparky" + suffix));
+			if (entity instanceof BalloonBoyEntity animatable)
+				animatable.setTexture(("bb" + suffix));
+			if (entity instanceof RetroFreddyEntity animatable)
+				animatable.setTexture(("retro_freddy" + suffix));
+			if (entity instanceof RetroFreddyDayEntity animatable)
+				animatable.setTexture(("retro_freddy" + suffix));
+			if (entity instanceof BalloonBoyDayEntity animatable)
+				animatable.setTexture(("bb" + suffix));
 			if (entity instanceof ShadowFreddyEntity animatable)
-				animatable.setTexture("sfreddy_movie");
-		} else if ((skin).equals("dbd")) {
+				animatable.setTexture(("sfreddy" + suffix));
+			if (entity instanceof ShadowFreddyEntity animatable)
+				animatable.setTexture(("wsfreddy" + suffix));
+			if (entity instanceof ShadowBonnieEntity animatable)
+				animatable.setTexture(("sbonnie" + suffix));
 			if (entity instanceof SpringtrapEntity animatable)
-				animatable.setTexture("springtrap_dbd");
+				animatable.setTexture(("springtrap" + suffix));
 			if (entity instanceof SpringtrapDayEntity animatable)
-				animatable.setTexture("springtrap_dbd");
+				animatable.setTexture(("springtrap" + suffix));
+			if (entity instanceof FredbearEntity animatable)
+				animatable.setTexture(("fredbear" + suffix));
+			if (entity instanceof FredbearDayEntity animatable)
+				animatable.setTexture(("fredbear" + suffix));
+			if (entity instanceof SpringbonnieEntity animatable)
+				animatable.setTexture(("springbonnie" + suffix));
+			if (entity instanceof SpringbonnieDayEntity animatable)
+				animatable.setTexture(("springbonnie" + suffix));
+			if (entity instanceof NightmareFredbearEntity animatable)
+				animatable.setTexture(("nightmare_fredbear" + suffix));
+			if (entity instanceof NightmareEntity animatable)
+				animatable.setTexture(("nightmare" + suffix));
+			if (entity instanceof NightmareBbEntity animatable)
+				animatable.setTexture(("nightmare_bb" + suffix));
+			if (entity instanceof NightmareBbDayEntity animatable)
+				animatable.setTexture(("nightmare_bb" + suffix));
+			if (entity instanceof PlushtrapEntity animatable)
+				animatable.setTexture(("plushtrap" + suffix));
+			if (entity instanceof PlushtrapDayEntity animatable)
+				animatable.setTexture(("plushtrap" + suffix));
+			if (entity instanceof FuntimeFreddyDayEntity animatable)
+				animatable.setTexture(("ftfreddy" + suffix));
+			if ((entity instanceof FuntimeFreddyEntity _datEntL35 && _datEntL35.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if (entity instanceof FuntimeFreddyEntity animatable)
+					animatable.setTexture(("ftfreddy" + suffix));
+			} else {
+				if (entity instanceof FuntimeFreddyEntity animatable)
+					animatable.setTexture(("ftfreddy_bonless" + suffix));
+			}
+			if (entity instanceof BonbonEntity animatable)
+				animatable.setTexture(("bonbon" + suffix));
+			if (entity instanceof FuntimeFoxyEntity animatable)
+				animatable.setTexture(("ftfoxy" + suffix));
+			if (entity instanceof FuntimeFoxyDayEntity animatable)
+				animatable.setTexture(("ftfoxy" + suffix));
+			if (entity instanceof LolbitEntity animatable)
+				animatable.setTexture(("lolbit" + suffix));
+			if (entity instanceof LeftyEntity animatable)
+				animatable.setTexture(("lefty" + suffix));
+			if (entity instanceof LeftyDayEntity animatable)
+				animatable.setTexture(("lefty" + suffix));
+			if (entity instanceof YellowRabbitEntity animatable)
+				animatable.setTexture(("yellow_rabbit" + suffix));
+			if (entity instanceof PitbonnieEntity animatable)
+				animatable.setTexture(("pitbonnie" + suffix));
+			if (entity instanceof PitbonnieDayEntity animatable)
+				animatable.setTexture(("pitbonnie" + suffix));
+			if (entity instanceof CandyCatEntity animatable)
+				animatable.setTexture(("candythecat" + suffix));
+			if (entity instanceof CandyCatDayEntity animatable)
+				animatable.setTexture(("candythecat" + suffix));
+		} else if (skin == 1) {
+			if (entity instanceof FreddyFazbearEntity animatable)
+				animatable.setTexture(("freddyfazbear_movie" + suffix));
+			if (entity instanceof FreddyFazbearDayEntity animatable)
+				animatable.setTexture(("freddyfazbear_movie" + suffix));
+			if (entity instanceof BonnieBunnyEntity animatable)
+				animatable.setTexture(("bonniebunny_movie" + suffix));
+			if (entity instanceof BonnieBunnyDayEntity animatable)
+				animatable.setTexture(("bonniebunny_movie" + suffix));
+			if (entity instanceof ChicaChickenEntity animatable)
+				animatable.setTexture(("chicachicken_movie" + suffix));
+			if (entity instanceof ChicaChickenDayEntity animatable)
+				animatable.setTexture(("chicachicken_movie" + suffix));
+			if (entity instanceof FoxyPirateEntity animatable)
+				animatable.setTexture(("foxy_pirate_movie" + suffix));
+			if (entity instanceof FoxyPirateDayEntity animatable)
+				animatable.setTexture(("foxy_pirate_movie" + suffix));
+			if (entity instanceof GoldenFreddyEntity animatable)
+				animatable.setTexture(("gfreddy_movie" + suffix));
+			if (entity instanceof SparkyDogEntity animatable)
+				animatable.setTexture(("sparky_hoax" + suffix));
+			if (entity instanceof SparkyDogDayEntity animatable)
+				animatable.setTexture(("sparky_hoax" + suffix));
+			if (entity instanceof BalloonBoyEntity animatable)
+				animatable.setTexture(("bb_enragementchild" + suffix));
+			if (entity instanceof BalloonBoyDayEntity animatable)
+				animatable.setTexture(("bb_enragementchild" + suffix));
+			if (entity instanceof ShadowFreddyEntity animatable)
+				animatable.setTexture(("sfreddy_movie" + suffix));
+			if (entity instanceof ShadowFreddyEntity animatable)
+				animatable.setTexture(("wsfreddy_redbear" + suffix));
+			if (entity instanceof ShadowBonnieEntity animatable)
+				animatable.setTexture(("sbonnie_whiterabbit" + suffix));
+			if (entity instanceof RetroFreddyEntity animatable)
+				animatable.setTexture(("retro_freddy_cutscene" + suffix));
+			if (entity instanceof RetroFreddyDayEntity animatable)
+				animatable.setTexture(("retro_freddy_cutscene" + suffix));
+			if (entity instanceof SpringtrapEntity animatable)
+				animatable.setTexture(("springtrap_dark" + suffix));
+			if (entity instanceof SpringtrapDayEntity animatable)
+				animatable.setTexture(("springtrap_dark" + suffix));
+			if (entity instanceof FredbearEntity animatable)
+				animatable.setTexture(("fredbear_stage01" + suffix));
+			if (entity instanceof FredbearDayEntity animatable)
+				animatable.setTexture(("fredbear_stage01" + suffix));
+			if (entity instanceof SpringbonnieEntity animatable)
+				animatable.setTexture(("springbonnie_stage01" + suffix));
+			if (entity instanceof SpringbonnieDayEntity animatable)
+				animatable.setTexture(("springbonnie_stage01" + suffix));
+			if (entity instanceof NightmareFredbearEntity animatable)
+				animatable.setTexture(("nightmare_fredbear_teaser" + suffix));
+			if (entity instanceof NightmareEntity animatable)
+				animatable.setTexture(("nightmare_solid" + suffix));
+			if (entity instanceof NightmareBbEntity animatable)
+				animatable.setTexture(("nightmare_bb_jjskin" + suffix));
+			if (entity instanceof NightmareBbDayEntity animatable)
+				animatable.setTexture(("nightmare_bb_jjskin" + suffix));
+			if (entity instanceof PlushtrapEntity animatable)
+				animatable.setTexture(("plushtrap_fingertrap" + suffix));
+			if (entity instanceof PlushtrapDayEntity animatable)
+				animatable.setTexture(("plushtrap_fingertrap" + suffix));
+			if (entity instanceof FuntimeFreddyDayEntity animatable)
+				animatable.setTexture(("ftfreddy_novel" + suffix));
+			if ((entity instanceof FuntimeFreddyEntity _datEntL90 && _datEntL90.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if (entity instanceof FuntimeFreddyEntity animatable)
+					animatable.setTexture(("ftfreddy_novel" + suffix));
+			} else {
+				if (entity instanceof FuntimeFreddyEntity animatable)
+					animatable.setTexture(("ftfreddy_bonless_novel" + suffix));
+			}
+			if (entity instanceof BonbonEntity animatable)
+				animatable.setTexture(("bonbon_novel" + suffix));
+			if (entity instanceof FuntimeFoxyEntity animatable)
+				animatable.setTexture(("ftfoxy_beta" + suffix));
+			if (entity instanceof FuntimeFoxyDayEntity animatable)
+				animatable.setTexture(("ftfoxy_beta" + suffix));
+			if (entity instanceof LolbitEntity animatable)
+				animatable.setTexture(("lolbit_racer" + suffix));
+			if (entity instanceof LeftyEntity animatable)
+				animatable.setTexture(("lefty_alt" + suffix));
+			if (entity instanceof LeftyDayEntity animatable)
+				animatable.setTexture(("lefty_alt" + suffix));
+			if (entity instanceof YellowRabbitEntity animatable)
+				animatable.setTexture(("yellow_rabbit_fixed" + suffix));
+			if (entity instanceof PitbonnieEntity animatable)
+				animatable.setTexture(("pitbonnie_novel" + suffix));
+			if (entity instanceof PitbonnieDayEntity animatable)
+				animatable.setTexture(("pitbonnie_novel" + suffix));
+			if (entity instanceof CandyCatEntity animatable)
+				animatable.setTexture(("candythecat_beta" + suffix));
+			if (entity instanceof CandyCatDayEntity animatable)
+				animatable.setTexture(("candythecat_beta" + suffix));
+		} else if (skin == 2) {
+			if (entity instanceof FreddyFazbearEntity animatable)
+				animatable.setTexture(("freddyfazbear_sign" + suffix));
+			if (entity instanceof FreddyFazbearDayEntity animatable)
+				animatable.setTexture(("freddyfazbear_sign" + suffix));
+			if (entity instanceof FoxyPirateEntity animatable)
+				animatable.setTexture(("foxy_pirate_fixed" + suffix));
+			if (entity instanceof FoxyPirateDayEntity animatable)
+				animatable.setTexture(("foxy_pirate_fixed" + suffix));
+			if (entity instanceof SpringtrapEntity animatable)
+				animatable.setTexture(("springtrap_dbd" + suffix));
+			if (entity instanceof SpringtrapDayEntity animatable)
+				animatable.setTexture(("springtrap_dbd" + suffix));
+			if (entity instanceof FredbearEntity animatable)
+				animatable.setTexture(("fredbear_poster" + suffix));
+			if (entity instanceof FredbearDayEntity animatable)
+				animatable.setTexture(("fredbear_poster" + suffix));
+			if (entity instanceof SpringbonnieEntity animatable)
+				animatable.setTexture(("springbonnie_poster" + suffix));
+			if (entity instanceof SpringbonnieDayEntity animatable)
+				animatable.setTexture(("springbonnie_poster" + suffix));
+			if (entity instanceof NightmareFredbearEntity animatable)
+				animatable.setTexture(("nightmare_fredbear_vrtrailer" + suffix));
+			if (entity instanceof FuntimeFreddyDayEntity animatable)
+				animatable.setTexture(("ftfreddy_ctw" + suffix));
+			if ((entity instanceof FuntimeFreddyEntity _datEntL125 && _datEntL125.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if (entity instanceof FuntimeFreddyEntity animatable)
+					animatable.setTexture(("ftfreddy_ctw" + suffix));
+			} else {
+				if (entity instanceof FuntimeFreddyEntity animatable)
+					animatable.setTexture(("ftfreddy_bonless_ctw" + suffix));
+			}
+			if (entity instanceof ShadowFreddyEntity animatable)
+				animatable.setTexture(("wsfreddy_corner" + suffix));
+			if (entity instanceof BonbonEntity animatable)
+				animatable.setTexture(("bonbon_ctw" + suffix));
+			if (entity instanceof YellowRabbitEntity animatable)
+				animatable.setTexture(("yellow_rabbit_game" + suffix));
+		} else if (skin == 3) {
+			if (entity instanceof SpringbonnieEntity animatable)
+				animatable.setTexture(("springbonnie_fnaf4" + suffix));
+			if (entity instanceof SpringbonnieDayEntity animatable)
+				animatable.setTexture(("springbonnie_fnaf4" + suffix));
 		}
-		entity.getPersistentData().putString("skin", skin);
 	}
 }

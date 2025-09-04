@@ -57,7 +57,6 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		boolean found = false;
 		boolean theresnear = false;
 		GetNewTargetProcedure.execute(world, x, y, z, entity);
-		SettingSkinProcedure.execute(entity, entity.getPersistentData().getString("skin"));
 		RandomMovementFunctionProcedure.execute(world, x, y, z, entity);
 		if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
 			SetNbtPositionsProcedure.execute(world, x, y, z, entity);
@@ -88,7 +87,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 			}
 		}
 		if (entity instanceof EnnardEntity) {
-			if ((entity instanceof EnnardEntity _datEntL23 && _datEntL23.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
+			if ((entity instanceof EnnardEntity _datEntL22 && _datEntL22.getEntityData().get(EnnardEntity.DATA_has_mask)) == false) {
 				if (entity instanceof EnnardEntity animatable)
 					animatable.setTexture("ennard_maskless");
 				WalkyTooProcedure.execute(world, x, y, z, entity);
@@ -118,7 +117,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 					entity.setNoGravity(true);
 				}
 			}
-		} else if (entity instanceof GoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof PuppetEntity && (entity instanceof PuppetEntity _datEntL41 && _datEntL41.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
+		} else if (entity instanceof GoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof PuppetEntity && (entity instanceof PuppetEntity _datEntL40 && _datEntL40.getEntityData().get(PuppetEntity.DATA_busy)) == false) {
 			if (!(entity instanceof PuppetEntity)) {
 				if (IsItNighttimeProcedure.execute(world) == true) {
 					if (Mth.nextInt(RandomSource.create(), 1, 18) == Mth.nextInt(RandomSource.create(), 1, 36)) {
@@ -198,8 +197,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		if (entity instanceof NightmareFreddyEntity) {
 			FreddleCodeProcedure.execute(world, x, y, z, entity);
 		} else if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-			if ((entity instanceof PlushtrapEntity _datEntL71 && _datEntL71.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-					|| (entity instanceof NightmareBbEntity _datEntL72 && _datEntL72.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+			if ((entity instanceof PlushtrapEntity _datEntL70 && _datEntL70.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+					|| (entity instanceof NightmareBbEntity _datEntL71 && _datEntL71.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("animation.plush.sit");
 				}
