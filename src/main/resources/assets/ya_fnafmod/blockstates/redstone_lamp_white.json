@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "ya_fnafmod:block/redstone_lamp_white"
+    },
+    "blockstate=1": {
+      "model": "ya_fnafmod:block/redstone_lamp_white_states_blockstate_0"
+    }
+  }
+}

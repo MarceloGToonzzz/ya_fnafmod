@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:displaysettings/large_pizzeria_sign",
+  "textures": {
+    "particle": "ya_fnafmod:block/pizzeriasign-large-fnafmovie1"
+  }
+}

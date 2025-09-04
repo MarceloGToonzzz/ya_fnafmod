@@ -177,7 +177,6 @@ import net.mcreator.yafnafmod.block.renderer.GrandfatherClockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.GarfeldTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.FuntimeFreddyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.FuntimeFoxyBlockTileRenderer;
-import net.mcreator.yafnafmod.block.renderer.FuntimeDelilahBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.FuntimeChicaBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.FryingPanTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.FryerTileRenderer;
@@ -645,7 +644,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_01_BLOCK.get(), context -> new Endo01BlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.ENDO_02_BLOCK.get(), context -> new Endo02BlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.get(), context -> new CarPoliceCruiserChevroletImpala1983BlockTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FUNTIME_DELILAH_BLOCK.get(), context -> new FuntimeDelilahBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.FUNTIME_FREDDY_BLOCK.get(), context -> new FuntimeFreddyBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CIRCUS_BABY_BLOCK.get(), context -> new CircusBabyBlockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BALLORA_BLOCK.get(), context -> new BalloraBlockTileRenderer());

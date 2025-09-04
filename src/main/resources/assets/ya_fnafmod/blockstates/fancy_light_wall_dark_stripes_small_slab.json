@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ya_fnafmod:block/fancy_light_wall_dark_stripes_small_slab"
+    },
+    "type=top": {
+      "model": "ya_fnafmod:block/fancy_light_wall_dark_stripes_small_slab_top"
+    },
+    "type=double": {
+      "model": "ya_fnafmod:block/fancy_light_wall_dark_stripes_small_slab_full"
+    }
+  }
+}

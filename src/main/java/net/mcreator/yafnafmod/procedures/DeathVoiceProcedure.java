@@ -35,7 +35,6 @@ import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
-import net.mcreator.yafnafmod.entity.FuntimeDelilahEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
 import net.mcreator.yafnafmod.entity.ElectrobabEntity;
@@ -92,7 +91,7 @@ public class DeathVoiceProcedure {
 				if (world instanceof Level)
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:jumpscare_fnafsl_ffreddy")), SoundSource.HOSTILE, 1, 1);
 				delay = 54;
-			} else if (sourceentity instanceof FuntimeFoxyEntity || sourceentity instanceof IndigoEntity || sourceentity instanceof FuntimeDelilahEntity) {
+			} else if (sourceentity instanceof FuntimeFoxyEntity || sourceentity instanceof IndigoEntity) {
 				if (world instanceof Level)
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:jumpscare_fnafsl_ffoxy")), SoundSource.HOSTILE, 1, 1);
 				delay = 86;
@@ -161,9 +160,6 @@ public class DeathVoiceProcedure {
 				} else if (sourceentity instanceof GusThePugEntity) {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_guspug_killvoice")), SoundSource.HOSTILE, 1, 1);
-				} else if (sourceentity instanceof FuntimeDelilahEntity) {
-					if (world instanceof Level)
-						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_ftdelilah_killvoice")), SoundSource.HOSTILE, 1, 1);
 				} else if (sourceentity instanceof WitheredBarryPolarEntity) {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_wbpolar_killvoice")), SoundSource.HOSTILE, 1, 1);

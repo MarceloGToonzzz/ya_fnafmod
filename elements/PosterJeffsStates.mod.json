@@ -13,7 +13,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:itp2",
+        "customModelName": "poster1:jeffs2",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -26,7 +26,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:itp3",
+        "customModelName": "poster1:jeffs3",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -39,7 +39,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:itp4",
+        "customModelName": "poster1:jeffs4",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -52,7 +52,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:itp5",
+        "customModelName": "poster1:jeffs5",
         "luminance": 0,
         "boundingBoxes": []
       }

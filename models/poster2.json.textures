@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "poster_fnaf2_celebrate2-small"
+      },
+      "name": "default"
+    },
+    "prizecorner2": {
+      "map": {
+        "0": "poster_fnaf2_prizecounter-retro"
+      },
+      "name": "prizecorner2"
+    },
+    "prizecorner1": {
+      "map": {
+        "0": "poster_fnaf2_prizecounter"
+      },
+      "name": "prizecorner1"
+    }
+  }
+}

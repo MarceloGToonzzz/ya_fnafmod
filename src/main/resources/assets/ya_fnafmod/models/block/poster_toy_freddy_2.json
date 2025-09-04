@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/poster",
+  "parent": "ya_fnafmod:custom/poster1",
   "textures": {
     "all": "ya_fnafmod:block/poster_toyfreddy2",
     "particle": "ya_fnafmod:block/poster_toyfreddy2",
-    "0": "ya_fnafmod:block/poster_toyfreddy2"
+    "0": "ya_fnafmod:block/poster_fnaf2_party-time-u-ready"
   },
   "render_type": "cutout"
 }

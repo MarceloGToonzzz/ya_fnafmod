@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/posterh",
+  "parent": "ya_fnafmod:custom/poster2",
   "textures": {
     "all": "ya_fnafmod:block/poster_prizecornerclassic",
     "particle": "ya_fnafmod:block/poster_prizecornerclassic",
-    "0": "ya_fnafmod:block/poster_prizecornerclassic"
+    "0": "ya_fnafmod:block/poster_fnaf2_prizecounter-retro"
   },
   "render_type": "solid"
 }

@@ -25,7 +25,6 @@ import net.mcreator.yafnafmod.entity.MoltenFreddyEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
-import net.mcreator.yafnafmod.entity.FuntimeDelilahEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarEntity;
 
@@ -84,9 +83,6 @@ public class PlayVoiceProcedure {
 				} else if (entity instanceof GusThePugEntity) {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_guspug_voice")), SoundSource.HOSTILE, 1, 1);
-				} else if (entity instanceof FuntimeDelilahEntity) {
-					if (world instanceof Level)
-						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_ftdelilah_voice")), SoundSource.HOSTILE, 1, 1);
 				} else if (entity instanceof WitheredBarryPolarEntity) {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_wbpolar_voice")), SoundSource.HOSTILE, 1, 1);

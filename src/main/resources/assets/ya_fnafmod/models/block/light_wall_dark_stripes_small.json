@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ya_fnafmod:block/wall_light_darkstripes-small",
+    "particle": "ya_fnafmod:block/wall_light_darkstripes-small"
+  },
+  "render_type": "solid"
+}

@@ -1697,7 +1697,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.FAN_PURPLE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUPCAKE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_CELEBRATE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_CELEBRATE_SMALL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_LETS_PARTY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_LETS_PARTY_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_FREDDY_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_BONNIE_1.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_CHICA_1.get().asItem());
@@ -1760,6 +1762,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_CHICA.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FOXY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_CELEBRATE_2.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_CELEBRATE_2_SMALL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_PRIZE_CORNER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DESK_FNAF_2.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_DESK_FNAF_2_EMPTY.get().asItem());
@@ -2148,7 +2151,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.POSTER_MATPAT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_BARRY_POLAR.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_HATCHET.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.POSTER_DELILAH.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.GENERATOR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LARGE_BUTTON_TOGGLE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LARGE_BUTTON.get().asItem());
@@ -2256,6 +2258,8 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CUSTOM_PIZZERIA_SIGN.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_CRYING_CHILD.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POSTER_TOY_FREDDY_3.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
@@ -2395,7 +2399,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.WITHERED_JOLLY_RAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.BARRY_POLAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.WITHERED_BARRY_POLAR_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.FUNTIME_DELILAH_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.GUS_THE_PUG_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.GUS_THE_PUG_STILL_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.INDIGO_SPAWN_ITEM.get());
@@ -2438,13 +2441,11 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.PLUSH_JOLLY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_RICKY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_BARRY_POLAR.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_DELILAH.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_GUS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_INDIGO.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_MARCELO.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_LOGAN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_STEPHAN.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.PLUSH_DT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_VASSILIS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PLUSH_STATICBEAR.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_MOBS.getId()).build());
@@ -2567,7 +2568,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.DOUG_DOG_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WITHERED_DOUG_DOG_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BARRY_POLAR_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.GUS_THE_PUG_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.INDIGO_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LOLA_CHICA_BLOCK.get().asItem());

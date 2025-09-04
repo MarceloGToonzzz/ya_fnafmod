@@ -165,8 +165,6 @@ import net.mcreator.yafnafmod.client.renderer.FuntimeFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.FuntimeFreddyDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.FuntimeFoxyRenderer;
 import net.mcreator.yafnafmod.client.renderer.FuntimeFoxyDayRenderer;
-import net.mcreator.yafnafmod.client.renderer.FuntimeDelilahRenderer;
-import net.mcreator.yafnafmod.client.renderer.FuntimeDelilahDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.FuntimeChicaRenderer;
 import net.mcreator.yafnafmod.client.renderer.FuntimeChicaDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.FreddyFazbearRenderer;
@@ -399,8 +397,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.SPARKY_DOG.get(), SparkyDogRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.SPARKY_DOG_DAY.get(), SparkyDogDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983.get(), CarPoliceCruiserChevroletImpala1983Renderer::new);
-		event.registerEntityRenderer(YaFnafmodModEntities.FUNTIME_DELILAH.get(), FuntimeDelilahRenderer::new);
-		event.registerEntityRenderer(YaFnafmodModEntities.FUNTIME_DELILAH_DAY.get(), FuntimeDelilahDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.RACCOON.get(), RaccoonRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.GUS_THE_PUG.get(), GusThePugRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.GUS_THE_PUG_DAY.get(), GusThePugDayRenderer::new);

@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/poster",
+  "parent": "ya_fnafmod:custom/poster1",
   "textures": {
     "all": "ya_fnafmod:block/poster_chica1",
     "particle": "ya_fnafmod:block/poster_chica1",
-    "0": "ya_fnafmod:block/poster_chica1"
+    "0": "ya_fnafmod:block/poster_fnaf1_eating-time"
   },
   "render_type": "cutout"
 }

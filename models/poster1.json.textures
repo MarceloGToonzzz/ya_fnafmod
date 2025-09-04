@@ -1,0 +1,166 @@
+{
+  "mappings": {
+    "celebrate1": {
+      "map": {
+        "0": "poster_fnaf1_celebrate-small"
+      },
+      "name": "celebrate1"
+    },
+    "rules1": {
+      "map": {
+        "0": "poster_fnaf1_rules-for-safety"
+      },
+      "name": "rules1"
+    },
+    "default": {
+      "map": {
+        "0": "poster_fnaf1_lets-party"
+      },
+      "name": "default"
+    },
+    "ghost1": {
+      "map": {
+        "0": "poster_fnaf1_crying-child"
+      },
+      "name": "ghost1"
+    },
+    "freddy1": {
+      "map": {
+        "0": "poster_fnaf1_fun-time"
+      },
+      "name": "freddy1"
+    },
+    "chica1": {
+      "map": {
+        "0": "poster_fnaf1_eating-time"
+      },
+      "name": "chica1"
+    },
+    "bonnie1": {
+      "map": {
+        "0": "poster_fnaf1_party-time"
+      },
+      "name": "bonnie1"
+    },
+    "itsme": {
+      "map": {
+        "0": "poster_fnaf1_gfreddy"
+      },
+      "name": "itsme"
+    },
+    "letsparty2": {
+      "map": {
+        "0": "poster_fnaf1_lets-party-2"
+      },
+      "name": "letsparty2"
+    },
+    "toyfreddy1": {
+      "map": {
+        "0": "poster_fnaf2_party-time-u-ready"
+      },
+      "name": "toyfreddy1"
+    },
+    "toyfreddy2": {
+      "map": {
+        "0": "poster_fnaf2_the-new-face-of-fun"
+      },
+      "name": "toyfreddy2"
+    },
+    "toyfreddy3": {
+      "map": {
+        "0": "poster_fnaf2_the-new-face-of-fun2"
+      },
+      "name": "toyfreddy3"
+    },
+    "toybonnie1": {
+      "map": {
+        "0": "poster_fnaf2_lets-rock"
+      },
+      "name": "toybonnie1"
+    },
+    "toychica1": {
+      "map": {
+        "0": "poster_fnaf2_lets-party"
+      },
+      "name": "toychica1"
+    },
+    "toyfoxy1": {
+      "map": {
+        "0": "poster_fnaf2_the-new-face-of-playtime"
+      },
+      "name": "toyfoxy1"
+    },
+    "frights1": {
+      "map": {
+        "0": "poster_fnaf3_frights5"
+      },
+      "name": "frights1"
+    },
+    "frights2": {
+      "map": {
+        "0": "poster_fnaf3_frights4"
+      },
+      "name": "frights2"
+    },
+    "frights3": {
+      "map": {
+        "0": "poster_fnaf3_frights1"
+      },
+      "name": "frights3"
+    },
+    "frights4": {
+      "map": {
+        "0": "poster_fnaf3_frights2"
+      },
+      "name": "frights4"
+    },
+    "frights5": {
+      "map": {
+        "0": "poster_fnaf3_frights5"
+      },
+      "name": "frights5"
+    },
+    "jeffs1": {
+      "map": {
+        "0": "poster_fnafitp_past5"
+      },
+      "name": "jeffs1"
+    },
+    "jeffs2": {
+      "map": {
+        "0": "poster_fnafitp_past4"
+      },
+      "name": "jeffs2"
+    },
+    "jeffs3": {
+      "map": {
+        "0": "poster_fnafitp_past1"
+      },
+      "name": "jeffs3"
+    },
+    "jeffs4": {
+      "map": {
+        "0": "poster_fnafitp_past2"
+      },
+      "name": "jeffs4"
+    },
+    "jeffs5": {
+      "map": {
+        "0": "poster_fnafitp_past3"
+      },
+      "name": "jeffs5"
+    },
+    "frights6": {
+      "map": {
+        "0": "poster_fnaf3_frights6"
+      },
+      "name": "frights6"
+    },
+    "frights7": {
+      "map": {
+        "0": "poster_fnaf3_frights7"
+      },
+      "name": "frights7"
+    }
+  }
+}

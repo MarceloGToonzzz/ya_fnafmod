@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/bigposter",
+  "parent": "ya_fnafmod:custom/poster-celebrate1",
   "textures": {
     "all": "ya_fnafmod:block/posterbig_1_celebrate",
     "particle": "ya_fnafmod:block/posterbig_1_celebrate",
-    "0": "ya_fnafmod:block/posterbig_1_celebrate"
+    "0": "ya_fnafmod:block/poster_fnaf1-celebrate"
   },
   "render_type": "cutout"
 }

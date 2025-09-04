@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/poster",
+  "parent": "ya_fnafmod:custom/poster1",
   "textures": {
     "all": "ya_fnafmod:block/poster_rules",
     "particle": "ya_fnafmod:block/poster_rules",
-    "0": "ya_fnafmod:block/poster_rules"
+    "0": "ya_fnafmod:block/poster_fnaf1_rules-for-safety"
   },
   "render_type": "cutout"
 }

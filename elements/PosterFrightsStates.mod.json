@@ -13,7 +13,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:ff2",
+        "customModelName": "poster1:frights2",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -26,7 +26,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:ff3",
+        "customModelName": "poster1:frights3",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -39,7 +39,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:ff4",
+        "customModelName": "poster1:frights4",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -52,7 +52,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:ff5",
+        "customModelName": "poster1:frights5",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -65,7 +65,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:ff6",
+        "customModelName": "poster1:frights6",
         "luminance": 0,
         "boundingBoxes": []
       },
@@ -78,7 +78,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "poster:ff7",
+        "customModelName": "poster1:frights7",
         "luminance": 0,
         "boundingBoxes": []
       }

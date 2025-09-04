@@ -196,7 +196,6 @@ import net.mcreator.yafnafmod.block.entity.GarfeldTileEntity;
 import net.mcreator.yafnafmod.block.entity.FuseboxBlockEntity;
 import net.mcreator.yafnafmod.block.entity.FuntimeFreddyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.FuntimeFoxyBlockTileEntity;
-import net.mcreator.yafnafmod.block.entity.FuntimeDelilahBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.FuntimeChicaBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.FryingPanTileEntity;
 import net.mcreator.yafnafmod.block.entity.FryerTileEntity;
@@ -884,8 +883,6 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<Endo02BlockTileEntity>> ENDO_02_BLOCK = REGISTRY.register("endo_02_block", () -> BlockEntityType.Builder.of(Endo02BlockTileEntity::new, YaFnafmodModBlocks.ENDO_02_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CarPoliceCruiserChevroletImpala1983BlockTileEntity>> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK = REGISTRY.register("car_police_cruiser_chevrolet_impala_1983_block",
 			() -> BlockEntityType.Builder.of(CarPoliceCruiserChevroletImpala1983BlockTileEntity::new, YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.get()).build(null));
-	public static final RegistryObject<BlockEntityType<FuntimeDelilahBlockTileEntity>> FUNTIME_DELILAH_BLOCK = REGISTRY.register("funtime_delilah_block",
-			() -> BlockEntityType.Builder.of(FuntimeDelilahBlockTileEntity::new, YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<FuntimeFreddyBlockTileEntity>> FUNTIME_FREDDY_BLOCK = REGISTRY.register("funtime_freddy_block",
 			() -> BlockEntityType.Builder.of(FuntimeFreddyBlockTileEntity::new, YaFnafmodModBlocks.FUNTIME_FREDDY_BLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CircusBabyBlockTileEntity>> CIRCUS_BABY_BLOCK = REGISTRY.register("circus_baby_block",

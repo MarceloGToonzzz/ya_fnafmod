@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "poster:chica1",
+    "customModelName": "poster1:chica1",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -24,11 +24,11 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 2.0,
-        "my": 0.5,
-        "mz": 15.75,
-        "Mx": 14.0,
-        "My": 15.5,
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 15.0,
+        "Mx": 16.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }

@@ -43,12 +43,7 @@ public class PosterPrizeCornerBlock extends Block {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return switch (state.getValue(FACING)) {
-			default -> box(1, 1, 0, 31, 15, 0.1);
-			case NORTH -> box(-15, 1, 15.9, 15, 15, 16);
-			case EAST -> box(0, 1, -15, 0.1, 15, 15);
-			case WEST -> box(15.9, 1, 1, 16, 15, 31);
-		};
+		return Shapes.empty();
 	}
 
 	@Override

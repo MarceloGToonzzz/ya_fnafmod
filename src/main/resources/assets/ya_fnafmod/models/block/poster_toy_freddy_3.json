@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster1",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_fnaf2_the-new-face-of-fun2",
+    "particle": "ya_fnafmod:block/poster_fnaf2_the-new-face-of-fun2",
+    "0": "ya_fnafmod:block/poster_fnaf2_the-new-face-of-fun2"
+  },
+  "render_type": "cutout"
+}

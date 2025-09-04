@@ -173,8 +173,6 @@ import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.FuntimeDelilahEntity;
-import net.mcreator.yafnafmod.entity.FuntimeDelilahDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeChicaEntity;
 import net.mcreator.yafnafmod.entity.FuntimeChicaDayEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearEntity;
@@ -915,14 +913,6 @@ public class YaFnafmodModEntities {
 					.setCustomClientFactory(CarPoliceCruiserChevroletImpala1983Entity::new)
 
 					.sized(1.03125f, 2f));
-	public static final RegistryObject<EntityType<FuntimeDelilahEntity>> FUNTIME_DELILAH = register("funtime_delilah",
-			EntityType.Builder.<FuntimeDelilahEntity>of(FuntimeDelilahEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(FuntimeDelilahEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<FuntimeDelilahDayEntity>> FUNTIME_DELILAH_DAY = register("funtime_delilah_day",
-			EntityType.Builder.<FuntimeDelilahDayEntity>of(FuntimeDelilahDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(FuntimeDelilahDayEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<RaccoonEntity>> RACCOON = register("raccoon",
 			EntityType.Builder.<RaccoonEntity>of(RaccoonEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RaccoonEntity::new)
 
@@ -1317,8 +1307,6 @@ public class YaFnafmodModEntities {
 			SparkyDogEntity.init();
 			SparkyDogDayEntity.init();
 			CarPoliceCruiserChevroletImpala1983Entity.init();
-			FuntimeDelilahEntity.init();
-			FuntimeDelilahDayEntity.init();
 			RaccoonEntity.init();
 			GusThePugEntity.init();
 			GusThePugDayEntity.init();
@@ -1539,8 +1527,6 @@ public class YaFnafmodModEntities {
 		event.put(SPARKY_DOG.get(), SparkyDogEntity.createAttributes().build());
 		event.put(SPARKY_DOG_DAY.get(), SparkyDogDayEntity.createAttributes().build());
 		event.put(CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983.get(), CarPoliceCruiserChevroletImpala1983Entity.createAttributes().build());
-		event.put(FUNTIME_DELILAH.get(), FuntimeDelilahEntity.createAttributes().build());
-		event.put(FUNTIME_DELILAH_DAY.get(), FuntimeDelilahDayEntity.createAttributes().build());
 		event.put(RACCOON.get(), RaccoonEntity.createAttributes().build());
 		event.put(GUS_THE_PUG.get(), GusThePugEntity.createAttributes().build());
 		event.put(GUS_THE_PUG_DAY.get(), GusThePugDayEntity.createAttributes().build());

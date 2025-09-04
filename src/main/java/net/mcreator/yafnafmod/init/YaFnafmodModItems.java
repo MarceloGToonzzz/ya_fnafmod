@@ -320,7 +320,6 @@ import net.mcreator.yafnafmod.item.FuntimeFreddyFrightsSpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeFreddyAltSpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeFoxySpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeFoxyAltSpawnItemItem;
-import net.mcreator.yafnafmod.item.FuntimeDelilahSpawnItemItem;
 import net.mcreator.yafnafmod.item.FuntimeChicaSpawnItemItem;
 import net.mcreator.yafnafmod.item.FriesMoldyItem;
 import net.mcreator.yafnafmod.item.FriesItem;
@@ -615,7 +614,6 @@ import net.mcreator.yafnafmod.block.display.GrandfatherClockDisplayItem;
 import net.mcreator.yafnafmod.block.display.GarfeldDisplayItem;
 import net.mcreator.yafnafmod.block.display.FuntimeFreddyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.FuntimeFoxyBlockDisplayItem;
-import net.mcreator.yafnafmod.block.display.FuntimeDelilahBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.FuntimeChicaBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.FryingPanDisplayItem;
 import net.mcreator.yafnafmod.block.display.FryerDisplayItem;
@@ -3650,9 +3648,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CIRCUS_CONTROL_PANEL = block(YaFnafmodModBlocks.CIRCUS_CONTROL_PANEL);
 	public static final RegistryObject<Item> BIG_ELEVATOR_DOOR = REGISTRY.register(YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.getId().getPath(), () -> new BigElevatorDoorDisplayItem(YaFnafmodModBlocks.BIG_ELEVATOR_DOOR.get(), new Item.Properties()));
 	public static final RegistryObject<Item> ELEVATOR_BUTTON = block(YaFnafmodModBlocks.ELEVATOR_BUTTON);
-	public static final RegistryObject<Item> FUNTIME_DELILAH_SPAWN_EGG = REGISTRY.register("funtime_delilah_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_DELILAH, -6662865, -4952003, new Item.Properties()));
-	public static final RegistryObject<Item> FUNTIME_DELILAH_DAY_SPAWN_EGG = REGISTRY.register("funtime_delilah_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.FUNTIME_DELILAH_DAY, -6662865, -4952003, new Item.Properties()));
-	public static final RegistryObject<Item> FUNTIME_DELILAH_SPAWN_ITEM = REGISTRY.register("funtime_delilah_spawn_item", () -> new FuntimeDelilahSpawnItemItem());
 	public static final RegistryObject<Item> DITTOPHOBIA_FREDDY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DITTOPHOBIA_FREDDY_BLOCK.getId().getPath(),
 			() -> new DittophobiaFreddyBlockDisplayItem(YaFnafmodModBlocks.DITTOPHOBIA_FREDDY_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DITTOPHOBIA_BONNIE_BLOCK = REGISTRY.register(YaFnafmodModBlocks.DITTOPHOBIA_BONNIE_BLOCK.getId().getPath(),
@@ -3666,8 +3661,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.getId().getPath(),
 			() -> new CarPoliceCruiserChevroletImpala1983BlockDisplayItem(YaFnafmodModBlocks.CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CAR_POLICE_CRUISER_CHEVROLET_IMPALA_1983_SPAWN_ITEM = REGISTRY.register("car_police_cruiser_chevrolet_impala_1983_spawn_item", () -> new CarPoliceCruiserChevroletImpala1983SpawnItemItem());
-	public static final RegistryObject<Item> FUNTIME_DELILAH_BLOCK = REGISTRY.register(YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.getId().getPath(),
-			() -> new FuntimeDelilahBlockDisplayItem(YaFnafmodModBlocks.FUNTIME_DELILAH_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> FUNTIME_FREDDY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.FUNTIME_FREDDY_BLOCK.getId().getPath(),
 			() -> new FuntimeFreddyBlockDisplayItem(YaFnafmodModBlocks.FUNTIME_FREDDY_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CIRCUS_BABY_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CIRCUS_BABY_BLOCK.getId().getPath(), () -> new CircusBabyBlockDisplayItem(YaFnafmodModBlocks.CIRCUS_BABY_BLOCK.get(), new Item.Properties()));
@@ -5012,7 +5005,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> PLUSH_DOUG = block(YaFnafmodModBlocks.PLUSH_DOUG);
 	public static final RegistryObject<Item> PLUSH_JOLLY = block(YaFnafmodModBlocks.PLUSH_JOLLY);
 	public static final RegistryObject<Item> PLUSH_RICKY = block(YaFnafmodModBlocks.PLUSH_RICKY);
-	public static final RegistryObject<Item> PLUSH_DELILAH = block(YaFnafmodModBlocks.PLUSH_DELILAH);
 	public static final RegistryObject<Item> PLUSH_GUS = block(YaFnafmodModBlocks.PLUSH_GUS);
 	public static final RegistryObject<Item> SPARKY_DOG_BLOCK = REGISTRY.register(YaFnafmodModBlocks.SPARKY_DOG_BLOCK.getId().getPath(), () -> new SparkyDogBlockDisplayItem(YaFnafmodModBlocks.SPARKY_DOG_BLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> SCRAP_SPARKY_DOG_SPAWN_EGG = REGISTRY.register("scrap_sparky_dog_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.SCRAP_SPARKY_DOG, -6662865, -4952003, new Item.Properties()));
@@ -5339,7 +5331,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_4 = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_4);
 	public static final RegistryObject<Item> STRUCTURE_BLOCK_FNAF_6 = block(YaFnafmodModBlocks.STRUCTURE_BLOCK_FNAF_6);
 	public static final RegistryObject<Item> SECURITY_GATE = REGISTRY.register(YaFnafmodModBlocks.SECURITY_GATE.getId().getPath(), () -> new SecurityGateDisplayItem(YaFnafmodModBlocks.SECURITY_GATE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> POSTER_DELILAH = block(YaFnafmodModBlocks.POSTER_DELILAH);
 	public static final RegistryObject<Item> POSTER_HATCHET = block(YaFnafmodModBlocks.POSTER_HATCHET);
 	public static final RegistryObject<Item> WALL_PIZZA_PEPPERONI_OLIVE = block(YaFnafmodModBlocks.WALL_PIZZA_PEPPERONI_OLIVE);
 	public static final RegistryObject<Item> DOORFRAME_CYAN = block(YaFnafmodModBlocks.DOORFRAME_CYAN);
@@ -5355,7 +5346,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POPGUN_REVOLVER = REGISTRY.register("popgun_revolver", () -> new PopgunRevolverItem());
 	public static final RegistryObject<Item> POPGUN_BULLET = REGISTRY.register("popgun_bullet", () -> new PopgunBulletItem());
 	public static final RegistryObject<Item> PLUNGER = REGISTRY.register("plunger", () -> new PlungerItem());
-	public static final RegistryObject<Item> PLUSH_DT = block(YaFnafmodModBlocks.PLUSH_DT);
 	public static final RegistryObject<Item> PLUSH_VASSILIS = block(YaFnafmodModBlocks.PLUSH_VASSILIS);
 	public static final RegistryObject<VrHeadsetToyFreddyItem> VR_HEADSET_TOY_FREDDY_HELMET = REGISTRY.register("vr_headset_toy_freddy_helmet", () -> new VrHeadsetToyFreddyItem(ArmorItem.Type.HELMET, new Item.Properties()));
 	public static final RegistryObject<MnafGoldenFreddySuitItem> MNAF_GOLDEN_FREDDY_SUIT_HELMET = REGISTRY.register("mnaf_golden_freddy_suit_helmet", () -> new MnafGoldenFreddySuitItem(ArmorItem.Type.HELMET, new Item.Properties()));
@@ -5457,6 +5447,11 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> BLACK_WHITE_GREEN_CHECKERED_WALL_ALTERNATE = block(YaFnafmodModBlocks.BLACK_WHITE_GREEN_CHECKERED_WALL_ALTERNATE);
 	public static final RegistryObject<Item> BLACK_WHITE_GREEN_CHECKERED_WALL_BIG = block(YaFnafmodModBlocks.BLACK_WHITE_GREEN_CHECKERED_WALL_BIG);
 	public static final RegistryObject<Item> BLACK_WHITE_GREEN_CHECKERED_WALL_BIG_ALTERNATE = block(YaFnafmodModBlocks.BLACK_WHITE_GREEN_CHECKERED_WALL_BIG_ALTERNATE);
+	public static final RegistryObject<Item> POSTER_CELEBRATE_SMALL = block(YaFnafmodModBlocks.POSTER_CELEBRATE_SMALL);
+	public static final RegistryObject<Item> POSTER_LETS_PARTY_2 = block(YaFnafmodModBlocks.POSTER_LETS_PARTY_2);
+	public static final RegistryObject<Item> POSTER_CELEBRATE_2_SMALL = block(YaFnafmodModBlocks.POSTER_CELEBRATE_2_SMALL);
+	public static final RegistryObject<Item> POSTER_CRYING_CHILD = block(YaFnafmodModBlocks.POSTER_CRYING_CHILD);
+	public static final RegistryObject<Item> POSTER_TOY_FREDDY_3 = block(YaFnafmodModBlocks.POSTER_TOY_FREDDY_3);
 
 	// Start of user code block custom items
 	// End of user code block custom items

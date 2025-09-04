@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/movie2-entranceglass",
+  "textures": {
+    "all": "ya_fnafmod:block/movie-entranceglass",
+    "particle": "ya_fnafmod:block/movie-entranceglass",
+    "0": "ya_fnafmod:block/movie-entranceglass"
+  },
+  "render_type": "translucent"
+}

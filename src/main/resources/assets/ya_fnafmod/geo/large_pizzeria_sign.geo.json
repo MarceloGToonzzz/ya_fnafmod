@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 11,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "pivot",
+					"pivot": [0, 8, 7.105],
+					"cubes": [
+						{"origin": [-72, -48, 7.425], "size": [144, 112, 0], "uv": [0, 0]},
+						{"origin": [-72, -48, 7.35], "size": [144, 112, 0], "uv": [0, 112]},
+						{"origin": [-72, -48, 6.85], "size": [144, 112, 0], "uv": [288, 0]},
+						{"origin": [-72, -48, 7.875], "size": [144, 112, 0], "uv": [0, 336]},
+						{"origin": [-72, -48, 7.025], "size": [144, 112, 0], "uv": [0, 224]}
+					]
+				},
+				{
+					"name": "overlay",
+					"parent": "pivot",
+					"pivot": [0, 8, 5.8],
+					"cubes": [
+						{"origin": [-72, -48, 6.8], "size": [144, 112, 0], "uv": [288, 112]}
+					]
+				}
+			]
+		}
+	]
+}

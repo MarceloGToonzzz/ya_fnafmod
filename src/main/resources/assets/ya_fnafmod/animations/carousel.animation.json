@@ -2,7 +2,36 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"0": {
-			"loop": true
+			"loop": true,
+			"bones": {
+				"turny bit": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"freddy": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"bonnie": {
+					"position": {
+						"vector": [0, 0, 0],
+						"easing": "easeInOutSine"
+					}
+				},
+				"foxy": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"chica": {
+					"position": {
+						"vector": [0, 0, 0],
+						"easing": "easeInOutSine"
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

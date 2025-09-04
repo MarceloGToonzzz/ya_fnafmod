@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/poster",
+  "parent": "ya_fnafmod:custom/poster1",
   "textures": {
     "all": "ya_fnafmod:block/poster_toybonnie1",
     "particle": "ya_fnafmod:block/poster_toybonnie1",
-    "0": "ya_fnafmod:block/poster_toybonnie1"
+    "0": "ya_fnafmod:block/poster_fnaf2_lets-rock"
   },
   "render_type": "cutout"
 }

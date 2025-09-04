@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/poster1",
+  "textures": {
+    "all": "ya_fnafmod:block/poster_fnaf1_crying-child",
+    "particle": "ya_fnafmod:block/poster_fnaf1_crying-child",
+    "0": "ya_fnafmod:block/poster_fnaf1_crying-child"
+  },
+  "render_type": "cutout"
+}

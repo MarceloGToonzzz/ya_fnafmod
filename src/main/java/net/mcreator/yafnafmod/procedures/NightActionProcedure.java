@@ -56,7 +56,6 @@ import net.mcreator.yafnafmod.entity.GusThePugStillDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.FuntimeDelilahDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeChicaDayEntity;
 import net.mcreator.yafnafmod.entity.FreddyFazbearDayEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
@@ -320,9 +319,6 @@ public class NightActionProcedure {
 			if (entity instanceof BarryPolarDayEntity) {
 				((BarryPolarDayEntity) entity).setAnimation("0");
 			}
-			if (entity instanceof FuntimeDelilahDayEntity) {
-				((FuntimeDelilahDayEntity) entity).setAnimation("0");
-			}
 			if (entity instanceof IndigoDayEntity) {
 				((IndigoDayEntity) entity).setAnimation("0");
 			}
@@ -464,9 +460,6 @@ public class NightActionProcedure {
 			}
 			if (entity instanceof BarryPolarDayEntity) {
 				((BarryPolarDayEntity) entity).setAnimation("empty");
-			}
-			if (entity instanceof FuntimeDelilahDayEntity) {
-				((FuntimeDelilahDayEntity) entity).setAnimation("empty");
 			}
 			if (entity instanceof IndigoDayEntity) {
 				((IndigoDayEntity) entity).setAnimation("empty");

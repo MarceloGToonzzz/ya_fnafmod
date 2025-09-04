@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "bigposter:default",
+    "customModelName": "poster-celebrate1:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -24,12 +24,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 6.0,
-        "my": 0.5,
+        "mx": 2.5,
+        "my": 0.0,
         "mz": 15.9,
-        "Mx": 26.0,
-        "My": 31.5,
-        "Mz": 16.0,
+        "Mx": 29.5,
+        "My": 32.0,
+        "Mz": 15.9,
         "subtract": false
       }
     ],
