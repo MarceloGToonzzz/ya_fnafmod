@@ -89,6 +89,7 @@ import net.mcreator.yafnafmod.block.renderer.PopgoesWeaselBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PlushFingertrapTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaStandingSignMovie2TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaSignMovieTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.PizzeriaSignMovieLargeTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaSignMovie2TileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaSignJrsTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.PizzeriaSignJrs2TileRenderer;
@@ -336,6 +337,7 @@ import net.mcreator.yafnafmod.block.renderer.BigEntranceDoorWideTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigEntranceDoorTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigEntraceFancyRedWideTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigElevatorDoorTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.BigDecoratedGlassEntranceDoorWideTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigClosetTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigBedroomDoorTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.BigBackstageRedDoorWideTileRenderer;
@@ -728,5 +730,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.TOY_CHICA_HEAD.get(), context -> new ToyChicaHeadTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.TOY_FOXY_HEAD.get(), context -> new ToyFoxyHeadTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FOXY_TOY.get(), context -> new CutoutFoxyToyTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.PIZZERIA_SIGN_MOVIE_LARGE.get(), context -> new PizzeriaSignMovieLargeTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE.get(), context -> new BigDecoratedGlassEntranceDoorWideTileRenderer());
 	}
 }

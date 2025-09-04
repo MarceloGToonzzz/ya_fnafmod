@@ -27,7 +27,7 @@ public class CarouselBlockModel extends GeoModel<CarouselTileEntity> {
 	public ResourceLocation getTextureResource(CarouselTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/carousel.png");
-		return new ResourceLocation("ya_fnafmod", "textures/block/carousel.png");
+			return new ResourceLocation("ya_fnafmod", "textures/block/retro-carousel-on.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/retro-carousel.png");
 	}
 }

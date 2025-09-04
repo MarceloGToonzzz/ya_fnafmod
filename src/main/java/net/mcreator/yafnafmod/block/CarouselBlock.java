@@ -76,10 +76,10 @@ public class CarouselBlock extends BaseEntityBlock implements EntityBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 
 		return switch (state.getValue(FACING)) {
-			default -> box(-12, 0, -12, 12, 43.5, 12);
-			case NORTH -> box(4, 0, 4, 28, 43.5, 28);
-			case EAST -> box(-12, 0, 4, 12, 43.5, 28);
-			case WEST -> box(4, 0, -12, 28, 43.5, 12);
+			default -> box(-8, 0, -8, 24, 48, 24);
+			case NORTH -> box(-8, 0, -8, 24, 48, 24);
+			case EAST -> box(-8, 0, -8, 24, 48, 24);
+			case WEST -> box(-8, 0, -8, 24, 48, 24);
 		};
 	}
 

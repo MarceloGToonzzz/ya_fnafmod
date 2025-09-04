@@ -19,6 +19,6 @@ public class CarouselDisplayModel extends GeoModel<CarouselDisplayItem> {
 
 	@Override
 	public ResourceLocation getTextureResource(CarouselDisplayItem entity) {
-		return new ResourceLocation("ya_fnafmod", "textures/block/carousel.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/retro-carousel.png");
 	}
 }

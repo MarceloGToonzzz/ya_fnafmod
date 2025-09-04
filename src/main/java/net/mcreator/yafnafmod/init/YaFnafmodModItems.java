@@ -525,6 +525,7 @@ import net.mcreator.yafnafmod.block.display.PotDisplayItem;
 import net.mcreator.yafnafmod.block.display.PopgoesWeaselBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.PlushFingertrapDisplayItem;
 import net.mcreator.yafnafmod.block.display.PizzeriaStandingSignMovie2DisplayItem;
+import net.mcreator.yafnafmod.block.display.PizzeriaSignMovieLargeDisplayItem;
 import net.mcreator.yafnafmod.block.display.PizzeriaSignMovieDisplayItem;
 import net.mcreator.yafnafmod.block.display.PizzeriaSignMovie2DisplayItem;
 import net.mcreator.yafnafmod.block.display.PizzeriaSignJrsDisplayItem;
@@ -773,6 +774,7 @@ import net.mcreator.yafnafmod.block.display.BigEntranceDoorWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntranceDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigEntraceFancyRedWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigElevatorDoorDisplayItem;
+import net.mcreator.yafnafmod.block.display.BigDecoratedGlassEntranceDoorWideDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigClosetDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigBedroomDoorDisplayItem;
 import net.mcreator.yafnafmod.block.display.BigBackstageRedDoorWideDisplayItem;
@@ -5452,6 +5454,24 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> POSTER_CELEBRATE_2_SMALL = block(YaFnafmodModBlocks.POSTER_CELEBRATE_2_SMALL);
 	public static final RegistryObject<Item> POSTER_CRYING_CHILD = block(YaFnafmodModBlocks.POSTER_CRYING_CHILD);
 	public static final RegistryObject<Item> POSTER_TOY_FREDDY_3 = block(YaFnafmodModBlocks.POSTER_TOY_FREDDY_3);
+	public static final RegistryObject<Item> REDSTONE_LAMP_WHITE = block(YaFnafmodModBlocks.REDSTONE_LAMP_WHITE);
+	public static final RegistryObject<Item> PIZZERIA_SIGN_MOVIE_LARGE = REGISTRY.register(YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE_LARGE.getId().getPath(),
+			() -> new PizzeriaSignMovieLargeDisplayItem(YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE_LARGE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE = REGISTRY.register(YaFnafmodModBlocks.BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE.getId().getPath(),
+			() -> new BigDecoratedGlassEntranceDoorWideDisplayItem(YaFnafmodModBlocks.BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> MOVIE_ENTRANCE_GLASS = block(YaFnafmodModBlocks.MOVIE_ENTRANCE_GLASS);
+	public static final RegistryObject<Item> DARK_WALL_LIGHT_STRIPES_SMALL = block(YaFnafmodModBlocks.DARK_WALL_LIGHT_STRIPES_SMALL);
+	public static final RegistryObject<Item> DARK_WALL_LIGHT_STRIPES_SMALL_STAIRS = block(YaFnafmodModBlocks.DARK_WALL_LIGHT_STRIPES_SMALL_STAIRS);
+	public static final RegistryObject<Item> DARK_WALL_LIGHT_STRIPES_SMALL_SLAB = block(YaFnafmodModBlocks.DARK_WALL_LIGHT_STRIPES_SMALL_SLAB);
+	public static final RegistryObject<Item> FANCY_DARK_WALL_LIGHT_STRIPES_SMALL = block(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL);
+	public static final RegistryObject<Item> FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_STAIRS = block(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_STAIRS);
+	public static final RegistryObject<Item> FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_SLAB = block(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_SLAB);
+	public static final RegistryObject<Item> LIGHT_WALL_DARK_STRIPES_SMALL = block(YaFnafmodModBlocks.LIGHT_WALL_DARK_STRIPES_SMALL);
+	public static final RegistryObject<Item> LIGHT_WALL_DARK_STRIPES_SMALL_STAIRS = block(YaFnafmodModBlocks.LIGHT_WALL_DARK_STRIPES_SMALL_STAIRS);
+	public static final RegistryObject<Item> LIGHT_WALL_DARK_STRIPES_SMALL_SLAB = block(YaFnafmodModBlocks.LIGHT_WALL_DARK_STRIPES_SMALL_SLAB);
+	public static final RegistryObject<Item> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL = block(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES_SMALL);
+	public static final RegistryObject<Item> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_STAIRS = block(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_STAIRS);
+	public static final RegistryObject<Item> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_SLAB = block(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_SLAB);
 
 	// Start of user code block custom items
 	// End of user code block custom items

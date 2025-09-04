@@ -1,6 +1,18 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:fancy_light_wall_dark_stripes_small_slab",
+    "ya_fnafmod:fancy_light_wall_dark_stripes_small_stairs",
+    "ya_fnafmod:fancy_light_wall_dark_stripes_small",
+    "ya_fnafmod:light_wall_dark_stripes_small_slab",
+    "ya_fnafmod:light_wall_dark_stripes_small_stairs",
+    "ya_fnafmod:light_wall_dark_stripes_small",
+    "ya_fnafmod:fancy_dark_wall_light_stripes_small_slab",
+    "ya_fnafmod:fancy_dark_wall_light_stripes_small_stairs",
+    "ya_fnafmod:fancy_dark_wall_light_stripes_small",
+    "ya_fnafmod:dark_wall_light_stripes_small_slab",
+    "ya_fnafmod:dark_wall_light_stripes_small_stairs",
+    "ya_fnafmod:dark_wall_light_stripes_small",
     "ya_fnafmod:black_white_green_checkered_wall_big_alternate",
     "ya_fnafmod:black_white_green_checkered_wall_big",
     "ya_fnafmod:black_white_green_checkered_wall_alternate",

@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "ya_fnafmod:fancy_light_wall_dark_stripes_small_stairs",
+    "ya_fnafmod:light_wall_dark_stripes_small_stairs",
+    "ya_fnafmod:dark_wall_light_stripes_small_stairs",
     "ya_fnafmod:green_lime_foam_tile_stairs",
     "ya_fnafmod:green_white_foam_tile_stairs",
     "ya_fnafmod:black_green_foam_tile_stairs",

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "movie-entranceglass"
+      },
+      "name": "default"
+    }
+  }
+}

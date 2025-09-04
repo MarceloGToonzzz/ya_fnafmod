@@ -1,5 +1,5 @@
 {
-  "parent": "block/stairs",
+  "parent": "block/slab",
   "textures": {
     "particle": "ya_fnafmod:block/wall_light_darkstripes-small_fancy",
     "bottom": "ya_fnafmod:block/wall_light_darkstripes-small_fancy",

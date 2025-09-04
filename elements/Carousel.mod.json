@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "carousel",
+    "texture": "retro-carousel",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -24,12 +24,12 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 4.0,
+        "mx": -8.0,
         "my": 0.0,
-        "mz": 4.0,
-        "Mx": 28.0,
-        "My": 43.5,
-        "Mz": 28.0,
+        "mz": -8.0,
+        "Mx": 24.0,
+        "My": 48.0,
+        "Mz": 24.0,
         "subtract": false
       }
     ],
@@ -138,7 +138,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "carousel",
+        "texture": "retro-carousel-on",
         "particleTexture": "locker_yellow_tside",
         "renderType": 0,
         "customModelName": "carousel_on.geo.json",

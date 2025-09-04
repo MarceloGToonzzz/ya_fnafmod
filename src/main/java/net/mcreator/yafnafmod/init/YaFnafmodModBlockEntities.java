@@ -99,6 +99,7 @@ import net.mcreator.yafnafmod.block.entity.PopgoesWeaselBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.PlushFingertrapTileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaStandingSignMovie2TileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignMovieTileEntity;
+import net.mcreator.yafnafmod.block.entity.PizzeriaSignMovieLargeTileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignMovie2TileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignJrsTileEntity;
 import net.mcreator.yafnafmod.block.entity.PizzeriaSignJrs2TileEntity;
@@ -359,6 +360,7 @@ import net.mcreator.yafnafmod.block.entity.BigEntranceDoorWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntranceDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigEntraceFancyRedWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigElevatorDoorTileEntity;
+import net.mcreator.yafnafmod.block.entity.BigDecoratedGlassEntranceDoorWideTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigClosetTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigBedroomDoorTileEntity;
 import net.mcreator.yafnafmod.block.entity.BigBackstageRedDoorWideTileEntity;
@@ -1029,6 +1031,10 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<ToyFoxyHeadTileEntity>> TOY_FOXY_HEAD = REGISTRY.register("toy_foxy_head", () -> BlockEntityType.Builder.of(ToyFoxyHeadTileEntity::new, YaFnafmodModBlocks.TOY_FOXY_HEAD.get()).build(null));
 	public static final RegistryObject<BlockEntityType<CutoutFoxyToyTileEntity>> CUTOUT_FOXY_TOY = REGISTRY.register("cutout_foxy_toy",
 			() -> BlockEntityType.Builder.of(CutoutFoxyToyTileEntity::new, YaFnafmodModBlocks.CUTOUT_FOXY_TOY.get()).build(null));
+	public static final RegistryObject<BlockEntityType<PizzeriaSignMovieLargeTileEntity>> PIZZERIA_SIGN_MOVIE_LARGE = REGISTRY.register("pizzeria_sign_movie_large",
+			() -> BlockEntityType.Builder.of(PizzeriaSignMovieLargeTileEntity::new, YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE_LARGE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<BigDecoratedGlassEntranceDoorWideTileEntity>> BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE = REGISTRY.register("big_decorated_glass_entrance_door_wide",
+			() -> BlockEntityType.Builder.of(BigDecoratedGlassEntranceDoorWideTileEntity::new, YaFnafmodModBlocks.BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
