@@ -416,6 +416,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES_SLAB.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_STAIRS.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_SLAB.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LIGHT_WALL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LIGHT_WALL_STAIRS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LIGHT_WALL_SLAB.get().asItem());
@@ -1418,9 +1421,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.DOORFRAME_DARK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DOORFRAME_LIGHT.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DOORFRAME_CYAN.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_STAIRS.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.FANCY_DARK_WALL_LIGHT_STRIPES_SMALL_SLAB.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_ITEMS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_DECORATIONS = REGISTRY.register("ya_fnaf_mod_decorations",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_decorations")).icon(() -> new ItemStack(YaFnafmodModBlocks.PARTY_CHAIR.get())).displayItems((parameters, tabData) -> {
