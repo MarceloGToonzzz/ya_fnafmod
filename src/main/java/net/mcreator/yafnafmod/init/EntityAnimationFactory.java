@@ -6,15 +6,11 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.yafnafmod.entity.YenndoEntity;
 import net.mcreator.yafnafmod.entity.YellowRabbitEntity;
-import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
-import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.WitheredDougDogEntity;
-import net.mcreator.yafnafmod.entity.WitheredDougDogDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
@@ -43,8 +39,6 @@ import net.mcreator.yafnafmod.entity.ShadowFreddyEntity;
 import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.SeabonnieEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
-import net.mcreator.yafnafmod.entity.ScrapSparkyDogEntity;
-import net.mcreator.yafnafmod.entity.ScrapSparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
@@ -127,8 +121,6 @@ import net.mcreator.yafnafmod.entity.Minireena2DayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
-import net.mcreator.yafnafmod.entity.Lolbit409Entity;
-import net.mcreator.yafnafmod.entity.Lolbit409DayEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
 import net.mcreator.yafnafmod.entity.JollyRatEntity;
@@ -1387,34 +1379,6 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
-			if (event.getEntity() instanceof WitheredJollyRatEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof WitheredJollyRatDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof WitheredDougDogEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof WitheredDougDogDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
 			if (event.getEntity() instanceof IgnitedChicaEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
@@ -1458,20 +1422,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof PitbonnieDayEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof Lolbit409Entity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof Lolbit409DayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
@@ -1591,20 +1541,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof RetroCupcakeEntityEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof ScrapSparkyDogEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof ScrapSparkyDogDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

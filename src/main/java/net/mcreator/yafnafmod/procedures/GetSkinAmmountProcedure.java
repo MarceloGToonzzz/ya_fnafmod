@@ -23,7 +23,7 @@ public class GetSkinAmmountProcedure {
 		} else if ((baseAnimatronic).equals("foxy_pirate")) {
 			res = 2;
 		} else if ((baseAnimatronic).equals("golden_freddy")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("sparky_dog")) {
 			res = 1;
 		}

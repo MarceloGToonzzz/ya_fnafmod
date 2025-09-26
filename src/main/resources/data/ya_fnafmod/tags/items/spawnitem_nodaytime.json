@@ -1,4 +1,14 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "ya_fnafmod:golden_freddy_spawn_item",
+    "ya_fnafmod:withered_golden_freddy_spawn_item",
+    "ya_fnafmod:scraptrap_spawn_item",
+    "ya_fnafmod:scrap_baby_spawn_item",
+    "ya_fnafmod:molten_freddy_spawn_item",
+    "ya_fnafmod:ennard_spawn_item",
+    "ya_fnafmod:yellow_rabbit_spawn_item",
+    "ya_fnafmod:shadow_freddy_spawn_item",
+    "ya_fnafmod:shadow_bonnie_spawn_item"
+  ]
 }

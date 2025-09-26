@@ -39,7 +39,7 @@ public class DayActionProcedure {
 		String ai = "";
 		String entity_name = "";
 		if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible"))) && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nightdisappear")))
-				|| !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:no_daymode")))) {
+				&& !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:no_daymode")))) {
 			if ((GetWorldTimeProcedure.execute(world)) > (23829) && (GetWorldTimeProcedure.execute(world)) < (24000)) {
 				if (entity instanceof Mob _entity)
 					_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z")), 1);
@@ -86,89 +86,89 @@ public class DayActionProcedure {
 						if ((ForgeRegistries.ENTITY_TYPES.getKey(entityiterator.getType()).toString()).equals(entity_name)) {
 							entityiterator.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin")));
 							entityiterator.getPersistentData().putDouble("style", (entity.getPersistentData().getDouble("style")));
-							SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"));
+							SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 						}
 					}
 				}
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}
-		}
-		if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible"))) || entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity) {
-			if (IsItNighttimeProcedure.execute(world) == false) {
-				if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
-					{
-						Entity _ent = entity;
-						if (!_ent.level().isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands()
-									.performPrefixedCommand(
-											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
-													_ent.getDisplayName(), _ent.level().getServer(), _ent),
-											("tp " + entity.getPersistentData().getDouble("x") + " " + entity.getPersistentData().getDouble("y") + " " + entity.getPersistentData().getDouble("z")));
+		} else {
+			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible"))) || entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity) {
+				if (IsItNighttimeProcedure.execute(world) == false) {
+					if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
+						{
+							Entity _ent = entity;
+							if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(),
+												_ent.getDisplayName(), _ent.level().getServer(), _ent),
+										("tp " + entity.getPersistentData().getDouble("x") + " " + entity.getPersistentData().getDouble("y") + " " + entity.getPersistentData().getDouble("z")));
+							}
 						}
 					}
-				}
-				entity.setSilent(true);
-				if (entity instanceof Mob _mobSetNoAi) {
-					_mobSetNoAi.setNoAi(true);
-				}
-				if (!(entity instanceof GoldenFreddyEntity) && !(entity instanceof WitheredGoldenFreddyEntity)) {
-					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 10, 1, false, false));
-				}
-			} else {
-				if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:phantoms")))) {
-					if (!(entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity)) {
-						entity.setSilent(false);
-						if (entity instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(false);
-						}
-					} else {
-						if (YaFnafmodModVariables.MapVariables.get(world).rare_night == true) {
+					entity.setSilent(true);
+					if (entity instanceof Mob _mobSetNoAi) {
+						_mobSetNoAi.setNoAi(true);
+					}
+					if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible")))) {
+						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 10, 1, false, false));
+					}
+				} else {
+					if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:phantoms")))) {
+						if (!(entity instanceof GoldenFreddyEntity || entity instanceof WitheredGoldenFreddyEntity || entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity)) {
 							entity.setSilent(false);
 							if (entity instanceof Mob _mobSetNoAi) {
 								_mobSetNoAi.setNoAi(false);
 							}
 						} else {
-							if (entity instanceof ShadowFreddyEntity || entity instanceof ShadowBonnieEntity) {
-								if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-									_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 10, 1, false, false));
+							if (YaFnafmodModVariables.MapVariables.get(world).rare_night == true) {
+								entity.setSilent(false);
+								if (entity instanceof Mob _mobSetNoAi) {
+									_mobSetNoAi.setNoAi(false);
+								}
+							} else {
+								if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:dayinvisible")))) {
+									if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+										_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 10, 1, false, false));
+								}
 							}
 						}
-					}
-				} else {
-					if (entity.getPersistentData().getBoolean("just_jumpscared") == true) {
-						if (x == entity.getPersistentData().getDouble("x") && y == entity.getPersistentData().getDouble("y") && z == entity.getPersistentData().getDouble("z")) {
-							if (entity instanceof Mob _mobSetNoAi) {
-								_mobSetNoAi.setNoAi(true);
+					} else {
+						if (entity.getPersistentData().getBoolean("just_jumpscared") == true) {
+							if (x == entity.getPersistentData().getDouble("x") && y == entity.getPersistentData().getDouble("y") && z == entity.getPersistentData().getDouble("z")) {
+								if (entity instanceof Mob _mobSetNoAi) {
+									_mobSetNoAi.setNoAi(true);
+								}
+							} else {
+								if (entity instanceof Mob _mobSetNoAi) {
+									_mobSetNoAi.setNoAi(false);
+								}
 							}
+							if (entity instanceof Mob) {
+								try {
+									((Mob) entity).setTarget(null);
+								} catch (Exception e) {
+									e.printStackTrace();
+								}
+							}
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 5, 1));
+							if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+								_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 5, 5));
 						} else {
 							if (entity instanceof Mob _mobSetNoAi) {
 								_mobSetNoAi.setNoAi(false);
 							}
 						}
-						if (entity instanceof Mob) {
-							try {
-								((Mob) entity).setTarget(null);
-							} catch (Exception e) {
-								e.printStackTrace();
-							}
-						}
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 5, 1));
-						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 5, 5));
-					} else {
-						if (entity instanceof Mob _mobSetNoAi) {
-							_mobSetNoAi.setNoAi(false);
-						}
 					}
 				}
-			}
-		} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nightdisappear")))) {
-			if (IsItNighttimeProcedure.execute(world) == false) {
-				if (!entity.level().isClientSide())
-					entity.discard();
+			} else if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:nightdisappear")))) {
+				if (IsItNighttimeProcedure.execute(world) == false) {
+					if (!entity.level().isClientSide())
+						entity.discard();
+				}
 			}
 		}
 	}

@@ -46,13 +46,18 @@ import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
 
 public class SettingSkinProcedure {
-	public static void execute(Entity entity, double skin) {
+	public static void execute(Entity entity, double skin, double style) {
 		if (entity == null)
 			return;
 		boolean can_laugh = false;
 		String suffix = "";
 		String textureName = "";
 		suffix = "";
+		if (style == 0) {
+			suffix = "";
+		} else if (style == 1) {
+			suffix = "-skin";
+		}
 		if (skin == 0) {
 			if (entity instanceof FreddyFazbearEntity animatable)
 				animatable.setTexture(("freddyfazbear" + suffix));

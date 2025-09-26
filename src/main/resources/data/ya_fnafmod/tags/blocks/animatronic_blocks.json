@@ -51,7 +51,6 @@
     "ya_fnafmod:bonnet_block",
     "ya_fnafmod:funtime_foxy_block",
     "ya_fnafmod:lolbit_block",
-    "ya_fnafmod:lolbit_409_block",
     "ya_fnafmod:indigo_block",
     "ya_fnafmod:mr_hugs_block",
     "ya_fnafmod:mr_can_do_block",
@@ -63,9 +62,7 @@
     "ya_fnafmod:gus_the_pug_block",
     "ya_fnafmod:scrap_baby_block",
     "ya_fnafmod:doug_dog_block",
-    "ya_fnafmod:withered_doug_dog_block",
     "ya_fnafmod:jolly_rat_block",
-    "ya_fnafmod:withered_jolly_rat_block",
     "ya_fnafmod:balloon_boy_block",
     "ya_fnafmod:jj_block",
     "ya_fnafmod:ignited_chica_block",
@@ -80,9 +77,7 @@
     "ya_fnafmod:security_puppet_prop",
     "ya_fnafmod:endo_01_prop",
     "ya_fnafmod:lola_chica_block",
-    "ya_fnafmod:scrap_lola_chica_block",
     "ya_fnafmod:sparky_dog_block",
-    "ya_fnafmod:scrap_sparky_dog_block",
     "ya_fnafmod:endo_01_pile",
     "ya_fnafmod:endo_02_pile"
   ]

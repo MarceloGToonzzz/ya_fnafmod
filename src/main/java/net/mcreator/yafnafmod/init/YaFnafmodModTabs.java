@@ -2385,15 +2385,12 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.BLAKE_BADGER_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.IGNITED_CHICA_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.DOUG_DOG_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.WITHERED_DOUG_DOG_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.JOLLY_RAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.RICKY_RAT_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.WITHERED_JOLLY_RAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.BARRY_POLAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.WITHERED_BARRY_POLAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.GUS_THE_PUG_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.INDIGO_SPAWN_ITEM.get());
-				tabData.accept(YaFnafmodModItems.LOLBIT_409_SPAWN_ITEM.get());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_DECORATIONS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_PLUSHIES = REGISTRY.register("ya_fnaf_mod_plushies",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_plushies")).icon(() -> new ItemStack(YaFnafmodModBlocks.PLUSH_FREDDY.get())).displayItems((parameters, tabData) -> {
@@ -2481,7 +2478,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BONNET_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.WITHERED_BONBON_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LOLBIT_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.LOLBIT_409_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BUCKET_BOB_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PAN_STAN_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.NUMBER_ONE_CRATE_BLOCK.get().asItem());
@@ -2510,15 +2506,11 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.IGNITED_CHICA_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.JOLLY_RAT_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RICKY_RAT_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.WITHERED_JOLLY_RAT_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DOUG_DOG_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.WITHERED_DOUG_DOG_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BARRY_POLAR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.GUS_THE_PUG_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.INDIGO_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LOLA_CHICA_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.SCRAP_LOLA_CHICA_BLOCK.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.SCRAP_SPARKY_DOG_BLOCK.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_PLUSHIES.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_EXTRA_WALLS = REGISTRY.register("ya_fnaf_extra_walls",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_extra_walls")).icon(() -> new ItemStack(YaFnafmodModBlocks.RED_WALL.get())).displayItems((parameters, tabData) -> {

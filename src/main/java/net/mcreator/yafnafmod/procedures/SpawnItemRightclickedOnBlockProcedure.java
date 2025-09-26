@@ -32,8 +32,15 @@ public class SpawnItemRightclickedOnBlockProcedure {
 		String spawned = "";
 		if (!itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:prop_entities")))) {
 			og_registry = ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString();
-			spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "_day");
-			AI = "1";
+			if (!itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_nodaytime")))) {
+				spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "_day");
+				AI = "1";
+			} else {
+				spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "");
+				AI = "0";
+			}
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(spawned), false);
 			xex = Math.round(Math.pow(10, 0) * x) / Math.pow(10, 0) + 0.5;
 			if (!(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:slabs")))) {
 				yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1;

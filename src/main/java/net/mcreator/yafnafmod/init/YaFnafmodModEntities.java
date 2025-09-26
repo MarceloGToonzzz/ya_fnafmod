@@ -18,15 +18,11 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.yafnafmod.entity.YenndoEntity;
 import net.mcreator.yafnafmod.entity.YellowRabbitEntity;
-import net.mcreator.yafnafmod.entity.WitheredJollyRatEntity;
-import net.mcreator.yafnafmod.entity.WitheredJollyRatDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredGoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyEntity;
 import net.mcreator.yafnafmod.entity.WitheredFoxyDayEntity;
-import net.mcreator.yafnafmod.entity.WitheredDougDogEntity;
-import net.mcreator.yafnafmod.entity.WitheredDougDogDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaEntity;
 import net.mcreator.yafnafmod.entity.WitheredChicaDayEntity;
 import net.mcreator.yafnafmod.entity.WitheredBonnieEntity;
@@ -58,8 +54,6 @@ import net.mcreator.yafnafmod.entity.ShadowBonnieEntity;
 import net.mcreator.yafnafmod.entity.SeatEntity;
 import net.mcreator.yafnafmod.entity.SeabonnieEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
-import net.mcreator.yafnafmod.entity.ScrapSparkyDogEntity;
-import net.mcreator.yafnafmod.entity.ScrapSparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
@@ -143,8 +137,6 @@ import net.mcreator.yafnafmod.entity.Minireena2DayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
-import net.mcreator.yafnafmod.entity.Lolbit409Entity;
-import net.mcreator.yafnafmod.entity.Lolbit409DayEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
 import net.mcreator.yafnafmod.entity.JollyRatEntity;
@@ -920,22 +912,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<JollyRatDayEntity>of(JollyRatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(JollyRatDayEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<WitheredJollyRatEntity>> WITHERED_JOLLY_RAT = register("withered_jolly_rat",
-			EntityType.Builder.<WitheredJollyRatEntity>of(WitheredJollyRatEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredJollyRatEntity::new)
-
-					.sized(0.6f, 0.9f));
-	public static final RegistryObject<EntityType<WitheredJollyRatDayEntity>> WITHERED_JOLLY_RAT_DAY = register("withered_jolly_rat_day",
-			EntityType.Builder.<WitheredJollyRatDayEntity>of(WitheredJollyRatDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredJollyRatDayEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<WitheredDougDogEntity>> WITHERED_DOUG_DOG = register("withered_doug_dog",
-			EntityType.Builder.<WitheredDougDogEntity>of(WitheredDougDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredDougDogEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<WitheredDougDogDayEntity>> WITHERED_DOUG_DOG_DAY = register("withered_doug_dog_day",
-			EntityType.Builder.<WitheredDougDogDayEntity>of(WitheredDougDogDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(WitheredDougDogDayEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<IgnitedChicaEntity>> IGNITED_CHICA = register("ignited_chica",
 			EntityType.Builder.<IgnitedChicaEntity>of(IgnitedChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(IgnitedChicaEntity::new)
 
@@ -964,14 +940,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<PitbonnieDayEntity>of(PitbonnieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PitbonnieDayEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<Lolbit409Entity>> LOLBIT_409 = register("lolbit_409",
-			EntityType.Builder.<Lolbit409Entity>of(Lolbit409Entity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(Lolbit409Entity::new)
-
-					.sized(0.6f, 1.4375f));
-	public static final RegistryObject<EntityType<Lolbit409DayEntity>> LOLBIT_409_DAY = register("lolbit_409_day",
-			EntityType.Builder.<Lolbit409DayEntity>of(Lolbit409DayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(Lolbit409DayEntity::new)
-
-					.sized(0.6f, 1.4375f));
 	public static final RegistryObject<EntityType<RatEntity>> RAT = register("rat",
 			EntityType.Builder.<RatEntity>of(RatEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RatEntity::new)
 
@@ -1057,14 +1025,6 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<RetroCupcakeEntityEntity>of(RetroCupcakeEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(RetroCupcakeEntityEntity::new)
 
 					.sized(0.6f, 0.9375f));
-	public static final RegistryObject<EntityType<ScrapSparkyDogEntity>> SCRAP_SPARKY_DOG = register("scrap_sparky_dog",
-			EntityType.Builder.<ScrapSparkyDogEntity>of(ScrapSparkyDogEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ScrapSparkyDogEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ScrapSparkyDogDayEntity>> SCRAP_SPARKY_DOG_DAY = register("scrap_sparky_dog_day",
-			EntityType.Builder.<ScrapSparkyDogDayEntity>of(ScrapSparkyDogDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(ScrapSparkyDogDayEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<PuppetFreddybearEntity>> PUPPET_FREDDYBEAR = register("puppet_freddybear",
 			EntityType.Builder.<PuppetFreddybearEntity>of(PuppetFreddybearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PuppetFreddybearEntity::new)
 
@@ -1285,10 +1245,6 @@ public class YaFnafmodModEntities {
 			DougDogDayEntity.init();
 			JollyRatEntity.init();
 			JollyRatDayEntity.init();
-			WitheredJollyRatEntity.init();
-			WitheredJollyRatDayEntity.init();
-			WitheredDougDogEntity.init();
-			WitheredDougDogDayEntity.init();
 			IgnitedChicaEntity.init();
 			IgnitedChicaDayEntity.init();
 			PidgeonEntity.init();
@@ -1296,8 +1252,6 @@ public class YaFnafmodModEntities {
 			PossumEntity.init();
 			PitbonnieEntity.init();
 			PitbonnieDayEntity.init();
-			Lolbit409Entity.init();
-			Lolbit409DayEntity.init();
 			RatEntity.init();
 			MysteriousGiantScuttlerEntity.init();
 			CandyCatEntity.init();
@@ -1315,8 +1269,6 @@ public class YaFnafmodModEntities {
 			CupcakeEntityEntity.init();
 			ToyCupcakeEntityEntity.init();
 			RetroCupcakeEntityEntity.init();
-			ScrapSparkyDogEntity.init();
-			ScrapSparkyDogDayEntity.init();
 			PuppetFreddybearEntity.init();
 			PuppetFreddybearDayEntity.init();
 			YellowRabbitEntity.init();
@@ -1500,10 +1452,6 @@ public class YaFnafmodModEntities {
 		event.put(DOUG_DOG_DAY.get(), DougDogDayEntity.createAttributes().build());
 		event.put(JOLLY_RAT.get(), JollyRatEntity.createAttributes().build());
 		event.put(JOLLY_RAT_DAY.get(), JollyRatDayEntity.createAttributes().build());
-		event.put(WITHERED_JOLLY_RAT.get(), WitheredJollyRatEntity.createAttributes().build());
-		event.put(WITHERED_JOLLY_RAT_DAY.get(), WitheredJollyRatDayEntity.createAttributes().build());
-		event.put(WITHERED_DOUG_DOG.get(), WitheredDougDogEntity.createAttributes().build());
-		event.put(WITHERED_DOUG_DOG_DAY.get(), WitheredDougDogDayEntity.createAttributes().build());
 		event.put(IGNITED_CHICA.get(), IgnitedChicaEntity.createAttributes().build());
 		event.put(IGNITED_CHICA_DAY.get(), IgnitedChicaDayEntity.createAttributes().build());
 		event.put(PIDGEON.get(), PidgeonEntity.createAttributes().build());
@@ -1511,8 +1459,6 @@ public class YaFnafmodModEntities {
 		event.put(POSSUM.get(), PossumEntity.createAttributes().build());
 		event.put(PITBONNIE.get(), PitbonnieEntity.createAttributes().build());
 		event.put(PITBONNIE_DAY.get(), PitbonnieDayEntity.createAttributes().build());
-		event.put(LOLBIT_409.get(), Lolbit409Entity.createAttributes().build());
-		event.put(LOLBIT_409_DAY.get(), Lolbit409DayEntity.createAttributes().build());
 		event.put(RAT.get(), RatEntity.createAttributes().build());
 		event.put(MYSTERIOUS_GIANT_SCUTTLER.get(), MysteriousGiantScuttlerEntity.createAttributes().build());
 		event.put(CANDY_CAT.get(), CandyCatEntity.createAttributes().build());
@@ -1530,8 +1476,6 @@ public class YaFnafmodModEntities {
 		event.put(CUPCAKE_ENTITY.get(), CupcakeEntityEntity.createAttributes().build());
 		event.put(TOY_CUPCAKE_ENTITY.get(), ToyCupcakeEntityEntity.createAttributes().build());
 		event.put(RETRO_CUPCAKE_ENTITY.get(), RetroCupcakeEntityEntity.createAttributes().build());
-		event.put(SCRAP_SPARKY_DOG.get(), ScrapSparkyDogEntity.createAttributes().build());
-		event.put(SCRAP_SPARKY_DOG_DAY.get(), ScrapSparkyDogDayEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR.get(), PuppetFreddybearEntity.createAttributes().build());
 		event.put(PUPPET_FREDDYBEAR_DAY.get(), PuppetFreddybearDayEntity.createAttributes().build());
 		event.put(YELLOW_RABBIT.get(), YellowRabbitEntity.createAttributes().build());
