@@ -186,7 +186,7 @@ public class Endo02DayEntity extends Monster implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.endo.deactivate"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.endo2.deactivate"));
 		}
 		return PlayState.STOP;
 	}

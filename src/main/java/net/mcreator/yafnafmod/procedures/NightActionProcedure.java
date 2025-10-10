@@ -19,6 +19,7 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
 import net.mcreator.yafnafmod.entity.ToyFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.ToyFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.ToyCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.ToyChicaDayEntity;
 import net.mcreator.yafnafmod.entity.ToyBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
@@ -29,6 +30,7 @@ import net.mcreator.yafnafmod.entity.RockstarBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.RickyRatDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.RetroFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.RetroCupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
@@ -54,6 +56,7 @@ import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateDayEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
+import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
 import net.mcreator.yafnafmod.entity.CindyCatDayEntity;
 import net.mcreator.yafnafmod.entity.ChicaChickenDayEntity;
@@ -115,10 +118,32 @@ public class NightActionProcedure {
 							if (entityToSpawn != null) {
 							}
 						}
+						{
+							final Vec3 _center = new Vec3(x, y, z);
+							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+							for (Entity entityiterator : _entfound) {
+								if (entityiterator instanceof CupcakeEntityEntity) {
+									entityiterator.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin")));
+									entityiterator.getPersistentData().putDouble("style", (entity.getPersistentData().getDouble("style")));
+									SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
+								}
+							}
+						}
 					} else if (entity instanceof ToyChicaDayEntity) {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = YaFnafmodModEntities.TOY_CUPCAKE_ENTITY.get().spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
 							if (entityToSpawn != null) {
+							}
+						}
+						{
+							final Vec3 _center = new Vec3(x, y, z);
+							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+							for (Entity entityiterator : _entfound) {
+								if (entityiterator instanceof ToyCupcakeEntityEntity) {
+									entityiterator.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin")));
+									entityiterator.getPersistentData().putDouble("style", (entity.getPersistentData().getDouble("style")));
+									SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
+								}
 							}
 						}
 					} else if (entity instanceof RetroChicaDayEntity) {
@@ -127,13 +152,24 @@ public class NightActionProcedure {
 							if (entityToSpawn != null) {
 							}
 						}
+						{
+							final Vec3 _center = new Vec3(x, y, z);
+							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+							for (Entity entityiterator : _entfound) {
+								if (entityiterator instanceof RetroCupcakeEntityEntity) {
+									entityiterator.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin")));
+									entityiterator.getPersistentData().putDouble("style", (entity.getPersistentData().getDouble("style")));
+									SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
+								}
+							}
+						}
 					}
 				}
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}
 		}
-		if (!(world instanceof Level _lvl43 && _lvl43.isDay())) {
+		if (!(world instanceof Level _lvl67 && _lvl67.isDay())) {
 			if (entity instanceof FreddyFazbearDayEntity) {
 				((FreddyFazbearDayEntity) entity).setAnimation("0");
 			}

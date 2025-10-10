@@ -136,6 +136,15 @@
     "normal": "retro_freddyfazbear.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_retro_freddy-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "retro_freddyfazbear.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

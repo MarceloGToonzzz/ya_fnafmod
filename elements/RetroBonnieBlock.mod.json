@@ -136,6 +136,15 @@
     "normal": "retro_bonnie.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_retro_bonnie-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "retro_bonnie.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

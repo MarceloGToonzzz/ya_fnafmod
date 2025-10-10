@@ -136,6 +136,15 @@
     "normal": "endo.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_endo1-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "endo.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

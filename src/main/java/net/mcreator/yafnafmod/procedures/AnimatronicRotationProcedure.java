@@ -143,7 +143,7 @@ public class AnimatronicRotationProcedure {
 		}
 		if (itemstack.getItem() == YaFnafmodModItems.SKIN_CHANGER_TOOL.get()) {
 			if (GetSkinAmmountProcedure.execute(entity) != 0) {
-				if (entity.getPersistentData().getDouble("skin") != GetSkinAmmountProcedure.execute(entity)) {
+				if (entity.getPersistentData().getDouble("skin") < GetSkinAmmountProcedure.execute(entity)) {
 					entity.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin") + 1));
 				} else {
 					entity.getPersistentData().putDouble("skin", 0);

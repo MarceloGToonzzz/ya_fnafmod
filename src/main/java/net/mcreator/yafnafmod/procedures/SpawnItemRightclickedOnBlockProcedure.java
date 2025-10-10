@@ -39,8 +39,6 @@ public class SpawnItemRightclickedOnBlockProcedure {
 				spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "");
 				AI = "0";
 			}
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(spawned), false);
 			xex = Math.round(Math.pow(10, 0) * x) / Math.pow(10, 0) + 0.5;
 			if (!(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:slabs")))) {
 				yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1;
@@ -52,7 +50,7 @@ public class SpawnItemRightclickedOnBlockProcedure {
 			yaw = Math.round(yaw);
 			yaw = yaw * 22.5;
 			yaw = yaw + 180;
-			command = ((("summon ENTITY XYZ {NoAI:MOOVEb,Rotation:[YAW]}".replace("YAW", yaw + "f")).replace("XYZ", (xex + " ") + "" + (yey + " ") + zez)).replace("MOOVE", AI)).replace("ENTITY", spawned);
+			command = ((("summon ENTITY XYZ {ForgeData: {style: 0.0d,skin: 0.0d},NoAI:MOOVEb,Rotation:[YAW]}".replace("YAW", yaw + "f")).replace("XYZ", (xex + " ") + "" + (yey + " ") + zez)).replace("MOOVE", AI)).replace("ENTITY", spawned);
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);
 		}

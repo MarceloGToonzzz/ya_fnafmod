@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "icon_plushtrap_fingertrap",
+    "itemTexture": "icon_plushtrap-fingertrap",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,

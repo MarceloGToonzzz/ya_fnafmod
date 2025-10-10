@@ -136,6 +136,15 @@
     "normal": "withered_bonnie.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_withered_bonnie-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "withered_bonnie.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

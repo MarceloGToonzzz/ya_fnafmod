@@ -136,6 +136,25 @@
     "normal": "foxypirate.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_foxy_pirate-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "foxypirate.geo.json",
+        "luminance": 0,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 32.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      }
+    ]
   }
 }

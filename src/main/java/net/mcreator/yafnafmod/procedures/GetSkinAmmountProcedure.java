@@ -25,7 +25,7 @@ public class GetSkinAmmountProcedure {
 		} else if ((baseAnimatronic).equals("golden_freddy")) {
 			res = 1;
 		} else if ((baseAnimatronic).equals("sparky_dog")) {
-			res = 1;
+			res = 2;
 		}
 		if ((baseAnimatronic).equals("toy_freddy")) {
 			res = 0;
@@ -125,6 +125,9 @@ public class GetSkinAmmountProcedure {
 		}
 		if ((baseAnimatronic).equals("candy_the_cat")) {
 			res = 1;
+		}
+		if (res == 0) {
+			entity.getPersistentData().putDouble("skin", 0);
 		}
 		return res;
 	}
