@@ -136,6 +136,15 @@
     "normal": "fredbear_bloody.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_fredbear_bloodywrap-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "fredbear_bloody.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

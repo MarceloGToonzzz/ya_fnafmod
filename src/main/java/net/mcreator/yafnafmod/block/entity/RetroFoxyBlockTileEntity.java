@@ -42,12 +42,20 @@ public class RetroFoxyBlockTileEntity extends RandomizableContainerBlockEntity i
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	public int blockstateNew = this.getBlockState().getValue(RetroFoxyBlockBlock.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(RetroFoxyBlockBlock.BLOCKSTATE);
 
 	public RetroFoxyBlockTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.RETRO_FOXY_BLOCK.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
+		blockstateNew = this.getBlockState().getValue(RetroFoxyBlockBlock.BLOCKSTATE);
+		if (blockstateOld != blockstateNew) {
+			event.getController().forceAnimationReset();
+			blockstateOld = blockstateNew;
+			return PlayState.STOP;
+		}
 		String animationprocedure = ("" + this.getBlockState().getValue(RetroFoxyBlockBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));
@@ -143,7 +151,7 @@ public class RetroFoxyBlockTileEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Retro Foxy");
+		return Component.literal("Vintage Foxy");
 	}
 
 	@Override

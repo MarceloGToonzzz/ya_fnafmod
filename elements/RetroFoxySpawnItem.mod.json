@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§4Retro Foxy",
+    "name": "§4Vintage Foxy",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -30,7 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§o(Also known as Unwithered/Prototype Foxy!)"
+        "§o(Also known as Unwithered Foxy, Retro Foxy, and Prototype Foxy!)"
       ]
     },
     "glowCondition": {
@@ -58,6 +58,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

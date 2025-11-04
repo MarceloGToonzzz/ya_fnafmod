@@ -56,7 +56,7 @@ public class GetSkinAmmountProcedure {
 			res = 0;
 		}
 		if ((baseAnimatronic).equals("retro_freddy")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("retro_bonnie")) {
 			res = 0;
 		} else if ((baseAnimatronic).equals("retro_chica")) {

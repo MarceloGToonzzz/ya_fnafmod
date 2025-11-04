@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Retro Chica",
+    "mobName": "Vintage Chica",
     "mobLabel": "",
     "mobModelTexture": "retro_chica.png",
     "mobModelGlowTexture": "",
@@ -120,7 +120,7 @@
     "hasAI": false,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
-    "model": "withered_chica.geo.json",
+    "model": "retro_chica.geo.json",
     "groupName": "head",
     "animation1": "animation.chica.retro_perform",
     "animation2": "animation.chica.retro_walk",

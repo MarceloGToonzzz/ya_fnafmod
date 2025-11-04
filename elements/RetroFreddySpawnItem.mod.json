@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§6Retro Freddy",
+    "name": "§6Vintage Freddy",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -30,7 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§o(Also known as Unwithered/Prototype Freddy!)"
+        "§o(Also known as Unwithered Freddy, Retro Freddy, and Prototype Freddy!)"
       ]
     },
     "glowCondition": {
@@ -58,6 +58,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

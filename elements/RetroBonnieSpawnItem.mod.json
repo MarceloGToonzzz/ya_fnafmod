@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "§9Retro Bonnie",
+    "name": "§9Vintage Bonnie",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -30,7 +30,7 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§o(Also known as Unwithered/Prototype Bonnie!)"
+        "§o(Also known as Unwithered Bonnie, Retro Bonnie, and Prototype Bonnie!)"
       ]
     },
     "glowCondition": {
@@ -58,6 +58,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

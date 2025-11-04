@@ -136,6 +136,15 @@
     "normal": "fredbear.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_fredbear_stage01-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "fredbear.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

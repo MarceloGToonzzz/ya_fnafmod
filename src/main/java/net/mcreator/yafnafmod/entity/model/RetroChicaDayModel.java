@@ -9,12 +9,12 @@ import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 public class RetroChicaDayModel extends GeoModel<RetroChicaDayEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(RetroChicaDayEntity entity) {
-		return new ResourceLocation("ya_fnafmod", "animations/withered_chica.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/retro_chica.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(RetroChicaDayEntity entity) {
-		return new ResourceLocation("ya_fnafmod", "geo/withered_chica.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/retro_chica.geo.json");
 	}
 
 	@Override
