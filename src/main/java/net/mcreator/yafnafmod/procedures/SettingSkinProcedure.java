@@ -1,6 +1,9 @@
 package net.mcreator.yafnafmod.procedures;
 
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.TagKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.yafnafmod.entity.YellowRabbitEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
@@ -19,7 +22,10 @@ public class SettingSkinProcedure {
 		if (style == 0) {
 			suffix = "";
 		} else if (style == 1) {
-			suffix = "-skin";
+			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf1"))) || entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf2")))
+					|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf3"))) || entity instanceof YellowRabbitEntity) {
+				suffix = "-skin";
+			}
 		}
 		Fnaf1SkinsProcedure.execute(entity, skin, suffix);
 		Fnaf2SkinsProcedure.execute(entity, skin, suffix);

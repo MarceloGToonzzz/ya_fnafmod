@@ -42,12 +42,20 @@ public class MangleBlockTileEntity extends RandomizableContainerBlockEntity impl
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	public int blockstateNew = this.getBlockState().getValue(MangleBlockBlock.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(MangleBlockBlock.BLOCKSTATE);
 
 	public MangleBlockTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.MANGLE_BLOCK.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
+		blockstateNew = this.getBlockState().getValue(MangleBlockBlock.BLOCKSTATE);
+		if (blockstateOld != blockstateNew) {
+			event.getController().forceAnimationReset();
+			blockstateOld = blockstateNew;
+			return PlayState.STOP;
+		}
 		String animationprocedure = ("" + this.getBlockState().getValue(MangleBlockBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

@@ -1973,6 +1973,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BREAKER_CONTROL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BREAKER_PANEL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CABINET_GRAY.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CABINET_BLACK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SERVER_RACK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.DESK_COVER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CIRCUS_CONTROL_PANEL.get().asItem());
@@ -2276,6 +2277,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.ENDO_01_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_PILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.REDSTONE_LAMP_WHITE.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CAROUSEL_CINEMATIC.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
@@ -2464,6 +2466,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.RETRO_CHICA_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.RETRO_FOXY_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.ENDO_02_BLOCK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SPRINGTRAP_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FREDBEAR_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SPRINGBONNIE_BLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FREDBEAR_01_BLOCK.get().asItem());

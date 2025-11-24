@@ -122,6 +122,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockPlayedBy": {
+      "name": "RedstoneStateCycle"
+    },
+    "onRedstoneOn": {
+      "name": "RedstoneStateCycle"
+    },
+    "onRedstoneOff": {
+      "name": "RedstoneStateCycle"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {

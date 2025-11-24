@@ -410,6 +410,7 @@ import net.mcreator.yafnafmod.block.display.StageLightPinkDisplayItem;
 import net.mcreator.yafnafmod.block.display.StageLightOrangeDisplayItem;
 import net.mcreator.yafnafmod.block.display.StageLightGreenDisplayItem;
 import net.mcreator.yafnafmod.block.display.StageLightBlueDisplayItem;
+import net.mcreator.yafnafmod.block.display.SpringtrapBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.SpringbonnieHeadDisplayItem;
 import net.mcreator.yafnafmod.block.display.SpringbonnieBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.SpringbonnieBlock01DisplayItem;
@@ -642,6 +643,7 @@ import net.mcreator.yafnafmod.block.display.CarouselFreddyRetroDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarouselFreddyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarouselFredbearDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarouselDisplayItem;
+import net.mcreator.yafnafmod.block.display.CarouselCinematicDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarnivalHoopsDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarStationWagonBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CarPurpleChevroletImpalaBlockDisplayItem;
@@ -5306,6 +5308,9 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_STAIRS = block(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_STAIRS);
 	public static final RegistryObject<Item> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_SLAB = block(YaFnafmodModBlocks.FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_SLAB);
 	public static final RegistryObject<Item> SKIN_CHANGER_TOOL = REGISTRY.register("skin_changer_tool", () -> new SkinChangerToolItem());
+	public static final RegistryObject<Item> CAROUSEL_CINEMATIC = REGISTRY.register(YaFnafmodModBlocks.CAROUSEL_CINEMATIC.getId().getPath(), () -> new CarouselCinematicDisplayItem(YaFnafmodModBlocks.CAROUSEL_CINEMATIC.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CABINET_BLACK = block(YaFnafmodModBlocks.CABINET_BLACK);
+	public static final RegistryObject<Item> SPRINGTRAP_BLOCK = REGISTRY.register(YaFnafmodModBlocks.SPRINGTRAP_BLOCK.getId().getPath(), () -> new SpringtrapBlockDisplayItem(YaFnafmodModBlocks.SPRINGTRAP_BLOCK.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

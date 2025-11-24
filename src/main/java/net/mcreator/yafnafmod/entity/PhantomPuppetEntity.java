@@ -18,6 +18,8 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
@@ -39,6 +41,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
@@ -52,6 +56,7 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.yafnafmod.procedures.NightAnimatronicOnEntityTickUpdateProcedure;
+import net.mcreator.yafnafmod.procedures.AnimatronicRotationProcedure;
 import net.mcreator.yafnafmod.procedures.AnimatronicOnInitialEntitySpawnProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
 
@@ -183,6 +188,21 @@ public class PhantomPuppetEntity extends Monster implements GeoEntity {
 			this.setTexture(compound.getString("Texture"));
 		if (compound.contains("Databusy"))
 			this.entityData.set(DATA_busy, compound.getBoolean("Databusy"));
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
+		super.mobInteract(sourceentity, hand);
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		AnimatronicRotationProcedure.execute(entity, sourceentity, itemstack);
+		return retval;
 	}
 
 	@Override

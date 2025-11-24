@@ -5,7 +5,7 @@
     "mobName": "Phantom Balloon Boy",
     "mobLabel": "",
     "mobModelTexture": "pbb.png",
-    "mobModelGlowTexture": "pbb_glow.png",
+    "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
     },
@@ -119,6 +119,9 @@
     },
     "raidCelebrationSound": {
       "value": ""
+    },
+    "onRightClickedOn": {
+      "name": "AnimatronicRotation"
     },
     "onMobTickUpdate": {
       "name": "NightAnimatronicOnEntityTickUpdate"

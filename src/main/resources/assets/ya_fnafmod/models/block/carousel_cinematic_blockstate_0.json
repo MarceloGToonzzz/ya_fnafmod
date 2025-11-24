@@ -1,0 +1,6 @@
+{
+  "parent": "ya_fnafmod:custom/carousel_cinematic_particle",
+  "textures": {
+    "particle": "ya_fnafmod:block/locker_yellow_tside"
+  }
+}

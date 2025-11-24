@@ -143,7 +143,7 @@ public class CarouselFreddyRetroTileEntity extends RandomizableContainerBlockEnt
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Carousel (Retro Freddy)");
+		return Component.literal("Carousel (Vintage Freddy)");
 	}
 
 	@Override

@@ -10,7 +10,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.yafnafmod.entity.model.PhantomBalloonBoyModel;
-import net.mcreator.yafnafmod.entity.layer.PhantomBalloonBoyLayer;
 import net.mcreator.yafnafmod.entity.PhantomBalloonBoyEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -20,7 +19,6 @@ public class PhantomBalloonBoyRenderer extends GeoEntityRenderer<PhantomBalloonB
 	public PhantomBalloonBoyRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new PhantomBalloonBoyModel());
 		this.shadowRadius = 0.5f;
-		this.addRenderLayer(new PhantomBalloonBoyLayer(this));
 	}
 
 	@Override

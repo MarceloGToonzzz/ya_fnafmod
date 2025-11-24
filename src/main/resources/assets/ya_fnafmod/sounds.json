@@ -419,57 +419,6 @@
       }
     ]
   },
-  "anima_springtrap_voice": {
-    "subtitle": "subtitles.anima_springtrap_voice",
-    "sounds": [
-      {
-        "name": "ya_fnafmod:anim_springtrap_voice1",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_springtrap_voice2",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_springtrap_voice3",
-        "stream": false
-      }
-    ]
-  },
-  "anima_springtrap_voice_hostile": {
-    "subtitle": "subtitles.anima_springtrap_voice_hostile",
-    "sounds": [
-      {
-        "name": "ya_fnafmod:anim_springtrap_voice1_hostile",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_springtrap_voice2_hostile",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_springtrap_voice3_hostile",
-        "stream": false
-      }
-    ]
-  },
-  "anima_springtrap_killvoice": {
-    "subtitle": "subtitles.anima_springtrap_killvoice",
-    "sounds": [
-      {
-        "name": "ya_fnafmod:anim_springtrap_killvoice1",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_springtrap_killvoice2",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_springtrap_killvoice3",
-        "stream": false
-      }
-    ]
-  },
   "anima_ftfreddy_voice": {
     "subtitle": "subtitles.anima_ftfreddy_voice",
     "sounds": [
@@ -1642,6 +1591,132 @@
       },
       {
         "name": "ya_fnafmod:anim_wbpolar_killvoice1",
+        "stream": false
+      }
+    ]
+  },
+  "anima_springtrap_voice": {
+    "subtitle": "subtitles.anima_springtrap_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice3",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice4",
+        "stream": false
+      }
+    ]
+  },
+  "anima_springtrap_voice_hostile": {
+    "subtitle": "subtitles.anima_springtrap_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice1-hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice2-hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice3-hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_voice4-hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anima_springtrap_killvoice": {
+    "subtitle": "subtitles.anima_springtrap_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_springtrap_killvoice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_killvoice3",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_springtrap_killvoice4",
+        "stream": false
+      }
+    ]
+  },
+  "anima_yellowrabbit_voice": {
+    "subtitle": "subtitles.anima_yellowrabbit_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice3",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice4",
+        "stream": false
+      }
+    ]
+  },
+  "anima_yellowrabbit_voice_hostile": {
+    "subtitle": "subtitles.anima_yellowrabbit_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice1-hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice2-hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice3-hostile",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_voice4-hostile",
+        "stream": false
+      }
+    ]
+  },
+  "anima_yellowrabbit_killvoice": {
+    "subtitle": "subtitles.anima_yellowrabbit_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_killvoice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_killvoice3",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anim_yellowrabbit_killvoice4",
         "stream": false
       }
     ]

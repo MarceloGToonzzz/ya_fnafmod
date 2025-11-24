@@ -15,6 +15,7 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Items;
@@ -34,6 +35,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
@@ -46,6 +48,7 @@ import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
@@ -59,8 +62,11 @@ import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.yafnafmod.procedures.SetBabyScaleProcedure;
 import net.mcreator.yafnafmod.procedures.RatRightClickedOnEntityProcedure;
+import net.mcreator.yafnafmod.procedures.RatOnInitialEntitySpawnProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
 import net.mcreator.yafnafmod.init.YaFnafmodModEntities;
+
+import javax.annotation.Nullable;
 
 import java.util.List;
 
@@ -68,6 +74,8 @@ public class RatEntity extends TamableAnimal implements GeoEntity {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(RatEntity.class, EntityDataSerializers.BOOLEAN);
 	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(RatEntity.class, EntityDataSerializers.STRING);
 	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(RatEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Boolean> DATA_setSkin = SynchedEntityData.defineId(RatEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<Integer> DATA_skin = SynchedEntityData.defineId(RatEntity.class, EntityDataSerializers.INT);
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private boolean swinging;
 	private boolean lastloop;
@@ -91,6 +99,8 @@ public class RatEntity extends TamableAnimal implements GeoEntity {
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
 		this.entityData.define(TEXTURE, "rat");
+		this.entityData.define(DATA_setSkin, false);
+		this.entityData.define(DATA_skin, 0);
 	}
 
 	public void setTexture(String texture) {
@@ -146,9 +156,18 @@ public class RatEntity extends TamableAnimal implements GeoEntity {
 	}
 
 	@Override
+	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
+		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
+		RatOnInitialEntitySpawnProcedure.execute(this);
+		return retval;
+	}
+
+	@Override
 	public void addAdditionalSaveData(CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
 		compound.putString("Texture", this.getTexture());
+		compound.putBoolean("DatasetSkin", this.entityData.get(DATA_setSkin));
+		compound.putInt("Dataskin", this.entityData.get(DATA_skin));
 	}
 
 	@Override
@@ -156,6 +175,10 @@ public class RatEntity extends TamableAnimal implements GeoEntity {
 		super.readAdditionalSaveData(compound);
 		if (compound.contains("Texture"))
 			this.setTexture(compound.getString("Texture"));
+		if (compound.contains("DatasetSkin"))
+			this.entityData.set(DATA_setSkin, compound.getBoolean("DatasetSkin"));
+		if (compound.contains("Dataskin"))
+			this.entityData.set(DATA_skin, compound.getInt("Dataskin"));
 	}
 
 	@Override
@@ -211,6 +234,7 @@ public class RatEntity extends TamableAnimal implements GeoEntity {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		RatOnInitialEntitySpawnProcedure.execute(this);
 		this.refreshDimensions();
 	}
 

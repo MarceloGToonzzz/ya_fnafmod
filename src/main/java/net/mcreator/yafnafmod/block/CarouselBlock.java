@@ -20,12 +20,15 @@ import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.yafnafmod.procedures.RedstoneStateCycleProcedure;
 import net.mcreator.yafnafmod.init.YaFnafmodModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -107,5 +110,21 @@ public class CarouselBlock extends BaseEntityBlock implements EntityBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		if (world.getBestNeighborSignal(pos) > 0) {
+			RedstoneStateCycleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		} else {
+			RedstoneStateCycleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		}
+	}
+
+	@Override
+	public void setPlacedBy(Level world, BlockPos pos, BlockState blockstate, LivingEntity entity, ItemStack itemstack) {
+		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
+		RedstoneStateCycleProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

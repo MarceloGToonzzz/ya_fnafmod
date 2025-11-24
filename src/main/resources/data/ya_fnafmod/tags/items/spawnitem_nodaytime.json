@@ -9,6 +9,12 @@
     "ya_fnafmod:ennard_spawn_item",
     "ya_fnafmod:yellow_rabbit_spawn_item",
     "ya_fnafmod:shadow_freddy_spawn_item",
-    "ya_fnafmod:shadow_bonnie_spawn_item"
+    "ya_fnafmod:shadow_bonnie_spawn_item",
+    "ya_fnafmod:phantom_freddy_spawn_item",
+    "ya_fnafmod:phantom_chica_spawn_item",
+    "ya_fnafmod:phantom_foxy_spawn_item",
+    "ya_fnafmod:phantom_balloon_boy_spawn_item",
+    "ya_fnafmod:phantom_mangle_spawn_item",
+    "ya_fnafmod:phantom_puppet_spawn_item"
   ]
 }

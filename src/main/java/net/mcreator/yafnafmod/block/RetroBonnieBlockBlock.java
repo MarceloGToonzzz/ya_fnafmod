@@ -74,6 +74,17 @@ public class RetroBonnieBlockBlock extends BaseEntityBlock implements EntityBloc
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		if (state.getValue(BLOCKSTATE) == 1) {
+
+			return switch (state.getValue(FACING)) {
+				default -> box(0, 0, 0, 16, 32, 16);
+				case NORTH -> box(0, 0, 0, 16, 32, 16);
+				case EAST -> box(0, 0, 0, 16, 32, 16);
+				case WEST -> box(0, 0, 0, 16, 32, 16);
+				case UP -> box(0, 0, 0, 16, 16, 32);
+				case DOWN -> box(0, 0, -16, 16, 16, 16);
+			};
+		}
 
 		return switch (state.getValue(FACING)) {
 			default -> box(0, 0, 0, 16, 16, 16);

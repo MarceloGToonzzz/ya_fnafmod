@@ -10,7 +10,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.yafnafmod.entity.model.PhantomPuppetModel;
-import net.mcreator.yafnafmod.entity.layer.PhantomPuppetLayer;
 import net.mcreator.yafnafmod.entity.PhantomPuppetEntity;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -20,7 +19,6 @@ public class PhantomPuppetRenderer extends GeoEntityRenderer<PhantomPuppetEntity
 	public PhantomPuppetRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new PhantomPuppetModel());
 		this.shadowRadius = 0.5f;
-		this.addRenderLayer(new PhantomPuppetLayer(this));
 	}
 
 	@Override

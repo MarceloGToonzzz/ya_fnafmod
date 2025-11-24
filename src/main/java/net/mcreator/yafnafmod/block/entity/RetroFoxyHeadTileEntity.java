@@ -143,7 +143,7 @@ public class RetroFoxyHeadTileEntity extends RandomizableContainerBlockEntity im
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Retro Foxy Head");
+		return Component.literal("Vintage Foxy Head");
 	}
 
 	@Override

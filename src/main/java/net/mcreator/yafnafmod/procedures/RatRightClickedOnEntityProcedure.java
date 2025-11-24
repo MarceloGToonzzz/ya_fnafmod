@@ -11,6 +11,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
+import net.mcreator.yafnafmod.entity.RatEntity;
 
 public class RatRightClickedOnEntityProcedure {
 	public static void execute(Entity entity, Entity sourceentity) {
@@ -23,6 +24,7 @@ public class RatRightClickedOnEntityProcedure {
 				if (!(entity.getDisplayName().getString()).equals(entity.getType().getDescription().getString())) {
 					wa.getOrCreateTag().putBoolean("has_name", true);
 					wa.getOrCreateTag().putString("rat_name", (entity.getDisplayName().getString()));
+					wa.getOrCreateTag().putDouble("skin", (entity instanceof RatEntity _datEntI ? _datEntI.getEntityData().get(RatEntity.DATA_skin) : 0));
 					if ((entity.getDisplayName().getString()).contains("[") && (entity.getDisplayName().getString()).contains("]")) {
 						wa.setHoverName(Component.literal(((entity.getDisplayName().getString()).substring((int) (entity.getDisplayName().getString()).indexOf("[") + "[".length(), (int) (entity.getDisplayName().getString()).lastIndexOf("]")))));
 					} else {

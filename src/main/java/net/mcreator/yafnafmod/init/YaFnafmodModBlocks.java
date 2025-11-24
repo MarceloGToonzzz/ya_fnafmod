@@ -453,6 +453,7 @@ import net.mcreator.yafnafmod.block.StageBaseCheapSlabBlock;
 import net.mcreator.yafnafmod.block.StageBaseCheapBlock;
 import net.mcreator.yafnafmod.block.StageBaseBlock;
 import net.mcreator.yafnafmod.block.StageBackRentalBlock;
+import net.mcreator.yafnafmod.block.SpringtrapBlockBlock;
 import net.mcreator.yafnafmod.block.SpringbonnieHeadBlock;
 import net.mcreator.yafnafmod.block.SpringbonnieBlockBlock;
 import net.mcreator.yafnafmod.block.SpringbonnieBlock01Block;
@@ -3055,6 +3056,7 @@ import net.mcreator.yafnafmod.block.CarouselFreddyToyBlock;
 import net.mcreator.yafnafmod.block.CarouselFreddyRetroBlock;
 import net.mcreator.yafnafmod.block.CarouselFreddyBlock;
 import net.mcreator.yafnafmod.block.CarouselFredbearBlock;
+import net.mcreator.yafnafmod.block.CarouselCinematicBlock;
 import net.mcreator.yafnafmod.block.CarouselBlock;
 import net.mcreator.yafnafmod.block.CarnivalHoopsBlock;
 import net.mcreator.yafnafmod.block.CarStationWagonBlockBlock;
@@ -3071,6 +3073,7 @@ import net.mcreator.yafnafmod.block.CameraBlock;
 import net.mcreator.yafnafmod.block.CagedLightYellowBlock;
 import net.mcreator.yafnafmod.block.CagedLightRedBlock;
 import net.mcreator.yafnafmod.block.CabinetGrayBlock;
+import net.mcreator.yafnafmod.block.CabinetBlackBlock;
 import net.mcreator.yafnafmod.block.BulletinBoardBlock;
 import net.mcreator.yafnafmod.block.BulkVendingMachineRedBlock;
 import net.mcreator.yafnafmod.block.BulkVendingMachineBlueBlock;
@@ -7679,6 +7682,9 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL = REGISTRY.register("fancy_light_wall_dark_stripes_small", () -> new FancyLightWallDarkStripesSmallBlock());
 	public static final RegistryObject<Block> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_STAIRS = REGISTRY.register("fancy_light_wall_dark_stripes_small_stairs", () -> new FancyLightWallDarkStripesSmallStairsBlock());
 	public static final RegistryObject<Block> FANCY_LIGHT_WALL_DARK_STRIPES_SMALL_SLAB = REGISTRY.register("fancy_light_wall_dark_stripes_small_slab", () -> new FancyLightWallDarkStripesSmallSlabBlock());
+	public static final RegistryObject<Block> CAROUSEL_CINEMATIC = REGISTRY.register("carousel_cinematic", () -> new CarouselCinematicBlock());
+	public static final RegistryObject<Block> CABINET_BLACK = REGISTRY.register("cabinet_black", () -> new CabinetBlackBlock());
+	public static final RegistryObject<Block> SPRINGTRAP_BLOCK = REGISTRY.register("springtrap_block", () -> new SpringtrapBlockBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

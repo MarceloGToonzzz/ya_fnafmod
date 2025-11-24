@@ -151,7 +151,7 @@ public class CutoutBonnieRetroTileEntity extends RandomizableContainerBlockEntit
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Cutout (Retro Bonnie)");
+		return Component.literal("Cutout (Vintage Bonnie)");
 	}
 
 	@Override

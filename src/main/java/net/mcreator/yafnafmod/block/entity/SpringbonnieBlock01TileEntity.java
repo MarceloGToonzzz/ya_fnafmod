@@ -42,12 +42,20 @@ public class SpringbonnieBlock01TileEntity extends RandomizableContainerBlockEnt
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	public int blockstateNew = this.getBlockState().getValue(SpringbonnieBlock01Block.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(SpringbonnieBlock01Block.BLOCKSTATE);
 
 	public SpringbonnieBlock01TileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.SPRINGBONNIE_BLOCK_01.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
+		blockstateNew = this.getBlockState().getValue(SpringbonnieBlock01Block.BLOCKSTATE);
+		if (blockstateOld != blockstateNew) {
+			event.getController().forceAnimationReset();
+			blockstateOld = blockstateNew;
+			return PlayState.STOP;
+		}
 		String animationprocedure = ("" + this.getBlockState().getValue(SpringbonnieBlock01Block.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

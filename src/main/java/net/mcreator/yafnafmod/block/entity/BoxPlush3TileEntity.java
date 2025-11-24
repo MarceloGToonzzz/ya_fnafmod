@@ -143,7 +143,7 @@ public class BoxPlush3TileEntity extends RandomizableContainerBlockEntity implem
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Open Box (Retro Plushies)");
+		return Component.literal("Open Box (Vintage Plushies)");
 	}
 
 	@Override

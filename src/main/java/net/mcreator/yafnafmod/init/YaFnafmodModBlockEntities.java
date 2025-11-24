@@ -48,6 +48,7 @@ import net.mcreator.yafnafmod.block.entity.StageLightPinkTileEntity;
 import net.mcreator.yafnafmod.block.entity.StageLightOrangeTileEntity;
 import net.mcreator.yafnafmod.block.entity.StageLightGreenTileEntity;
 import net.mcreator.yafnafmod.block.entity.StageLightBlueTileEntity;
+import net.mcreator.yafnafmod.block.entity.SpringtrapBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.SpringbonnieHeadTileEntity;
 import net.mcreator.yafnafmod.block.entity.SpringbonnieBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.SpringbonnieBlock01TileEntity;
@@ -296,6 +297,7 @@ import net.mcreator.yafnafmod.block.entity.CarouselFreddyToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarouselFreddyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarouselFreddyRetroTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarouselFredbearTileEntity;
+import net.mcreator.yafnafmod.block.entity.CarouselCinematicTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarnivalHoopsTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarStationWagonBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CarPurpleChevroletImpalaBlockTileEntity;
@@ -309,6 +311,7 @@ import net.mcreator.yafnafmod.block.entity.CandyCatBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CandyCadetTileEntity;
 import net.mcreator.yafnafmod.block.entity.CameraTileEntity;
 import net.mcreator.yafnafmod.block.entity.CabinetGrayBlockEntity;
+import net.mcreator.yafnafmod.block.entity.CabinetBlackBlockEntity;
 import net.mcreator.yafnafmod.block.entity.BulletinBoardTileEntity;
 import net.mcreator.yafnafmod.block.entity.BucketBobBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.BrokenFreddyTileEntity;
@@ -1020,6 +1023,11 @@ public class YaFnafmodModBlockEntities {
 			() -> BlockEntityType.Builder.of(PizzeriaSignMovieLargeTileEntity::new, YaFnafmodModBlocks.PIZZERIA_SIGN_MOVIE_LARGE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BigDecoratedGlassEntranceDoorWideTileEntity>> BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE = REGISTRY.register("big_decorated_glass_entrance_door_wide",
 			() -> BlockEntityType.Builder.of(BigDecoratedGlassEntranceDoorWideTileEntity::new, YaFnafmodModBlocks.BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CarouselCinematicTileEntity>> CAROUSEL_CINEMATIC = REGISTRY.register("carousel_cinematic",
+			() -> BlockEntityType.Builder.of(CarouselCinematicTileEntity::new, YaFnafmodModBlocks.CAROUSEL_CINEMATIC.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> CABINET_BLACK = register("cabinet_black", YaFnafmodModBlocks.CABINET_BLACK, CabinetBlackBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<SpringtrapBlockTileEntity>> SPRINGTRAP_BLOCK = REGISTRY.register("springtrap_block",
+			() -> BlockEntityType.Builder.of(SpringtrapBlockTileEntity::new, YaFnafmodModBlocks.SPRINGTRAP_BLOCK.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

@@ -136,6 +136,15 @@
     "normal": "toy_freddyfazbear.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_toy_freddy_day-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "toy_freddyfazbear.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

@@ -29,20 +29,11 @@ public class GetNewTargetProcedure {
 			return;
 		boolean stop = false;
 		double rangetest = 0;
-		rangetest = 0.55125;
-		if (!(!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:passive_animatronics")))) {
-			if (entity.getPersistentData().getBoolean("visited_targetspot") == false && entity.getPersistentData().getBoolean("had_target") == true) {
-				if (entity instanceof Mob _entity)
-					_entity.getNavigation().moveTo((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z")), 1);
-				if (2 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z"))))
-						|| 5 > new Vec3(x, y, z).distanceTo(new Vec3((entity.getPersistentData().getDouble("target_x")), (entity.getPersistentData().getDouble("target_y")), (entity.getPersistentData().getDouble("target_z"))))
-								&& y != entity.getPersistentData().getDouble("target_y")) {
-					entity.getPersistentData().putBoolean("visited_targetspot", true);
-				}
-			}
+		rangetest = 0.625;
+		if (entity.getPersistentData().getBoolean("hasTarget") == false && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:passive_animatronics")))) {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 				for (Entity entityiterator : _entfound) {
 					stop = false;
 					if (entityiterator instanceof Player || entityiterator instanceof Villager) {
@@ -56,18 +47,18 @@ public class GetNewTargetProcedure {
 							}
 						}
 						if (entity instanceof PuppetEntity) {
-							if ((entity instanceof PuppetEntity _datEntL27 && _datEntL27.getEntityData().get(PuppetEntity.DATA_busy)) == true) {
+							if ((entity instanceof PuppetEntity _datEntL10 && _datEntL10.getEntityData().get(PuppetEntity.DATA_busy)) == true) {
 								stop = true;
 							}
 						}
 						if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:mask_foolers"))) && IsTargetWearingMaskProcedure.execute(entityiterator)
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
-										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip38
-												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip38)
+										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip21
+												? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))).getValue(_getip21)
 												: -1) == 0
 								|| (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
 										&& ((world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getBlock().getStateDefinition().getProperty(
-												"blockstate") instanceof IntegerProperty _getip48 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip48) : -1) == 0) {
+												"blockstate") instanceof IntegerProperty _getip31 ? (world.getBlockState(BlockPos.containing(entityiterator.getX(), entityiterator.getY() - 1, entityiterator.getZ()))).getValue(_getip31) : -1) == 0) {
 							stop = true;
 						}
 						if (IsEntityWearingHidingSuitProcedure.execute(entityiterator) == true && !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:springlock_exceptions")))) {
@@ -100,6 +91,7 @@ public class GetNewTargetProcedure {
 									return false;
 								}
 							}.checkGamemode(entityiterator))) {
+								entity.getPersistentData().putBoolean("hasTarget", true);
 								if (entity instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
 									_entity.setTarget(_ent);
 							}
@@ -108,11 +100,6 @@ public class GetNewTargetProcedure {
 				}
 			}
 		} else if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
-			entity.getPersistentData().putBoolean("had_target", true);
-			entity.getPersistentData().putBoolean("visited_targetspot", false);
-			entity.getPersistentData().putDouble("target_x", (entity.getX()));
-			entity.getPersistentData().putDouble("target_y", (entity.getY()));
-			entity.getPersistentData().putDouble("target_z", (entity.getZ()));
 			if (new Object() {
 				public boolean checkGamemode(Entity _ent) {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -144,20 +131,21 @@ public class GetNewTargetProcedure {
 							|| (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(),
 									(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
 									&& ((world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(),
-											(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip95
+											(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip71
 													? (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY(),
-															(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getValue(_getip95)
+															(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getValue(_getip71)
 													: -1) == 0
 							|| (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1,
 									(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock() == YaFnafmodModBlocks.LOCKER_YELLOW_HIDING.get()
 									&& ((world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(), (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1,
-											(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip111
+											(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip87
 													? (world.getBlockState(BlockPos.containing((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX(),
-															(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1, (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getValue(_getip111)
+															(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - 1, (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ()))).getValue(_getip87)
 													: -1) == 0
 							|| IsEntityWearingHidingSuitProcedure.execute(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == true
 									&& !entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:springlock_exceptions"))))
 							&& ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) != null ? entity.distanceTo((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null)) : -1) > 24) {
+				entity.getPersistentData().putBoolean("hasTarget", false);
 				if (entity instanceof Mob) {
 					try {
 						((Mob) entity).setTarget(null);

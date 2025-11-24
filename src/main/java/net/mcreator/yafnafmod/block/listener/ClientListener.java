@@ -42,6 +42,7 @@ import net.mcreator.yafnafmod.block.renderer.StageLightPinkTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.StageLightOrangeTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.StageLightGreenTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.StageLightBlueTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.SpringtrapBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SpringbonnieHeadTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SpringbonnieBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.SpringbonnieBlock01TileRenderer;
@@ -274,6 +275,7 @@ import net.mcreator.yafnafmod.block.renderer.CarouselFreddyToyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarouselFreddyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarouselFreddyRetroTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarouselFredbearTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CarouselCinematicTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarnivalHoopsTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarStationWagonBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CarPurpleChevroletImpalaBlockTileRenderer;
@@ -722,5 +724,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FOXY_TOY.get(), context -> new CutoutFoxyToyTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.PIZZERIA_SIGN_MOVIE_LARGE.get(), context -> new PizzeriaSignMovieLargeTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE.get(), context -> new BigDecoratedGlassEntranceDoorWideTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CAROUSEL_CINEMATIC.get(), context -> new CarouselCinematicTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SPRINGTRAP_BLOCK.get(), context -> new SpringtrapBlockTileRenderer());
 	}
 }

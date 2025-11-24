@@ -143,7 +143,7 @@ public class RetroChicaHeadTileEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Retro Chica Head");
+		return Component.literal("Vintage Chica Head");
 	}
 
 	@Override

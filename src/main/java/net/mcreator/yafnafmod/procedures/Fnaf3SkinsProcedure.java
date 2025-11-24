@@ -6,6 +6,12 @@ import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapDayEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
+import net.mcreator.yafnafmod.entity.PhantomPuppetEntity;
+import net.mcreator.yafnafmod.entity.PhantomMangleEntity;
+import net.mcreator.yafnafmod.entity.PhantomFreddyEntity;
+import net.mcreator.yafnafmod.entity.PhantomFoxyEntity;
+import net.mcreator.yafnafmod.entity.PhantomChicaEntity;
+import net.mcreator.yafnafmod.entity.PhantomBalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.FredbearEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 
@@ -28,6 +34,18 @@ public class Fnaf3SkinsProcedure {
 				animatable.setTexture(("springbonnie" + suffix));
 			if (entity instanceof SpringbonnieDayEntity animatable)
 				animatable.setTexture(("springbonnie" + suffix));
+			if (entity instanceof PhantomFreddyEntity animatable)
+				animatable.setTexture(("pfreddy" + suffix));
+			if (entity instanceof PhantomChicaEntity animatable)
+				animatable.setTexture(("pchica" + suffix));
+			if (entity instanceof PhantomFoxyEntity animatable)
+				animatable.setTexture(("pfoxy" + suffix));
+			if (entity instanceof PhantomBalloonBoyEntity animatable)
+				animatable.setTexture(("pbb" + suffix));
+			if (entity instanceof PhantomMangleEntity animatable)
+				animatable.setTexture(("pmangle" + suffix));
+			if (entity instanceof PhantomPuppetEntity animatable)
+				animatable.setTexture(("ppuppet" + suffix));
 		} else if (skin == 1) {
 			if (entity instanceof SpringtrapEntity animatable)
 				animatable.setTexture(("springtrap_dark" + suffix));

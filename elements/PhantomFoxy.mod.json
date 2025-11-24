@@ -5,7 +5,7 @@
     "mobName": "Phantom Foxy",
     "mobLabel": "",
     "mobModelTexture": "pfoxy.png",
-    "mobModelGlowTexture": "pfoxy_glow.png",
+    "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 1.0
     },
@@ -101,6 +101,9 @@
     },
     "raidCelebrationSound": {
       "value": ""
+    },
+    "onRightClickedOn": {
+      "name": "AnimatronicRotation"
     },
     "onMobTickUpdate": {
       "name": "NightAnimatronicOnEntityTickUpdate"
