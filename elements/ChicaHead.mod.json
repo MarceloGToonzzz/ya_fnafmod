@@ -139,6 +139,15 @@
     "normal": "animatronic_head.geo.json",
     "displaySettings": "head_display.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "head_chicaclassic-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "animatronic_head.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

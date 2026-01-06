@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Animation1Cycle"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -138,10 +141,10 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "stand_freddy",
+        "texture": "stand_freddy-skin",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "freddy_stand_diag.geo.json",
+        "customModelName": "freddy_stand.geo.json",
         "luminance": 0,
         "boundingBoxes": []
       }

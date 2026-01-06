@@ -3,6 +3,41 @@
 	"animations": {
 		"animation.model.new": {
 			"loop": true
+		},
+		"animation.model.glitchtrap": {
+			"loop": true,
+			"bones": {
+				"right_ear": {
+					"rotation": {
+						"vector": [7.47178, 0.65182, -19.95744]
+					}
+				},
+				"left_ear": {
+					"rotation": {
+						"vector": [27.5, 0, 27.5]
+					}
+				},
+				"ear_r": {
+					"rotation": {
+						"vector": [7.24721, 1.93597, -29.87739]
+					}
+				},
+				"ear2_r": {
+					"rotation": {
+						"vector": [-10, 0, 0]
+					}
+				},
+				"ear_l": {
+					"rotation": {
+						"vector": [9.96271, -0.86717, 32.42442]
+					}
+				},
+				"ear2_l": {
+					"rotation": {
+						"vector": [27.5, 0, 7.5]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

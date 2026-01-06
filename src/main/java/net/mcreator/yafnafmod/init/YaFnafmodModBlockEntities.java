@@ -249,6 +249,7 @@ import net.mcreator.yafnafmod.block.entity.CutoutTreePalmTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutTreeOakTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutSpringbonnieTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutSpringbonnieRottenTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutPuppetTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutHelpyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFreddyToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutFreddyRetroTileEntity;
@@ -265,6 +266,7 @@ import net.mcreator.yafnafmod.block.entity.CutoutChicaRetroTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBonnieToyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBonnieRetroTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBalloraTileEntity;
+import net.mcreator.yafnafmod.block.entity.CutoutBalloonTwinsTileEntity;
 import net.mcreator.yafnafmod.block.entity.CutoutBabyTileEntity;
 import net.mcreator.yafnafmod.block.entity.CustomPizzeriaSignTileEntity;
 import net.mcreator.yafnafmod.block.entity.CreativeGeneratorBlockBlockEntity;
@@ -1028,6 +1030,9 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> CABINET_BLACK = register("cabinet_black", YaFnafmodModBlocks.CABINET_BLACK, CabinetBlackBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<SpringtrapBlockTileEntity>> SPRINGTRAP_BLOCK = REGISTRY.register("springtrap_block",
 			() -> BlockEntityType.Builder.of(SpringtrapBlockTileEntity::new, YaFnafmodModBlocks.SPRINGTRAP_BLOCK.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutBalloonTwinsTileEntity>> CUTOUT_BALLOON_TWINS = REGISTRY.register("cutout_balloon_twins",
+			() -> BlockEntityType.Builder.of(CutoutBalloonTwinsTileEntity::new, YaFnafmodModBlocks.CUTOUT_BALLOON_TWINS.get()).build(null));
+	public static final RegistryObject<BlockEntityType<CutoutPuppetTileEntity>> CUTOUT_PUPPET = REGISTRY.register("cutout_puppet", () -> BlockEntityType.Builder.of(CutoutPuppetTileEntity::new, YaFnafmodModBlocks.CUTOUT_PUPPET.get()).build(null));
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

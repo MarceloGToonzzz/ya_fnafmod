@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/puppet_mask",
+  "textures": {
+    "all": "ya_fnafmod:block/stand_puppet-skin",
+    "particle": "ya_fnafmod:block/stand_puppet",
+    "1": "ya_fnafmod:block/stand_puppet-skin"
+  },
+  "render_type": "cutout"
+}

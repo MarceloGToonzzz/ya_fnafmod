@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/cupcake_diag",
+  "parent": "ya_fnafmod:custom/cupcake-diag",
   "textures": {
     "all": "ya_fnafmod:block/cupcake_funtime",
     "particle": "ya_fnafmod:block/cupcake_funtime",
-    "0": "ya_fnafmod:block/cupcake_funtime"
+    "2": "ya_fnafmod:block/cupcake_funtime"
   },
   "render_type": "cutout"
 }

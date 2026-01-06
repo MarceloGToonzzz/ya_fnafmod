@@ -229,6 +229,7 @@ import net.mcreator.yafnafmod.block.renderer.CutoutTreePalmTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutTreeOakTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutSpringbonnieTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutSpringbonnieRottenTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutPuppetTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutHelpyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutFreddyToyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutFreddyRetroTileRenderer;
@@ -245,6 +246,7 @@ import net.mcreator.yafnafmod.block.renderer.CutoutChicaRetroTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBonnieToyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBonnieRetroTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBalloraTileRenderer;
+import net.mcreator.yafnafmod.block.renderer.CutoutBalloonTwinsTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CutoutBabyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CustomPizzeriaSignTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ControlPanelTileRenderer;
@@ -726,5 +728,7 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BIG_DECORATED_GLASS_ENTRANCE_DOOR_WIDE.get(), context -> new BigDecoratedGlassEntranceDoorWideTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CAROUSEL_CINEMATIC.get(), context -> new CarouselCinematicTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SPRINGTRAP_BLOCK.get(), context -> new SpringtrapBlockTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_BALLOON_TWINS.get(), context -> new CutoutBalloonTwinsTileRenderer());
+		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_PUPPET.get(), context -> new CutoutPuppetTileRenderer());
 	}
 }

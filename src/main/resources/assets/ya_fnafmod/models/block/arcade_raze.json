@@ -5,5 +5,5 @@
     "particle": "ya_fnafmod:block/arcade3_raze",
     "2": "ya_fnafmod:block/arcade3_raze_off"
   },
-  "render_type": "cutout"
+  "render_type": "cutout_mipped"
 }

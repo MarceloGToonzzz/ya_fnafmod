@@ -10,6 +10,7 @@ public class SetNbtPositionsProcedure {
 		if (entity == null)
 			return;
 		boolean can_laugh = false;
+		double a = 0;
 		if (YaFnafmodModVariables.MapVariables.get(world).STRUCTUREBUILD_BUILD == false) {
 			if (entity.getPersistentData().getBoolean("GotCordinates") == false) {
 				entity.getPersistentData().putDouble("x", x);

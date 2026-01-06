@@ -8,6 +8,7 @@ import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
 import net.minecraft.sounds.SoundSource;
@@ -24,6 +25,7 @@ import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
 import net.mcreator.yafnafmod.entity.RockstarBonnieEntity;
+import net.mcreator.yafnafmod.entity.PlushbabyMobEntity;
 import net.mcreator.yafnafmod.entity.NightmareFredbearEntity;
 import net.mcreator.yafnafmod.entity.NightmareEntity;
 import net.mcreator.yafnafmod.entity.NeddbearEntity;
@@ -34,6 +36,7 @@ import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.IndigoEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
+import net.mcreator.yafnafmod.entity.GlitchtrapEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
@@ -64,7 +67,7 @@ public class DeathVoiceProcedure {
 			return;
 		double delay = 0;
 		if (sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:animatronics")))) {
-			delay = 0;
+			delay = 5;
 			if (world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.ENABLE_JUMPSCARES) == true) {
 				if (sourceentity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf1_jumpscare")))) {
 					if (world instanceof Level)
@@ -116,7 +119,7 @@ public class DeathVoiceProcedure {
 					delay = 80;
 				}
 			} else {
-				delay = 0;
+				delay = 5;
 			}
 			YaFnafmodMod.queueServerWork((int) delay, () -> {
 				if (world.getLevelData().getGameRules().getBoolean(YaFnafmodModGameRules.ENABLE_VOICES) == true) {
@@ -165,6 +168,12 @@ public class DeathVoiceProcedure {
 					if (sourceentity instanceof YellowRabbitEntity) {
 						if (world instanceof Level)
 							((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_yellowrabbit_killvoice")), SoundSource.HOSTILE, 1, 1);
+					} else if (sourceentity instanceof GlitchtrapEntity) {
+						if (world instanceof Level)
+							((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_glitchtrap_killvoice")), SoundSource.HOSTILE, 1, 1);
+					} else if (sourceentity instanceof PlushbabyMobEntity) {
+						if (world instanceof Level)
+							((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_plushbaby_killvoice")), SoundSource.HOSTILE, 1, 1);
 					}
 					if (sourceentity instanceof BarryPolarEntity) {
 						if (world instanceof Level)
@@ -178,7 +187,16 @@ public class DeathVoiceProcedure {
 					}
 				}
 			});
-			sourceentity.getPersistentData().putBoolean("hasTarget", false);
+			YaFnafmodMod.queueServerWork(2, () -> {
+				if (sourceentity instanceof Mob) {
+					try {
+						((Mob) sourceentity).setTarget(null);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+				sourceentity.getPersistentData().putBoolean("hasTarget", false);
+			});
 		}
 	}
 }

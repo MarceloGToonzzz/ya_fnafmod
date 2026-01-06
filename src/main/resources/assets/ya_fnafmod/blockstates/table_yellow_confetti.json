@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "ya_fnafmod:block/table_yellow_confetti"
+    },
+    "blockstate=1": {
+      "model": "ya_fnafmod:block/table_yellow_confetti_states_blockstate_0"
+    }
+  }
+}

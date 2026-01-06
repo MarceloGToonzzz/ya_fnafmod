@@ -55,7 +55,7 @@ public class MonitorWorkBlock extends Block implements EntityBlock {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
-					return 2;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 2)
 					return 0;
 				if (s.getValue(BLOCKSTATE) == 3)

@@ -9,16 +9,25 @@ import net.mcreator.yafnafmod.block.entity.ToyFreddyHeadTileEntity;
 public class ToyFreddyHeadBlockModel extends GeoModel<ToyFreddyHeadTileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(ToyFreddyHeadTileEntity animatable) {
+		final int blockstate = animatable.blockstateNew;
+		if (blockstate == 1)
+			return new ResourceLocation("ya_fnafmod", "animations/animatronic_head.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/animatronic_head.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(ToyFreddyHeadTileEntity animatable) {
+		final int blockstate = animatable.blockstateNew;
+		if (blockstate == 1)
+			return new ResourceLocation("ya_fnafmod", "geo/animatronic_head.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/animatronic_head.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(ToyFreddyHeadTileEntity animatable) {
+		final int blockstate = animatable.blockstateNew;
+		if (blockstate == 1)
+			return new ResourceLocation("ya_fnafmod", "textures/block/head_freddytoy.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/head_freddytoy.png");
 	}
 }

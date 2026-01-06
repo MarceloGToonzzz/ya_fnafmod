@@ -9,12 +9,12 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "poster:foxy1",
+    "customModelName": "poster1:foxy1",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "drawing_item",
+    "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -37,7 +37,7 @@
     "name": "Foxy Poster",
     "specialInformation": {
       "fixedValue": [
-        "\"SMILE!\""
+        "\"Play Time!\""
       ]
     },
     "hardness": 0.25,

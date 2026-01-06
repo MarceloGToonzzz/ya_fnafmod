@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "RetroCupcakeSkin",
+    "blockstateList": [
+      {
+        "texture": "cupcake",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "cupcake-diag:skin_vintage",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

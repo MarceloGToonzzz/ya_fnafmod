@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Animation1Cycle"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -138,11 +141,11 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "stand_bonnie",
+        "texture": "stand_bonnie-skin",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "bonnie_stand_diag.geo.json",
-        "luminance": 0,
+        "customModelName": "bonnie_stand.geo.json",
+        "luminance": 7,
         "boundingBoxes": []
       }
     ]

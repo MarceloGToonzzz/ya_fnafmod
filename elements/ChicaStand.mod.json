@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Animation1Cycle"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -136,6 +139,15 @@
     "normal": "chica_stand.geo.json",
     "displaySettings": "head_display.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "stand_chica-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "chica_stand.geo.json",
+        "luminance": 7,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

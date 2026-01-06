@@ -25,7 +25,11 @@
 					"parent": "bipedLeftLeg",
 					"pivot": [1.9, 12, 0],
 					"cubes": [
-						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [32, 33]}
+						{"origin": [0, 0, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [32, 33]},
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "inflate": -0.0125, "uv": [56, 112]},
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "inflate": 0.26, "uv": [72, 48]},
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [56, 48]},
+						{"origin": [-0.1, 0, -2], "size": [4, 12, 4], "inflate": -0.025, "uv": [72, 112]}
 					]
 				},
 				{
@@ -38,7 +42,11 @@
 					"parent": "bipedRightLeg",
 					"pivot": [-1.9, 12, 0],
 					"cubes": [
-						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [16, 33]}
+						{"origin": [-4, 0, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [16, 33]},
+						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "inflate": 0.26, "uv": [56, 16]},
+						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [56, 32]},
+						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "inflate": 0.25, "uv": [56, 80]},
+						{"origin": [-3.9, 0, -2], "size": [4, 12, 4], "inflate": 0.251, "uv": [56, 96]}
 					]
 				},
 				{
@@ -51,7 +59,11 @@
 					"parent": "bipedBody",
 					"pivot": [0, 24, 0],
 					"cubes": [
-						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.35, "uv": [0, 17]}
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.35, "uv": [0, 17]},
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.26, "uv": [72, 16]},
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.5, "uv": [72, 32]},
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.25, "uv": [72, 80]},
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.251, "uv": [72, 96]}
 					]
 				},
 				{
@@ -64,7 +76,11 @@
 					"parent": "bipedLeftArm",
 					"pivot": [5, 22, 0],
 					"cubes": [
-						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [24, 17]}
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [24, 17]},
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [104, 48]},
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.26, "uv": [88, 48]},
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.25, "uv": [104, 112]},
+						{"origin": [4, 12, -2], "size": [4, 12, 4], "inflate": 0.251, "uv": [88, 112]}
 					]
 				},
 				{
@@ -77,7 +93,11 @@
 					"parent": "bipedRightArm",
 					"pivot": [-5, 22, 0],
 					"cubes": [
-						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [0, 33]}
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.35, "uv": [0, 33]},
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.5, "uv": [96, 32]},
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.26, "uv": [96, 16]},
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.25, "uv": [96, 80]},
+						{"origin": [-8, 12, -2], "size": [4, 12, 4], "inflate": 0.251, "uv": [96, 96]}
 					]
 				},
 				{
@@ -119,6 +139,39 @@
 					"cubes": [
 						{"origin": [-6.5, 31, -0.5], "size": [3, 3, 1], "inflate": 0.35, "uv": [40, 21]},
 						{"origin": [-5.5, 31.75, -0.5], "size": [2, 2, 1], "inflate": 0.35, "uv": [48, 17], "mirror": true}
+					]
+				},
+				{
+					"name": "head-skin",
+					"parent": "armorHead",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.501, "uv": [56, 0]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.875, "uv": [88, 0]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": -0.1, "uv": [56, 64]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": -0.0025, "uv": [88, 64]},
+						{"origin": [-1.5, 32.5, -1.5], "size": [3, 3, 3], "uv": [44, 49]},
+						{"origin": [-2, 32.5, -2], "size": [4, 1, 4], "uv": [28, 49]}
+					]
+				},
+				{
+					"name": "lEar",
+					"parent": "head-skin",
+					"pivot": [3.5, 32, -1],
+					"rotation": [0, 0, 45],
+					"cubes": [
+						{"origin": [3, 31.5, -1], "size": [1, 2, 0], "uv": [26, 52]},
+						{"origin": [2.5, 33, -1.5], "size": [2, 2, 1], "uv": [24, 54]}
+					]
+				},
+				{
+					"name": "rEar",
+					"parent": "head-skin",
+					"pivot": [-3.5, 32, -1],
+					"rotation": [0, 0, -45],
+					"cubes": [
+						{"origin": [-4, 31.5, -1], "size": [1, 2, 0], "uv": [26, 52]},
+						{"origin": [-4.5, 33, -1.5], "size": [2, 2, 1], "uv": [24, 49]}
 					]
 				}
 			]

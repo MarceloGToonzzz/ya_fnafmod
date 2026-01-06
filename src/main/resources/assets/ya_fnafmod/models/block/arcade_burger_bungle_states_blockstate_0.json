@@ -5,5 +5,5 @@
     "particle": "ya_fnafmod:block/arcade1_burgerbungle",
     "1": "ya_fnafmod:block/arcade1_burgerbungle"
   },
-  "render_type": "cutout"
+  "render_type": "cutout_mipped"
 }

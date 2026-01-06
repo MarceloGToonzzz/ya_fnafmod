@@ -14,7 +14,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "work_monitor:on",
-        "luminance": 2,
+        "luminance": 0,
         "boundingBoxes": []
       },
       {

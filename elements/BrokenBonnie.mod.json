@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Animation1Cycle"
+    },
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -136,6 +139,15 @@
     "normal": "broken_bonnie.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_bonniebunny_broken-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "broken_bonnie.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

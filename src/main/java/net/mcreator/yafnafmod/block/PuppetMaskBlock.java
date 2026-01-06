@@ -1,9 +1,12 @@
 
 package net.mcreator.yafnafmod.block;
 
+import org.checkerframework.checker.units.qual.s;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -19,10 +22,17 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class PuppetMaskBlock extends Block {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public PuppetMaskBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f, 10f).lightLevel(s -> (new Object() {
+			public int getLightLevel() {
+				if (s.getValue(BLOCKSTATE) == 1)
+					return 0;
+				return 0;
+			}
+		}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -44,17 +54,17 @@ public class PuppetMaskBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(3.75, 3.75, 0, 12.25, 12.25, 3.5);
-			case NORTH -> box(3.75, 3.75, 12.5, 12.25, 12.25, 16);
-			case EAST -> box(0, 3.75, 3.75, 3.5, 12.25, 12.25);
-			case WEST -> box(12.5, 3.75, 3.75, 16, 12.25, 12.25);
+			default -> box(3.75, 3.75, 0, 12.25, 12.25, 1.5);
+			case NORTH -> box(3.75, 3.75, 14.5, 12.25, 12.25, 16);
+			case EAST -> box(0, 3.75, 3.75, 1.5, 12.25, 12.25);
+			case WEST -> box(14.5, 3.75, 3.75, 16, 12.25, 12.25);
 		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING);
+		builder.add(FACING, BLOCKSTATE);
 	}
 
 	@Override

@@ -41,6 +41,20 @@
         "1": "table3_0"
       },
       "name": "redtile_noleg"
+    },
+    "yellowconfetti": {
+      "map": {
+        "0": "tablecloth_5",
+        "1": "table3_1"
+      },
+      "name": "yellowconfetti"
+    },
+    "yellowconfetti_noleg": {
+      "map": {
+        "0": "tablecloth_5",
+        "1": "table3_0"
+      },
+      "name": "yellowconfetti_noleg"
     }
   }
 }

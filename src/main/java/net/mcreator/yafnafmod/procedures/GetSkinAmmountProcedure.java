@@ -28,43 +28,45 @@ public class GetSkinAmmountProcedure {
 			res = 2;
 		}
 		if ((baseAnimatronic).equals("toy_freddy")) {
-			res = 0;
-		} else if ((baseAnimatronic).equals("toy_bonnie")) {
-			res = 0;
-		} else if ((baseAnimatronic).equals("toy_chica")) {
-			res = 0;
-		} else if ((baseAnimatronic).equals("toy_cupcake")) {
-			res = 0;
-		} else if ((baseAnimatronic).equals("toy_foxy")) {
-			res = 0;
-		} else if ((baseAnimatronic).equals("balloon_boy")) {
 			res = 1;
+		} else if ((baseAnimatronic).equals("toy_bonnie")) {
+			res = 1;
+		} else if ((baseAnimatronic).equals("toy_chica")) {
+			res = 1;
+		} else if ((baseAnimatronic).equals("toy_cupcake")) {
+			res = 1;
+		} else if ((baseAnimatronic).equals("mangle")) {
+			res = 1;
+		} else if ((baseAnimatronic).equals("toy_foxy")) {
+			res = 1;
+		} else if ((baseAnimatronic).equals("balloon_boy")) {
+			res = 2;
 		} else if ((baseAnimatronic).equals("jj")) {
 			res = 0;
 		}
 		if ((baseAnimatronic).equals("withered_freddy")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("withered_bonnie")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("withered_chica")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("withered_foxy")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("withered_golden_freddy")) {
 			res = 0;
 		} else if ((baseAnimatronic).equals("puppet")) {
-			res = 0;
+			res = 1;
 		}
 		if ((baseAnimatronic).equals("retro_freddy")) {
-			res = 2;
+			res = 3;
 		} else if ((baseAnimatronic).equals("retro_bonnie")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("retro_chica")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("retro_cupcake")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("retro_foxy")) {
-			res = 0;
+			res = 1;
 		}
 		if ((baseAnimatronic).equals("shadow_freddy")) {
 			res = 2;
@@ -89,6 +91,15 @@ public class GetSkinAmmountProcedure {
 			res = 2;
 		} else if ((baseAnimatronic).equals("springbonnie")) {
 			res = 3;
+		}
+		if ((baseAnimatronic).equals("springbonnie_suit")) {
+			res = 2;
+		} else if ((baseAnimatronic).equals("shadow_freddy_suit")) {
+			res = 1;
+		} else if ((baseAnimatronic).equals("fredbear_suit")) {
+			res = 1;
+		} else if ((baseAnimatronic).equals("fredbear_suit_headless")) {
+			res = 1;
 		}
 		if ((baseAnimatronic).equals("nightmare_freddy")) {
 			res = 2;

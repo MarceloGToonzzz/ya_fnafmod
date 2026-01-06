@@ -1,9 +1,9 @@
 {
   "parent": "ya_fnafmod:custom/paperpal",
   "textures": {
-    "all": "ya_fnafmod:block/paperpal_clown2",
-    "particle": "ya_fnafmod:block/paperpal_clown2",
-    "1": "ya_fnafmod:block/paperpal_clown2"
+    "all": "ya_fnafmod:block/paperpal4",
+    "particle": "ya_fnafmod:block/paperpal4",
+    "5": "ya_fnafmod:block/paperpal4"
   },
   "render_type": "cutout"
 }

@@ -5,5 +5,5 @@
     "particle": "ya_fnafmod:block/arcade2_sushismash",
     "1": "ya_fnafmod:block/arcade2_sushismash"
   },
-  "render_type": "translucent"
+  "render_type": "cutout_mipped"
 }

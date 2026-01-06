@@ -15,6 +15,7 @@
     "ya_fnafmod:phantom_foxy_spawn_item",
     "ya_fnafmod:phantom_balloon_boy_spawn_item",
     "ya_fnafmod:phantom_mangle_spawn_item",
-    "ya_fnafmod:phantom_puppet_spawn_item"
+    "ya_fnafmod:phantom_puppet_spawn_item",
+    "ya_fnafmod:glitchtrap_spawn_item"
   ]
 }

@@ -71,6 +71,8 @@ import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
+import net.mcreator.yafnafmod.entity.PlushbabyMobEntity;
+import net.mcreator.yafnafmod.entity.PlushbabyMobDayEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PigpatchEntity;
@@ -138,7 +140,10 @@ import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
+import net.mcreator.yafnafmod.entity.GrimFoxyEntity;
+import net.mcreator.yafnafmod.entity.GrimFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
+import net.mcreator.yafnafmod.entity.GlitchtrapEntity;
 import net.mcreator.yafnafmod.entity.GhostChildEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
@@ -163,6 +168,8 @@ import net.mcreator.yafnafmod.entity.ElectrobabEntity;
 import net.mcreator.yafnafmod.entity.ElectrobabDayEntity;
 import net.mcreator.yafnafmod.entity.ElChipEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
+import net.mcreator.yafnafmod.entity.DreadbearEntity;
+import net.mcreator.yafnafmod.entity.DreadbearDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
@@ -1604,6 +1611,55 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof NightmarePumpkinEntityEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PlushbabyMobEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PlushbabyMobDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DreadbearEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof DreadbearDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GrimFoxyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GrimFoxyDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GlitchtrapEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

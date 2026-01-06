@@ -36,7 +36,7 @@ public class DeskJunkMovie1Block extends Block {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
-					return 3;
+					return 0;
 				return 0;
 			}
 		}.getLightLevel())).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));

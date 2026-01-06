@@ -161,6 +161,36 @@
         "0": "poster_fnaf3_frights7"
       },
       "name": "frights7"
+    },
+    "freddy2": {
+      "map": {
+        "0": "poster_fnaf1_ff-freddy"
+      },
+      "name": "freddy2"
+    },
+    "bonnie2": {
+      "map": {
+        "0": "poster_fnaf1_ff-bonnie"
+      },
+      "name": "bonnie2"
+    },
+    "chica2": {
+      "map": {
+        "0": "poster_fnaf1_ff-chica"
+      },
+      "name": "chica2"
+    },
+    "foxy2": {
+      "map": {
+        "0": "poster_fnaf1_ff-foxy"
+      },
+      "name": "foxy2"
+    },
+    "foxy1": {
+      "map": {
+        "0": "poster_fnaf1_foxy"
+      },
+      "name": "foxy1"
     }
   }
 }

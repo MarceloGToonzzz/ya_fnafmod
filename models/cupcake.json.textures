@@ -1,34 +1,58 @@
 {
   "mappings": {
+    "phantom": {
+      "map": {
+        "2": "cupcake_phantom"
+      },
+      "name": "phantom"
+    },
+    "skin_default": {
+      "map": {
+        "2": "cupcake-skin"
+      },
+      "name": "skin_default"
+    },
     "default": {
       "map": {
-        "0": "cupcake"
+        "2": "cupcake"
       },
       "name": "default"
     },
-    "toycupcake": {
+    "skin_toy": {
       "map": {
-        "0": "cupcake_toy"
+        "2": "cupcake_toy-skin"
       },
-      "name": "toycupcake"
-    },
-    "phantomcupcake": {
-      "map": {
-        "0": "cupcake_phantom"
-      },
-      "name": "phantomcupcake"
-    },
-    "retro": {
-      "map": {
-        "0": "cupcake_retro"
-      },
-      "name": "retro"
+      "name": "skin_toy"
     },
     "funtime": {
       "map": {
-        "0": "cupcake_funtime"
+        "2": "cupcake_funtime"
       },
       "name": "funtime"
+    },
+    "skin_phantom": {
+      "map": {
+        "2": "cupcake_phantom-skin"
+      },
+      "name": "skin_phantom"
+    },
+    "toy": {
+      "map": {
+        "2": "cupcake_toy"
+      },
+      "name": "toy"
+    },
+    "vintage": {
+      "map": {
+        "2": "cupcake_retro"
+      },
+      "name": "vintage"
+    },
+    "skin_vintage": {
+      "map": {
+        "2": "cupcake_retro-skin"
+      },
+      "name": "skin_vintage"
     }
   }
 }

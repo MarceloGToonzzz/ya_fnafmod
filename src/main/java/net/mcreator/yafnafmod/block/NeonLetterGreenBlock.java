@@ -41,55 +41,55 @@ public class NeonLetterGreenBlock extends Block {
 		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).lightLevel(s -> (new Object() {
 			public int getLightLevel() {
 				if (s.getValue(BLOCKSTATE) == 1)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 2)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 3)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 4)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 5)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 6)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 7)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 8)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 9)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 10)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 11)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 12)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 13)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 14)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 15)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 16)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 17)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 18)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 19)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 20)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 21)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 22)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 23)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 24)
-					return 5;
+					return 0;
 				if (s.getValue(BLOCKSTATE) == 25)
-					return 5;
+					return 0;
 				return 5;
 			}
 		}.getLightLevel())).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));

@@ -1,9 +1,9 @@
 {
   "parent": "ya_fnafmod:custom/paperpal",
   "textures": {
-    "all": "ya_fnafmod:block/paperpal_orville",
-    "particle": "ya_fnafmod:block/paperpal_orville",
-    "1": "ya_fnafmod:block/paperpal_orville"
+    "all": "ya_fnafmod:block/paperpal5",
+    "particle": "ya_fnafmod:block/paperpal5",
+    "5": "ya_fnafmod:block/paperpal5"
   },
   "render_type": "cutout"
 }

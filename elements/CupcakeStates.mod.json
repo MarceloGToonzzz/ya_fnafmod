@@ -13,7 +13,7 @@
         "textureBack": "",
         "particleTexture": "",
         "renderType": 2,
-        "customModelName": "cupcake_diag:default",
+        "customModelName": "cupcake-diag:default",
         "luminance": 0,
         "boundingBoxes": [
           {

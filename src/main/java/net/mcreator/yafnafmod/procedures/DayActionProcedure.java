@@ -70,7 +70,8 @@ public class DayActionProcedure {
 				yaw = entity.getPersistentData().getDouble("yaw");
 				entity_name = ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString() + "_day";
 				ai = "1";
-				thing = ((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {walks_at_night:1b, controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: STYLISTIC, skin: SKINNY, z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK,skin:SKINNY,style:STYLISTIC}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+				thing = ((((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {walks_at_night:1b, controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: STYLISTIC, skin: SKINNY, z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK,skin:SKINNY,style:STYLISTIC,plushbabySetVariant:PbvBool,plushbabyVariant:PBV}, Attributes: [{Base: 0.2d, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, NoAI: MOVEEEb, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+						.replace("PBV", "" + entity.getPersistentData().getDouble("plushbabyVariant"))).replace("PbvBool", "" + entity.getPersistentData().getBoolean("plushbabySetVariant")))
 						.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("controlshock_z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("controlshock_y")))
 						.replace("XSHOCK", "" + entity.getPersistentData().getDouble("controlshock_x"))).replace("ENTITY_REGISTRY", entity_name)).replace("MOVEEE", ai)).replace("STYLISTIC", "" + entity.getPersistentData().getDouble("style")))
 						.replace("SKINNY", "" + entity.getPersistentData().getDouble("skin"))).replace("YAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw")))
@@ -79,6 +80,8 @@ public class DayActionProcedure {
 					_level.getServer().getCommands()
 							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))), Vec2.ZERO,
 									_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), thing);
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(thing), false);
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
@@ -86,6 +89,8 @@ public class DayActionProcedure {
 						if ((ForgeRegistries.ENTITY_TYPES.getKey(entityiterator.getType()).toString()).equals(entity_name)) {
 							entityiterator.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin")));
 							entityiterator.getPersistentData().putDouble("style", (entity.getPersistentData().getDouble("style")));
+							entityiterator.getPersistentData().putDouble("plushbabyVariant", (entity.getPersistentData().getDouble("plushbabyVariant")));
+							entityiterator.getPersistentData().putBoolean("plushbabySetVariant", (entity.getPersistentData().getBoolean("plushbabySetVariant")));
 							SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 						}
 					}

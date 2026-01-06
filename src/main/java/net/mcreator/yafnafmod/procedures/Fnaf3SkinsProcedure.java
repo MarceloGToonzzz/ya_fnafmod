@@ -4,6 +4,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.SpringtrapDayEntity;
+import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PhantomPuppetEntity;
@@ -12,6 +13,8 @@ import net.mcreator.yafnafmod.entity.PhantomFreddyEntity;
 import net.mcreator.yafnafmod.entity.PhantomFoxyEntity;
 import net.mcreator.yafnafmod.entity.PhantomChicaEntity;
 import net.mcreator.yafnafmod.entity.PhantomBalloonBoyEntity;
+import net.mcreator.yafnafmod.entity.FredbearSuitHeadlessEntity;
+import net.mcreator.yafnafmod.entity.FredbearSuitEntity;
 import net.mcreator.yafnafmod.entity.FredbearEntity;
 import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 
@@ -46,7 +49,15 @@ public class Fnaf3SkinsProcedure {
 				animatable.setTexture(("pmangle" + suffix));
 			if (entity instanceof PhantomPuppetEntity animatable)
 				animatable.setTexture(("ppuppet" + suffix));
+			if (entity instanceof SpringbonnieSuitEntity animatable)
+				animatable.setTexture(("springbonnie_suit" + suffix));
+			if (entity instanceof FredbearSuitEntity animatable)
+				animatable.setTexture(("fredbear_suit" + suffix));
+			if (entity instanceof FredbearSuitHeadlessEntity animatable)
+				animatable.setTexture(("fredbear_suit" + suffix));
 		} else if (skin == 1) {
+			if (entity instanceof SpringbonnieSuitEntity animatable)
+				animatable.setTexture(("springbonnie_suit_withered" + suffix));
 			if (entity instanceof SpringtrapEntity animatable)
 				animatable.setTexture(("springtrap_dark" + suffix));
 			if (entity instanceof SpringtrapDayEntity animatable)
@@ -60,6 +71,8 @@ public class Fnaf3SkinsProcedure {
 			if (entity instanceof SpringbonnieDayEntity animatable)
 				animatable.setTexture(("springbonnie_stage01" + suffix));
 		} else if (skin == 2) {
+			if (entity instanceof SpringbonnieSuitEntity animatable)
+				animatable.setTexture(("springbonnie_suit_movie" + suffix));
 			if (entity instanceof SpringtrapEntity animatable)
 				animatable.setTexture(("springtrap_dbd" + suffix));
 			if (entity instanceof SpringtrapDayEntity animatable)

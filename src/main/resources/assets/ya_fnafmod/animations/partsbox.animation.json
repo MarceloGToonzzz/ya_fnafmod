@@ -3,6 +3,16 @@
 	"animations": {
 		"0": {
 			"loop": true
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"box": {
+					"position": {
+						"vector": [-8, 0, 8]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2

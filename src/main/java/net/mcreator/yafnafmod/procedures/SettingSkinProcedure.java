@@ -6,8 +6,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.yafnafmod.entity.YellowRabbitEntity;
+import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
+import net.mcreator.yafnafmod.entity.ShadowFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
+import net.mcreator.yafnafmod.entity.FredbearSuitHeadlessEntity;
+import net.mcreator.yafnafmod.entity.FredbearSuitEntity;
 import net.mcreator.yafnafmod.entity.CandyCatEntity;
 import net.mcreator.yafnafmod.entity.CandyCatDayEntity;
 
@@ -23,7 +27,8 @@ public class SettingSkinProcedure {
 			suffix = "";
 		} else if (style == 1) {
 			if (entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf1"))) || entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf2")))
-					|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf3"))) || entity instanceof YellowRabbitEntity) {
+					|| entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf3"))) || entity instanceof YellowRabbitEntity || entity instanceof SpringbonnieSuitEntity || entity instanceof FredbearSuitEntity
+					|| entity instanceof FredbearSuitHeadlessEntity || entity instanceof ShadowFreddySuitEntity) {
 				suffix = "-skin";
 			}
 		}
@@ -36,6 +41,8 @@ public class SettingSkinProcedure {
 		if (skin == 0) {
 			if (entity instanceof YellowRabbitEntity animatable)
 				animatable.setTexture(("yellow_rabbit" + suffix));
+			if (entity instanceof ShadowFreddySuitEntity animatable)
+				animatable.setTexture(("sfreddy_suit" + suffix));
 			if (entity instanceof PitbonnieEntity animatable)
 				animatable.setTexture(("pitbonnie" + suffix));
 			if (entity instanceof PitbonnieDayEntity animatable)

@@ -30,30 +30,31 @@ public class SpawnItemRightclickedOnBlockProcedure {
 		String command = "";
 		String AI = "";
 		String spawned = "";
-		if (!itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:prop_entities")))) {
-			og_registry = ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString();
-			if (!itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_nodaytime")))) {
-				spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "_day");
+		og_registry = ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString();
+		if (!itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_nodaytime"))) && !itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:prop_entities")))) {
+			spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "_day");
+			AI = "1";
+		} else {
+			spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "");
+			AI = "0";
+			if (itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:prop_entities")))) {
 				AI = "1";
-			} else {
-				spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "");
-				AI = "0";
 			}
-			xex = Math.round(Math.pow(10, 0) * x) / Math.pow(10, 0) + 0.5;
-			if (!(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:slabs")))) {
-				yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1;
-			} else {
-				yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1.5;
-			}
-			zez = Math.round(Math.pow(10, 0) * z) / Math.pow(10, 0) + 0.5;
-			yaw = entity.getYRot() / 22.5;
-			yaw = Math.round(yaw);
-			yaw = yaw * 22.5;
-			yaw = yaw + 180;
-			command = ((("summon ENTITY XYZ {ForgeData: {style: 0.0d,skin: 0.0d},NoAI:MOOVEb,Rotation:[YAW]}".replace("YAW", yaw + "f")).replace("XYZ", (xex + " ") + "" + (yey + " ") + zez)).replace("MOOVE", AI)).replace("ENTITY", spawned);
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);
 		}
+		xex = Math.round(Math.pow(10, 0) * x) / Math.pow(10, 0) + 0.5;
+		if (!(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:slabs")))) {
+			yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1;
+		} else {
+			yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1.5;
+		}
+		zez = Math.round(Math.pow(10, 0) * z) / Math.pow(10, 0) + 0.5;
+		yaw = entity.getYRot() / 22.5;
+		yaw = Math.round(yaw);
+		yaw = yaw * 22.5;
+		yaw = yaw + 180;
+		command = ((("summon ENTITY XYZ {ForgeData: {style: 0.0d,skin: 0.0d},NoAI:MOOVEb,Rotation:[YAW]}".replace("YAW", yaw + "f")).replace("XYZ", (xex + " ") + "" + (yey + " ") + zez)).replace("MOOVE", AI)).replace("ENTITY", spawned);
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), command);
 		if (!(entity instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = itemstack;

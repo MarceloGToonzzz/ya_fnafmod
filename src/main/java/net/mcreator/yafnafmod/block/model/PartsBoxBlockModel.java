@@ -9,16 +9,25 @@ import net.mcreator.yafnafmod.block.entity.PartsBoxTileEntity;
 public class PartsBoxBlockModel extends GeoModel<PartsBoxTileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(PartsBoxTileEntity animatable) {
+		final int blockstate = animatable.blockstateNew;
+		if (blockstate == 1)
+			return new ResourceLocation("ya_fnafmod", "animations/partsbox.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/partsbox.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(PartsBoxTileEntity animatable) {
+		final int blockstate = animatable.blockstateNew;
+		if (blockstate == 1)
+			return new ResourceLocation("ya_fnafmod", "geo/partsbox.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/partsbox.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(PartsBoxTileEntity animatable) {
+		final int blockstate = animatable.blockstateNew;
+		if (blockstate == 1)
+			return new ResourceLocation("ya_fnafmod", "textures/block/partsbox-skin.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/partsbox.png");
 	}
 }

@@ -1,10 +1,10 @@
 {
-  "parent": "ya_fnafmod:custom/neon_letter",
+  "parent": "ya_fnafmod:custom/neonletter",
   "textures": {
-    "all": "ya_fnafmod:block/neonletter_purple_w",
-    "particle": "ya_fnafmod:block/neonletter_purple_w",
+    "all": "ya_fnafmod:block/neonletter_green_w",
+    "particle": "ya_fnafmod:block/neonletter_purple-w",
     "1": "ya_fnafmod:block/neonsignback",
-    "2": "ya_fnafmod:block/neonletter_purple_w"
+    "3": "ya_fnafmod:block/neonletter_purple-w"
   },
-  "render_type": "translucent"
+  "render_type": "cutout_mipped"
 }

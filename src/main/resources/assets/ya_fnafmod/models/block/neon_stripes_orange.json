@@ -5,5 +5,5 @@
     "particle": "ya_fnafmod:block/neonsign_stripes_orange_m",
     "15": "ya_fnafmod:block/neonsign_stripes_orange_m"
   },
-  "render_type": "cutout"
+  "render_type": "cutout_mipped"
 }

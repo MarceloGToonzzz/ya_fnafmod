@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/cupcake",
+  "textures": {
+    "all": "ya_fnafmod:block/cupcake",
+    "particle": "ya_fnafmod:block/cupcake",
+    "2": "ya_fnafmod:block/cupcake_toy-skin"
+  },
+  "render_type": "cutout"
+}

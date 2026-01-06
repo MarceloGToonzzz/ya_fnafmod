@@ -1720,5 +1720,100 @@
         "stream": false
       }
     ]
+  },
+  "anima_glitchtrap_voice": {
+    "subtitle": "subtitles.anima_glitchtrap_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_glitchtrap_voice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_glitchtrap_voice2",
+        "stream": false
+      }
+    ]
+  },
+  "anima_glitchtrap_voice_hostile": {
+    "subtitle": "subtitles.anima_glitchtrap_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_glitchtrap_hostilevoice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_glitchtrap_hostilevoice2",
+        "stream": false
+      }
+    ]
+  },
+  "anima_glitchtrap_killvoice": {
+    "subtitle": "subtitles.anima_glitchtrap_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_glitchtrap_killvoice1",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_glitchtrap_killvoice2",
+        "stream": false
+      }
+    ]
+  },
+  "anima_plushbaby_giggle": {
+    "subtitle": "subtitles.anima_plushbaby_giggle",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_plushbaby_giggle3",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_plushbaby_giggle2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_plushbaby_giggle1",
+        "stream": false
+      }
+    ]
+  },
+  "anima_plushbaby_voice": {
+    "subtitle": "subtitles.anima_plushbaby_voice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_plushbaby_voice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_plushbaby_voice1",
+        "stream": false
+      }
+    ]
+  },
+  "anima_plushbaby_voice_hostile": {
+    "subtitle": "subtitles.anima_plushbaby_voice_hostile",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_plushbaby_hostilevoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_plushbaby_hostilevoice1",
+        "stream": false
+      }
+    ]
+  },
+  "anima_plushbaby_killvoice": {
+    "subtitle": "subtitles.anima_plushbaby_killvoice",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_plushbaby_killvoice2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_plushbaby_killvoice1",
+        "stream": false
+      }
+    ]
   }
 }

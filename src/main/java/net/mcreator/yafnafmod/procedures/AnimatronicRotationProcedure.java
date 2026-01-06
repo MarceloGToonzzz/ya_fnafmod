@@ -148,8 +148,8 @@ public class AnimatronicRotationProcedure {
 				} else {
 					entity.getPersistentData().putDouble("skin", 0);
 				}
-				SettingSkinProcedure.execute(entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 			}
+			SettingSkinProcedure.execute(entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 		} else if (itemstack.getItem() == YaFnafmodModItems.FAT.get()) {
 			if (entity.getPersistentData().getDouble("style") == 0) {
 				entity.getPersistentData().putDouble("style", 1);

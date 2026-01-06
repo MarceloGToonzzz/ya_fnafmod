@@ -42,12 +42,20 @@ public class FoxyStandTileEntity extends RandomizableContainerBlockEntity implem
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	public int blockstateNew = this.getBlockState().getValue(FoxyStandBlock.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(FoxyStandBlock.BLOCKSTATE);
 
 	public FoxyStandTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.FOXY_STAND.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
+		blockstateNew = this.getBlockState().getValue(FoxyStandBlock.BLOCKSTATE);
+		if (blockstateOld != blockstateNew) {
+			event.getController().forceAnimationReset();
+			blockstateOld = blockstateNew;
+			return PlayState.STOP;
+		}
 		String animationprocedure = ("" + this.getBlockState().getValue(FoxyStandBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

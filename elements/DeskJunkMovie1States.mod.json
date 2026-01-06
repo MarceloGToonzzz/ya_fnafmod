@@ -14,7 +14,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "deskjunk_fnafmovie1:on",
-        "luminance": 3,
+        "luminance": 0,
         "boundingBoxes": []
       }
     ]

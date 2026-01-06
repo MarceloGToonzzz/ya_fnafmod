@@ -27,8 +27,10 @@ import net.mcreator.yafnafmod.procedures.FlashlightPropertyValueProviderProcedur
 import net.mcreator.yafnafmod.procedures.FatPropertyValueProviderProcedure;
 import net.mcreator.yafnafmod.procedures.FatLetterPropertyValueProviderProcedure;
 import net.mcreator.yafnafmod.item.YenndoSpawnItemItem;
+import net.mcreator.yafnafmod.item.YellowRabbitSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.YellowRabbitSuitArmorItem;
 import net.mcreator.yafnafmod.item.YellowRabbitSpawnItemItem;
+import net.mcreator.yafnafmod.item.YellowRabbitFixedSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.YellowRabbitFixedSuitArmorItem;
 import net.mcreator.yafnafmod.item.WrenchItem;
 import net.mcreator.yafnafmod.item.WitheredGoldenFreddySpawnItemItem;
@@ -90,7 +92,10 @@ import net.mcreator.yafnafmod.item.TomatoItem;
 import net.mcreator.yafnafmod.item.TacoItem;
 import net.mcreator.yafnafmod.item.SpringtrapSpawnItemItem;
 import net.mcreator.yafnafmod.item.SpringlockEllaSuitSpawnItemItem;
+import net.mcreator.yafnafmod.item.SpringbonnieWitheredSuitArmorSkinItem;
+import net.mcreator.yafnafmod.item.SpringbonnieWitheredSuitArmorItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSuitSpawnItemItem;
+import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSpawnItemItem;
 import net.mcreator.yafnafmod.item.SparkyDogSpawnItemItem;
@@ -128,6 +133,7 @@ import net.mcreator.yafnafmod.item.PopgunRevolverItem;
 import net.mcreator.yafnafmod.item.PopgunBulletItem;
 import net.mcreator.yafnafmod.item.PopgoesWeaselSpawnItemItem;
 import net.mcreator.yafnafmod.item.PlushtrapSpawnItemItem;
+import net.mcreator.yafnafmod.item.PlushbabyMobSpawnItemItem;
 import net.mcreator.yafnafmod.item.PlungerItem;
 import net.mcreator.yafnafmod.item.PizzacutterItem;
 import net.mcreator.yafnafmod.item.PizzaSliceRalphItem;
@@ -260,7 +266,11 @@ import net.mcreator.yafnafmod.item.GuitarToyItem;
 import net.mcreator.yafnafmod.item.GuitarRockstarItem;
 import net.mcreator.yafnafmod.item.GuitarItem;
 import net.mcreator.yafnafmod.item.GuardJacketItem;
+import net.mcreator.yafnafmod.item.GrimFoxySpawnItemItem;
 import net.mcreator.yafnafmod.item.GoldenFreddySpawnItemItem;
+import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorSkinItem;
+import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorItem;
+import net.mcreator.yafnafmod.item.GlitchtrapSpawnItemItem;
 import net.mcreator.yafnafmod.item.GlassesItem;
 import net.mcreator.yafnafmod.item.GasMaskItem;
 import net.mcreator.yafnafmod.item.FuntimeFreddySpawnItemItem;
@@ -269,12 +279,14 @@ import net.mcreator.yafnafmod.item.FuntimeChicaSpawnItemItem;
 import net.mcreator.yafnafmod.item.FriesMoldyItem;
 import net.mcreator.yafnafmod.item.FriesItem;
 import net.mcreator.yafnafmod.item.FreddysWorkerOutfitItem;
+import net.mcreator.yafnafmod.item.FreddySuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.FreddySuitArmorItem;
 import net.mcreator.yafnafmod.item.FreddyMaskItem;
 import net.mcreator.yafnafmod.item.FreddyFazbearSpawnItemItem;
 import net.mcreator.yafnafmod.item.FreddyFaceMaskItem;
 import net.mcreator.yafnafmod.item.FredbearSuitSpawnItemItem;
 import net.mcreator.yafnafmod.item.FredbearSuitHeadlessSpawnItemItem;
+import net.mcreator.yafnafmod.item.FredbearSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.FredbearSuitArmorItem;
 import net.mcreator.yafnafmod.item.FredbearSpawnItemItem;
 import net.mcreator.yafnafmod.item.FoxyPirateSpawnItemItem;
@@ -306,6 +318,7 @@ import net.mcreator.yafnafmod.item.Endo02SpawnItemItem;
 import net.mcreator.yafnafmod.item.Endo01SpawnItemItem;
 import net.mcreator.yafnafmod.item.ElectrobabSpawnItemItem;
 import net.mcreator.yafnafmod.item.ElChipSpawnItemItem;
+import net.mcreator.yafnafmod.item.DreadbearSpawnItemItem;
 import net.mcreator.yafnafmod.item.DougDogSpawnItemItem;
 import net.mcreator.yafnafmod.item.DeathCoinItem;
 import net.mcreator.yafnafmod.item.CrowbarItem;
@@ -597,6 +610,7 @@ import net.mcreator.yafnafmod.block.display.CutoutTreePalmDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutTreeOakDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutSpringbonnieRottenDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutSpringbonnieDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutPuppetDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutHelpyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutFreddyToyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutFreddyRetroDisplayItem;
@@ -613,6 +627,7 @@ import net.mcreator.yafnafmod.block.display.CutoutChicaRetroDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBonnieToyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBonnieRetroDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBalloraDisplayItem;
+import net.mcreator.yafnafmod.block.display.CutoutBalloonTwinsDisplayItem;
 import net.mcreator.yafnafmod.block.display.CutoutBabyDisplayItem;
 import net.mcreator.yafnafmod.block.display.CustomPizzeriaSignDisplayItem;
 import net.mcreator.yafnafmod.block.display.ControlPanelDisplayItem;
@@ -5311,6 +5326,72 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CAROUSEL_CINEMATIC = REGISTRY.register(YaFnafmodModBlocks.CAROUSEL_CINEMATIC.getId().getPath(), () -> new CarouselCinematicDisplayItem(YaFnafmodModBlocks.CAROUSEL_CINEMATIC.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CABINET_BLACK = block(YaFnafmodModBlocks.CABINET_BLACK);
 	public static final RegistryObject<Item> SPRINGTRAP_BLOCK = REGISTRY.register(YaFnafmodModBlocks.SPRINGTRAP_BLOCK.getId().getPath(), () -> new SpringtrapBlockDisplayItem(YaFnafmodModBlocks.SPRINGTRAP_BLOCK.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_BALLOON_TWINS = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_BALLOON_TWINS.getId().getPath(),
+			() -> new CutoutBalloonTwinsDisplayItem(YaFnafmodModBlocks.CUTOUT_BALLOON_TWINS.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUTOUT_PUPPET = REGISTRY.register(YaFnafmodModBlocks.CUTOUT_PUPPET.getId().getPath(), () -> new CutoutPuppetDisplayItem(YaFnafmodModBlocks.CUTOUT_PUPPET.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CUPCAKE_SKIN = block(YaFnafmodModBlocks.CUPCAKE_SKIN);
+	public static final RegistryObject<Item> TOY_CUPCAKE_SKIN = block(YaFnafmodModBlocks.TOY_CUPCAKE_SKIN);
+	public static final RegistryObject<Item> PHANTOM_CUPCAKE_SKIN = block(YaFnafmodModBlocks.PHANTOM_CUPCAKE_SKIN);
+	public static final RegistryObject<Item> RETRO_CUPCAKE_SKIN = block(YaFnafmodModBlocks.RETRO_CUPCAKE_SKIN);
+	public static final RegistryObject<Item> POSTER_FOXY_2 = block(YaFnafmodModBlocks.POSTER_FOXY_2);
+	public static final RegistryObject<Item> TABLE_YELLOW_CONFETTI = block(YaFnafmodModBlocks.TABLE_YELLOW_CONFETTI);
+	public static final RegistryObject<Item> TABLE_CLOTH_YELLOW_CONFETTI = block(YaFnafmodModBlocks.TABLE_CLOTH_YELLOW_CONFETTI);
+	public static final RegistryObject<SpringbonnieSuitArmorSkinItem> SPRINGBONNIE_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("springbonnie_suit_armor_skin_helmet",
+			() -> new SpringbonnieSuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieSuitArmorSkinItem> SPRINGBONNIE_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("springbonnie_suit_armor_skin_chestplate",
+			() -> new SpringbonnieSuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieSuitArmorSkinItem> SPRINGBONNIE_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("springbonnie_suit_armor_skin_leggings",
+			() -> new SpringbonnieSuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<YellowRabbitSuitArmorSkinItem> YELLOW_RABBIT_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("yellow_rabbit_suit_armor_skin_helmet",
+			() -> new YellowRabbitSuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<YellowRabbitSuitArmorSkinItem> YELLOW_RABBIT_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("yellow_rabbit_suit_armor_skin_chestplate",
+			() -> new YellowRabbitSuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<YellowRabbitSuitArmorSkinItem> YELLOW_RABBIT_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("yellow_rabbit_suit_armor_skin_leggings",
+			() -> new YellowRabbitSuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<YellowRabbitFixedSuitArmorSkinItem> YELLOW_RABBIT_FIXED_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("yellow_rabbit_fixed_suit_armor_skin_helmet",
+			() -> new YellowRabbitFixedSuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<YellowRabbitFixedSuitArmorSkinItem> YELLOW_RABBIT_FIXED_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("yellow_rabbit_fixed_suit_armor_skin_chestplate",
+			() -> new YellowRabbitFixedSuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<YellowRabbitFixedSuitArmorSkinItem> YELLOW_RABBIT_FIXED_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("yellow_rabbit_fixed_suit_armor_skin_leggings",
+			() -> new YellowRabbitFixedSuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieWitheredSuitArmorItem> SPRINGBONNIE_WITHERED_SUIT_ARMOR_HELMET = REGISTRY.register("springbonnie_withered_suit_armor_helmet",
+			() -> new SpringbonnieWitheredSuitArmorItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieWitheredSuitArmorItem> SPRINGBONNIE_WITHERED_SUIT_ARMOR_CHESTPLATE = REGISTRY.register("springbonnie_withered_suit_armor_chestplate",
+			() -> new SpringbonnieWitheredSuitArmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieWitheredSuitArmorItem> SPRINGBONNIE_WITHERED_SUIT_ARMOR_LEGGINGS = REGISTRY.register("springbonnie_withered_suit_armor_leggings",
+			() -> new SpringbonnieWitheredSuitArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieWitheredSuitArmorSkinItem> SPRINGBONNIE_WITHERED_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("springbonnie_withered_suit_armor_skin_helmet",
+			() -> new SpringbonnieWitheredSuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieWitheredSuitArmorSkinItem> SPRINGBONNIE_WITHERED_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("springbonnie_withered_suit_armor_skin_chestplate",
+			() -> new SpringbonnieWitheredSuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<SpringbonnieWitheredSuitArmorSkinItem> SPRINGBONNIE_WITHERED_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("springbonnie_withered_suit_armor_skin_leggings",
+			() -> new SpringbonnieWitheredSuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<FredbearSuitArmorSkinItem> FREDBEAR_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("fredbear_suit_armor_skin_helmet", () -> new FredbearSuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<FredbearSuitArmorSkinItem> FREDBEAR_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("fredbear_suit_armor_skin_chestplate", () -> new FredbearSuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<FredbearSuitArmorSkinItem> FREDBEAR_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("fredbear_suit_armor_skin_leggings", () -> new FredbearSuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<FreddySuitArmorSkinItem> FREDDY_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("freddy_suit_armor_skin_helmet", () -> new FreddySuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<FreddySuitArmorSkinItem> FREDDY_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("freddy_suit_armor_skin_chestplate", () -> new FreddySuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<FreddySuitArmorSkinItem> FREDDY_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("freddy_suit_armor_skin_leggings", () -> new FreddySuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<Item> SAND_STAGE_BASE = block(YaFnafmodModBlocks.SAND_STAGE_BASE);
+	public static final RegistryObject<Item> PRIZE_COUNTER_PURPLE = block(YaFnafmodModBlocks.PRIZE_COUNTER_PURPLE);
+	public static final RegistryObject<GlitchtrapSuitArmorItem> GLITCHTRAP_SUIT_ARMOR_HELMET = REGISTRY.register("glitchtrap_suit_armor_helmet", () -> new GlitchtrapSuitArmorItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<GlitchtrapSuitArmorItem> GLITCHTRAP_SUIT_ARMOR_CHESTPLATE = REGISTRY.register("glitchtrap_suit_armor_chestplate", () -> new GlitchtrapSuitArmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<GlitchtrapSuitArmorItem> GLITCHTRAP_SUIT_ARMOR_LEGGINGS = REGISTRY.register("glitchtrap_suit_armor_leggings", () -> new GlitchtrapSuitArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<GlitchtrapSuitArmorSkinItem> GLITCHTRAP_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("glitchtrap_suit_armor_skin_helmet", () -> new GlitchtrapSuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<GlitchtrapSuitArmorSkinItem> GLITCHTRAP_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("glitchtrap_suit_armor_skin_chestplate",
+			() -> new GlitchtrapSuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<GlitchtrapSuitArmorSkinItem> GLITCHTRAP_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("glitchtrap_suit_armor_skin_leggings", () -> new GlitchtrapSuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<Item> PLUSHBABY_MOB_SPAWN_EGG = REGISTRY.register("plushbaby_mob_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.PLUSHBABY_MOB, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> PLUSHBABY_MOB_DAY_SPAWN_EGG = REGISTRY.register("plushbaby_mob_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.PLUSHBABY_MOB_DAY, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> DREADBEAR_SPAWN_EGG = REGISTRY.register("dreadbear_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.DREADBEAR, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> DREADBEAR_DAY_SPAWN_EGG = REGISTRY.register("dreadbear_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.DREADBEAR_DAY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> GRIM_FOXY_SPAWN_EGG = REGISTRY.register("grim_foxy_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.GRIM_FOXY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> GRIM_FOXY_DAY_SPAWN_EGG = REGISTRY.register("grim_foxy_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.GRIM_FOXY_DAY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> GRIM_FOXY_SPAWN_ITEM = REGISTRY.register("grim_foxy_spawn_item", () -> new GrimFoxySpawnItemItem());
+	public static final RegistryObject<Item> DREADBEAR_SPAWN_ITEM = REGISTRY.register("dreadbear_spawn_item", () -> new DreadbearSpawnItemItem());
+	public static final RegistryObject<Item> PLUSHBABY_MOB_SPAWN_ITEM = REGISTRY.register("plushbaby_mob_spawn_item", () -> new PlushbabyMobSpawnItemItem());
+	public static final RegistryObject<Item> GLITCHTRAP_SPAWN_EGG = REGISTRY.register("glitchtrap_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.GLITCHTRAP, -9475281, -12500462, new Item.Properties()));
+	public static final RegistryObject<Item> GLITCHTRAP_SPAWN_ITEM = REGISTRY.register("glitchtrap_spawn_item", () -> new GlitchtrapSpawnItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

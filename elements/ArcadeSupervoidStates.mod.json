@@ -14,7 +14,7 @@
         "particleTexture": "",
         "renderType": 2,
         "customModelName": "arcade4:default",
-        "luminance": 9,
+        "luminance": 0,
         "boundingBoxes": []
       }
     ]

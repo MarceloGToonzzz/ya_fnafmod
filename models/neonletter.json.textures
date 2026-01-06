@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "neonsignback",
+        "3": "neonletter_green-a"
+      },
+      "name": "default"
+    },
+    "purple": {
+      "map": {
+        "1": "neonsignback",
+        "3": "neonletter_purple-a"
+      },
+      "name": "purple"
+    }
+  }
+}

@@ -87,6 +87,8 @@ import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
+import net.mcreator.yafnafmod.entity.PlushbabyMobEntity;
+import net.mcreator.yafnafmod.entity.PlushbabyMobDayEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieEntity;
 import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PigpatchEntity;
@@ -154,7 +156,10 @@ import net.mcreator.yafnafmod.entity.HappyFrogEntity;
 import net.mcreator.yafnafmod.entity.HappyFrogDayEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
+import net.mcreator.yafnafmod.entity.GrimFoxyEntity;
+import net.mcreator.yafnafmod.entity.GrimFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
+import net.mcreator.yafnafmod.entity.GlitchtrapEntity;
 import net.mcreator.yafnafmod.entity.GhostChildEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
@@ -179,6 +184,8 @@ import net.mcreator.yafnafmod.entity.ElectrobabEntity;
 import net.mcreator.yafnafmod.entity.ElectrobabDayEntity;
 import net.mcreator.yafnafmod.entity.ElChipEntity;
 import net.mcreator.yafnafmod.entity.ElChipDayEntity;
+import net.mcreator.yafnafmod.entity.DreadbearEntity;
+import net.mcreator.yafnafmod.entity.DreadbearDayEntity;
 import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
@@ -1066,6 +1073,34 @@ public class YaFnafmodModEntities {
 					.setCustomClientFactory(NightmarePumpkinEntityEntity::new)
 
 					.sized(0.6f, 0.9375f));
+	public static final RegistryObject<EntityType<PlushbabyMobEntity>> PLUSHBABY_MOB = register("plushbaby_mob",
+			EntityType.Builder.<PlushbabyMobEntity>of(PlushbabyMobEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlushbabyMobEntity::new)
+
+					.sized(0.625f, 0.625f));
+	public static final RegistryObject<EntityType<PlushbabyMobDayEntity>> PLUSHBABY_MOB_DAY = register("plushbaby_mob_day",
+			EntityType.Builder.<PlushbabyMobDayEntity>of(PlushbabyMobDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PlushbabyMobDayEntity::new)
+
+					.sized(0.625f, 0.625f));
+	public static final RegistryObject<EntityType<DreadbearEntity>> DREADBEAR = register("dreadbear",
+			EntityType.Builder.<DreadbearEntity>of(DreadbearEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(DreadbearEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<DreadbearDayEntity>> DREADBEAR_DAY = register("dreadbear_day",
+			EntityType.Builder.<DreadbearDayEntity>of(DreadbearDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(DreadbearDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GrimFoxyEntity>> GRIM_FOXY = register("grim_foxy",
+			EntityType.Builder.<GrimFoxyEntity>of(GrimFoxyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(GrimFoxyEntity::new)
+
+					.sized(0.6f, 1.25f));
+	public static final RegistryObject<EntityType<GrimFoxyDayEntity>> GRIM_FOXY_DAY = register("grim_foxy_day",
+			EntityType.Builder.<GrimFoxyDayEntity>of(GrimFoxyDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(GrimFoxyDayEntity::new)
+
+					.sized(0.6f, 1.25f));
+	public static final RegistryObject<EntityType<GlitchtrapEntity>> GLITCHTRAP = register("glitchtrap",
+			EntityType.Builder.<GlitchtrapEntity>of(GlitchtrapEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GlitchtrapEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1278,6 +1313,13 @@ public class YaFnafmodModEntities {
 			WitheredBarryPolarDayEntity.init();
 			NightmareCupcakeEntityEntity.init();
 			NightmarePumpkinEntityEntity.init();
+			PlushbabyMobEntity.init();
+			PlushbabyMobDayEntity.init();
+			DreadbearEntity.init();
+			DreadbearDayEntity.init();
+			GrimFoxyEntity.init();
+			GrimFoxyDayEntity.init();
+			GlitchtrapEntity.init();
 		});
 	}
 
@@ -1485,5 +1527,12 @@ public class YaFnafmodModEntities {
 		event.put(WITHERED_BARRY_POLAR_DAY.get(), WitheredBarryPolarDayEntity.createAttributes().build());
 		event.put(NIGHTMARE_CUPCAKE_ENTITY.get(), NightmareCupcakeEntityEntity.createAttributes().build());
 		event.put(NIGHTMARE_PUMPKIN_ENTITY.get(), NightmarePumpkinEntityEntity.createAttributes().build());
+		event.put(PLUSHBABY_MOB.get(), PlushbabyMobEntity.createAttributes().build());
+		event.put(PLUSHBABY_MOB_DAY.get(), PlushbabyMobDayEntity.createAttributes().build());
+		event.put(DREADBEAR.get(), DreadbearEntity.createAttributes().build());
+		event.put(DREADBEAR_DAY.get(), DreadbearDayEntity.createAttributes().build());
+		event.put(GRIM_FOXY.get(), GrimFoxyEntity.createAttributes().build());
+		event.put(GRIM_FOXY_DAY.get(), GrimFoxyDayEntity.createAttributes().build());
+		event.put(GLITCHTRAP.get(), GlitchtrapEntity.createAttributes().build());
 	}
 }

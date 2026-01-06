@@ -157,4 +157,11 @@ public class YaFnafmodModSounds {
 	public static final RegistryObject<SoundEvent> ANIMA_YELLOWRABBIT_VOICE_HOSTILE = REGISTRY.register("anima_yellowrabbit_voice_hostile",
 			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_yellowrabbit_voice_hostile")));
 	public static final RegistryObject<SoundEvent> ANIMA_YELLOWRABBIT_KILLVOICE = REGISTRY.register("anima_yellowrabbit_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_yellowrabbit_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_GLITCHTRAP_VOICE = REGISTRY.register("anima_glitchtrap_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_glitchtrap_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_GLITCHTRAP_VOICE_HOSTILE = REGISTRY.register("anima_glitchtrap_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_glitchtrap_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIMA_GLITCHTRAP_KILLVOICE = REGISTRY.register("anima_glitchtrap_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_glitchtrap_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_PLUSHBABY_GIGGLE = REGISTRY.register("anima_plushbaby_giggle", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_plushbaby_giggle")));
+	public static final RegistryObject<SoundEvent> ANIMA_PLUSHBABY_VOICE = REGISTRY.register("anima_plushbaby_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_plushbaby_voice")));
+	public static final RegistryObject<SoundEvent> ANIMA_PLUSHBABY_VOICE_HOSTILE = REGISTRY.register("anima_plushbaby_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_plushbaby_voice_hostile")));
+	public static final RegistryObject<SoundEvent> ANIMA_PLUSHBABY_KILLVOICE = REGISTRY.register("anima_plushbaby_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_plushbaby_killvoice")));
 }

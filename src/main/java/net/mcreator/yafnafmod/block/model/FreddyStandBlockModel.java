@@ -11,7 +11,7 @@ public class FreddyStandBlockModel extends GeoModel<FreddyStandTileEntity> {
 	public ResourceLocation getAnimationResource(FreddyStandTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "animations/freddy_stand_diag.animation.json");
+			return new ResourceLocation("ya_fnafmod", "animations/freddy_stand.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/freddy_stand.animation.json");
 	}
 
@@ -19,7 +19,7 @@ public class FreddyStandBlockModel extends GeoModel<FreddyStandTileEntity> {
 	public ResourceLocation getModelResource(FreddyStandTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "geo/freddy_stand_diag.geo.json");
+			return new ResourceLocation("ya_fnafmod", "geo/freddy_stand.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/freddy_stand.geo.json");
 	}
 
@@ -27,7 +27,7 @@ public class FreddyStandBlockModel extends GeoModel<FreddyStandTileEntity> {
 	public ResourceLocation getTextureResource(FreddyStandTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/stand_freddy.png");
+			return new ResourceLocation("ya_fnafmod", "textures/block/stand_freddy-skin.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/stand_freddy.png");
 	}
 }

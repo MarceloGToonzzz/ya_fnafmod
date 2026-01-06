@@ -42,12 +42,20 @@ public class ChicaStandTileEntity extends RandomizableContainerBlockEntity imple
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+	public int blockstateNew = this.getBlockState().getValue(ChicaStandBlock.BLOCKSTATE);
+	private int blockstateOld = this.getBlockState().getValue(ChicaStandBlock.BLOCKSTATE);
 
 	public ChicaStandTileEntity(BlockPos pos, BlockState state) {
 		super(YaFnafmodModBlockEntities.CHICA_STAND.get(), pos, state);
 	}
 
 	private PlayState predicate(AnimationState event) {
+		blockstateNew = this.getBlockState().getValue(ChicaStandBlock.BLOCKSTATE);
+		if (blockstateOld != blockstateNew) {
+			event.getController().forceAnimationReset();
+			blockstateOld = blockstateNew;
+			return PlayState.STOP;
+		}
 		String animationprocedure = ("" + this.getBlockState().getValue(ChicaStandBlock.ANIMATION));
 		if (animationprocedure.equals("0")) {
 			return event.setAndContinue(RawAnimation.begin().thenLoop(animationprocedure));

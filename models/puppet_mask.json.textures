@@ -5,6 +5,12 @@
         "1": "stand_puppet"
       },
       "name": "default"
+    },
+    "skin": {
+      "map": {
+        "1": "stand_puppet-skin"
+      },
+      "name": "skin"
     }
   }
 }

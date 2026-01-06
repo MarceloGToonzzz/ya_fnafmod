@@ -20,11 +20,13 @@ import net.mcreator.yafnafmod.entity.SpringtrapEntity;
 import net.mcreator.yafnafmod.entity.ScraptrapEntity;
 import net.mcreator.yafnafmod.entity.ScrapBabyEntity;
 import net.mcreator.yafnafmod.entity.RockstarBonnieEntity;
+import net.mcreator.yafnafmod.entity.PlushbabyMobEntity;
 import net.mcreator.yafnafmod.entity.NightmareFredbearEntity;
 import net.mcreator.yafnafmod.entity.NeddbearEntity;
 import net.mcreator.yafnafmod.entity.MoltenFreddyEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.GusThePugEntity;
+import net.mcreator.yafnafmod.entity.GlitchtrapEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFreddyEntity;
 import net.mcreator.yafnafmod.entity.FoxyPirateEntity;
 import net.mcreator.yafnafmod.entity.BarryPolarEntity;
@@ -86,6 +88,12 @@ public class PlayVoiceProcedure {
 				if (entity instanceof YellowRabbitEntity) {
 					if (world instanceof Level)
 						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_yellowrabbit_voice")), SoundSource.HOSTILE, 1, 1);
+				} else if (entity instanceof GlitchtrapEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_glitchtrap_voice")), SoundSource.HOSTILE, 1, 1);
+				} else if (entity instanceof PlushbabyMobEntity) {
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_plushbaby_voice")), SoundSource.HOSTILE, 1, 1);
 				}
 				if (entity instanceof BarryPolarEntity) {
 					if (world instanceof Level)

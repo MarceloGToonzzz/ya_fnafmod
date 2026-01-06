@@ -90,12 +90,15 @@ public class NightActionProcedure {
 					}
 				}
 				yaw = entity.getPersistentData().getDouble("yaw");
-				command = (((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: STYLISTIC, skin: SKINNY, z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK}, Attributes: [{Base: SPEEDd, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+				command = (((((((((((((("summon ENTITY_REGISTRY ~ ~ ~ {Brain: {memories: {}}, HurtByTimestamp: 0, ForgeData: {controlshock_linked:1b, GotCordinates: 1b, x: XPOS, y: YPOS, style: STYLISTIC, skin: SKINNY, z: ZPOS, yaw: YAW,controlshock_x:XSHOCK,controlshock_y:YSHOCK,controlshock_z:ZSHOCK,plushbabyVariant:PBV,plushbabySetVariant:PbvBool}, Attributes: [{Base: SPEEDd, Name: \"minecraft:generic.movement_speed\"}], Invulnerable: 0b, FallDistance: 0.0f, CanUpdate: 1b, DeathTime: 0s, Rotation: [ZEDAWf, 0.0f], HandItems: [{}, {}], ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], Fire: 0s, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 0b, HurtTime: 0s}"
+						.replace("PBV", "" + entity.getPersistentData().getDouble("plushbabyVariant"))).replace("PbvBool", "" + entity.getPersistentData().getBoolean("plushbabySetVariant")))
 						.replace("SPEED", "" + (entity instanceof LivingEntity _attributeContext ? _attributeContext.getAttributeValue(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED) : 0.0D)))
 						.replace("ZSHOCK", "" + entity.getPersistentData().getDouble("z"))).replace("YSHOCK", "" + entity.getPersistentData().getDouble("y"))).replace("XSHOCK", "" + entity.getPersistentData().getDouble("x")))
 						.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
 						.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINNY", "" + entity.getPersistentData().getDouble("skin"))).replace("STYLISTIC", "" + entity.getPersistentData().getDouble("style")))
 						.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
+				if (!world.isClientSide() && world.getServer() != null)
+					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(command), false);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands()
 							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))), Vec2.ZERO,
@@ -107,6 +110,8 @@ public class NightActionProcedure {
 						if ((ForgeRegistries.ENTITY_TYPES.getKey(entityiterator.getType()).toString()).equals((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).replace("_day", ""))) {
 							entityiterator.getPersistentData().putDouble("skin", (entity.getPersistentData().getDouble("skin")));
 							entityiterator.getPersistentData().putDouble("style", (entity.getPersistentData().getDouble("style")));
+							entityiterator.getPersistentData().putDouble("plushbabyVariant", (entity.getPersistentData().getDouble("plushbabyVariant")));
+							entityiterator.getPersistentData().putBoolean("plushbabySetVariant", (entity.getPersistentData().getBoolean("plushbabySetVariant")));
 							SettingSkinProcedure.execute(entityiterator, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 						}
 					}
@@ -169,7 +174,7 @@ public class NightActionProcedure {
 					entity.discard();
 			}
 		}
-		if (!(world instanceof Level _lvl67 && _lvl67.isDay())) {
+		if (!(world instanceof Level _lvl73 && _lvl73.isDay())) {
 			if (entity instanceof FreddyFazbearDayEntity) {
 				((FreddyFazbearDayEntity) entity).setAnimation("0");
 			}

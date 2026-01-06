@@ -177,6 +177,11 @@
 					"scale": {
 						"vector": [0, 0, 0]
 					}
+				},
+				"guitar3": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
 				}
 			}
 		},
@@ -512,6 +517,11 @@
 					}
 				},
 				"guitar2": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"guitar3": {
 					"scale": {
 						"vector": [0, 0, 0]
 					}
@@ -1060,6 +1070,11 @@
 					"scale": {
 						"vector": [0, 0, 0]
 					}
+				},
+				"guitar3": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
 				}
 			}
 		},
@@ -1218,6 +1233,11 @@
 					}
 				},
 				"guitar2": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
+				},
+				"guitar3": {
 					"scale": {
 						"vector": [0, 0, 0]
 					}
@@ -2911,6 +2931,11 @@
 							"vector": [0, 5, -2]
 						}
 					}
+				},
+				"guitar3": {
+					"scale": {
+						"vector": [0, 0, 0]
+					}
 				}
 			}
 		},
@@ -3238,6 +3263,11 @@
 							"vector": [0, 5, -2],
 							"easing": "easeInOutSine"
 						}
+					}
+				},
+				"guitar3": {
+					"scale": {
+						"vector": [0, 0, 0]
 					}
 				}
 			}

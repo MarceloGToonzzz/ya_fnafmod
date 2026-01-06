@@ -9,9 +9,14 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.EquipmentSlot;
 
+import net.mcreator.yafnafmod.item.YellowRabbitSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.YellowRabbitSuitArmorItem;
+import net.mcreator.yafnafmod.item.YellowRabbitFixedSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.YellowRabbitFixedSuitArmorItem;
 import net.mcreator.yafnafmod.item.VrHeadsetToyFreddyItem;
+import net.mcreator.yafnafmod.item.SpringbonnieWitheredSuitArmorSkinItem;
+import net.mcreator.yafnafmod.item.SpringbonnieWitheredSuitArmorItem;
+import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorItem;
 import net.mcreator.yafnafmod.item.MnafToyFreddySuitItem;
 import net.mcreator.yafnafmod.item.MnafToyChicaSuitItem;
@@ -25,10 +30,14 @@ import net.mcreator.yafnafmod.item.MnafFoxySuitItem;
 import net.mcreator.yafnafmod.item.MnafChicaSuitItem;
 import net.mcreator.yafnafmod.item.MnafBurntFreddySuitItem;
 import net.mcreator.yafnafmod.item.MnafBonnieSuitItem;
+import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorSkinItem;
+import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorItem;
 import net.mcreator.yafnafmod.item.GasMaskItem;
+import net.mcreator.yafnafmod.item.FreddySuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.FreddySuitArmorItem;
 import net.mcreator.yafnafmod.item.FreddyMaskItem;
 import net.mcreator.yafnafmod.item.FreddyFaceMaskItem;
+import net.mcreator.yafnafmod.item.FredbearSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.FredbearSuitArmorItem;
 import net.mcreator.yafnafmod.item.FoxyFaceMaskItem;
 import net.mcreator.yafnafmod.item.ChicaFaceMaskItem;
@@ -92,6 +101,24 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof MnafBurntFreddySuitItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof SpringbonnieSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof YellowRabbitSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof YellowRabbitFixedSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof SpringbonnieWitheredSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof SpringbonnieWitheredSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof FredbearSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof FreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof GlitchtrapSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GeoItem) {
@@ -145,6 +172,24 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof MnafToyChicaSuitItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof MnafBurntFreddySuitItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof SpringbonnieSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof YellowRabbitSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof YellowRabbitFixedSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof SpringbonnieWitheredSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof SpringbonnieWitheredSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof FredbearSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof FreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GlitchtrapSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}
@@ -200,6 +245,24 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof MnafBurntFreddySuitItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof SpringbonnieSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof YellowRabbitSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof YellowRabbitFixedSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof SpringbonnieWitheredSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof SpringbonnieWitheredSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof FredbearSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof FreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof GlitchtrapSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GeoItem) {
@@ -253,6 +316,24 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof MnafToyChicaSuitItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof MnafBurntFreddySuitItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof SpringbonnieSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof YellowRabbitSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof YellowRabbitFixedSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof SpringbonnieWitheredSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof SpringbonnieWitheredSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof FredbearSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof FreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GlitchtrapSuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}

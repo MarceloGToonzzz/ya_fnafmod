@@ -21,7 +21,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
@@ -117,8 +116,7 @@ public class YellowRabbitEntity extends Monster implements GeoEntity {
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1));
-		this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, ChildEntity.class, true, false) {
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ChildEntity.class, true, false) {
 			@Override
 			public boolean canUse() {
 				double x = YellowRabbitEntity.this.getX();
@@ -129,8 +127,8 @@ public class YellowRabbitEntity extends Monster implements GeoEntity {
 				return super.canUse() && KillChildConditionProcedure.execute(world, x, y, z, entity);
 			}
 		});
-		this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(6, new FloatGoal(this));
+		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
+		this.goalSelector.addGoal(5, new FloatGoal(this));
 	}
 
 	@Override

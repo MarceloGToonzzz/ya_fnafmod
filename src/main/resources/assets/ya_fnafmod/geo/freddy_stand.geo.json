@@ -4,8 +4,8 @@
 		{
 			"description": {
 				"identifier": "geometry.freddy",
-				"texture_width": 64,
-				"texture_height": 64,
+				"texture_width": 128,
+				"texture_height": 128,
 				"visible_bounds_width": 3,
 				"visible_bounds_height": 4.5,
 				"visible_bounds_offset": [0, 1.75, 0]
@@ -15,19 +15,9 @@
 					"name": "pivot",
 					"pivot": [0, 0, 0],
 					"cubes": [
-						{"origin": [0, 0, -4], "size": [0, 9, 8], "pivot": [0, 4.5, 0], "rotation": [0, -45, 0], "uv": [32, 41]},
-						{"origin": [0, 0, -4], "size": [0, 9, 8], "pivot": [0, 4.5, 0], "rotation": [0, 45, 0], "uv": [32, 41]}
+						{"origin": [0, 0, -4], "size": [0, 17, 8], "pivot": [0, 4.5, 0], "rotation": [0, -45, 0], "uv": [32, 33]},
+						{"origin": [0, 0, -4], "size": [0, 17, 8], "pivot": [0, 4.5, 0], "rotation": [0, 45, 0], "uv": [32, 33]}
 					]
-				},
-				{
-					"name": "leg_l",
-					"parent": "pivot",
-					"pivot": [3.5, 10, 0]
-				},
-				{
-					"name": "leg_r",
-					"parent": "pivot",
-					"pivot": [-3.5, 10, 0]
 				},
 				{
 					"name": "body",
@@ -43,7 +33,6 @@
 					"name": "head",
 					"parent": "body",
 					"pivot": [0, 29, -0.5],
-					"rotation": [12.5, 0, -12.5],
 					"cubes": [
 						{"origin": [-4, 29, -4], "size": [8, 8, 8], "uv": [0, 41]},
 						{"origin": [-3, 29, -7.5], "size": [6, 4, 4], "uv": [42, 22]}
@@ -53,6 +42,24 @@
 					"name": "arm_l",
 					"parent": "body",
 					"pivot": [5.5, 28, 0]
+				},
+				{
+					"name": "body-skin",
+					"parent": "pivot",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "uv": [16, 74]},
+						{"origin": [-4, 12, -2], "size": [8, 12, 4], "inflate": 0.25, "uv": [16, 90]}
+					]
+				},
+				{
+					"name": "head-skin",
+					"parent": "body-skin",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "uv": [0, 58]},
+						{"origin": [-4, 24, -4], "size": [8, 8, 8], "inflate": 0.5, "uv": [32, 58]}
+					]
 				}
 			]
 		}

@@ -3,6 +3,16 @@
 	"animations": {
 		"0": {
 			"loop": true
+		},
+		"1": {
+			"loop": true,
+			"bones": {
+				"pivot": {
+					"rotation": {
+						"vector": [0, -45, 0]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2
