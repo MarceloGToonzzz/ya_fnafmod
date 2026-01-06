@@ -80,8 +80,6 @@ public class DayActionProcedure {
 					_level.getServer().getCommands()
 							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))), Vec2.ZERO,
 									_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), thing);
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(thing), false);
 				{
 					final Vec3 _center = new Vec3(x, y, z);
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();

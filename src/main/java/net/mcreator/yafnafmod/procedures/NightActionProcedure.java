@@ -97,8 +97,6 @@ public class NightActionProcedure {
 						.replace("ENTITY_REGISTRY", ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString())).replace("_day", "")).replace("YAW", "" + entity.getPersistentData().getDouble("yaw")))
 						.replace("ZEDAW", "" + entity.getPersistentData().getDouble("yaw"))).replace("SKINNY", "" + entity.getPersistentData().getDouble("skin"))).replace("STYLISTIC", "" + entity.getPersistentData().getDouble("style")))
 						.replace("ZPOS", "" + entity.getPersistentData().getDouble("z"))).replace("YPOS", "" + entity.getPersistentData().getDouble("y"))).replace("XPOS", "" + entity.getPersistentData().getDouble("x"));
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(command), false);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands()
 							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getPersistentData().getDouble("x")), (entity.getPersistentData().getDouble("y")), (entity.getPersistentData().getDouble("z"))), Vec2.ZERO,
