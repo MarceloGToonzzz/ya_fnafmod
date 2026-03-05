@@ -30,6 +30,8 @@ import net.mcreator.yafnafmod.item.MnafFoxySuitItem;
 import net.mcreator.yafnafmod.item.MnafChicaSuitItem;
 import net.mcreator.yafnafmod.item.MnafBurntFreddySuitItem;
 import net.mcreator.yafnafmod.item.MnafBonnieSuitItem;
+import net.mcreator.yafnafmod.item.GoldenFreddySuitArmorSkinItem;
+import net.mcreator.yafnafmod.item.GoldenFreddySuitArmorItem;
 import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorItem;
 import net.mcreator.yafnafmod.item.GasMaskItem;
@@ -119,6 +121,10 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof GoldenFreddySuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof GoldenFreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GeoItem) {
@@ -190,6 +196,10 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GlitchtrapSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GoldenFreddySuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.CHEST).getItem() instanceof GoldenFreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}
@@ -263,6 +273,10 @@ public class ArmorAnimationFactory {
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof GoldenFreddySuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof GoldenFreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
 				}
 			}
 			if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() != (ItemStack.EMPTY).getItem() && event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GeoItem) {
@@ -334,6 +348,10 @@ public class ArmorAnimationFactory {
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GlitchtrapSuitArmorItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GlitchtrapSuitArmorSkinItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GoldenFreddySuitArmorItem animatable && event.player.level().isClientSide())
+						animatable.animationprocedure = animation;
+					if (event.player.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof GoldenFreddySuitArmorSkinItem animatable && event.player.level().isClientSide())
 						animatable.animationprocedure = animation;
 				}
 			}

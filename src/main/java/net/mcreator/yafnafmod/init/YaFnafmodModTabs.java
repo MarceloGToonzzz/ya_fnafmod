@@ -145,6 +145,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.FREDDY_SUIT_ARMOR_HELMET.get());
 				tabData.accept(YaFnafmodModItems.FREDDY_SUIT_ARMOR_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.FREDDY_SUIT_ARMOR_LEGGINGS.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_SUIT_ARMOR_HELMET.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_SUIT_ARMOR_CHESTPLATE.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_SUIT_ARMOR_LEGGINGS.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_SUIT_ARMOR_HELMET.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_SUIT_ARMOR_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_SUIT_ARMOR_LEGGINGS.get());
@@ -163,6 +166,9 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.FREDDY_SUIT_ARMOR_SKIN_HELMET.get());
 				tabData.accept(YaFnafmodModItems.FREDDY_SUIT_ARMOR_SKIN_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.FREDDY_SUIT_ARMOR_SKIN_LEGGINGS.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_SUIT_ARMOR_SKIN_HELMET.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_SUIT_ARMOR_SKIN_CHESTPLATE.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_SUIT_ARMOR_SKIN_LEGGINGS.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_SUIT_ARMOR_SKIN_HELMET.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_SUIT_ARMOR_SKIN_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.FREDBEAR_SUIT_ARMOR_SKIN_LEGGINGS.get());
@@ -172,6 +178,12 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_WITHERED_SUIT_ARMOR_SKIN_HELMET.get());
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_WITHERED_SUIT_ARMOR_SKIN_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.SPRINGBONNIE_WITHERED_SUIT_ARMOR_SKIN_LEGGINGS.get());
+				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_HELMET.get());
+				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_CHESTPLATE.get());
+				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_LEGGINGS.get());
+				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_HELMET.get());
+				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_CHESTPLATE.get());
+				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_LEGGINGS.get());
 				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_FIXED_SUIT_ARMOR_SKIN_HELMET.get());
 				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_FIXED_SUIT_ARMOR_SKIN_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_FIXED_SUIT_ARMOR_SKIN_LEGGINGS.get());
@@ -328,12 +340,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.REMNANT.get());
 				tabData.accept(YaFnafmodModItems.AGONY.get());
 				tabData.accept(YaFnafmodModItems.DEATH_COIN.get());
-				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_HELMET.get());
-				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_CHESTPLATE.get());
-				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_LEGGINGS.get());
-				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_HELMET.get());
-				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_CHESTPLATE.get());
-				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_LEGGINGS.get());
 				tabData.accept(YaFnafmodModItems.CRACKER.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_BLOCKS = REGISTRY.register("ya_fnaf_mod_blocks",
@@ -2202,6 +2208,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BB_FIGURINE.get().asItem());
 				tabData.accept(YaFnafmodModItems.SPRINGLOCK_ELLA_SUIT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.SHADOW_FREDDY_SUIT_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.GOLDEN_FREDDY_SUIT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModBlocks.STAGE_LIGHT_BULB.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STAGE_LIGHT_BULB_BROKEN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POSTER_FALLFEST.get().asItem());

@@ -13,6 +13,7 @@ import net.mcreator.yafnafmod.entity.PhantomFreddyEntity;
 import net.mcreator.yafnafmod.entity.PhantomFoxyEntity;
 import net.mcreator.yafnafmod.entity.PhantomChicaEntity;
 import net.mcreator.yafnafmod.entity.PhantomBalloonBoyEntity;
+import net.mcreator.yafnafmod.entity.GoldenFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.FredbearSuitHeadlessEntity;
 import net.mcreator.yafnafmod.entity.FredbearSuitEntity;
 import net.mcreator.yafnafmod.entity.FredbearEntity;
@@ -55,6 +56,8 @@ public class Fnaf3SkinsProcedure {
 				animatable.setTexture(("fredbear_suit" + suffix));
 			if (entiti instanceof FredbearSuitHeadlessEntity animatable)
 				animatable.setTexture(("fredbear_suit" + suffix));
+			if (entiti instanceof GoldenFreddySuitEntity animatable)
+				animatable.setTexture(("gfreddy_suit" + suffix));
 		} else if (skin == 1) {
 			if (entiti instanceof SpringbonnieSuitEntity animatable)
 				animatable.setTexture(("springbonnie_suit_withered" + suffix));

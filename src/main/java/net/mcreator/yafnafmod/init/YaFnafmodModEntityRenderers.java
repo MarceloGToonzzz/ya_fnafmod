@@ -158,6 +158,7 @@ import net.mcreator.yafnafmod.client.renderer.GusThePugRenderer;
 import net.mcreator.yafnafmod.client.renderer.GusThePugDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.GrimFoxyRenderer;
 import net.mcreator.yafnafmod.client.renderer.GrimFoxyDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.GoldenFreddySuitRenderer;
 import net.mcreator.yafnafmod.client.renderer.GoldenFreddyRenderer;
 import net.mcreator.yafnafmod.client.renderer.GlitchtrapRenderer;
 import net.mcreator.yafnafmod.client.renderer.GhostChildRenderer;
@@ -459,5 +460,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_BONNIE_DAY.get(), MemoryBonnieDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_CHICA.get(), MemoryChicaRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_CHICA_DAY.get(), MemoryChicaDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.GOLDEN_FREDDY_SUIT.get(), GoldenFreddySuitRenderer::new);
 	}
 }

@@ -150,6 +150,7 @@ import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GrimFoxyEntity;
 import net.mcreator.yafnafmod.entity.GrimFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.GoldenFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.GlitchtrapEntity;
 import net.mcreator.yafnafmod.entity.GhostChildEntity;
@@ -1724,6 +1725,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof MemoryChicaDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof GoldenFreddySuitEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

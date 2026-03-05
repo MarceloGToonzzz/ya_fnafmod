@@ -166,6 +166,7 @@ import net.mcreator.yafnafmod.entity.GusThePugEntity;
 import net.mcreator.yafnafmod.entity.GusThePugDayEntity;
 import net.mcreator.yafnafmod.entity.GrimFoxyEntity;
 import net.mcreator.yafnafmod.entity.GrimFoxyDayEntity;
+import net.mcreator.yafnafmod.entity.GoldenFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.GlitchtrapEntity;
 import net.mcreator.yafnafmod.entity.GhostChildEntity;
@@ -1141,6 +1142,10 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<MemoryChicaDayEntity>of(MemoryChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MemoryChicaDayEntity::new)
 
 					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<GoldenFreddySuitEntity>> GOLDEN_FREDDY_SUIT = register("golden_freddy_suit",
+			EntityType.Builder.<GoldenFreddySuitEntity>of(GoldenFreddySuitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldenFreddySuitEntity::new)
+
+					.sized(0.6f, 1.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1368,6 +1373,7 @@ public class YaFnafmodModEntities {
 			MemoryBonnieDayEntity.init();
 			MemoryChicaEntity.init();
 			MemoryChicaDayEntity.init();
+			GoldenFreddySuitEntity.init();
 		});
 	}
 
@@ -1590,5 +1596,6 @@ public class YaFnafmodModEntities {
 		event.put(MEMORY_BONNIE_DAY.get(), MemoryBonnieDayEntity.createAttributes().build());
 		event.put(MEMORY_CHICA.get(), MemoryChicaEntity.createAttributes().build());
 		event.put(MEMORY_CHICA_DAY.get(), MemoryChicaDayEntity.createAttributes().build());
+		event.put(GOLDEN_FREDDY_SUIT.get(), GoldenFreddySuitEntity.createAttributes().build());
 	}
 }

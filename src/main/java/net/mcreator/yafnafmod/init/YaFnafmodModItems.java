@@ -271,6 +271,9 @@ import net.mcreator.yafnafmod.item.GuitarRockstarItem;
 import net.mcreator.yafnafmod.item.GuitarItem;
 import net.mcreator.yafnafmod.item.GuardJacketItem;
 import net.mcreator.yafnafmod.item.GrimFoxySpawnItemItem;
+import net.mcreator.yafnafmod.item.GoldenFreddySuitSpawnItemItem;
+import net.mcreator.yafnafmod.item.GoldenFreddySuitArmorSkinItem;
+import net.mcreator.yafnafmod.item.GoldenFreddySuitArmorItem;
 import net.mcreator.yafnafmod.item.GoldenFreddySpawnItemItem;
 import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.GlitchtrapSuitArmorItem;
@@ -5413,6 +5416,17 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> MEMORY_BONNIE_SPAWN_ITEM = REGISTRY.register("memory_bonnie_spawn_item", () -> new MemoryBonnieSpawnItemItem());
 	public static final RegistryObject<Item> MEMORY_CHICA_SPAWN_ITEM = REGISTRY.register("memory_chica_spawn_item", () -> new MemoryChicaSpawnItemItem());
 	public static final RegistryObject<Item> BOX_FRAGILE = block(YaFnafmodModBlocks.BOX_FRAGILE);
+	public static final RegistryObject<Item> GOLDEN_FREDDY_SUIT_SPAWN_EGG = REGISTRY.register("golden_freddy_suit_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.GOLDEN_FREDDY_SUIT, -9475281, -12500462, new Item.Properties()));
+	public static final RegistryObject<Item> GOLDEN_FREDDY_SUIT_SPAWN_ITEM = REGISTRY.register("golden_freddy_suit_spawn_item", () -> new GoldenFreddySuitSpawnItemItem());
+	public static final RegistryObject<GoldenFreddySuitArmorItem> GOLDEN_FREDDY_SUIT_ARMOR_HELMET = REGISTRY.register("golden_freddy_suit_armor_helmet", () -> new GoldenFreddySuitArmorItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<GoldenFreddySuitArmorItem> GOLDEN_FREDDY_SUIT_ARMOR_CHESTPLATE = REGISTRY.register("golden_freddy_suit_armor_chestplate", () -> new GoldenFreddySuitArmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<GoldenFreddySuitArmorItem> GOLDEN_FREDDY_SUIT_ARMOR_LEGGINGS = REGISTRY.register("golden_freddy_suit_armor_leggings", () -> new GoldenFreddySuitArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<GoldenFreddySuitArmorSkinItem> GOLDEN_FREDDY_SUIT_ARMOR_SKIN_HELMET = REGISTRY.register("golden_freddy_suit_armor_skin_helmet",
+			() -> new GoldenFreddySuitArmorSkinItem(ArmorItem.Type.HELMET, new Item.Properties()));
+	public static final RegistryObject<GoldenFreddySuitArmorSkinItem> GOLDEN_FREDDY_SUIT_ARMOR_SKIN_CHESTPLATE = REGISTRY.register("golden_freddy_suit_armor_skin_chestplate",
+			() -> new GoldenFreddySuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+	public static final RegistryObject<GoldenFreddySuitArmorSkinItem> GOLDEN_FREDDY_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("golden_freddy_suit_armor_skin_leggings",
+			() -> new GoldenFreddySuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

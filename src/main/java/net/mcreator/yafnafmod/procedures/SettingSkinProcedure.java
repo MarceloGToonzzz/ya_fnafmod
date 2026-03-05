@@ -12,14 +12,7 @@ import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.PlushbabyMobEntity;
 import net.mcreator.yafnafmod.entity.PlushbabyMobDayEntity;
-import net.mcreator.yafnafmod.entity.PitbonnieEntity;
-import net.mcreator.yafnafmod.entity.PitbonnieDayEntity;
-import net.mcreator.yafnafmod.entity.MemoryFreddyEntity;
-import net.mcreator.yafnafmod.entity.MemoryFreddyDayEntity;
-import net.mcreator.yafnafmod.entity.MemoryChicaEntity;
-import net.mcreator.yafnafmod.entity.MemoryChicaDayEntity;
-import net.mcreator.yafnafmod.entity.MemoryBonnieEntity;
-import net.mcreator.yafnafmod.entity.MemoryBonnieDayEntity;
+import net.mcreator.yafnafmod.entity.GoldenFreddySuitEntity;
 import net.mcreator.yafnafmod.entity.GlitchtrapEntity;
 import net.mcreator.yafnafmod.entity.FredbearSuitHeadlessEntity;
 import net.mcreator.yafnafmod.entity.FredbearSuitEntity;
@@ -39,8 +32,8 @@ public class SettingSkinProcedure {
 		} else if (style == 1) {
 			if (entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf1"))) || entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf2")))
 					|| entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf3"))) || entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnafitp")))
-					|| entiti instanceof YellowRabbitEntity || entiti instanceof SpringbonnieSuitEntity || entiti instanceof FredbearSuitEntity || entiti instanceof FredbearSuitHeadlessEntity || entiti instanceof ShadowFreddySuitEntity
-					|| entiti instanceof GlitchtrapEntity) {
+					|| entiti instanceof YellowRabbitEntity || entiti instanceof SpringbonnieSuitEntity || entiti instanceof FredbearSuitEntity || entiti instanceof GoldenFreddySuitEntity || entiti instanceof FredbearSuitHeadlessEntity
+					|| entiti instanceof ShadowFreddySuitEntity || entiti instanceof GlitchtrapEntity) {
 				suffix = "-skin";
 			}
 		}
@@ -50,6 +43,7 @@ public class SettingSkinProcedure {
 		Fnaf4SkinsProcedure.execute(entiti, skin, "");
 		Fnaf5SkinsProcedure.execute(entiti, skin, "");
 		Fnaf6SkinsProcedure.execute(entiti, skin, "");
+		FnafItpSkinsProcedure.execute(entiti, skin, "");
 		if (skin == 0) {
 			if (entiti instanceof YellowRabbitEntity animatable)
 				animatable.setTexture(("yellow_rabbit" + suffix));
@@ -68,22 +62,6 @@ public class SettingSkinProcedure {
 				if (entiti instanceof PlushbabyMobDayEntity animatable)
 					animatable.setTexture(("plushbaby1_plushkin" + suffix));
 			}
-			if (entiti instanceof PitbonnieEntity animatable)
-				animatable.setTexture(("pitbonnie" + suffix));
-			if (entiti instanceof PitbonnieDayEntity animatable)
-				animatable.setTexture(("pitbonnie" + suffix));
-			if (entiti instanceof MemoryFreddyEntity animatable)
-				animatable.setTexture(("memory_freddy_night" + suffix));
-			if (entiti instanceof MemoryFreddyDayEntity animatable)
-				animatable.setTexture(("memory_freddy" + suffix));
-			if (entiti instanceof MemoryBonnieEntity animatable)
-				animatable.setTexture(("memory_bonnie_night" + suffix));
-			if (entiti instanceof MemoryBonnieDayEntity animatable)
-				animatable.setTexture(("memory_bonnie" + suffix));
-			if (entiti instanceof MemoryChicaEntity animatable)
-				animatable.setTexture(("memory_chica_night" + suffix));
-			if (entiti instanceof MemoryChicaDayEntity animatable)
-				animatable.setTexture(("memory_chica" + suffix));
 			if (entiti instanceof CandyCatEntity animatable)
 				animatable.setTexture(("candythecat" + suffix));
 			if (entiti instanceof CandyCatDayEntity animatable)
@@ -102,10 +80,6 @@ public class SettingSkinProcedure {
 				if (entiti instanceof PlushbabyMobDayEntity animatable)
 					animatable.setTexture(("plushbaby2_plushkin" + suffix));
 			}
-			if (entiti instanceof PitbonnieEntity animatable)
-				animatable.setTexture(("pitbonnie_novel" + suffix));
-			if (entiti instanceof PitbonnieDayEntity animatable)
-				animatable.setTexture(("pitbonnie_novel" + suffix));
 			if (entiti instanceof CandyCatEntity animatable)
 				animatable.setTexture(("candythecat_beta" + suffix));
 			if (entiti instanceof CandyCatDayEntity animatable)

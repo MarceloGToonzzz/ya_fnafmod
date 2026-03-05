@@ -82,6 +82,114 @@
 				}
 			}
 		},
+		"animation.model.gfreddy_suit": {
+			"loop": true,
+			"bones": {
+				"bipedLeftArm": {
+					"rotation": {
+						"vector": [-37.5, -25, 0]
+					},
+					"position": {
+						"vector": [0, -3, 0]
+					}
+				},
+				"bipedRightArm": {
+					"rotation": {
+						"vector": [-20, 25, 0]
+					},
+					"position": {
+						"vector": [0, -3, 0]
+					}
+				},
+				"bipedBody": {
+					"rotation": {
+						"vector": [9.99067, -0.434, 4.9621]
+					}
+				},
+				"bipedRightLeg": {
+					"rotation": {
+						"vector": [-33.77472, 16.62029, -1.95742]
+					},
+					"position": {
+						"vector": [0, 8, -5]
+					}
+				},
+				"bipedLeftLeg": {
+					"rotation": {
+						"vector": [-90, -15, 0]
+					}
+				},
+				"bipedHead": {
+					"rotation": {
+						"vector": [12.39638, 1.61888, 12.3242]
+					}
+				},
+				"pivot": {
+					"position": {
+						"vector": [0, -9.14562, 4.89977]
+					},
+					"scale": {
+						"vector": [0.925, 0.925, 0.925]
+					}
+				},
+				"head-skin": {
+					"rotation": {
+						"vector": [12.39638, 1.61888, 12.3242]
+					},
+					"position": {
+						"vector": [0, 0, -2]
+					}
+				},
+				"pivot-skin": {
+					"rotation": {
+						"vector": [-12.5, 0, 0]
+					},
+					"position": {
+						"vector": [0, -12.14562, 1.89977]
+					},
+					"scale": {
+						"vector": ["0.925*1.24177777777778", "0.925*1.24177777777778", "0.925*1.24177777777778"]
+					}
+				},
+				"leftArm-skin": {
+					"rotation": {
+						"vector": [-37.5, -25, 0]
+					},
+					"position": {
+						"vector": [0, -3, 0]
+					}
+				},
+				"body-skin": {
+					"rotation": {
+						"vector": [9.99067, -0.434, 4.9621]
+					}
+				},
+				"rightArm-skin": {
+					"rotation": {
+						"vector": [-20, 25, 0]
+					},
+					"position": {
+						"vector": [0, -3, 0]
+					}
+				},
+				"leftLeg-skin": {
+					"rotation": {
+						"vector": [-80, -15, 0]
+					},
+					"position": {
+						"vector": [0, 0.5, 0]
+					}
+				},
+				"rightLeg-skin": {
+					"rotation": {
+						"vector": [-40.07464, 10.92836, 3.07357]
+					},
+					"position": {
+						"vector": [0, 6, -5]
+					}
+				}
+			}
+		},
 		"animation.model.sit_headless": {
 			"loop": true,
 			"bones": {
