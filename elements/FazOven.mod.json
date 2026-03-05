@@ -35,9 +35,7 @@
     ],
     "name": "Faz Oven",
     "specialInformation": {
-      "fixedValue": [
-        "- Right click to off-center!"
-      ]
+      "fixedValue": []
     },
     "hardness": 1.0,
     "resistance": 10.0,

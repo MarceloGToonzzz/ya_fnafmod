@@ -116,8 +116,7 @@ public class DittophobiaBonnieBlockBlock extends BaseEntityBlock implements Enti
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
-		AnimationStateCyclingProcedure.execute(world, x, y, z, blockstate, entity);
-		return InteractionResult.SUCCESS;
+		InteractionResult result = AnimationStateCyclingProcedure.execute(world, x, y, z, blockstate, entity);
+		return result;
 	}
 }

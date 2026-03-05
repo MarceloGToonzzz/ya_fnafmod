@@ -164,7 +164,7 @@ public class PitbonnieEntity extends Monster implements GeoEntity {
 
 	@Override
 	public void playStepSound(BlockPos pos, BlockState blockIn) {
-		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_fnaf1_steps")), 0.15f, 1);
+		this.playSound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_fnafitp_steps")), 0.15f, 1);
 	}
 
 	@Override
@@ -180,7 +180,7 @@ public class PitbonnieEntity extends Monster implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		AnimatronicOnInitialEntitySpawnProcedure.execute(this);
+		AnimatronicOnInitialEntitySpawnProcedure.execute(world, this);
 		return retval;
 	}
 
@@ -208,7 +208,7 @@ public class PitbonnieEntity extends Monster implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		AnimatronicRotationProcedure.execute(entity, sourceentity, itemstack);
+		AnimatronicRotationProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 

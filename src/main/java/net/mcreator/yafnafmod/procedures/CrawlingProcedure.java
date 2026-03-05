@@ -28,6 +28,7 @@ import net.mcreator.yafnafmod.entity.OrvilleElephantEntity;
 import net.mcreator.yafnafmod.entity.NeddbearEntity;
 import net.mcreator.yafnafmod.entity.MrHippoEntity;
 import net.mcreator.yafnafmod.entity.MoltenFreddyEntity;
+import net.mcreator.yafnafmod.entity.MemoryBonnieEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.JJEntity;
@@ -112,6 +113,9 @@ public class CrawlingProcedure {
 				if (entity instanceof LeftyEntity) {
 					((LeftyEntity) entity).setAnimation("animation.lefty.crawl");
 				}
+				if (entity instanceof MemoryBonnieEntity) {
+					((MemoryBonnieEntity) entity).setAnimation("animation.bonnie.crawl");
+				}
 			} else {
 				if (entity instanceof MangleEntity) {
 					((MangleEntity) entity).setAnimation("animation.mangle.crawl");
@@ -175,6 +179,9 @@ public class CrawlingProcedure {
 				}
 				if (entity instanceof LeftyEntity) {
 					((LeftyEntity) entity).setAnimation("animation.lefty.crawl_idle");
+				}
+				if (entity instanceof MemoryBonnieEntity) {
+					((MemoryBonnieEntity) entity).setAnimation("animation.bonnie.crawl_idle");
 				}
 			}
 			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 16, 16, 16), e -> true).isEmpty()) {

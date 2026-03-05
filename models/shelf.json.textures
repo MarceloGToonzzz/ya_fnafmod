@@ -11,6 +11,12 @@
         "2": "shelf_gray"
       },
       "name": "gray"
+    },
+    "black": {
+      "map": {
+        "2": "shelf_black"
+      },
+      "name": "black"
     }
   }
 }

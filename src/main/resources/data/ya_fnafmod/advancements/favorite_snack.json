@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "ya_fnafmod:toy_freddy_spawn_item"
+    },
+    "title": {
+      "translate": "advancements.favorite_snack.title"
+    },
+    "description": {
+      "translate": "advancements.favorite_snack.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "favorite_snack_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "ya_fnafmod:its_just_yet_another_fnaf_mod"
+}

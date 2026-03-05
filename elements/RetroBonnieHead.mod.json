@@ -141,7 +141,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "head_bonnieclassic-skin",
+        "texture": "head_bonnieretro-skin",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "animatronic_head.geo.json",

@@ -334,6 +334,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_HELMET.get());
 				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_CHESTPLATE.get());
 				tabData.accept(YaFnafmodModItems.GLITCHTRAP_SUIT_ARMOR_SKIN_LEGGINGS.get());
+				tabData.accept(YaFnafmodModItems.CRACKER.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_BLOCKS = REGISTRY.register("ya_fnaf_mod_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_blocks")).icon(() -> new ItemStack(YaFnafmodModBlocks.BLACK_WHITE_TILES.get())).displayItems((parameters, tabData) -> {
@@ -1514,6 +1515,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.CUTTING_BOARD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FRYING_PAN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.POT.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.POT_LID.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.STOVE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FRYER.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.FRIDGE_WHITE.get().asItem());
@@ -1523,6 +1525,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BATHROOM_SIGN_MALE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SHELF_INDUSTRIAL.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.SHELF_METAL.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.SHELF_BLACK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.TRASH_BAG_GREEN.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.TRASH_BAG_BLACK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.OFFICE_CHAIR_RED.get().asItem());
@@ -1570,6 +1573,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.BOX_SMALL_BRANDED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOX_MEDIUM.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOX_BLANK.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.BOX_FRAGILE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOX_BRANDED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOX_STUFFED.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.BOX_PLATES.get().asItem());
@@ -2422,8 +2426,12 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.DREADBEAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.GRIM_FOXY_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.YELLOW_RABBIT_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.MEMORY_FREDDY_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.MEMORY_BONNIE_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.MEMORY_CHICA_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.PITBONNIE_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.PUPPET_FREDDYBEAR_SPAWN_ITEM.get());
+				tabData.accept(YaFnafmodModItems.PUPPET_BONNIE_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.CANDY_CAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.CINDY_CAT_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.POPGOES_WEASEL_SPAWN_ITEM.get());

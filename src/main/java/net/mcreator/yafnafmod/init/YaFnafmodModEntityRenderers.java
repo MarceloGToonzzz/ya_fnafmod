@@ -74,6 +74,8 @@ import net.mcreator.yafnafmod.client.renderer.PuppetRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetFreddybearRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetFreddybearDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.PuppetBonnieRenderer;
+import net.mcreator.yafnafmod.client.renderer.PuppetBonnieDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.PossumRenderer;
 import net.mcreator.yafnafmod.client.renderer.PopgoesWeaselRenderer;
 import net.mcreator.yafnafmod.client.renderer.PopgoesWeaselDayRenderer;
@@ -128,6 +130,12 @@ import net.mcreator.yafnafmod.client.renderer.MinireenaRenderer;
 import net.mcreator.yafnafmod.client.renderer.MinireenaDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.Minireena2Renderer;
 import net.mcreator.yafnafmod.client.renderer.Minireena2DayRenderer;
+import net.mcreator.yafnafmod.client.renderer.MemoryFreddyRenderer;
+import net.mcreator.yafnafmod.client.renderer.MemoryFreddyDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.MemoryChicaRenderer;
+import net.mcreator.yafnafmod.client.renderer.MemoryChicaDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.MemoryBonnieRenderer;
+import net.mcreator.yafnafmod.client.renderer.MemoryBonnieDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.MangleRenderer;
 import net.mcreator.yafnafmod.client.renderer.MangleDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.LolbitRenderer;
@@ -443,5 +451,13 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.GRIM_FOXY.get(), GrimFoxyRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.GRIM_FOXY_DAY.get(), GrimFoxyDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.GLITCHTRAP.get(), GlitchtrapRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_BONNIE.get(), PuppetBonnieRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.PUPPET_BONNIE_DAY.get(), PuppetBonnieDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_FREDDY.get(), MemoryFreddyRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_FREDDY_DAY.get(), MemoryFreddyDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_BONNIE.get(), MemoryBonnieRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_BONNIE_DAY.get(), MemoryBonnieDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_CHICA.get(), MemoryChicaRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_CHICA_DAY.get(), MemoryChicaDayRenderer::new);
 	}
 }

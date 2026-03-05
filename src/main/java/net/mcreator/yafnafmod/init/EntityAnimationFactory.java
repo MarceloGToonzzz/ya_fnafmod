@@ -66,6 +66,8 @@ import net.mcreator.yafnafmod.entity.PuppetFreddybearEntity;
 import net.mcreator.yafnafmod.entity.PuppetFreddybearDayEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
+import net.mcreator.yafnafmod.entity.PuppetBonnieEntity;
+import net.mcreator.yafnafmod.entity.PuppetBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PossumEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselDayEntity;
@@ -120,6 +122,12 @@ import net.mcreator.yafnafmod.entity.MinireenaEntity;
 import net.mcreator.yafnafmod.entity.MinireenaDayEntity;
 import net.mcreator.yafnafmod.entity.Minireena2Entity;
 import net.mcreator.yafnafmod.entity.Minireena2DayEntity;
+import net.mcreator.yafnafmod.entity.MemoryFreddyEntity;
+import net.mcreator.yafnafmod.entity.MemoryFreddyDayEntity;
+import net.mcreator.yafnafmod.entity.MemoryChicaEntity;
+import net.mcreator.yafnafmod.entity.MemoryChicaDayEntity;
+import net.mcreator.yafnafmod.entity.MemoryBonnieEntity;
+import net.mcreator.yafnafmod.entity.MemoryBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
@@ -1660,6 +1668,62 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof GlitchtrapEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PuppetBonnieEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof PuppetBonnieDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MemoryFreddyEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MemoryFreddyDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MemoryBonnieEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MemoryBonnieDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MemoryChicaEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof MemoryChicaDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

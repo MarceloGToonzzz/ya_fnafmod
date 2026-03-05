@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/pot_lid",
+  "textures": {
+    "all": "ya_fnafmod:block/pot_lid",
+    "particle": "ya_fnafmod:block/pot_lid",
+    "0": "ya_fnafmod:block/pot_lid"
+  },
+  "render_type": "cutout_mipped"
+}

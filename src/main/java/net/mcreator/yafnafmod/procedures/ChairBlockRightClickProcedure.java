@@ -1,5 +1,7 @@
 package net.mcreator.yafnafmod.procedures;
 
+import net.minecraftforge.fml.ModList;
+
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.phys.AABB;
@@ -28,103 +30,105 @@ public class ChairBlockRightClickProcedure {
 		if (entity == null)
 			return;
 		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FAZWRENCH.get())) {
-			if (!entity.isPassenger()) {
-				if ((new Object() {
-					public Direction getDirection(BlockPos pos) {
-						BlockState _bs = world.getBlockState(pos);
-						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-						if (property != null && _bs.getValue(property) instanceof Direction _dir)
-							return _dir;
-						else if (_bs.hasProperty(BlockStateProperties.AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-						return Direction.NORTH;
-					}
-				}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[0f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
-					if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
-						entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)));
-					}
-				} else if ((new Object() {
-					public Direction getDirection(BlockPos pos) {
-						BlockState _bs = world.getBlockState(pos);
-						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-						if (property != null && _bs.getValue(property) instanceof Direction _dir)
-							return _dir;
-						else if (_bs.hasProperty(BlockStateProperties.AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-						return Direction.NORTH;
-					}
-				}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[180f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
-					if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
-						entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)));
-					}
-				} else if ((new Object() {
-					public Direction getDirection(BlockPos pos) {
-						BlockState _bs = world.getBlockState(pos);
-						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-						if (property != null && _bs.getValue(property) instanceof Direction _dir)
-							return _dir;
-						else if (_bs.hasProperty(BlockStateProperties.AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-						return Direction.NORTH;
-					}
-				}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[270f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
-					if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
-						entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)));
-					}
-				} else if ((new Object() {
-					public Direction getDirection(BlockPos pos) {
-						BlockState _bs = world.getBlockState(pos);
-						Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
-						if (property != null && _bs.getValue(property) instanceof Direction _dir)
-							return _dir;
-						else if (_bs.hasProperty(BlockStateProperties.AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
-						else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
-							return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
-						return Direction.NORTH;
-					}
-				}.getDirection(BlockPos.containing(x, y, z))) == Direction.WEST) {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[90f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
-					if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
-						entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)));
+			if (!ModList.get().isLoaded("tycoonlib")) {
+				if (!entity.isPassenger()) {
+					if ((new Object() {
+						public Direction getDirection(BlockPos pos) {
+							BlockState _bs = world.getBlockState(pos);
+							Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+							if (property != null && _bs.getValue(property) instanceof Direction _dir)
+								return _dir;
+							else if (_bs.hasProperty(BlockStateProperties.AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+							else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+							return Direction.NORTH;
+						}
+					}.getDirection(BlockPos.containing(x, y, z))) == Direction.SOUTH) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[0f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
+						if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
+							entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)));
+						}
+					} else if ((new Object() {
+						public Direction getDirection(BlockPos pos) {
+							BlockState _bs = world.getBlockState(pos);
+							Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+							if (property != null && _bs.getValue(property) instanceof Direction _dir)
+								return _dir;
+							else if (_bs.hasProperty(BlockStateProperties.AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+							else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+							return Direction.NORTH;
+						}
+					}.getDirection(BlockPos.containing(x, y, z))) == Direction.NORTH) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[180f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
+						if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
+							entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)));
+						}
+					} else if ((new Object() {
+						public Direction getDirection(BlockPos pos) {
+							BlockState _bs = world.getBlockState(pos);
+							Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+							if (property != null && _bs.getValue(property) instanceof Direction _dir)
+								return _dir;
+							else if (_bs.hasProperty(BlockStateProperties.AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+							else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+							return Direction.NORTH;
+						}
+					}.getDirection(BlockPos.containing(x, y, z))) == Direction.EAST) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[270f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
+						if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
+							entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)));
+						}
+					} else if ((new Object() {
+						public Direction getDirection(BlockPos pos) {
+							BlockState _bs = world.getBlockState(pos);
+							Property<?> property = _bs.getBlock().getStateDefinition().getProperty("facing");
+							if (property != null && _bs.getValue(property) instanceof Direction _dir)
+								return _dir;
+							else if (_bs.hasProperty(BlockStateProperties.AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.AXIS), Direction.AxisDirection.POSITIVE);
+							else if (_bs.hasProperty(BlockStateProperties.HORIZONTAL_AXIS))
+								return Direction.fromAxisAndDirection(_bs.getValue(BlockStateProperties.HORIZONTAL_AXIS), Direction.AxisDirection.POSITIVE);
+							return Direction.NORTH;
+						}
+					}.getDirection(BlockPos.containing(x, y, z))) == Direction.WEST) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"summon ya_fnafmod:seat ~0.5 ~ ~0.5 {Rotation:[90f,0f],Invulnerable:1,NoAI:1,ActiveEffects:[{Id:14,Amplifier:1,Duration:199999980,ShowParticles:0b}]}");
+						if (!world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).isEmpty()) {
+							entity.startRiding(((Entity) world.getEntitiesOfClass(SeatEntity.class, AABB.ofSize(new Vec3(x, y, z), 1, 1, 1), e -> true).stream().sorted(new Object() {
+								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+								}
+							}.compareDistOf(x, y, z)).findFirst().orElse(null)));
+						}
 					}
 				}
 			}
 		} else {
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip28 ? blockstate.getValue(_getip28) : -1) == 0) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip29 ? blockstate.getValue(_getip29) : -1) == 0) {
 				{
 					int _value = 1;
 					BlockPos _pos = BlockPos.containing(x, y, z);
@@ -132,7 +136,7 @@ public class ChairBlockRightClickProcedure {
 					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
-			} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip31 ? blockstate.getValue(_getip31) : -1) == 1) {
+			} else if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip32 ? blockstate.getValue(_getip32) : -1) == 1) {
 				{
 					int _value = 0;
 					BlockPos _pos = BlockPos.containing(x, y, z);

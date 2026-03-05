@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/cracker"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "ya_fnafmod:cracker_dip": 1
+      },
+      "model": "ya_fnafmod:item/cracker_0"
+    }
+  ]
+}

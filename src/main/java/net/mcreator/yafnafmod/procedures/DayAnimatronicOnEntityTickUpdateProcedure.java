@@ -20,6 +20,5 @@ public class DayAnimatronicOnEntityTickUpdateProcedure {
 				_entity.getNavigation().stop();
 		}
 		NightActionProcedure.execute(world, x, y, z, entity);
-		PlushbabyVariantsProcedure.execute(world, entity);
 	}
 }

@@ -1,7 +1,6 @@
 package net.mcreator.yafnafmod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
@@ -12,35 +11,29 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.MenuProvider;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.yafnafmod.world.inventory.FridgeIndustrialGUIMenu;
-import net.mcreator.yafnafmod.world.inventory.FridgeGUIMenu;
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
 import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
 
-import io.netty.buffer.Unpooled;
-
 public class AnimationStateCyclingProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
+	public static InteractionResult execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
-			return;
+			return InteractionResult.PASS;
 		boolean done = false;
 		Direction thing = Direction.NORTH;
+		InteractionResult result = InteractionResult.PASS;
+		result = InteractionResult.FAIL;
 		thing = new Object() {
 			public Direction getDirection(BlockState _bs) {
 				Property<?> _prop = _bs.getBlock().getStateDefinition().getProperty("facing");
@@ -57,9 +50,9 @@ public class AnimationStateCyclingProcedure {
 					|| (blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_WHITE.get() || blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_GRAY.get() || blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_INDUSTRIAL.get())
 							&& entity.isShiftKeyDown()) {
 				if (!(blockstate.getBlock() == YaFnafmodModBlocks.MEDICAL_STATION.get()) && !(blockstate.getBlock() == YaFnafmodModBlocks.CAMERA.get())) {
-					if (!(entity instanceof Player _plrCldCheck26 && _plrCldCheck26.getCooldowns().isOnCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))) {
-						if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip28
-								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip28)
+					if (!(entity instanceof Player _plrCldCheck27 && _plrCldCheck27.getCooldowns().isOnCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))) {
+						if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip29
+								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip29)
 								: -1) == 0) {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -104,29 +97,31 @@ public class AnimationStateCyclingProcedure {
 									world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 							}
 						}
+						result = InteractionResult.SUCCESS;
 					}
 				} else if (blockstate.getBlock() == YaFnafmodModBlocks.CAMERA.get()) {
-					if (!(entity instanceof Player _plrCldCheck48 && _plrCldCheck48.getCooldowns().isOnCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))) {
-						if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip50
-								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip50)
+					result = InteractionResult.SUCCESS;
+					if (!(entity instanceof Player _plrCldCheck51 && _plrCldCheck51.getCooldowns().isOnCooldown((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()))) {
+						if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip53
+								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip53)
 								: -1) == 0) {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										("setblock ~ ~ ~ REGISTRY[animation=1]".replace("REGISTRY", ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString())));
-						} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip55
-								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip55)
+						} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip58
+								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip58)
 								: -1) == 1) {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										("setblock ~ ~ ~ REGISTRY[animation=2]".replace("REGISTRY", ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString())));
-						} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip60
-								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip60)
+						} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip63
+								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip63)
 								: -1) == 2) {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										("setblock ~ ~ ~ REGISTRY[animation=3]".replace("REGISTRY", ForgeRegistries.BLOCKS.getKey(blockstate.getBlock()).toString())));
-						} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip65
-								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip65)
+						} else if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip68
+								? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip68)
 								: -1) == 3) {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -151,43 +146,8 @@ public class AnimationStateCyclingProcedure {
 						}
 					}
 				}
-			} else if ((blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_WHITE.get() || blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_GRAY.get() || blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_INDUSTRIAL.get())
-					&& !entity.isShiftKeyDown()) {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _getip81 ? blockstate.getValue(_getip81) : -1) == 1) {
-					if (blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_WHITE.get() || blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_GRAY.get()) {
-						if (entity instanceof ServerPlayer _ent) {
-							BlockPos _bpos = BlockPos.containing(x, y, z);
-							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-								@Override
-								public Component getDisplayName() {
-									return Component.literal("FridgeGUI");
-								}
-
-								@Override
-								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new FridgeGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-								}
-							}, _bpos);
-						}
-					} else if (blockstate.getBlock() == YaFnafmodModBlocks.FRIDGE_INDUSTRIAL.get()) {
-						if (entity instanceof ServerPlayer _ent) {
-							BlockPos _bpos = BlockPos.containing(x, y, z);
-							NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
-								@Override
-								public Component getDisplayName() {
-									return Component.literal("FridgeIndustrialGUI");
-								}
-
-								@Override
-								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new FridgeIndustrialGUIMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-								}
-							}, _bpos);
-						}
-					}
-				}
 			} else {
-				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip91 ? blockstate.getValue(_getip91) : -1) == 0) {
+				if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip77 ? blockstate.getValue(_getip77) : -1) == 0) {
 					{
 						int _value = 1;
 						BlockPos _pos = BlockPos.containing(x, y, z);
@@ -204,10 +164,12 @@ public class AnimationStateCyclingProcedure {
 							world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 					}
 				}
+				result = InteractionResult.SUCCESS;
 				if (entity instanceof LivingEntity _entity)
 					_entity.swing(InteractionHand.MAIN_HAND, true);
 			}
 			done = true;
 		}
+		return result;
 	}
 }

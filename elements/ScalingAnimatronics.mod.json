@@ -1,0 +1,7 @@
+{
+  "_fv": 73,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"Number\" id=\"scale\">scale</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"procedure_label_with_args_red\"><field name=\"do_args\">TRUE</field><field name=\"name\">failed thing dont worry</field><statement name=\"args\"><block type=\"variables_set_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:scale</field><value name=\"VAL\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></statement><next><block type=\"return_number\"><value name=\"return\"><block type=\"variables_get_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:scale</field></block></value></block></next></block></next></block><block type=\"return_number\" x=\"589\" y=\"1024\"><value name=\"return\"><block type=\"variables_get_number\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">local:scale</field></block></value></block></xml>"
+  }
+}

@@ -9,7 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -31,7 +30,8 @@ public class SpawnItemRightclickedOnBlockProcedure {
 		String AI = "";
 		String spawned = "";
 		og_registry = ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString();
-		if (!itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_nodaytime"))) && !itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:prop_entities")))) {
+		if (!itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_nodaytime"))) && !itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:prop_entities")))
+				&& !itemstack.is(ItemTags.create(new ResourceLocation("ya_fnafmod:spawnitem_nightdisappear")))) {
 			spawned = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "_day");
 			AI = "1";
 		} else {
@@ -42,11 +42,7 @@ public class SpawnItemRightclickedOnBlockProcedure {
 			}
 		}
 		xex = Math.round(Math.pow(10, 0) * x) / Math.pow(10, 0) + 0.5;
-		if (!(world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:slabs")))) {
-			yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1;
-		} else {
-			yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + 1.5;
-		}
+		yey = Math.round(Math.pow(10, 0) * y) / Math.pow(10, 0) + world.getBlockFloorHeight(BlockPos.containing(x, y, z));
 		zez = Math.round(Math.pow(10, 0) * z) / Math.pow(10, 0) + 0.5;
 		yaw = entity.getYRot() / 22.5;
 		yaw = Math.round(yaw);

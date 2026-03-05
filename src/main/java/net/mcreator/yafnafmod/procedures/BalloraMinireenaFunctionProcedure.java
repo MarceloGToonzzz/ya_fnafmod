@@ -123,7 +123,7 @@ public class BalloraMinireenaFunctionProcedure {
 			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entity instanceof MinireenaEntity) {
-					if (entityiterator instanceof Player && !world.getEntitiesOfClass(BalloraEntity.class, AABB.ofSize(new Vec3(x, y, z), 24, 24, 24), e -> true).isEmpty()) {
+					if (entityiterator instanceof Player && !world.getEntitiesOfClass(BalloraEntity.class, AABB.ofSize(new Vec3(x, y, z), 48, 48, 48), e -> true).isEmpty()) {
 						if (new Object() {
 							public boolean checkGamemode(Entity _ent) {
 								if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -145,12 +145,7 @@ public class BalloraMinireenaFunctionProcedure {
 								return false;
 							}
 						}.checkGamemode(entityiterator)) {
-							if (((Entity) world.getEntitiesOfClass(BalloraEntity.class, AABB.ofSize(new Vec3(x, y, z), 48, 48, 48), e -> true).stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Mob _entity && entityiterator instanceof LivingEntity _ent)
-								_entity.setTarget(_ent);
+							MakeBalloraTargetPlayerProcedure.execute(world, x, y, z, entityiterator);
 							if (entity.getPersistentData().getDouble("giggle_tick") > 50) {
 								if (world instanceof Level)
 									((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anim_minireena_giggle")), SoundSource.HOSTILE, 1, 1);
@@ -160,7 +155,7 @@ public class BalloraMinireenaFunctionProcedure {
 					}
 				} else if (entity instanceof Minireena2Entity) {
 					if (entityiterator instanceof Player || entityiterator instanceof Villager) {
-						if ((entity instanceof Minireena2Entity _datEntL36 && _datEntL36.getEntityData().get(Minireena2Entity.DATA_has_player)) == false) {
+						if ((entity instanceof Minireena2Entity _datEntL34 && _datEntL34.getEntityData().get(Minireena2Entity.DATA_has_player)) == false) {
 							if (40 <= entity.getPersistentData().getDouble("player_cooldown_tick")) {
 								if (new Object() {
 									public boolean checkGamemode(Entity _ent) {

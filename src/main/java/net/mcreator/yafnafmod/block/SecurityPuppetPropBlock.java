@@ -125,8 +125,7 @@ public class SecurityPuppetPropBlock extends BaseEntityBlock implements EntityBl
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
-		Animation1CycleProcedure.execute(world, x, y, z, blockstate, entity);
-		return InteractionResult.SUCCESS;
+		InteractionResult result = Animation1CycleProcedure.execute(world, x, y, z, blockstate, entity);
+		return result;
 	}
 }

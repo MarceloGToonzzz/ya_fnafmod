@@ -25,6 +25,7 @@ import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbEntity;
+import net.mcreator.yafnafmod.entity.MemoryChicaEntity;
 import net.mcreator.yafnafmod.entity.JJEntity;
 import net.mcreator.yafnafmod.entity.GoldenFreddyEntity;
 import net.mcreator.yafnafmod.entity.EnnardEntity;
@@ -125,7 +126,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 				}
 			}
 		}
-		if (entity instanceof BalloonBoyEntity || entity instanceof JJEntity) {
+		if (entity instanceof BalloonBoyEntity || entity instanceof JJEntity || entity instanceof MemoryChicaEntity) {
 			theresnear = false;
 			{
 				final Vec3 _center = new Vec3(x, y, z);
@@ -153,7 +154,7 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 								return false;
 							}
 						}.checkGamemode(entityiterator)) {
-							if (IsTargetWearingMaskProcedure.execute(entityiterator) == false) {
+							if (IsTargetWearingMaskProcedure.execute(entityiterator) == false || entity instanceof MemoryChicaEntity) {
 								theresnear = true;
 								can_laugh = true;
 							}
@@ -186,8 +187,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		if (entity instanceof NightmareFreddyEntity) {
 			FreddleCodeProcedure.execute(world, x, y, z, entity);
 		} else if (entity instanceof PlushtrapEntity || entity instanceof NightmareBbEntity) {
-			if ((entity instanceof PlushtrapEntity _datEntL61 && _datEntL61.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
-					|| (entity instanceof NightmareBbEntity _datEntL62 && _datEntL62.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
+			if ((entity instanceof PlushtrapEntity _datEntL59 && _datEntL59.getEntityData().get(PlushtrapEntity.DATA_sitting)) == true
+					|| (entity instanceof NightmareBbEntity _datEntL60 && _datEntL60.getEntityData().get(NightmareBbEntity.DATA_sitting)) == true) {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("animation.plush.sit");
 				}
@@ -212,6 +213,5 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 		if (entity.getPersistentData().getBoolean("controlshock_linked") == true) {
 			ControlShockReturnProcedure.execute(world, x, y, z, entity);
 		}
-		PlushbabyVariantsProcedure.execute(world, entity);
 	}
 }

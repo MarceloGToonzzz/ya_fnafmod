@@ -27,7 +27,7 @@ public class RetroBonnieHeadBlockModel extends GeoModel<RetroBonnieHeadTileEntit
 	public ResourceLocation getTextureResource(RetroBonnieHeadTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/head_bonnieclassic-skin.png");
+			return new ResourceLocation("ya_fnafmod", "textures/block/head_bonnieretro-skin.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/head_bonnieretro.png");
 	}
 }

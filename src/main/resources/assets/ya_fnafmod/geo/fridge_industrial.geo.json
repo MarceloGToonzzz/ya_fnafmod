@@ -6,37 +6,40 @@
 				"identifier": "geometry.unknown",
 				"texture_width": 256,
 				"texture_height": 256,
-				"visible_bounds_width": 4,
+				"visible_bounds_width": 5,
 				"visible_bounds_height": 4.5,
 				"visible_bounds_offset": [0, 1.75, 0]
 			},
 			"bones": [
 				{
-					"name": "bone3",
-					"pivot": [1, 5.85, 0],
-					"rotation": [0, 90, 0],
-					"cubes": [
-						{"origin": [-7, 0.05, -25], "size": [16, 48, 32], "uv": [0, 0]},
-						{"origin": [-7, 0.05, -25], "size": [16, 48, 32], "inflate": -0.01, "uv": [0, 80]},
-						{"origin": [-7, 13.05, -25], "size": [16, 1, 32], "inflate": -0.01, "uv": [96, 0]},
-						{"origin": [-7, 23.05, -25], "size": [16, 1, 32], "inflate": -0.01, "uv": [96, 0]},
-						{"origin": [-7, 35.05, -25], "size": [16, 1, 32], "inflate": -0.01, "uv": [96, 0]}
-					]
-				},
-				{
 					"name": "bone",
-					"parent": "bone3",
-					"pivot": [7.75, 23.55, 7],
+					"pivot": [8, 0, -8],
 					"cubes": [
-						{"origin": [8, 0.05, -9], "size": [1, 42, 16], "uv": [96, 33]}
+						{"origin": [6, 0, -8], "size": [2, 2, 2], "uv": [96, 72]},
+						{"origin": [6, 0, 6], "size": [2, 2, 2], "uv": [96, 76]},
+						{"origin": [-24, 2, -8], "size": [32, 46, 16], "inflate": 0.005, "uv": [0, 0]},
+						{"origin": [-24, 9, -8], "size": [32, 33, 16], "inflate": -0.005, "uv": [0, 62]},
+						{"origin": [-24, 15, -8], "size": [32, 1, 16], "inflate": -0.005, "uv": [-16, 169]},
+						{"origin": [-24, 24, -8], "size": [32, 1, 16], "inflate": -0.005, "uv": [-16, 169]},
+						{"origin": [-24, 33, -8], "size": [32, 1, 16], "inflate": -0.005, "uv": [-16, 169]},
+						{"origin": [-24, 0, 6], "size": [2, 2, 2], "uv": [96, 80]},
+						{"origin": [-24, 0, -8], "size": [2, 2, 2], "uv": [96, 84]}
 					]
 				},
 				{
-					"name": "bone2",
-					"parent": "bone3",
-					"pivot": [7.75, 23.55, -25],
+					"name": "DoorLeft",
+					"parent": "bone",
+					"pivot": [8, 26.5, -7.5],
 					"cubes": [
-						{"origin": [8, 0.05, -25], "size": [1, 42, 16], "uv": [96, 91]}
+						{"origin": [-8, 9, -8], "size": [16, 33, 1], "inflate": 0.01, "uv": [96, 0]}
+					]
+				},
+				{
+					"name": "DoorRight",
+					"parent": "bone",
+					"pivot": [-24, 26.5, -7.5],
+					"cubes": [
+						{"origin": [-24, 9, -8], "size": [16, 33, 1], "inflate": 0.01, "uv": [96, 36]}
 					]
 				}
 			]

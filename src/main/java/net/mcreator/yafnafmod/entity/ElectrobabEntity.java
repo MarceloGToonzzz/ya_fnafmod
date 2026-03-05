@@ -142,7 +142,7 @@ public class ElectrobabEntity extends Monster implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		AnimatronicOnInitialEntitySpawnProcedure.execute(this);
+		AnimatronicOnInitialEntitySpawnProcedure.execute(world, this);
 		return retval;
 	}
 
@@ -170,7 +170,7 @@ public class ElectrobabEntity extends Monster implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		AnimatronicRotationProcedure.execute(entity, sourceentity, itemstack);
+		AnimatronicRotationProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 

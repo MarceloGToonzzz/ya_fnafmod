@@ -108,7 +108,7 @@ public class BoxSmallBrandedBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		State1CycleProcedure.execute(world, x, y, z, blockstate, entity);
-		return InteractionResult.SUCCESS;
+		InteractionResult result = State1CycleProcedure.execute(world, x, y, z, blockstate, entity);
+		return result;
 	}
 }

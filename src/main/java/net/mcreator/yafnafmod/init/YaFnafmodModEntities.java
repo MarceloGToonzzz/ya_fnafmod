@@ -81,6 +81,8 @@ import net.mcreator.yafnafmod.entity.PuppetFreddybearEntity;
 import net.mcreator.yafnafmod.entity.PuppetFreddybearDayEntity;
 import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
+import net.mcreator.yafnafmod.entity.PuppetBonnieEntity;
+import net.mcreator.yafnafmod.entity.PuppetBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.PossumEntity;
 import net.mcreator.yafnafmod.entity.PopgunBulletProjectileEntity;
 import net.mcreator.yafnafmod.entity.PopgoesWeaselEntity;
@@ -136,6 +138,12 @@ import net.mcreator.yafnafmod.entity.MinireenaEntity;
 import net.mcreator.yafnafmod.entity.MinireenaDayEntity;
 import net.mcreator.yafnafmod.entity.Minireena2Entity;
 import net.mcreator.yafnafmod.entity.Minireena2DayEntity;
+import net.mcreator.yafnafmod.entity.MemoryFreddyEntity;
+import net.mcreator.yafnafmod.entity.MemoryFreddyDayEntity;
+import net.mcreator.yafnafmod.entity.MemoryChicaEntity;
+import net.mcreator.yafnafmod.entity.MemoryChicaDayEntity;
+import net.mcreator.yafnafmod.entity.MemoryBonnieEntity;
+import net.mcreator.yafnafmod.entity.MemoryBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
 import net.mcreator.yafnafmod.entity.LolbitEntity;
@@ -1101,6 +1109,38 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<GlitchtrapEntity>of(GlitchtrapEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GlitchtrapEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PuppetBonnieEntity>> PUPPET_BONNIE = register("puppet_bonnie",
+			EntityType.Builder.<PuppetBonnieEntity>of(PuppetBonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PuppetBonnieEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PuppetBonnieDayEntity>> PUPPET_BONNIE_DAY = register("puppet_bonnie_day",
+			EntityType.Builder.<PuppetBonnieDayEntity>of(PuppetBonnieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(PuppetBonnieDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MemoryFreddyEntity>> MEMORY_FREDDY = register("memory_freddy",
+			EntityType.Builder.<MemoryFreddyEntity>of(MemoryFreddyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MemoryFreddyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MemoryFreddyDayEntity>> MEMORY_FREDDY_DAY = register("memory_freddy_day",
+			EntityType.Builder.<MemoryFreddyDayEntity>of(MemoryFreddyDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MemoryFreddyDayEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MemoryBonnieEntity>> MEMORY_BONNIE = register("memory_bonnie",
+			EntityType.Builder.<MemoryBonnieEntity>of(MemoryBonnieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MemoryBonnieEntity::new)
+
+					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<MemoryBonnieDayEntity>> MEMORY_BONNIE_DAY = register("memory_bonnie_day",
+			EntityType.Builder.<MemoryBonnieDayEntity>of(MemoryBonnieDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MemoryBonnieDayEntity::new)
+
+					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<MemoryChicaEntity>> MEMORY_CHICA = register("memory_chica",
+			EntityType.Builder.<MemoryChicaEntity>of(MemoryChicaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MemoryChicaEntity::new)
+
+					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<MemoryChicaDayEntity>> MEMORY_CHICA_DAY = register("memory_chica_day",
+			EntityType.Builder.<MemoryChicaDayEntity>of(MemoryChicaDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(96).setUpdateInterval(3).setCustomClientFactory(MemoryChicaDayEntity::new)
+
+					.sized(0.6f, 1f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1320,6 +1360,14 @@ public class YaFnafmodModEntities {
 			GrimFoxyEntity.init();
 			GrimFoxyDayEntity.init();
 			GlitchtrapEntity.init();
+			PuppetBonnieEntity.init();
+			PuppetBonnieDayEntity.init();
+			MemoryFreddyEntity.init();
+			MemoryFreddyDayEntity.init();
+			MemoryBonnieEntity.init();
+			MemoryBonnieDayEntity.init();
+			MemoryChicaEntity.init();
+			MemoryChicaDayEntity.init();
 		});
 	}
 
@@ -1534,5 +1582,13 @@ public class YaFnafmodModEntities {
 		event.put(GRIM_FOXY.get(), GrimFoxyEntity.createAttributes().build());
 		event.put(GRIM_FOXY_DAY.get(), GrimFoxyDayEntity.createAttributes().build());
 		event.put(GLITCHTRAP.get(), GlitchtrapEntity.createAttributes().build());
+		event.put(PUPPET_BONNIE.get(), PuppetBonnieEntity.createAttributes().build());
+		event.put(PUPPET_BONNIE_DAY.get(), PuppetBonnieDayEntity.createAttributes().build());
+		event.put(MEMORY_FREDDY.get(), MemoryFreddyEntity.createAttributes().build());
+		event.put(MEMORY_FREDDY_DAY.get(), MemoryFreddyDayEntity.createAttributes().build());
+		event.put(MEMORY_BONNIE.get(), MemoryBonnieEntity.createAttributes().build());
+		event.put(MEMORY_BONNIE_DAY.get(), MemoryBonnieDayEntity.createAttributes().build());
+		event.put(MEMORY_CHICA.get(), MemoryChicaEntity.createAttributes().build());
+		event.put(MEMORY_CHICA_DAY.get(), MemoryChicaDayEntity.createAttributes().build());
 	}
 }

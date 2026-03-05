@@ -164,4 +164,7 @@ public class YaFnafmodModSounds {
 	public static final RegistryObject<SoundEvent> ANIMA_PLUSHBABY_VOICE = REGISTRY.register("anima_plushbaby_voice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_plushbaby_voice")));
 	public static final RegistryObject<SoundEvent> ANIMA_PLUSHBABY_VOICE_HOSTILE = REGISTRY.register("anima_plushbaby_voice_hostile", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_plushbaby_voice_hostile")));
 	public static final RegistryObject<SoundEvent> ANIMA_PLUSHBABY_KILLVOICE = REGISTRY.register("anima_plushbaby_killvoice", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_plushbaby_killvoice")));
+	public static final RegistryObject<SoundEvent> ANIMA_TOYFREDDY_YUM = REGISTRY.register("anima_toyfreddy_yum", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_toyfreddy_yum")));
+	public static final RegistryObject<SoundEvent> ANIM_MEMORYCHICA_LURE = REGISTRY.register("anim_memorychica_lure", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anim_memorychica_lure")));
+	public static final RegistryObject<SoundEvent> ANIMA_FNAFITP_STEPS = REGISTRY.register("anima_fnafitp_steps", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("ya_fnafmod", "anima_fnafitp_steps")));
 }

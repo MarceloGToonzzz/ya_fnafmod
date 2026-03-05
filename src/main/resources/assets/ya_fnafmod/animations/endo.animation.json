@@ -6,20 +6,17 @@
 			"bones": {
 				"head": {
 					"rotation": {
-						"vector": [-3.87307, -27.86036, -3.81867],
-						"easing": "easeInOutQuad"
+						"vector": ["easeInOutQuad", "easeInOutQuad", "easeInOutQuad"]
 					}
 				},
 				"body": {
 					"rotation": {
-						"vector": [0, -7.5, 0],
-						"easing": "easeInOutQuad"
+						"vector": ["easeInOutQuad", "easeInOutQuad", "easeInOutQuad"]
 					}
 				},
 				"RightArm": {
 					"rotation": {
-						"vector": [-15.28308, -27.57571, 4.07199],
-						"easing": "easeInOutQuad"
+						"vector": ["easeInOutQuad", "easeInOutQuad", "easeInOutQuad"]
 					},
 					"position": {
 						"vector": [-1, 0, 0]
@@ -27,12 +24,10 @@
 				},
 				"LeftArm": {
 					"rotation": {
-						"vector": [119.51078, 18.49393, -17.04462],
-						"easing": "easeInOutQuad"
+						"vector": ["easeInOutQuad", "easeInOutQuad", "easeInOutQuad"]
 					},
 					"position": {
-						"vector": [1, 0, 1],
-						"easing": "easeInOutQuad"
+						"vector": ["easeInOutQuad", "easeInOutQuad", "easeInOutQuad"]
 					}
 				},
 				"left_arm": {
@@ -63,6 +58,11 @@
 				"fms_wire": {
 					"rotation": {
 						"vector": [99.76629, 24.58195, 11.57639]
+					}
+				},
+				"pivot": {
+					"scale": {
+						"vector": ["0.925*1.18533333333333", "0.925*1.18533333333333", "0.925*1.18533333333333"]
 					}
 				}
 			}
@@ -250,6 +250,11 @@
 				"fms_wire": {
 					"rotation": {
 						"vector": [99.76629, 24.58195, 11.57639]
+					}
+				},
+				"pivot": {
+					"scale": {
+						"vector": ["0.925*1.18533333333333", "0.925*1.18533333333333", "0.925*1.18533333333333"]
 					}
 				}
 			}
@@ -713,7 +718,7 @@
 				},
 				"pivot": {
 					"scale": {
-						"vector": ["1.18533333333333 * 0.9", "1.18533333333333 * 0.9", "1.18533333333333 * 0.9"]
+						"vector": [0.925, 0.925, 0.925]
 					}
 				}
 			}
@@ -822,7 +827,7 @@
 				},
 				"pivot": {
 					"scale": {
-						"vector": ["1.24177777777778 * 0.9", "1.24177777777778 * 0.9", "1.24177777777778 * 0.9"]
+						"vector": [0.925, 0.925, 0.925]
 					}
 				}
 			}
@@ -1016,7 +1021,7 @@
 						}
 					},
 					"scale": {
-						"vector": ["1.18533333333333 * 0.9", "1.18533333333333 * 0.9", "1.18533333333333 * 0.9"]
+						"vector": [0.925, 0.925, 0.925]
 					}
 				},
 				"wires": {
@@ -1225,7 +1230,7 @@
 						}
 					},
 					"scale": {
-						"vector": ["1.24177777777778 * 0.9", "1.24177777777778 * 0.9", "1.24177777777778 * 0.9"]
+						"vector": [0.925, 0.925, 0.925]
 					}
 				},
 				"wires": {
@@ -1253,7 +1258,7 @@
 						"vector": [0, -11, 2]
 					},
 					"scale": {
-						"vector": ["1.18533333333333 * 0.9", "1.18533333333333 * 0.9", "1.18533333333333 * 0.9"]
+						"vector": [0.925, 0.925, 0.925]
 					}
 				},
 				"body": {
@@ -1333,7 +1338,7 @@
 				},
 				"pivot": {
 					"scale": {
-						"vector": ["1.24177777777778 * 0.9", "1.24177777777778 * 0.9", "1.24177777777778 * 0.9"]
+						"vector": [0.925, 0.925, 0.925]
 					}
 				}
 			}

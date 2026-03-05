@@ -1815,5 +1815,48 @@
         "stream": false
       }
     ]
+  },
+  "anima_toyfreddy_yum": {
+    "subtitle": "subtitles.anima_toyfreddy_yum",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_toyfreddy_yum",
+        "stream": false
+      }
+    ]
+  },
+  "anim_memorychica_lure": {
+    "subtitle": "subtitles.anim_memorychica_lure",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anim_memorychica_lure",
+        "stream": false
+      }
+    ]
+  },
+  "anima_fnafitp_steps": {
+    "subtitle": "subtitles.anima_fnafitp_steps",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:anima_fnafitp_footstep5",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_fnafitp_footstep4",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_fnafitp_footstep3",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_fnafitp_footstep2",
+        "stream": false
+      },
+      {
+        "name": "ya_fnafmod:anima_fnafitp_footstep1",
+        "stream": false
+      }
+    ]
   }
 }

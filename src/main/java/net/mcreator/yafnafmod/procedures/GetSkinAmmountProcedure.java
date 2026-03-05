@@ -13,60 +13,60 @@ public class GetSkinAmmountProcedure {
 		res = 0;
 		baseAnimatronic = ((ForgeRegistries.ENTITY_TYPES.getKey(entity.getType()).toString()).replace("_day", "")).replace("ya_fnafmod:", "");
 		if ((baseAnimatronic).equals("freddy_fazbear")) {
-			res = 2;
+			res = 6;
 		} else if ((baseAnimatronic).equals("bonnie_bunny")) {
-			res = 1;
+			res = 5;
 		} else if ((baseAnimatronic).equals("chica_chicken")) {
-			res = 1;
+			res = 5;
 		} else if ((baseAnimatronic).equals("cupcake_entity")) {
-			res = 0;
+			res = 5;
 		} else if ((baseAnimatronic).equals("foxy_pirate")) {
-			res = 2;
+			res = 6;
 		} else if ((baseAnimatronic).equals("golden_freddy")) {
 			res = 1;
 		} else if ((baseAnimatronic).equals("sparky_dog")) {
 			res = 2;
 		}
 		if ((baseAnimatronic).equals("toy_freddy")) {
-			res = 1;
-		} else if ((baseAnimatronic).equals("toy_bonnie")) {
-			res = 1;
-		} else if ((baseAnimatronic).equals("toy_chica")) {
-			res = 1;
-		} else if ((baseAnimatronic).equals("toy_cupcake")) {
-			res = 1;
-		} else if ((baseAnimatronic).equals("mangle")) {
-			res = 1;
-		} else if ((baseAnimatronic).equals("toy_foxy")) {
-			res = 1;
-		} else if ((baseAnimatronic).equals("balloon_boy")) {
 			res = 2;
+		} else if ((baseAnimatronic).equals("toy_bonnie")) {
+			res = 2;
+		} else if ((baseAnimatronic).equals("toy_chica")) {
+			res = 2;
+		} else if ((baseAnimatronic).equals("toy_cupcake")) {
+			res = 2;
+		} else if ((baseAnimatronic).equals("mangle")) {
+			res = 2;
+		} else if ((baseAnimatronic).equals("toy_foxy")) {
+			res = 2;
+		} else if ((baseAnimatronic).equals("balloon_boy")) {
+			res = 3;
 		} else if ((baseAnimatronic).equals("jj")) {
 			res = 0;
 		}
 		if ((baseAnimatronic).equals("withered_freddy")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("withered_bonnie")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("withered_chica")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("withered_foxy")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("withered_golden_freddy")) {
 			res = 0;
 		} else if ((baseAnimatronic).equals("puppet")) {
-			res = 1;
+			res = 2;
 		}
 		if ((baseAnimatronic).equals("retro_freddy")) {
-			res = 3;
+			res = 4;
 		} else if ((baseAnimatronic).equals("retro_bonnie")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("retro_chica")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("retro_cupcake")) {
-			res = 1;
+			res = 2;
 		} else if ((baseAnimatronic).equals("retro_foxy")) {
-			res = 1;
+			res = 2;
 		}
 		if ((baseAnimatronic).equals("shadow_freddy")) {
 			res = 2;
@@ -133,6 +133,9 @@ public class GetSkinAmmountProcedure {
 		}
 		if ((baseAnimatronic).equals("yellow_rabbit")) {
 			res = 2;
+		}
+		if ((baseAnimatronic).equals("plushbaby_mob")) {
+			res = 5;
 		}
 		if ((baseAnimatronic).equals("candy_the_cat")) {
 			res = 1;

@@ -148,7 +148,7 @@ public class RetroCupcakeEntityEntity extends Monster implements GeoEntity {
 	@Override
 	public SpawnGroupData finalizeSpawn(ServerLevelAccessor world, DifficultyInstance difficulty, MobSpawnType reason, @Nullable SpawnGroupData livingdata, @Nullable CompoundTag tag) {
 		SpawnGroupData retval = super.finalizeSpawn(world, difficulty, reason, livingdata, tag);
-		AnimatronicOnInitialEntitySpawnProcedure.execute(this);
+		AnimatronicOnInitialEntitySpawnProcedure.execute(world, this);
 		return retval;
 	}
 
@@ -176,7 +176,7 @@ public class RetroCupcakeEntityEntity extends Monster implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		AnimatronicRotationProcedure.execute(entity, sourceentity, itemstack);
+		AnimatronicRotationProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 
@@ -197,12 +197,11 @@ public class RetroCupcakeEntityEntity extends Monster implements GeoEntity {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
 		builder = builder.add(Attributes.MAX_HEALTH, 50);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 15);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 7);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 24);
-		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 2);
 		return builder;
 	}
 

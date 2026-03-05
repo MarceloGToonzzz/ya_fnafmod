@@ -511,6 +511,7 @@ import net.mcreator.yafnafmod.block.ShelfMetalBlock;
 import net.mcreator.yafnafmod.block.ShelfIndustrialBlock;
 import net.mcreator.yafnafmod.block.ShelfChemicalsBlock;
 import net.mcreator.yafnafmod.block.ShelfBlock;
+import net.mcreator.yafnafmod.block.ShelfBlackBlock;
 import net.mcreator.yafnafmod.block.Shadow3Block;
 import net.mcreator.yafnafmod.block.Shadow2Block;
 import net.mcreator.yafnafmod.block.Shadow1Block;
@@ -836,6 +837,7 @@ import net.mcreator.yafnafmod.block.PrizeCounterLongBlock;
 import net.mcreator.yafnafmod.block.PrizeCounterBlock;
 import net.mcreator.yafnafmod.block.PresentsBlock;
 import net.mcreator.yafnafmod.block.PowerSwitchBlock;
+import net.mcreator.yafnafmod.block.PotLidBlock;
 import net.mcreator.yafnafmod.block.PotBlock;
 import net.mcreator.yafnafmod.block.PosterWhereKidsCanPlayForeverBlock;
 import net.mcreator.yafnafmod.block.PosterVisitNebraskaBlock;
@@ -3223,6 +3225,7 @@ import net.mcreator.yafnafmod.block.BoxPlush2Block;
 import net.mcreator.yafnafmod.block.BoxPlush1Block;
 import net.mcreator.yafnafmod.block.BoxPlatesBlock;
 import net.mcreator.yafnafmod.block.BoxMediumBlock;
+import net.mcreator.yafnafmod.block.BoxFragileBlock;
 import net.mcreator.yafnafmod.block.BoxEndoBlock;
 import net.mcreator.yafnafmod.block.BoxBrandedBlock;
 import net.mcreator.yafnafmod.block.BoxBlankBlock;
@@ -7707,6 +7710,9 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> TABLE_CLOTH_YELLOW_CONFETTI = REGISTRY.register("table_cloth_yellow_confetti", () -> new TableClothYellowConfettiBlock());
 	public static final RegistryObject<Block> SAND_STAGE_BASE = REGISTRY.register("sand_stage_base", () -> new SandStageBaseBlock());
 	public static final RegistryObject<Block> PRIZE_COUNTER_PURPLE = REGISTRY.register("prize_counter_purple", () -> new PrizeCounterPurpleBlock());
+	public static final RegistryObject<Block> SHELF_BLACK = REGISTRY.register("shelf_black", () -> new ShelfBlackBlock());
+	public static final RegistryObject<Block> POT_LID = REGISTRY.register("pot_lid", () -> new PotLidBlock());
+	public static final RegistryObject<Block> BOX_FRAGILE = REGISTRY.register("box_fragile", () -> new BoxFragileBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

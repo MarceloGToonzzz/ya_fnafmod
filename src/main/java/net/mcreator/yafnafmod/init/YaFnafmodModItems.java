@@ -129,6 +129,7 @@ import net.mcreator.yafnafmod.item.RatItemItem;
 import net.mcreator.yafnafmod.item.QuarterItem;
 import net.mcreator.yafnafmod.item.PuppetSpawnItemItem;
 import net.mcreator.yafnafmod.item.PuppetFreddybearSpawnItemItem;
+import net.mcreator.yafnafmod.item.PuppetBonnieSpawnItemItem;
 import net.mcreator.yafnafmod.item.PopgunRevolverItem;
 import net.mcreator.yafnafmod.item.PopgunBulletItem;
 import net.mcreator.yafnafmod.item.PopgoesWeaselSpawnItemItem;
@@ -219,6 +220,9 @@ import net.mcreator.yafnafmod.item.MicrophoneRockstarItem;
 import net.mcreator.yafnafmod.item.MicrophoneItem;
 import net.mcreator.yafnafmod.item.MicrophoneFuntimeItem;
 import net.mcreator.yafnafmod.item.MicrophoneBabyItem;
+import net.mcreator.yafnafmod.item.MemoryFreddySpawnItemItem;
+import net.mcreator.yafnafmod.item.MemoryChicaSpawnItemItem;
+import net.mcreator.yafnafmod.item.MemoryBonnieSpawnItemItem;
 import net.mcreator.yafnafmod.item.MegaphoneItem;
 import net.mcreator.yafnafmod.item.MangleSpawnItemItem;
 import net.mcreator.yafnafmod.item.ManagerOutfitItem;
@@ -322,6 +326,7 @@ import net.mcreator.yafnafmod.item.DreadbearSpawnItemItem;
 import net.mcreator.yafnafmod.item.DougDogSpawnItemItem;
 import net.mcreator.yafnafmod.item.DeathCoinItem;
 import net.mcreator.yafnafmod.item.CrowbarItem;
+import net.mcreator.yafnafmod.item.CrackerItem;
 import net.mcreator.yafnafmod.item.CpuItem;
 import net.mcreator.yafnafmod.item.ClassicGuardOutfitItem;
 import net.mcreator.yafnafmod.item.CircusBabySpawnItemItem;
@@ -5392,6 +5397,22 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> PLUSHBABY_MOB_SPAWN_ITEM = REGISTRY.register("plushbaby_mob_spawn_item", () -> new PlushbabyMobSpawnItemItem());
 	public static final RegistryObject<Item> GLITCHTRAP_SPAWN_EGG = REGISTRY.register("glitchtrap_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.GLITCHTRAP, -9475281, -12500462, new Item.Properties()));
 	public static final RegistryObject<Item> GLITCHTRAP_SPAWN_ITEM = REGISTRY.register("glitchtrap_spawn_item", () -> new GlitchtrapSpawnItemItem());
+	public static final RegistryObject<Item> SHELF_BLACK = block(YaFnafmodModBlocks.SHELF_BLACK);
+	public static final RegistryObject<Item> PUPPET_BONNIE_SPAWN_EGG = REGISTRY.register("puppet_bonnie_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.PUPPET_BONNIE, -10791357, -13685726, new Item.Properties()));
+	public static final RegistryObject<Item> PUPPET_BONNIE_DAY_SPAWN_EGG = REGISTRY.register("puppet_bonnie_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.PUPPET_BONNIE_DAY, -10791357, -13685726, new Item.Properties()));
+	public static final RegistryObject<Item> PUPPET_BONNIE_SPAWN_ITEM = REGISTRY.register("puppet_bonnie_spawn_item", () -> new PuppetBonnieSpawnItemItem());
+	public static final RegistryObject<Item> POT_LID = block(YaFnafmodModBlocks.POT_LID);
+	public static final RegistryObject<Item> CRACKER = REGISTRY.register("cracker", () -> new CrackerItem());
+	public static final RegistryObject<Item> MEMORY_FREDDY_SPAWN_EGG = REGISTRY.register("memory_freddy_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.MEMORY_FREDDY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> MEMORY_FREDDY_DAY_SPAWN_EGG = REGISTRY.register("memory_freddy_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.MEMORY_FREDDY_DAY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> MEMORY_BONNIE_SPAWN_EGG = REGISTRY.register("memory_bonnie_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.MEMORY_BONNIE, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> MEMORY_BONNIE_DAY_SPAWN_EGG = REGISTRY.register("memory_bonnie_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.MEMORY_BONNIE_DAY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> MEMORY_CHICA_SPAWN_EGG = REGISTRY.register("memory_chica_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.MEMORY_CHICA, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> MEMORY_CHICA_DAY_SPAWN_EGG = REGISTRY.register("memory_chica_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.MEMORY_CHICA_DAY, -6662865, -4952003, new Item.Properties()));
+	public static final RegistryObject<Item> MEMORY_FREDDY_SPAWN_ITEM = REGISTRY.register("memory_freddy_spawn_item", () -> new MemoryFreddySpawnItemItem());
+	public static final RegistryObject<Item> MEMORY_BONNIE_SPAWN_ITEM = REGISTRY.register("memory_bonnie_spawn_item", () -> new MemoryBonnieSpawnItemItem());
+	public static final RegistryObject<Item> MEMORY_CHICA_SPAWN_ITEM = REGISTRY.register("memory_chica_spawn_item", () -> new MemoryChicaSpawnItemItem());
+	public static final RegistryObject<Item> BOX_FRAGILE = block(YaFnafmodModBlocks.BOX_FRAGILE);
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -5411,6 +5432,7 @@ public class YaFnafmodModItems {
 			ItemProperties.register(FAT.get(), new ResourceLocation("ya_fnafmod:fat_letter"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) FatLetterPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(TORTILLA_CHIP.get(), new ResourceLocation("ya_fnafmod:tortilla_chip_dip"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TortillaChipPropertyValueProviderProcedure.execute(itemStackToRender));
 			ItemProperties.register(MOP.get(), new ResourceLocation("ya_fnafmod:mop_variant"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) MopPropertyValueProviderProcedure.execute(itemStackToRender));
+			ItemProperties.register(CRACKER.get(), new ResourceLocation("ya_fnafmod:cracker_dip"), (itemStackToRender, clientWorld, entity, itemEntityId) -> (float) TortillaChipPropertyValueProviderProcedure.execute(itemStackToRender));
 		});
 	}
 }

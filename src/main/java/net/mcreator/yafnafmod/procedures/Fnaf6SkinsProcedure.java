@@ -6,20 +6,20 @@ import net.mcreator.yafnafmod.entity.LeftyEntity;
 import net.mcreator.yafnafmod.entity.LeftyDayEntity;
 
 public class Fnaf6SkinsProcedure {
-	public static void execute(Entity entity, double skin, String suffixa) {
-		if (entity == null || suffixa == null)
+	public static void execute(Entity entiti, double skin, String suffixa) {
+		if (entiti == null || suffixa == null)
 			return;
 		String suffix = "";
 		suffix = suffixa;
 		if (skin == 0) {
-			if (entity instanceof LeftyEntity animatable)
+			if (entiti instanceof LeftyEntity animatable)
 				animatable.setTexture(("lefty" + suffix));
-			if (entity instanceof LeftyDayEntity animatable)
+			if (entiti instanceof LeftyDayEntity animatable)
 				animatable.setTexture(("lefty" + suffix));
 		} else if (skin == 1) {
-			if (entity instanceof LeftyEntity animatable)
+			if (entiti instanceof LeftyEntity animatable)
 				animatable.setTexture(("lefty_alt" + suffix));
-			if (entity instanceof LeftyDayEntity animatable)
+			if (entiti instanceof LeftyDayEntity animatable)
 				animatable.setTexture(("lefty_alt" + suffix));
 		}
 	}

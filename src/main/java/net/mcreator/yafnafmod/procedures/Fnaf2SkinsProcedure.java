@@ -40,170 +40,237 @@ import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
 
 public class Fnaf2SkinsProcedure {
-	public static void execute(Entity entity, double skin, String suffixa) {
-		if (entity == null || suffixa == null)
+	public static void execute(Entity entiti, double skin, String suffixa) {
+		if (entiti == null || suffixa == null)
 			return;
 		String suffix = "";
 		suffix = suffixa;
 		if (skin == 0) {
-			if (entity instanceof ToyFreddyEntity animatable)
+			if (entiti instanceof ToyFreddyEntity animatable)
 				animatable.setTexture(("tfreddy_night" + suffix));
-			if (entity instanceof ToyFreddyDayEntity animatable)
+			if (entiti instanceof ToyFreddyDayEntity animatable)
 				animatable.setTexture(("tfreddy_day" + suffix));
-			if (entity instanceof ToyBonnieEntity animatable)
+			if (entiti instanceof ToyBonnieEntity animatable)
 				animatable.setTexture(("tbonnie_night" + suffix));
-			if (entity instanceof ToyBonnieDayEntity animatable)
+			if (entiti instanceof ToyBonnieDayEntity animatable)
 				animatable.setTexture(("tbonnie_day" + suffix));
-			if (entity instanceof ToyChicaEntity animatable)
+			if (entiti instanceof ToyChicaEntity animatable)
 				animatable.setTexture(("tchica_night" + suffix));
-			if (entity instanceof ToyChicaDayEntity animatable)
+			if (entiti instanceof ToyChicaDayEntity animatable)
 				animatable.setTexture(("tchica_day" + suffix));
-			if (entity instanceof ToyCupcakeEntityEntity animatable)
+			if (entiti instanceof ToyCupcakeEntityEntity animatable)
 				animatable.setTexture(("cupcake_toy" + suffix));
-			if (entity instanceof ToyFoxyEntity animatable)
+			if (entiti instanceof ToyFoxyEntity animatable)
 				animatable.setTexture(("tfoxy_night" + suffix));
-			if (entity instanceof ToyFoxyDayEntity animatable)
+			if (entiti instanceof ToyFoxyDayEntity animatable)
 				animatable.setTexture(("tfoxy_day" + suffix));
-			if (entity instanceof MangleEntity animatable)
+			if (entiti instanceof MangleEntity animatable)
 				animatable.setTexture(("mangle" + suffix));
-			if (entity instanceof MangleDayEntity animatable)
+			if (entiti instanceof MangleDayEntity animatable)
 				animatable.setTexture(("mangle" + suffix));
-			if (entity instanceof WitheredFreddyEntity animatable)
+			if (entiti instanceof WitheredFreddyEntity animatable)
 				animatable.setTexture(("withered_freddy" + suffix));
-			if (entity instanceof WitheredFreddyDayEntity animatable)
+			if (entiti instanceof WitheredFreddyDayEntity animatable)
 				animatable.setTexture(("withered_freddy" + suffix));
-			if (entity instanceof WitheredBonnieEntity animatable)
+			if (entiti instanceof WitheredBonnieEntity animatable)
 				animatable.setTexture(("withered_bonnie" + suffix));
-			if (entity instanceof WitheredBonnieDayEntity animatable)
+			if (entiti instanceof WitheredBonnieDayEntity animatable)
 				animatable.setTexture(("withered_bonnie_day" + suffix));
-			if (entity instanceof WitheredChicaEntity animatable)
+			if (entiti instanceof WitheredChicaEntity animatable)
 				animatable.setTexture(("withered_chica" + suffix));
-			if (entity instanceof WitheredChicaDayEntity animatable)
+			if (entiti instanceof WitheredChicaDayEntity animatable)
 				animatable.setTexture(("withered_chica" + suffix));
-			if (entity instanceof WitheredFoxyEntity animatable)
+			if (entiti instanceof WitheredFoxyEntity animatable)
 				animatable.setTexture(("withered_foxy" + suffix));
-			if (entity instanceof WitheredFoxyDayEntity animatable)
+			if (entiti instanceof WitheredFoxyDayEntity animatable)
 				animatable.setTexture(("withered_foxy" + suffix));
-			if (entity instanceof RetroFreddyEntity animatable)
+			if (entiti instanceof RetroFreddyEntity animatable)
 				animatable.setTexture(("retro_freddy" + suffix));
-			if (entity instanceof RetroFreddyDayEntity animatable)
+			if (entiti instanceof RetroFreddyDayEntity animatable)
 				animatable.setTexture(("retro_freddy" + suffix));
-			if (entity instanceof RetroBonnieEntity animatable)
+			if (entiti instanceof RetroBonnieEntity animatable)
 				animatable.setTexture(("retro_bonnie" + suffix));
-			if (entity instanceof RetroBonnieDayEntity animatable)
+			if (entiti instanceof RetroBonnieDayEntity animatable)
 				animatable.setTexture(("retro_bonnie" + suffix));
-			if (entity instanceof RetroChicaDayEntity animatable)
+			if (entiti instanceof RetroChicaDayEntity animatable)
 				animatable.setTexture(("retro_chica" + suffix));
-			if (entity instanceof RetroCupcakeEntityEntity animatable)
+			if (entiti instanceof RetroCupcakeEntityEntity animatable)
 				animatable.setTexture(("cupcake_retro" + suffix));
-			if (entity instanceof RetroChicaEntity animatable)
+			if (entiti instanceof RetroChicaEntity animatable)
 				animatable.setTexture(("retro_chica" + suffix));
-			if (entity instanceof RetroFoxyDayEntity animatable)
+			if (entiti instanceof RetroFoxyDayEntity animatable)
 				animatable.setTexture(("retro_foxy" + suffix));
-			if (entity instanceof RetroFoxyEntity animatable)
+			if (entiti instanceof RetroFoxyEntity animatable)
 				animatable.setTexture(("retro_foxy" + suffix));
-			if (entity instanceof PuppetEntity animatable)
+			if (entiti instanceof PuppetEntity animatable)
 				animatable.setTexture(("puppet_night" + suffix));
-			if (entity instanceof PuppetDayEntity animatable)
+			if (entiti instanceof PuppetDayEntity animatable)
 				animatable.setTexture(("puppet_day" + suffix));
-			if (entity instanceof BalloonBoyEntity animatable)
+			if (entiti instanceof BalloonBoyEntity animatable)
 				animatable.setTexture(("bb" + suffix));
-			if (entity instanceof BalloonBoyDayEntity animatable)
+			if (entiti instanceof BalloonBoyDayEntity animatable)
 				animatable.setTexture(("bb" + suffix));
-			if (entity instanceof ShadowFreddyEntity animatable)
+			if (entiti instanceof ShadowFreddyEntity animatable)
 				animatable.setTexture(("sfreddy" + suffix));
-			if (entity instanceof ShadowFreddyEntity animatable)
+			if (entiti instanceof ShadowFreddyEntity animatable)
 				animatable.setTexture(("wsfreddy" + suffix));
-			if (entity instanceof ShadowBonnieEntity animatable)
+			if (entiti instanceof ShadowBonnieEntity animatable)
 				animatable.setTexture(("sbonnie" + suffix));
-			if (entity instanceof Endo02Entity animatable)
+			if (entiti instanceof Endo02Entity animatable)
 				animatable.setTexture(("endo2" + suffix));
-			if (entity instanceof Endo02DayEntity animatable)
+			if (entiti instanceof Endo02DayEntity animatable)
 				animatable.setTexture(("endo2" + suffix));
 		} else if (skin == 1) {
-			if (entity instanceof ToyFreddyEntity animatable)
+			if (entiti instanceof ToyFreddyEntity animatable)
 				animatable.setTexture(("tfreddy_night_movie" + suffix));
-			if (entity instanceof ToyFreddyDayEntity animatable)
+			if (entiti instanceof ToyFreddyDayEntity animatable)
 				animatable.setTexture(("tfreddy_day_movie" + suffix));
-			if (entity instanceof ToyBonnieEntity animatable)
+			if (entiti instanceof ToyBonnieEntity animatable)
 				animatable.setTexture(("tbonnie_night_movie" + suffix));
-			if (entity instanceof ToyBonnieDayEntity animatable)
+			if (entiti instanceof ToyBonnieDayEntity animatable)
 				animatable.setTexture(("tbonnie_day_movie" + suffix));
-			if (entity instanceof ToyChicaEntity animatable)
+			if (entiti instanceof ToyChicaEntity animatable)
 				animatable.setTexture(("tchica_night_movie" + suffix));
-			if (entity instanceof ToyChicaDayEntity animatable)
+			if (entiti instanceof ToyChicaDayEntity animatable)
 				animatable.setTexture(("tchica_day_movie" + suffix));
-			if (entity instanceof ToyCupcakeEntityEntity animatable)
-				animatable.setTexture(("cupcake_toy_movie" + suffix));
-			if (entity instanceof ToyFoxyEntity animatable)
+			if (entiti instanceof ToyCupcakeEntityEntity animatable)
+				animatable.setTexture(("cupcake_toy" + suffix));
+			if (entiti instanceof ToyFoxyEntity animatable)
 				animatable.setTexture(("tfoxy_night_movie" + suffix));
-			if (entity instanceof ToyFoxyDayEntity animatable)
+			if (entiti instanceof ToyFoxyDayEntity animatable)
 				animatable.setTexture(("tfoxy_day_movie" + suffix));
-			if (entity instanceof MangleEntity animatable)
+			if (entiti instanceof MangleEntity animatable)
 				animatable.setTexture(("mangle_movie" + suffix));
-			if (entity instanceof MangleDayEntity animatable)
+			if (entiti instanceof MangleDayEntity animatable)
 				animatable.setTexture(("mangle_movie" + suffix));
-			if (entity instanceof BalloonBoyEntity animatable)
+			if (entiti instanceof BalloonBoyEntity animatable)
 				animatable.setTexture(("bb_movie" + suffix));
-			if (entity instanceof BalloonBoyDayEntity animatable)
+			if (entiti instanceof BalloonBoyDayEntity animatable)
 				animatable.setTexture(("bb_movie" + suffix));
-			if (entity instanceof WitheredFreddyEntity animatable)
+			if (entiti instanceof WitheredFreddyEntity animatable)
 				animatable.setTexture(("withered_freddy_movie" + suffix));
-			if (entity instanceof WitheredFreddyDayEntity animatable)
+			if (entiti instanceof WitheredFreddyDayEntity animatable)
 				animatable.setTexture(("withered_freddy_movie" + suffix));
-			if (entity instanceof WitheredBonnieEntity animatable)
+			if (entiti instanceof WitheredBonnieEntity animatable)
 				animatable.setTexture(("withered_bonnie_movie" + suffix));
-			if (entity instanceof WitheredBonnieDayEntity animatable)
+			if (entiti instanceof WitheredBonnieDayEntity animatable)
 				animatable.setTexture(("withered_bonnie_day_movie" + suffix));
-			if (entity instanceof WitheredChicaEntity animatable)
+			if (entiti instanceof WitheredChicaEntity animatable)
 				animatable.setTexture(("withered_chica_movie" + suffix));
-			if (entity instanceof WitheredChicaDayEntity animatable)
+			if (entiti instanceof WitheredChicaDayEntity animatable)
 				animatable.setTexture(("withered_chica_movie" + suffix));
-			if (entity instanceof WitheredFoxyEntity animatable)
+			if (entiti instanceof WitheredFoxyEntity animatable)
 				animatable.setTexture(("withered_foxy_movie" + suffix));
-			if (entity instanceof WitheredFoxyDayEntity animatable)
+			if (entiti instanceof WitheredFoxyDayEntity animatable)
 				animatable.setTexture(("withered_foxy_movie" + suffix));
-			if (entity instanceof RetroFreddyEntity animatable)
+			if (entiti instanceof RetroFreddyEntity animatable)
 				animatable.setTexture(("retro_freddy_movie" + suffix));
-			if (entity instanceof RetroFreddyDayEntity animatable)
+			if (entiti instanceof RetroFreddyDayEntity animatable)
 				animatable.setTexture(("retro_freddy_movie" + suffix));
-			if (entity instanceof RetroBonnieEntity animatable)
+			if (entiti instanceof RetroBonnieEntity animatable)
 				animatable.setTexture(("retro_bonnie_movie" + suffix));
-			if (entity instanceof RetroBonnieDayEntity animatable)
+			if (entiti instanceof RetroBonnieDayEntity animatable)
 				animatable.setTexture(("retro_bonnie_movie" + suffix));
-			if (entity instanceof RetroChicaEntity animatable)
+			if (entiti instanceof RetroChicaDayEntity animatable)
 				animatable.setTexture(("retro_chica_movie" + suffix));
-			if (entity instanceof RetroChicaDayEntity animatable)
-				animatable.setTexture(("retro_chica_movie" + suffix));
-			if (entity instanceof RetroCupcakeEntityEntity animatable)
+			if (entiti instanceof RetroCupcakeEntityEntity animatable)
 				animatable.setTexture(("cupcake_retro_movie" + suffix));
-			if (entity instanceof RetroFoxyDayEntity animatable)
+			if (entiti instanceof RetroChicaEntity animatable)
+				animatable.setTexture(("retro_chica_movie" + suffix));
+			if (entiti instanceof RetroFoxyDayEntity animatable)
 				animatable.setTexture(("retro_foxy_movie" + suffix));
-			if (entity instanceof RetroFoxyEntity animatable)
+			if (entiti instanceof RetroFoxyEntity animatable)
 				animatable.setTexture(("retro_foxy_movie" + suffix));
-			if (entity instanceof PuppetEntity animatable)
+			if (entiti instanceof PuppetEntity animatable)
 				animatable.setTexture(("puppet_night_movie" + suffix));
-			if (entity instanceof PuppetDayEntity animatable)
+			if (entiti instanceof PuppetDayEntity animatable)
 				animatable.setTexture(("puppet_day_movie" + suffix));
-			if (entity instanceof ShadowFreddyEntity animatable)
+			if (entiti instanceof ShadowFreddyEntity animatable)
+				animatable.setTexture(("sfreddy_movie" + suffix));
+			if (entiti instanceof ShadowFreddyEntity animatable)
 				animatable.setTexture(("wsfreddy_movie" + suffix));
-			if (entity instanceof ShadowBonnieEntity animatable)
+			if (entiti instanceof ShadowBonnieEntity animatable)
 				animatable.setTexture(("sbonnie_whiterabbit" + suffix));
 		} else if (skin == 2) {
-			if (entity instanceof BalloonBoyEntity animatable)
-				animatable.setTexture(("bb_enragementchild" + suffix));
-			if (entity instanceof BalloonBoyDayEntity animatable)
-				animatable.setTexture(("bb_enragementchild" + suffix));
-			if (entity instanceof ShadowFreddyEntity animatable)
-				animatable.setTexture(("wsfreddy_redbear" + suffix));
-			if (entity instanceof RetroFreddyEntity animatable)
-				animatable.setTexture(("retro_freddy_cutscene" + suffix));
-			if (entity instanceof RetroFreddyDayEntity animatable)
-				animatable.setTexture(("retro_freddy_cutscene" + suffix));
+			if (entiti instanceof ToyFreddyEntity animatable)
+				animatable.setTexture(("tfreddy_night_hw" + suffix));
+			if (entiti instanceof ToyFreddyDayEntity animatable)
+				animatable.setTexture(("tfreddy_day_hw" + suffix));
+			if (entiti instanceof ToyBonnieEntity animatable)
+				animatable.setTexture(("tbonnie_night_hw" + suffix));
+			if (entiti instanceof ToyBonnieDayEntity animatable)
+				animatable.setTexture(("tbonnie_day_hw" + suffix));
+			if (entiti instanceof ToyChicaEntity animatable)
+				animatable.setTexture(("tchica_night_hw" + suffix));
+			if (entiti instanceof ToyChicaDayEntity animatable)
+				animatable.setTexture(("tchica_day_hw" + suffix));
+			if (entiti instanceof ToyCupcakeEntityEntity animatable)
+				animatable.setTexture(("cupcake_toy_hw" + suffix));
+			if (entiti instanceof ToyFoxyEntity animatable)
+				animatable.setTexture(("tfoxy_night_hw" + suffix));
+			if (entiti instanceof ToyFoxyDayEntity animatable)
+				animatable.setTexture(("tfoxy_day_hw" + suffix));
+			if (entiti instanceof MangleEntity animatable)
+				animatable.setTexture(("mangle_hw" + suffix));
+			if (entiti instanceof MangleDayEntity animatable)
+				animatable.setTexture(("mangle_hw" + suffix));
+			if (entiti instanceof BalloonBoyEntity animatable)
+				animatable.setTexture(("bb_hw" + suffix));
+			if (entiti instanceof BalloonBoyDayEntity animatable)
+				animatable.setTexture(("bb_hw" + suffix));
+			if (entiti instanceof WitheredFreddyEntity animatable)
+				animatable.setTexture(("withered_freddy_hw" + suffix));
+			if (entiti instanceof WitheredFreddyDayEntity animatable)
+				animatable.setTexture(("withered_freddy_hw" + suffix));
+			if (entiti instanceof WitheredBonnieEntity animatable)
+				animatable.setTexture(("withered_bonnie_hw" + suffix));
+			if (entiti instanceof WitheredBonnieDayEntity animatable)
+				animatable.setTexture(("withered_bonnie_day_hw" + suffix));
+			if (entiti instanceof WitheredChicaEntity animatable)
+				animatable.setTexture(("withered_chica_hw" + suffix));
+			if (entiti instanceof WitheredChicaDayEntity animatable)
+				animatable.setTexture(("withered_chica_hw" + suffix));
+			if (entiti instanceof WitheredFoxyEntity animatable)
+				animatable.setTexture(("withered_foxy_hw" + suffix));
+			if (entiti instanceof WitheredFoxyDayEntity animatable)
+				animatable.setTexture(("withered_foxy_hw" + suffix));
+			if (entiti instanceof RetroFreddyEntity animatable)
+				animatable.setTexture(("retro_freddy_hw" + suffix));
+			if (entiti instanceof RetroFreddyDayEntity animatable)
+				animatable.setTexture(("retro_freddy_hw" + suffix));
+			if (entiti instanceof RetroBonnieEntity animatable)
+				animatable.setTexture(("retro_bonnie_hw" + suffix));
+			if (entiti instanceof RetroBonnieDayEntity animatable)
+				animatable.setTexture(("retro_bonnie_hw" + suffix));
+			if (entiti instanceof RetroChicaDayEntity animatable)
+				animatable.setTexture(("retro_chica_hw" + suffix));
+			if (entiti instanceof RetroCupcakeEntityEntity animatable)
+				animatable.setTexture(("cupcake_retro_hw" + suffix));
+			if (entiti instanceof RetroChicaEntity animatable)
+				animatable.setTexture(("retro_chica_hw" + suffix));
+			if (entiti instanceof RetroFoxyDayEntity animatable)
+				animatable.setTexture(("retro_foxy_hw" + suffix));
+			if (entiti instanceof RetroFoxyEntity animatable)
+				animatable.setTexture(("retro_foxy_hw" + suffix));
+			if (entiti instanceof PuppetEntity animatable)
+				animatable.setTexture(("puppet_night_hw" + suffix));
+			if (entiti instanceof PuppetDayEntity animatable)
+				animatable.setTexture(("puppet_day_hw" + suffix));
 		} else if (skin == 3) {
-			if (entity instanceof RetroFreddyEntity animatable)
+			if (entiti instanceof BalloonBoyEntity animatable)
+				animatable.setTexture(("bb_enragementchild" + suffix));
+			if (entiti instanceof BalloonBoyDayEntity animatable)
+				animatable.setTexture(("bb_enragementchild" + suffix));
+			if (entiti instanceof ShadowFreddyEntity animatable)
+				animatable.setTexture(("wsfreddy_redbear" + suffix));
+			if (entiti instanceof RetroFreddyEntity animatable)
+				animatable.setTexture(("retro_freddy_cutscene" + suffix));
+			if (entiti instanceof RetroFreddyDayEntity animatable)
+				animatable.setTexture(("retro_freddy_cutscene" + suffix));
+		} else if (skin == 4) {
+			if (entiti instanceof RetroFreddyEntity animatable)
 				animatable.setTexture(("retro_gfreddy" + suffix));
-			if (entity instanceof RetroFreddyDayEntity animatable)
+			if (entiti instanceof RetroFreddyDayEntity animatable)
 				animatable.setTexture(("retro_gfreddy" + suffix));
 		}
 	}

@@ -133,7 +133,7 @@ public class ShadowFreddySuitEntity extends Monster implements GeoEntity {
 		Entity entity = this;
 		Level world = this.level();
 
-		AnimatronicRotationProcedure.execute(entity, sourceentity, itemstack);
+		AnimatronicRotationProcedure.execute(world, x, y, z, entity, sourceentity, itemstack);
 		return retval;
 	}
 

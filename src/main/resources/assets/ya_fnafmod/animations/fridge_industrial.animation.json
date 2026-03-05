@@ -2,19 +2,32 @@
 	"format_version": "1.8.0",
 	"animations": {
 		"0": {
-			"loop": true
-		},
-		"1": {
 			"loop": true,
 			"bones": {
-				"bone": {
+				"DoorLeft": {
 					"rotation": {
-						"vector": [0, -132.5, 0]
+						"vector": [0, 0, 0]
 					}
 				},
-				"bone2": {
+				"DoorRight": {
 					"rotation": {
-						"vector": [0, 115, 0]
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.0417,
+			"bones": {
+				"DoorLeft": {
+					"rotation": {
+						"vector": [0, -90, 0]
+					}
+				},
+				"DoorRight": {
+					"rotation": {
+						"vector": [0, 90, 0]
 					}
 				}
 			}

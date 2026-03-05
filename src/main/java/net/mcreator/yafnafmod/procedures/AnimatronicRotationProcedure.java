@@ -1,15 +1,25 @@
 package net.mcreator.yafnafmod.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
+import net.mcreator.yafnafmod.entity.ToyFreddyEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyEntity;
 import net.mcreator.yafnafmod.entity.RockstarFreddyDayEntity;
@@ -33,7 +43,7 @@ import net.mcreator.yafnafmod.entity.FredbearDayEntity;
 import net.mcreator.yafnafmod.entity.BucketBobDayEntity;
 
 public class AnimatronicRotationProcedure {
-	public static void execute(Entity entity, Entity sourceentity, ItemStack itemstack) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity, ItemStack itemstack) {
 		if (entity == null || sourceentity == null)
 			return;
 		double result = 0;
@@ -141,6 +151,26 @@ public class AnimatronicRotationProcedure {
 				}
 			}
 		}
+		if (itemstack.getItem() == YaFnafmodModItems.CRACKER.get()) {
+			if (entity instanceof ToyFreddyEntity) {
+				if (itemstack.getOrCreateTag().getDouble("dip") == 1) {
+					if (sourceentity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(YaFnafmodModItems.CRACKER.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
+					if (world instanceof Level)
+						((Level) world).playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ya_fnafmod:anima_toyfreddy_yum")), SoundSource.HOSTILE, 1, 1);
+					if (sourceentity instanceof ServerPlayer _player) {
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("ya_fnafmod:favorite_snack"));
+						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+						if (!_ap.isDone()) {
+							for (String criteria : _ap.getRemainingCriteria())
+								_player.getAdvancements().award(_adv, criteria);
+						}
+					}
+				}
+			}
+		}
 		if (itemstack.getItem() == YaFnafmodModItems.SKIN_CHANGER_TOOL.get()) {
 			if (GetSkinAmmountProcedure.execute(entity) != 0) {
 				if (entity.getPersistentData().getDouble("skin") < GetSkinAmmountProcedure.execute(entity)) {
@@ -149,14 +179,14 @@ public class AnimatronicRotationProcedure {
 					entity.getPersistentData().putDouble("skin", 0);
 				}
 			}
-			SettingSkinProcedure.execute(entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
+			SettingSkinProcedure.execute(world, entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 		} else if (itemstack.getItem() == YaFnafmodModItems.FAT.get()) {
 			if (entity.getPersistentData().getDouble("style") == 0) {
 				entity.getPersistentData().putDouble("style", 1);
 			} else {
 				entity.getPersistentData().putDouble("style", 0);
 			}
-			SettingSkinProcedure.execute(entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
+			SettingSkinProcedure.execute(world, entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 		}
 	}
 }

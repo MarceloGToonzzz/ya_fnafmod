@@ -6,16 +6,19 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.yafnafmod.init.YaFnafmodModItems;
 import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
 
 public class FazwrenchCycleVariantsProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
+	public static InteractionResult execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
-			return;
+			return InteractionResult.PASS;
 		double variant = 0;
+		InteractionResult a = InteractionResult.PASS;
+		a = InteractionResult.FAIL;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FAZWRENCH.get()) {
 			if (blockstate.getBlock() == YaFnafmodModBlocks.COAT_HANGER.get()) {
 				variant = 2;
@@ -28,9 +31,9 @@ public class FazwrenchCycleVariantsProcedure {
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIZZA.get() || blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIZZA_OLIVE.get() || blockstate.getBlock() == YaFnafmodModBlocks.WALL_PIZZA_PEPPERONI_OLIVE.get()) {
 				variant = 2;
 			}
-			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip29 ? blockstate.getValue(_getip29) : -1) != variant) {
+			if ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip30 ? blockstate.getValue(_getip30) : -1) != variant) {
 				{
-					int _value = (int) ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip31 ? blockstate.getValue(_getip31) : -1) + 1);
+					int _value = (int) ((blockstate.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip32 ? blockstate.getValue(_getip32) : -1) + 1);
 					BlockPos _pos = BlockPos.containing(x, y, z);
 					BlockState _bs = world.getBlockState(_pos);
 					if (_bs.getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -45,6 +48,8 @@ public class FazwrenchCycleVariantsProcedure {
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 			}
+			a = InteractionResult.SUCCESS;
 		}
+		return a;
 	}
 }

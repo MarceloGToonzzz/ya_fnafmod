@@ -11,60 +11,60 @@ import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.BonbonEntity;
 
 public class Fnaf5SkinsProcedure {
-	public static void execute(Entity entity, double skin, String suffixa) {
-		if (entity == null || suffixa == null)
+	public static void execute(Entity entiti, double skin, String suffixa) {
+		if (entiti == null || suffixa == null)
 			return;
 		String suffix = "";
 		suffix = suffixa;
 		if (skin == 0) {
-			if (entity instanceof FuntimeFreddyDayEntity animatable)
+			if (entiti instanceof FuntimeFreddyDayEntity animatable)
 				animatable.setTexture(("ftfreddy" + suffix));
-			if ((entity instanceof FuntimeFreddyEntity _datEntL1 && _datEntL1.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-				if (entity instanceof FuntimeFreddyEntity animatable)
+			if ((entiti instanceof FuntimeFreddyEntity _datEntL1 && _datEntL1.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy" + suffix));
 			} else {
-				if (entity instanceof FuntimeFreddyEntity animatable)
+				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy_bonless" + suffix));
 			}
-			if (entity instanceof BonbonEntity animatable)
+			if (entiti instanceof BonbonEntity animatable)
 				animatable.setTexture(("bonbon" + suffix));
-			if (entity instanceof FuntimeFoxyEntity animatable)
+			if (entiti instanceof FuntimeFoxyEntity animatable)
 				animatable.setTexture(("ftfoxy" + suffix));
-			if (entity instanceof FuntimeFoxyDayEntity animatable)
+			if (entiti instanceof FuntimeFoxyDayEntity animatable)
 				animatable.setTexture(("ftfoxy" + suffix));
-			if (entity instanceof LolbitEntity animatable)
+			if (entiti instanceof LolbitEntity animatable)
 				animatable.setTexture(("lolbit" + suffix));
 		} else if (skin == 1) {
-			if (entity instanceof FuntimeFreddyDayEntity animatable)
+			if (entiti instanceof FuntimeFreddyDayEntity animatable)
 				animatable.setTexture(("ftfreddy_novel" + suffix));
-			if ((entity instanceof FuntimeFreddyEntity _datEntL11 && _datEntL11.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-				if (entity instanceof FuntimeFreddyEntity animatable)
+			if ((entiti instanceof FuntimeFreddyEntity _datEntL11 && _datEntL11.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy_novel" + suffix));
 			} else {
-				if (entity instanceof FuntimeFreddyEntity animatable)
+				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy_bonless_novel" + suffix));
 			}
-			if (entity instanceof BonbonEntity animatable)
+			if (entiti instanceof BonbonEntity animatable)
 				animatable.setTexture(("bonbon_novel" + suffix));
-			if (entity instanceof FuntimeFoxyEntity animatable)
+			if (entiti instanceof FuntimeFoxyEntity animatable)
 				animatable.setTexture(("ftfoxy_beta" + suffix));
-			if (entity instanceof FuntimeFoxyDayEntity animatable)
+			if (entiti instanceof FuntimeFoxyDayEntity animatable)
 				animatable.setTexture(("ftfoxy_beta" + suffix));
-			if (entity instanceof LolbitEntity animatable)
+			if (entiti instanceof LolbitEntity animatable)
 				animatable.setTexture(("lolbit_racer" + suffix));
 		} else if (skin == 2) {
-			if (entity instanceof FuntimeFreddyDayEntity animatable)
+			if (entiti instanceof FuntimeFreddyDayEntity animatable)
 				animatable.setTexture(("ftfreddy_ctw" + suffix));
-			if ((entity instanceof FuntimeFreddyEntity _datEntL21 && _datEntL21.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
-				if (entity instanceof FuntimeFreddyEntity animatable)
+			if ((entiti instanceof FuntimeFreddyEntity _datEntL21 && _datEntL21.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy_ctw" + suffix));
 			} else {
-				if (entity instanceof FuntimeFreddyEntity animatable)
+				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy_bonless_ctw" + suffix));
 			}
-			if (entity instanceof ShadowFreddyEntity animatable)
+			if (entiti instanceof ShadowFreddyEntity animatable)
 				animatable.setTexture(("wsfreddy_corner" + suffix));
-			if (entity instanceof BonbonEntity animatable)
+			if (entiti instanceof BonbonEntity animatable)
 				animatable.setTexture(("bonbon_ctw" + suffix));
 		}
 	}

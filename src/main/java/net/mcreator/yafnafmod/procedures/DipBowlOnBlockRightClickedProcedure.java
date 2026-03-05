@@ -18,6 +18,10 @@ public class DipBowlOnBlockRightClickedProcedure {
 			} else if (blockstate.getBlock() == YaFnafmodModBlocks.BOWL_QUESO.get()) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("dip", 1);
 			}
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.CRACKER.get()) {
+			if (blockstate.getBlock() == YaFnafmodModBlocks.BOWL_QUESO.get()) {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("dip", 1);
+			}
 		}
 	}
 }

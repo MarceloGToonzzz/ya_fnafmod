@@ -1,9 +1,10 @@
 package net.mcreator.yafnafmod.procedures;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
 public class AnimatronicOnInitialEntitySpawnProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double variant = 0;
@@ -15,6 +16,6 @@ public class AnimatronicOnInitialEntitySpawnProcedure {
 			entity.getPersistentData().putDouble("yaw", (entity.getYRot()));
 			entity.getPersistentData().putBoolean("GotCordinates", true);
 		}
-		SettingSkinProcedure.execute(entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
+		SettingSkinProcedure.execute(world, entity, entity.getPersistentData().getDouble("skin"), entity.getPersistentData().getDouble("style"));
 	}
 }
