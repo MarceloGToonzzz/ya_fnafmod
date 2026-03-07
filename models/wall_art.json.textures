@@ -41,6 +41,42 @@
         "1": "wallart_foxy"
       },
       "name": "foxy"
+    },
+    "freddy_off": {
+      "map": {
+        "1": "wallart_freddy-off"
+      },
+      "name": "freddy_off"
+    },
+    "bonnie_off": {
+      "map": {
+        "1": "wallart_bonnie-off"
+      },
+      "name": "bonnie_off"
+    },
+    "chica_off": {
+      "map": {
+        "1": "wallart_chica-off"
+      },
+      "name": "chica_off"
+    },
+    "foxy_off": {
+      "map": {
+        "1": "wallart_foxy-off"
+      },
+      "name": "foxy_off"
+    },
+    "spring_off": {
+      "map": {
+        "1": "wallart_springbonnie-off"
+      },
+      "name": "spring_off"
+    },
+    "music_off": {
+      "map": {
+        "1": "wallart_music-off"
+      },
+      "name": "music_off"
     }
   }
 }
