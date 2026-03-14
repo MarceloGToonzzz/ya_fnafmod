@@ -3,7 +3,7 @@
   "textures": {
     "all": "ya_fnafmod:block/fireextinguisher_wall",
     "particle": "ya_fnafmod:block/fireextinguisher_wall",
-    "0": "ya_fnafmod:block/fireextinguisher_wall"
+    "2": "ya_fnafmod:block/fireextinguisher_wall"
   },
   "render_type": "cutout_mipped"
 }
