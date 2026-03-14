@@ -36,7 +36,6 @@ public class State1CycleProcedure {
 						world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 				}
 			}
-		} else {
 			result = InteractionResult.SUCCESS;
 		}
 		return result;
