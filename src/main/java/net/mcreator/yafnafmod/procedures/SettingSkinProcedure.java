@@ -40,10 +40,10 @@ public class SettingSkinProcedure {
 		Fnaf1SkinsProcedure.execute(entiti, skin, suffix);
 		Fnaf2SkinsProcedure.execute(entiti, skin, suffix);
 		Fnaf3SkinsProcedure.execute(entiti, skin, suffix);
-		Fnaf4SkinsProcedure.execute(entiti, skin, "");
-		Fnaf5SkinsProcedure.execute(entiti, skin, "");
-		Fnaf6SkinsProcedure.execute(entiti, skin, "");
-		FnafItpSkinsProcedure.execute(entiti, skin, "");
+		Fnaf4SkinsProcedure.execute(entiti, skin, suffix);
+		Fnaf5SkinsProcedure.execute(entiti, skin, suffix);
+		Fnaf6SkinsProcedure.execute(entiti, skin, suffix);
+		FnafItpSkinsProcedure.execute(entiti, skin, suffix);
 		if (skin == 0) {
 			if (entiti instanceof YellowRabbitEntity animatable)
 				animatable.setTexture(("yellow_rabbit" + suffix));

@@ -587,6 +587,16 @@
 							"easing": "easeInBack"
 						}
 					}
+				},
+				"eye_r": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
+				},
+				"eye_l": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
 				}
 			}
 		},
@@ -1021,6 +1031,16 @@
 							"easing": "easeInOutSine"
 						}
 					}
+				},
+				"eye_r": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
+				},
+				"eye_l": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
 				}
 			}
 		},
@@ -1310,6 +1330,16 @@
 							"vector": [1, 3, -2]
 						}
 					}
+				},
+				"eye_r": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
+				},
+				"eye_l": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
 				}
 			}
 		},
@@ -1558,6 +1588,16 @@
 							"vector": [1, 3, -2],
 							"easing": "easeOutSine"
 						}
+					}
+				},
+				"eye_r": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
+				},
+				"eye_l": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125)", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
 					}
 				}
 			}

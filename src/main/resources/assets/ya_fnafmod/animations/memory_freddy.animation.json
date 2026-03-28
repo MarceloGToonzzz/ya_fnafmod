@@ -958,6 +958,16 @@
 							"easing": "easeInBack"
 						}
 					}
+				},
+				"eyeR": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
+				},
+				"eyeL": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
 				}
 			}
 		},
@@ -1294,6 +1304,16 @@
 							"vector": [-0.75, 0, -1],
 							"easing": "easeInOutSine"
 						}
+					}
+				},
+				"eyeR": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
+				},
+				"eyeL": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time * -3000) * 0.125", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
 					}
 				}
 			}
