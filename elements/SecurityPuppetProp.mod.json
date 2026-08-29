@@ -139,15 +139,6 @@
     "normal": "security_puppet.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": [
-      {
-        "texture": "security_puppet_fms",
-        "particleTexture": "",
-        "renderType": 0,
-        "customModelName": "security_puppet.geo.json",
-        "luminance": 0,
-        "boundingBoxes": []
-      }
-    ]
+    "blockstateList": []
   }
 }

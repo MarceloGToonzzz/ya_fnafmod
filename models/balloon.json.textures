@@ -77,6 +77,42 @@
         "10": "balloonlone_fredbearwhite"
       },
       "name": "fredbearwhite"
+    },
+    "pastelorange2": {
+      "map": {
+        "10": "balloonlone_pastelorange2"
+      },
+      "name": "pastelorange2"
+    },
+    "pastelorange3": {
+      "map": {
+        "10": "balloonlone_pastelorange3"
+      },
+      "name": "pastelorange3"
+    },
+    "pastelblack": {
+      "map": {
+        "10": "balloonlone_pastelblack"
+      },
+      "name": "pastelblack"
+    },
+    "fredbearorange2": {
+      "map": {
+        "10": "balloonlone_fredbearorange2"
+      },
+      "name": "fredbearorange2"
+    },
+    "fredbearorange3": {
+      "map": {
+        "10": "balloonlone_fredbearorange3"
+      },
+      "name": "fredbearorange3"
+    },
+    "fredbearblack": {
+      "map": {
+        "10": "balloonlone_fredbearblack"
+      },
+      "name": "fredbearblack"
     }
   }
 }

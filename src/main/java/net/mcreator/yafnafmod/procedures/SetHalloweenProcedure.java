@@ -8,7 +8,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.yafnafmod.network.YaFnafmodModVariables;
 
@@ -37,8 +36,6 @@ public class SetHalloweenProcedure {
 					if (chance == 1) {
 						YaFnafmodModVariables.MapVariables.get(world).halloween_night = true;
 						YaFnafmodModVariables.MapVariables.get(world).syncData(world);
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A76You feel the halloween spirit within your soul.."), false);
 					} else {
 						YaFnafmodModVariables.MapVariables.get(world).halloween_night = false;
 						YaFnafmodModVariables.MapVariables.get(world).syncData(world);
@@ -46,15 +43,11 @@ public class SetHalloweenProcedure {
 				} else if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 31 && Calendar.getInstance().get(Calendar.MONTH) == 9) {
 					YaFnafmodModVariables.MapVariables.get(world).halloween_night = true;
 					YaFnafmodModVariables.MapVariables.get(world).syncData(world);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A76You feel the halloween spirit within your soul.."), false);
 				} else {
 					chance = Mth.nextInt(RandomSource.create(), 1, 31);
 					if (chance == 1) {
 						YaFnafmodModVariables.MapVariables.get(world).halloween_night = true;
 						YaFnafmodModVariables.MapVariables.get(world).syncData(world);
-						if (!world.isClientSide() && world.getServer() != null)
-							world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A76You feel the halloween spirit within your soul.."), false);
 					} else {
 						YaFnafmodModVariables.MapVariables.get(world).halloween_night = false;
 						YaFnafmodModVariables.MapVariables.get(world).syncData(world);
@@ -68,8 +61,6 @@ public class SetHalloweenProcedure {
 				if (chance == 1) {
 					YaFnafmodModVariables.MapVariables.get(world).rare_night = true;
 					YaFnafmodModVariables.MapVariables.get(world).syncData(world);
-					if (!world.isClientSide() && world.getServer() != null)
-						world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("\u00A74You feel a rare presence in the air.."), false);
 				} else {
 					YaFnafmodModVariables.MapVariables.get(world).rare_night = false;
 					YaFnafmodModVariables.MapVariables.get(world).syncData(world);

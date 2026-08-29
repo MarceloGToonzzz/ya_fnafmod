@@ -1,19 +1,19 @@
 {
   "_fv": 73,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
-    "texture": "trashcharacter_chica",
+    "texture": "charactertrashcan_chica",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
+    "renderType": 2,
+    "customModelName": "charactertrashcan:chi",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -24,16 +24,17 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
+        "mx": 2.0,
         "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 31.0,
-        "Mz": 16.0,
+        "mz": 2.0,
+        "Mx": 14.0,
+        "My": 21.0,
+        "Mz": 14.0,
         "subtract": false
       }
     ],
-    "name": "Trash Can (Chica)",
+    "customProperties": [],
+    "name": "Trash Can Chica",
     "specialInformation": {
       "fixedValue": []
     },
@@ -79,12 +80,11 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -103,15 +103,14 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -123,8 +122,9 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "AnimationStateCycling"
+      "name": "State1Cycle"
     },
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -135,10 +135,6 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "trashcharacter.geo.json",
-    "displaySettings": "animatronic_display1.json",
-    "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "maxGenerateHeight": 64
   }
 }

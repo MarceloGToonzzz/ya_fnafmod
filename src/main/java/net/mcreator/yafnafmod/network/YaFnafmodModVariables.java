@@ -92,6 +92,7 @@ public class YaFnafmodModVariables {
 		public boolean rare_night = false;
 		public boolean hasset_rare = false;
 		public boolean STRUCTUREBUILD_BUILD = false;
+		public String player_rpname = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -105,6 +106,7 @@ public class YaFnafmodModVariables {
 			rare_night = nbt.getBoolean("rare_night");
 			hasset_rare = nbt.getBoolean("hasset_rare");
 			STRUCTUREBUILD_BUILD = nbt.getBoolean("STRUCTUREBUILD_BUILD");
+			player_rpname = nbt.getString("player_rpname");
 		}
 
 		@Override
@@ -114,6 +116,7 @@ public class YaFnafmodModVariables {
 			nbt.putBoolean("rare_night", rare_night);
 			nbt.putBoolean("hasset_rare", hasset_rare);
 			nbt.putBoolean("STRUCTUREBUILD_BUILD", STRUCTUREBUILD_BUILD);
+			nbt.putString("player_rpname", player_rpname);
 			return nbt;
 		}
 

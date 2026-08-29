@@ -1,0 +1,70 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "clock"
+      },
+      "name": "default"
+    },
+    "cfreddy": {
+      "map": {
+        "1": "clock_cfreddy"
+      },
+      "name": "cfreddy"
+    },
+    "cbonnie": {
+      "map": {
+        "1": "clock_cbonnie"
+      },
+      "name": "cbonnie"
+    },
+    "cchica": {
+      "map": {
+        "1": "clock_cchica"
+      },
+      "name": "cchica"
+    },
+    "cfoxy": {
+      "map": {
+        "1": "clock_cfoxy"
+      },
+      "name": "cfoxy"
+    },
+    "tfreddy": {
+      "map": {
+        "1": "clock_tfreddy"
+      },
+      "name": "tfreddy"
+    },
+    "tbonnie": {
+      "map": {
+        "1": "clock_tbonnie"
+      },
+      "name": "tbonnie"
+    },
+    "tchica": {
+      "map": {
+        "1": "clock_tchica"
+      },
+      "name": "tchica"
+    },
+    "tfoxy": {
+      "map": {
+        "1": "clock_tfoxy"
+      },
+      "name": "tfoxy"
+    },
+    "fredbear": {
+      "map": {
+        "1": "clock_fredbear"
+      },
+      "name": "fredbear"
+    },
+    "springbonnie": {
+      "map": {
+        "1": "clock_springbonnie"
+      },
+      "name": "springbonnie"
+    }
+  }
+}

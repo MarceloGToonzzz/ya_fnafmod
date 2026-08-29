@@ -8,10 +8,12 @@ import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.yafnafmod.block.model.NeonSignArcadeBlockModel;
 import net.mcreator.yafnafmod.block.entity.NeonSignArcadeTileEntity;
+import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
 public class NeonSignArcadeTileRenderer extends GeoBlockRenderer<NeonSignArcadeTileEntity> {
 	public NeonSignArcadeTileRenderer() {
 		super(new NeonSignArcadeBlockModel());
+		this.addRenderLayer(new AutoGlowingGeoLayer<>(this));
 	}
 
 	@Override

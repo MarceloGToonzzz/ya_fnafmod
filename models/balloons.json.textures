@@ -47,6 +47,30 @@
         "3": "balloons_8"
       },
       "name": "balloon8"
+    },
+    "balloon9": {
+      "map": {
+        "3": "balloons_9"
+      },
+      "name": "balloon9"
+    },
+    "balloon10": {
+      "map": {
+        "3": "balloons_10"
+      },
+      "name": "balloon10"
+    },
+    "balloon11": {
+      "map": {
+        "3": "balloons_11"
+      },
+      "name": "balloon11"
+    },
+    "balloon12": {
+      "map": {
+        "3": "balloons_12"
+      },
+      "name": "balloon12"
     }
   }
 }

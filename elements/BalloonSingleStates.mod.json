@@ -159,6 +159,84 @@
         "customModelName": "balloon:fredbearwhite",
         "luminance": 0,
         "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_pastelorange2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastelorange2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_pastelorange3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastelorange3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_pastelblack",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:pastelblack",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearorange2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearorange2",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearorange3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearorange3",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloonlone_fredbearblack",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloon:fredbearblack",
+        "luminance": 0,
+        "boundingBoxes": []
       }
     ]
   }

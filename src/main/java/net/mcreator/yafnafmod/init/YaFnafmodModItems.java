@@ -98,12 +98,14 @@ import net.mcreator.yafnafmod.item.SpringbonnieSuitSpawnItemItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorSkinItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSuitArmorItem;
 import net.mcreator.yafnafmod.item.SpringbonnieSpawnItemItem;
+import net.mcreator.yafnafmod.item.SpringCrawlerSpawnItemItem;
 import net.mcreator.yafnafmod.item.SparkyDogSpawnItemItem;
 import net.mcreator.yafnafmod.item.SodaCupRedItem;
 import net.mcreator.yafnafmod.item.SodaCupGreenItem;
 import net.mcreator.yafnafmod.item.SodaCupFiztimeItem;
 import net.mcreator.yafnafmod.item.SodaCupFiztimeAltItem;
 import net.mcreator.yafnafmod.item.SodaCupBlueItem;
+import net.mcreator.yafnafmod.item.SmartphoneItem;
 import net.mcreator.yafnafmod.item.SkinChangerToolItem;
 import net.mcreator.yafnafmod.item.ShotgunShellItem;
 import net.mcreator.yafnafmod.item.ShotgunItem;
@@ -150,7 +152,6 @@ import net.mcreator.yafnafmod.item.PizzaSliceAnchovyItem;
 import net.mcreator.yafnafmod.item.PizzaSliceAnchovyFreshItem;
 import net.mcreator.yafnafmod.item.PitbonnieSpawnItemItem;
 import net.mcreator.yafnafmod.item.PigpatchSpawnItemItem;
-import net.mcreator.yafnafmod.item.PhoneSmartItem;
 import net.mcreator.yafnafmod.item.PhoneFlipItem;
 import net.mcreator.yafnafmod.item.PhoneBrickItem;
 import net.mcreator.yafnafmod.item.PhantomPuppetSpawnItemItem;
@@ -393,6 +394,7 @@ import net.mcreator.yafnafmod.item.BallPurpleItem;
 import net.mcreator.yafnafmod.item.BallOrangeItem;
 import net.mcreator.yafnafmod.item.BallGreenItem;
 import net.mcreator.yafnafmod.item.BallBlueItem;
+import net.mcreator.yafnafmod.item.BabyCrawlerSpawnItemItem;
 import net.mcreator.yafnafmod.item.ArtichokeItem;
 import net.mcreator.yafnafmod.item.AnchovyItem;
 import net.mcreator.yafnafmod.item.AgonyItem;
@@ -405,11 +407,6 @@ import net.mcreator.yafnafmod.block.display.WideFanDisplayItem;
 import net.mcreator.yafnafmod.block.display.VanRideDisplayItem;
 import net.mcreator.yafnafmod.block.display.TrashDisplayItem;
 import net.mcreator.yafnafmod.block.display.TrashCanMeshDisplayItem;
-import net.mcreator.yafnafmod.block.display.TrashCanFreddyDisplayItem;
-import net.mcreator.yafnafmod.block.display.TrashCanFoxyDisplayItem;
-import net.mcreator.yafnafmod.block.display.TrashCanCupcakeDisplayItem;
-import net.mcreator.yafnafmod.block.display.TrashCanChicaDisplayItem;
-import net.mcreator.yafnafmod.block.display.TrashCanBonnieDisplayItem;
 import net.mcreator.yafnafmod.block.display.TrashBagGreenDisplayItem;
 import net.mcreator.yafnafmod.block.display.TrashBagBlackDisplayItem;
 import net.mcreator.yafnafmod.block.display.ToypugDisplayItem;
@@ -590,9 +587,11 @@ import net.mcreator.yafnafmod.block.display.FazOvenDisplayItem;
 import net.mcreator.yafnafmod.block.display.ExoticButterBasketDisplayItem;
 import net.mcreator.yafnafmod.block.display.EnhancedSpeakerDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo02PileDisplayItem;
+import net.mcreator.yafnafmod.block.display.Endo02HeadDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo02BlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo01PropDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo01PileDisplayItem;
+import net.mcreator.yafnafmod.block.display.Endo01HeadDisplayItem;
 import net.mcreator.yafnafmod.block.display.Endo01BlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.EmptyExoticButterBasketDisplayItem;
 import net.mcreator.yafnafmod.block.display.ElChipBlockDisplayItem;
@@ -642,17 +641,6 @@ import net.mcreator.yafnafmod.block.display.ControlPanelDisplayItem;
 import net.mcreator.yafnafmod.block.display.ConcertSpeakerDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClownLemonadeDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClownFruitPunchDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallToyFreddyDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallToyFoxyDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallToyChicaDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallToyBonnieDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallSpringbonnieDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallFreddyDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallFredbearDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallFoxyDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallChicaDisplayItem;
-import net.mcreator.yafnafmod.block.display.ClockWallBonnieDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClawMachinePizzaPartyDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClawMachineCupcakeBonanzaDisplayItem;
 import net.mcreator.yafnafmod.block.display.CircusBabyClockDisplayItem;
@@ -748,9 +736,7 @@ import net.mcreator.yafnafmod.block.display.BalloonBarrelDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeTicketMuncherCupcakeDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeRacingPinkDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeRacingBlueDisplayItem;
-import net.mcreator.yafnafmod.block.display.ArcadeMidnightMotoristDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeLilHoopsDisplayItem;
-import net.mcreator.yafnafmod.block.display.ArcadeFruityMazeDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeFoosballDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeCandyCraneMachineDisplayItem;
 import net.mcreator.yafnafmod.block.display.ArcadeBigTreatPounderDisplayItem;
@@ -2541,9 +2527,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> GRAY_WHITE_BIG_CHECKERED_TILE_SLAB = block(YaFnafmodModBlocks.GRAY_WHITE_BIG_CHECKERED_TILE_SLAB);
 	public static final RegistryObject<Item> ENHANCED_SPEAKER = REGISTRY.register(YaFnafmodModBlocks.ENHANCED_SPEAKER.getId().getPath(), () -> new EnhancedSpeakerDisplayItem(YaFnafmodModBlocks.ENHANCED_SPEAKER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DELUXE_SPEAKER = REGISTRY.register(YaFnafmodModBlocks.DELUXE_SPEAKER.getId().getPath(), () -> new DeluxeSpeakerDisplayItem(YaFnafmodModBlocks.DELUXE_SPEAKER.get(), new Item.Properties()));
-	public static final RegistryObject<Item> ARCADE_FRUITY_MAZE = REGISTRY.register(YaFnafmodModBlocks.ARCADE_FRUITY_MAZE.getId().getPath(), () -> new ArcadeFruityMazeDisplayItem(YaFnafmodModBlocks.ARCADE_FRUITY_MAZE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> ARCADE_MIDNIGHT_MOTORIST = REGISTRY.register(YaFnafmodModBlocks.ARCADE_MIDNIGHT_MOTORIST.getId().getPath(),
-			() -> new ArcadeMidnightMotoristDisplayItem(YaFnafmodModBlocks.ARCADE_MIDNIGHT_MOTORIST.get(), new Item.Properties()));
 	public static final RegistryObject<Item> GUMBALL_SWIVELHANDS = block(YaFnafmodModBlocks.GUMBALL_SWIVELHANDS);
 	public static final RegistryObject<Item> STURDY_STAGE_BASE_PURPLE = block(YaFnafmodModBlocks.STURDY_STAGE_BASE_PURPLE);
 	public static final RegistryObject<Item> STURDY_STAGE_BASE_RED = block(YaFnafmodModBlocks.STURDY_STAGE_BASE_RED);
@@ -3070,8 +3053,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> ROSIE = REGISTRY.register(YaFnafmodModBlocks.ROSIE.getId().getPath(), () -> new RosieDisplayItem(YaFnafmodModBlocks.ROSIE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> PLUSH_MARCELO = block(YaFnafmodModBlocks.PLUSH_MARCELO);
 	public static final RegistryObject<Item> PLUSH_LOGAN = block(YaFnafmodModBlocks.PLUSH_LOGAN);
-	public static final RegistryObject<Item> PLUSH_STEPHAN = block(YaFnafmodModBlocks.PLUSH_STEPHAN);
-	public static final RegistryObject<Item> PLUSH_STATICBEAR = block(YaFnafmodModBlocks.PLUSH_STATICBEAR);
 	public static final RegistryObject<Item> PURPLE_GUY_SPAWN_EGG = REGISTRY.register("purple_guy_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.PURPLE_GUY, -9417834, -5340117, new Item.Properties()));
 	public static final RegistryObject<Item> CAR_FAZVAN_SPAWN_EGG = REGISTRY.register("car_fazvan_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.CAR_FAZVAN, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> CAR_FAZVAN_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CAR_FAZVAN_BLOCK.getId().getPath(), () -> new CarFazvanBlockDisplayItem(YaFnafmodModBlocks.CAR_FAZVAN_BLOCK.get(), new Item.Properties()));
@@ -3243,11 +3224,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> KITCHEN_DOOR = doubleBlock(YaFnafmodModBlocks.KITCHEN_DOOR);
 	public static final RegistryObject<Item> KITCHEN_WHITE_DOOR = doubleBlock(YaFnafmodModBlocks.KITCHEN_WHITE_DOOR);
 	public static final RegistryObject<Item> SHELF_INDUSTRIAL = block(YaFnafmodModBlocks.SHELF_INDUSTRIAL);
-	public static final RegistryObject<Item> TRASH_CAN_FREDDY = REGISTRY.register(YaFnafmodModBlocks.TRASH_CAN_FREDDY.getId().getPath(), () -> new TrashCanFreddyDisplayItem(YaFnafmodModBlocks.TRASH_CAN_FREDDY.get(), new Item.Properties()));
-	public static final RegistryObject<Item> TRASH_CAN_BONNIE = REGISTRY.register(YaFnafmodModBlocks.TRASH_CAN_BONNIE.getId().getPath(), () -> new TrashCanBonnieDisplayItem(YaFnafmodModBlocks.TRASH_CAN_BONNIE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> TRASH_CAN_CHICA = REGISTRY.register(YaFnafmodModBlocks.TRASH_CAN_CHICA.getId().getPath(), () -> new TrashCanChicaDisplayItem(YaFnafmodModBlocks.TRASH_CAN_CHICA.get(), new Item.Properties()));
-	public static final RegistryObject<Item> TRASH_CAN_FOXY = REGISTRY.register(YaFnafmodModBlocks.TRASH_CAN_FOXY.getId().getPath(), () -> new TrashCanFoxyDisplayItem(YaFnafmodModBlocks.TRASH_CAN_FOXY.get(), new Item.Properties()));
-	public static final RegistryObject<Item> TRASH_CAN_CUPCAKE = REGISTRY.register(YaFnafmodModBlocks.TRASH_CAN_CUPCAKE.getId().getPath(), () -> new TrashCanCupcakeDisplayItem(YaFnafmodModBlocks.TRASH_CAN_CUPCAKE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CAR_FAZVAN_PROP = REGISTRY.register(YaFnafmodModBlocks.CAR_FAZVAN_PROP.getId().getPath(), () -> new CarFazvanPropDisplayItem(YaFnafmodModBlocks.CAR_FAZVAN_PROP.get(), new Item.Properties()));
 	public static final RegistryObject<Item> CAR_STATION_WAGON_SPAWN_EGG = REGISTRY.register("car_station_wagon_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.CAR_STATION_WAGON, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> CAR_STATION_WAGON_BLOCK = REGISTRY.register(YaFnafmodModBlocks.CAR_STATION_WAGON_BLOCK.getId().getPath(),
@@ -3318,23 +3294,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> SKEEBALL_PIZZAROLLER = REGISTRY.register(YaFnafmodModBlocks.SKEEBALL_PIZZAROLLER.getId().getPath(),
 			() -> new SkeeballPizzarollerDisplayItem(YaFnafmodModBlocks.SKEEBALL_PIZZAROLLER.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BATHROOM_STALL = REGISTRY.register(YaFnafmodModBlocks.BATHROOM_STALL.getId().getPath(), () -> new BathroomStallDisplayItem(YaFnafmodModBlocks.BATHROOM_STALL.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL.getId().getPath(), () -> new ClockWallDisplayItem(YaFnafmodModBlocks.CLOCK_WALL.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_FREDDY = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_FREDDY.getId().getPath(), () -> new ClockWallFreddyDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_FREDDY.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_BONNIE = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_BONNIE.getId().getPath(), () -> new ClockWallBonnieDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_BONNIE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_CHICA = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_CHICA.getId().getPath(), () -> new ClockWallChicaDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_CHICA.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_FOXY = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_FOXY.getId().getPath(), () -> new ClockWallFoxyDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_FOXY.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_TOY_FREDDY = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_TOY_FREDDY.getId().getPath(),
-			() -> new ClockWallToyFreddyDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_TOY_FREDDY.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_TOY_BONNIE = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_TOY_BONNIE.getId().getPath(),
-			() -> new ClockWallToyBonnieDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_TOY_BONNIE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_TOY_CHICA = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_TOY_CHICA.getId().getPath(),
-			() -> new ClockWallToyChicaDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_TOY_CHICA.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_TOY_FOXY = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_TOY_FOXY.getId().getPath(),
-			() -> new ClockWallToyFoxyDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_TOY_FOXY.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_FREDBEAR = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_FREDBEAR.getId().getPath(),
-			() -> new ClockWallFredbearDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_FREDBEAR.get(), new Item.Properties()));
-	public static final RegistryObject<Item> CLOCK_WALL_SPRINGBONNIE = REGISTRY.register(YaFnafmodModBlocks.CLOCK_WALL_SPRINGBONNIE.getId().getPath(),
-			() -> new ClockWallSpringbonnieDisplayItem(YaFnafmodModBlocks.CLOCK_WALL_SPRINGBONNIE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> TRASH_CAN = block(YaFnafmodModBlocks.TRASH_CAN);
 	public static final RegistryObject<Item> TRASH_CAN_GREEN = block(YaFnafmodModBlocks.TRASH_CAN_GREEN);
 	public static final RegistryObject<Item> TRASH_CAN_MESH = REGISTRY.register(YaFnafmodModBlocks.TRASH_CAN_MESH.getId().getPath(), () -> new TrashCanMeshDisplayItem(YaFnafmodModBlocks.TRASH_CAN_MESH.get(), new Item.Properties()));
@@ -3830,7 +3789,6 @@ public class YaFnafmodModItems {
 			() -> new PizzeriaSignJrs2DisplayItem(YaFnafmodModBlocks.PIZZERIA_SIGN_JRS_2.get(), new Item.Properties()));
 	public static final RegistryObject<Item> PHONE_BRICK = REGISTRY.register("phone_brick", () -> new PhoneBrickItem());
 	public static final RegistryObject<Item> PHONE_FLIP = REGISTRY.register("phone_flip", () -> new PhoneFlipItem());
-	public static final RegistryObject<Item> PHONE_SMART = REGISTRY.register("phone_smart", () -> new PhoneSmartItem());
 	public static final RegistryObject<Item> POPGOES_WEASEL_SPAWN_EGG = REGISTRY.register("popgoes_weasel_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.POPGOES_WEASEL, -6662865, -4952003, new Item.Properties()));
 	public static final RegistryObject<Item> POPGOES_WEASEL_DAY_SPAWN_EGG = REGISTRY.register("popgoes_weasel_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.POPGOES_WEASEL_DAY, -6662865, -4952003, new Item.Properties()));
 	public static final RegistryObject<Item> BLAKE_BADGER_SPAWN_EGG = REGISTRY.register("blake_badger_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.BLAKE_BADGER, -6662865, -4952003, new Item.Properties()));
@@ -5427,6 +5385,36 @@ public class YaFnafmodModItems {
 			() -> new GoldenFreddySuitArmorSkinItem(ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 	public static final RegistryObject<GoldenFreddySuitArmorSkinItem> GOLDEN_FREDDY_SUIT_ARMOR_SKIN_LEGGINGS = REGISTRY.register("golden_freddy_suit_armor_skin_leggings",
 			() -> new GoldenFreddySuitArmorSkinItem(ArmorItem.Type.LEGGINGS, new Item.Properties()));
+	public static final RegistryObject<Item> LINED_STAGE_BASE_TOP = block(YaFnafmodModBlocks.LINED_STAGE_BASE_TOP);
+	public static final RegistryObject<Item> LINED_STAGE_BASE_MIDDLE = block(YaFnafmodModBlocks.LINED_STAGE_BASE_MIDDLE);
+	public static final RegistryObject<Item> LINED_STAGE_BASE_BOTTOM = block(YaFnafmodModBlocks.LINED_STAGE_BASE_BOTTOM);
+	public static final RegistryObject<Item> TRASH_CAN_FREDDY = block(YaFnafmodModBlocks.TRASH_CAN_FREDDY);
+	public static final RegistryObject<Item> TRASH_CAN_BONNIE = block(YaFnafmodModBlocks.TRASH_CAN_BONNIE);
+	public static final RegistryObject<Item> TRASH_CAN_CHICA = block(YaFnafmodModBlocks.TRASH_CAN_CHICA);
+	public static final RegistryObject<Item> TRASH_CAN_FOXY = block(YaFnafmodModBlocks.TRASH_CAN_FOXY);
+	public static final RegistryObject<Item> TRASH_CAN_CUPCAKE = block(YaFnafmodModBlocks.TRASH_CAN_CUPCAKE);
+	public static final RegistryObject<Item> ARCADE_FRUITY_MAZE = block(YaFnafmodModBlocks.ARCADE_FRUITY_MAZE);
+	public static final RegistryObject<Item> ARCADE_MIDNIGHT_MOTORIST = block(YaFnafmodModBlocks.ARCADE_MIDNIGHT_MOTORIST);
+	public static final RegistryObject<Item> ENDO_01_HEAD = REGISTRY.register(YaFnafmodModBlocks.ENDO_01_HEAD.getId().getPath(), () -> new Endo01HeadDisplayItem(YaFnafmodModBlocks.ENDO_01_HEAD.get(), new Item.Properties()));
+	public static final RegistryObject<Item> ENDO_02_HEAD = REGISTRY.register(YaFnafmodModBlocks.ENDO_02_HEAD.getId().getPath(), () -> new Endo02HeadDisplayItem(YaFnafmodModBlocks.ENDO_02_HEAD.get(), new Item.Properties()));
+	public static final RegistryObject<Item> CLOCK_WALL = block(YaFnafmodModBlocks.CLOCK_WALL);
+	public static final RegistryObject<Item> CLOCK_WALL_FREDDY = block(YaFnafmodModBlocks.CLOCK_WALL_FREDDY);
+	public static final RegistryObject<Item> CLOCK_WALL_BONNIE = block(YaFnafmodModBlocks.CLOCK_WALL_BONNIE);
+	public static final RegistryObject<Item> CLOCK_WALL_CHICA = block(YaFnafmodModBlocks.CLOCK_WALL_CHICA);
+	public static final RegistryObject<Item> CLOCK_WALL_FOXY = block(YaFnafmodModBlocks.CLOCK_WALL_FOXY);
+	public static final RegistryObject<Item> CLOCK_WALL_FREDBEAR = block(YaFnafmodModBlocks.CLOCK_WALL_FREDBEAR);
+	public static final RegistryObject<Item> CLOCK_WALL_SPRINGBONNIE = block(YaFnafmodModBlocks.CLOCK_WALL_SPRINGBONNIE);
+	public static final RegistryObject<Item> CLOCK_WALL_TOY_FREDDY = block(YaFnafmodModBlocks.CLOCK_WALL_TOY_FREDDY);
+	public static final RegistryObject<Item> CLOCK_WALL_TOY_BONNIE = block(YaFnafmodModBlocks.CLOCK_WALL_TOY_BONNIE);
+	public static final RegistryObject<Item> CLOCK_WALL_TOY_CHICA = block(YaFnafmodModBlocks.CLOCK_WALL_TOY_CHICA);
+	public static final RegistryObject<Item> CLOCK_WALL_TOY_FOXY = block(YaFnafmodModBlocks.CLOCK_WALL_TOY_FOXY);
+	public static final RegistryObject<Item> SMARTPHONE = REGISTRY.register("smartphone", () -> new SmartphoneItem());
+	public static final RegistryObject<Item> SPRING_CRAWLER_SPAWN_EGG = REGISTRY.register("spring_crawler_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.SPRING_CRAWLER, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> SPRING_CRAWLER_DAY_SPAWN_EGG = REGISTRY.register("spring_crawler_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.SPRING_CRAWLER_DAY, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> BABY_CRAWLER_SPAWN_EGG = REGISTRY.register("baby_crawler_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.BABY_CRAWLER, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> BABY_CRAWLER_DAY_SPAWN_EGG = REGISTRY.register("baby_crawler_day_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.BABY_CRAWLER_DAY, -1, -1, new Item.Properties()));
+	public static final RegistryObject<Item> SPRING_CRAWLER_SPAWN_ITEM = REGISTRY.register("spring_crawler_spawn_item", () -> new SpringCrawlerSpawnItemItem());
+	public static final RegistryObject<Item> BABY_CRAWLER_SPAWN_ITEM = REGISTRY.register("baby_crawler_spawn_item", () -> new BabyCrawlerSpawnItemItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -124,8 +124,7 @@ public class ChicaHeadBlock extends BaseEntityBlock implements EntityBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
-		AnimatronicHeadOnBlockRightClickedProcedure.execute(world, x, y, z, blockstate, entity);
-		return InteractionResult.SUCCESS;
+		InteractionResult result = AnimatronicHeadOnBlockRightClickedProcedure.execute(world, x, y, z, blockstate, entity);
+		return result;
 	}
 }

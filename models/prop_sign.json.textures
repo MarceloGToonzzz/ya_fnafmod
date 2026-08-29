@@ -17,6 +17,12 @@
         "0": "propsign_martysplungers"
       },
       "name": "martys"
+    },
+    "itsme": {
+      "map": {
+        "0": "propsign_itsme"
+      },
+      "name": "itsme"
     }
   }
 }

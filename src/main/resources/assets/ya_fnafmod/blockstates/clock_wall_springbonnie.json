@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=north": {
-      "model": "ya_fnafmod:custom/clock_wall_springbonnie_particle"
+      "model": "ya_fnafmod:block/clock_wall_springbonnie"
     },
     "facing=east": {
-      "model": "ya_fnafmod:custom/clock_wall_springbonnie_particle",
+      "model": "ya_fnafmod:block/clock_wall_springbonnie",
       "y": 90
     },
     "facing=south": {
-      "model": "ya_fnafmod:custom/clock_wall_springbonnie_particle",
+      "model": "ya_fnafmod:block/clock_wall_springbonnie",
       "y": 180
     },
     "facing=west": {
-      "model": "ya_fnafmod:custom/clock_wall_springbonnie_particle",
+      "model": "ya_fnafmod:block/clock_wall_springbonnie",
       "y": 270
     }
   }

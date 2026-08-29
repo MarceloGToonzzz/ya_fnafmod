@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "mm": {
+      "map": {
+        "0": "arcademachinecocktail_midnightmotorist"
+      },
+      "name": "mm"
+    },
+    "default": {
+      "map": {
+        "0": "arcademachinecocktail_fruitymaze"
+      },
+      "name": "default"
+    },
+    "mm_on": {
+      "map": {
+        "0": "arcademachinecocktail_midnightmotorist-on"
+      },
+      "name": "mm_on"
+    },
+    "fm_on": {
+      "map": {
+        "0": "arcademachinecocktail_fruitymaze_on"
+      },
+      "name": "fm_on"
+    }
+  }
+}

@@ -32,6 +32,8 @@ import net.mcreator.yafnafmod.entity.SpringlockEllaSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
+import net.mcreator.yafnafmod.entity.SpringCrawlerEntity;
+import net.mcreator.yafnafmod.entity.SpringCrawlerDayEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ShadowFreddySuitEntity;
@@ -220,6 +222,8 @@ import net.mcreator.yafnafmod.entity.BalloraEntity;
 import net.mcreator.yafnafmod.entity.BalloraDayEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyDayEntity;
+import net.mcreator.yafnafmod.entity.BabyCrawlerEntity;
+import net.mcreator.yafnafmod.entity.BabyCrawlerDayEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -1732,6 +1736,34 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof GoldenFreddySuitEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SpringCrawlerEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof SpringCrawlerDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BabyCrawlerEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof BabyCrawlerDayEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

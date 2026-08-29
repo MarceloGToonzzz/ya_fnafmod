@@ -2,7 +2,7 @@
   "_fv": 73,
   "_type": "animatedblock",
   "definition": {
-    "texture": "fnaf6sign_jrs2",
+    "texture": "fnaf6sign_jrs2-off",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -11,10 +11,10 @@
     "renderType": 0,
     "rotationMode": 1,
     "enablePitch": false,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "",
+    "itemTexture": "item_fnaf6sign_jrs2",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -144,7 +144,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "fnaf6sign_jrs2",
+        "texture": "fnaf6sign_jrs2-off",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "pizzeria_sign2_offset.geo.json",

@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "ya_fnafmod:custom/trash_can_bonnie_particle"
+    "facing=north,blockstate=0": {
+      "model": "ya_fnafmod:block/trash_can_bonnie"
     },
-    "facing=east": {
-      "model": "ya_fnafmod:custom/trash_can_bonnie_particle",
+    "facing=east,blockstate=0": {
+      "model": "ya_fnafmod:block/trash_can_bonnie",
       "y": 90
     },
-    "facing=south": {
-      "model": "ya_fnafmod:custom/trash_can_bonnie_particle",
+    "facing=south,blockstate=0": {
+      "model": "ya_fnafmod:block/trash_can_bonnie",
       "y": 180
     },
-    "facing=west": {
-      "model": "ya_fnafmod:custom/trash_can_bonnie_particle",
+    "facing=west,blockstate=0": {
+      "model": "ya_fnafmod:block/trash_can_bonnie",
+      "y": 270
+    },
+    "facing=north,blockstate=1": {
+      "model": "ya_fnafmod:block/trash_can_bonnie_states_blockstate_0"
+    },
+    "facing=east,blockstate=1": {
+      "model": "ya_fnafmod:block/trash_can_bonnie_states_blockstate_0",
+      "y": 90
+    },
+    "facing=south,blockstate=1": {
+      "model": "ya_fnafmod:block/trash_can_bonnie_states_blockstate_0",
+      "y": 180
+    },
+    "facing=west,blockstate=1": {
+      "model": "ya_fnafmod:block/trash_can_bonnie_states_blockstate_0",
       "y": 270
     }
   }

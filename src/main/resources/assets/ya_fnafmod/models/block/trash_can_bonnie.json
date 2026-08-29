@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/charactertrashcan",
+  "textures": {
+    "all": "ya_fnafmod:block/charactertrashcan_bonnie",
+    "particle": "ya_fnafmod:block/charactertrashcan_bonnie",
+    "4": "ya_fnafmod:block/charactertrashcan_bonnie"
+  },
+  "render_type": "cutout_mipped"
+}

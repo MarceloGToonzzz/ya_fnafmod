@@ -1406,45 +1406,6 @@
       }
     ]
   },
-  "anim_ftdelilah_voice": {
-    "subtitle": "subtitles.anim_ftdelilah_voice",
-    "sounds": [
-      {
-        "name": "ya_fnafmod:anim_ftdelilah_voice2",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_ftdelilah_voice1",
-        "stream": false
-      }
-    ]
-  },
-  "anim_ftdelilah_voice_hostile": {
-    "subtitle": "subtitles.anim_ftdelilah_voice_hostile",
-    "sounds": [
-      {
-        "name": "ya_fnafmod:anim_ftdelilah_voice2_hostile",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_ftdelilah_voice1_hostile",
-        "stream": false
-      }
-    ]
-  },
-  "anim_ftdelilah_killvoice": {
-    "subtitle": "subtitles.anim_ftdelilah_killvoice",
-    "sounds": [
-      {
-        "name": "ya_fnafmod:anim_ftdelilah_killvoice2",
-        "stream": false
-      },
-      {
-        "name": "ya_fnafmod:anim_ftdelilah_killvoice1",
-        "stream": false
-      }
-    ]
-  },
   "anim_bpolar_voice": {
     "subtitle": "subtitles.anim_bpolar_voice",
     "sounds": [

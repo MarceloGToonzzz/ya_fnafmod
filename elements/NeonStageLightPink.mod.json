@@ -11,10 +11,10 @@
     "renderType": 0,
     "rotationMode": 1,
     "enablePitch": false,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "",
+    "itemTexture": "item-stagelight_neon_pink",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -101,7 +101,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 1,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "hasInventory": false,

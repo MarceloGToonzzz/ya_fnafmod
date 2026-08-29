@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/clock",
+  "textures": {
+    "all": "ya_fnafmod:block/clock_springbonnie",
+    "particle": "ya_fnafmod:block/clock_springbonnie",
+    "1": "ya_fnafmod:block/clock_springbonnie"
+  },
+  "render_type": "cutout_mipped"
+}

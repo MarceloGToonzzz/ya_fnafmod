@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "bedroom_drawer3-blue"
+      },
+      "name": "default"
+    },
+    "brown": {
+      "map": {
+        "2": "bedroom_drawer3-brown"
+      },
+      "name": "brown"
+    }
+  }
+}

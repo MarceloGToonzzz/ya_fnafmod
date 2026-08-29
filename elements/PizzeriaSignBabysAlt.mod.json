@@ -139,7 +139,7 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "pizzeria_sign2.geo.json",
+    "normal": "circusbabysign.geo.json",
     "displaySettings": "pizzeria_sign.json",
     "vanillaToolTier": "NONE",
     "blockstateList": [

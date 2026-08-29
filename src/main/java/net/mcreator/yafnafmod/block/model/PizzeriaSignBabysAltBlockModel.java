@@ -16,7 +16,7 @@ public class PizzeriaSignBabysAltBlockModel extends GeoModel<PizzeriaSignBabysAl
 			return new ResourceLocation("ya_fnafmod", "animations/pizzeria_sign2.animation.json");
 		if (blockstate == 3)
 			return new ResourceLocation("ya_fnafmod", "animations/pizzeria_sign2_offset.animation.json");
-		return new ResourceLocation("ya_fnafmod", "animations/pizzeria_sign2.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/circusbabysign.animation.json");
 	}
 
 	@Override
@@ -28,7 +28,7 @@ public class PizzeriaSignBabysAltBlockModel extends GeoModel<PizzeriaSignBabysAl
 			return new ResourceLocation("ya_fnafmod", "geo/pizzeria_sign2.geo.json");
 		if (blockstate == 3)
 			return new ResourceLocation("ya_fnafmod", "geo/pizzeria_sign2_offset.geo.json");
-		return new ResourceLocation("ya_fnafmod", "geo/pizzeria_sign2.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/circusbabysign.geo.json");
 	}
 
 	@Override

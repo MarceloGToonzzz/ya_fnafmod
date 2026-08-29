@@ -1,3 +1,6 @@
 {
-  "parent": "ya_fnafmod:displaysettings/pizzeria_sign"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/item_fnaf6sign_jrs2"
+  }
 }

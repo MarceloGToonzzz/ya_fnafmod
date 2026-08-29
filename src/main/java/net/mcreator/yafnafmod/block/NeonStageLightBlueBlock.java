@@ -45,9 +45,9 @@ public class NeonStageLightBlueBlock extends BaseEntityBlock implements EntityBl
 					public int getLightLevel() {
 						if (s.getValue(BLOCKSTATE) == 1)
 							return 0;
-						return 0;
+						return 1;
 					}
-				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				}.getLightLevel())).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

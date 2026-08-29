@@ -46,7 +46,7 @@ public class NeonSignKitchenBlock extends BaseEntityBlock implements EntityBlock
 	public NeonSignKitchenBlock() {
 		super(BlockBehaviour.Properties.of()
 
-				.sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 3).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
+				.sound(SoundType.GLASS).strength(1f, 10f).lightLevel(s -> 1).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

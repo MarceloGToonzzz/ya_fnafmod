@@ -1,6 +1,6 @@
 {
   "_fv": 73,
-  "_type": "animatedblock",
+  "_type": "block",
   "definition": {
     "texture": "arcademachinecocktail_fruitymaze",
     "textureTop": "",
@@ -8,13 +8,13 @@
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 0,
+    "renderType": 2,
+    "customModelName": "arcade_tabletop:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "animateBlockItem": false,
-    "itemTexture": "",
+    "itemTexture": "item_fruitymaze",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -24,7 +24,7 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -3.0,
+        "mx": -2.0,
         "my": 0.0,
         "mz": 1.0,
         "Mx": 18.0,
@@ -33,7 +33,8 @@
         "subtract": false
       }
     ],
-    "name": "Arcade (Fruity Maze)",
+    "customProperties": [],
+    "name": "Arcade Fruity Maze",
     "specialInformation": {
       "fixedValue": []
     },
@@ -79,7 +80,6 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "isCustomSoundType": false,
@@ -103,15 +103,14 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
+    "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "generateFeature": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
@@ -122,6 +121,10 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "State1Cycle"
+    },
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -132,10 +135,6 @@
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
-    "maxGenerateHeight": 64,
-    "normal": "arcademachine_cocktail.geo.json",
-    "displaySettings": "prop1.json",
-    "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "maxGenerateHeight": 64
   }
 }

@@ -14,6 +14,8 @@
     "ya_fnafmod:molten_freddy_spawn_item",
     "ya_fnafmod:lefty_spawn_item",
     "ya_fnafmod:ennard_spawn_item",
-    "ya_fnafmod:electrobab_spawn_item"
+    "ya_fnafmod:electrobab_spawn_item",
+    "ya_fnafmod:spring_crawler_spawn_item",
+    "ya_fnafmod:baby_crawler_spawn_item"
   ]
 }

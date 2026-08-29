@@ -9,12 +9,12 @@ import net.mcreator.yafnafmod.block.display.PizzeriaSignBabysAltDisplayItem;
 public class PizzeriaSignBabysAltDisplayModel extends GeoModel<PizzeriaSignBabysAltDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(PizzeriaSignBabysAltDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "animations/pizzeria_sign2.animation.json");
+		return new ResourceLocation("ya_fnafmod", "animations/circusbabysign.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(PizzeriaSignBabysAltDisplayItem animatable) {
-		return new ResourceLocation("ya_fnafmod", "geo/pizzeria_sign2.geo.json");
+		return new ResourceLocation("ya_fnafmod", "geo/circusbabysign.geo.json");
 	}
 
 	@Override

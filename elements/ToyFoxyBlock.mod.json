@@ -136,6 +136,15 @@
     "normal": "toyfoxy.geo.json",
     "displaySettings": "animatronic_display2.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "animatronic_tfoxy_day-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "toyfoxy.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

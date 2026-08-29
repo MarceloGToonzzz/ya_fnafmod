@@ -141,7 +141,7 @@
     "vanillaToolTier": "NONE",
     "blockstateList": [
       {
-        "texture": "head_freddytoy",
+        "texture": "head_freddytoy-skin",
         "particleTexture": "",
         "renderType": 0,
         "customModelName": "animatronic_head.geo.json",

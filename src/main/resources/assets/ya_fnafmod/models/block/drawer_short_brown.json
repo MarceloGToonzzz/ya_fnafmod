@@ -1,9 +1,9 @@
 {
-  "parent": "ya_fnafmod:custom/drawer_short",
+  "parent": "ya_fnafmod:custom/bedroom_drawer1",
   "textures": {
-    "all": "ya_fnafmod:block/drawershort_brown",
-    "particle": "ya_fnafmod:block/drawershort_brown",
-    "1": "ya_fnafmod:block/drawershort_brown"
+    "all": "ya_fnafmod:block/bedroom_drawer1-brown",
+    "particle": "ya_fnafmod:block/bedroom_drawer1-brown",
+    "0": "ya_fnafmod:block/bedroom_drawer1-brown"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

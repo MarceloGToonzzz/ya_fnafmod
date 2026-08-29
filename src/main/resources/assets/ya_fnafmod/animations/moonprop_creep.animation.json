@@ -8,7 +8,50 @@
 			"loop": true,
 			"animation_length": 5,
 			"bones": {
-				"glasses": {
+				"mouth": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.625": {
+							"vector": [0, 0, 20],
+							"easing": "easeInBounce",
+							"easingArgs": [0.25]
+						},
+						"1.25": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutBack"
+						},
+						"1.875": {
+							"vector": [0, 0, 20],
+							"easing": "easeInBounce",
+							"easingArgs": [0.25]
+						},
+						"2.5": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutBack"
+						},
+						"3.125": {
+							"vector": [0, 0, 20],
+							"easing": "easeInBounce",
+							"easingArgs": [0.25]
+						},
+						"3.75": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutBack"
+						},
+						"4.375": {
+							"vector": [0, 0, 20],
+							"easing": "easeInBounce",
+							"easingArgs": [0.25]
+						},
+						"5.0": {
+							"vector": [0, 0, 0],
+							"easing": "easeInOutBack"
+						}
+					}
+				},
+				"sunglasses": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
@@ -26,45 +69,6 @@
 							"easing": "easeInOutBack"
 						},
 						"4.0": {
-							"vector": [0, 0, 0],
-							"easing": "easeInOutBack"
-						}
-					}
-				},
-				"jaw": {
-					"rotation": {
-						"0.0": {
-							"vector": [0, 0, 0]
-						},
-						"0.625": {
-							"vector": [0, 0, 20],
-							"easing": "easeInOutBack"
-						},
-						"1.25": {
-							"vector": [0, 0, 0],
-							"easing": "easeInOutBack"
-						},
-						"1.875": {
-							"vector": [0, 0, 20],
-							"easing": "easeInOutBack"
-						},
-						"2.5": {
-							"vector": [0, 0, 0],
-							"easing": "easeInOutBack"
-						},
-						"3.125": {
-							"vector": [0, 0, 20],
-							"easing": "easeInOutBack"
-						},
-						"3.75": {
-							"vector": [0, 0, 0],
-							"easing": "easeInOutBack"
-						},
-						"4.375": {
-							"vector": [0, 0, 20],
-							"easing": "easeInOutBack"
-						},
-						"5.0": {
 							"vector": [0, 0, 0],
 							"easing": "easeInOutBack"
 						}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade_tabletop",
+  "textures": {
+    "all": "ya_fnafmod:block/arcademachinecocktail_midnightmotorist",
+    "particle": "ya_fnafmod:block/arcademachinecocktail_midnightmotorist",
+    "0": "ya_fnafmod:block/arcademachinecocktail_midnightmotorist"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/clock",
+  "textures": {
+    "all": "ya_fnafmod:block/clock_cchica",
+    "particle": "ya_fnafmod:block/clock_cchica",
+    "1": "ya_fnafmod:block/clock_cchica"
+  },
+  "render_type": "cutout_mipped"
+}

@@ -53,7 +53,7 @@ public class PizzeriaSignJrs2Block extends BaseEntityBlock implements EntityBloc
 							return 10;
 						return 0;
 					}
-				}.getLightLevel())).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+				}.getLightLevel())).noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

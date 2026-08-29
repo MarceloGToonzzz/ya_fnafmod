@@ -94,6 +94,58 @@
         "customModelName": "balloons:balloon8",
         "luminance": 0,
         "boundingBoxes": []
+      },
+      {
+        "texture": "balloons_9",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloons:balloon9",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloons_10",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloons:balloon10",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloons_11",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloons:balloon11",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "balloons_12",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "balloons:balloon12",
+        "luminance": 0,
+        "boundingBoxes": []
       }
     ]
   }

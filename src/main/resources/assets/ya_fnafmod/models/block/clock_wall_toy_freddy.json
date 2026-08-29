@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/clock",
+  "textures": {
+    "all": "ya_fnafmod:block/clock_tfreddy",
+    "particle": "ya_fnafmod:block/clock_tfreddy",
+    "1": "ya_fnafmod:block/clock_tfreddy"
+  },
+  "render_type": "cutout_mipped"
+}

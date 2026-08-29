@@ -37,7 +37,7 @@ public class SpecialInfoProcedureProcedure {
 		String final_thing = "";
 		String wubawuba = "";
 		if ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("spawn_item") && !(ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("car")
-				&& (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("ya_fnafmod:")) {
+				&& ((ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("ya_fnafmod:") || (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).contains("ya_fnafmod2:"))) {
 			cur_pos = 1;
 			entity_registry = (ForgeRegistries.ITEMS.getKey(itemstack.getItem()).toString()).replace("_spawn_item", "");
 			final_thing = "";

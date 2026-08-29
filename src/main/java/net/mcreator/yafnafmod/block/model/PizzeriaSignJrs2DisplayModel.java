@@ -19,6 +19,6 @@ public class PizzeriaSignJrs2DisplayModel extends GeoModel<PizzeriaSignJrs2Displ
 
 	@Override
 	public ResourceLocation getTextureResource(PizzeriaSignJrs2DisplayItem entity) {
-		return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs2.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs2-off.png");
 	}
 }

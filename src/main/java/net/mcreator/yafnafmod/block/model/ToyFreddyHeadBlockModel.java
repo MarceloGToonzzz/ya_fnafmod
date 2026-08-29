@@ -27,7 +27,7 @@ public class ToyFreddyHeadBlockModel extends GeoModel<ToyFreddyHeadTileEntity> {
 	public ResourceLocation getTextureResource(ToyFreddyHeadTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/head_freddytoy.png");
+			return new ResourceLocation("ya_fnafmod", "textures/block/head_freddytoy-skin.png");
 		return new ResourceLocation("ya_fnafmod", "textures/block/head_freddytoy.png");
 	}
 }

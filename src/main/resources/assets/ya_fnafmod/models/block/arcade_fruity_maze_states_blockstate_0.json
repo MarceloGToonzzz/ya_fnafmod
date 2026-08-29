@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/arcade_tabletop",
+  "textures": {
+    "all": "ya_fnafmod:block/arcademachinecocktail_fruitymaze_on",
+    "particle": "ya_fnafmod:block/arcademachinecocktail_fruitymaze",
+    "0": "ya_fnafmod:block/arcademachinecocktail_fruitymaze_on"
+  },
+  "render_type": "cutout_mipped"
+}

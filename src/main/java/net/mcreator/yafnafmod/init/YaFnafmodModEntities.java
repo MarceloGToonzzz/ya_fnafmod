@@ -45,6 +45,8 @@ import net.mcreator.yafnafmod.entity.SpringlockEllaSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieSuitEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieEntity;
 import net.mcreator.yafnafmod.entity.SpringbonnieDayEntity;
+import net.mcreator.yafnafmod.entity.SpringCrawlerEntity;
+import net.mcreator.yafnafmod.entity.SpringCrawlerDayEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogEntity;
 import net.mcreator.yafnafmod.entity.SparkyDogDayEntity;
 import net.mcreator.yafnafmod.entity.ShotgunShellProjectileEntity;
@@ -243,6 +245,8 @@ import net.mcreator.yafnafmod.entity.BallPurpleProjectileEntity;
 import net.mcreator.yafnafmod.entity.BallOrangeProjectileEntity;
 import net.mcreator.yafnafmod.entity.BallGreenProjectileEntity;
 import net.mcreator.yafnafmod.entity.BallBlueProjectileEntity;
+import net.mcreator.yafnafmod.entity.BabyCrawlerEntity;
+import net.mcreator.yafnafmod.entity.BabyCrawlerDayEntity;
 import net.mcreator.yafnafmod.YaFnafmodMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -1146,6 +1150,22 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<GoldenFreddySuitEntity>of(GoldenFreddySuitEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldenFreddySuitEntity::new)
 
 					.sized(0.6f, 1.5f));
+	public static final RegistryObject<EntityType<SpringCrawlerEntity>> SPRING_CRAWLER = register("spring_crawler",
+			EntityType.Builder.<SpringCrawlerEntity>of(SpringCrawlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringCrawlerEntity::new)
+
+					.sized(0.6f, 0.8125f));
+	public static final RegistryObject<EntityType<SpringCrawlerDayEntity>> SPRING_CRAWLER_DAY = register("spring_crawler_day",
+			EntityType.Builder.<SpringCrawlerDayEntity>of(SpringCrawlerDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpringCrawlerDayEntity::new)
+
+					.sized(0.6f, 0.8125f));
+	public static final RegistryObject<EntityType<BabyCrawlerEntity>> BABY_CRAWLER = register("baby_crawler",
+			EntityType.Builder.<BabyCrawlerEntity>of(BabyCrawlerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyCrawlerEntity::new)
+
+					.sized(0.6f, 0.8125f));
+	public static final RegistryObject<EntityType<BabyCrawlerDayEntity>> BABY_CRAWLER_DAY = register("baby_crawler_day",
+			EntityType.Builder.<BabyCrawlerDayEntity>of(BabyCrawlerDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyCrawlerDayEntity::new)
+
+					.sized(0.6f, 0.8125f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1374,6 +1394,10 @@ public class YaFnafmodModEntities {
 			MemoryChicaEntity.init();
 			MemoryChicaDayEntity.init();
 			GoldenFreddySuitEntity.init();
+			SpringCrawlerEntity.init();
+			SpringCrawlerDayEntity.init();
+			BabyCrawlerEntity.init();
+			BabyCrawlerDayEntity.init();
 		});
 	}
 
@@ -1597,5 +1621,9 @@ public class YaFnafmodModEntities {
 		event.put(MEMORY_CHICA.get(), MemoryChicaEntity.createAttributes().build());
 		event.put(MEMORY_CHICA_DAY.get(), MemoryChicaDayEntity.createAttributes().build());
 		event.put(GOLDEN_FREDDY_SUIT.get(), GoldenFreddySuitEntity.createAttributes().build());
+		event.put(SPRING_CRAWLER.get(), SpringCrawlerEntity.createAttributes().build());
+		event.put(SPRING_CRAWLER_DAY.get(), SpringCrawlerDayEntity.createAttributes().build());
+		event.put(BABY_CRAWLER.get(), BabyCrawlerEntity.createAttributes().build());
+		event.put(BABY_CRAWLER_DAY.get(), BabyCrawlerDayEntity.createAttributes().build());
 	}
 }

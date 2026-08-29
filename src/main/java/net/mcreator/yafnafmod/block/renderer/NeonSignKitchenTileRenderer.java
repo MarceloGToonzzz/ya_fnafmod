@@ -8,10 +8,12 @@ import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.yafnafmod.block.model.NeonSignKitchenBlockModel;
 import net.mcreator.yafnafmod.block.entity.NeonSignKitchenTileEntity;
+import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
 public class NeonSignKitchenTileRenderer extends GeoBlockRenderer<NeonSignKitchenTileEntity> {
 	public NeonSignKitchenTileRenderer() {
 		super(new NeonSignKitchenBlockModel());
+		this.addRenderLayer(new AutoGlowingGeoLayer<>(this));
 	}
 
 	@Override

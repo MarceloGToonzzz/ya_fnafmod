@@ -14,7 +14,7 @@
     "emissiveRendering": true,
     "displayFluidOverlay": false,
     "animateBlockItem": false,
-    "itemTexture": "",
+    "itemTexture": "neonsign-yellow",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -101,7 +101,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 3,
+    "luminance": 1,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "hasInventory": false,

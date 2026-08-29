@@ -1,3 +1,6 @@
 {
-  "parent": "ya_fnafmod:displaysettings/prop1"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ya_fnafmod:item/item-stagelight_neon_pink"
+  }
 }

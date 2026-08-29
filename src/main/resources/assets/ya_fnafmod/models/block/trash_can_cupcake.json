@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/charactertrashcan",
+  "textures": {
+    "all": "ya_fnafmod:block/charactertrashcan_cupcake",
+    "particle": "ya_fnafmod:block/charactertrashcan_cupcake",
+    "4": "ya_fnafmod:block/charactertrashcan_cupcake"
+  },
+  "render_type": "cutout_mipped"
+}

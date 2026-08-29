@@ -1,0 +1,22 @@
+{
+  "_fv": 73,
+  "_type": "blockstates",
+  "definition": {
+    "block": "TrashCanFreddy",
+    "blockstateList": [
+      {
+        "texture": "charactertrashcan_freddy",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "charactertrashcan-diag:default",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

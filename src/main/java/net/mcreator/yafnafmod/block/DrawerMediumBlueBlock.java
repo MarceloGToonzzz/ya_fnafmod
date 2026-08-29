@@ -44,10 +44,10 @@ public class DrawerMediumBlueBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(4, 0, 0.5, 28, 15, 12.5);
-			case NORTH -> box(-12, 0, 3.5, 12, 15, 15.5);
-			case EAST -> box(0.5, 0, -12, 12.5, 15, 12);
-			case WEST -> box(3.5, 0, 4, 15.5, 15, 28);
+			default -> box(4, 0, 0.5, 28, 20, 15.5);
+			case NORTH -> box(-12, 0, 0.5, 12, 20, 15.5);
+			case EAST -> box(0.5, 0, -12, 15.5, 20, 12);
+			case WEST -> box(0.5, 0, 4, 15.5, 20, 28);
 		};
 	}
 

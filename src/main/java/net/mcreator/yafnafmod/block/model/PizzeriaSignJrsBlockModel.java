@@ -35,11 +35,11 @@ public class PizzeriaSignJrsBlockModel extends GeoModel<PizzeriaSignJrsTileEntit
 	public ResourceLocation getTextureResource(PizzeriaSignJrsTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs1.png");
+			return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs1-off.png");
 		if (blockstate == 2)
 			return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs1.png");
 		if (blockstate == 3)
 			return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs1.png");
-		return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs1.png");
+		return new ResourceLocation("ya_fnafmod", "textures/block/fnaf6sign_jrs1-off.png");
 	}
 }

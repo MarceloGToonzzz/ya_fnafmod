@@ -39,6 +39,8 @@ import net.mcreator.yafnafmod.client.renderer.SpringlockEllaSuitRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieSuitRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.SpringbonnieDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.SpringCrawlerRenderer;
+import net.mcreator.yafnafmod.client.renderer.SpringCrawlerDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogRenderer;
 import net.mcreator.yafnafmod.client.renderer.SparkyDogDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.ShadowFreddySuitRenderer;
@@ -229,6 +231,8 @@ import net.mcreator.yafnafmod.client.renderer.BalloraRenderer;
 import net.mcreator.yafnafmod.client.renderer.BalloraDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.BalloonBoyRenderer;
 import net.mcreator.yafnafmod.client.renderer.BalloonBoyDayRenderer;
+import net.mcreator.yafnafmod.client.renderer.BabyCrawlerRenderer;
+import net.mcreator.yafnafmod.client.renderer.BabyCrawlerDayRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class YaFnafmodModEntityRenderers {
@@ -461,5 +465,9 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_CHICA.get(), MemoryChicaRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.MEMORY_CHICA_DAY.get(), MemoryChicaDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.GOLDEN_FREDDY_SUIT.get(), GoldenFreddySuitRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SPRING_CRAWLER.get(), SpringCrawlerRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.SPRING_CRAWLER_DAY.get(), SpringCrawlerDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BABY_CRAWLER.get(), BabyCrawlerRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.BABY_CRAWLER_DAY.get(), BabyCrawlerDayRenderer::new);
 	}
 }
