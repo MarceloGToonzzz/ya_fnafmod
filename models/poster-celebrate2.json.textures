@@ -5,6 +5,30 @@
         "1": "poster_fnaf2-celebrate"
       },
       "name": "default"
+    },
+    "fredbear1": {
+      "map": {
+        "1": "poster_fnaf4_sb-fredbear1_big"
+      },
+      "name": "fredbear1"
+    },
+    "fredbear2": {
+      "map": {
+        "1": "poster_fnaf4_sb-fredbear2_big"
+      },
+      "name": "fredbear2"
+    },
+    "fredbear2torn": {
+      "map": {
+        "1": "poster_fnaf4_sb-fredbear2_big-torn"
+      },
+      "name": "fredbear2torn"
+    },
+    "fredbear3": {
+      "map": {
+        "1": "poster_fnaf4_sb-fredbear3_big"
+      },
+      "name": "fredbear3"
     }
   }
 }

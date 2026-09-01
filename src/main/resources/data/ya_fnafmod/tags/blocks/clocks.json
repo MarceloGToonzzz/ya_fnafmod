@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "ya_fnafmod:grandfather_clock",
+    "ya_fnafmod:alarm_clock",
+    "ya_fnafmod:circus_baby_clock",
+    "ya_fnafmod:alarm_clock_old",
+    "ya_fnafmod:sun_clock",
+    "ya_fnafmod:clock_wall",
+    "ya_fnafmod:clock_wall_freddy",
+    "ya_fnafmod:clock_wall_bonnie",
+    "ya_fnafmod:clock_wall_chica",
+    "ya_fnafmod:clock_wall_foxy",
+    "ya_fnafmod:clock_wall_fredbear",
+    "ya_fnafmod:clock_wall_springbonnie",
+    "ya_fnafmod:clock_wall_toy_freddy",
+    "ya_fnafmod:clock_wall_toy_bonnie",
+    "ya_fnafmod:clock_wall_toy_chica",
+    "ya_fnafmod:clock_wall_toy_foxy"
+  ]
+}

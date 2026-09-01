@@ -341,6 +341,13 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.AGONY.get());
 				tabData.accept(YaFnafmodModItems.DEATH_COIN.get());
 				tabData.accept(YaFnafmodModItems.CRACKER.get());
+				tabData.accept(YaFnafmodModItems.TICKET.get());
+				tabData.accept(YaFnafmodModItems.RED_GUMBALL.get());
+				tabData.accept(YaFnafmodModItems.YELLOW_GUMBALL.get());
+				tabData.accept(YaFnafmodModItems.GREEN_GUMBALL.get());
+				tabData.accept(YaFnafmodModItems.BLUE_GUMBALL.get());
+				tabData.accept(YaFnafmodModItems.PURPLE_GUMBALL.get());
+				tabData.accept(YaFnafmodModItems.RASC_REMOTE.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_BLOCKS = REGISTRY.register("ya_fnaf_mod_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_blocks")).icon(() -> new ItemStack(YaFnafmodModBlocks.BLACK_WHITE_TILES.get())).displayItems((parameters, tabData) -> {

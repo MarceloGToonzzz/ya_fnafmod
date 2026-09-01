@@ -65,10 +65,10 @@ public class PosterFredbear2BigBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(2, 0, 0, 30, 24, 1);
-			case NORTH -> box(-14, 0, 15, 14, 24, 16);
-			case EAST -> box(0, 0, -14, 1, 24, 14);
-			case WEST -> box(15, 0, 2, 16, 24, 30);
+			default -> box(-16, -4, 0, 16, 20, 0.1);
+			case NORTH -> box(0, -4, 15.9, 32, 20, 16);
+			case EAST -> box(0, -4, 0, 0.1, 20, 32);
+			case WEST -> box(15.9, -4, -16, 16, 20, 16);
 		};
 	}
 

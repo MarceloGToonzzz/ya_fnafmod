@@ -191,6 +191,24 @@
         "0": "poster_fnaf1_foxy"
       },
       "name": "foxy1"
+    },
+    "fredbear1": {
+      "map": {
+        "0": "poster_fnaf4_sb-fredbear1"
+      },
+      "name": "fredbear1"
+    },
+    "fredbear2": {
+      "map": {
+        "0": "poster_fnaf4_sb-fredbear2"
+      },
+      "name": "fredbear2"
+    },
+    "springbonnie1": {
+      "map": {
+        "0": "poster_fnaf4_sb-springbonnie"
+      },
+      "name": "springbonnie1"
     }
   }
 }

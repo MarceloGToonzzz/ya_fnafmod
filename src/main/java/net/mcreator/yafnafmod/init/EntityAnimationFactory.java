@@ -62,6 +62,7 @@ import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.RatEntity;
+import net.mcreator.yafnafmod.entity.RascEntity;
 import net.mcreator.yafnafmod.entity.RaccoonEntity;
 import net.mcreator.yafnafmod.entity.PurpleGuyEntity;
 import net.mcreator.yafnafmod.entity.PuppetFreddybearEntity;
@@ -1764,6 +1765,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof BabyCrawlerDayEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof RascEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

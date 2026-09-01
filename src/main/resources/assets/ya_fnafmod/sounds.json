@@ -1819,5 +1819,23 @@
         "stream": false
       }
     ]
+  },
+  "ticketmuncher": {
+    "subtitle": "subtitles.ticketmuncher",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:ticket_muncher",
+        "stream": false
+      }
+    ]
+  },
+  "pinball": {
+    "subtitle": "subtitles.pinball",
+    "sounds": [
+      {
+        "name": "ya_fnafmod:pinball",
+        "stream": false
+      }
+    ]
   }
 }

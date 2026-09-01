@@ -70,6 +70,7 @@ import net.mcreator.yafnafmod.client.renderer.RetroChicaDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroBonnieRenderer;
 import net.mcreator.yafnafmod.client.renderer.RetroBonnieDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.RatRenderer;
+import net.mcreator.yafnafmod.client.renderer.RascRenderer;
 import net.mcreator.yafnafmod.client.renderer.RaccoonRenderer;
 import net.mcreator.yafnafmod.client.renderer.PurpleGuyRenderer;
 import net.mcreator.yafnafmod.client.renderer.PuppetRenderer;
@@ -469,5 +470,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.SPRING_CRAWLER_DAY.get(), SpringCrawlerDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.BABY_CRAWLER.get(), BabyCrawlerRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.BABY_CRAWLER_DAY.get(), BabyCrawlerDayRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.RASC.get(), RascRenderer::new);
 	}
 }

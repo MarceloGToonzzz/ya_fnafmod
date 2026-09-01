@@ -9,6 +9,8 @@ import net.mcreator.yafnafmod.entity.FuntimeFreddyDayEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyEntity;
 import net.mcreator.yafnafmod.entity.FuntimeFoxyDayEntity;
 import net.mcreator.yafnafmod.entity.BonbonEntity;
+import net.mcreator.yafnafmod.entity.BabyCrawlerEntity;
+import net.mcreator.yafnafmod.entity.BabyCrawlerDayEntity;
 
 public class Fnaf5SkinsProcedure {
 	public static void execute(Entity entiti, double skin, String suffixa) {
@@ -34,10 +36,14 @@ public class Fnaf5SkinsProcedure {
 				animatable.setTexture(("ftfoxy" + suffix));
 			if (entiti instanceof LolbitEntity animatable)
 				animatable.setTexture(("lolbit" + suffix));
+			if (entiti instanceof BabyCrawlerEntity animatable)
+				animatable.setTexture(("babycrawler_rainbow" + suffix));
+			if (entiti instanceof BabyCrawlerDayEntity animatable)
+				animatable.setTexture(("babycrawler_rainbow" + suffix));
 		} else if (skin == 1) {
 			if (entiti instanceof FuntimeFreddyDayEntity animatable)
 				animatable.setTexture(("ftfreddy_novel" + suffix));
-			if ((entiti instanceof FuntimeFreddyEntity _datEntL11 && _datEntL11.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+			if ((entiti instanceof FuntimeFreddyEntity _datEntL13 && _datEntL13.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
 				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy_novel" + suffix));
 			} else {
@@ -52,10 +58,14 @@ public class Fnaf5SkinsProcedure {
 				animatable.setTexture(("ftfoxy_beta" + suffix));
 			if (entiti instanceof LolbitEntity animatable)
 				animatable.setTexture(("lolbit_racer" + suffix));
+			if (entiti instanceof BabyCrawlerEntity animatable)
+				animatable.setTexture(("babycrawler_grimace" + suffix));
+			if (entiti instanceof BabyCrawlerDayEntity animatable)
+				animatable.setTexture(("babycrawler_grimace" + suffix));
 		} else if (skin == 2) {
 			if (entiti instanceof FuntimeFreddyDayEntity animatable)
 				animatable.setTexture(("ftfreddy_ctw" + suffix));
-			if ((entiti instanceof FuntimeFreddyEntity _datEntL21 && _datEntL21.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
+			if ((entiti instanceof FuntimeFreddyEntity _datEntL25 && _datEntL25.getEntityData().get(FuntimeFreddyEntity.DATA_has_bonbon)) == true) {
 				if (entiti instanceof FuntimeFreddyEntity animatable)
 					animatable.setTexture(("ftfreddy_ctw" + suffix));
 			} else {
@@ -66,6 +76,10 @@ public class Fnaf5SkinsProcedure {
 				animatable.setTexture(("wsfreddy_corner" + suffix));
 			if (entiti instanceof BonbonEntity animatable)
 				animatable.setTexture(("bonbon_ctw" + suffix));
+			if (entiti instanceof BabyCrawlerEntity animatable)
+				animatable.setTexture(("babycrawler_curly" + suffix));
+			if (entiti instanceof BabyCrawlerDayEntity animatable)
+				animatable.setTexture(("babycrawler_curly" + suffix));
 		}
 	}
 }

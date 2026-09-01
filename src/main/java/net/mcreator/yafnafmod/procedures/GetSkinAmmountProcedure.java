@@ -125,6 +125,9 @@ public class GetSkinAmmountProcedure {
 		} else if ((baseAnimatronic).equals("funtime_foxy")) {
 			res = 1;
 		}
+		if ((baseAnimatronic).equals("baby_crawler")) {
+			res = 2;
+		}
 		if ((baseAnimatronic).equals("lefty")) {
 			res = 1;
 		}

@@ -62,7 +62,7 @@
 					"name": "headrot",
 					"parent": "upper torso",
 					"pivot": [0, 20.5, -1],
-					"rotation": [90, 0, 0]
+					"rotation": [-90, 0, 0]
 				},
 				{
 					"name": "Head",

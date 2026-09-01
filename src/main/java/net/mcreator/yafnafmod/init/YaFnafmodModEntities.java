@@ -77,6 +77,7 @@ import net.mcreator.yafnafmod.entity.RetroChicaDayEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieEntity;
 import net.mcreator.yafnafmod.entity.RetroBonnieDayEntity;
 import net.mcreator.yafnafmod.entity.RatEntity;
+import net.mcreator.yafnafmod.entity.RascEntity;
 import net.mcreator.yafnafmod.entity.RaccoonEntity;
 import net.mcreator.yafnafmod.entity.PurpleGuyEntity;
 import net.mcreator.yafnafmod.entity.PuppetFreddybearEntity;
@@ -1166,6 +1167,10 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<BabyCrawlerDayEntity>of(BabyCrawlerDayEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BabyCrawlerDayEntity::new)
 
 					.sized(0.6f, 0.8125f));
+	public static final RegistryObject<EntityType<RascEntity>> RASC = register("rasc",
+			EntityType.Builder.<RascEntity>of(RascEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RascEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1398,6 +1403,7 @@ public class YaFnafmodModEntities {
 			SpringCrawlerDayEntity.init();
 			BabyCrawlerEntity.init();
 			BabyCrawlerDayEntity.init();
+			RascEntity.init();
 		});
 	}
 
@@ -1625,5 +1631,6 @@ public class YaFnafmodModEntities {
 		event.put(SPRING_CRAWLER_DAY.get(), SpringCrawlerDayEntity.createAttributes().build());
 		event.put(BABY_CRAWLER.get(), BabyCrawlerEntity.createAttributes().build());
 		event.put(BABY_CRAWLER_DAY.get(), BabyCrawlerDayEntity.createAttributes().build());
+		event.put(RASC.get(), RascEntity.createAttributes().build());
 	}
 }

@@ -6,21 +6,10 @@
 		},
 		"animation.rasc.idle": {
 			"loop": true,
-			"animation_length": 2,
 			"bones": {
 				"top": {
 					"rotation": {
-						"0.0": {
-							"vector": [0, 2.5, 0]
-						},
-						"1.0": {
-							"vector": [0, -2.5, 0],
-							"easing": "easeInOutBack"
-						},
-						"2.0": {
-							"vector": [0, 2.5, 0],
-							"easing": "easeInOutBack"
-						}
+						"vector": [0, "-math.round(math.sin(query.anim_time * 120) * 5)", 0]
 					}
 				}
 			}
@@ -71,15 +60,13 @@
 				"top": {
 					"rotation": {
 						"0.0": {
-							"vector": [0, 2.5, 0]
+							"vector": [0, "-math.round(math.sin(query.anim_time * 120) * 5)", 0]
 						},
 						"0.5": {
-							"vector": [0, -2.5, 0],
-							"easing": "easeInOutBack"
+							"vector": [0, "-math.round(math.sin(query.anim_time * -120) * 5)", 0]
 						},
 						"1.0": {
-							"vector": [0, 2.5, 0],
-							"easing": "easeInOutBack"
+							"vector": [0, 0, 0]
 						}
 					}
 				},

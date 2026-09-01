@@ -11,11 +11,11 @@ public class PizzeriaSignBabysAltBlockModel extends GeoModel<PizzeriaSignBabysAl
 	public ResourceLocation getAnimationResource(PizzeriaSignBabysAltTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "animations/pizzeria_sign2_offset.animation.json");
+			return new ResourceLocation("ya_fnafmod", "animations/circusbabysign_offset.animation.json");
 		if (blockstate == 2)
-			return new ResourceLocation("ya_fnafmod", "animations/pizzeria_sign2.animation.json");
+			return new ResourceLocation("ya_fnafmod", "animations/circusbabysign.animation.json");
 		if (blockstate == 3)
-			return new ResourceLocation("ya_fnafmod", "animations/pizzeria_sign2_offset.animation.json");
+			return new ResourceLocation("ya_fnafmod", "animations/circusbabysign_offset.animation.json");
 		return new ResourceLocation("ya_fnafmod", "animations/circusbabysign.animation.json");
 	}
 
@@ -23,11 +23,11 @@ public class PizzeriaSignBabysAltBlockModel extends GeoModel<PizzeriaSignBabysAl
 	public ResourceLocation getModelResource(PizzeriaSignBabysAltTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("ya_fnafmod", "geo/pizzeria_sign2_offset.geo.json");
+			return new ResourceLocation("ya_fnafmod", "geo/circusbabysign_offset.geo.json");
 		if (blockstate == 2)
-			return new ResourceLocation("ya_fnafmod", "geo/pizzeria_sign2.geo.json");
+			return new ResourceLocation("ya_fnafmod", "geo/circusbabysign.geo.json");
 		if (blockstate == 3)
-			return new ResourceLocation("ya_fnafmod", "geo/pizzeria_sign2_offset.geo.json");
+			return new ResourceLocation("ya_fnafmod", "geo/circusbabysign_offset.geo.json");
 		return new ResourceLocation("ya_fnafmod", "geo/circusbabysign.geo.json");
 	}
 

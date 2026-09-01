@@ -13194,6 +13194,10 @@
         ],
         "dependencies": [
           {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
             "name": "entity",
             "type": "entity"
           },
@@ -89226,7 +89230,7 @@
       "name": "YafnafmodConfig",
       "type": "config",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "yafnafmod_config",
       "metadata": {
         "files": [
@@ -93152,6 +93156,328 @@
         ]
       },
       "path": "~/Items/Spawn Items"
+    },
+    {
+      "name": "Ticket",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/models/item/ticket.json",
+          "src/main/java/net/mcreator/yafnafmod/item/TicketItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "TicketMuncher",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_muncher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/procedures/TicketMuncherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedGumball",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_gumball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/item/RedGumballItem.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/red_gumball.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "YellowGumball",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_gumball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/item/YellowGumballItem.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/yellow_gumball.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "GreenGumball",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_gumball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/models/item/green_gumball.json",
+          "src/main/java/net/mcreator/yafnafmod/item/GreenGumballItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "BlueGumball",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_gumball",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/models/item/blue_gumball.json",
+          "src/main/java/net/mcreator/yafnafmod/item/BlueGumballItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "PurpleGumball",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gumball",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/item/PurpleGumballItem.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/purple_gumball.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "ArcadeInteract",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arcade_interact",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/procedures/ArcadeInteractProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rasc",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rasc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/client/renderer/RascRenderer.java",
+          "src/main/java/net/mcreator/yafnafmod/entity/RascEntity.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/rasc_spawn_egg.json",
+          "src/main/java/net/mcreator/yafnafmod/entity/model/RascModel.java",
+          "src/main/resources/data/ya_fnafmod/forge/biome_modifier/rasc_biome_modifier.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "RascRemote",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rasc_remote",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/item/RascRemoteItem.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/rasc_remote.json"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "RascRightClickedOnEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rasc_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/procedures/RascRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "RascLure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rasc_lure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/procedures/RascLureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "RascRemoteRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rasc_remote_rightclicked_on_block",
+      "metadata": {
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/procedures/RascRemoteRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "RascRemoteData",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rasc_remote_data",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/procedures/RascRemoteDataProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "RascBlockOnBlockRightClicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rasc_block_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/procedures/RascBlockOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -94487,6 +94813,22 @@
       ],
       "category": "ambient",
       "subtitle": "Unsettling footsteps"
+    },
+    {
+      "name": "ticketmuncher",
+      "files": [
+        "ticket_muncher"
+      ],
+      "category": "neutral",
+      "subtitle": "Ticket muncher munching ticket"
+    },
+    {
+      "name": "pinball",
+      "files": [
+        "pinball"
+      ],
+      "category": "neutral",
+      "subtitle": "Pinball"
     }
   ],
   "tag_elements": {
@@ -98096,6 +98438,24 @@
       "~CUSTOM:StagePlankOrangeFence",
       "~CUSTOM:StagePlankLightFence"
     ],
+    "BLOCKS:mod:clocks": [
+      "CUSTOM:GrandfatherClock",
+      "CUSTOM:AlarmClock",
+      "CUSTOM:CircusBabyClock",
+      "CUSTOM:AlarmClockOld",
+      "CUSTOM:SunClock",
+      "CUSTOM:ClockWall",
+      "CUSTOM:ClockWallFreddy",
+      "CUSTOM:ClockWallBonnie",
+      "CUSTOM:ClockWallChica",
+      "CUSTOM:ClockWallFoxy",
+      "CUSTOM:ClockWallFredbear",
+      "CUSTOM:ClockWallSpringbonnie",
+      "CUSTOM:ClockWallToyFreddy",
+      "CUSTOM:ClockWallToyBonnie",
+      "CUSTOM:ClockWallToyChica",
+      "CUSTOM:ClockWallToyFoxy"
+    ],
     "ENTITIES:mod:mask_foolers": [
       "CUSTOM:WitheredBonnie",
       "CUSTOM:WitheredChica",
@@ -98608,6 +98968,9 @@
       "CUSTOM:HappyFrog",
       "CUSTOM:Neddbear",
       "CUSTOM:Pigpatch"
+    ],
+    "BLOCKS:mod:ticketmuncher": [
+      "CUSTOM:ArcadeTicketMuncherCupcake"
     ],
     "BLOCKS:tycoonlib:counter": [
       "CUSTOM:PrizeCounter",
@@ -99640,6 +100003,11 @@
       "CUSTOM:ShadowBonnie",
       "CUSTOM:ShadowFreddy",
       "CUSTOM:MangleDay"
+    ],
+    "BLOCKS:mod:alarm_clocks": [
+      "CUSTOM:GrandfatherClock",
+      "CUSTOM:AlarmClock",
+      "CUSTOM:AlarmClockOld"
     ]
   },
   "tab_element_order": {
@@ -99890,7 +100258,14 @@
       "Remnant",
       "Agony",
       "DeathCoin",
-      "Cracker"
+      "Cracker",
+      "Ticket",
+      "RedGumball",
+      "YellowGumball",
+      "GreenGumball",
+      "BlueGumball",
+      "PurpleGumball",
+      "RascRemote"
     ],
     "CUSTOM:YaFNAFModBlocks": [
       "DarkWall",
@@ -103898,6 +104273,7 @@
     "en_us": {
       "block.ya_fnafmod.cracked_purple_yellow_tiles": "Purple Yellow Tiles (Cracked)",
       "block.ya_fnafmod.fancy_red_wall_red_tiles": "Fancy Red Wall Tiles (Red Stripe)",
+      "entity.ya_fnafmod.rasc": "RASC",
       "gui.ya_fnafmod.custom_pizzeria_sign_gui.button_apply": "Apply",
       "block.ya_fnafmod.faz_oven": "Faz Oven",
       "block.ya_fnafmod.black_stage_bricks_black_extra_tiles_big": "Black Stage Brick Extra Tiles (Big Black Stripe)",
@@ -103907,8 +104283,8 @@
       "block.ya_fnafmod.sns_tile_slab.description_1": "§c(Smiles \u0026 Servos Tiles)",
       "block.ya_fnafmod.big_kitchen_white_door": "Big Kitchen Door",
       "entity.ya_fnafmod.baby_crawler": "Baby Crawler",
-      "block.ya_fnafmod.sns_tile_slab.description_0": "* Custom Design",
       "block.ya_fnafmod.phantom_cupcake_skin": "Phantom Cupcake",
+      "block.ya_fnafmod.sns_tile_slab.description_0": "* Custom Design",
       "block.ya_fnafmod.black_purple_diag_tile_stairs": "Black Purple Diagonal Tile Stairs",
       "block.ya_fnafmod.magenta_stage_bricks_black_extra_tiles_big": "Magenta Stage Brick Extra Tiles (Big Black Stripe)",
       "block.ya_fnafmod.light_wall_black_lime_extra_tiles": "Light Wall Tiles (Black Stripe, Lime Extra Tiles)",
@@ -104168,8 +104544,8 @@
       "block.ya_fnafmod.black_gray_checkered_tile_slab": "Black Gray Checkered Tile Slab",
       "block.ya_fnafmod.green_white_tiles": "Green White Tiles",
       "block.ya_fnafmod.yellow_tile_block_slab": "Yellow Tile Block Slab",
-      "block.ya_fnafmod.cracked_orange_brown_tile_stairs": "Orange Brown Tile Stairs (Cracked)",
       "block.ya_fnafmod.pink_light_blue_big_checkered_tile_slab": "Pink Light Blue Big Checkered Tile Slab",
+      "block.ya_fnafmod.cracked_orange_brown_tile_stairs": "Orange Brown Tile Stairs (Cracked)",
       "block.ya_fnafmod.toolbox_red.description_0": "§cRed",
       "block.ya_fnafmod.black_wine_diag_tile_slab": "Black Wine Diagonal Tile Slab",
       "block.ya_fnafmod.lets_eat_contest_prop": "Lets Eat Contest Prop",
@@ -104228,7 +104604,7 @@
       "block.ya_fnafmod.black_lime_tile_stairs": "Black Lime Tile Stairs",
       "block.ya_fnafmod.cracked_wine_tile_stairs": "Wine Tile Stairs (Cracked)",
       "block.ya_fnafmod.fusebox.description_2": "- Some animatronics like to attack it, so make sure to keep it safe.",
-      "block.ya_fnafmod.box_stuffed": "Cardboard Box (Stuffed)",
+      "block.ya_fnafmod.box_stuffed": "Cardboard Box (Stuffed Toys)",
       "block.ya_fnafmod.fancy_light_wall_black_tiles": "Fancy Light Wall Tiles (Black Stripe)",
       "block.ya_fnafmod.circus_light_pink": "Circus Gallery Light (Pink)",
       "block.ya_fnafmod.black_wall_red_top": "Black Wall Top (Red Stripe)",
@@ -104541,6 +104917,7 @@
       "block.ya_fnafmod.cyan_tile_slab": "Cyan Tile Slab",
       "block.ya_fnafmod.cracked_black_light_blue_tiles": "Black Light Blue Tiles",
       "block.ya_fnafmod.white_stage_bricks_black_extra_tiles_big": "White Stage Brick Extra Tiles (Big Black Stripe)",
+      "subtitles.ticketmuncher": "Ticket muncher munching ticket",
       "block.ya_fnafmod.stage_bricks_black_extra_tiles_big": "Stage Brick Extra Tiles (Big Black Stripe)",
       "block.ya_fnafmod.cracked_black_orange_tiles": "Black Orange Tiles (Cracked)",
       "block.ya_fnafmod.foil_party_hat.description_0": "Stackable up to 4!",
@@ -105291,6 +105668,7 @@
       "block.ya_fnafmod.red_tile_slab": "Red Tile Slab",
       "block.ya_fnafmod.yellow_stage_bricks_red_extra_tiles_alternate": "Yellow Stage Brick Extra Tiles (Alternate Red Stripe)",
       "block.ya_fnafmod.fancy_dark_wall_black_tiles_big": "Fancy Dark Wall Tiles (Big Black Stripe)",
+      "item.ya_fnafmod.rasc_spawn_egg": "RASC Spawn Egg",
       "block.ya_fnafmod.curtain_checkerboard_purple_thin": "Purple Checkerboard Curtain (Thin)",
       "block.ya_fnafmod.poster_fredbear_3_big": "Fredbear\u0027s Poster",
       "block.ya_fnafmod.beige_white_diag_tiles": "Beige White Diagonal Tiles",
@@ -105801,6 +106179,7 @@
       "block.ya_fnafmod.office_desk_fnaf_sl": "Office Desk (FNAF SL)",
       "block.ya_fnafmod.cutout_helpy": "Cutout (Helpy)",
       "block.ya_fnafmod.movie_purple_wall_red_extra_tiles_big": "Movie Purple Wall Extra Tiles (Big Red Stripe)",
+      "item.ya_fnafmod.blue_gumball": "Blue Gumball",
       "block.ya_fnafmod.arcade_raze": "Arcade Cabinet",
       "block.ya_fnafmod.cutout_fredbear_icecream": "Cutout (Icecream Fredbear)",
       "gui.ya_fnafmod.locker_gui.label_locker": "Locker",
@@ -106309,6 +106688,7 @@
       "item.ya_fnafmod.retro_bonnie_day_spawn_egg": "Vintage Bonnie (Daytime) Spawn Egg",
       "block.ya_fnafmod.cyan_wall_red_extra_tiles_alternate": "Cyan Wall Extra Tiles (Alternate Red Stripe)",
       "item.ya_fnafmod.vr_headset_toy_freddy_leggings": "Nostalgic Freddy Suit Leggings",
+      "item.ya_fnafmod.purple_gumball": "Purple Gumball",
       "block.ya_fnafmod.circus_gallery_tile_slab": "Circus Gallery Tile Slab",
       "block.ya_fnafmod.purple_stage_bricks_red_tiles_big_alternate": "Purple Stage Brick Tiles (Big Alternate Red Stripe)",
       "block.ya_fnafmod.beige_checkered_tiles": "Beige Checkered Tiles",
@@ -107106,6 +107486,7 @@
       "block.ya_fnafmod.green_blue_diag_tile_slab": "Green Blue Diagonal Tile Slab",
       "subtitles.sfx_airhorn": "AIRHORN!!!",
       "block.ya_fnafmod.arcade_centipede.description_0": "§6Centipede Arcade",
+      "item.ya_fnafmod.ticket": "Ticket",
       "block.ya_fnafmod.white_wall_red_extra_tiles_alternate": "White Wall Extra Tiles (Alternate Red Stripe)",
       "block.ya_fnafmod.dark_wall_light_stripes": "Dark Wall (Light Stripes)",
       "block.ya_fnafmod.drawer_tall_blue": "Tall Drawer (Blue)",
@@ -107288,6 +107669,7 @@
       "block.ya_fnafmod.carpeted_floor_cyan_tile_stairs": "Carpeted Floor Stairs (Cyan Tiles)",
       "block.ya_fnafmod.wine_stage_bricks_red_tiles_big": "Wine Stage Brick Tiles (Big Red Stripe)",
       "block.ya_fnafmod.pink_light_blue_checkered_tile_slab": "Pink Light Blue Checkered Tile Slab",
+      "item.ya_fnafmod.green_gumball": "Green Gumball",
       "subtitles.anim_minireena_giggle": "Minireena giggles",
       "block.ya_fnafmod.lime_tile_block_stairs": "Lime Tile Block Stairs",
       "block.ya_fnafmod.hot_pink_white_big_checkered_tile_slab": "Hot Pink White Big Checkered Tile Slab",
@@ -107387,6 +107769,7 @@
       "block.ya_fnafmod.brown_white_tiles": "Brown White Tiles",
       "block.ya_fnafmod.neon_stripes_red": "Neon Stripes",
       "block.ya_fnafmod.stage_plank_dark_fence": "Dark Stage Plank Fence",
+      "item.ya_fnafmod.yellow_gumball": "Yellow Gumball",
       "block.ya_fnafmod.stage_bricks_red_tiles": "Stage Brick Tiles (Red Stripe)",
       "item.ya_fnafmod.springtrap_day_spawn_egg": "Springtrap (Daytime) Spawn Egg",
       "block.ya_fnafmod.lamp_pink": "Lamp (Pink)",
@@ -107795,6 +108178,7 @@
       "block.ya_fnafmod.backstage_door_black.description_0": "Black",
       "block.ya_fnafmod.pink_checkered_tile_stairs": "Pink Checkered Tile Stairs",
       "block.ya_fnafmod.plush_vassilis.description_0": "(dragon)",
+      "item.ya_fnafmod.rasc_remote": "RASC Remote",
       "subtitles.flashbeacon_error": "Flashbeacon doesn\u0027t work",
       "block.ya_fnafmod.black_orange_big_checkered_tiles": "Black Orange Big Checkered Tiles",
       "block.ya_fnafmod.pizzeria_sign_movie_2": "Pizzeria Sign (Movie 2)",
@@ -107902,6 +108286,7 @@
       "item.ya_fnafmod.umbrella_light_gray.description_0": "\u003d Protect yourself from the rain!",
       "item.ya_fnafmod.wall_tile_black_big_green_blue": "Wall Tile Item (Black Stripe, Big Green Blue)",
       "item.ya_fnafmod.umbrella_light_gray.description_1": "\u003d Fall down slower, like a certain Mary Poppins!",
+      "subtitles.pinball": "Pinball",
       "block.ya_fnafmod.pc": "PC",
       "block.ya_fnafmod.green_wall_red_tiles_big_alternate": "Green Wall Tiles (Big Alternate Red Stripe)",
       "item.ya_fnafmod.fredbear_suit_armor_boots": "Springbonnie Suit Armor Boots",
@@ -108415,6 +108800,7 @@
       "block.ya_fnafmod.cyan_stage_brick_slab": "Cyan Stage Brick Slab",
       "block.ya_fnafmod.black_brown_checkered_tile_stairs": "Black Brown Checkered Tile Stairs",
       "block.ya_fnafmod.green_lime_foam_tile_slab": "Green Lime Foam Tile Slab",
+      "item.ya_fnafmod.red_gumball": "Red Gumball",
       "block.ya_fnafmod.neon_stars_light_gray": "Light Gray Neon Stars",
       "block.ya_fnafmod.neon_sign_arcade": "Neon Sign (Arcade)",
       "item.ya_fnafmod.car_fazvan_spawn_item": "Fazvan",

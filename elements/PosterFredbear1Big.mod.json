@@ -2,14 +2,14 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "posterbigr_fredbear1",
+    "texture": "poster_fnaf4_sb-fredbear2_big",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "bigposterr:default",
+    "customModelName": "poster-celebrate2:fredbear2",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -24,11 +24,11 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -14.0,
-        "my": 0.0,
-        "mz": 15.0,
-        "Mx": 14.0,
-        "My": 24.0,
+        "mx": 0.0,
+        "my": -4.0,
+        "mz": 15.9,
+        "Mx": 32.0,
+        "My": 20.0,
         "Mz": 16.0,
         "subtract": false
       }

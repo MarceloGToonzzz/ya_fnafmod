@@ -195,9 +195,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 				if (entity instanceof NightmareBbEntity) {
 					((NightmareBbEntity) entity).setAnimation("animation.bb.sit");
 				}
-				if (entity instanceof Mob _mobSetNoAi) {
-					_mobSetNoAi.setNoAi(true);
-				}
+				if (entity instanceof Mob _mob63)
+					_mob63.setNoAi(true);
 			} else {
 				if (entity instanceof PlushtrapEntity) {
 					((PlushtrapEntity) entity).setAnimation("empty");
@@ -205,9 +204,8 @@ public class NightAnimatronicOnEntityTickUpdateProcedure {
 				if (entity instanceof NightmareBbEntity) {
 					((NightmareBbEntity) entity).setAnimation("empty");
 				}
-				if (entity instanceof Mob _mobSetNoAi) {
-					_mobSetNoAi.setNoAi(false);
-				}
+				if (entity instanceof Mob _mob66)
+					_mob66.setNoAi(false);
 			}
 		}
 		if (entity.getPersistentData().getBoolean("controlshock_linked") == true) {

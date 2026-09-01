@@ -147,7 +147,7 @@
         "texture": "fnafslsign2",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "pizzeria_sign2_offset.geo.json",
+        "customModelName": "circusbabysign_offset.geo.json",
         "luminance": 0,
         "boundingBoxes": [
           {
@@ -165,7 +165,7 @@
         "texture": "fnafslsign2",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "pizzeria_sign2.geo.json",
+        "customModelName": "circusbabysign.geo.json",
         "luminance": 10,
         "boundingBoxes": []
       },
@@ -173,7 +173,7 @@
         "texture": "fnafslsign2",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "pizzeria_sign2_offset.geo.json",
+        "customModelName": "circusbabysign_offset.geo.json",
         "luminance": 10,
         "boundingBoxes": [
           {

@@ -134,9 +134,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "ClockOnBlockRightClicked"
-    },
     "onTickUpdate": {
       "name": "GrandfatherClockOnTickUpdate"
     },
