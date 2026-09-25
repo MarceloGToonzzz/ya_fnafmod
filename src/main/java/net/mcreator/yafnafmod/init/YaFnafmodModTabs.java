@@ -2015,7 +2015,6 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.SUN_CLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.KEYPAD.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.INTERCOM.get().asItem());
-				tabData.accept(YaFnafmodModBlocks.CIRCUS_BABY_CLOCK.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CONTROL_HEADS.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CONTROL_LADY.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.LITTLE_MAGICIAN.get().asItem());
@@ -2340,6 +2339,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModBlocks.REDSTONE_LAMP_WHITE.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.CAROUSEL_CINEMATIC.get().asItem());
 				tabData.accept(YaFnafmodModBlocks.PIZZERIA_STANDING_SIGN_MOVIE_2.get().asItem());
+				tabData.accept(YaFnafmodModBlocks.CIRCUS_BABY_CLOCK.get().asItem());
 			}).withSearchBar().withTabsBefore(YA_FNAF_MOD_BLOCKS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> YA_FNAF_MOD_MOBS = REGISTRY.register("ya_fnaf_mod_mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ya_fnafmod.ya_fnaf_mod_mobs")).icon(() -> new ItemStack(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get())).displayItems((parameters, tabData) -> {
@@ -2352,6 +2352,7 @@ public class YaFnafmodModTabs {
 				tabData.accept(YaFnafmodModItems.CROW_SPAWN_EGG.get());
 				tabData.accept(YaFnafmodModItems.RAT_SPAWN_EGG.get());
 				tabData.accept(YaFnafmodModItems.MYSTERIOUS_GIANT_SCUTTLER_SPAWN_EGG.get());
+				tabData.accept(YaFnafmodModItems.COCKROACH_SPAWN_EGG.get());
 				tabData.accept(YaFnafmodModItems.SEABONNIE_SPAWN_EGG.get());
 				tabData.accept(YaFnafmodModItems.FREDDY_FAZBEAR_SPAWN_ITEM.get());
 				tabData.accept(YaFnafmodModItems.BONNIE_BUNNY_SPAWN_ITEM.get());

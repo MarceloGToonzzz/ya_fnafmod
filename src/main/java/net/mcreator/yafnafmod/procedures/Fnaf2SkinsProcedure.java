@@ -34,6 +34,8 @@ import net.mcreator.yafnafmod.entity.PuppetEntity;
 import net.mcreator.yafnafmod.entity.PuppetDayEntity;
 import net.mcreator.yafnafmod.entity.MangleEntity;
 import net.mcreator.yafnafmod.entity.MangleDayEntity;
+import net.mcreator.yafnafmod.entity.JjDayEntity;
+import net.mcreator.yafnafmod.entity.JJEntity;
 import net.mcreator.yafnafmod.entity.Endo02Entity;
 import net.mcreator.yafnafmod.entity.Endo02DayEntity;
 import net.mcreator.yafnafmod.entity.BalloonBoyEntity;
@@ -106,6 +108,10 @@ public class Fnaf2SkinsProcedure {
 				animatable.setTexture(("puppet_night" + suffix));
 			if (entiti instanceof PuppetDayEntity animatable)
 				animatable.setTexture(("puppet_day" + suffix));
+			if (entiti instanceof JJEntity animatable)
+				animatable.setTexture(("jj" + suffix));
+			if (entiti instanceof JjDayEntity animatable)
+				animatable.setTexture(("jj" + suffix));
 			if (entiti instanceof BalloonBoyEntity animatable)
 				animatable.setTexture(("bb" + suffix));
 			if (entiti instanceof BalloonBoyDayEntity animatable)

@@ -7890,7 +7890,7 @@
       "name": "PlushBonnie",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_bonnie",
       "metadata": {
         "files": [
@@ -7907,7 +7907,7 @@
       "name": "PlushChica",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_chica",
       "metadata": {
         "files": [
@@ -7924,7 +7924,7 @@
       "name": "PlushFoxy",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_foxy",
       "metadata": {
         "files": [
@@ -13715,7 +13715,7 @@
       "name": "PlushFreddyRetro",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_freddy_retro",
       "metadata": {
         "files": [
@@ -13732,7 +13732,7 @@
       "name": "PlushBonnieRetro",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_bonnie_retro",
       "metadata": {
         "files": [
@@ -13749,7 +13749,7 @@
       "name": "PlushChicaRetro",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_chica_retro",
       "metadata": {
         "files": [
@@ -13766,7 +13766,7 @@
       "name": "PlushFoxyRetro",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_foxy_retro",
       "metadata": {
         "files": [
@@ -13783,7 +13783,7 @@
       "name": "PlushFreddyRetroSpawner",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_freddy_retro_spawner",
       "metadata": {
         "files": [
@@ -13800,7 +13800,7 @@
       "name": "PlushBonnieRetroSpawner",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_bonnie_retro_spawner",
       "metadata": {
         "files": [
@@ -13817,7 +13817,7 @@
       "name": "PlushChicaRetroSpawner",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_chica_retro_spawner",
       "metadata": {
         "files": [
@@ -13834,7 +13834,7 @@
       "name": "PlushFoxyRetroSpawner",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_foxy_retro_spawner",
       "metadata": {
         "files": [
@@ -13886,7 +13886,7 @@
       "name": "PlushFredbear",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_fredbear",
       "metadata": {
         "files": [
@@ -13903,7 +13903,7 @@
       "name": "PlushFredbearSpawner",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_fredbear_spawner",
       "metadata": {
         "files": [
@@ -14236,7 +14236,7 @@
       "name": "PlushSpringbonnie",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_springbonnie",
       "metadata": {
         "files": [
@@ -40417,7 +40417,7 @@
       "name": "PlushToyFreddy",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_toy_freddy",
       "metadata": {
         "files": [
@@ -40434,7 +40434,7 @@
       "name": "PlushToyBonnie",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_toy_bonnie",
       "metadata": {
         "files": [
@@ -40451,7 +40451,7 @@
       "name": "PlushToyChica",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_toy_chica",
       "metadata": {
         "files": [
@@ -40468,7 +40468,7 @@
       "name": "PlushToyFoxy",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_toy_foxy",
       "metadata": {
         "files": [
@@ -44322,7 +44322,7 @@
       "name": "PlushBarryPolar",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_barry_polar",
       "metadata": {
         "files": [
@@ -44339,7 +44339,7 @@
       "name": "PlushIndigo",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_indigo",
       "metadata": {
         "files": [
@@ -44749,28 +44749,6 @@
         ]
       },
       "path": "~/Blocks/Floors"
-    },
-    {
-      "name": "CircusBabyClock",
-      "type": "animatedblock",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "circus_baby_clock",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/yafnafmod/block/CircusBabyClockBlock.java",
-          "src/main/java/net/mcreator/yafnafmod/block/display/CircusBabyClockDisplayItem.java",
-          "src/main/java/net/mcreator/yafnafmod/block/renderer/CircusBabyClockDisplayItemRenderer.java",
-          "src/main/resources/assets/ya_fnafmod/blockstates/circus_baby_clock.json",
-          "src/main/resources/assets/ya_fnafmod/models/item/circus_baby_clock.json",
-          "src/main/java/net/mcreator/yafnafmod/block/renderer/CircusBabyClockTileRenderer.java",
-          "src/main/java/net/mcreator/yafnafmod/block/model/CircusBabyClockDisplayModel.java",
-          "src/main/java/net/mcreator/yafnafmod/block/entity/CircusBabyClockTileEntity.java",
-          "src/main/java/net/mcreator/yafnafmod/block/model/CircusBabyClockBlockModel.java",
-          "src/main/resources/assets/ya_fnafmod/models/custom/circus_baby_clock_particle.json"
-        ]
-      },
-      "path": "~/Blocks/Props/Functional/Clocks"
     },
     {
       "name": "FreddysWorkerOutfit",
@@ -47659,7 +47637,7 @@
       "name": "PlushMarcelo",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_marcelo",
       "metadata": {
         "files": [
@@ -47676,7 +47654,7 @@
       "name": "PlushLogan",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_logan",
       "metadata": {
         "files": [
@@ -81545,7 +81523,7 @@
       "name": "PlushFreddyRockstar",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_freddy_rockstar",
       "metadata": {
         "files": [
@@ -81562,7 +81540,7 @@
       "name": "PlushBonnieRockstar",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_bonnie_rockstar",
       "metadata": {
         "files": [
@@ -81579,7 +81557,7 @@
       "name": "PlushChicaRockstar",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_chica_rockstar",
       "metadata": {
         "files": [
@@ -81596,7 +81574,7 @@
       "name": "PlushFoxyRockstar",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_foxy_rockstar",
       "metadata": {
         "files": [
@@ -81613,7 +81591,7 @@
       "name": "PlushLefty",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_lefty",
       "metadata": {
         "files": [
@@ -81630,7 +81608,7 @@
       "name": "PlushBaby",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_baby",
       "metadata": {
         "files": [
@@ -81647,7 +81625,7 @@
       "name": "PlushBallora",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_ballora",
       "metadata": {
         "files": [
@@ -81664,7 +81642,7 @@
       "name": "PlushFreddyFuntime",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_freddy_funtime",
       "metadata": {
         "files": [
@@ -81681,7 +81659,7 @@
       "name": "PlushFoxyFuntime",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_foxy_funtime",
       "metadata": {
         "files": [
@@ -81698,7 +81676,7 @@
       "name": "PlushLolbit",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_lolbit",
       "metadata": {
         "files": [
@@ -81759,7 +81737,7 @@
       "name": "PlushHappyFrog",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_happy_frog",
       "metadata": {
         "files": [
@@ -81776,7 +81754,7 @@
       "name": "PlushNeddbear",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_neddbear",
       "metadata": {
         "files": [
@@ -81793,7 +81771,7 @@
       "name": "PlushMrHippo",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_mr_hippo",
       "metadata": {
         "files": [
@@ -81810,7 +81788,7 @@
       "name": "PlushPigpatch",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_pigpatch",
       "metadata": {
         "files": [
@@ -81827,7 +81805,7 @@
       "name": "PlushOrville",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_orville",
       "metadata": {
         "files": [
@@ -81844,7 +81822,7 @@
       "name": "PlushChicaFuntime",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_chica_funtime",
       "metadata": {
         "files": [
@@ -81861,7 +81839,7 @@
       "name": "PlushChicaLola",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_chica_lola",
       "metadata": {
         "files": [
@@ -81878,7 +81856,7 @@
       "name": "PlushDoug",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_doug",
       "metadata": {
         "files": [
@@ -81895,7 +81873,7 @@
       "name": "PlushJolly",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_jolly",
       "metadata": {
         "files": [
@@ -81912,7 +81890,7 @@
       "name": "PlushRicky",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_ricky",
       "metadata": {
         "files": [
@@ -81929,7 +81907,7 @@
       "name": "PlushGus",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_gus",
       "metadata": {
         "files": [
@@ -84544,6 +84522,7 @@
           "src/main/java/net/mcreator/yafnafmod/block/display/Endo01PileDisplayItem.java",
           "src/main/resources/assets/ya_fnafmod/blockstates/endo_01_pile.json",
           "src/main/java/net/mcreator/yafnafmod/block/model/Endo01PileBlockModel.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/endo_01_pile_blockstate_0.json",
           "src/main/java/net/mcreator/yafnafmod/block/Endo01PileBlock.java",
           "src/main/java/net/mcreator/yafnafmod/block/renderer/Endo01PileTileRenderer.java",
           "src/main/java/net/mcreator/yafnafmod/block/entity/Endo01PileTileEntity.java",
@@ -84569,6 +84548,7 @@
           "src/main/resources/assets/ya_fnafmod/models/custom/endo_02_pile_particle.json",
           "src/main/java/net/mcreator/yafnafmod/block/model/Endo02PileBlockModel.java",
           "src/main/java/net/mcreator/yafnafmod/block/model/Endo02PileDisplayModel.java",
+          "src/main/resources/assets/ya_fnafmod/models/block/endo_02_pile_blockstate_0.json",
           "src/main/java/net/mcreator/yafnafmod/block/display/Endo02PileDisplayItem.java",
           "src/main/java/net/mcreator/yafnafmod/block/renderer/Endo02PileDisplayItemRenderer.java",
           "src/main/resources/assets/ya_fnafmod/blockstates/endo_02_pile.json"
@@ -89213,7 +89193,7 @@
       "name": "PlushVassilis",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "plush_vassilis",
       "metadata": {
         "files": [
@@ -93308,8 +93288,7 @@
           "src/main/java/net/mcreator/yafnafmod/client/renderer/RascRenderer.java",
           "src/main/java/net/mcreator/yafnafmod/entity/RascEntity.java",
           "src/main/resources/assets/ya_fnafmod/models/item/rasc_spawn_egg.json",
-          "src/main/java/net/mcreator/yafnafmod/entity/model/RascModel.java",
-          "src/main/resources/data/ya_fnafmod/forge/biome_modifier/rasc_biome_modifier.json"
+          "src/main/java/net/mcreator/yafnafmod/entity/model/RascModel.java"
         ]
       },
       "path": "~/Entities"
@@ -93478,6 +93457,52 @@
           }
         ]
       }
+    },
+    {
+      "name": "CircusBabyClock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circus_baby_clock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/block/CircusBabyClockBlock.java",
+          "src/main/resources/data/ya_fnafmod/loot_tables/blocks/circus_baby_clock.json",
+          "src/main/resources/assets/ya_fnafmod/models/item/circus_baby_clock.json",
+          "src/main/resources/assets/ya_fnafmod/blockstates/circus_baby_clock.json",
+          "src/main/resources/assets/ya_fnafmod/models/block/circus_baby_clock.json"
+        ]
+      },
+      "path": "~/Blocks/Props/Functional/Clocks"
+    },
+    {
+      "name": "CircusBabyClockStates",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circus_baby_clock_states",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ya_fnafmod/models/block/circus_baby_clock_states_blockstate_0.json"
+        ]
+      },
+      "path": "~/Blocks/Props/Functional/Clocks"
+    },
+    {
+      "name": "Cockroach",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cockroach",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/yafnafmod/client/renderer/CockroachRenderer.java",
+          "src/main/resources/assets/ya_fnafmod/models/item/cockroach_spawn_egg.json",
+          "src/main/java/net/mcreator/yafnafmod/entity/model/CockroachModel.java",
+          "src/main/java/net/mcreator/yafnafmod/entity/CockroachEntity.java"
+        ]
+      },
+      "path": "~/Entities/Animals"
     }
   ],
   "variable_elements": [
@@ -94960,7 +94985,11 @@
       "CUSTOM:NightmareFreddy",
       "CUSTOM:NightmareMangle",
       "CUSTOM:NightmarePumpkinEntity",
-      "CUSTOM:Nightmarionne"
+      "CUSTOM:Nightmarionne",
+      "CUSTOM:Plushtrap",
+      "CUSTOM:PlushtrapDay",
+      "CUSTOM:JackOBonnie",
+      "CUSTOM:JackOChica"
     ],
     "BLOCKS:mod:animatronic_blocks": [
       "CUSTOM:FreddyFazbearBlock",
@@ -101931,7 +101960,6 @@
       "SunClock",
       "Keypad",
       "Intercom",
-      "CircusBabyClock",
       "ControlHeads",
       "ControlLady",
       "LittleMagician",
@@ -102255,7 +102283,8 @@
       "Endo02Pile",
       "RedstoneLampWhite",
       "CarouselCinematic",
-      "PizzeriaStandingSignMovie2"
+      "PizzeriaStandingSignMovie2",
+      "CircusBabyClock"
     ],
     "CUSTOM:YaFNAFModMobs": [
       "Child",
@@ -102267,6 +102296,7 @@
       "Crow",
       "Rat",
       "MysteriousGiantScuttler",
+      "Cockroach",
       "Seabonnie",
       "FreddyFazbearSpawnItem",
       "BonnieBunnySpawnItem",
@@ -104796,6 +104826,7 @@
       "block.ya_fnafmod.nostalgic_white_wall_gray_blue_tiles": "Nostalgic White Wall Tiles (Gray Stripe, Blue Tiles)",
       "block.ya_fnafmod.movie_purple_cyan_wall": "Movie Purple-Cyan Wall",
       "entity.ya_fnafmod.neddbear_day": "Neddbear (Daytime)",
+      "item.ya_fnafmod.cockroach_spawn_egg": "Cockroach Spawn Egg",
       "block.ya_fnafmod.dart_board": "Dart Board",
       "block.ya_fnafmod.red_yellow_diag_tile_slab": "Red Yellow Diagonal Tile Slab",
       "block.ya_fnafmod.rancid_less_tiles": "Less Rancid Tiles",
@@ -105073,6 +105104,7 @@
       "block.ya_fnafmod.purple_yellow_tiles": "Purple Yellow Tiles",
       "block.ya_fnafmod.rancid_small_bricks": "Rancid Small Bricks",
       "item.ya_fnafmod.mnaf_toy_chica_suit_helmet": "Nostalgic Toy Chica Suit Head",
+      "entity.ya_fnafmod.cockroach": "Cockroach",
       "item.ya_fnafmod.milkshake_cherry": "Cherry Milkshake",
       "block.ya_fnafmod.fancy_dark_wall_red_top": "Fancy Dark Wall Top (Red Stripe)",
       "block.ya_fnafmod.black_brown_diag_tiles": "Black Brown Diagonal Tiles",
@@ -106343,7 +106375,7 @@
       "block.ya_fnafmod.arcade_sushi_smash": "Arcade Cabinet",
       "block.ya_fnafmod.box_plush_3": "Open Box (Vintage Plushies)",
       "block.ya_fnafmod.gray_tile_slab": "Gray Tile Slab",
-      "block.ya_fnafmod.endo_02_pile": "Endo 01 Pile",
+      "block.ya_fnafmod.endo_02_pile": "Endo 02 Pile",
       "block.ya_fnafmod.stage_plank_light_stairs": "Light Stage Plank Stairs",
       "block.ya_fnafmod.black_red_tile_stairs": "Black Red Tile Stairs",
       "block.ya_fnafmod.rancid_less_wall_stairs": "Less Rancid Wall Stairs",
@@ -108720,7 +108752,7 @@
       "subtitles.anima_scrapbaby_killvoice": "Scrap Baby speaks",
       "block.ya_fnafmod.cracked_nostalgic_black_green_tile_slab": "Nostalgic Black Green Tile Slab (Cracked)",
       "item.ya_fnafmod.ballora_spawn_item": "§9Ballora",
-      "block.ya_fnafmod.red_wine_diag_tile_slab": "Red Wine  Diagonal Tile Slab",
+      "block.ya_fnafmod.red_wine_diag_tile_slab": "Red Wine Diagonal Tile Slab",
       "block.ya_fnafmod.magenta_stage_bricks_black_extra_tiles": "Magenta Stage Brick Extra Tiles (Black Stripe)",
       "block.ya_fnafmod.black_orange_diag_tiles": "Black Orange Diagonal Tiles",
       "block.ya_fnafmod.pizza_dough_sauce_block": "Pizza Dough Block",
@@ -108982,7 +109014,7 @@
       "entity.ya_fnafmod.electrobab_day": "Electrobab",
       "item.ya_fnafmod.mnaf_foxy_suit_helmet": "Nostalgic Foxy Suit Head",
       "block.ya_fnafmod.colorful_plates": "Colorful Cups and Plates",
-      "block.ya_fnafmod.red_wine_diag_tile_stairs": "Red Wine  Diagonal Tile Stairs",
+      "block.ya_fnafmod.red_wine_diag_tile_stairs": "Red Wine Diagonal Tile Stairs",
       "block.ya_fnafmod.light_wall_black_green_big_tiles": "Light Wall Tiles (Big Black Stripe, Green Tiles)",
       "block.ya_fnafmod.cracked_black_yellow_tile_stairs": "Black Yellow Tile Stairs (Cracked)",
       "block.ya_fnafmod.poster_toy_freddy_1.description_0": "\"The New Face of Fun!\"",
@@ -109178,7 +109210,7 @@
       "block.ya_fnafmod.brown_stage_bricks_black_extra_tiles_big_alternate": "Brown Stage Brick Extra Tiles (Big Alternate Black Stripe)",
       "block.ya_fnafmod.truss_curtain_fancy_purple": "Truss (Fancy Purple Curtain)",
       "item.ya_fnafmod.money_bill_50": "$50 Bill",
-      "block.ya_fnafmod.red_wine_diag_tiles": "Red Wine  Diagonal Tiles",
+      "block.ya_fnafmod.red_wine_diag_tiles": "Red Wine Diagonal Tiles",
       "block.ya_fnafmod.foil_party_hat": "Foil Party Hat",
       "block.ya_fnafmod.shop_sign_dumpster_diver": "Shop Sign (Dumpster Diver Weekly)",
       "block.ya_fnafmod.cracked_blue_light_blue_tile_slab": "Blue Light Blue Tile Slab (Cracked)",

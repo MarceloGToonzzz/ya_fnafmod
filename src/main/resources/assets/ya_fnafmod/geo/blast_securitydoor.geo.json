@@ -3,47 +3,54 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.securitydoor",
+				"identifier": "geometry.unknown",
 				"texture_width": 256,
 				"texture_height": 256,
-				"visible_bounds_width": 3,
-				"visible_bounds_height": 4,
-				"visible_bounds_offset": [0, 1, 0]
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
 			},
 			"bones": [
 				{
-					"name": "doorandframe",
-					"pivot": [0, 0, 0],
+					"name": "bb_main",
+					"pivot": [16, 0, 0],
 					"cubes": [
-						{"origin": [23, -16, -9], "size": [4, 47, 18], "inflate": 0.001, "uv": [88, 22]},
-						{"origin": [-11, 31, -9], "size": [38, 4, 18], "inflate": 0.001, "uv": [0, 0]},
-						{"origin": [-11, 31, -13], "size": [4, 4, 4], "uv": [112, 0]},
-						{"origin": [23, 31, 9], "size": [4, 4, 4], "uv": [112, 0], "mirror": true},
-						{"origin": [23, -16, 9], "size": [4, 4, 4], "uv": [112, 0], "mirror": true},
-						{"origin": [-11, -16, 9], "size": [4, 4, 4], "uv": [112, 0], "mirror": true},
-						{"origin": [-11, 31, 9], "size": [4, 4, 4], "uv": [112, 0], "mirror": true},
-						{"origin": [23, 31, -13], "size": [4, 4, 4], "uv": [112, 0]},
-						{"origin": [23, -16, -13], "size": [4, 4, 4], "uv": [112, 0]},
-						{"origin": [-11, -16, -13], "size": [4, 4, 4], "uv": [112, 0]},
-						{"origin": [-11, -16, -9], "size": [4, 47, 18], "inflate": 0.001, "uv": [88, 87]}
+						{"origin": [23, -16, -11], "size": [4, 47, 22], "uv": [99, 136]},
+						{"origin": [27, -16, -10], "size": [3, 51, 20], "uv": [0, 137]},
+						{"origin": [27, -16, -8], "size": [7, 39, 16], "inflate": 0.01, "uv": [47, 137], "mirror": true},
+						{"origin": [27, -16, -8.5], "size": [9, 24, 17], "uv": [152, 172], "mirror": true},
+						{"origin": [-18, -16, -7.85], "size": [7, 39, 16], "inflate": 0.01, "uv": [47, 137]},
+						{"origin": [-20, -16, -8.5], "size": [9, 24, 17], "uv": [152, 172]},
+						{"origin": [-14, 35, -10], "size": [44, 3, 20], "inflate": 0.01, "uv": [0, 0]},
+						{"origin": [-13, 38, -9.5], "size": [42, 4, 19], "uv": [0, 51]},
+						{"origin": [-14, -16, -10], "size": [3, 51, 20], "uv": [0, 137]},
+						{"origin": [-11, -16, -11], "size": [4, 47, 22], "uv": [99, 136]},
+						{"origin": [-11, 31, -11], "size": [38, 4, 22], "uv": [0, 24]},
+						{"origin": [-11, -15.75, -11], "size": [38, 0, 22], "uv": [0, 75]},
+						{"origin": [-11.5, 29.75, -11.35], "size": [6, 6, 23], "uv": [198, 84]},
+						{"origin": [-10.5, 30.75, -15.35], "size": [4, 4, 31], "uv": [152, 136]},
+						{"origin": [22.5, 30.75, -15.35], "size": [4, 4, 31], "uv": [152, 136]},
+						{"origin": [-10.5, -15.25, -15.5], "size": [4, 4, 31], "uv": [152, 136]},
+						{"origin": [22.5, -15.25, -15.5], "size": [4, 4, 31], "uv": [152, 136]},
+						{"origin": [-11.5, -16.25, -11.5], "size": [6, 6, 23], "uv": [198, 84]},
+						{"origin": [21.5, 29.75, -11.35], "size": [6, 6, 23], "uv": [198, 84]},
+						{"origin": [21.5, -16.25, -11.5], "size": [6, 6, 23], "uv": [198, 84]}
 					]
 				},
 				{
-					"name": "Door",
-					"parent": "doorandframe",
-					"pivot": [8, 31, 0],
+					"name": "lower door",
+					"pivot": [8, 0.75, 0.5],
 					"cubes": [
-						{"origin": [-7, 5, -7], "size": [30, 26, 14], "inflate": 0.001, "uv": [0, 22]},
-						{"origin": [-7, 1, -6], "size": [30, 4, 11], "uv": [0, 97]}
+						{"origin": [-7, -16, -9], "size": [30, 19, 19], "uv": [0, 98]},
+						{"origin": [-7, 3, -9], "size": [30, 10, 19], "inflate": 0.01, "uv": [123, 24]}
 					]
 				},
 				{
-					"name": "Door2",
-					"parent": "doorandframe",
-					"pivot": [0, 0, 0],
+					"name": "upper door",
+					"pivot": [0, 26, 0],
 					"cubes": [
-						{"origin": [-7, -16, -7], "size": [30, 21, 14], "inflate": 0.001, "uv": [0, 62]},
-						{"origin": [-7, 5, -5], "size": [30, 4, 11], "uv": [0, 112]}
+						{"origin": [-7, 3, -9], "size": [30, 10, 19], "inflate": 0.02, "uv": [123, 54]},
+						{"origin": [-7, 13, -9], "size": [30, 18, 19], "uv": [99, 98]}
 					]
 				}
 			]

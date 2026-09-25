@@ -273,7 +273,6 @@ import net.mcreator.yafnafmod.block.entity.ClownLemonadeTileEntity;
 import net.mcreator.yafnafmod.block.entity.ClownFruitPunchTileEntity;
 import net.mcreator.yafnafmod.block.entity.ClawMachinePizzaPartyTileEntity;
 import net.mcreator.yafnafmod.block.entity.ClawMachineCupcakeBonanzaTileEntity;
-import net.mcreator.yafnafmod.block.entity.CircusBabyClockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CircusBabyBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.CindyCatBlockTileEntity;
 import net.mcreator.yafnafmod.block.entity.ChicaStandTileEntity;
@@ -562,8 +561,6 @@ public class YaFnafmodModBlockEntities {
 	public static final RegistryObject<BlockEntityType<PrizeKingTileEntity>> PRIZE_KING = REGISTRY.register("prize_king", () -> BlockEntityType.Builder.of(PrizeKingTileEntity::new, YaFnafmodModBlocks.PRIZE_KING.get()).build(null));
 	public static final RegistryObject<BlockEntityType<SecurityPuppetPropTileEntity>> SECURITY_PUPPET_PROP = REGISTRY.register("security_puppet_prop",
 			() -> BlockEntityType.Builder.of(SecurityPuppetPropTileEntity::new, YaFnafmodModBlocks.SECURITY_PUPPET_PROP.get()).build(null));
-	public static final RegistryObject<BlockEntityType<CircusBabyClockTileEntity>> CIRCUS_BABY_CLOCK = REGISTRY.register("circus_baby_clock",
-			() -> BlockEntityType.Builder.of(CircusBabyClockTileEntity::new, YaFnafmodModBlocks.CIRCUS_BABY_CLOCK.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> MONITOR_WORK = register("monitor_work", YaFnafmodModBlocks.MONITOR_WORK, MonitorWorkBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<BallpitRottenTileEntity>> BALLPIT_ROTTEN = REGISTRY.register("ballpit_rotten",
 			() -> BlockEntityType.Builder.of(BallpitRottenTileEntity::new, YaFnafmodModBlocks.BALLPIT_ROTTEN.get()).build(null));

@@ -1,9 +1,10 @@
 {
-  "parent": "ya_fnafmod:custom/big_painting",
+  "parent": "ya_fnafmod:custom/framed_picture",
   "textures": {
     "all": "ya_fnafmod:block/paintingbig_springbonnie",
     "particle": "ya_fnafmod:block/paintingbig_springbonnie",
-    "1": "ya_fnafmod:block/paintingbig_springbonnie"
+    "0": "ya_fnafmod:block/framed_picture-springbonnie1",
+    "1": "ya_fnafmod:block/framed_picture_frame"
   },
   "render_type": "cutout_mipped"
 }

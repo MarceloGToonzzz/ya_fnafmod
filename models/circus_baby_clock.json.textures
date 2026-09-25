@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "circus_baby_clock-green"
+      },
+      "name": "default"
+    },
+    "blue": {
+      "map": {
+        "2": "circus_baby_clock-blue"
+      },
+      "name": "blue"
+    }
+  }
+}

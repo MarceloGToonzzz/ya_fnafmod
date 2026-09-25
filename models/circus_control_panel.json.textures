@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "circus_control"
+        "2": "circus_control"
       },
       "name": "default"
     }

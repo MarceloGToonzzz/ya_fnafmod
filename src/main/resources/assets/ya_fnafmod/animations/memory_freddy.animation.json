@@ -968,6 +968,16 @@
 					"position": {
 						"vector": ["-math.sin(query.anim_time * -3000) * 0.125", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
 					}
+				},
+				"lEye": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time*-1440)/16", "math.sin(query.anim_time*math.round(math.random(-1,1)*-1440))/16", 0]
+					}
+				},
+				"rEye": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time*1440)/16", "math.sin(query.anim_time*math.round(math.random(-1,1)*1440))/16", 0]
+					}
 				}
 			}
 		},
@@ -1314,6 +1324,16 @@
 				"eyeL": {
 					"position": {
 						"vector": ["-math.sin(query.anim_time * -3000) * 0.125", "(math.sin(query.anim_time * -3000) * 0.125)", 0]
+					}
+				},
+				"lEye": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time*-1440)/16", "math.sin(query.anim_time*math.round(math.random(-1,1)*-1440))/16", 0]
+					}
+				},
+				"rEye": {
+					"position": {
+						"vector": ["-math.sin(query.anim_time*1440)/16", "math.sin(query.anim_time*math.round(math.random(-1,1)*1440))/16", 0]
 					}
 				}
 			}

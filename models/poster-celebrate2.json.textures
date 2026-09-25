@@ -29,6 +29,12 @@
         "1": "poster_fnaf4_sb-fredbear3_big"
       },
       "name": "fredbear3"
+    },
+    "vintage": {
+      "map": {
+        "1": "poster_fnaf2-celebrate_vintage"
+      },
+      "name": "vintage"
     }
   }
 }

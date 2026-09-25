@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Endo 01 Pile",
+    "name": "Endo 02 Pile",
     "specialInformation": {
       "fixedValue": []
     },
@@ -136,6 +136,15 @@
     "normal": "endopile.geo.json",
     "displaySettings": "animatronic_display1.json",
     "vanillaToolTier": "NONE",
-    "blockstateList": []
+    "blockstateList": [
+      {
+        "texture": "head_endo02-skin",
+        "particleTexture": "",
+        "renderType": 0,
+        "customModelName": "endopile.geo.json",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
   }
 }

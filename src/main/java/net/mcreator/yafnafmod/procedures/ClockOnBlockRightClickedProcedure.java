@@ -47,11 +47,11 @@ public class ClockOnBlockRightClickedProcedure {
 			} else {
 				minute_text = "" + ("" + GetTimeProcedure.execute(world, false, false)).replace(".0", "");
 			}
-			if (blockstate.is(BlockTags.create(new ResourceLocation("ya_fnafmod:alarm_clocks")))) {
-				if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FAZWRENCH.get())) {
-					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal(GetTextTimeProcedure.execute(world)), true);
-				} else {
+			if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == YaFnafmodModItems.FAZWRENCH.get())) {
+				if (entity instanceof Player _player && !_player.level().isClientSide())
+					_player.displayClientMessage(Component.literal(GetTextTimeProcedure.execute(world)), true);
+			} else {
+				if (blockstate.is(BlockTags.create(new ResourceLocation("ya_fnafmod:alarm_clocks")))) {
 					if (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);

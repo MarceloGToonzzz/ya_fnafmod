@@ -186,6 +186,7 @@ import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.CrowEntity;
+import net.mcreator.yafnafmod.entity.CockroachEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
 import net.mcreator.yafnafmod.entity.CindyCatEntity;
@@ -1772,6 +1773,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof RascEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CockroachEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

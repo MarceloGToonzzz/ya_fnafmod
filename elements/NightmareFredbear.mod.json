@@ -102,6 +102,9 @@
     "raidCelebrationSound": {
       "value": ""
     },
+    "onRightClickedOn": {
+      "name": "AnimatronicRotation"
+    },
     "onMobTickUpdate": {
       "name": "NightAnimatronicOnEntityTickUpdate"
     },

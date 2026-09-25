@@ -65,10 +65,10 @@ public class PosterCelebrateRetroBlock extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(-10, 4, 0, 26, 28, 0.1);
-			case NORTH -> box(-10, 4, 15.9, 26, 28, 16);
-			case EAST -> box(0, 4, -10, 0.1, 28, 26);
-			case WEST -> box(15.9, 4, -10, 16, 28, 26);
+			default -> box(-16, -4, 0, 16, 20, 0.1);
+			case NORTH -> box(0, -4, 15.9, 32, 20, 16);
+			case EAST -> box(0, -4, 0, 0.1, 20, 32);
+			case WEST -> box(15.9, -4, -16, 16, 20, 16);
 		};
 	}
 

@@ -4,21 +4,17 @@
 		"0": {
 			"loop": true,
 			"bones": {
-				"Door": {
+				"upper door": {
 					"position": {
-						"vector": [0, 24, 0]
+						"vector": [0, 15, 0]
 					}
 				},
-				"Door2": {
+				"lower door": {
 					"position": {
-						"vector": [0, -26, 0]
+						"vector": [0, -27, 0]
 					}
 				}
 			}
-		},
-		"1": {
-			"loop": true
 		}
-	},
-	"geckolib_format_version": 2
+	}
 }

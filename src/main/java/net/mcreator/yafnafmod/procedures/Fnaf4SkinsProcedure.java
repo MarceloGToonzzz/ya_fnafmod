@@ -4,10 +4,19 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.yafnafmod.entity.PlushtrapEntity;
 import net.mcreator.yafnafmod.entity.PlushtrapDayEntity;
+import net.mcreator.yafnafmod.entity.NightmarionneEntity;
+import net.mcreator.yafnafmod.entity.NightmareMangleEntity;
+import net.mcreator.yafnafmod.entity.NightmareFreddyEntity;
 import net.mcreator.yafnafmod.entity.NightmareFredbearEntity;
+import net.mcreator.yafnafmod.entity.NightmareFoxyEntity;
 import net.mcreator.yafnafmod.entity.NightmareEntity;
+import net.mcreator.yafnafmod.entity.NightmareCupcakeEntityEntity;
+import net.mcreator.yafnafmod.entity.NightmareChicaEntity;
+import net.mcreator.yafnafmod.entity.NightmareBonnieEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbEntity;
 import net.mcreator.yafnafmod.entity.NightmareBbDayEntity;
+import net.mcreator.yafnafmod.entity.JackOChicaEntity;
+import net.mcreator.yafnafmod.entity.JackOBonnieEntity;
 
 public class Fnaf4SkinsProcedure {
 	public static void execute(Entity entiti, double skin, String suffixa) {
@@ -16,6 +25,24 @@ public class Fnaf4SkinsProcedure {
 		String suffix = "";
 		suffix = suffixa;
 		if (skin == 0) {
+			if (entiti instanceof NightmareFreddyEntity animatable)
+				animatable.setTexture(("nightmare_freddy" + suffix));
+			if (entiti instanceof NightmareBonnieEntity animatable)
+				animatable.setTexture(("nightmare_bonnie" + suffix));
+			if (entiti instanceof NightmareChicaEntity animatable)
+				animatable.setTexture(("nightmare_chica" + suffix));
+			if (entiti instanceof NightmareCupcakeEntityEntity animatable)
+				animatable.setTexture(("nightmare_cupcake" + suffix));
+			if (entiti instanceof NightmareFoxyEntity animatable)
+				animatable.setTexture(("nightmare_foxy" + suffix));
+			if (entiti instanceof JackOBonnieEntity animatable)
+				animatable.setTexture(("nightmare_bonnie_jacko" + suffix));
+			if (entiti instanceof JackOChicaEntity animatable)
+				animatable.setTexture(("nightmare_chica_jacko" + suffix));
+			if (entiti instanceof NightmareMangleEntity animatable)
+				animatable.setTexture(("nightmare_fredbear" + suffix));
+			if (entiti instanceof NightmarionneEntity animatable)
+				animatable.setTexture(("nightmarionne" + suffix));
 			if (entiti instanceof NightmareFredbearEntity animatable)
 				animatable.setTexture(("nightmare_fredbear" + suffix));
 			if (entiti instanceof NightmareEntity animatable)

@@ -1,0 +1,25 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "framed_picture-fredbear1",
+        "1": "framed_picture_frame"
+      },
+      "name": "default"
+    },
+    "springbonnie": {
+      "map": {
+        "0": "framed_picture-springbonnie1",
+        "1": "framed_picture_frame"
+      },
+      "name": "springbonnie"
+    },
+    "flower": {
+      "map": {
+        "0": "framed_picture-flower1",
+        "1": "framed_picture_frame"
+      },
+      "name": "flower"
+    }
+  }
+}

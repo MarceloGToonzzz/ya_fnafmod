@@ -1,0 +1,9 @@
+{
+  "parent": "ya_fnafmod:custom/circus_baby_clock",
+  "textures": {
+    "all": "ya_fnafmod:block/circus_baby_clock-blue",
+    "particle": "ya_fnafmod:block/circus_baby_clock-green",
+    "2": "ya_fnafmod:block/circus_baby_clock-blue"
+  },
+  "render_type": "cutout_mipped"
+}

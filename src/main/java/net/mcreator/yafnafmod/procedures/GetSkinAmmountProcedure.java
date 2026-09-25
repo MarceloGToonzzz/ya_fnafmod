@@ -114,11 +114,13 @@ public class GetSkinAmmountProcedure {
 		} else if ((baseAnimatronic).equals("nightmare")) {
 			res = 1;
 		} else if ((baseAnimatronic).equals("nightmare_bb")) {
-			res = 0;
+			res = 1;
 		} else if ((baseAnimatronic).equals("nightmare_mangle")) {
 			res = 0;
-		} else if ((baseAnimatronic).equals("nightmare_puppet")) {
+		} else if ((baseAnimatronic).equals("nightmarionne")) {
 			res = 0;
+		} else if ((baseAnimatronic).equals("plushtrap")) {
+			res = 1;
 		}
 		if ((baseAnimatronic).equals("funtime_freddy")) {
 			res = 2;

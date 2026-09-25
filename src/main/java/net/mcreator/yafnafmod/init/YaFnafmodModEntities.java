@@ -202,6 +202,7 @@ import net.mcreator.yafnafmod.entity.DougDogEntity;
 import net.mcreator.yafnafmod.entity.DougDogDayEntity;
 import net.mcreator.yafnafmod.entity.CupcakeEntityEntity;
 import net.mcreator.yafnafmod.entity.CrowEntity;
+import net.mcreator.yafnafmod.entity.CockroachEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyEntity;
 import net.mcreator.yafnafmod.entity.CircusBabyDayEntity;
 import net.mcreator.yafnafmod.entity.CindyCatEntity;
@@ -1171,6 +1172,10 @@ public class YaFnafmodModEntities {
 			EntityType.Builder.<RascEntity>of(RascEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(RascEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CockroachEntity>> COCKROACH = register("cockroach",
+			EntityType.Builder.<CockroachEntity>of(CockroachEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CockroachEntity::new)
+
+					.sized(0.25f, 0.125f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -1404,6 +1409,7 @@ public class YaFnafmodModEntities {
 			BabyCrawlerEntity.init();
 			BabyCrawlerDayEntity.init();
 			RascEntity.init();
+			CockroachEntity.init();
 		});
 	}
 
@@ -1632,5 +1638,6 @@ public class YaFnafmodModEntities {
 		event.put(BABY_CRAWLER.get(), BabyCrawlerEntity.createAttributes().build());
 		event.put(BABY_CRAWLER_DAY.get(), BabyCrawlerDayEntity.createAttributes().build());
 		event.put(RASC.get(), RascEntity.createAttributes().build());
+		event.put(COCKROACH.get(), CockroachEntity.createAttributes().build());
 	}
 }

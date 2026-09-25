@@ -31,9 +31,9 @@ public class SettingSkinProcedure {
 			suffix = "";
 		} else if (style == 1) {
 			if (entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf1"))) || entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf2")))
-					|| entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf3"))) || entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnafitp")))
-					|| entiti instanceof YellowRabbitEntity || entiti instanceof SpringbonnieSuitEntity || entiti instanceof FredbearSuitEntity || entiti instanceof GoldenFreddySuitEntity || entiti instanceof FredbearSuitHeadlessEntity
-					|| entiti instanceof ShadowFreddySuitEntity || entiti instanceof GlitchtrapEntity) {
+					|| entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf3"))) || entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnaf4")))
+					|| entiti.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("ya_fnafmod:fnafitp"))) || entiti instanceof YellowRabbitEntity || entiti instanceof SpringbonnieSuitEntity || entiti instanceof FredbearSuitEntity
+					|| entiti instanceof GoldenFreddySuitEntity || entiti instanceof FredbearSuitHeadlessEntity || entiti instanceof ShadowFreddySuitEntity || entiti instanceof GlitchtrapEntity) {
 				suffix = "-skin";
 			}
 		}

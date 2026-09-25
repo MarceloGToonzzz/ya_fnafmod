@@ -7,6 +7,10 @@ package net.mcreator.yafnafmod.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -5678,7 +5682,6 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> CARPETED_FLOOR_ARCADE_SLAB = REGISTRY.register("carpeted_floor_arcade_slab", () -> new CarpetedFloorArcadeSlabBlock());
 	public static final RegistryObject<Block> CARPETED_FLOOR_ARCADE_CLEAN_STAIRS = REGISTRY.register("carpeted_floor_arcade_clean_stairs", () -> new CarpetedFloorArcadeCleanStairsBlock());
 	public static final RegistryObject<Block> CARPETED_FLOOR_ARCADE_CLEAN_SLAB = REGISTRY.register("carpeted_floor_arcade_clean_slab", () -> new CarpetedFloorArcadeCleanSlabBlock());
-	public static final RegistryObject<Block> CIRCUS_BABY_CLOCK = REGISTRY.register("circus_baby_clock", () -> new CircusBabyClockBlock());
 	public static final RegistryObject<Block> WALL_TILE_RED_BLACK_WHITE_BIG = REGISTRY.register("wall_tile_red_black_white_big", () -> new WallTileRedBlackWhiteBigBlock());
 	public static final RegistryObject<Block> WALL_TILE_BLACK_BLACK_WHITE_BIG = REGISTRY.register("wall_tile_black_black_white_big", () -> new WallTileBlackBlackWhiteBigBlock());
 	public static final RegistryObject<Block> WALL_TILE_BLACK_GREEN_BLUE_BIG = REGISTRY.register("wall_tile_black_green_blue_big", () -> new WallTileBlackGreenBlueBigBlock());
@@ -7719,6 +7722,20 @@ public class YaFnafmodModBlocks {
 	public static final RegistryObject<Block> CLOCK_WALL_TOY_BONNIE = REGISTRY.register("clock_wall_toy_bonnie", () -> new ClockWallToyBonnieBlock());
 	public static final RegistryObject<Block> CLOCK_WALL_TOY_CHICA = REGISTRY.register("clock_wall_toy_chica", () -> new ClockWallToyChicaBlock());
 	public static final RegistryObject<Block> CLOCK_WALL_TOY_FOXY = REGISTRY.register("clock_wall_toy_foxy", () -> new ClockWallToyFoxyBlock());
+	public static final RegistryObject<Block> CIRCUS_BABY_CLOCK = REGISTRY.register("circus_baby_clock", () -> new CircusBabyClockBlock());
+
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			WaterPuddleBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+			WaterPuddleBlock.itemColorLoad(event);
+		}
+	}
 }

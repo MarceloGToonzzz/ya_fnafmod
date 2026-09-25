@@ -1,6 +1,10 @@
 
 package net.mcreator.yafnafmod.block;
 
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -23,6 +27,9 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.BiomeColors;
+
+import net.mcreator.yafnafmod.init.YaFnafmodModBlocks;
 
 public class WaterPuddleBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
@@ -51,12 +58,12 @@ public class WaterPuddleBlock extends Block implements SimpleWaterloggedBlock {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
-			default -> box(0, 0, 0, 16, 16, 1);
-			case NORTH -> box(0, 0, 15, 16, 16, 16);
-			case EAST -> box(0, 0, 0, 1, 16, 16);
-			case WEST -> box(15, 0, 0, 16, 16, 16);
-			case UP -> box(0, 0, 0, 16, 1, 16);
-			case DOWN -> box(0, 15, 0, 16, 16, 16);
+			default -> box(0, 0, 0, 16, 16, 0.1);
+			case NORTH -> box(0, 0, 15.9, 16, 16, 16);
+			case EAST -> box(0, 0, 0, 0.1, 16, 16);
+			case WEST -> box(15.9, 0, 0, 16, 16, 16);
+			case UP -> box(0, 0, 0, 16, 0.1, 16);
+			case DOWN -> box(0, 15.9, 0, 16, 16, 16);
 		};
 	}
 
@@ -91,5 +98,19 @@ public class WaterPuddleBlock extends Block implements SimpleWaterloggedBlock {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
 		return super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+		event.getBlockColors().register((bs, world, pos, index) -> {
+			return world != null && pos != null ? BiomeColors.getAverageWaterColor(world, pos) : -1;
+		}, YaFnafmodModBlocks.WATER_PUDDLE.get());
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+		event.getItemColors().register((stack, index) -> {
+			return 3694022;
+		}, YaFnafmodModBlocks.WATER_PUDDLE.get());
 	}
 }

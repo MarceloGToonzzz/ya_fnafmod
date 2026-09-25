@@ -2,14 +2,14 @@
   "_fv": 73,
   "_type": "block",
   "definition": {
-    "texture": "posterbigh_1_celebrate1",
+    "texture": "poster_fnaf2-celebrate_vintage",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "bigposterh:classic",
+    "customModelName": "poster-celebrate2:vintage",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -24,11 +24,11 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -10.0,
-        "my": 4.0,
+        "mx": 0.0,
+        "my": -4.0,
         "mz": 15.9,
-        "Mx": 26.0,
-        "My": 28.0,
+        "Mx": 32.0,
+        "My": 20.0,
         "Mz": 16.0,
         "subtract": false
       }

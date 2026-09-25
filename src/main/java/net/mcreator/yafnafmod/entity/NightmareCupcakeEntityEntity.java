@@ -211,9 +211,9 @@ public class NightmareCupcakeEntityEntity extends Monster implements GeoEntity {
 			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
 
 			) {
-				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.cupcake.walk"));
+				return event.setAndContinue(RawAnimation.begin().thenLoop("animation.cupcake.nightmare_walk"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.cupcake.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.cupcake.nightmare_idle"));
 		}
 		return PlayState.STOP;
 	}

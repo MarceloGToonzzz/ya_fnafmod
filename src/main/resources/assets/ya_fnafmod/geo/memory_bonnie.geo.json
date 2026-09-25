@@ -145,6 +145,27 @@
 					]
 				},
 				{
+					"name": "eyes",
+					"parent": "head-skin",
+					"pivot": [-2, 4, -0.1]
+				},
+				{
+					"name": "lEye",
+					"parent": "eyes",
+					"pivot": [2, 29, -3.6],
+					"cubes": [
+						{"origin": [1.5, 28.5, -4.1], "size": [1, 1, 1], "uv": [24, 49]}
+					]
+				},
+				{
+					"name": "rEye",
+					"parent": "eyes",
+					"pivot": [-2, 29, -3.6],
+					"cubes": [
+						{"origin": [-2.5, 28.5, -4.1], "size": [1, 1, 1], "uv": [24, 49]}
+					]
+				},
+				{
 					"name": "ear_r",
 					"parent": "head-skin",
 					"pivot": [-2.5, 31.75, 0],

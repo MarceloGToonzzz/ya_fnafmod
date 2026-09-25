@@ -1,5 +1,5 @@
 {
-  "parent": "ya_fnafmod:custom/wallplane",
+  "parent": "ya_fnafmod:custom/wallplane_tinted",
   "textures": {
     "all": "ya_fnafmod:block/waterpuddle",
     "particle": "ya_fnafmod:block/waterpuddle",

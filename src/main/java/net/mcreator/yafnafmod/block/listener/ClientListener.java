@@ -252,7 +252,6 @@ import net.mcreator.yafnafmod.block.renderer.ClownLemonadeTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ClownFruitPunchTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ClawMachinePizzaPartyTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ClawMachineCupcakeBonanzaTileRenderer;
-import net.mcreator.yafnafmod.block.renderer.CircusBabyClockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CircusBabyBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.CindyCatBlockTileRenderer;
 import net.mcreator.yafnafmod.block.renderer.ChicaStandTileRenderer;
@@ -454,7 +453,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.GRAVITY_VORTEX.get(), context -> new GravityVortexTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.PRIZE_KING.get(), context -> new PrizeKingTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.SECURITY_PUPPET_PROP.get(), context -> new SecurityPuppetPropTileRenderer());
-		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CIRCUS_BABY_CLOCK.get(), context -> new CircusBabyClockTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BALLPIT_ROTTEN.get(), context -> new BallpitRottenTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.BALLPIT_VINTAGE.get(), context -> new BallpitVintageTileRenderer());
 		event.registerBlockEntityRenderer(YaFnafmodModBlockEntities.CUTOUT_FREDDY_RETRO.get(), context -> new CutoutFreddyRetroTileRenderer());

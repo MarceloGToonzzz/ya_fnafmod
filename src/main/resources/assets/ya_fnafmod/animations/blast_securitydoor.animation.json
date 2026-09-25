@@ -3,22 +3,6 @@
 	"animations": {
 		"0": {
 			"loop": true
-		},
-		"1": {
-			"loop": true,
-			"bones": {
-				"Door": {
-					"position": {
-						"vector": [0, 24, 0]
-					}
-				},
-				"Door2": {
-					"position": {
-						"vector": [0, -26, 0]
-					}
-				}
-			}
 		}
-	},
-	"geckolib_format_version": 2
+	}
 }

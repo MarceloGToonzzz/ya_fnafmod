@@ -38,11 +38,11 @@ import java.util.List;
 public class PlushBonnieRetroSpawnerBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty HAS_SPAWNED = BooleanProperty.create("has_spawned");
-	public static final IntegerProperty SKIN = IntegerProperty.create("skin", 0, 1);
+	public static final IntegerProperty STYLE = IntegerProperty.create("style", 0, 1);
 
 	public PlushBonnieRetroSpawnerBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(HAS_SPAWNED, false).setValue(SKIN, 0));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(HAS_SPAWNED, false).setValue(STYLE, 0));
 	}
 
 	@Override
@@ -80,12 +80,12 @@ public class PlushBonnieRetroSpawnerBlock extends Block {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, HAS_SPAWNED, SKIN);
+		builder.add(FACING, HAS_SPAWNED, STYLE);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(HAS_SPAWNED, false).setValue(SKIN, 0);
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(HAS_SPAWNED, false).setValue(STYLE, 0);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

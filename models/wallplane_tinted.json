@@ -1,0 +1,24 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"textures": {
+		"0": "ya_fnafmod:block/waterpuddle",
+		"particle": "ya_fnafmod:block/waterpuddle"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 15.9],
+			"to": [16, 16, 15.9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 15.9]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0", "tintindex": 0},
+				"east": {"uv": [16, 0, 16, 16], "texture": "#0", "tintindex": 0},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0", "tintindex": 0},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0", "tintindex": 0},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0", "tintindex": 0},
+				"down": {"uv": [0, 16, 16, 16], "texture": "#0", "tintindex": 0}
+			}
+		}
+	]
+}

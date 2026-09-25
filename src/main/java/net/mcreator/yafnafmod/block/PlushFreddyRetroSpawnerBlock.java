@@ -5,6 +5,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -37,10 +38,11 @@ import java.util.List;
 public class PlushFreddyRetroSpawnerBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty HAS_SPAWNED = BooleanProperty.create("has_spawned");
+	public static final IntegerProperty STYLE = IntegerProperty.create("style", 0, 1);
 
 	public PlushFreddyRetroSpawnerBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.WOOL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(HAS_SPAWNED, false));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(HAS_SPAWNED, false).setValue(STYLE, 0));
 	}
 
 	@Override
@@ -77,12 +79,12 @@ public class PlushFreddyRetroSpawnerBlock extends Block {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING, HAS_SPAWNED);
+		builder.add(FACING, HAS_SPAWNED, STYLE);
 	}
 
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(HAS_SPAWNED, false);
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(HAS_SPAWNED, false).setValue(STYLE, 0);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {

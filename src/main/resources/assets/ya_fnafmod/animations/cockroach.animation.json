@@ -1,0 +1,142 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.model.idle": {
+			"loop": true,
+			"bones": {
+				"rLeg3": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time * 750) * -1.25"]
+					}
+				},
+				"rLeg2": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time * 750) * -1.25"]
+					}
+				},
+				"rLeg1": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time * 750) * -1.25"]
+					}
+				},
+				"lLeg3": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time * 750) * -1.25"]
+					}
+				},
+				"lLeg2": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time * 750) * -1.25"]
+					}
+				},
+				"lLeg1": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time * 750) * -1.25"]
+					}
+				},
+				"pivot": {
+					"rotation": {
+						"vector": [0, 0, "math.sin(query.anim_time * 750) * 1.25"]
+					}
+				}
+			}
+		},
+		"animation.model.walk": {
+			"loop": true,
+			"animation_length": 0.1667,
+			"bones": {
+				"rLeg3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -25, 0]
+						},
+						"0.0833": {
+							"vector": [0, 25, 0]
+						},
+						"0.1667": {
+							"vector": [0, -25, 0]
+						}
+					}
+				},
+				"rLeg2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 25, 0]
+						},
+						"0.0833": {
+							"vector": [0, -25, 0]
+						},
+						"0.1667": {
+							"vector": [0, 25, 0]
+						}
+					}
+				},
+				"rLeg1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -25, 0]
+						},
+						"0.0833": {
+							"vector": [0, 25, 0]
+						},
+						"0.1667": {
+							"vector": [0, -25, 0]
+						}
+					}
+				},
+				"lLeg3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -25, 0]
+						},
+						"0.0833": {
+							"vector": [0, 25, 0]
+						},
+						"0.1667": {
+							"vector": [0, -25, 0]
+						}
+					}
+				},
+				"lLeg2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 25, 0]
+						},
+						"0.0833": {
+							"vector": [0, -25, 0]
+						},
+						"0.1667": {
+							"vector": [0, 25, 0]
+						}
+					}
+				},
+				"lLeg1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, -25, 0]
+						},
+						"0.0833": {
+							"vector": [0, 25, 0]
+						},
+						"0.1667": {
+							"vector": [0, -25, 0]
+						}
+					}
+				},
+				"pivot": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 2.5]
+						},
+						"0.0833": {
+							"vector": [0, 0, -2.5]
+						},
+						"0.1667": {
+							"vector": [0, 0, 2.5]
+						}
+					}
+				}
+			}
+		}
+	}
+}

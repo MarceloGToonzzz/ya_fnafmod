@@ -194,6 +194,7 @@ import net.mcreator.yafnafmod.client.renderer.DougDogRenderer;
 import net.mcreator.yafnafmod.client.renderer.DougDogDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.CupcakeEntityRenderer;
 import net.mcreator.yafnafmod.client.renderer.CrowRenderer;
+import net.mcreator.yafnafmod.client.renderer.CockroachRenderer;
 import net.mcreator.yafnafmod.client.renderer.CircusBabyRenderer;
 import net.mcreator.yafnafmod.client.renderer.CircusBabyDayRenderer;
 import net.mcreator.yafnafmod.client.renderer.CindyCatRenderer;
@@ -471,5 +472,6 @@ public class YaFnafmodModEntityRenderers {
 		event.registerEntityRenderer(YaFnafmodModEntities.BABY_CRAWLER.get(), BabyCrawlerRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.BABY_CRAWLER_DAY.get(), BabyCrawlerDayRenderer::new);
 		event.registerEntityRenderer(YaFnafmodModEntities.RASC.get(), RascRenderer::new);
+		event.registerEntityRenderer(YaFnafmodModEntities.COCKROACH.get(), CockroachRenderer::new);
 	}
 }

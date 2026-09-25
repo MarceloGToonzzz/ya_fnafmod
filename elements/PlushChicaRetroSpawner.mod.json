@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "plush:uchica",
+    "customModelName": "plush:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -42,7 +42,7 @@
       {
         "min": 0,
         "max": 1,
-        "name": "CUSTOM:skin",
+        "name": "CUSTOM:style",
         "type": "integer",
         "value": 0
       }

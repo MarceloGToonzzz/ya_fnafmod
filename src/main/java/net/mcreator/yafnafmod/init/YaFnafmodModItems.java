@@ -650,7 +650,6 @@ import net.mcreator.yafnafmod.block.display.ClownLemonadeDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClownFruitPunchDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClawMachinePizzaPartyDisplayItem;
 import net.mcreator.yafnafmod.block.display.ClawMachineCupcakeBonanzaDisplayItem;
-import net.mcreator.yafnafmod.block.display.CircusBabyClockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CircusBabyBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.CindyCatBlockDisplayItem;
 import net.mcreator.yafnafmod.block.display.ChicaStandDisplayItem;
@@ -2921,7 +2920,6 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> CARPETED_FLOOR_ARCADE_SLAB = block(YaFnafmodModBlocks.CARPETED_FLOOR_ARCADE_SLAB);
 	public static final RegistryObject<Item> CARPETED_FLOOR_ARCADE_CLEAN_STAIRS = block(YaFnafmodModBlocks.CARPETED_FLOOR_ARCADE_CLEAN_STAIRS);
 	public static final RegistryObject<Item> CARPETED_FLOOR_ARCADE_CLEAN_SLAB = block(YaFnafmodModBlocks.CARPETED_FLOOR_ARCADE_CLEAN_SLAB);
-	public static final RegistryObject<Item> CIRCUS_BABY_CLOCK = REGISTRY.register(YaFnafmodModBlocks.CIRCUS_BABY_CLOCK.getId().getPath(), () -> new CircusBabyClockDisplayItem(YaFnafmodModBlocks.CIRCUS_BABY_CLOCK.get(), new Item.Properties()));
 	public static final RegistryObject<Item> FREDDYS_WORKER_OUTFIT_CHESTPLATE = REGISTRY.register("freddys_worker_outfit_chestplate", () -> new FreddysWorkerOutfitItem.Chestplate());
 	public static final RegistryObject<Item> FREDDYS_WORKER_OUTFIT_LEGGINGS = REGISTRY.register("freddys_worker_outfit_leggings", () -> new FreddysWorkerOutfitItem.Leggings());
 	public static final RegistryObject<Item> FREDDYS_WORKER_OUTFIT_BOOTS = REGISTRY.register("freddys_worker_outfit_boots", () -> new FreddysWorkerOutfitItem.Boots());
@@ -5430,6 +5428,8 @@ public class YaFnafmodModItems {
 	public static final RegistryObject<Item> PURPLE_GUMBALL = REGISTRY.register("purple_gumball", () -> new PurpleGumballItem());
 	public static final RegistryObject<Item> RASC_SPAWN_EGG = REGISTRY.register("rasc_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.RASC, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> RASC_REMOTE = REGISTRY.register("rasc_remote", () -> new RascRemoteItem());
+	public static final RegistryObject<Item> CIRCUS_BABY_CLOCK = block(YaFnafmodModBlocks.CIRCUS_BABY_CLOCK);
+	public static final RegistryObject<Item> COCKROACH_SPAWN_EGG = REGISTRY.register("cockroach_spawn_egg", () -> new ForgeSpawnEggItem(YaFnafmodModEntities.COCKROACH, -6401484, -9291990, new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

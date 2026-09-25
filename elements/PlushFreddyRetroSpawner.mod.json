@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "plush:ufreddy",
+    "customModelName": "plush:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -38,6 +38,13 @@
         "name": "CUSTOM:has_spawned",
         "type": "logic",
         "value": false
+      },
+      {
+        "min": 0,
+        "max": 1,
+        "name": "CUSTOM:style",
+        "type": "integer",
+        "value": 0
       }
     ],
     "name": "Freddy Plushie (Spawner)",
